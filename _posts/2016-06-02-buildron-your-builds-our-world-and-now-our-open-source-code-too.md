@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: Buildron: Your builds, our world! ...and now our open source code too
+title: Buildron - Your builds, our world! ...and now our open source code too
 ---
 
 [Buildron](http://github.com/skahal/buildron) is a build radiator to continuous integration server like TeamCity, Jenkins and Hudson.
