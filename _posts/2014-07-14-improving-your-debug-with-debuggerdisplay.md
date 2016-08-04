@@ -1,7 +1,7 @@
 ---
 published: true
 title: Improving your debug with DebuggerDisplay
-image: ../images/NoDebuggerDisplay.png
+image: http://diegogiacomelli.com.br/images/NoDebuggerDisplay.png
 layout: post
 ---
 

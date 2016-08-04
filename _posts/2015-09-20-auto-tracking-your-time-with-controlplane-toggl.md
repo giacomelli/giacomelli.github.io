@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: Auto tracking your time with ControlPlane + Toggl
-image: ../images/ControlPlane_Preferences.png
+image: http://diegogiacomelli.com.br/images/ControlPlane_Preferences.png
 ---
 
 

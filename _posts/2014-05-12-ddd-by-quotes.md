@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: DDD by quotes
-image: ../images/ddd.jpg
+image: http://diegogiacomelli.com.br/images/ddd.jpg
 ---
 
 The Eric Evans' book ["Domain-Driven Design - Tackling Complexity in the Heart of Software"](http://amzn.to/2aygz2G) is like a Bible for who intend to use DDD, so, I guess that some quotes of the book can help us to validate our DDD approach.
