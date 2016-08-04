@@ -2,13 +2,14 @@
 published: true
 layout: post
 title: "Testing js-dos"
+image: https://raw.githubusercontent.com/giacomelli/Nibble/master/docs/screenshots/nibble_002.png
 published: true
 ---
 Recenlty I discovered the project [Emscripten](https://github.com/kripken/emscripten):
 
 > Emscripten is an LLVM-to-JavaScript compiler. It takes LLVM bitcode - which can be generated from C/C++, using llvm-gcc (DragonEgg) or clang, or any other language that can be converted into LLVM - and compiles that into JavaScript, which can be run on the web (or anywhere else JavaScript can run).
 
-And after this discovered the js-dox project:
+And after this discovered the [js-dos](https://js-dos.com) project:
 
 > A javascript version of dosbox that can run dos programs and games in browser.
 > js-dos provides javascript API to easily run DOS programs and games in browser. This API allows to run unmodified versions of DOS programs, in other words you can run DOS binary in browser.
