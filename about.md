@@ -5,7 +5,7 @@ permalink: /about/
 published: true
 ---
 
-I have programmed software and games in the last 15 years.
+I have programmed apps and games in the last 15 years.
 
 Below you can see some links about me:
 
