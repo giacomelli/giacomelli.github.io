@@ -2,13 +2,15 @@
 published: true
 layout: post
 title: DDD by quotes
+image: ../images/ddd.jpg
 ---
 
-The Eric Evans' book ["Domain-Driven Design - Tackling Complexity in the Heart of Software"](http://goo.gl/d5zS7r) is like a Bible for who intend to use DDD, so, I guess that some quotes of the book can help us to validate our DDD approach.
+The Eric Evans' book ["Domain-Driven Design - Tackling Complexity in the Heart of Software"](http://amzn.to/2aygz2G) is like a Bible for who intend to use DDD, so, I guess that some quotes of the book can help us to validate our DDD approach.
 
 The list below is just a "check-point list", because, to understand what each one really meaning you need to read book deeply, probably more than one time.
 
-**My tip is: read the book!**
+### My tip is: read the book!
+![](../images/ddd.jpg)
 
 ### Quotes
 > "The objects had behavior and enforced rules. The model wasn't just a data schema; it was integral solving a complex problem." (page 13)

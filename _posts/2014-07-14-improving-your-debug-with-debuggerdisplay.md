@@ -1,8 +1,7 @@
 ---
 published: true
-itle: Improving your debug with DebuggerDisplay
-type: post
 title: Improving your debug with DebuggerDisplay
+image: ../images/NoDebuggerDisplay.png
 layout: post
 ---
 

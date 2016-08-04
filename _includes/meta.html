@@ -25,4 +25,6 @@
 
     {% if page.image %}
 	    <meta property="twitter:image" content="{{ page.image }}" />
+	{% else %}
+		<meta property="twitter:image" content="{{ site.avatar }}" />
     {% endif %}
