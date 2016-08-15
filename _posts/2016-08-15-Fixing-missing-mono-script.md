@@ -19,7 +19,7 @@ Download the latest version of Giacomelli.Unity.EditorToolbox.dll from the [rele
 
 Access the menu "Giacomelli / Missing script resolver" and click in the "Search" button to find what are your prefabs with "Missing (Mono Script)" problem.
 
-![](../images/MissingMonoScriptPrefabsTofix.png)
+![](../images/MissingMonoScriptPrefabsToFix.png)
 
 > Remember to make a backup of the project or use your version control system before start the fix
 
