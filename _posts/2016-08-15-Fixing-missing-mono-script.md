@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Fixing "Missing (Mono Script)"
 image: http://diegogiacomelli.com.br/images/MissingMonoScript.png
@@ -7,6 +7,7 @@ image: http://diegogiacomelli.com.br/images/MissingMonoScript.png
 
 A problem that is recurrent to most game developers using Unity3d is the annoying “Missing (Mono Script)”. This problem often happens when we change a MonoBehaviour script name/filename outside of Unity3d editor or when we decide to move our MonoBehaviour scripts from Assets folder to an external C# class library project. Normally, when we do any of these things our prefabs become “Missing”.
 
+![](../images/MissingMonoScript.png)
 
 ### Missing script resolver
 To easy solve this problem I created a tool called "Missing script resolver" inside the project [Giacomelli.Unity.EditorToolbox](https://github.com/giacomelli/Giacomelli.Unity.EditorToolbox). This editor toolbox is (or will be) a collection of tools to make my life as Unity3d developer easier. I hope it can help others game developers too.
