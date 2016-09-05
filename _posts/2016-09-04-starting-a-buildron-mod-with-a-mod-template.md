@@ -92,10 +92,10 @@ Hit the play button on Buildron.
 
 You should see the same falling down box that you see on simulator falling down inside Buildron every time a build changed status.
 
-![](../images/BuildronModTemplateBuildronTEst.png)
+![](../images/BuildronModTemplateBuildronTest.png) 
 
 
 ## Conclusion
-With this post you learn how you can starting to create your own mod from mod template.
+With this post you learned how you can starting to create your own mod from mod template.
 
 If you want to build more sofisticated mods, please take a look on our tutorial ["Creating a mod"](http://github.com/skahal/buildron/wiki/tutorial-creating-a-mod).
