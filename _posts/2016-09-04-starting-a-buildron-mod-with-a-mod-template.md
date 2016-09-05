@@ -26,7 +26,7 @@ Type:
 prebuilt.exe -n <the name of your mod>
 ```
 
-> If you are in Linux/Mac prefix bellow commands with "mono ".
+> If you are in Linux/Mac prefix commands with "mono ".
 
 For example, if your mod name is "MyAmazingMod", you should type:
 
@@ -98,4 +98,4 @@ You should see the same falling down box that you see on simulator falling down 
 ## Conclusion
 With this post you learned how you can starting to create your own mod from mod template.
 
-If you want to build more sofisticated mods, please take a look on our tutorial ["Creating a mod"](http://github.com/skahal/buildron/wiki/tutorial-creating-a-mod).
+If you want to build more sofisticated mods, please take a look on our tutorial ["Creating a mod"](https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod).
