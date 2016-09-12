@@ -5,7 +5,7 @@ title: jumpstart
 image: http://diegogiacomelli.com.br/images/jumpstart-logo.png
 ---
 
-I present to you my newest tool: jumpstart.
+I present to you my newest tool...
 
 ![](../images/jumpstart-icon.png)jumpstart
 ===
