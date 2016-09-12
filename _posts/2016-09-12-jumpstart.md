@@ -95,4 +95,6 @@ jumpstart -tf https://github.com/xamarin/sport/archive/master.zip -tn Sport -n M
 
 
 ## Conclusion
-I hope you can use jumpstart in your next project bootstrap. [Download](https://github.com/giacomelli/jumpstart/releases) and use it and if you want to colaborate, take a look on its [GitHub repository](https://github.com/giacomelli/jumpstart).
+I hope you can use jumpstart in your next project bootstrap. [Download](https://github.com/giacomelli/jumpstart/releases) and use it.
+
+If you want to colaborate, take a look on its [GitHub repository](https://github.com/giacomelli/jumpstart).
