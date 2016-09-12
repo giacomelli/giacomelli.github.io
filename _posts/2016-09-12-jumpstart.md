@@ -26,10 +26,11 @@ The idea of the tool was born a long time ago and became a little stronger every
 > The first name that I thought to the tool was prebuilt, but later, my friend [Giusepe Casagrande](https://twitter.com/giusepe) convinced me that jumpstart was really better name... and he was right!
 
 
-##How does it work?
+## How does it work?
 jumpstart is very simple, it get a folder with a template solution and copy it to a new folder replacing the root namespace of the template to the new project namespace. 
 
 A template folder like this:
+
 ```shell
 jumpstart-template/MyClass.cs
 jumpstart-template/Properties
@@ -39,11 +40,13 @@ JumpStartTemplate.sln
 ```
 
 With this command:
+
 ```shell
 jumpstart -n My.Amazing.NewProject
 ```
 
 Will become:
+
 ```shell
 My.Amazing.NewProject/MyClass.cs
 My.Amazing.NewProject/Properties
@@ -76,6 +79,7 @@ jumpstart -n My.Amazing.NewProject
 
 ### Advanced (specifying template folder and namespace)
 For example, your template folder is "my-template" and your template namespace is "My.Template", in this case you should call jumpstart in this way:
+
 ```shell
 jumpstart -tf my-template -tn My.Template -n My.Amazing.NewProject
 ```
@@ -84,6 +88,7 @@ jumpstart -tf my-template -tn My.Template -n My.Amazing.NewProject
 You can use a remote .zip file as your template folder. For example, if you want to start a new project with any of those prebuilt apps that Xamarin make available on [http://xamarin.com/prebuilt](http://xamarin.com/prebuilt), you can use the command bellow to jumpstart your new project using those templates:
 
 ##### jumpstart Xamarin Sport prebuilt app
+
 ```shell
 jumpstart -tf https://github.com/xamarin/sport/archive/master.zip -tn Sport -n My.Sport 
 ```
