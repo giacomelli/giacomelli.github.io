@@ -65,8 +65,11 @@ Download it from the [releases page](https://github.com/giacomelli/jumpstart/rel
 To see all available options.
 
 ```shell
-jumpstart -help
+jumpstart.exe -help
 ```
+
+> If you are using jumpstart in Mac/Linux, remember to call it with "mono " prefix.
+
 
 ### Basic (using conventions)
 If your template folder is called "jumpstart-template" and its namespace is JumpStartTemplate, the only argument you need to pass to jumpstart is -n(namespace).

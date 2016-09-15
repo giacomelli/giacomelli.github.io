@@ -23,22 +23,23 @@ Type:
 
 
 ```shell
-prebuilt.exe -n <the name of your mod>
+jumpstart-exe -n <the name of your mod>
 ```
 
-> If you are in Linux/Mac prefix commands with "mono ".
+> If you are in Linux/Mac andfix commands with "mono ".
 
 For example, if your mod name is "MyAmazingMod", you should type:
 
 ```shell
-prebuilt.exe -n MyAmazingMod
+jumpstart.exe -n MyAmazingMod
 ```
 
-> prebuilt is a tool that I made to help create solutions from pre built templates. I will talk about of it in an future post.
+> [jumpstart](http://github.com/giacomelli/jumpstart) is a tool that I made to help create solutions from pre built templates. I will talk about of it in an future post.
 
-![](../images/BuildronModTemplatePrebuilt.png)
 
-After prebuilt is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:
+![](../images/BuildronModTemplateJumpstart.png)
+
+After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:
 
 * build: full Buildron executable with the classic mods to all platforms (linux, mac and win).
 * src
@@ -86,7 +87,7 @@ Type your Buildron mods folder:
 Click on "Build" button.
 ![](../images/BuildronModTemplateBuildMod.png)
 
-Go to folder MyAmazingMod/build open the Buildron of your platform.
+Go to folder MyAmazingMod/build and open the Buildron of your platform.
 
 Hit the play button on Buildron.
 
