@@ -39,7 +39,7 @@ Delete the sample file BoxController.cs
 
 Create a new class called ModController and add the code below to it:
 
-```csharp
+```shell
 public class ModController : MonoBehaviour
 {
    #region Fields
