@@ -6,10 +6,13 @@ image: http://diegogiacomelli.com.br/images/BuildronLogo.png
 ---
 In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.
 
-### ModController class
+
+ModController class
+======
 ModController class will be a MonoBehaviour responsible to showing to the user a window where the Buildron events will be logged. It’s a very simple Unity3d MonoBehaviour that use some GUILayout stuffs to build its UI.
 
-### Mod class
+Mod class
+======
 Mod class is the basic class for every Buildron mod and it will be responsible to creating the ModController GameObject and attach to listen a lot of the Buildron events.
 
 ## Download Buildron-Mod-Template
@@ -123,7 +126,7 @@ namespace ConsoleMod
 		{
 			    context.BuildFound += (sender, e) =>
 			    {
-				controller.AddMessage("Build found: {0}", e.Build);
+				        controller.AddMessage("Build found: {0}", e.Build);
 			    };
 
 			    context.BuildRemoved += (sender, e) =>
@@ -224,9 +227,8 @@ You should see the ConsoleMod window registering a lot of Buildron events.
 ![](../images/ConsoleMod-Buildron.png)
 
 ## Conclusion
-That's it! We created a Buildron mod that can help to debug what is happening in Buildron and mods in runtime. 
+That's it! We created a Buildron mod that can help to debug what is happening in Buildron and mods in runtime.
 
 So, why you don't try to **create your own Buildron mod now**?
 
 You can see the full source code of this post on [https://github.com/giacomelli/Buildron-ConsoledMod](https://github.com/giacomelli/Buildron-ConsoledMod).
-
