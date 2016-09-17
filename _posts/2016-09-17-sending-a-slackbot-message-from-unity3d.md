@@ -59,6 +59,6 @@ private IEnumerator WaitForPost(WWW post)
 {
 	yield return post;
 
-	m_log.Debug("Message sent.");
+	Debug.Log("Message sent.");
 }
 ```
