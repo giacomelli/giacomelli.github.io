@@ -13,52 +13,11 @@ I could have tried to compile those client libraries projects using a older .NET
 
 Then I decided to try a very raw solution using the Unity3d WWWForm and it worked well, very simple, but can be useful to someone. The result is the code bellow:
 
+
 ![](../images/SlackBotMessage.png)
 
 BotController
 ======
 
-```csharp
-public class BotController : MonoBehaviour
-{
+{% gist 1c8e405116e1b48a7d25dec9b36edbea %}
 
-private void Start()
-{
-   Send("Hello world!");
-}
-		
-/// <summary>
-/// Sends a message to a Slack channel using the Slackbot API through the chat.postMessage (https://api.slack.com/methods/chat.postMessage)
-/// </summary>
-private void Send(string message)
-{
-	Debug.Log("Sending message '{0}'...", message);
-	
-	var url = "https://slack.com/api/chat.postMessage";
-	var data = new WWWForm();
-	
-	// Create your Slackbot and its API token here: https://my.slack.com/services/new/bot
-	data.AddField("token", "YOUR SLACK BOT API TOKEN");
-	
-	// The Slack channel.
-	data.AddField("channel", "general");
-	
-	// How the Slack bot will be identified in Slack.
-	data.AddField("username", "Buildron");
-	
-	// Your bot icon url image.
-	data.AddField("icon_url", "https://raw.githubusercontent.com/skahal/Buildron/master/docs/images/Buildron-logo-128x128.png");
-	
-	data.AddField("text", message);
-
-	var post = new WWW(url, data);
-	StartCoroutine(WaitForPost(post));
-}
-
-private IEnumerator WaitForPost(WWW post)
-{
-	yield return post;
-
-	Debug.Log("Message sent.");
-}
-```
