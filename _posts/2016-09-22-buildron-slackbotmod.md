@@ -5,10 +5,10 @@ title: Buildron SlackBotMod
 image: http://diegogiacomelli.com.br/images/BuildronLogo.png
 ---
 
-[Buildron](https://github.com/skahal/buildron) is a build radiator to help software development teams see the current status of their continous integration server and [Slack](https://slack.com/) is the omnipresent communication app for almost every developer in the world.
+[Buildron](https://github.com/skahal/buildron) is a build radiator to help software development teams to see the current status of their continous integration server and [Slack](https://slack.com/) is the omnipresent communication app for almost every developer in the world.
  
 
-For these reasons, I made a mod called [Buildron.SlackBotMod](https://github.com/giacomelli/Buildron.SlackBotMod) that let you interact with Buildron through Slack.
+For these reasons, I made a mod called [Buildron.SlackBotMod](https://github.com/giacomelli/Buildron.SlackBotMod) that let you interact with Buildron through the Slack.
 
 ![](../images/Buildron.SlackBotMod-2016-09-18.gif)
 
@@ -53,4 +53,4 @@ Take a screenshot of current Buildron state.
 
 ## Conclusion
 If you are not using Buildron yet, [give it a try](https://github.com/skahal/buildron).
-If you are already using Buildron and Slack, try my [Buildron.SlackBotMod](https://github.com/giacomelli/Buildron.SlackBotMod#installation).
+If you are already using Buildron and Slack, try my [Buildron.SlackBotMod](https://github.com/giacomelli/Buildron.SlackBotMod).
