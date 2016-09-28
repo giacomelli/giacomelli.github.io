@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 published: true
 ---
-My open *source* **projects**:
+My open source projects:
 
 ## [AppsInfo](https://github.com/giacomelli/AppsInfo)
 [https://github.com/giacomelli/AppsInfo](https://github.com/giacomelli/AppsInfo)
@@ -331,7 +331,7 @@ My open *source* **projects**:
 ## [TheOthers](https://github.com/giacomelli/TheOthers)
 [https://github.com/giacomelli/TheOthers](https://github.com/giacomelli/TheOthers)
 
-*C# library to monitor all external dependencies of your app. An external dependency or &amp;quot;The Other&amp;quot;, can be anything that your current app is depentent, like others systems, web apis, web services and databases.*
+*C# library to monitor all external dependencies of your app. An external dependency or "The Others", can be anything that your current app is depentent, like others systems, web apis, web services and databases.*
 
 --------
 
