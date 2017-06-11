@@ -16,7 +16,7 @@ A new sample has been added to the GeneticSharp.Runner.GtkApp, this sample calle
 
 Besides these new chromosomes, there is a new mutation: FlipBit, a special mutation to IBinaryChromosome that takes the chosen gene and inverts the bits.
 	
-If want to use the new chromosomes in your project, just get the new GeneticSharp version from Nuget.
+If you want to use the new chromosomes in your project, just get the new GeneticSharp version from Nuget.
 
 In the next days I will post a tutorial showing how to optimize a very simple function using GeneticSharp and the new FloatingPointChromosome.
 
