@@ -21,3 +21,7 @@ If you want to use the new chromosomes in your project, just get the new Genetic
 In the next days I will post a tutorial showing how to optimize a very simple function using GeneticSharp and the new FloatingPointChromosome.
 
 Let's evolve!
+<br><br><br>
+
+
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
