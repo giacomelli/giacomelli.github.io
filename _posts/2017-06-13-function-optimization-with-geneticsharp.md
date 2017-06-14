@@ -89,9 +89,7 @@ The population represents the possible solutions to our problem, so we need to c
 
 In GeneticSharp a population is represented by the [IPopulation](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Populations/IPopulation.cs) interface, but in most cases you can directly use the [Population](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Populations/Population.cs) class.
 
-```csharp
-var population = new Population(50, 100, chromosome);
-```
+{% gist b6861313762464fe62b652ef7d03b91c CreatingThePopulation.cs %}
 
 We created a population that will have a minimum number of 50 chromosomes and a maximum number of 100 and used our chromosome template as the "Adam chromosome" (yeah, you get the reference) of our GA.
 
@@ -102,20 +100,8 @@ The fitness function is where the genetic algoritm will evaluate and give a valu
 
 In GeneticSharp we represent a fitness function through the [IFitness](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/IFitness.cs) interface. Almost always you wil have to code a class that implement this interface, but for our tutorial we can use the simple and lower friction class [FuncFitness](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/FuncFitness.cs). This class allow us to build our fitness evalution as its constructor argument.
 
-```csharp
-var fitness = new FuncFitness((c) =>
-{
-	var fc = c as FloatingPointChromosome;
+{% gist b6861313762464fe62b652ef7d03b91c CreatingTheFitnessFunction.cs %}
 
-	var values = fc.ToFloatingPoints();
-	var x1 = values[0];
-	var y1 = values[1];
-	var x2 = values[2];
-	var y2 = values[3];
-
-	return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
-});
-```
 We receive a IChromosome in the variable "c", then we cast it to FloatingPointChromosme.
 
 To allow us to evaluate the chromosome we need to convert it from its genotype (FloatingPointChromosome) to its phenotype (x1, y1 and x2, y2), we do this calling the ToFloatingPoints method. This method return an array of numbers using that configuration we used when we created our Euclidean distance chromosome. Now we have our X1, Y1 and X2 and Y2 numbers we just need to pass it to the Euclidean distance function and return the value as the fitness value of the current chromosome.
@@ -129,9 +115,7 @@ You can code your our selection through the [ISelection](https://github.com/giac
 
 Besides this, you can use the already implemented classic selections: [Elite](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/EliteSelection.cs), [Roulete Wheel](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/RouletteWheelSelection.cs), [Stochastic Universal Sampling](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/StochasticUniversalSamplingSelection.cs) and [Tournament](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/TournamentSelection.cs).
 
-```csharp
-var selection = new EliteSelection();
-```
+{% gist b6861313762464fe62b652ef7d03b91c CreatingTheSelection.cs %}
 
 Elite selection is a good option, because it will select the chromosomes with the best fitness (greatest distance). You can try the others selection options too and see how they change the GA speed and results.
 
@@ -144,9 +128,7 @@ There are the [ICrossover](https://github.com/giacomelli/GeneticSharp/blob/maste
 
 > Some of those classics crossovers, like OX1 and OX2, cannot be used in our tutorial because they need chromosomes with ordered genes and this is not the case of our chromosomes with 0101001100 genes. Do not worry, because GeneticSharp will warn you if you try to use an invalid chromosome in an ordered crossover
 
-```csharp
-var crossover = new UniformCrossover(0.5f);
-```
+{% gist b6861313762464fe62b652ef7d03b91c CreatingTheCrossover.cs %}
 
 Uniform Crossover enables the parent chromosomes to contribute the gene level rather than the segment level, for example: if the mix probability is 0.5, the offspring has approximately half of the genes from first parent and the other half from second parent.
 
@@ -164,9 +146,7 @@ The mutation operator has the same purpose in genetic algorithm, it avoid that o
 
 Like the other operators, you can create your own mutation implementing the [IMutation](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/IMutation.cs) interface or extending [MutationBase](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/MutationBase.cs) or use some from the GeneticSharp menu: [Flip-bit](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/FlipBitMutation.cs), [Reverse Sequence (RSM)](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/ReverseSequenceMutation.cs), [Twors](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/TworsMutation.cs) and [Uniform](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/UniformMutation.cs).
 
-```csharp
-var mutation = new FlipBitMutation();
-```
+{% gist b6861313762464fe62b652ef7d03b91c CreatingTheMutation.cs %}
 
 Flip-bit mutation is a mutation specific to chromosomes that implement [IBinaryChromosome](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Chromosomes/IBinaryChromosome.cs) interface, as our FloatingPointChromosome does. It will randomly chose a gene and flip it bit, so a gene with value 0 will turn to 1 and vice-versa.
 
@@ -179,9 +159,7 @@ There are cases where you want to call the Start method in just wait until some 
 
 If you have some special condition to terminate your GA you can implement the [ITermination](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/ITermination.cs) interface or extend the [TerminationBase](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/TerminationBase.cs) class, but for most of cases you just need to use some of the availables terminations: [Generation number](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/GenerationNu), [Time evolving](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/TimeEvolvingTermination.cs), [Fitness stagnation](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/FitnessStagnationTermination.cs), [Fitness threshold](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/FitnessThresholdTermination.cs), [And](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/AndTermination.cs) e [Or](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/OrTermination.cs) (allows combine others terminations).
 
-```csharp
-var termination = new FitnessStagnationTermination(100);
-```
+{% gist b6861313762464fe62b652ef7d03b91c CreatingTheTermination.cs %}
 
 In our tutorial we will use the fitness stagnation termination with a expected stagnant generations number of 100, this mean that if our GA generate the same best chromsome fitness in the last 100 generations then it will be terminated. 
 
@@ -190,18 +168,7 @@ In our tutorial we will use the fitness stagnation termination with a expected s
 
 Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.
 
-```csharp
-var ga = new GeneticAlgorithm(
-	population,
-	fitness,
-	selection,
-	crossover,
-	mutation);
-
-ga.Termination = termination;
-
-ga.Start();
-```
+{% gist b6861313762464fe62b652ef7d03b91c RunningtheGA1.cs %}
 
 So the GA ran, but where is the result? You can always get the best chromosome from the GeneticAlgorithm.BestChromosome property.
 
@@ -210,37 +177,7 @@ realtime how the genetic algorithm is evolving.
 
 Let's replace our last "ga.Start();" line to the code below:
 
-```csharp
-Console.WriteLine("Generation: (x1, y1), (x2, y2) = distance");
-
-var latestFitness = 0.0;
-
-ga.GenerationRan += (sender, e) =>
-{
-	var bestChromosome = ga.BestChromosome as FloatingPointChromosome;
-	var bestFitness = bestChromosome.Fitness.Value;
-
-	if (bestFitness != latestFitness)
-	{
-		latestFitness = bestFitness;
-		var phenotype = bestChromosome.ToFloatingPoints();
-
-		Console.WriteLine(
-			"Generation {0,2}: ({1},{2}),({3},{4}) = {5}",
-			ga.GenerationsNumber,
-			phenotype[0],
-			phenotype[1],
-			phenotype[2],
-			phenotype[3],
-			bestFitness
-		);
-	}
-};
-
-ga.Start();
-
-Console.ReadKey();
-```
+{% gist b6861313762464fe62b652ef7d03b91c RunningtheGA2.cs %}
 
 Now if your run the program you will see an output like that:
 
