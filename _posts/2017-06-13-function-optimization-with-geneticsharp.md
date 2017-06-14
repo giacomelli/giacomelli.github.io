@@ -78,7 +78,7 @@ The constructor receive four arrays, they are:
 
 3) The total bits used to represent each number. The maximum value is 998, so 10 bits is what we need. 
 
-> GeneticSharp will warn you if you try to use a total bits that can hold a number inside your floating point chromosome.
+> GeneticSharp will warn you if you try to use a total bits that cannot hold a number inside your floating point chromosome.
 
 4) The number of bits from total bits that must be used the fraction (scale or decimal) part of the number. In our case we will not use any.
 
