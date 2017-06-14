@@ -66,16 +66,7 @@ The FloatinPoingChromome is a perfect fit for this kind of representation, becau
 
 Open the Program.cs file and inside the Main function enter the code below:
 
-```csharp
-float maxWidth = 998f; 
-float maxHeight = 680f;
-
-var chromosome = new FloatingPointChromosome(
-	new double[] { 0, 0, 0, 0 },
-	new double[] { maxWidth, maxHeight, maxWidth, maxHeight },
-	new int[] { 10, 10, 10, 10},
-	new int[] { 0, 0, 0, 0 });
-```
+{% gist b6861313762464fe62b652ef7d03b91c CreatingAnEuclideanDistanceChromsome.cs %}
 
 In the code above we create two variables to represent our rectangle area size: maxWidth and maxHeight, then we created a new instance of FloatingPointChromome, this will be the template to all chromsome in our solution.
 
@@ -278,7 +269,7 @@ We can see that in the first generations (black lines) the genetic algorithm as 
 
 When you finish the tutorial your source code will be this one:
 
-{% gist b6861313762464fe62b652ef7d03b91c %}
+{% gist b6861313762464fe62b652ef7d03b91c CompleteSourceCode.cs %}
 
 ## Conclusion
 ![](../images/conclusion.png)
