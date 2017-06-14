@@ -87,7 +87,7 @@ The constructor receive four arrays, they are:
 
 3) The total bits used to represent each number. The maximum value is 998, so 10 bits is what we need. 
 
-> GeneticSharp will warn you if you try to use a total bits that can hold a number inside your floatin point chromosome.` 
+> GeneticSharp will warn you if you try to use a total bits that can hold a number inside your floating point chromosome.
 
 4) The number of bits from total bits that must be used the fraction (scale or decimal) part of the number. In our case we will not use any.
 
@@ -109,7 +109,7 @@ We created a population that will have a minimum number of 50 chromosomes and a 
 
 The fitness function is where the genetic algoritm will evaluate and give a value (fitness) to each chromosome generated inside it. A good fitness function can guide your GA to a fast and optimum solution.
 
-In GeneticSharp we represent a fitness function through the [IFitness](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/IFitness.cs) interface. Almost always you wil have to code a class that implement this interface, but for our tutorial we can use the simple and lower friction class [FuncFitness](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/FuncFitness.cs). This class allow we build our fitness evalution as its constructor argument.
+In GeneticSharp we represent a fitness function through the [IFitness](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/IFitness.cs) interface. Almost always you wil have to code a class that implement this interface, but for our tutorial we can use the simple and lower friction class [FuncFitness](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/FuncFitness.cs). This class allow us to build our fitness evalution as its constructor argument.
 
 ```csharp
 var fitness = new FuncFitness((c) =>
@@ -122,13 +122,12 @@ var fitness = new FuncFitness((c) =>
 	var x2 = values[2];
 	var y2 = values[3];
 
-	// Euclidean distance: https://en.wikipedia.org/wiki/Euclidean_distance
 	return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
 });
 ```
 We receive a IChromosome in the variable "c", then we cast it to FloatingPointChromosme.
 
-To allow us to evaluate the chromosome we need to convert it from its genotype (FloatingPointChromosome) to its phenotype (x1, y1 and x2, y2), we do this calling the ToFloatingPoints method. This method return an array of numbers using that configuration we used when we created our Euclidean distance chromosome. Now we have our X1, Y1 and X2 and Y2 numbers we just need to pass it to the Euclidean fitness function and return the value as the fitness value of the current chromosome.
+To allow us to evaluate the chromosome we need to convert it from its genotype (FloatingPointChromosome) to its phenotype (x1, y1 and x2, y2), we do this calling the ToFloatingPoints method. This method return an array of numbers using that configuration we used when we created our Euclidean distance chromosome. Now we have our X1, Y1 and X2 and Y2 numbers we just need to pass it to the Euclidean distance function and return the value as the fitness value of the current chromosome.
 
 ## Creating the selection
 ![](../images/podium.png)
@@ -148,7 +147,7 @@ Elite selection is a good option, because it will select the chromosomes with th
 ## Creating the crossover
 ![](../images/cross.png)
 
-The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing the selected chromosomes by the selection operator.
+The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing these selected chromosomes.
 
 There are the [ICrossover](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/ICrossover.cs) interface and [CrossoverBase](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/CrossoverBase.cs) class if you want to code your crossover from scratch or you can use one of already available: [Cut and Splice](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/CutAndSpliceCrossover.cs), [Cycle (CX)](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/CycleCrossover.cs), [One-Point (C1)](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/OnePointCrossover.cs), [Order-based (OX2)](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/OrderBasedCrossover.cs), [Ordered (OX1)](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/OrderedCrossover.cs), [Partially Mapped (PMX)](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/PartiallyMappedCrossover.cs), [Position-based (POS)](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/PositionBasedCrossover.cs), [Three parent](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/ThreeParentCrossover.cs), [Two-Point (C2)](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/TwoPointCrossover.cs) and [Uniform](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/UniformCrossover.cs)
 
@@ -172,7 +171,7 @@ This biological process is one of the process responsible for I am able to write
 
 The mutation operator has the same purpose in genetic algorithm, it avoid that our GA get stuck in optima local and end up never finding a better solution.
 
-Like the other operators, you can create your own mutation implementing the [IMutation](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/IMutation.cs) interface or extending [MutationBase](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/MutationBase.cs) or use some from the GeneticSharp menu: [Reverse Sequence (RSM)](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/ReverseSequenceMutation.cs), [Twors](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/TworsMutation.cs) and [Uniform](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/UniformMutation.cs).
+Like the other operators, you can create your own mutation implementing the [IMutation](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/IMutation.cs) interface or extending [MutationBase](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/MutationBase.cs) or use some from the GeneticSharp menu: [Flip-bit](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/FlipBitMutation.cs), [Reverse Sequence (RSM)](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/ReverseSequenceMutation.cs), [Twors](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/TworsMutation.cs) and [Uniform](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/UniformMutation.cs).
 
 ```csharp
 var mutation = new FlipBitMutation();
@@ -277,97 +276,9 @@ We can see that in the first generations (black lines) the genetic algorithm as 
 ## Complete source code
 ![](../images/programmer.png)
 
-When you finish the tutorial your source code will be like this:
+When you finish the tutorial your source code will be this one:
 
-```csharp
-using System;
-using GeneticSharp.Domain;
-using GeneticSharp.Domain.Chromosomes;
-using GeneticSharp.Domain.Crossovers;
-using GeneticSharp.Domain.Fitnesses;
-using GeneticSharp.Domain.Mutations;
-using GeneticSharp.Domain.Populations;
-using GeneticSharp.Domain.Selections;
-using GeneticSharp.Domain.Terminations;
-
-namespace FunctionOptimizationWithGeneticSharp
-{
-	class MainClass
-	{
-		public static void Main(string[] args)
-		{
-			float maxWidth = 998f;
-			float maxHeight = 680f;
-		
-			var chromosome = new FloatingPointChromosome(
-				new double[] { 0, 0, 0, 0 },
-				new double[] { maxWidth, maxHeight, maxWidth, maxHeight },
-				new int[] { 10, 10, 10, 10 },
-				new int[] { 0, 0, 0, 0 });
-
-			var population = new Population(50, 100, chromosome);
-
-			var fitness = new FuncFitness((c) =>
-			{
-				var fc = c as FloatingPointChromosome;
-
-				var values = fc.ToFloatingPoints();
-				var x1 = values[0];
-				var y1 = values[1];
-				var x2 = values[2];
-				var y2 = values[3];
-
-				// Euclidean distance: https://en.wikipedia.org/wiki/Euclidean_distance
-				return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
-			});
-
-			var selection = new EliteSelection();
-			var crossover = new UniformCrossover(0.5f);
-			var mutation = new FlipBitMutation();
-			var termination = new FitnessStagnationTermination(100);
-
-			var ga = new GeneticAlgorithm(
-				population,
-				fitness,
-				selection,
-				crossover,
-				mutation);
-
-			ga.Termination = termination;
-
-			Console.WriteLine("Generation: (x1, y1), (x2, y2) = distance");
-
-			var latestFitness = 0.0;
-
-			ga.GenerationRan += (sender, e) =>
-			{
-				var bestChromosome = ga.BestChromosome as FloatingPointChromosome;
-				var bestFitness = bestChromosome.Fitness.Value;
-
-				if (bestFitness != latestFitness)
-				{
-					latestFitness = bestFitness;
-					var phenotype = bestChromosome.ToFloatingPoints();
-
-					Console.WriteLine(
-						"Generation {0,2}: ({1},{2}),({3},{4}) = {5}",
-						ga.GenerationsNumber,
-						phenotype[0],
-						phenotype[1],
-						phenotype[2],
-						phenotype[3],
-						bestFitness
-					);
-				}
-			};
-
-			ga.Start();
-
-			Console.ReadKey();
-		}
-	}
-}
-```
+{% gist b6861313762464fe62b652ef7d03b91c %}
 
 ## Conclusion
 ![](../images/conclusion.png)
