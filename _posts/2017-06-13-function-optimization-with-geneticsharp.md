@@ -51,7 +51,7 @@ install-package GeneticSharp
 
 GeneticSharp implements all the classic components of a genetic algorithm, like gene, chromosome, population, fitness, selection, crossover, mutation, reinsetion and termination. When you use it to build your genetic algorithm code you just need to implement a few things, mostly you will need to code just your solution's chromosome and fitness. 
 
-## Creating an Euclidean distance chromsome
+## Creating an Euclidean distance chromosome
 ![](../images/chromosome.png)
 
 Chromosome is the representation of a possible solution in genetic algoritms.
