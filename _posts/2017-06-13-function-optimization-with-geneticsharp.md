@@ -80,7 +80,7 @@ The constructor receive four arrays, they are:
 
 > GeneticSharp will warn you if you try to use a total bits that cannot hold a number inside your floating point chromosome.
 
-4) The number of bits from total bits that must be used the fraction (scale or decimal) part of the number. In our case we will not use any.
+4) The number of fraction (scale or decimal) part of the number. In our case we will not use any.
 
 ## Creating the population
 ![](../images/population.png)
