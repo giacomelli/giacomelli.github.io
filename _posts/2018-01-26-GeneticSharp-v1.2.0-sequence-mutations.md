@@ -9,7 +9,7 @@ The **[GeneticSharp v1.2.0](https://github.com/giacomelli/GeneticSharp)** is out
 The additions of this version are the new sequence mutation operators: Displacement, InsertionMutation and Partial Shuffle (PSM).
 
 <center>
-![](../images/mutation.png)
+<img src="../images/mutation.png">
 </center>
 
 **Displacement Mutation**: a substring is randomly selected from chromosome, is removed, then replaced at a randomly selected position.
