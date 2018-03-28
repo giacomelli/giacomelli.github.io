@@ -68,7 +68,7 @@ The extensions from GeneticSharp.Extensions project needed some more work, becau
 The NCalc library used on FunctionBuilderFitness was updated to use the [NCalc.NetCore](https://www.nuget.org/packages/NCalc.NetCore/) version.
 
 ### Threading
-One of the most tricky porting was the GeneticSharp.Infrastructure.Threading, because it used the external library [SmartThreadPool](https://github.com/amibar/SmartThreadPool) and that one was not supporting .NET Core at that time. I decided to implement the parallel task executor using the .NET built-in ThreadPool class, this implementation was done on [ParallelTaskExecutor](GeneticSharp.Infrastructure.Framework.Threading/ParallelTaskExecutor.cs) and its use can be tested on  [ParallelTaskExecutorTest](GeneticSharp.Infrastructure.Framework.UnitTests.Threading/ParallelTaskExecutorTest.cs).
+One of the most tricky porting was the GeneticSharp.Infrastructure.Threading, because it used the external library [SmartThreadPool](https://github.com/amibar/SmartThreadPool) and that one was not supporting .NET Core at that time. I decided to implement the parallel task executor using the .NET built-in ThreadPool class, this implementation was done on [ParallelTaskExecutor](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Infrastructure.Framework/Threading/ParallelTaskExecutor.cs) and its use can be tested on  [ParallelTaskExecutorTest](https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Infrastructure.Framework.UnitTests/Threading/ParallelTaskExecutorTest.cs).
 
 ### GtkApp
 GeneticSharp sample app (GeneticSharp.Runner.GtkApp) was built using Gtk# 2, but only version 3 was ported to .NET Core, and there are huge breaking changes between these two Gtk# versions, so for a while I'll keeping the sample app still running only on .NET Framework/Mono.
@@ -132,11 +132,11 @@ Delete the "obj" and "bin" folders from unit test project will "fix" the problem
 </center>
 
 * The GeneticSharp NuGet package was split into two packages:
- * GeneticSharp: only GeneticSharp.Domain.dll and GeneticSharp.Infrastructure.Framework.dll
- * GeneticSharp.Extensions: depends on GenetiSharp.Package and add the GeneticSharp.Extensions.dll.
+    * GeneticSharp: only GeneticSharp.Domain.dll and GeneticSharp.Infrastructure.Framework.dll
+    * GeneticSharp.Extensions: depends on GenetiSharp.Package and add the GeneticSharp.Extensions.dll.
 * SmartThreadPoolTaskExecutor does not exists anymore. You should use ParallelTaskExecutor class (not disposable).
 * The projects are not signed anymore:
- * [Error signing output with public key from file 'x.snk' -- Assembly signing not supported](https://github.com/dotnet/cli/issues/6911#issuecomment-309647478)
+    * [Error signing output with public key from file 'x.snk' -- Assembly signing not supported](https://github.com/dotnet/cli/issues/6911#issuecomment-309647478)
 * In the ConsoleApp the EquationSolverSampleController was removed until the [Jace](https://github.com/pieterderycke/Jace) library suportt .NET Core.
 
 
