@@ -45,7 +45,7 @@ install-package GeneticSharp -Version 1.2.0
 
 ## Porting
 <center>
-![](../images/porting.png)
+<img src="../images/porting.png">
 </center>
 
 ### Warmup
@@ -128,7 +128,7 @@ Delete the "obj" and "bin" folders from unit test project will "fix" the problem
 
 ## Breaking changes
 <center>
-![](../images/breaking-changes.png)
+<img src="../images/breaking-changes.png" >
 </center>
 
 * The GeneticSharp NuGet package was split into two packages:
@@ -142,7 +142,7 @@ Delete the "obj" and "bin" folders from unit test project will "fix" the problem
 
 ## Reads during the porting
 <center>
-![](../images/conclusion.png)
+<img src="../images/conclusion.png">
 </center>
 
 Some readings I did during the whole process, maybe can be useful to someone porting a library to .NET Core too.
