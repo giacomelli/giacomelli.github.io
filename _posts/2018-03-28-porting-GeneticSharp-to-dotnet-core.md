@@ -18,7 +18,7 @@ In this version GeneticSharp starts to support .NET Standard 2.0 and .NET Framew
 [Sometime ago I started to porting GeneticSharp to .NET Core](
 https://twitter.com/ogiacomelli/status/958114986601172992) and today, after more than 40 hours of work, I finally finish it. 
 
-Although GeneticSharp born as a multi-platform library that ran in any SO supported by .NET Framework and Mono, convert it to .NET Core was a desired thing, because .NET Core is where .NET ecosystem is targeting.
+Although GeneticSharp born as a multi-platform library that ran in any OS supported by .NET Framework and Mono, convert it to .NET Core was a desired thing, because .NET Core is where .NET ecosystem is targeting.
 
 ## Release candidate
 This 2.0.0-rc1 was already published to nuget.org, but it's marked as a pre-realease package. I will kept it as a RC until get sure that there is no issue with the porting and until the Unity3d remove the "experimental" status to its support to .NET Standard 2.0.
