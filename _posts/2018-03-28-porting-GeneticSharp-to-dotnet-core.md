@@ -172,3 +172,4 @@ Now I'm planning to create a GeneticSharp's sample using Unity3d's new beta feat
 
 Let's evolve!
 
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
