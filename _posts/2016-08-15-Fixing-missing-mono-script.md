@@ -9,7 +9,7 @@ A problem that is recurrent to most game developers using Unity3d is the annoyin
 
 ![](../images/MissingMonoScript.png)
 
-> :exclamation: This project was made to **Unity 5.3.6** and it's not compabible with latest Unity versions. I'm keeping here just for reference purpose.
+> This project was made to **Unity 5.3.6** and it's not compabible with latest Unity versions. I'm keeping here just for reference purpose.
 
 ### Missing script resolver
 To easy solve this problem I created a tool called "Missing script resolver" inside the project [Giacomelli.Unity.EditorToolbox](https://github.com/giacomelli/Giacomelli.Unity.EditorToolbox). This editor toolbox is (or will be) a collection of tools to make my life as Unity3d developer easier. I hope it can help others game developers too.
