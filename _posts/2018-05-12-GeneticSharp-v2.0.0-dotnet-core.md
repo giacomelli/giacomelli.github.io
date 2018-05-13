@@ -12,7 +12,7 @@ The **[GeneticSharp v2.0.0](https://github.com/giacomelli/GeneticSharp/releases/
 <img src="../images/netcore.svg" width="128">
 </center>
 
-In march GenetichSharp start to support .NET Standard 2.0 in the 2.0.0-rc version. Two months have pass and in the meanwhile the community have time to test that release candidate version and now Unity3D has an officiak .NET Standard 2.0 profile.
+In march GenetichSharp start to support .NET Standard 2.0 in the 2.0.0-rc version. Two months have pass and in the meanwhile the community have time to test that release candidate version and now Unity3D has an official .NET Standard 2.0 profile.
 
 So, it's time to release the GeneticSharp v2.0.0.
 
