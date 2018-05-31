@@ -27,7 +27,7 @@ This sample inspired this post [TSP with GeneticSharp and Unity3D](http://localh
 This sample try to build a higher wall using random initial bricks positions.
 
 <center>
-<iframe width="640" height="480" src="https://www.youtube.com/embed/xXqNcgeOU_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/xXqNcgeOU_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </center>
 
 
