@@ -34,7 +34,7 @@ var dosbox = new Dosbox({
 
 Below is the result. Enjoy it!
 
-<iframe src="../labs/testing-js-dos/nibble.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="../labs/testing-js-dos/nibble.html" frameborder="0" allowfullscreen></iframe>
 
 The full sample can be download here: [sample](../labs/testing-js-dos/sample.zip).
 
