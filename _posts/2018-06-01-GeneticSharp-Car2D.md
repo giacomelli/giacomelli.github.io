@@ -120,7 +120,7 @@ All the challenges in the roads are incremental, the gaps start small and get bi
 
 **Why does the challenges need to be incremental?**
 
-During first tests with gap road a realize if a just put a 8 meters gap in front of first generation cars, the genetic algoritm can choose better designs, because most of them just fall in the first gap. The challenge was too much for the initial generations, but if I just increase the size of the gaps until get the 8 meters gap, the genetic algorithm can choose better and better designs each generation.
+During first tests with the gap road I realized if I just put a 8 meters gap in front of first generation cars, the genetic algoritm can not choose better designs, because most of them just fall in the first gap. The challenge was too much for the initial generations, but if I just increased the size of the gaps from small size until get the 8 meters gap, the genetic algorithm could choose better and better designs each generation.
 
 **It's how we learn**
 
