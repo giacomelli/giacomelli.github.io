@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 layout: post
 title: Fixing "Missing (Mono Script)"
 image: http://diegogiacomelli.com.br/images/MissingMonoScript.png
