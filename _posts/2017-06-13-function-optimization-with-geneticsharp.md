@@ -106,6 +106,8 @@ We receive a IChromosome in the variable "c", then we cast it to FloatingPointCh
 
 To allow us to evaluate the chromosome we need to convert it from its genotype (FloatingPointChromosome) to its phenotype (x1, y1 and x2, y2), we do this calling the ToFloatingPoints method. This method return an array of numbers using that configuration we used when we created our Euclidean distance chromosome. Now we have our X1, Y1 and X2 and Y2 numbers we just need to pass it to the Euclidean distance function and return the value as the fitness value of the current chromosome.
 
+{% include ad.html %} 
+
 ## Creating the selection
 ![](../images/podium.png)
 
