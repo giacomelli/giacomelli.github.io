@@ -2,12 +2,16 @@
 published: true
 layout: post
 title: Function optimization with GeneticSharp
-image: http://diegogiacomelli.com.br/images/math-function.png
+image: http://diegogiacomelli.com.br/images/GeneticSharp-logo.png
 ---
 In this tutorial we will learn how to use GeneticSharp to optimize the inputs of math function and more about genetic algorithms meanwhile.
 
 ## Introduction
 I created [GeneticSharp](https://github.com/giacomelli/GeneticSharp) a long time ago because three main reasons:
+
+<center>
+<img src="../images/GeneticSharp-logo.png">
+</center>
 
 * I needed a fast, extensible, multi-platform and multithreading C# genetic algorithm library to use in my GA experiments;
 * I wanted to study and understand GA better;  

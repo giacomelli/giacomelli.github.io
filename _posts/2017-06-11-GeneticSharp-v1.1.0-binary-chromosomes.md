@@ -2,11 +2,11 @@
 published: true
 layout: post
 title: GeneticSharp v1.1.0 - Binary chromosomes
-image: http://diegogiacomelli.com.br/images/binary.png
+image: http://diegogiacomelli.com.br/images/GeneticSharp-logo.png
 ---
 The **[GeneticSharp v1.1.0](https://github.com/giacomelli/GeneticSharp)** is out. The greatest additions of this version are the binary chromosomes: **FloatingPointChromosome and IntegerChromosome.**
 
-![](../images/binary.png)
+![](../images/GeneticSharp-logo.png)
 
 Binary chromosomes can be directly used when your solution chromosome can be represented as numbers or a string representation of 0 and 1.
 

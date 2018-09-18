@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: GeneticSharp Car2D  
-image: http://diegogiacomelli.com.br/labs/GeneticSharp-Car2D/car.png
+image: http://diegogiacomelli.com.br/images/GeneticSharp-logo.png
 ---
 
 I made an Unity3D sample for [GeneticSharp](https://github.com/giacomelli/GeneticSharp) inspired by amazing [BoxCar2D](http://boxcar2d.com/about.html) where a genetic algorithm tries to design 2D cars to overcome roads challenges.

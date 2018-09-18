@@ -2,14 +2,14 @@
 published: true
 layout: post
 title: GeneticSharp v1.2.0 - Sequence mutations
-image: http://diegogiacomelli.com.br/images/mutation.png
+image: http://diegogiacomelli.com.br/images/GeneticSharp-logo.png
 ---
 The **[GeneticSharp v1.2.0](https://github.com/giacomelli/GeneticSharp)** is out.
  
 The additions of this version are the new sequence mutation operators: Displacement, InsertionMutation and Partial Shuffle (PSM).
 
 <center>
-<img src="../images/mutation.png">
+<img src="../images/GeneticSharp-logo.png">
 </center>
 
 **Displacement Mutation**: a substring is randomly selected from chromosome, is removed, then replaced at a randomly selected position.

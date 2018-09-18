@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: GeneticSharp - Unity3d sample  
-image: http://diegogiacomelli.com.br/images/Unity3d.png
+image: http://diegogiacomelli.com.br/images/GeneticSharp-logo.png
 ---
  
 I just pushed to GeneticSharp master branch the [GeneticSharp.Runners.UnityApp](https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp). 

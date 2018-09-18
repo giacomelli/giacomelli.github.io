@@ -2,14 +2,15 @@
 published: true
 layout: post
 title: Porting GeneticSharp to .NET Core  
-image: http://diegogiacomelli.com.br/images/mutation.png
+image: hhttp://diegogiacomelli.com.br/images/GeneticSharp-logo.png
 ---
 The **[GeneticSharp v2.0.0-rc1](https://github.com/giacomelli/GeneticSharp/releases/tag/v2.0.0-rc1)** is out.
 
 In this version GeneticSharp starts to support .NET Standard 2.0 and .NET Framework 4.6.2.
  
 <center>
-<img src="../images/netcore.svg" width="128">
+Porting <img src="../images/GeneticSharp-logo.png">
+to <img src="../images/netcore.svg" width="128">
 </center>
 
 

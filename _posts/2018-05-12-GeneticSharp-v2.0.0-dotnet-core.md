@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: GeneticSharp v2.0.0 - .NET Core  
-image: http://diegogiacomelli.com.br/images/mutation.png
+image: http://diegogiacomelli.com.br/images/GeneticSharp-logo.png
 ---
 The **[GeneticSharp v2.0.0](https://github.com/giacomelli/GeneticSharp/releases/tag/v2.0.0)** is out with support to .NET Standard 2.0 and .NET Framework 4.6.2.
  
