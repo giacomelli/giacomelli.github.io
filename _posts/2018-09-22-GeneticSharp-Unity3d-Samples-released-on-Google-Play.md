@@ -5,7 +5,7 @@ title: GeneticSharp Unity3d Samples released on Google Play
 image: http://diegogiacomelli.com.br/images/GeneticSharp-logo.png
 ---
  
-I just published on Google Play the **GeneticSharp Unity3d Samples**. 
+I published on Google Play the **GeneticSharp Unity3d Samples**. 
 
 <center>
 <iframe src="https://www.youtube.com/embed/pJpZwCW2m4s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -28,7 +28,8 @@ Based on famous BoxCar2D, this sample uses a genetic algorithm to create car des
 ## TSP
 The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.
 
-This sample inspired this post [TSP with GeneticSharp and Unity3D](http://localhost:4000/tsp-with-GeneticSharp-and-Unity3d/).
+This sample inspired this post [TSP with GeneticSharp and Unity3D](http://diegogiacomelli.com.br/tsp-with-GeneticSharp-and-Unity3d/).
+
 <center>
 <img src="../images/GeneticSharp-Unity3d-Samples-TSP.png" width="512">
 </center>
