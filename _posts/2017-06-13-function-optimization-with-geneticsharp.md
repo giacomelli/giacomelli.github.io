@@ -66,7 +66,7 @@ Besides IChromosome and ChromosomeBase also exist the classes: [BinaryChromosome
 
 In our case we need to create a chromosome that represent the input variables of the Euclidean distance function: X1, Y1 and X2, Y2. 
 
-The FloatinPoingChromome is a perfect fit for this kind of representation, because it allows represent more than one number inside of it.
+The FloatingPointChromosome is a perfect fit for this kind of representation, because it allows represent more than one number inside of it.
 
 Open the Program.cs file and inside the Main function enter the code below:
 
