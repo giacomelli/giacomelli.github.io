@@ -50,7 +50,7 @@ No final de 2014, comecei a migrar o jogosdaqui para um site próprio em WordPre
 
 # Open source e colaborativo
 <center>
-<img src="https://jogosdaqui.github.io/assets/2018/11/15/jogosdaqui-open-source-e-colaborativo/logo.png" />
+<img src="https://jogosdaqui.github.io/assets/2018/11/21/jogosdaqui-open-source-e-colaborativo/logo.png" />
 </center>
 
 E essa história nos leva a esse momento, pois acredito que o material que o jogosdaqui produziu sobre os games nacionais, alguns deles que podem ser encontrados somente no jogosdaqui, não devem ser esquecidos ou perdidos.
@@ -59,6 +59,6 @@ Então no início desse mês comecei a conversão de todos os artigos, oriundos 
 
 Acessem o [https://jogosdaqui.github.io](https://jogosdaqui.github.io) e aproveitem para conhecer mais sobre jogos os eletrônicos brasileiros.
 <center>
-<img src="https://jogosdaqui.github.io/assets/2018/11/15/jogosdaqui-open-source-e-colaborativo/150-jogosdaqui.jpg"/>
+<img src="https://jogosdaqui.github.io/assets/2018/11/21/jogosdaqui-open-source-e-colaborativo/150-jogosdaqui.jpg"/>
 </center>
 
