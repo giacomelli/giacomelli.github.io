@@ -55,6 +55,6 @@ GTK# sample
 # Thanks to
 I would like to thanks to Jean-Sylvain Boige (@jsboige) for contributing with those great new samples and extensions and for use GeneticSharp in his [Artificial Intelligence course in French engineering schools (course)](https://github.com/giacomelli/GeneticSharp/pull/43#issuecomment-433662175).
 
-Take a look on the pull-request for fore details about those new features: [New Sudoku extension and GTK# sample #43](https://github.com/giacomelli/GeneticSharp/pull/43).
+Take a look on the pull-request for more details about those new features: [New Sudoku extension and GTK# sample #43](https://github.com/giacomelli/GeneticSharp/pull/43).
 
 Let's evolve!
