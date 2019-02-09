@@ -6,6 +6,64 @@ published: true
 ---
 My open source projects:
 
+
+## [GeneticSharp](https://github.com/giacomelli/GeneticSharp)
+[https://github.com/giacomelli/GeneticSharp](https://github.com/giacomelli/GeneticSharp)
+
+*GeneticSharp is a fast, extensible, multi-platform and multithreading C# Genetic Algorithm library that simplifies the development of applications using Genetic Algorithms (GAs).*
+
+--------
+
+## [Buildron](https://github.com/skahal/Buildron)
+[https://github.com/skahal/Buildron](https://github.com/skahal/Buildron)
+
+*Your builds, our world!*
+
+--------
+
+## [Doog](https://github.com/giacomelli/Doog)
+[https://github.com/giacomelli/Doog](https://github.com/giacomelli/Doog)
+
+*Doog is a platform to create console/terminal games, but using advanced game programming patterns.*
+
+--------
+
+## [DocsByReflection](https://github.com/giacomelli/DocsByReflection)
+[https://github.com/giacomelli/DocsByReflection](https://github.com/giacomelli/DocsByReflection)
+
+*Discover the code documentation at runtime by reflection.*
+
+--------
+
+## [HarSharp](https://github.com/giacomelli/HarSharp)
+[https://github.com/giacomelli/HarSharp](https://github.com/giacomelli/HarSharp)
+
+*A small and easy-to-use library to parse HTTP Archive (HAR) format to .NET objects.*
+
+--------
+
+## [HelperSharp](https://github.com/giacomelli/HelperSharp)
+[https://github.com/giacomelli/HelperSharp](https://github.com/giacomelli/HelperSharp)
+
+*A set of helpers and extensions for C# programming.*
+
+--------
+
+## [SpaceInvadersRemake](https://github.com/skahal/SpaceInvadersRemake)
+[https://github.com/skahal/SpaceInvadersRemake](https://github.com/skahal/SpaceInvadersRemake)
+
+*Space Invaders Skahal's remake*
+
+--------
+
+
+## [JobSharp](https://github.com/giacomelli/JobSharp)
+[https://github.com/giacomelli/JobSharp](https://github.com/giacomelli/JobSharp)
+
+*An easy-to-use C# jobs runner.*
+
+--------
+
 ## [AppsInfo](https://github.com/giacomelli/AppsInfo)
 [https://github.com/giacomelli/AppsInfo](https://github.com/giacomelli/AppsInfo)
 
@@ -45,13 +103,6 @@ My open source projects:
 [https://github.com/giacomelli/BotWorld](https://github.com/giacomelli/BotWorld)
 
 *A platform to create bots, environments and renderers for simulations.*
-
---------
-
-## [Buildron](https://github.com/skahal/Buildron)
-[https://github.com/skahal/Buildron](https://github.com/skahal/Buildron)
-
-*Your builds, our world!*
 
 --------
 
@@ -118,13 +169,6 @@ My open source projects:
 
 --------
 
-## [DocsByReflection](https://github.com/giacomelli/DocsByReflection)
-[https://github.com/giacomelli/DocsByReflection](https://github.com/giacomelli/DocsByReflection)
-
-*Discover the code documentation at runtime by reflection.*
-
---------
-
 ## [EasyBuild](https://github.com/giacomelli/EasyBuild)
 [https://github.com/giacomelli/EasyBuild](https://github.com/giacomelli/EasyBuild)
 
@@ -136,13 +180,6 @@ My open source projects:
 [https://github.com/giacomelli/Escrutinador](https://github.com/giacomelli/Escrutinador)
 
 *Read metadata from your entities no matter how they were defined.*
-
---------
-
-## [GeneticSharp](https://github.com/giacomelli/GeneticSharp)
-[https://github.com/giacomelli/GeneticSharp](https://github.com/giacomelli/GeneticSharp)
-
-*GeneticSharp is a fast, extensible, multi-platform and multithreading C# Genetic Algorithm library that simplifies the development of applications using Genetic Algorithms (GAs).*
 
 --------
 
@@ -174,31 +211,10 @@ My open source projects:
 
 --------
 
-## [HarSharp](https://github.com/giacomelli/HarSharp)
-[https://github.com/giacomelli/HarSharp](https://github.com/giacomelli/HarSharp)
-
-*A small and easy-to-use library to parse HTTP Archive (HAR) format to .NET objects.*
-
---------
-
-## [HelperSharp](https://github.com/giacomelli/HelperSharp)
-[https://github.com/giacomelli/HelperSharp](https://github.com/giacomelli/HelperSharp)
-
-*A set of helpers and extensions for C# programming.*
-
---------
-
 ## [IAgenteSmsSharp](https://github.com/giacomelli/IAgenteSmsSharp)
 [https://github.com/giacomelli/IAgenteSmsSharp](https://github.com/giacomelli/IAgenteSmsSharp)
 
 *Client library .NET para integraçãoo HTTP com o serviçoo de envio de SMS da IAgente ()*
-
---------
-
-## [JobSharp](https://github.com/giacomelli/JobSharp)
-[https://github.com/giacomelli/JobSharp](https://github.com/giacomelli/JobSharp)
-
-*An easy-to-use C# jobs runner.*
 
 --------
 
@@ -311,13 +327,6 @@ My open source projects:
 [https://github.com/giacomelli/SmartDiagnostics](https://github.com/giacomelli/SmartDiagnostics)
 
 *Extensions to facilitate diagnosis .NET code.*
-
---------
-
-## [SpaceInvadersRemake](https://github.com/skahal/SpaceInvadersRemake)
-[https://github.com/skahal/SpaceInvadersRemake](https://github.com/skahal/SpaceInvadersRemake)
-
-*Space Invaders Skahal's remake*
 
 --------
 
