@@ -1,0 +1,2224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - dotnet</title>
+ <link href="//tags/dotnet/index.xml" rel="self"/>
+ <link href="/tag/dotnet.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/dotnet.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>dotnet new templates for GeneticSharp</title>
+   <link href="//dotnet-new-templates-for-GeneticSharp"/>
+   <updated>2019-02-03T00:00:00-02:00</updated>
+   <id>//dotnet-new-templates-for-GeneticSharp</id>
+   <content type="html">&lt;p&gt;Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the &lt;strong&gt;dotnet new&lt;/strong&gt; command.&lt;/p&gt;
+
+&lt;h1 id=&quot;installing-the-geneticsharptemplates&quot;&gt;Installing the GeneticSharp.Templates&lt;/h1&gt;
+&lt;p&gt;Before you can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; command to create the GeneticSharp projects from templates, you need to install it on your machine:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; GeneticSharp.Templates
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;After this, if you run the command:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharp &lt;span class=&quot;nt&quot;&gt;--list&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The GeneticSharp templates will be listed:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;creating-a-new-geneticsharp-project-from-templates&quot;&gt;Creating a new GeneticSharp project from templates&lt;/h1&gt;
+
+&lt;h2 id=&quot;console-application&quot;&gt;Console Application&lt;/h2&gt;
+&lt;p&gt;Create a new console application template with GeneticSharp where you just need to implement the chromosome and fitness function.&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpConsoleApp &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;tsp-console-application&quot;&gt;TSP Console application&lt;/h3&gt;
+&lt;p&gt;Create a new console application template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpTspConsoleApp &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;tsp-unity3d&quot;&gt;TSP Unity3D&lt;/h3&gt;
+&lt;p&gt;Create an Unity3D template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v2.4.0 - New crossovers and TPL implementations</title>
+   <link href="//GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations"/>
+   <updated>2019-01-19T00:00:00-02:00</updated>
+   <id>//GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.4.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;p&gt;The additions of this version are the two new crossovers implementations and a new option of ITaskExecutor that use TPL.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;crossovers&quot;&gt;Crossovers&lt;/h1&gt;
+&lt;h3 id=&quot;alternating-position-ap&quot;&gt;Alternating-position (AP)&lt;/h3&gt;
+&lt;p&gt;The alternating position crossover operator (Larrañaga et al. 1996a) simply creates an offspring by selecting alternately the next element of the first parent and the next element of the second parent, omitting the elements already present in the offspring.&lt;/p&gt;
+
+&lt;h3 id=&quot;voting-recombination-crossover-vr&quot;&gt;Voting Recombination Crossover (VR)&lt;/h3&gt;
+&lt;p&gt;It can be seen as a P-sexual crossover operator, where p (parents number) is a natural number greater than, or equal to, 2.&lt;/p&gt;
+
+&lt;p&gt;It starts by defining a threshold, which is a natural number smaller than, or equal to p.&lt;/p&gt;
+
+&lt;p&gt;Next, for every; i E {l, 2, . . .N} the set of ith elements of all the parents is considered. If in this set an element occurs at least the threshold number of times, it is copied into the offspring.&lt;/p&gt;
+
+&lt;h1 id=&quot;tpl&quot;&gt;TPL&lt;/h1&gt;
+&lt;p&gt;Three new classes were implemented to run some key points of genetic algorithm using TPL.&lt;/p&gt;
+
+&lt;p&gt;Those new classes can be used alone, but normally you will use all them together. You can see a sample usage at unit test &lt;code class=&quot;highlighter-rouge&quot;&gt;Start_TplManyGenerations_Optimization&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;tpltaskexecutor&quot;&gt;TplTaskExecutor:&lt;/h3&gt;
+&lt;p&gt;An ITaskExecutor’s implementation that executes the tasks in a parallel fashion using Task Parallel Library (TPL).&lt;/p&gt;
+
+&lt;h3 id=&quot;tplpopulation&quot;&gt;TplPopulation&lt;/h3&gt;
+&lt;p&gt;Represents a population of candidate solutions (chromosomes) using TPL to create them.&lt;/p&gt;
+
+&lt;h3 id=&quot;tploperatorsstrategy&quot;&gt;TplOperatorsStrategy&lt;/h3&gt;
+&lt;p&gt;A new interface called IOperatorsStrategy was added to GeneticAlgorithm as an option. Two options of operators strategy were created, the default one, called DefaultOperatorsStrategy and the new one called TplOperatosStrategy.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
+&lt;p&gt;I would like to thanks to &lt;a href=&quot;https://github.com/EMostafaAli&quot;&gt;EMostafaAli&lt;/a&gt; and &lt;a href=&quot;https://github.com/InRedikaWB&quot;&gt;Alexey I.&lt;/a&gt; for opened some issues and made small pull requests and &lt;a href=&quot;https://github.com/codingdna2&quot;&gt;Dan&lt;/a&gt; for contributing with the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/56&quot;&gt;TPL implementations&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v2.2.0 - Sudoku sample</title>
+   <link href="//GeneticSharp-v2.2.0-Sudoku-sample"/>
+   <updated>2018-11-03T00:00:00-03:00</updated>
+   <id>//GeneticSharp-v2.2.0-Sudoku sample</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.2.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;p&gt;The additions of this version are the new whole sample and extensions showing how to use GeneticSharp to solve a Sudoku.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The GeneticSharp.Extensions project receive those new features:&lt;/p&gt;
+
+&lt;h1 id=&quot;multiple&quot;&gt;Multiple&lt;/h1&gt;
+&lt;h3 id=&quot;multiplechromosome&quot;&gt;MultipleChromosome&lt;/h3&gt;
+&lt;p&gt;Compound chromosome to artificially increase genetics diversity by evolving a list of chromosomes instead of just one.
+Sub-genes are inlined into a single compound list of genes.&lt;/p&gt;
+
+&lt;h3 id=&quot;multiplefitness&quot;&gt;MultipleFitness&lt;/h3&gt;
+&lt;p&gt;Fitness class that can evaluate a compound chromosome by summing over the evaluation of its sub-chromosomes.&lt;/p&gt;
+
+&lt;h1 id=&quot;sudoku&quot;&gt;Sudoku&lt;/h1&gt;
+&lt;h3 id=&quot;isudokuchromosome&quot;&gt;ISudokuChromosome:&lt;/h3&gt;
+&lt;p&gt;Represents each type of chromosome for solving a sudoku is simply required to output a list of candidate sudokus.&lt;/p&gt;
+
+&lt;h3 id=&quot;sudokuboard&quot;&gt;SudokuBoard&lt;/h3&gt;
+&lt;p&gt;A class that represents a Sudoku, fully or partially completed. 
+Holds a list of 81 int for cells, with 0 for empty cells.
+Can parse strings and files from most common formats and displays the sudoku in an easy to read format.&lt;/p&gt;
+
+&lt;h3 id=&quot;sudokucellschromosome&quot;&gt;SudokuCellsChromosome&lt;/h3&gt;
+&lt;p&gt;This simple chromosome simply represents each cell by a gene with a value between 1 and 9, accounting for the target mask if given.&lt;/p&gt;
+
+&lt;h3 id=&quot;sudokufitness&quot;&gt;SudokuFitness&lt;/h3&gt;
+&lt;p&gt;Evaluates a sudoku chromosome for completion by counting duplicates in rows, columns, boxes, and differences from the target mask.&lt;/p&gt;
+
+&lt;h3 id=&quot;sudokupermutationschromosome&quot;&gt;SudokuPermutationsChromosome&lt;/h3&gt;
+&lt;p&gt;This more elaborated chromosome manipulates rows instead of cells, and each of its 9 gene holds an integer for the index of the row’s permutation amongst all that respect the target mask.
+Permutations are computed once when a new Sudoku is encountered, and stored in a static dictionary for further reference.&lt;/p&gt;
+
+&lt;h3 id=&quot;sudokurandompermutationschromosome&quot;&gt;SudokuRandomPermutationsChromosome&lt;/h3&gt;
+&lt;p&gt;This chromosome aims at increasing genetic diversity of SudokuPermutationsChromosome, which exhibits only 9 permutation genes.
+Here, instead, an arbitrary number of Sudokus are generated where for each row, a random gene is picked amongst an arbitrary number of corresponding permutation genes.&lt;/p&gt;
+
+&lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
+&lt;p&gt;GTK# sample
+&lt;img src=&quot;https://user-images.githubusercontent.com/177389/47957137-6bff2200-df8f-11e8-8b07-a144289389a0.png&quot; alt=&quot;gtk-sudoku-sample&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
+&lt;p&gt;I would like to thanks to Jean-Sylvain Boige (@jsboige) for contributing with those great new samples and extensions and for use GeneticSharp in his &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/43#issuecomment-433662175&quot;&gt;Artificial Intelligence course in French engineering schools (course)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Take a look on the pull-request for more details about those new features: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/43&quot;&gt;New Sudoku extension and GTK# sample #43&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v2.1.0</title>
+   <link href="//GeneticSharp-v2.1.0"/>
+   <updated>2018-10-30T00:00:00-03:00</updated>
+   <id>//GeneticSharp-v2.1.0</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.1.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;h3 id=&quot;features&quot;&gt;Features&lt;/h3&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add constructor with values to FloatingPointChromosome &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/issues/33&quot;&gt;#33&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As it is now whenever you create an instance of FloatingPointChromosome, it will randomly create gene values.
+I have a case where I need to stop optimization at some time, save results to DB and resume it later. For this, I need to be able to give gene values to FloatingPointChromosome.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;New NuGet version &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/issues/44&quot;&gt;#44&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bug-fix&quot;&gt;Bug fix&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Bug/Error when using ParallelTaskExecutor &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/issues/40&quot;&gt;#40&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I just discovered that when running the optimizer within a Task/Tread/TPL Dataflow block with TaskExecutor set to ParallelTaskExecutor when instantiating GeneticAlgorithm, it blocks all other outside operations during the lifetime of the optimizer run. This does not happen when not setting the TaskExecutor option.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h3&gt;
+
+&lt;p&gt;I would like to thanks to &lt;a href=&quot;https://github.com/MattWolf74&quot;&gt;@MattWolf74&lt;/a&gt;  and &lt;a href=&quot;https://github.com/mersadk&quot;&gt;@mersadk&lt;/a&gt; for contributing to the open issues and pull-request&lt;/p&gt;
+
+&lt;p&gt;If you want to use this new version on your project, just get the 2.1.0 version from NuGet:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; update-package GeneticSharp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp Unity3d Samples released on Google Play</title>
+   <link href="//GeneticSharp-Unity3d-Samples-released-on-Google-Play"/>
+   <updated>2018-09-22T00:00:00-03:00</updated>
+   <id>//GeneticSharp-Unity3d-Samples-released-on-Google-Play</id>
+   <content type="html">&lt;p&gt;I published on Google Play the &lt;strong&gt;GeneticSharp Unity3d Samples&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/pJpZwCW2m4s &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;center&gt;
+	&lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp&quot;&gt;
+		&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/google-play-badge.png&quot; /&gt;
+      &lt;/center&gt;
+	&lt;/a&gt;
+&lt;/center&gt;
+
+&lt;p&gt;In this app you can see GeneticSharp running on Unity3d in three different samples:&lt;/p&gt;
+
+&lt;h2 id=&quot;car2d&quot;&gt;Car2D&lt;/h2&gt;
+&lt;p&gt;Based on famous BoxCar2D, this sample uses a genetic algorithm to create car designs to overcome road challenges, like gaps, hills, and obstacles.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
+&lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
+
+&lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
+&lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp Car2D</title>
+   <link href="//GeneticSharp-Car2D"/>
+   <updated>2018-06-01T00:00:00-03:00</updated>
+   <id>//GeneticSharp-Car2D</id>
+   <content type="html">&lt;p&gt;I made an Unity3D sample for &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; inspired by amazing &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt; where a genetic algorithm tries to design 2D cars to overcome roads challenges.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
+
+&lt;p&gt;The sample that I will talk about is available on the GeneticSharp repository at GeneticSharp.Runner.UnityApp. You can fork GeneticSharp and open it on Unity3D editor, then run the MenuScene.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you need some introduction to genetic algorithms or GeneticSharp:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Introduction to genetic algorithms: &lt;a href=&quot;http://diegogiacomelli.com.br/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Using GeneticSharp on Unity3D: &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;what-is-our-2d-car&quot;&gt;What is our 2D car?&lt;/h2&gt;
+&lt;p&gt;In GeneticSharp Car2D, a car is composed of:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;8 vectors with 64 meters max size and an angle that will be calculate from the car center.&lt;/li&gt;
+  &lt;li&gt;0 to 8 wheels
+    &lt;ul&gt;
+      &lt;li&gt;Radius from 0 to 3&lt;/li&gt;
+      &lt;li&gt;Vector index (a vector can have more than one wheel)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The vectors and wheels have mass, so bigger ones will made a slower car.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-chromosome&quot;&gt;The chromosome&lt;/h2&gt;
+&lt;p&gt;To represent the phenotype described above the car chromosome will be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A float to represent the vector size (7 bits)&lt;/li&gt;
+  &lt;li&gt;A float to represent the vector angle (9 bits)&lt;/li&gt;
+  &lt;li&gt;An integer to represent the wheel vector index (7 bits)&lt;/li&gt;
+  &lt;li&gt;A float to represent the wheel radius (4 bits)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This structure will take 27 bits, then we will repeat it 8 times, that is the number of the car vectors. This give us a chromosome with 216 bits.&lt;/p&gt;
+
+&lt;p&gt;The bit string chromosome will look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;001101110101110100001000010010100100111000100000010101010100000111100100001110010010010101010111100000000011011100000001110000001110010000110101011111100000100011011101101011101000001110000011011000110111000000000011
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-roads&quot;&gt;The roads&lt;/h2&gt;
+&lt;p&gt;The roads and cars can be configured using the scriptable object CarSampleConfig. The GeneticSharp Car2D allows create any number of different roads and car configs, but for this post, I will show 3 roads configurations with the same car configuration mentioned above.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you want to add new roads, just create a new CarSampleConfig in “Assets / Create / GeneticSharp / Car / CarSampleConfig”. The new road will automatically appear on Car2D menu when you run the sample.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A road is defined by its points quantity and distance, height, rotation, gaps, and obstacles. The gravity and everything about physics is automatically simulated by Unity3d itself.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
+&lt;p&gt;The fitness of each car (chromosome) to the road will be the &lt;strong&gt;sum of the max distance&lt;/strong&gt; reach by it &lt;strong&gt;plus the average velocity&lt;/strong&gt; at that moment.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
+&lt;p&gt;The genetic algorithm to evaluate the simulation is configured with this operators:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Population: 16 chromosomes per generation&lt;/li&gt;
+  &lt;li&gt;Crossover: Uniform&lt;/li&gt;
+  &lt;li&gt;Mutation: Flip Bit&lt;/li&gt;
+  &lt;li&gt;Selection: Elite&lt;/li&gt;
+  &lt;li&gt;Termination: Time evolving&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Besides that, the chromosomes are evaluated in parallel using the GeneticSharp’s ParallelTaskExecutor and you can see all them in 4x4 grid:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are running the sample inside Unity3D editor you can change the size of the simulation grid in the SampleController game object from CarScene.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;designing-the-cars&quot;&gt;Designing the cars&lt;/h2&gt;
+&lt;p&gt;Now that we have our Car2D and roads defining, we can put the genetic algorithm to run and see how it design the cars for each road.&lt;/p&gt;
+
+&lt;p&gt;Besides the roads that are different, the car setup is the same. This way we can compare how genetic algorithm will reach different car designs to different challenges (roads).&lt;/p&gt;
+
+&lt;h3 id=&quot;gap-road&quot;&gt;Gap road&lt;/h3&gt;
+&lt;p&gt;The first is a road with gaps that getting greater. 
+The next video resumes how GeneticSharp designs the car for the gap road.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/hxt2E3QGZw4 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;All videos are recording running the GeneticSharp Car2D on my Android. I used the &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.duapps.recorder&amp;amp;hl=en_US&quot;&gt;DU Recorder&lt;/a&gt; to record them. Amazing app BTW.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;About 100 generations, GeneticSharp generate a car that has a front wheel suspend in the air that allows it to reach the other side of the gap without fall on it.&lt;/p&gt;
+
+&lt;h3 id=&quot;hill-road&quot;&gt;Hill road&lt;/h3&gt;
+&lt;p&gt;This road has some hills that increase as the car travels.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/x0zCDyGc80s &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;For hill road, the genetic algorithm creates a car with enough length to touch the two sides of the downhills at the same time, this allows the car to keep the velocity needed to overcome the hill part. The middle wheel is what allows the car to pass the hill part of the road.&lt;/p&gt;
+
+&lt;h3 id=&quot;obstacle-road&quot;&gt;Obstacle road&lt;/h3&gt;
+&lt;p&gt;Some fixed obstacles are placed on the road and force the cars to pass over them&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/gJCz79xdCFY &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;This is probably the most curious design because the genetic algorithm found out that to overcome the obstacle, the car needed to reach it at high velocity and needs to have a back support to avoid car rollover.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;A think two things are quite clear after I build this sample:&lt;/p&gt;
+
+&lt;h3 id=&quot;incremental-challenges&quot;&gt;Incremental challenges&lt;/h3&gt;
+&lt;p&gt;All the challenges in the roads are incremental, the gaps start small and get bigger by the extension of the road. The same was did to the hills and the obstacle.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Why do the challenges need to be incremental?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;During first tests with the gap road I realized if I just put an 8 meters gap in front of first-generation cars, the genetic algorithm cannot choose better designs, because most of them just fall in the first gap. The challenge was too much for the initial generations, but if I just increased the size of the gaps from small size until it gets to 8 meters, the genetic algorithm could choose better and better designs each generation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It’s how we learn&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The same happens on how we learn many things, like math: first basic operations, then simple equations and in some years we are calculating integrals (or trying at least).&lt;/p&gt;
+
+&lt;p&gt;It’s easy to spot this behavior on evolution itself, where the genetic algorithms are based. In the book “Guns, Germs and Steel” Jared Diamond says:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“The near-simultaneous disappearance of so many large species raises an
+obvious question: what caused it? An obvious possible answer is that they
+were killed off or else eliminated indirectly by the first arriving humans.
+Recall that Australian / New Guinean animals had evolved for millions of
+years in the absence of human hunters. We know that Galapagos and Antarctic
+birds and mammals, which similarly evolved in the absence of
+humans and did not see humans until modern times, are still incurably
+tame today.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Australian / New Guinean animals got a challenge that was too much to them in that time, different of the other animals from other continents that evolved together with humans (or proto-humans) and learn to survive this predator.&lt;/p&gt;
+
+&lt;h3 id=&quot;different-design&quot;&gt;Different design&lt;/h3&gt;
+&lt;p&gt;Different challenges lead to different car designs. 
+It’s quite clear that the best cars design to each of the 3 roads are different between them and only works in its specific road.&lt;/p&gt;
+
+&lt;p&gt;Now, it’s up to you, fork &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/fork&quot;&gt;GeneticSharp&lt;/a&gt; and run the GeneticSharp Car2D on your Unity3D editor. &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;Let me know&lt;/a&gt; what roads and results you created.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp - Unity3d sample</title>
+   <link href="//GeneticSharp-Unity3d-sample"/>
+   <updated>2018-05-31T00:00:00-03:00</updated>
+   <id>//GeneticSharp-Unity3d-sample</id>
+   <content type="html">&lt;p&gt;I just pushed to GeneticSharp master branch the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;GeneticSharp.Runners.UnityApp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Unity3D.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;In this Unity3d project there are 3 samples:&lt;/p&gt;
+
+&lt;h2 id=&quot;car2d&quot;&gt;Car2D&lt;/h2&gt;
+&lt;p&gt;Based on famous BoxCar2D, this sample uses a genetic algorithm to create car designs to overcome road challenges, like gaps, hills, and obstacles.&lt;/p&gt;
+
+&lt;p&gt;A post explaining this sample in detail will be published tomorrow.&lt;/p&gt;
+
+&lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
+&lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
+
+&lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
+&lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/xXqNcgeOU_g &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;experimental-components&quot;&gt;Experimental components&lt;/h2&gt;
+&lt;p&gt;In the folder _runner/Commons there are the BitStringChromosome class and some phenotype implementations. At the moment they are experimental, but I will wait for the community feedback to see if they can be promoted to GeneticSharp library code.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TSP with GeneticSharp and Unity3D</title>
+   <link href="//tsp-with-GeneticSharp-and-Unity3d"/>
+   <updated>2018-05-16T00:00:00-03:00</updated>
+   <id>//tsp-with-GeneticSharp-and-Unity3d</id>
+   <content type="html">&lt;style&gt;
+div.gist-meta { display:none; }
+&lt;/style&gt;
+
+&lt;p&gt;In this post I will show how to use GeneticSharp and Unity3D to solve the TSP (Travelling salesman problem).&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/city.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;According to Wikipedia &lt;em&gt;&lt;strong&gt;“The travelling salesman problem (TSP) asks the following question: “Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?”&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;TSP is a classic sample to test some optimization techniques, as well it’s fairly used to demonstrate how to implement a genetic algorithm. For these reasons I will use it to show you how to implement a basic genetic algorithm in Unity3D using GeneticSharp.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;To better understand this tutorial, you need to have some experiences/knowledges in:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unity3D (beginner)&lt;/li&gt;
+  &lt;li&gt;Genetic algorithms (beginner).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;creating-the-unity3d-project&quot;&gt;Creating the Unity3D project&lt;/h2&gt;
+&lt;p&gt;Using Unity 2018.1+, create a new project called TspSample.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
+&lt;p&gt;Go to “Player settings” / “Other settings” / “Configuration”, select “.NET 4.x Equivalent” on “Scripting Runtime Version”. Unity will ask to restart, you can confirm.&lt;/p&gt;
+
+&lt;p&gt;After restart, go back to “Player settings”, select “.NET Standard 2.0” on “Api Compability Level”.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
+&lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;To represent the cities route each gene of our chromosome will represent an index of a city in the route.&lt;/p&gt;
+
+&lt;p&gt;Create a C# script called “TspChromosome.cs”:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;representing-a-city&quot;&gt;Representing a city&lt;/h2&gt;
+&lt;p&gt;The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.&lt;/p&gt;
+
+&lt;p&gt;Create a C# script called “City.cs”:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=City.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
+&lt;p&gt;Now we need to evaluate the TspChromosome.&lt;/p&gt;
+
+&lt;p&gt;Our fitness function will evaluate the TspChromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.&lt;/p&gt;
+
+&lt;p&gt;Create a C# script called “TspFitness.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;running-the-genetic-algorithm&quot;&gt;Running the Genetic Algorithm&lt;/h2&gt;
+&lt;p&gt;In this step we need to configure our genetic algorithm using the TspChromosome, TspFitness and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
+
+&lt;p&gt;Create a C# script called “GAController.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.v1.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a GameObject called “GAController” in the scene and add the GAController.cs to it.&lt;/p&gt;
+
+&lt;p&gt;Save the scene.&lt;/p&gt;
+
+&lt;p&gt;Run the scene on editor and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
+&lt;p&gt;Now our GA is running inside Unity3D, but it need to display the cities route better.
+We need create a visual representation to the cities.&lt;/p&gt;
+
+&lt;h3 id=&quot;city-prefab&quot;&gt;City prefab&lt;/h3&gt;
+&lt;p&gt;We will create a prefab based on a sprite of a pin. You can use an icon as this one from &lt;a href=&quot;https://www.flaticon.com/free-icon/maps-and-flags_447031#term=pin&amp;amp;page=1&amp;amp;position=6&quot;&gt;www.flaticon.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Download it to inside your Unity3D project.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Maybe you will need to change the ‘Pixels Per Unit’ to 1000 to get a good pin size on screen.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Drag it to the hierarchy panel, rename the new GameObject to CityPrefab and drag it back to your Assets folder on Project panel. Now our CityPrefab is created.&lt;/p&gt;
+
+&lt;p&gt;Delete the CityPrefab game object from the current scene.&lt;/p&gt;
+
+&lt;h3 id=&quot;instantiating-the-cities-prefabs&quot;&gt;Instantiating the cities prefabs&lt;/h3&gt;
+&lt;p&gt;Add the following field to the GAController.cs&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change1.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Then, create the method DrawCities:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change2.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;And then call it from Start method:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change3.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Now, select the GAController game object on hierarchy and set the CityPrefab property.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
+&lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
+
+&lt;p&gt;Now we need to draw the solution: the route represented by the best chromosome of each generation.&lt;/p&gt;
+
+&lt;p&gt;One of the simplest ways to draw some lines in Unity3D is using the LineRenderer component.&lt;/p&gt;
+
+&lt;p&gt;Add the following code to the GAController.cs:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change4.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Create the method DrawRoute:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change5.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Then call it from Update method:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change6.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Before run the scene, we need to add a LineRenderer component to our GAController game object.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Change the width property of the LineRenderer from 1 to 0.1.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Run the scene again, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
+&lt;p&gt;Our sample could be considered done, but would it be nice if we you could change the cities positions while the genetic algorithm are running and see how it manages these cities positions changes.&lt;/p&gt;
+
+&lt;h3 id=&quot;citycontroller&quot;&gt;CityController&lt;/h3&gt;
+&lt;p&gt;Create a C# script called “CityController.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=CityController.cs&quot;&gt; &lt;/script&gt;
+I won’t getting in details about how this is script works, but it’s allow the user to drag the cities’ pin using the mouse or the finger touch if build it to mobile.&lt;/p&gt;
+
+&lt;p&gt;Add the CityController.cs to the CityPrefab.&lt;/p&gt;
+
+&lt;p&gt;Change the GAController.cs script adding the line below to the end of the for loop of DrawCities method:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change7.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;With only 5 C# scripts and 1 prefab we built a pretty nice sample of genetic algorithms using in Unity3D with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;How about make it 3D and using a Vector3 instead of Vector2 on City.Position?&lt;/li&gt;
+  &lt;li&gt;Maybe let user change the number of cities or change the genetic algorithm operators?&lt;/li&gt;
+  &lt;li&gt;Move the DrawCities and DrawRoutes methods to a script responsible to only draw the GA.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The full source code used in this post can be download or fork from this Gist: &lt;a href=&quot;https://gist.github.com/giacomelli/94721a46d33c6bcb1f3ae11117b7f888&quot;&gt;https://gist.github.com/giacomelli/94721a46d33c6bcb1f3ae11117b7f888&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v2.0.0 - .NET Core</title>
+   <link href="//GeneticSharp-v2.0.0-dotnet-core"/>
+   <updated>2018-05-12T00:00:00-03:00</updated>
+   <id>//GeneticSharp-v2.0.0-dotnet-core</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases/tag/v2.0.0&quot;&gt;GeneticSharp v2.0.0&lt;/a&gt;&lt;/strong&gt; is out with support to .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/netcore.svg&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;In march GenetichSharp start to support .NET Standard 2.0 in the 2.0.0-rc version. Two months have pass and in the meanwhile the community have time to test that release candidate version and now Unity3D has an official .NET Standard 2.0 profile.&lt;/p&gt;
+
+&lt;p&gt;So, it’s time to release the GeneticSharp v2.0.0.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing&quot;&gt;Installing&lt;/h2&gt;
+&lt;p&gt;Only GeneticSharp:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;GeneticSharp and extensions (TSP, AutoConfig, Bitmap equality, Equality equation, Equation solver, Function builder, etc):&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp.Extensions
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’re still in a .NET Framework version lower than 4.6.2 project use the &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp/1.2.0&quot;&gt;1.2.0 version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 1.2.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I’ve already talk about these breaking changes on the post about the release candidate version, but I guess is good to point them again:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GeneticSharp NuGet package was split into two packages:
+    &lt;ul&gt;
+      &lt;li&gt;GeneticSharp: only GeneticSharp.Domain.dll and GeneticSharp.Infrastructure.Framework.dll&lt;/li&gt;
+      &lt;li&gt;GeneticSharp.Extensions: depends on GenetiSharp.Package and add the GeneticSharp.Extensions.dll.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SmartThreadPoolTaskExecutor does not exists anymore. You should use ParallelTaskExecutor class (not disposable).&lt;/li&gt;
+  &lt;li&gt;The projects are not signed anymore:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/6911#issuecomment-309647478&quot;&gt;Error signing output with public key from file ‘x.snk’ – Assembly signing not supported&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In the ConsoleApp the EquationSolverSampleController was removed until the &lt;a href=&quot;https://github.com/pieterderycke/Jace&quot;&gt;Jace&lt;/a&gt; library suportt .NET Core.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>DocsByReflection v1.0.13 - .NET Standard 2.0</title>
+   <link href="//DocsByRelection-v1.0.13-netstandard2.0"/>
+   <updated>2018-04-05T00:00:00-03:00</updated>
+   <id>//DocsByRelection-v1.0.13-netstandard2.0</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/DocsByReflection/releases/tag/v1.0.13&quot;&gt;DocsByReflection v1.0.13&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you don’t know what is DocsByReflection or what you can do with it, take a look in my previous post about it &lt;a href=&quot;http://diegogiacomelli.com.br/getting-your-code-documentation-at-runtime&quot;&gt;“Getting your code documentation at runtime”&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;net-standard-20-and-net-framework-46&quot;&gt;.NET Standard 2.0 and .NET Framework 4.6&lt;/h2&gt;
+&lt;p&gt;In this version &lt;a href=&quot;https://github.com/giacomelli/DocsByReflection&quot;&gt;DocsByReflection&lt;/a&gt; starts to support .NET Standard 2.0.&lt;/p&gt;
+
+&lt;p&gt;Now, if you need to use the library on .NET Standard 2.0 or .NET Framework 4.6 projects:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package DocsByReflection.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;net-framework&quot;&gt;.NET Framework&lt;/h2&gt;
+&lt;p&gt;If you are in a .NET Framework project lower than .NET Framework 4.6 you can use the previous version:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package DocsByReflection &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 1.0.12.20
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h2&gt;
+&lt;p&gt;I would like to thanks &lt;a href=&quot;https://github.com/onionhammer&quot;&gt;Erik O’Leary&lt;/a&gt; to perform the whole migration of DocsByReflection to .NET Standard 2.0.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Porting GeneticSharp to .NET Core</title>
+   <link href="//porting-GeneticSharp-to-dotnet-core"/>
+   <updated>2018-03-28T00:00:00-03:00</updated>
+   <id>//porting-GeneticSharp-to-dotnet-core</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases/tag/v2.0.0-rc1&quot;&gt;GeneticSharp v2.0.0-rc1&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;p&gt;In this version GeneticSharp starts to support .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
+
+&lt;p&gt;Porting &lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+to &lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/netcore.svg&quot; /&gt;
+      &lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/ogiacomelli/status/958114986601172992&quot;&gt;Sometime ago I started to porting GeneticSharp to .NET Core&lt;/a&gt; and today, after more than 40 hours of work, I finally finish it.&lt;/p&gt;
+
+&lt;p&gt;Although GeneticSharp born as a multi-platform library that ran in any OS supported by .NET Framework and Mono, convert it to .NET Core was a desired thing, because .NET Core is where .NET ecosystem is targeting.&lt;/p&gt;
+
+&lt;h2 id=&quot;release-candidate&quot;&gt;Release candidate&lt;/h2&gt;
+&lt;p&gt;This 2.0.0-rc1 was already published to nuget.org, but it’s marked as a pre-realease package. I will kept it as a RC until get sure that there is no issue with the porting and until the Unity3d remove the “experimental” status to its support to .NET Standard 2.0.&lt;/p&gt;
+
+&lt;p&gt;If you are in .NET Core or in .NET Framework 4.6.2+ project, please try the the &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp/2.0.0-rc1&quot;&gt;2.0.0-rc1&lt;/a&gt; version.&lt;/p&gt;
+
+&lt;p&gt;Only GeneticSharp:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 2.0.0-rc1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;GeneticSharp and extensions (TSP, AutoConfig, Bitmap equality, Equality equation, Equation solver, Function builder, etc):&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp.Extensions &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 2.0.0-rc1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’re still in a .NET Framework version lower than 4.6.2 project use the &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp/1.2.0&quot;&gt;1.2.0 version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 1.2.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;porting&quot;&gt;Porting&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;warmup&quot;&gt;Warmup&lt;/h3&gt;
+
+&lt;p&gt;To start the porting I followed the good pratices describe on links below:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/porting/libraries&quot;&gt;Porting to .NET Core - Libraries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/porting/index&quot;&gt;Porting to .NET Core from .NET Framework&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Based on those reads, I decided to support the .NET Standard 2.0 (netstandard2.0) and the .NET Framework 4.6.2 (net462). This meaning that GeneticSharp can be used in .NET Standard and .NET Framework projects, with no differences.&lt;/p&gt;
+
+&lt;p&gt;Another thing that I considered was the Unity3d support, so based on this post &lt;a href=&quot;https://blogs.unity3d.com/pt/2018/01/10/get-early-access-to-unity-2018-1-the-beta-is-out/&quot;&gt;Unity 2018.1 - .NET Standard 2.0 and .NET 4.6 support&lt;/a&gt; Unity is already using a experimental support to netstandard2.0 and net462 libraries.&lt;/p&gt;
+
+&lt;h3 id=&quot;domain&quot;&gt;Domain&lt;/h3&gt;
+&lt;p&gt;The domain part of the library, the GeneticSharp.Domain library was the easy part to port, if I cleary remember there was no change it all, besides the changes on .csproj.&lt;/p&gt;
+
+&lt;h3 id=&quot;extensions&quot;&gt;Extensions&lt;/h3&gt;
+&lt;p&gt;The extensions from GeneticSharp.Extensions project needed some more work, because the System.Drawing do not exists directly in .NET Standard 2.0. That was resolved using the &lt;a href=&quot;https://www.nuget.org/packages/System.Drawing.Common/&quot;&gt;System.Drawing.Common&lt;/a&gt; NuGet package.&lt;/p&gt;
+
+&lt;p&gt;The NCalc library used on FunctionBuilderFitness was updated to use the &lt;a href=&quot;https://www.nuget.org/packages/NCalc.NetCore/&quot;&gt;NCalc.NetCore&lt;/a&gt; version.&lt;/p&gt;
+
+&lt;h3 id=&quot;threading&quot;&gt;Threading&lt;/h3&gt;
+&lt;p&gt;One of the most tricky porting was the GeneticSharp.Infrastructure.Threading, because it used the external library &lt;a href=&quot;https://github.com/amibar/SmartThreadPool&quot;&gt;SmartThreadPool&lt;/a&gt; and that one was not supporting .NET Core at that time. I decided to implement the parallel task executor using the .NET built-in ThreadPool class, this implementation was done on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Infrastructure.Framework/Threading/ParallelTaskExecutor.cs&quot;&gt;ParallelTaskExecutor&lt;/a&gt; and its use can be tested on  &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Infrastructure.Framework.UnitTests/Threading/ParallelTaskExecutorTest.cs&quot;&gt;ParallelTaskExecutorTest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;gtkapp&quot;&gt;GtkApp&lt;/h3&gt;
+&lt;p&gt;GeneticSharp sample app (GeneticSharp.Runner.GtkApp) was built using Gtk# 2, but only version 3 was ported to .NET Core, and there are huge breaking changes between these two Gtk# versions, so for a while I’ll keeping the sample app still running only on .NET Framework/Mono.&lt;/p&gt;
+
+&lt;p&gt;I hope in a near future we can built a cross-platform sample app, maybe using Xamarin Forms for iOS, Android, macOS and UWP. This would be great, but perform this task during the to .NET Core supporting is far from the scope right now.&lt;/p&gt;
+
+&lt;p&gt;The links below are some readings that I did while looking for some GTK# alternatives:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.xamarin.com/building-xamarin-forms-apps-net-standard/&quot;&gt;Building Xamarin.Forms Apps with .NET &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.xamarin.com/preview-bringing-macos-to-xamarin-forms/&quot;&gt;Preview: Bringing macOS to Xamarin.Forms&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/xamarin/mac/get-started/hello-mac&quot;&gt;Xamarin.Mac - Hello, Mac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;unit-tests&quot;&gt;Unit tests&lt;/h3&gt;
+&lt;p&gt;Unit tests projects were using the &lt;a href=&quot;https://github.com/ayende/rhino-mocks&quot;&gt;Rhino Mocks&lt;/a&gt; as the mocking library, but Rhino Mocks was not supporting (maybe never) .NET Core, so it was replaced by the amazing &lt;a href=&quot;http://nsubstitute.github.io/&quot;&gt;NSubstitute&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;code-coverage&quot;&gt;Code Coverage&lt;/h4&gt;
+&lt;p&gt;As the time I wrote this, there was no unanimity about what is the best cross-platform tool to collect code-coverage in .NET Core.
+There are some tools, but each one has some pros and cons:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;VS 2017 Code Coverage
+Can be easily used on Windows platform directly on VS 2017 or in command line:
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet &lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--collect&lt;/span&gt;:&lt;span class=&quot;s2&quot;&gt;&quot;Code Coverage&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/SteveGilham/altcover&quot;&gt;altcover&lt;/a&gt;
+Instrumenting coverage tool for .net/.net core and Mono, emitting NCover or OpenCover format output.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/lucaslorentz/minicover&quot;&gt;MiniCover&lt;/a&gt;
+Minimalist Code Coverage Tool for .NET Core.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/tonerdo/coverlet&quot;&gt;coverlet&lt;/a&gt;
+Cross platform code coverage library for .NET Core.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I guess the most promising tool is the coverlet, but I’ll waiting until the end of GeneticSharp 2.0.0 release candidate period to choose one.&lt;/p&gt;
+
+&lt;h3 id=&quot;problems-readings-tricks-and-hacks&quot;&gt;Problems, readings, tricks and hacks&lt;/h3&gt;
+&lt;p&gt;Of course that a porting always come with some problems that will you need to figure out by doing some research and solve them, most of time, using some trick and hacks. These one was some of I’ve done:&lt;/p&gt;
+
+&lt;h4 id=&quot;net-sdk-20-projects-targeting-net-4x-on-mono&quot;&gt;.NET SDK 2.0 projects targeting .NET 4.x on Mono&lt;/h4&gt;
+&lt;p&gt;As GeneticSharp need to support .NET Framework 4.6.2, but the msbuild does not know where to looking for the framework assemblies in macOS and Linux, so I found thi .NET SDK issue comment &lt;a href=&quot;https://github.com/dotnet/sdk/issues/335#issuecomment-368669050&quot;&gt;issue comment&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;When compiling .NET SDK 2.0 projects targeting .NET 4.x on Mono using ‘dotnet build’ you have to teach MSBuild where the Mono copy of the reference asssemblies is.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This msbuild file &lt;a href=&quot;src/msbuilds/GeneticSharp.dotnet-core.targets&quot;&gt;GeneticSharp.dotnet-core.targets&lt;/a&gt; was created and referenced in all .csproj.&lt;/p&gt;
+
+&lt;h4 id=&quot;dotnet-test-failed-to-initialize-client-proxy&quot;&gt;dotnet test “Failed to initialize client proxy”&lt;/h4&gt;
+&lt;p&gt;Sometimes dotnet test gives the error:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Starting &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;execution, please wait...
+Failed to initialize client proxy: could not connect to &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;process.
+
+Test Run Aborted
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Delete the “obj” and “bin” folders from unit test project will “fix” the problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GeneticSharp NuGet package was split into two packages:
+    &lt;ul&gt;
+      &lt;li&gt;GeneticSharp: only GeneticSharp.Domain.dll and GeneticSharp.Infrastructure.Framework.dll&lt;/li&gt;
+      &lt;li&gt;GeneticSharp.Extensions: depends on GenetiSharp.Package and add the GeneticSharp.Extensions.dll.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SmartThreadPoolTaskExecutor does not exists anymore. You should use ParallelTaskExecutor class (not disposable).&lt;/li&gt;
+  &lt;li&gt;The projects are not signed anymore:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/6911#issuecomment-309647478&quot;&gt;Error signing output with public key from file ‘x.snk’ – Assembly signing not supported&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In the ConsoleApp the EquationSolverSampleController was removed until the &lt;a href=&quot;https://github.com/pieterderycke/Jace&quot;&gt;Jace&lt;/a&gt; library suportt .NET Core.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;reads-during-the-porting&quot;&gt;Reads during the porting&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/conclusion.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Some readings I did during the whole process, maybe can be useful to someone porting a library to .NET Core too.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/amibar/SmartThreadPool/pull/17&quot;&gt;SmartThreadPool - Adding support to .NET Core 2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/43605256/956886&quot;&gt;How to set &lt;code class=&quot;highlighter-rouge&quot;&gt;OutputPath&lt;/code&gt; attribute in Visual Studio 2017 project ( new .csproj file format ) without target framework cluttering the resolved path?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/42787747/956886&quot;&gt;How do you multi-target a .NET Core class library with csproj?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.natemcmaster.com/blog/2017/03/09/vs2015-to-vs2017-upgrade/&quot;&gt;Old csproj to new csproj: Visual Studio 2017 upgrade guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wrightfully.com/guide-to-nsubstitute-for-rhino-mocks-users&quot;&gt;A Guide to NSubstitute for Rhino.Mocks Users&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/4710&quot;&gt;Duplicate ‘System.Reflection.AssemblyCompanyAttribute’ attribute&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nunit/dotnet-test-nunit/issues/122&quot;&gt;NUnit - Support .NET Core 2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://weblog.west-wind.com/posts/2017/Jun/22/MultiTargeting-and-Porting-a-NET-Library-to-NET-Core-20&quot;&gt;Multi-Targeting and Porting a .NET Library to .NET Core 2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/porting/project-structure&quot;&gt;Organizing your project to support .NET Framework and .NET Core&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/standard/issues/443&quot;&gt;System.Drawing.Bitmap class is claimed to be present in netcoreapp2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/dotnet/2017/01/19/net-core-image-processing/&quot;&gt;.NET Core Image Processing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Microsoft/vstest/issues/981&quot;&gt;Add support for dotnet test –collect:”Code Coverage”&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages&quot;&gt;Building pre-release packages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/NuGet/Home/issues/6636&quot;&gt;dotnet pack with nuspec file does not set PackageVersion from csproj&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/NuGet/Home/issues/5655&quot;&gt;Invalid warning “Assembly outside lib folder.” in dotnet pack&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/NuGet/Home/issues/3891#issuecomment-375501212&quot;&gt;Feature : Allow project reference DLLs to be added to the parent nupkg for pack target like IncludeReferencedProjects in nuget.exe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/5504&quot;&gt;https://github.com/dotnet/cli/issues/5504&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Now I’m planning to create a GeneticSharp’s sample using Unity3d’s new beta features, like the new ECS (Entity Component System), C# Job System and the Burst compiler.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v1.2.0 - Sequence mutations</title>
+   <link href="//GeneticSharp-v1.2.0-sequence-mutations"/>
+   <updated>2018-01-26T00:00:00-02:00</updated>
+   <id>//GeneticSharp-v1.2.0-sequence-mutations</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v1.2.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;p&gt;The additions of this version are the new sequence mutation operators: Displacement, InsertionMutation and Partial Shuffle (PSM).&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;Displacement Mutation&lt;/strong&gt;: a substring is randomly selected from chromosome, is removed, then replaced at a randomly selected position.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Insertion Mutation&lt;/strong&gt;: a gene is randomly selected from chromosome, is removed, then replaced at a randomly selected position.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Partial Shuffle Mutation (PSM)&lt;/strong&gt;: we take a sequence S limited by two positions i and j randomly chosen. The gene order in this sequence will be shuffled. Sequence will be shuffled until it becomes different than the starting order.&lt;/p&gt;
+
+&lt;p&gt;I would like to thanks to Ahmet Can Saner (&lt;a href=&quot;https://github.com/cansaner&quot;&gt;@cansaner&lt;/a&gt;) for contribute with those great new mutations that him developed during his master degree.&lt;/p&gt;
+
+&lt;p&gt;If you want to use the new mutations in your project, just get the new GeneticSharp version from Nuget.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Function optimization with GeneticSharp</title>
+   <link href="//function-optimization-with-geneticsharp"/>
+   <updated>2017-06-13T00:00:00-03:00</updated>
+   <id>//function-optimization-with-geneticsharp</id>
+   <content type="html">&lt;p&gt;In this tutorial we will learn how to use GeneticSharp to optimize the inputs of math function and more about genetic algorithms meanwhile.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I created &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; a long time ago because three main reasons:&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I needed a fast, extensible, multi-platform and multithreading C# genetic algorithm library to use in my GA experiments;&lt;/li&gt;
+  &lt;li&gt;I wanted to study and understand GA better;&lt;/li&gt;
+  &lt;li&gt;and Genetic algorithm are pretty fun to implement and use!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As far as I know GeneticSharp has been used in a lot of different projects, since card games deck optimization, self managing distributed file system, context-sensitive code completion, even in airplanes trajectories optimization. These are pretty cool and exciting topics, but this tutorial is not about this advanced topics. Here I want to take a very simple sample and show how easy and fast you can add genetic algorithms on your project using GeneticSharp. So, let’s evolve!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/problem.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;In our sample we will optimize the input of a mathematical function, this function will be used as our fitness evaluation function. For this sample we will use a function that everyone saw in school time, the famous &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_distance&quot;&gt;Euclidean distance&lt;/a&gt; or commonly know as distance of two points function:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;We will consider our chromosome fitness as the result of this function. The higher the result, the better is the chromosome fitness.&lt;/p&gt;
+
+&lt;p&gt;Our chromosome will be the Euclidean distance function arguments, the X1, Y1, X2 and Y2.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-our-genetic-algorithm-is-looking-for&quot;&gt;What our genetic algorithm is looking for?&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/telescope.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The goal of our genetic algortim is &lt;strong&gt;find the input values of Euclidean distance function: X1, Y1 and X2, Y2 that result in the greatest distance in a rectangular area&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;What? You can think: &lt;em&gt;“this is a stupid goal”&lt;/em&gt;, because everyone knows that the longest distance between two points in a rectangular area are their diagonals. Yeah, you are right, but this is one of the best things about genetic algorithm, our GA code does not know anything about this, it just know that some X1, Y1 and X2, Y2 inputs generate a fitness value and greatest fitness are better. The other justification to use this so simple GA objective is that everyone can understand what is happening and we can focus to learn genetic algorithm.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We can easly create a brute force solution with four nested loops that will find the solution of our problem, but as I mencioned before this ‘problem’ is just for the tutorial purpose, because in normal applications genetic algoritm find solutions to problems that the solution is not so obvious or in some cases the solutions are even unknow.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;creating-the-project&quot;&gt;Creating the project&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/project.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Open your IDE (Visual Studio/Xamarin Studio) and create a new console project.&lt;/p&gt;
+
+&lt;p&gt;Install the GeneticSharp package:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;using-geneticsharp&quot;&gt;Using GeneticSharp&lt;/h2&gt;
+
+&lt;p&gt;GeneticSharp implements all the classic components of a genetic algorithm, like gene, chromosome, population, fitness, selection, crossover, mutation, reinsetion and termination. When you use it to build your genetic algorithm code you just need to implement a few things, mostly you will need to code just your solution’s chromosome and fitness.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-an-euclidean-distance-chromosome&quot;&gt;Creating an Euclidean distance chromosome&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Chromosome is the representation of a possible solution in genetic algoritms.&lt;/p&gt;
+
+&lt;p&gt;In GeneticSharp a chromosome needs to implement the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Chromosomes/IChromosome.cs&quot;&gt;IChromosome&lt;/a&gt; interface, but in most of cases you just need to inherit the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Chromosomes/ChromosomeBase.cs&quot;&gt;ChromosomeBase&lt;/a&gt; class and override the methods GenerateGene and CreateNew.&lt;/p&gt;
+
+&lt;p&gt;Besides IChromosome and ChromosomeBase also exist the classes: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Chromosomes/BinaryChromosomeBase.cs&quot;&gt;BinaryChromosomeBase&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Chromosomes/FloatingPointChromosome.cs&quot;&gt;FloatingPointChromosome&lt;/a&gt; and &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Chromosomes/IntegerChromosome.cs&quot;&gt;IntegerChromosome&lt;/a&gt; that are chromosome classes that can be directly used when your solution chromosome can be represented as numbers or a string representation of 0 and 1.&lt;/p&gt;
+
+&lt;p&gt;In our case we need to create a chromosome that represent the input variables of the Euclidean distance function: X1, Y1 and X2, Y2.&lt;/p&gt;
+
+&lt;p&gt;The FloatingPointChromosome is a perfect fit for this kind of representation, because it allows represent more than one number inside of it.&lt;/p&gt;
+
+&lt;p&gt;Open the Program.cs file and inside the Main function enter the code below:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingAnEuclideanDistanceChromsome.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;In the code above we create two variables to represent our rectangle area size: maxWidth and maxHeight, then we created a new instance of FloatingPointChromome, this will be the template to all chromsome in our solution.&lt;/p&gt;
+
+&lt;p&gt;The constructor receive four arrays, they are:&lt;/p&gt;
+
+&lt;p&gt;1) The minimum values of numbers inside the chromosome. Our rectangle area will start at 0 points, so the min value of X1, Y1, X2 and Y2 are 0 (zero).&lt;/p&gt;
+
+&lt;p&gt;2) The maximum values. We use our previous created variables.&lt;/p&gt;
+
+&lt;p&gt;3) The total bits used to represent each number. The maximum value is 998, so 10 bits is what we need.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;GeneticSharp will warn you if you try to use a total bits that cannot hold a number inside your floating point chromosome.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;4) The number of fraction (scale or decimal) part of the number. In our case we will not use any.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-population&quot;&gt;Creating the population&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/population.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The population represents the possible solutions to our problem, so we need to create a population of our Euclidean distance chromosome.&lt;/p&gt;
+
+&lt;p&gt;In GeneticSharp a population is represented by the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Populations/IPopulation.cs&quot;&gt;IPopulation&lt;/a&gt; interface, but in most cases you can directly use the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Populations/Population.cs&quot;&gt;Population&lt;/a&gt; class.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingThePopulation.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;We created a population that will have a minimum number of 50 chromosomes and a maximum number of 100 and used our chromosome template as the “Adam chromosome” (yeah, you get the reference) of our GA.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-fitness-function&quot;&gt;Creating the fitness function&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/score.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The fitness function is where the genetic algoritm will evaluate and give a value (fitness) to each chromosome generated inside it. A good fitness function can guide your GA to a fast and optimum solution.&lt;/p&gt;
+
+&lt;p&gt;In GeneticSharp we represent a fitness function through the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/IFitness.cs&quot;&gt;IFitness&lt;/a&gt; interface. Almost always you wil have to code a class that implement this interface, but for our tutorial we can use the simple and lower friction class &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/FuncFitness.cs&quot;&gt;FuncFitness&lt;/a&gt;. This class allow us to build our fitness evalution as its constructor argument.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheFitnessFunction.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;We receive a IChromosome in the variable “c”, then we cast it to FloatingPointChromosme.&lt;/p&gt;
+
+&lt;p&gt;To allow us to evaluate the chromosome we need to convert it from its genotype (FloatingPointChromosome) to its phenotype (x1, y1 and x2, y2), we do this calling the ToFloatingPoints method. This method return an array of numbers using that configuration we used when we created our Euclidean distance chromosome. Now we have our X1, Y1 and X2 and Y2 numbers we just need to pass it to the Euclidean distance function and return the value as the fitness value of the current chromosome.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;script async=&quot;&quot; src=&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-4531139417583317&quot; data-ad-slot=&quot;3308598273&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-selection&quot;&gt;Creating the selection&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/podium.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;A selection is the genetic algorithm operator responsible for decing which chromosomes of current population will be selected as parent of the next population.&lt;/p&gt;
+
+&lt;p&gt;You can code your our selection through the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/ISelection.cs&quot;&gt;ISelection&lt;/a&gt; interface or extending the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/SelectionBase.cs&quot;&gt;SelectionBase&lt;/a&gt; class.&lt;/p&gt;
+
+&lt;p&gt;Besides this, you can use the already implemented classic selections: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/EliteSelection.cs&quot;&gt;Elite&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/RouletteWheelSelection.cs&quot;&gt;Roulete Wheel&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/StochasticUniversalSamplingSelection.cs&quot;&gt;Stochastic Universal Sampling&lt;/a&gt; and &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/TournamentSelection.cs&quot;&gt;Tournament&lt;/a&gt;.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheSelection.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Elite selection is a good option, because it will select the chromosomes with the best fitness (greatest distance). You can try the others selection options too and see how they change the GA speed and results.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-crossover&quot;&gt;Creating the crossover&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/cross.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing these selected chromosomes.&lt;/p&gt;
+
+&lt;p&gt;There are the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/ICrossover.cs&quot;&gt;ICrossover&lt;/a&gt; interface and &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/CrossoverBase.cs&quot;&gt;CrossoverBase&lt;/a&gt; class if you want to code your crossover from scratch or you can use one of already available: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/CutAndSpliceCrossover.cs&quot;&gt;Cut and Splice&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/CycleCrossover.cs&quot;&gt;Cycle (CX)&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/OnePointCrossover.cs&quot;&gt;One-Point (C1)&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/OrderBasedCrossover.cs&quot;&gt;Order-based (OX2)&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/OrderedCrossover.cs&quot;&gt;Ordered (OX1)&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/PartiallyMappedCrossover.cs&quot;&gt;Partially Mapped (PMX)&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/PositionBasedCrossover.cs&quot;&gt;Position-based (POS)&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/ThreeParentCrossover.cs&quot;&gt;Three parent&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/TwoPointCrossover.cs&quot;&gt;Two-Point (C2)&lt;/a&gt; and &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Crossovers/UniformCrossover.cs&quot;&gt;Uniform&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Some of those classics crossovers, like OX1 and OX2, cannot be used in our tutorial because they need chromosomes with ordered genes and this is not the case of our chromosomes with 0101001100 genes. Do not worry, because GeneticSharp will warn you if you try to use an invalid chromosome in an ordered crossover&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheCrossover.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Uniform Crossover enables the parent chromosomes to contribute the gene level rather than the segment level, for example: if the mix probability is 0.5, the offspring has approximately half of the genes from first parent and the other half from second parent.&lt;/p&gt;
+
+&lt;p&gt;So, in our case Uniform crossover is a very good option, because using the 0.5f mix probability it will generate new chromosomes that are combination of X1, Y1 from one parent and X2, Y2 from another parent.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-mutation&quot;&gt;Creating the mutation&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/mutation.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The biology definition of mutations is: 
+&lt;em&gt;“In genetics, mutation may be small scale (affecting a gene) or large scale (involving a change in the chromosome). It may arise from faulty deletions, insertions, or exchanges of the genetic material. Such a change may result in the creation of a new character or trait.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This biological process is one of the process responsible for I am able to write this tutorial and you be able read it. Without mutation, our species might have been found an local optima and perhaps we would never have evolved into what we are now.&lt;/p&gt;
+
+&lt;p&gt;The mutation operator has the same purpose in genetic algorithm, it avoid that our GA get stuck in optima local and end up never finding a better solution.&lt;/p&gt;
+
+&lt;p&gt;Like the other operators, you can create your own mutation implementing the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/IMutation.cs&quot;&gt;IMutation&lt;/a&gt; interface or extending &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/MutationBase.cs&quot;&gt;MutationBase&lt;/a&gt; or use some from the GeneticSharp menu: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/FlipBitMutation.cs&quot;&gt;Flip-bit&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/ReverseSequenceMutation.cs&quot;&gt;Reverse Sequence (RSM)&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/TworsMutation.cs&quot;&gt;Twors&lt;/a&gt; and &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/UniformMutation.cs&quot;&gt;Uniform&lt;/a&gt;.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheMutation.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Flip-bit mutation is a mutation specific to chromosomes that implement &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Chromosomes/IBinaryChromosome.cs&quot;&gt;IBinaryChromosome&lt;/a&gt; interface, as our FloatingPointChromosome does. It will randomly chose a gene and flip it bit, so a gene with value 0 will turn to 1 and vice-versa.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-termination&quot;&gt;Creating the termination&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/end.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;A termination decide when a GA should be stopped. GeneticSharp use the generation number termination with just one generation as default termination. This mean that the genetic algoritm will run just one generation when you call the Start method, after this you can increment the expected generation number of the termination and call the method Resume how many times you want.&lt;/p&gt;
+
+&lt;p&gt;There are cases where you want to call the Start method in just wait until some condition be reached, this why termination exist.&lt;/p&gt;
+
+&lt;p&gt;If you have some special condition to terminate your GA you can implement the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/ITermination.cs&quot;&gt;ITermination&lt;/a&gt; interface or extend the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/TerminationBase.cs&quot;&gt;TerminationBase&lt;/a&gt; class, but for most of cases you just need to use some of the availables terminations: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/GenerationNu&quot;&gt;Generation number&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/TimeEvolvingTermination.cs&quot;&gt;Time evolving&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/FitnessStagnationTermination.cs&quot;&gt;Fitness stagnation&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/FitnessThresholdTermination.cs&quot;&gt;Fitness threshold&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/AndTermination.cs&quot;&gt;And&lt;/a&gt; e &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/OrTermination.cs&quot;&gt;Or&lt;/a&gt; (allows combine others terminations).&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheTermination.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;In our tutorial we will use the fitness stagnation termination with a expected stagnant generations number of 100, this mean that if our GA generate the same best chromsome fitness in the last 100 generations then it will be terminated.&lt;/p&gt;
+
+&lt;h2 id=&quot;running-the-ga&quot;&gt;Running the GA&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/running.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=RunningtheGA1.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;So the GA ran, but where is the result? You can always get the best chromosome from the GeneticAlgorithm.BestChromosome property.&lt;/p&gt;
+
+&lt;p&gt;Another and better way to monitor the current best chromosome is use the GeneticAlgorithm.GenerationRan event. This event is raised right after a generation finish to run. Using this event you can see in 
+realtime how the genetic algorithm is evolving.&lt;/p&gt;
+
+&lt;p&gt;Let’s replace our last “ga.Start();” line to the code below:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=RunningtheGA2.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Now if your run the program you will see an output like that:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Generation  1: (178,330),(974,228) = 802.508566932466
+Generation  2: (950,487),(45,520) = 905.601457596
+Generation  3: (935,103),(38,617) = 1033.83025686038
+Generation  4: (998,680),(49,65) = 1130.85189127489
+Generation  8: (998,680),(57,1) = 1160.39734573981
+Generation  9: (998,680),(49,1) = 1166.89416829462
+Generation 11: (998,680),(17,19) = 1182.91250733095
+Generation 12: (998,680),(25,3) = 1185.35142468384
+Generation 14: (998,680),(17,3) = 1191.92701118819
+Generation 16: (998,680),(17,1) = 1193.06412233375
+Generation 17: (998,680),(16,1) = 1193.88651051932
+Generation 23: (998,680),(0,1) = 1207.08119030991
+Generation 32: (998,680),(0,0) = 1207.6439872744
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If we plot these generations the output image will be like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;We can see that in the first generations (black lines) the genetic algorithm as some intermediate results and at the end (red line) &lt;strong&gt;it found the best possible solution: a diagonal.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;complete-source-code&quot;&gt;Complete source code&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/programmer.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;When you finish the tutorial your source code will be this one:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CompleteSourceCode.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;In this tutorial we learn how genetic algoritm works and how to use GeneticSharp to solve a very simple sample. Now you can try it to solve more complex problems.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; and &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot; title=&quot;Vignesh Oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v1.1.0 - Binary chromosomes</title>
+   <link href="//GeneticSharp-v1.1.0-binary-chromosomes"/>
+   <updated>2017-06-11T00:00:00-03:00</updated>
+   <id>//GeneticSharp-v1.1.0-binary-chromosomes</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v1.1.0&lt;/a&gt;&lt;/strong&gt; is out. The greatest additions of this version are the binary chromosomes: &lt;strong&gt;FloatingPointChromosome and IntegerChromosome.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Binary chromosomes can be directly used when your solution chromosome can be represented as numbers or a string representation of 0 and 1.&lt;/p&gt;
+
+&lt;p&gt;A new sample has been added to the GeneticSharp.Runner.GtkApp, this sample called “Function optimization” show the FloatingPointChromsome in action:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/Q62tGjEDsYM &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Besides these new chromosomes, there is a new mutation: FlipBit, a special mutation to IBinaryChromosome that takes the chosen gene and inverts the bits.&lt;/p&gt;
+
+&lt;p&gt;If you want to use the new chromosomes in your project, just get the new GeneticSharp version from Nuget.&lt;/p&gt;
+
+&lt;p&gt;In the next days I will post a tutorial showing how to optimize a very simple function using GeneticSharp and the new FloatingPointChromosome.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron 2.0.0</title>
+   <link href="//buildron.2.0.0"/>
+   <updated>2016-09-24T00:00:00-03:00</updated>
+   <id>//buildron.2.0.0</id>
+   <content type="html">&lt;p&gt;After some months to test the &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;v2.0.0-RC1&lt;/a&gt; we are releasing the final version of &lt;a href=&quot;https://github.com/skahal/Buildron/&quot;&gt;Buildron&lt;/a&gt; mods support with this &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0&quot;&gt;2.0.0 version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Mods supports represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
+
+&lt;h2 id=&quot;mods-available&quot;&gt;Mods available&lt;/h2&gt;
+&lt;p&gt;The classic visual and behavior that you already know at Buildron was moved to mods, you can see them at &lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;Buildron Classic Mods repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Right now we have 9 mods developed to Buildron:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/Buildron-ConsoleMod/releases&quot;&gt;ConsoleMod&lt;/a&gt;: adds a console window to Buildron and let you monitor his events.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Classic Mods
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;BuildMod&lt;/a&gt;: represents each build as part of totem.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;CameraMod&lt;/a&gt;: auto position of camera to show all builds and users.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;EasterEggMod&lt;/a&gt;: surprise.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;EnvironmentMod&lt;/a&gt;: the classic Tron style floor.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;SoundMod&lt;/a&gt;: the classic explosion sounds and allow change the sounds for each user.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;UserMod&lt;/a&gt;: each user is represented by a robot and an avatar.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod/releases&quot;&gt;SlackBotMod&lt;/a&gt;: adds a bot to your Slack that acts as Buildron and your team can interact with it, like filter builds, sort builds, move camera, receive build status change notifications and taking screenshots.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Mod-Samples&quot;&gt;ToastyMod&lt;/a&gt;: the Mortal Kombat “Toasty!” easter egg that can be configured to show on build success, running or failed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;developing-new-mods&quot;&gt;Developing new mods&lt;/h2&gt;
+&lt;p&gt;Do you want to develop your own mod to Buildron? Take a look on our wiki pages about mods and start to build your mod now:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://diegogiacomelli.com.br/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron SlackBotMod</title>
+   <link href="//buildron-slackbotmod"/>
+   <updated>2016-09-22T00:00:00-03:00</updated>
+   <id>//buildron-slackbotmod</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to help software development teams to see the current status of their continous integration server and &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; is the omnipresent communication app for almost every developer in the world.&lt;/p&gt;
+
+&lt;p&gt;For these reasons, I made a mod called &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt; that let you interact with Buildron through the Slack.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+&lt;p&gt;Currently Buildron SlackBotMod has the follow features:&lt;/p&gt;
+
+&lt;h3 id=&quot;status-changed-notifications&quot;&gt;Status changed notifications&lt;/h3&gt;
+&lt;p&gt;Your team can be notified by Buildron about builds status changed. In the mod preferences you can choose what status you want to receive notifications (running|succes|failed).&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;filter-builds&quot;&gt;Filter builds&lt;/h3&gt;
+&lt;p&gt;Filter buils by status or text.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;reset-filter&quot;&gt;Reset filter&lt;/h3&gt;
+&lt;p&gt;Reset previous builds filter (no filter).&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;sort-builds&quot;&gt;Sort builds&lt;/h3&gt;
+&lt;p&gt;Sort buils by status, text or date.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;move-camera&quot;&gt;Move camera&lt;/h3&gt;
+&lt;p&gt;Move the camera the amount of pixels define in the x,y,z coordinates.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;reset-camera&quot;&gt;Reset camera&lt;/h3&gt;
+&lt;p&gt;Reset the camera position.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;take-a-screenshot&quot;&gt;Take a screenshot&lt;/h3&gt;
+&lt;p&gt;Take a screenshot of current Buildron state.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;If you are not using Buildron yet, &lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;give it a try&lt;/a&gt;.
+If you are already using Buildron and Slack, try my &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sending a Slackbot message from Unity3d</title>
+   <link href="//sending-a-slackbot-message-from-unity3d"/>
+   <updated>2016-09-17T00:00:00-03:00</updated>
+   <id>//sending-a-slackbot-message-from-unity3d</id>
+   <content type="html">&lt;p&gt;I was looking for a way to send a message to a Slack channel using the Slackbot API.&lt;/p&gt;
+
+&lt;p&gt;This is a pretty easy task to perform in C#, because there are some great client libraries implementations to the Slack API, like: &lt;a href=&quot;https://github.com/Inumedia/SlackAPI&quot;&gt;SlackApi&lt;/a&gt;, &lt;a href=&quot;https://github.com/jammerware/margiebot&quot;&gt;MargieBot&lt;/a&gt; and &lt;a href=&quot;https://github.com/noobot/SlackConnector&quot;&gt;SlackConnector&lt;/a&gt;. However, in the Unity3d world the story is a little different, because Unity3d uses an older .NET version and those mentioned client libraries are implemented using newer .NET framework versions that are incompatible with Unity3d.&lt;/p&gt;
+
+&lt;p&gt;I could have tried to compile those client libraries projects using a older .NET version, what I really tried to do, but almost all are using things like Task and async, that are really not supported by Unity3d .NET version right now.&lt;/p&gt;
+
+&lt;p&gt;Then I decided to try a very raw solution using the Unity3d WWWForm and it worked well, very simple, but can be useful to someone. The result is the code bellow:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;botcontroller&quot;&gt;BotController&lt;/h1&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Creating a ConsoleMod to Buildron</title>
+   <link href="//creating-a-consolemod-to-buildron"/>
+   <updated>2016-09-15T00:00:00-03:00</updated>
+   <id>//creating-a-consolemod-to-buildron</id>
+   <content type="html">&lt;p&gt;In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.&lt;/p&gt;
+
+&lt;h1 id=&quot;modcontroller-class&quot;&gt;ModController class&lt;/h1&gt;
+&lt;p&gt;ModController class will be a MonoBehaviour responsible to showing to the user a window where the Buildron events will be logged. It’s a very simple Unity3d MonoBehaviour that use some GUILayout stuffs to build its UI.&lt;/p&gt;
+
+&lt;h1 id=&quot;mod-class&quot;&gt;Mod class&lt;/h1&gt;
+&lt;p&gt;Mod class is the basic class for every Buildron mod and it will be responsible to creating the ModController GameObject and attach to listen a lot of the Buildron events.&lt;/p&gt;
+
+&lt;h2 id=&quot;download-buildron-mod-template&quot;&gt;Download Buildron-Mod-Template&lt;/h2&gt;
+&lt;p&gt;Go to Buildron &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;release page&lt;/a&gt; and download Buildron-Mod-Template.zip&lt;/p&gt;
+
+&lt;h2 id=&quot;create-your-mod-solution&quot;&gt;Create your mod solution&lt;/h2&gt;
+&lt;p&gt;Unzip the Buildron-Mod-Template.zip.&lt;/p&gt;
+
+&lt;p&gt;Open a prompt/terminal and go to the folder of unzip Buildron-Mod-Template.&lt;/p&gt;
+
+&lt;p&gt;Type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart.exe &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; ConsoleMod
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are using jumpstart in Mac/Linux, remember to call it with “mono “ prefix.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A folder called ConsoleMod should be created. Open the src/Code/ConsoleMod.sln.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-modcontroller-class&quot;&gt;Creating ModController class&lt;/h2&gt;
+&lt;p&gt;Delete the sample file BoxController.cs&lt;/p&gt;
+
+&lt;p&gt;Create a new class called ModController and add the code below to it:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ModController&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;region&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Fields&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rect&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_windowRect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_msgs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;();&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endregion&lt;/span&gt;
+
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;region&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Constructors&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ModController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;m_title&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Console mod (v.{0})&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;With&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Assembly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endregion&lt;/span&gt;
+
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;region&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Methods&lt;/span&gt;    
+   &lt;span class=&quot;c1&quot;&gt;/// &amp;lt;summary&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;/// Adds the message to the console window.&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;/// &amp;lt;/summary&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;/// &amp;lt;param name=&quot;message&quot;&amp;gt;The message.&amp;lt;/param&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;/// &amp;lt;param name=&quot;args&quot;&amp;gt;The arguments.&amp;lt;/param&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;params&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;formattedMessage&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;With&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;m_msgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Insert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;[{0:HH:mm:ss}] {1}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;With&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;formattedMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m_msgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Count&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;m_msgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;RemoveAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+   &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;OnGUI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_windowRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HandleWindowFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;MinWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;MinHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+   &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;HandleWindowFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;BeginVertical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+      &lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_msgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;EndVertical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endregion&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;creating-the-mod-class&quot;&gt;Creating the Mod class&lt;/h2&gt;
+&lt;p&gt;Replace the content of Mod.cs with the code below:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Buildron.Domain.Mods&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;UnityEngine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ConsoleMod&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;/// &amp;lt;summary&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;/// Responsible to create the ModController GameObject and attach to listen a lot of the Buildron events.&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;/// &amp;lt;/summary&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Mod&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IMod&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;/// &amp;lt;summary&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;/// Initialize the mod with the context.&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;/// &amp;lt;/summary&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;/// &amp;lt;param name=&quot;context&quot;&amp;gt;The mod context.&amp;lt;/param&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IModContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CreateModController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+			&lt;span class=&quot;nf&quot;&gt;ListenEvents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;            
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ModController&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CreateModController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		    	&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;go&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GameObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ConsoleController&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+		    	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;go&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AddComponent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ModController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;();&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ListenEvents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IModContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ModController&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildFound&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				        &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build found: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildRemoved&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build removed: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildsRefreshed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build refreshed: {0} builds found, {1} builds removed, {2} builds status changed&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildsFound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildsRemoved&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildsStatusChanged&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildStatusChanged&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build status changed: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildTriggeredByChanged&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build triggered by changed: {0}/{1}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TriggeredBy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildUpdated&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build updated: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CIServerStatusChanged&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;CI server status changed: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RemoteControlChanged&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;RC changed: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RemoteControl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UserAuthenticationCompleted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User authentication completed: {0}:{1}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Success&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;success&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;failed&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UserFound&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User found: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UserRemoved&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User remoed: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UserTriggeredBuild&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User triggered build: {0}/{1}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UserUpdated&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User updated: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Compile the project.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;testing-on-mod-simulator&quot;&gt;Testing on mod simulator&lt;/h2&gt;
+&lt;p&gt;Open the project src/Unity/ConsoleMod inside Unity3d editor.&lt;/p&gt;
+
+&lt;p&gt;Open SimulatorScene.&lt;/p&gt;
+
+&lt;p&gt;Hit the “Play” button.&lt;/p&gt;
+
+&lt;p&gt;You should see a scene like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;In the menu “Buildron”, click on “Show Simulator”.&lt;/p&gt;
+
+&lt;p&gt;Click on “BuildFound”, “BuildStatusChanged” and “BuildRemoved” buttons, you should see these events been registered on ConsoledMod window.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Hit the “Play” button again to stop playing the scene.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There are two folders inside your Unity3d project called “Materials” and “Prefabs”. They are created from Buildron-Mod-Template, but ConsoleMod don’t need them. You can remove them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;building-the-mod&quot;&gt;Building the mod&lt;/h2&gt;
+&lt;p&gt;ConsoleMod has no Unity3d assets, in this case you don’t need to use the menu “Buildron / BuildMod”, you just need to compile your project inside your IDE, as we did on section “Creating the Mod class” to get your mod inside Buildron.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing-on-buildron&quot;&gt;Testing on Buildron&lt;/h2&gt;
+&lt;p&gt;Go to folder ConsoleMod/build and open the Buildron of your platform.&lt;/p&gt;
+
+&lt;p&gt;Hit the play button on Buildron.&lt;/p&gt;
+
+&lt;p&gt;You should see the ConsoleMod window registering a lot of Buildron events.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;That’s it! We created a Buildron mod that can help to debug what is happening in Buildron and mods in runtime.&lt;/p&gt;
+
+&lt;p&gt;So, why you don’t try to &lt;strong&gt;create your own Buildron mod now&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;p&gt;You can see the full source code of this post on &lt;a href=&quot;https://github.com/giacomelli/Buildron-ConsoleMod&quot;&gt;https://github.com/giacomelli/Buildron-ConsoledMod&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>jumpstart</title>
+   <link href="//jumpstart"/>
+   <updated>2016-09-12T00:00:00-03:00</updated>
+   <id>//jumpstart</id>
+   <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a command-line tool to create new C# projects from prebuilt/templates.&lt;/p&gt;
+
+&lt;p&gt;As an experienced developers it’s very common we have some kind of template solution when we start a new project. Maybe it’s the latest project we work on, maybe it’s a very good template we used every time to bootstrap a specific kind of project.&lt;/p&gt;
+
+&lt;p&gt;I created &lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; to simplify the process of create the new project based on those templates or prebuilt solutions.&lt;/p&gt;
+
+&lt;p&gt;The idea of the tool was born a long time ago and became a little stronger every time that I had to create a new solution and all the projects by hand, but when I saw the message bellow in the &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt; page I decided to finally write the tool… and the name was very clear, almost.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The first name that I thought to the tool was prebuilt, but later, my friend &lt;a href=&quot;https://twitter.com/giusepe&quot;&gt;Giusepe Casagrande&lt;/a&gt; convinced me that jumpstart was really better name… and he was right!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
+&lt;p&gt;jumpstart is very simple, it get a folder with a template solution and copy it to a new folder replacing the root namespace of the template to the new project namespace.&lt;/p&gt;
+
+&lt;p&gt;A template folder like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart-template/MyClass.cs
+jumpstart-template/Properties
+jumpstart-template/Properties/AssemblyInfo.cs
+jumpstart-template/JumpStartTemplate.csproj
+JumpStartTemplate.sln
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With this command:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Amazing.NewProject
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Will become:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;My.Amazing.NewProject/MyClass.cs
+My.Amazing.NewProject/Properties
+My.Amazing.NewProject/Properties/AssemblyInfo.cs
+My.Amazing.NewProject/My.Amazing.NewProject.csproj
+My.Amazing.NewProject.sln
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The MyClass.cs, AssemblyInfo.cs, My.Amazing.NewProject.csproj and My.Amazing.NewProject.sln contents was updated by jumpstart to use the namespace My.Amazing.NewProject.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;using-it&quot;&gt;Using it&lt;/h2&gt;
+&lt;p&gt;Download it from the &lt;a href=&quot;https://github.com/giacomelli/jumpstart/releases&quot;&gt;releases page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;available-options&quot;&gt;Available options:&lt;/h3&gt;
+&lt;p&gt;To see all available options.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart.exe &lt;span class=&quot;nt&quot;&gt;-help&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are using jumpstart in Mac/Linux, remember to call it with “mono “ prefix.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;basic-using-conventions&quot;&gt;Basic (using conventions)&lt;/h3&gt;
+&lt;p&gt;If your template folder is called “jumpstart-template” and its namespace is JumpStartTemplate, the only argument you need to pass to jumpstart is -n(namespace).&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Amazing.NewProject
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The “jumpstart-template” folder should be in the same folder where you are calling jumpstart.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;advanced-specifying-template-folder-and-namespace&quot;&gt;Advanced (specifying template folder and namespace)&lt;/h3&gt;
+&lt;p&gt;For example, your template folder is “my-template” and your template namespace is “My.Template”, in this case you should call jumpstart in this way:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-tf&lt;/span&gt; my-template &lt;span class=&quot;nt&quot;&gt;-tn&lt;/span&gt; My.Template &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Amazing.NewProject
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;advanced-using-a-remote-zip-template&quot;&gt;Advanced (using a remote .zip template)&lt;/h3&gt;
+&lt;p&gt;You can use a remote .zip file as your template folder. For example, if you want to start a new project with any of those prebuilt apps that Xamarin make available on &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt;, you can use the command bellow to jumpstart your new project using those templates:&lt;/p&gt;
+
+&lt;h5 id=&quot;jumpstart-xamarin-sport-prebuilt-app&quot;&gt;jumpstart Xamarin Sport prebuilt app&lt;/h5&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-tf&lt;/span&gt; https://github.com/xamarin/sport/archive/master.zip &lt;span class=&quot;nt&quot;&gt;-tn&lt;/span&gt; Sport.Mobile &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Sport.Mobile 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I hope you can use jumpstart in your next project bootstrap. &lt;a href=&quot;https://github.com/giacomelli/jumpstart/releases&quot;&gt;Download&lt;/a&gt; and use it.&lt;/p&gt;
+
+&lt;p&gt;If you want to colaborate, take a look on its &lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Starting a Buildron mod with a mod template</title>
+   <link href="//starting-a-buildron-mod-with-a-mod-template"/>
+   <updated>2016-09-04T00:00:00-03:00</updated>
+   <id>//starting-a-buildron-mod-with-a-mod-template</id>
+   <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+&lt;p&gt;Download the Buildron-Mod-Template.zip from &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;releases page&lt;/a&gt;.
+Unzip it in any folder.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-solution&quot;&gt;Creating the solution&lt;/h2&gt;
+&lt;p&gt;Open a prompt (win) or a terminal (linux/mac).&lt;/p&gt;
+
+&lt;p&gt;Go to the folder where you unzip Buildron-Mod-Template.zip.&lt;/p&gt;
+
+&lt;p&gt;Type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart-exe &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &amp;lt;the name of your mod&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are in Linux/Mac andfix commands with “mono “.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example, if your mod name is “MyAmazingMod”, you should type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart.exe &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyAmazingMod
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a tool that I made to help create solutions from pre built templates. I will talk about of it in an future post.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;build: full Buildron executable with the classic mods to all platforms (linux, mac and win).&lt;/li&gt;
+  &lt;li&gt;src
+    &lt;ul&gt;
+      &lt;li&gt;Code: the C# class library of your mod&lt;/li&gt;
+      &lt;li&gt;Unity: the Unity3d project of your mod.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;the-c-project&quot;&gt;The C# project&lt;/h2&gt;
+&lt;p&gt;Open the MyAmazingMod/src/Code/MyAmazingMod.sln.&lt;/p&gt;
+
+&lt;p&gt;Select the configuration of your platform.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Inside of it you can see the Mod.cs and ModController.cs.&lt;/p&gt;
+
+&lt;p&gt;Compile the whole solution.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-unity3d-project&quot;&gt;The Unity3d project&lt;/h2&gt;
+&lt;p&gt;Open the MyAmazingMod/src/Unity/MyAmazingMod on Unity3d.&lt;/p&gt;
+
+&lt;p&gt;Open the scene Assets/SimulatorScene and click on play button.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Click on the menu “Buildron/Show Simulator”.&lt;/p&gt;
+
+&lt;p&gt;In the simulator click on button “BuildStatusChanged”.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;You will see a box falling down every time you hit the button. This behavior is made by Mod.cs and ModController.cs on C# project. If you are curious about it, take a look on the classes implementations.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing-on-buildron&quot;&gt;Testing on Buildron&lt;/h2&gt;
+&lt;p&gt;In the Unity3d editor click on menu “Buildron / Build mod”.&lt;/p&gt;
+
+&lt;p&gt;Select your platform: Mac, Linux or Windows.&lt;/p&gt;
+
+&lt;p&gt;Type your Buildron mods folder:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Linux: ../../../build/linux/Mods&lt;/li&gt;
+  &lt;li&gt;Mac: ../../../build/mac/Buildron.app/Mods&lt;/li&gt;
+  &lt;li&gt;Win: ../../../build/win/Mods&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Click on “Build” button.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Go to folder MyAmazingMod/build and open the Buildron of your platform.&lt;/p&gt;
+
+&lt;p&gt;Hit the play button on Buildron.&lt;/p&gt;
+
+&lt;p&gt;You should see the same falling down box that you see on simulator falling down inside Buildron every time a build changed status.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;With this post you learned how you can starting to create your own mod from mod template.&lt;/p&gt;
+
+&lt;p&gt;If you want to build more sofisticated mods, please take a look on our tutorial &lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;“Creating a mod”&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron 2.0.0-RC1 - Mods support</title>
+   <link href="//buildron.2.0.0-rc1-mods-support"/>
+   <updated>2016-08-28T00:00:00-03:00</updated>
+   <id>//buildron.2.0.0-rc1-mods-support</id>
+   <content type="html">&lt;p&gt;After some months of hard work I finally released the Buildron mods support.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;This &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;Buildron 2.0.0-RC1&lt;/a&gt; represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
+
+&lt;p&gt;Hope to see you building some mods to Buildron. We’re curious about what crazy mods ideas you could have ;).&lt;/p&gt;
+
+&lt;p&gt;We really appreciate your opinion about the mods support, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-introduction&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-tutorial-creating-a-mod&quot;&gt;tutorial&lt;/a&gt; and &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;. Please, get in touch at &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;mods&quot;&gt;Mods&lt;/h3&gt;
+&lt;p&gt;The classic visual and behavior that you already know at Buildron was moved to mods too, you can see them at &lt;a href=&quot;http://github.com/skahal/Buildron-Classic-Mods&quot;&gt;Buildron Classic Mods&lt;/a&gt; repository.&lt;/p&gt;
+
+&lt;p&gt;The full list of mods is available here: &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-Mods-list&quot;&gt;Mods list&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;i-wanna-build-a-mod&quot;&gt;I wanna build a mod&lt;/h3&gt;
+&lt;p&gt;If you want to build a mod, take a look on this &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt; and this &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial creating a mod&lt;/a&gt; that teach how build Buildron’s mod.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron - Your builds, our world! ...and now our open source code too</title>
+   <link href="//buildron-your-builds-our-world-and-now-our-open-source-code-too"/>
+   <updated>2016-06-02T00:00:00-03:00</updated>
+   <id>//buildron-your-builds-our-world-and-now-our-open-source-code-too</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to continuous integration server like TeamCity, Jenkins and Hudson.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;We’ve built it as a &lt;a href=&quot;http://skahal.com&quot;&gt;Skahal’s&lt;/a&gt; product and now we decide to &lt;strong&gt;open source it: &lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;http://github.com/skahal/buildron&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can run it on Windows, OSX and Linux: &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;https://github.com/skahal/Buildron/releases&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a remote control app too (Windows, OSX, Linux, iOS and Android), where you can sort and filter builds, among other things: &lt;a href=&quot;https://github.com/skahal/Buildron-rc/releases&quot;&gt;https://github.com/skahal/Buildron-rc/releases&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Give it a try:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/sEghUYUvTHg &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Using a FxCop badge on your GitHub repository</title>
+   <link href="//using-a-fxcop-badge-on-your-github-repository"/>
+   <updated>2015-10-26T00:00:00-02:00</updated>
+   <id>//using-a-fxcop-badge-on-your-github-repository</id>
+   <content type="html">&lt;p&gt;The use of badges on GitHub repositories helps us to promote good pratices about our code. Some amazing services like the &lt;a href=&quot;http://shields.io&quot;&gt;Shileds.io&lt;/a&gt; can generate almost all badges you can imagine, but what about those badges where there is no such online service to perform this job? One common case is when you program with C# and want some FxCop badge but there is no online service to run FxCop.&lt;/p&gt;
+
+&lt;h3 id=&quot;badgessharp&quot;&gt;BadgesSharp&lt;/h3&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;To fill this gap I created the BadgesSharp service: &lt;a href=&quot;http://badgessharp.apphb.com&quot;&gt;http://badgessharp.apphb.com&lt;/a&gt;. BadgesSharp is a free service to generate badges that need some kind of input and processing before you can display them on GitHub repositories.&lt;/p&gt;
+
+&lt;p&gt;In the case of FxCop, we need to run it against our .NET code and send the result report to BadgesSharp and then the service will generate the FxCop badge.&lt;/p&gt;
+
+&lt;p&gt;Here is a small tutorial on how to get the FxCop badge in your GitHub repo:&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;install-fxcop&quot;&gt;Install FxCop&lt;/h3&gt;
+&lt;p&gt;If you don’t have it yet, &lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=6544&quot;&gt;download&lt;/a&gt; and install FxCop.&lt;/p&gt;
+
+&lt;h3 id=&quot;run-fxcop&quot;&gt;Run FxCop&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;C:\Program Files (x86)\Microsoft Fxcop 10.0\FxCopCmd.exe&quot; /project:[Your FxCop file].FxCop /out:fxcop-report.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The report will be saved to fxcop-report.xml&lt;/p&gt;
+
+&lt;h3 id=&quot;generate-fxcop-badge&quot;&gt;Generate FxCop badge&lt;/h3&gt;
+&lt;p&gt;Download &lt;a href=&quot;https://github.com/giacomelli/BadgesSharp/releases&quot;&gt;BadgesSharpCmd&lt;/a&gt; and run it:&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BadgesSharpCmd -o [your GitHub username] -r [your GitHub repository] -a %GITHUB_REPO_TOKEN% -b FxCop -c fxcop-report.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note: you will need a GitHub personal token: &lt;a href=&quot;https://github.com/settings/tokens&quot;&gt;https://github.com/settings/tokens&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;More info at:&lt;a href=&quot;https://badgessharp.apphb.com/Docs/GettingStarted&quot;&gt;https://badgessharp.apphb.com/Docs/GettingStarted&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;show-the-badge-at-your-github-repository&quot;&gt;Show the badge at your GitHub repository&lt;/h3&gt;
+&lt;p&gt;Edit your readme.md and add the line below:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![FxCop](https://badgessharp.apphb.com/badges/:owner/:repo/FxCop)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Sample badges: &lt;img src=&quot;https://badgessharp.apphb.com/badges/giacomelli/BadgesSharp/FxCop&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://badgessharp.apphb.com/badges/giacomelli/SampleProject/FxCop&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-use-it-on-your-continuous-integration&quot;&gt;How use it on your Continuous Integration?&lt;/h3&gt;
+&lt;p&gt;Probably you’re using some continuous integration service, below are some samples:&lt;/p&gt;
+
+&lt;h4 id=&quot;appveyor&quot;&gt;AppVeyor&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add to your AppVeyor.yml file:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;after_build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;cmd&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;C:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\P&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;rogram&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Files&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;(x86)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Microsoft&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Fxcop&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;10.0&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;FxCopCmd.exe&quot;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/project:[Your FxCop file].FxCop /out:fxcop-report.xml&lt;/span&gt;
+
+        &lt;span class=&quot;s&quot;&gt;BadgesSharpCmd -o [your GitHub username] -r [your GitHub repository] -a %GITHUB_REPO_TOKEN% -b FxCop -c fxcop-report.xml&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;teamcity&quot;&gt;TeamCity&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add the ‘FxCop’ step to your configuration (probably you already have it);&lt;/li&gt;
+  &lt;li&gt;Add a final ‘Command Line’ step to your configuration:
+    &lt;ul&gt;
+      &lt;li&gt;Execute step: Even if some of the previous steps failed&lt;/li&gt;
+      &lt;li&gt;Run: Custom script
+Custom script:&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BadgesSharpCmd -o [your GitHub username] -r [your GitHub repository] -a %GITHUB_REPO_TOKEN% -b FxCop -c &quot;%system.teamcity.build.tempDir%\fxcop-output-*\fxcop-result.xml&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;That’s it! Now you have a FxCop badge to show on your GitHub repository.&lt;/p&gt;
+
+&lt;p&gt;BadgesSharp support others badges too: StyleCop, DupFinder and Plato.&lt;/p&gt;
+
+&lt;p&gt;If you like it, take a look on GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/BadgesSharp&quot;&gt;https://github.com/giacomelli/BadgesSharp&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Getting your code documentation at runtime</title>
+   <link href="//getting-your-code-documentation-at-runtime"/>
+   <updated>2014-08-03T00:00:00-03:00</updated>
+   <id>//getting-your-code-documentation-at-runtime</id>
+   <content type="html">&lt;p&gt;In some situations, like generate a live console for a web api or generate code using T4 template we need a way to read the code documentation at runtime.&lt;/p&gt;
+
+&lt;p&gt;Some time ago I’ve faced that situation again and I thought: &lt;em&gt;“Should be an easy way to read this code documentation!”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;After some googled I found a code from Jim Blackler that allowed developers read C# code documentation at runtime, but at that time the code was just a downloadable .zip in Jim’s blog. I asked him if I could put the source code on GitHub to allow better code improvements and community collaboration, he said: “Please go ahead with your plan”.&lt;/p&gt;
+
+&lt;p&gt;So, I created the project at GitHub, &lt;strong&gt;DocsByReflection&lt;/strong&gt;: &lt;a href=&quot;https://github.com/giacomelli/DocsByReflection&quot;&gt;https://github.com/giacomelli/DocsByReflection&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;docsbyreflection&quot;&gt;DocsByReflection&lt;/h3&gt;
+&lt;p&gt;With DocsByReflection you can easy get your code documentation at runtime in many ways, like:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// From type.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;typeDoc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DocsService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetXmlFromType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Stub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// From property.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;propertyInfo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Stub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetProperty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;PropertyWithDoc&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;propertyDoc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DocsService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetXmlFromMember&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;propertyInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// From method.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methodInfo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Stub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;MethodWithGenericParameter&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methodDoc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DocsService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetXmlFromMember&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;methodInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// From assembly.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assemblyDoc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DocsService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetXmlFromAssembly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Stub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Assembly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you want colaborate, just &lt;a href=&quot;https://github.com/giacomelli/DocsByReflection/fork&quot;&gt;fork it at GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;nuget&quot;&gt;Nuget&lt;/h4&gt;
+&lt;p&gt;If you want just use it, there is a NuGet package with latest binaries version:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Install-Package DocsByReflection
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Improving your debug with DebuggerDisplay</title>
+   <link href="//improving-your-debug-with-debuggerdisplay"/>
+   <updated>2014-07-14T00:00:00-03:00</updated>
+   <id>//improving-your-debug-with-debuggerdisplay</id>
+   <content type="html">&lt;p&gt;There is an amazing and easy to use custom attribute on .NET Framework stack that I rarely see in use. It helps and improve the way you can debug your code and you just need a line of code to use it: &lt;strong&gt;DebuggerDisplay&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Maybe you’ve used it a lot and already love it, in this case just spread the word ;), but if you are a beginner or an experienced .NET developer and don’t know DebuggerDisplay, this is the chance to you to improve your debug skills.&lt;/p&gt;
+
+&lt;h3 id=&quot;imagine-this-scenario&quot;&gt;Imagine this scenario:&lt;/h3&gt;
+&lt;p&gt;We have a class called Tweet:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Tweet&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RetweetsCount&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FavoritesCount&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You are debugging a list of Tweets, let me say 200 tweets, and all tweets in the debugger view looks like the image below:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;It’s clear that is not easy to know what tweets are inside that list. Of course you can use breakpoint conditions, trace, logs and many others resources to help the debug process, but DebuggerDisplay is an easier and very cheap solution.&lt;/p&gt;
+
+&lt;p&gt;In our scenario, the most important things about the Tweet class are the text, the username and the retweets count. We’ll add the DebuggerDisplay attribute to the class:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;[DebuggerDisplay(&quot;{Text} ({User.UserName}) - RTs: {RetweetCount}&quot;)]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Tweet&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RetweetsCount&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FavoritesCount&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Now, that “secret” tweet list looks like:&lt;/strong&gt;&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;When debugging is easier than expected &lt;/span&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;em&gt;More information about DebuggerDisplay on official documentation: &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms228992(v=vs.110).aspx&quot;&gt;msdn.microsoft.com/en-us/library/ms228992(v=vs.110).aspx&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Why we should avoid DateTime.UtcNow inside a Linq to Entities query?</title>
+   <link href="//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query"/>
+   <updated>2014-05-12T00:00:00-03:00</updated>
+   <id>//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query</id>
+   <content type="html">&lt;p&gt;&lt;strong&gt;Because we can get unexpected results! (after read this tip, will be expected results ;))&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-the-diference-between-these-two-linq-queries&quot;&gt;What is the diference between these two Linq queries?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Query 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filterDate&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UtcNow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filterDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Query 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UtcNow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The first one will generate a SQL with WHERE clause like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p__linq__1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Where @p__linq__1 is the value of our filterDate variable.&lt;/p&gt;
+
+&lt;p&gt;The second one will generate this WHERE clause:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SysUtcDateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;what-is-the-problem&quot;&gt;What is the problem?&lt;/h3&gt;
+&lt;p&gt;Imagine that we’re using the second query inside some sync algorithm in our C# code, this algorithm is very sensitive about time, now imagine that the server where our C# code is running has a difference about seconds or minutes with the database server?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;YES, UNEXPECTED RESULTS!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Linq to Entities is very smart and it is able to translate our DateTime.Now or DateTime.UtcNow to a matching command on database side.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The important here is: we should remember that it can do this and we should use features like these with parsimony.&lt;/strong&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>

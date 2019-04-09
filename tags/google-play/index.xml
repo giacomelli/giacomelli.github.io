@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - google-play</title>
+ <link href="//tags/google-play/index.xml" rel="self"/>
+ <link href="/tag/google-play.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/google-play.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>GeneticSharp Unity3d Samples released on Google Play</title>
+   <link href="//GeneticSharp-Unity3d-Samples-released-on-Google-Play"/>
+   <updated>2018-09-22T00:00:00-03:00</updated>
+   <id>//GeneticSharp-Unity3d-Samples-released-on-Google-Play</id>
+   <content type="html">&lt;p&gt;I published on Google Play the &lt;strong&gt;GeneticSharp Unity3d Samples&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/pJpZwCW2m4s &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;center&gt;
+	&lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp&quot;&gt;
+		&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/google-play-badge.png&quot; /&gt;
+      &lt;/center&gt;
+	&lt;/a&gt;
+&lt;/center&gt;
+
+&lt;p&gt;In this app you can see GeneticSharp running on Unity3d in three different samples:&lt;/p&gt;
+
+&lt;h2 id=&quot;car2d&quot;&gt;Car2D&lt;/h2&gt;
+&lt;p&gt;Based on famous BoxCar2D, this sample uses a genetic algorithm to create car designs to overcome road challenges, like gaps, hills, and obstacles.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
+&lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
+
+&lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
+&lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>

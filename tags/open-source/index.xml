@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - open-source</title>
+ <link href="//tags/open-source/index.xml" rel="self"/>
+ <link href="/tag/open-source.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/open-source.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Unity3D ScenePreview inspector</title>
+   <link href="//unity3d-scenepreview-inspector"/>
+   <updated>2017-11-26T00:00:00-02:00</updated>
+   <id>//unity3d-scenepreview-inspector</id>
+   <content type="html">&lt;p&gt;I’m working in a new game prototype and in this process I was creating some experimental levels to test the mechanics, but by the name of scene I was having dificult to remember which mechanic the level was about and I had to open each level to discover that one was looking for, so I thought: it will be cool have an image preview of the scene when we select the file in hierarchy.&lt;/p&gt;
+
+&lt;p&gt;I google and didn’t find any project or asset in Asset Store that already did something like this (please, let me know if you know a similar tool) and, well, I prefer code something, than google something, then I coded a little inspector, that I named as ScenePreview:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a “Editor” folder.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/f74a23107fe862ae7501002ac856f932.js?file=ScenePreview.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;After this, open it and edit the line below:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Change this to a folder in your project. &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Maybe the folder where your scenes are located. Remember to create a subfolder called &quot;Resources&quot; inside of it.&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PreviewFolders&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;_scenes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;If you select any scene in the hierarchy you will see a message like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“There is no image preview for scene ‘’ at ‘’. Please play the scene on editor and image preview will be captured automatically.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So, play the scene on editor and the image preview will be taken, when you select the scene file again you see the preview.&lt;/p&gt;
+
+&lt;p&gt;That’s it! I hope this inspector can be useful to you too.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron 2.0.0</title>
+   <link href="//buildron.2.0.0"/>
+   <updated>2016-09-24T00:00:00-03:00</updated>
+   <id>//buildron.2.0.0</id>
+   <content type="html">&lt;p&gt;After some months to test the &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;v2.0.0-RC1&lt;/a&gt; we are releasing the final version of &lt;a href=&quot;https://github.com/skahal/Buildron/&quot;&gt;Buildron&lt;/a&gt; mods support with this &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0&quot;&gt;2.0.0 version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Mods supports represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
+
+&lt;h2 id=&quot;mods-available&quot;&gt;Mods available&lt;/h2&gt;
+&lt;p&gt;The classic visual and behavior that you already know at Buildron was moved to mods, you can see them at &lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;Buildron Classic Mods repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Right now we have 9 mods developed to Buildron:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/Buildron-ConsoleMod/releases&quot;&gt;ConsoleMod&lt;/a&gt;: adds a console window to Buildron and let you monitor his events.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Classic Mods
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;BuildMod&lt;/a&gt;: represents each build as part of totem.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;CameraMod&lt;/a&gt;: auto position of camera to show all builds and users.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;EasterEggMod&lt;/a&gt;: surprise.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;EnvironmentMod&lt;/a&gt;: the classic Tron style floor.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;SoundMod&lt;/a&gt;: the classic explosion sounds and allow change the sounds for each user.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;UserMod&lt;/a&gt;: each user is represented by a robot and an avatar.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod/releases&quot;&gt;SlackBotMod&lt;/a&gt;: adds a bot to your Slack that acts as Buildron and your team can interact with it, like filter builds, sort builds, move camera, receive build status change notifications and taking screenshots.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Mod-Samples&quot;&gt;ToastyMod&lt;/a&gt;: the Mortal Kombat “Toasty!” easter egg that can be configured to show on build success, running or failed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;developing-new-mods&quot;&gt;Developing new mods&lt;/h2&gt;
+&lt;p&gt;Do you want to develop your own mod to Buildron? Take a look on our wiki pages about mods and start to build your mod now:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://diegogiacomelli.com.br/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron SlackBotMod</title>
+   <link href="//buildron-slackbotmod"/>
+   <updated>2016-09-22T00:00:00-03:00</updated>
+   <id>//buildron-slackbotmod</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to help software development teams to see the current status of their continous integration server and &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; is the omnipresent communication app for almost every developer in the world.&lt;/p&gt;
+
+&lt;p&gt;For these reasons, I made a mod called &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt; that let you interact with Buildron through the Slack.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+&lt;p&gt;Currently Buildron SlackBotMod has the follow features:&lt;/p&gt;
+
+&lt;h3 id=&quot;status-changed-notifications&quot;&gt;Status changed notifications&lt;/h3&gt;
+&lt;p&gt;Your team can be notified by Buildron about builds status changed. In the mod preferences you can choose what status you want to receive notifications (running|succes|failed).&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;filter-builds&quot;&gt;Filter builds&lt;/h3&gt;
+&lt;p&gt;Filter buils by status or text.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;reset-filter&quot;&gt;Reset filter&lt;/h3&gt;
+&lt;p&gt;Reset previous builds filter (no filter).&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;sort-builds&quot;&gt;Sort builds&lt;/h3&gt;
+&lt;p&gt;Sort buils by status, text or date.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;move-camera&quot;&gt;Move camera&lt;/h3&gt;
+&lt;p&gt;Move the camera the amount of pixels define in the x,y,z coordinates.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;reset-camera&quot;&gt;Reset camera&lt;/h3&gt;
+&lt;p&gt;Reset the camera position.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;take-a-screenshot&quot;&gt;Take a screenshot&lt;/h3&gt;
+&lt;p&gt;Take a screenshot of current Buildron state.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;If you are not using Buildron yet, &lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;give it a try&lt;/a&gt;.
+If you are already using Buildron and Slack, try my &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sending a Slackbot message from Unity3d</title>
+   <link href="//sending-a-slackbot-message-from-unity3d"/>
+   <updated>2016-09-17T00:00:00-03:00</updated>
+   <id>//sending-a-slackbot-message-from-unity3d</id>
+   <content type="html">&lt;p&gt;I was looking for a way to send a message to a Slack channel using the Slackbot API.&lt;/p&gt;
+
+&lt;p&gt;This is a pretty easy task to perform in C#, because there are some great client libraries implementations to the Slack API, like: &lt;a href=&quot;https://github.com/Inumedia/SlackAPI&quot;&gt;SlackApi&lt;/a&gt;, &lt;a href=&quot;https://github.com/jammerware/margiebot&quot;&gt;MargieBot&lt;/a&gt; and &lt;a href=&quot;https://github.com/noobot/SlackConnector&quot;&gt;SlackConnector&lt;/a&gt;. However, in the Unity3d world the story is a little different, because Unity3d uses an older .NET version and those mentioned client libraries are implemented using newer .NET framework versions that are incompatible with Unity3d.&lt;/p&gt;
+
+&lt;p&gt;I could have tried to compile those client libraries projects using a older .NET version, what I really tried to do, but almost all are using things like Task and async, that are really not supported by Unity3d .NET version right now.&lt;/p&gt;
+
+&lt;p&gt;Then I decided to try a very raw solution using the Unity3d WWWForm and it worked well, very simple, but can be useful to someone. The result is the code bellow:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;botcontroller&quot;&gt;BotController&lt;/h1&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Creating a ConsoleMod to Buildron</title>
+   <link href="//creating-a-consolemod-to-buildron"/>
+   <updated>2016-09-15T00:00:00-03:00</updated>
+   <id>//creating-a-consolemod-to-buildron</id>
+   <content type="html">&lt;p&gt;In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.&lt;/p&gt;
+
+&lt;h1 id=&quot;modcontroller-class&quot;&gt;ModController class&lt;/h1&gt;
+&lt;p&gt;ModController class will be a MonoBehaviour responsible to showing to the user a window where the Buildron events will be logged. It’s a very simple Unity3d MonoBehaviour that use some GUILayout stuffs to build its UI.&lt;/p&gt;
+
+&lt;h1 id=&quot;mod-class&quot;&gt;Mod class&lt;/h1&gt;
+&lt;p&gt;Mod class is the basic class for every Buildron mod and it will be responsible to creating the ModController GameObject and attach to listen a lot of the Buildron events.&lt;/p&gt;
+
+&lt;h2 id=&quot;download-buildron-mod-template&quot;&gt;Download Buildron-Mod-Template&lt;/h2&gt;
+&lt;p&gt;Go to Buildron &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;release page&lt;/a&gt; and download Buildron-Mod-Template.zip&lt;/p&gt;
+
+&lt;h2 id=&quot;create-your-mod-solution&quot;&gt;Create your mod solution&lt;/h2&gt;
+&lt;p&gt;Unzip the Buildron-Mod-Template.zip.&lt;/p&gt;
+
+&lt;p&gt;Open a prompt/terminal and go to the folder of unzip Buildron-Mod-Template.&lt;/p&gt;
+
+&lt;p&gt;Type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart.exe &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; ConsoleMod
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are using jumpstart in Mac/Linux, remember to call it with “mono “ prefix.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A folder called ConsoleMod should be created. Open the src/Code/ConsoleMod.sln.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-modcontroller-class&quot;&gt;Creating ModController class&lt;/h2&gt;
+&lt;p&gt;Delete the sample file BoxController.cs&lt;/p&gt;
+
+&lt;p&gt;Create a new class called ModController and add the code below to it:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ModController&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;region&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Fields&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rect&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_windowRect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_msgs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;();&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endregion&lt;/span&gt;
+
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;region&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Constructors&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ModController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;m_title&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Console mod (v.{0})&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;With&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Assembly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endregion&lt;/span&gt;
+
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;region&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Methods&lt;/span&gt;    
+   &lt;span class=&quot;c1&quot;&gt;/// &amp;lt;summary&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;/// Adds the message to the console window.&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;/// &amp;lt;/summary&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;/// &amp;lt;param name=&quot;message&quot;&amp;gt;The message.&amp;lt;/param&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;/// &amp;lt;param name=&quot;args&quot;&amp;gt;The arguments.&amp;lt;/param&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;params&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;formattedMessage&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;With&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;m_msgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Insert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;[{0:HH:mm:ss}] {1}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;With&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;formattedMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m_msgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Count&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;m_msgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;RemoveAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+   &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;OnGUI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_windowRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HandleWindowFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;MinWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;MinHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+   &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;HandleWindowFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;BeginVertical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+      &lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m_msgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;GUILayout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;EndVertical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endregion&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;creating-the-mod-class&quot;&gt;Creating the Mod class&lt;/h2&gt;
+&lt;p&gt;Replace the content of Mod.cs with the code below:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Buildron.Domain.Mods&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;UnityEngine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ConsoleMod&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;/// &amp;lt;summary&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;/// Responsible to create the ModController GameObject and attach to listen a lot of the Buildron events.&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;/// &amp;lt;/summary&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Mod&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IMod&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;/// &amp;lt;summary&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;/// Initialize the mod with the context.&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;/// &amp;lt;/summary&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;/// &amp;lt;param name=&quot;context&quot;&amp;gt;The mod context.&amp;lt;/param&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IModContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CreateModController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+			&lt;span class=&quot;nf&quot;&gt;ListenEvents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;            
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ModController&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CreateModController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		    	&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;go&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GameObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ConsoleController&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+		    	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;go&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AddComponent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ModController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;();&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ListenEvents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IModContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ModController&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildFound&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				        &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build found: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildRemoved&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build removed: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildsRefreshed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build refreshed: {0} builds found, {1} builds removed, {2} builds status changed&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildsFound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildsRemoved&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildsStatusChanged&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildStatusChanged&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build status changed: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildTriggeredByChanged&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build triggered by changed: {0}/{1}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TriggeredBy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildUpdated&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Build updated: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CIServerStatusChanged&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;CI server status changed: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RemoteControlChanged&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;RC changed: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RemoteControl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UserAuthenticationCompleted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User authentication completed: {0}:{1}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Success&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;success&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;failed&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UserFound&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User found: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UserRemoved&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User remoed: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UserTriggeredBuild&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User triggered build: {0}/{1}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+			    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UserUpdated&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;User updated: {0}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Compile the project.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;testing-on-mod-simulator&quot;&gt;Testing on mod simulator&lt;/h2&gt;
+&lt;p&gt;Open the project src/Unity/ConsoleMod inside Unity3d editor.&lt;/p&gt;
+
+&lt;p&gt;Open SimulatorScene.&lt;/p&gt;
+
+&lt;p&gt;Hit the “Play” button.&lt;/p&gt;
+
+&lt;p&gt;You should see a scene like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;In the menu “Buildron”, click on “Show Simulator”.&lt;/p&gt;
+
+&lt;p&gt;Click on “BuildFound”, “BuildStatusChanged” and “BuildRemoved” buttons, you should see these events been registered on ConsoledMod window.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Hit the “Play” button again to stop playing the scene.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There are two folders inside your Unity3d project called “Materials” and “Prefabs”. They are created from Buildron-Mod-Template, but ConsoleMod don’t need them. You can remove them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;building-the-mod&quot;&gt;Building the mod&lt;/h2&gt;
+&lt;p&gt;ConsoleMod has no Unity3d assets, in this case you don’t need to use the menu “Buildron / BuildMod”, you just need to compile your project inside your IDE, as we did on section “Creating the Mod class” to get your mod inside Buildron.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing-on-buildron&quot;&gt;Testing on Buildron&lt;/h2&gt;
+&lt;p&gt;Go to folder ConsoleMod/build and open the Buildron of your platform.&lt;/p&gt;
+
+&lt;p&gt;Hit the play button on Buildron.&lt;/p&gt;
+
+&lt;p&gt;You should see the ConsoleMod window registering a lot of Buildron events.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;That’s it! We created a Buildron mod that can help to debug what is happening in Buildron and mods in runtime.&lt;/p&gt;
+
+&lt;p&gt;So, why you don’t try to &lt;strong&gt;create your own Buildron mod now&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;p&gt;You can see the full source code of this post on &lt;a href=&quot;https://github.com/giacomelli/Buildron-ConsoleMod&quot;&gt;https://github.com/giacomelli/Buildron-ConsoledMod&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>jumpstart</title>
+   <link href="//jumpstart"/>
+   <updated>2016-09-12T00:00:00-03:00</updated>
+   <id>//jumpstart</id>
+   <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a command-line tool to create new C# projects from prebuilt/templates.&lt;/p&gt;
+
+&lt;p&gt;As an experienced developers it’s very common we have some kind of template solution when we start a new project. Maybe it’s the latest project we work on, maybe it’s a very good template we used every time to bootstrap a specific kind of project.&lt;/p&gt;
+
+&lt;p&gt;I created &lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; to simplify the process of create the new project based on those templates or prebuilt solutions.&lt;/p&gt;
+
+&lt;p&gt;The idea of the tool was born a long time ago and became a little stronger every time that I had to create a new solution and all the projects by hand, but when I saw the message bellow in the &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt; page I decided to finally write the tool… and the name was very clear, almost.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The first name that I thought to the tool was prebuilt, but later, my friend &lt;a href=&quot;https://twitter.com/giusepe&quot;&gt;Giusepe Casagrande&lt;/a&gt; convinced me that jumpstart was really better name… and he was right!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
+&lt;p&gt;jumpstart is very simple, it get a folder with a template solution and copy it to a new folder replacing the root namespace of the template to the new project namespace.&lt;/p&gt;
+
+&lt;p&gt;A template folder like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart-template/MyClass.cs
+jumpstart-template/Properties
+jumpstart-template/Properties/AssemblyInfo.cs
+jumpstart-template/JumpStartTemplate.csproj
+JumpStartTemplate.sln
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With this command:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Amazing.NewProject
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Will become:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;My.Amazing.NewProject/MyClass.cs
+My.Amazing.NewProject/Properties
+My.Amazing.NewProject/Properties/AssemblyInfo.cs
+My.Amazing.NewProject/My.Amazing.NewProject.csproj
+My.Amazing.NewProject.sln
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The MyClass.cs, AssemblyInfo.cs, My.Amazing.NewProject.csproj and My.Amazing.NewProject.sln contents was updated by jumpstart to use the namespace My.Amazing.NewProject.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;using-it&quot;&gt;Using it&lt;/h2&gt;
+&lt;p&gt;Download it from the &lt;a href=&quot;https://github.com/giacomelli/jumpstart/releases&quot;&gt;releases page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;available-options&quot;&gt;Available options:&lt;/h3&gt;
+&lt;p&gt;To see all available options.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart.exe &lt;span class=&quot;nt&quot;&gt;-help&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are using jumpstart in Mac/Linux, remember to call it with “mono “ prefix.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;basic-using-conventions&quot;&gt;Basic (using conventions)&lt;/h3&gt;
+&lt;p&gt;If your template folder is called “jumpstart-template” and its namespace is JumpStartTemplate, the only argument you need to pass to jumpstart is -n(namespace).&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Amazing.NewProject
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The “jumpstart-template” folder should be in the same folder where you are calling jumpstart.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;advanced-specifying-template-folder-and-namespace&quot;&gt;Advanced (specifying template folder and namespace)&lt;/h3&gt;
+&lt;p&gt;For example, your template folder is “my-template” and your template namespace is “My.Template”, in this case you should call jumpstart in this way:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-tf&lt;/span&gt; my-template &lt;span class=&quot;nt&quot;&gt;-tn&lt;/span&gt; My.Template &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Amazing.NewProject
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;advanced-using-a-remote-zip-template&quot;&gt;Advanced (using a remote .zip template)&lt;/h3&gt;
+&lt;p&gt;You can use a remote .zip file as your template folder. For example, if you want to start a new project with any of those prebuilt apps that Xamarin make available on &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt;, you can use the command bellow to jumpstart your new project using those templates:&lt;/p&gt;
+
+&lt;h5 id=&quot;jumpstart-xamarin-sport-prebuilt-app&quot;&gt;jumpstart Xamarin Sport prebuilt app&lt;/h5&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-tf&lt;/span&gt; https://github.com/xamarin/sport/archive/master.zip &lt;span class=&quot;nt&quot;&gt;-tn&lt;/span&gt; Sport.Mobile &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Sport.Mobile 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I hope you can use jumpstart in your next project bootstrap. &lt;a href=&quot;https://github.com/giacomelli/jumpstart/releases&quot;&gt;Download&lt;/a&gt; and use it.&lt;/p&gt;
+
+&lt;p&gt;If you want to colaborate, take a look on its &lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Starting a Buildron mod with a mod template</title>
+   <link href="//starting-a-buildron-mod-with-a-mod-template"/>
+   <updated>2016-09-04T00:00:00-03:00</updated>
+   <id>//starting-a-buildron-mod-with-a-mod-template</id>
+   <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+&lt;p&gt;Download the Buildron-Mod-Template.zip from &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;releases page&lt;/a&gt;.
+Unzip it in any folder.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-solution&quot;&gt;Creating the solution&lt;/h2&gt;
+&lt;p&gt;Open a prompt (win) or a terminal (linux/mac).&lt;/p&gt;
+
+&lt;p&gt;Go to the folder where you unzip Buildron-Mod-Template.zip.&lt;/p&gt;
+
+&lt;p&gt;Type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart-exe &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &amp;lt;the name of your mod&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are in Linux/Mac andfix commands with “mono “.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example, if your mod name is “MyAmazingMod”, you should type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart.exe &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyAmazingMod
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a tool that I made to help create solutions from pre built templates. I will talk about of it in an future post.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;build: full Buildron executable with the classic mods to all platforms (linux, mac and win).&lt;/li&gt;
+  &lt;li&gt;src
+    &lt;ul&gt;
+      &lt;li&gt;Code: the C# class library of your mod&lt;/li&gt;
+      &lt;li&gt;Unity: the Unity3d project of your mod.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;the-c-project&quot;&gt;The C# project&lt;/h2&gt;
+&lt;p&gt;Open the MyAmazingMod/src/Code/MyAmazingMod.sln.&lt;/p&gt;
+
+&lt;p&gt;Select the configuration of your platform.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Inside of it you can see the Mod.cs and ModController.cs.&lt;/p&gt;
+
+&lt;p&gt;Compile the whole solution.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-unity3d-project&quot;&gt;The Unity3d project&lt;/h2&gt;
+&lt;p&gt;Open the MyAmazingMod/src/Unity/MyAmazingMod on Unity3d.&lt;/p&gt;
+
+&lt;p&gt;Open the scene Assets/SimulatorScene and click on play button.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Click on the menu “Buildron/Show Simulator”.&lt;/p&gt;
+
+&lt;p&gt;In the simulator click on button “BuildStatusChanged”.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;You will see a box falling down every time you hit the button. This behavior is made by Mod.cs and ModController.cs on C# project. If you are curious about it, take a look on the classes implementations.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing-on-buildron&quot;&gt;Testing on Buildron&lt;/h2&gt;
+&lt;p&gt;In the Unity3d editor click on menu “Buildron / Build mod”.&lt;/p&gt;
+
+&lt;p&gt;Select your platform: Mac, Linux or Windows.&lt;/p&gt;
+
+&lt;p&gt;Type your Buildron mods folder:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Linux: ../../../build/linux/Mods&lt;/li&gt;
+  &lt;li&gt;Mac: ../../../build/mac/Buildron.app/Mods&lt;/li&gt;
+  &lt;li&gt;Win: ../../../build/win/Mods&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Click on “Build” button.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Go to folder MyAmazingMod/build and open the Buildron of your platform.&lt;/p&gt;
+
+&lt;p&gt;Hit the play button on Buildron.&lt;/p&gt;
+
+&lt;p&gt;You should see the same falling down box that you see on simulator falling down inside Buildron every time a build changed status.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;With this post you learned how you can starting to create your own mod from mod template.&lt;/p&gt;
+
+&lt;p&gt;If you want to build more sofisticated mods, please take a look on our tutorial &lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;“Creating a mod”&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron 2.0.0-RC1 - Mods support</title>
+   <link href="//buildron.2.0.0-rc1-mods-support"/>
+   <updated>2016-08-28T00:00:00-03:00</updated>
+   <id>//buildron.2.0.0-rc1-mods-support</id>
+   <content type="html">&lt;p&gt;After some months of hard work I finally released the Buildron mods support.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;This &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;Buildron 2.0.0-RC1&lt;/a&gt; represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
+
+&lt;p&gt;Hope to see you building some mods to Buildron. We’re curious about what crazy mods ideas you could have ;).&lt;/p&gt;
+
+&lt;p&gt;We really appreciate your opinion about the mods support, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-introduction&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-tutorial-creating-a-mod&quot;&gt;tutorial&lt;/a&gt; and &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;. Please, get in touch at &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;mods&quot;&gt;Mods&lt;/h3&gt;
+&lt;p&gt;The classic visual and behavior that you already know at Buildron was moved to mods too, you can see them at &lt;a href=&quot;http://github.com/skahal/Buildron-Classic-Mods&quot;&gt;Buildron Classic Mods&lt;/a&gt; repository.&lt;/p&gt;
+
+&lt;p&gt;The full list of mods is available here: &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-Mods-list&quot;&gt;Mods list&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;i-wanna-build-a-mod&quot;&gt;I wanna build a mod&lt;/h3&gt;
+&lt;p&gt;If you want to build a mod, take a look on this &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt; and this &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial creating a mod&lt;/a&gt; that teach how build Buildron’s mod.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron - Your builds, our world! ...and now our open source code too</title>
+   <link href="//buildron-your-builds-our-world-and-now-our-open-source-code-too"/>
+   <updated>2016-06-02T00:00:00-03:00</updated>
+   <id>//buildron-your-builds-our-world-and-now-our-open-source-code-too</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to continuous integration server like TeamCity, Jenkins and Hudson.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;We’ve built it as a &lt;a href=&quot;http://skahal.com&quot;&gt;Skahal’s&lt;/a&gt; product and now we decide to &lt;strong&gt;open source it: &lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;http://github.com/skahal/buildron&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can run it on Windows, OSX and Linux: &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;https://github.com/skahal/Buildron/releases&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a remote control app too (Windows, OSX, Linux, iOS and Android), where you can sort and filter builds, among other things: &lt;a href=&quot;https://github.com/skahal/Buildron-rc/releases&quot;&gt;https://github.com/skahal/Buildron-rc/releases&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Give it a try:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/sEghUYUvTHg &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Using a FxCop badge on your GitHub repository</title>
+   <link href="//using-a-fxcop-badge-on-your-github-repository"/>
+   <updated>2015-10-26T00:00:00-02:00</updated>
+   <id>//using-a-fxcop-badge-on-your-github-repository</id>
+   <content type="html">&lt;p&gt;The use of badges on GitHub repositories helps us to promote good pratices about our code. Some amazing services like the &lt;a href=&quot;http://shields.io&quot;&gt;Shileds.io&lt;/a&gt; can generate almost all badges you can imagine, but what about those badges where there is no such online service to perform this job? One common case is when you program with C# and want some FxCop badge but there is no online service to run FxCop.&lt;/p&gt;
+
+&lt;h3 id=&quot;badgessharp&quot;&gt;BadgesSharp&lt;/h3&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;To fill this gap I created the BadgesSharp service: &lt;a href=&quot;http://badgessharp.apphb.com&quot;&gt;http://badgessharp.apphb.com&lt;/a&gt;. BadgesSharp is a free service to generate badges that need some kind of input and processing before you can display them on GitHub repositories.&lt;/p&gt;
+
+&lt;p&gt;In the case of FxCop, we need to run it against our .NET code and send the result report to BadgesSharp and then the service will generate the FxCop badge.&lt;/p&gt;
+
+&lt;p&gt;Here is a small tutorial on how to get the FxCop badge in your GitHub repo:&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;install-fxcop&quot;&gt;Install FxCop&lt;/h3&gt;
+&lt;p&gt;If you don’t have it yet, &lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=6544&quot;&gt;download&lt;/a&gt; and install FxCop.&lt;/p&gt;
+
+&lt;h3 id=&quot;run-fxcop&quot;&gt;Run FxCop&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;C:\Program Files (x86)\Microsoft Fxcop 10.0\FxCopCmd.exe&quot; /project:[Your FxCop file].FxCop /out:fxcop-report.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The report will be saved to fxcop-report.xml&lt;/p&gt;
+
+&lt;h3 id=&quot;generate-fxcop-badge&quot;&gt;Generate FxCop badge&lt;/h3&gt;
+&lt;p&gt;Download &lt;a href=&quot;https://github.com/giacomelli/BadgesSharp/releases&quot;&gt;BadgesSharpCmd&lt;/a&gt; and run it:&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BadgesSharpCmd -o [your GitHub username] -r [your GitHub repository] -a %GITHUB_REPO_TOKEN% -b FxCop -c fxcop-report.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note: you will need a GitHub personal token: &lt;a href=&quot;https://github.com/settings/tokens&quot;&gt;https://github.com/settings/tokens&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;More info at:&lt;a href=&quot;https://badgessharp.apphb.com/Docs/GettingStarted&quot;&gt;https://badgessharp.apphb.com/Docs/GettingStarted&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;show-the-badge-at-your-github-repository&quot;&gt;Show the badge at your GitHub repository&lt;/h3&gt;
+&lt;p&gt;Edit your readme.md and add the line below:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![FxCop](https://badgessharp.apphb.com/badges/:owner/:repo/FxCop)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Sample badges: &lt;img src=&quot;https://badgessharp.apphb.com/badges/giacomelli/BadgesSharp/FxCop&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://badgessharp.apphb.com/badges/giacomelli/SampleProject/FxCop&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-use-it-on-your-continuous-integration&quot;&gt;How use it on your Continuous Integration?&lt;/h3&gt;
+&lt;p&gt;Probably you’re using some continuous integration service, below are some samples:&lt;/p&gt;
+
+&lt;h4 id=&quot;appveyor&quot;&gt;AppVeyor&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add to your AppVeyor.yml file:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;after_build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;cmd&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;C:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\P&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;rogram&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Files&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;(x86)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Microsoft&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Fxcop&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;10.0&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;FxCopCmd.exe&quot;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/project:[Your FxCop file].FxCop /out:fxcop-report.xml&lt;/span&gt;
+
+        &lt;span class=&quot;s&quot;&gt;BadgesSharpCmd -o [your GitHub username] -r [your GitHub repository] -a %GITHUB_REPO_TOKEN% -b FxCop -c fxcop-report.xml&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;teamcity&quot;&gt;TeamCity&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add the ‘FxCop’ step to your configuration (probably you already have it);&lt;/li&gt;
+  &lt;li&gt;Add a final ‘Command Line’ step to your configuration:
+    &lt;ul&gt;
+      &lt;li&gt;Execute step: Even if some of the previous steps failed&lt;/li&gt;
+      &lt;li&gt;Run: Custom script
+Custom script:&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BadgesSharpCmd -o [your GitHub username] -r [your GitHub repository] -a %GITHUB_REPO_TOKEN% -b FxCop -c &quot;%system.teamcity.build.tempDir%\fxcop-output-*\fxcop-result.xml&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;That’s it! Now you have a FxCop badge to show on your GitHub repository.&lt;/p&gt;
+
+&lt;p&gt;BadgesSharp support others badges too: StyleCop, DupFinder and Plato.&lt;/p&gt;
+
+&lt;p&gt;If you like it, take a look on GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/BadgesSharp&quot;&gt;https://github.com/giacomelli/BadgesSharp&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Getting your code documentation at runtime</title>
+   <link href="//getting-your-code-documentation-at-runtime"/>
+   <updated>2014-08-03T00:00:00-03:00</updated>
+   <id>//getting-your-code-documentation-at-runtime</id>
+   <content type="html">&lt;p&gt;In some situations, like generate a live console for a web api or generate code using T4 template we need a way to read the code documentation at runtime.&lt;/p&gt;
+
+&lt;p&gt;Some time ago I’ve faced that situation again and I thought: &lt;em&gt;“Should be an easy way to read this code documentation!”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;After some googled I found a code from Jim Blackler that allowed developers read C# code documentation at runtime, but at that time the code was just a downloadable .zip in Jim’s blog. I asked him if I could put the source code on GitHub to allow better code improvements and community collaboration, he said: “Please go ahead with your plan”.&lt;/p&gt;
+
+&lt;p&gt;So, I created the project at GitHub, &lt;strong&gt;DocsByReflection&lt;/strong&gt;: &lt;a href=&quot;https://github.com/giacomelli/DocsByReflection&quot;&gt;https://github.com/giacomelli/DocsByReflection&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;docsbyreflection&quot;&gt;DocsByReflection&lt;/h3&gt;
+&lt;p&gt;With DocsByReflection you can easy get your code documentation at runtime in many ways, like:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// From type.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;typeDoc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DocsService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetXmlFromType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Stub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// From property.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;propertyInfo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Stub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetProperty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;PropertyWithDoc&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;propertyDoc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DocsService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetXmlFromMember&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;propertyInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// From method.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methodInfo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Stub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;MethodWithGenericParameter&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methodDoc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DocsService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetXmlFromMember&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;methodInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// From assembly.&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assemblyDoc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DocsService&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetXmlFromAssembly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Stub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Assembly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you want colaborate, just &lt;a href=&quot;https://github.com/giacomelli/DocsByReflection/fork&quot;&gt;fork it at GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;nuget&quot;&gt;Nuget&lt;/h4&gt;
+&lt;p&gt;If you want just use it, there is a NuGet package with latest binaries version:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Install-Package DocsByReflection
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Nibble</title>
+   <link href="//nibble"/>
+   <updated>2014-05-11T00:00:00-03:00</updated>
+   <id>//nibble</id>
+   <content type="html">&lt;p&gt;Looking in some backups I found one of my first games. I made it about 14 years ago: a Nibble in 461 lines of C.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/ibnpKDo0jDI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;I push the source code and binary files to a GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/Nibble&quot;&gt;https://github.com/giacomelli/Nibble&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>

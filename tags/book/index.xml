@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - book</title>
+ <link href="//tags/book/index.xml" rel="self"/>
+ <link href="/tag/book.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/book.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>DDD by quotes</title>
+   <link href="//ddd-by-quotes"/>
+   <updated>2014-05-12T00:00:00-03:00</updated>
+   <id>//ddd-by-quotes</id>
+   <content type="html">&lt;p&gt;The Eric Evans’ book &lt;a href=&quot;http://amzn.to/2aygz2G&quot;&gt;“Domain-Driven Design - Tackling Complexity in the Heart of Software”&lt;/a&gt; is like a Bible for who intend to use DDD, so, I guess that some quotes of the book can help us to validate our DDD approach.&lt;/p&gt;
+
+&lt;p&gt;The list below is just a “check-point list”, because, to understand what each one really meaning you need to read book deeply, probably more than one time.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-tip-is-read-the-book&quot;&gt;My tip is: read the book!&lt;/h3&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2014/05/12/ddd-by-quotes/ddd.jpg &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;quotes&quot;&gt;Quotes&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“The objects had behavior and enforced rules. The model wasn’t just a data schema; it was integral solving a complex problem.” (page 13)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“The vital detail about the design is captured in the code.” (page 37)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Running code doesn’t lie, as any other document might. The behavior of running code is unambiguous.” (page 38)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“When a model doesn’t seem to be practical for implementation, we must search for a new one. When a model doesn’t faithfully express the key concepts of the domain, we must search for a new one.” (page 49)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Isolating the domain implementation is a prerequisite for domain-driven design.” (page 75)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“It is important to constrain relationship as much as possible.” (page 83)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“When we force an operation into an object that doesn’t fit the object’s definition, the object loses its conceptual clarity and becomes hard to understand or refactor” (page 104)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“When the users or domain experts use vocabulary that is nowhere in the design, that is a warning sign.” (page 207)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“The concept you need is not always floating on the surface, emerging in conversation or documents. You may have to dig and invent. The place to dig is the most awkward part of your design. The place where procedures are doing complicated things that are hard to explain. The place where every new requirement seems to add complexity.” (page 210)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Constraints make up a particularly important category of model concepts. They often emerge implicitly, and expressing them explicitly can greatly improve a design.” (page 220)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“When the constraints are obscuring the object’s basic responsibility, or when the constraint is prominent in the domain yet not prominent in the model, you can factor it out into an explicit object or even model it as a set of objects and relationships.” (page 222)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Create explicit predicate-like value objects for specialized purposes. A specification is a predicate that determines if an object does or does not satisfy some criteria.” (page 226)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“A pattern is not a cookbook. It lets you start from a base of experience to develop your solution, and it gives you some language to talk about what you are doing.” (page 227)&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+</feed>

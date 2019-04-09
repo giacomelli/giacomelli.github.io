@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - controlplane</title>
+ <link href="//tags/controlplane/index.xml" rel="self"/>
+ <link href="/tag/controlplane.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/controlplane.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Auto tracking your time with ControlPlane + Toggl</title>
+   <link href="//auto-tracking-your-time-with-controlplane-toggl"/>
+   <updated>2015-09-20T00:00:00-03:00</updated>
+   <id>//auto-tracking-your-time-with-controlplane-toggl</id>
+   <content type="html">&lt;p&gt;So, do you want to track the time you spend in some tasks, but always forget to start the time tracking?&lt;/p&gt;
+
+&lt;p&gt;I love to used Toggl.com to time tracking and a few days ago I discovered another amazing app to OSX: ControlPlane.&lt;/p&gt;
+
+&lt;p&gt;ControlPlane, in few words, is an app that allow you change your desktop configuration (opened apps, notifications, etc) when some trigger happens.&lt;/p&gt;
+
+&lt;p&gt;In my specific case I would like to track the time I spend programming in the newest Skahal’s pet project, a Space Invaders Remake or as we like to call: SIR. Well, I wanted to start a “Programming” task on Toggl every time I open Unity3D editor and stop the same task when close the Unity3D.&amp;lt;&lt;/p&gt;
+
+&lt;p&gt;I followed steps bellow to get this done:&lt;/p&gt;
+
+&lt;h3 id=&quot;1-create-the-starttoggltimeentrysh&quot;&gt;1) Create the startTogglTimeEntry.sh&lt;/h3&gt;
+&lt;p&gt;We will create the follow shell script that uses Toggl api to starts a task:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo 'Starting &quot;Programming&quot; task on toggl.com'
+curl -v -u &amp;lt;api-token&amp;gt;:api_token \
+    -H &quot;Content-Type: application/json&quot; \
+    -d '{&quot;time_entry&quot;:{&quot;description&quot;:&quot;Programming&quot;,&quot;tags&quot;:[],&quot;pid&quot;:&amp;lt;project-id&amp;gt;,&quot;created_with&quot;:&quot;curl&quot;}}' \
+    -X POST https://www.toggl.com/api/v8/time_entries/start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see we need to replace two things in this script:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;API-TOKEN&lt;/strong&gt;: this should be replaced by your Toggl api token, go to the bottom of &lt;a href=&quot;https://www.toggl.com/app/profile&quot;&gt;your Toggl profile page&lt;/a&gt; and get it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;PROJECT-ID&lt;/strong&gt;: this should be replaced by the id of the project where you want to create the “Programming” task. We need to discover de project id, go to &lt;a href=&quot;https://www.toggl.com/app&quot;&gt;Toggl.com&lt;/a&gt;, select your team, then your project, you’ll see an address like that in Safari “https://www.toggl.com/app/projects/&amp;lt;TEAM-ID&amp;gt;/edit/&amp;lt;PROJECT-ID&amp;gt;”. Use the value of “&amp;lt;PROJECT-ID&amp;gt;” in the script.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now save the content on file startTogglTimeEntry.sh&lt;/p&gt;
+
+&lt;h3 id=&quot;2-create-the-stoptoggltimeentrysh&quot;&gt;2) Create the stopTogglTimeEntry.sh&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;taskid=`curl -v -u &amp;lt;api-token&amp;gt;:api_token -X GET https://www.toggl.com/api/v8/time_entries/current | grep -Eo '&quot;id&quot;:([0-9])+' | cut -d: -f2`
+ 
+curl -v -u &amp;lt;api-token&amp;gt;:api_token \
+    -H &quot;Content-Type: application/json&quot; \
+    -X PUT https://www.toggl.com/api/v8/time_entries/$taskid/stop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This script discover the latest task started at Toggl and stop it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: you should replace the &lt;strong&gt;&amp;lt;PROJECT-ID&amp;gt;&lt;/strong&gt; in this script too.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;3-download-and-installl-the-controlplane&quot;&gt;3) Download and installl the ControlPlane&lt;/h3&gt;
+&lt;p&gt;Download and install the &lt;a href=&quot;http://www.controlplaneapp.com&quot;&gt;ControlPlane&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-configuring-the-context&quot;&gt;4) Configuring the context&lt;/h3&gt;
+&lt;p&gt;The first thing, you must create the context, go to ControlPlane preferences:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Select tab “Contexts”, and add I new context, in my case a called it “Skahal”:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;5-configuring-the-evidence-sources&quot;&gt;5) Configuring the evidence sources&lt;/h3&gt;
+&lt;p&gt;Select the tab “Evidences sources”, the option “Running Application” should be checked:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;6-configuring-the-rules&quot;&gt;6) Configuring the rules&lt;/h3&gt;
+&lt;p&gt;Select the tab “Rules”, add a new rule to your context, the rule must be of type “Running Application” to Unity 3D:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;7-configuring-the-actions&quot;&gt;7) Configuring the actions&lt;/h3&gt;
+&lt;p&gt;Select the tab “Actions”, we’ll create 3 new actions: the first one is a task to open Safari in the Toggl timer task page, this is an optional action, but I like to see the task running (and I can stop/start it manually sometimes). Add a action of type “Open URL” with the address “https://www.toggl.com/app/timer”, select “On Arrival” and your context:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The second one is a action to start the task in the Toggl when the context starts. Add a action of type “Shell Script”, in the field “Parameter” type the path to your startTogglTimeEntry.sh script, select “On Arrival” and your context:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The third one is a action to stop the task in the Toggl when the context ends. Add a action of type “Shell Script”, in the field “Parameter” type the path to your stopTogglTimeEntry.sh script, select “On Arrival” and your context:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;8-test-everything&quot;&gt;8) Test everything&lt;/h3&gt;
+&lt;p&gt;Open Unity3D editor, in the almost same time your context must be activated and the Safari must open the Toggl url with “Programming” task started.&lt;/p&gt;
+
+&lt;p&gt;Now, close the Unity3D and the “Programming” task must be stopped on Toggl.com.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;That’s it. ControlPlane is an amazing app and things we can automate with it is nearly infinite!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>

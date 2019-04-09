@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - DocsByReflection</title>
+ <link href="//tags/docsbyreflection/index.xml" rel="self"/>
+ <link href="/tag/DocsByReflection.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/DocsByReflection.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>DocsByReflection v1.0.13 - .NET Standard 2.0</title>
+   <link href="//DocsByRelection-v1.0.13-netstandard2.0"/>
+   <updated>2018-04-05T00:00:00-03:00</updated>
+   <id>//DocsByRelection-v1.0.13-netstandard2.0</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/DocsByReflection/releases/tag/v1.0.13&quot;&gt;DocsByReflection v1.0.13&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you don’t know what is DocsByReflection or what you can do with it, take a look in my previous post about it &lt;a href=&quot;http://diegogiacomelli.com.br/getting-your-code-documentation-at-runtime&quot;&gt;“Getting your code documentation at runtime”&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;net-standard-20-and-net-framework-46&quot;&gt;.NET Standard 2.0 and .NET Framework 4.6&lt;/h2&gt;
+&lt;p&gt;In this version &lt;a href=&quot;https://github.com/giacomelli/DocsByReflection&quot;&gt;DocsByReflection&lt;/a&gt; starts to support .NET Standard 2.0.&lt;/p&gt;
+
+&lt;p&gt;Now, if you need to use the library on .NET Standard 2.0 or .NET Framework 4.6 projects:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package DocsByReflection.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;net-framework&quot;&gt;.NET Framework&lt;/h2&gt;
+&lt;p&gt;If you are in a .NET Framework project lower than .NET Framework 4.6 you can use the previous version:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package DocsByReflection &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 1.0.12.20
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h2&gt;
+&lt;p&gt;I would like to thanks &lt;a href=&quot;https://github.com/onionhammer&quot;&gt;Erik O’Leary&lt;/a&gt; to perform the whole migration of DocsByReflection to .NET Standard 2.0.&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>

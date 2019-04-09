@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - travis-ci</title>
+ <link href="//tags/travis-ci/index.xml" rel="self"/>
+ <link href="/tag/travis-ci.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/travis-ci.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Using sensitive data on your Travis CI build</title>
+   <link href="//using-sensitive-data-on-your-travis-ci-build"/>
+   <updated>2014-07-13T21:00:00-03:00</updated>
+   <id>//using-sensitive-data-on-your-travis-ci-build</id>
+   <content type="html">&lt;p&gt;You have programmed an amazing functional tests to validate your infrastructure service that connect on Google Docs.&lt;/p&gt;
+
+&lt;p&gt;These functional tests run perfect well on your development machine and &lt;strong&gt;now you want to run them on Travis CI&lt;/strong&gt;, but how to do this &lt;strong&gt;without reveal your Google’s username and password worldwide?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Travis CI &lt;a href=&quot;http://docs.travis-ci.com/user/encryption-keys&quot;&gt;Encription Keys&lt;/a&gt; goes to the rescue!&lt;/strong&gt; With them you can encrypt your sensitive data and read them inside your tests running on Travis CI.&lt;/p&gt;
+
+&lt;p&gt;In this post I will show you a very simple and real sample of using encryption keys to read username and password from environment variables encripted on .travis.yml file&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1-encrypting-your-environment-variables&quot;&gt;Step 1:  Encrypting your environment variables&lt;/h3&gt;
+&lt;p&gt;To perform the encryption using Travis CLI you will need to setup a Ruby environment on your dev machine. If you are using Windows and do not have a Ruby environment, the easiest way is use &lt;a href=&quot;http://rubyinstaller.org/&quot;&gt;RubyInstaller&lt;/a&gt; (don’t be afraid, because it works very well…it’s a fully automatic installation).&lt;/p&gt;
+
+&lt;p&gt;After the RubyInstaller finish his job, open the “Start Command Prompt with Ruby” and type:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;travis encrypt GDataUsername=[your username] -r [owner/repository]
+travis encrypt GDataPassword=[your password] -r [owner/repository]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-2-adding-your-encrypted-variables-to-the-travisyml-file&quot;&gt;Step 2:  Adding your encrypted variables to the .travis.yml file&lt;/h3&gt;
+&lt;p&gt;Open your .travis.yaml file and add the encrypted values from previous step to the file, like the sample below:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;env:
+   global:
+      - secure: &quot;The GDataUsername encrypted value&quot;
+      - secure: &quot;The GDataPassword encrypted value&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The tabs are very important to the .yml file, so you should respect them. Here is &lt;a href=&quot;https://github.com/skahal/Skahal.Infrastructure.Repositories/blob/master/.travis.yml&quot;&gt;my real .yml file&lt;/a&gt; to help.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3-reading-the-enviroment-variables-on-your-functional-test&quot;&gt;Step 3:  Reading the enviroment variables on your functional test&lt;/h3&gt;
+&lt;p&gt;Now you can read those environment variable in your code, the sample code below shows how to do this in C#:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Environment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetEnvironmentVariable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;GDataUsername&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Environment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetEnvironmentVariable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;GDataPassword&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The values of username and password variables will be the decrypted values that Travis CI has set to you on the environment.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4-testing-on-travis-ci&quot;&gt;Step 4: Testing on Travis CI&lt;/h3&gt;
+&lt;p&gt;Commit your files to GitHub and take a look on Travis CI build log, if you have set everything ok, you should see lines as below on log:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ export GDataUsername=[secure]
+$ export GDataPassword=[secure]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;thats-all&quot;&gt;That’s all!&lt;/h3&gt;
+&lt;p&gt;Now your functional tests should run on your dev machine (don’t forget to set the environment variables on it too) and on Travis CI as well.&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>

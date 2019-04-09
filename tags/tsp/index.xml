@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - tsp</title>
+ <link href="//tags/tsp/index.xml" rel="self"/>
+ <link href="/tag/tsp.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/tsp.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>GeneticSharp Car2D</title>
+   <link href="//GeneticSharp-Car2D"/>
+   <updated>2018-06-01T00:00:00-03:00</updated>
+   <id>//GeneticSharp-Car2D</id>
+   <content type="html">&lt;p&gt;I made an Unity3D sample for &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; inspired by amazing &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt; where a genetic algorithm tries to design 2D cars to overcome roads challenges.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
+
+&lt;p&gt;The sample that I will talk about is available on the GeneticSharp repository at GeneticSharp.Runner.UnityApp. You can fork GeneticSharp and open it on Unity3D editor, then run the MenuScene.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you need some introduction to genetic algorithms or GeneticSharp:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Introduction to genetic algorithms: &lt;a href=&quot;http://diegogiacomelli.com.br/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Using GeneticSharp on Unity3D: &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;what-is-our-2d-car&quot;&gt;What is our 2D car?&lt;/h2&gt;
+&lt;p&gt;In GeneticSharp Car2D, a car is composed of:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;8 vectors with 64 meters max size and an angle that will be calculate from the car center.&lt;/li&gt;
+  &lt;li&gt;0 to 8 wheels
+    &lt;ul&gt;
+      &lt;li&gt;Radius from 0 to 3&lt;/li&gt;
+      &lt;li&gt;Vector index (a vector can have more than one wheel)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The vectors and wheels have mass, so bigger ones will made a slower car.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-chromosome&quot;&gt;The chromosome&lt;/h2&gt;
+&lt;p&gt;To represent the phenotype described above the car chromosome will be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A float to represent the vector size (7 bits)&lt;/li&gt;
+  &lt;li&gt;A float to represent the vector angle (9 bits)&lt;/li&gt;
+  &lt;li&gt;An integer to represent the wheel vector index (7 bits)&lt;/li&gt;
+  &lt;li&gt;A float to represent the wheel radius (4 bits)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This structure will take 27 bits, then we will repeat it 8 times, that is the number of the car vectors. This give us a chromosome with 216 bits.&lt;/p&gt;
+
+&lt;p&gt;The bit string chromosome will look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;001101110101110100001000010010100100111000100000010101010100000111100100001110010010010101010111100000000011011100000001110000001110010000110101011111100000100011011101101011101000001110000011011000110111000000000011
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-roads&quot;&gt;The roads&lt;/h2&gt;
+&lt;p&gt;The roads and cars can be configured using the scriptable object CarSampleConfig. The GeneticSharp Car2D allows create any number of different roads and car configs, but for this post, I will show 3 roads configurations with the same car configuration mentioned above.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you want to add new roads, just create a new CarSampleConfig in “Assets / Create / GeneticSharp / Car / CarSampleConfig”. The new road will automatically appear on Car2D menu when you run the sample.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A road is defined by its points quantity and distance, height, rotation, gaps, and obstacles. The gravity and everything about physics is automatically simulated by Unity3d itself.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
+&lt;p&gt;The fitness of each car (chromosome) to the road will be the &lt;strong&gt;sum of the max distance&lt;/strong&gt; reach by it &lt;strong&gt;plus the average velocity&lt;/strong&gt; at that moment.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
+&lt;p&gt;The genetic algorithm to evaluate the simulation is configured with this operators:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Population: 16 chromosomes per generation&lt;/li&gt;
+  &lt;li&gt;Crossover: Uniform&lt;/li&gt;
+  &lt;li&gt;Mutation: Flip Bit&lt;/li&gt;
+  &lt;li&gt;Selection: Elite&lt;/li&gt;
+  &lt;li&gt;Termination: Time evolving&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Besides that, the chromosomes are evaluated in parallel using the GeneticSharp’s ParallelTaskExecutor and you can see all them in 4x4 grid:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are running the sample inside Unity3D editor you can change the size of the simulation grid in the SampleController game object from CarScene.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;designing-the-cars&quot;&gt;Designing the cars&lt;/h2&gt;
+&lt;p&gt;Now that we have our Car2D and roads defining, we can put the genetic algorithm to run and see how it design the cars for each road.&lt;/p&gt;
+
+&lt;p&gt;Besides the roads that are different, the car setup is the same. This way we can compare how genetic algorithm will reach different car designs to different challenges (roads).&lt;/p&gt;
+
+&lt;h3 id=&quot;gap-road&quot;&gt;Gap road&lt;/h3&gt;
+&lt;p&gt;The first is a road with gaps that getting greater. 
+The next video resumes how GeneticSharp designs the car for the gap road.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/hxt2E3QGZw4 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;All videos are recording running the GeneticSharp Car2D on my Android. I used the &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.duapps.recorder&amp;amp;hl=en_US&quot;&gt;DU Recorder&lt;/a&gt; to record them. Amazing app BTW.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;About 100 generations, GeneticSharp generate a car that has a front wheel suspend in the air that allows it to reach the other side of the gap without fall on it.&lt;/p&gt;
+
+&lt;h3 id=&quot;hill-road&quot;&gt;Hill road&lt;/h3&gt;
+&lt;p&gt;This road has some hills that increase as the car travels.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/x0zCDyGc80s &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;For hill road, the genetic algorithm creates a car with enough length to touch the two sides of the downhills at the same time, this allows the car to keep the velocity needed to overcome the hill part. The middle wheel is what allows the car to pass the hill part of the road.&lt;/p&gt;
+
+&lt;h3 id=&quot;obstacle-road&quot;&gt;Obstacle road&lt;/h3&gt;
+&lt;p&gt;Some fixed obstacles are placed on the road and force the cars to pass over them&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/gJCz79xdCFY &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;This is probably the most curious design because the genetic algorithm found out that to overcome the obstacle, the car needed to reach it at high velocity and needs to have a back support to avoid car rollover.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;A think two things are quite clear after I build this sample:&lt;/p&gt;
+
+&lt;h3 id=&quot;incremental-challenges&quot;&gt;Incremental challenges&lt;/h3&gt;
+&lt;p&gt;All the challenges in the roads are incremental, the gaps start small and get bigger by the extension of the road. The same was did to the hills and the obstacle.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Why do the challenges need to be incremental?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;During first tests with the gap road I realized if I just put an 8 meters gap in front of first-generation cars, the genetic algorithm cannot choose better designs, because most of them just fall in the first gap. The challenge was too much for the initial generations, but if I just increased the size of the gaps from small size until it gets to 8 meters, the genetic algorithm could choose better and better designs each generation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It’s how we learn&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The same happens on how we learn many things, like math: first basic operations, then simple equations and in some years we are calculating integrals (or trying at least).&lt;/p&gt;
+
+&lt;p&gt;It’s easy to spot this behavior on evolution itself, where the genetic algorithms are based. In the book “Guns, Germs and Steel” Jared Diamond says:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“The near-simultaneous disappearance of so many large species raises an
+obvious question: what caused it? An obvious possible answer is that they
+were killed off or else eliminated indirectly by the first arriving humans.
+Recall that Australian / New Guinean animals had evolved for millions of
+years in the absence of human hunters. We know that Galapagos and Antarctic
+birds and mammals, which similarly evolved in the absence of
+humans and did not see humans until modern times, are still incurably
+tame today.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Australian / New Guinean animals got a challenge that was too much to them in that time, different of the other animals from other continents that evolved together with humans (or proto-humans) and learn to survive this predator.&lt;/p&gt;
+
+&lt;h3 id=&quot;different-design&quot;&gt;Different design&lt;/h3&gt;
+&lt;p&gt;Different challenges lead to different car designs. 
+It’s quite clear that the best cars design to each of the 3 roads are different between them and only works in its specific road.&lt;/p&gt;
+
+&lt;p&gt;Now, it’s up to you, fork &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/fork&quot;&gt;GeneticSharp&lt;/a&gt; and run the GeneticSharp Car2D on your Unity3D editor. &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;Let me know&lt;/a&gt; what roads and results you created.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp - Unity3d sample</title>
+   <link href="//GeneticSharp-Unity3d-sample"/>
+   <updated>2018-05-31T00:00:00-03:00</updated>
+   <id>//GeneticSharp-Unity3d-sample</id>
+   <content type="html">&lt;p&gt;I just pushed to GeneticSharp master branch the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;GeneticSharp.Runners.UnityApp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Unity3D.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;In this Unity3d project there are 3 samples:&lt;/p&gt;
+
+&lt;h2 id=&quot;car2d&quot;&gt;Car2D&lt;/h2&gt;
+&lt;p&gt;Based on famous BoxCar2D, this sample uses a genetic algorithm to create car designs to overcome road challenges, like gaps, hills, and obstacles.&lt;/p&gt;
+
+&lt;p&gt;A post explaining this sample in detail will be published tomorrow.&lt;/p&gt;
+
+&lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
+&lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
+
+&lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
+&lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/xXqNcgeOU_g &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;experimental-components&quot;&gt;Experimental components&lt;/h2&gt;
+&lt;p&gt;In the folder _runner/Commons there are the BitStringChromosome class and some phenotype implementations. At the moment they are experimental, but I will wait for the community feedback to see if they can be promoted to GeneticSharp library code.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TSP with GeneticSharp and Unity3D</title>
+   <link href="//tsp-with-GeneticSharp-and-Unity3d"/>
+   <updated>2018-05-16T00:00:00-03:00</updated>
+   <id>//tsp-with-GeneticSharp-and-Unity3d</id>
+   <content type="html">&lt;style&gt;
+div.gist-meta { display:none; }
+&lt;/style&gt;
+
+&lt;p&gt;In this post I will show how to use GeneticSharp and Unity3D to solve the TSP (Travelling salesman problem).&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/city.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;According to Wikipedia &lt;em&gt;&lt;strong&gt;“The travelling salesman problem (TSP) asks the following question: “Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?”&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;TSP is a classic sample to test some optimization techniques, as well it’s fairly used to demonstrate how to implement a genetic algorithm. For these reasons I will use it to show you how to implement a basic genetic algorithm in Unity3D using GeneticSharp.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;To better understand this tutorial, you need to have some experiences/knowledges in:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unity3D (beginner)&lt;/li&gt;
+  &lt;li&gt;Genetic algorithms (beginner).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;creating-the-unity3d-project&quot;&gt;Creating the Unity3D project&lt;/h2&gt;
+&lt;p&gt;Using Unity 2018.1+, create a new project called TspSample.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
+&lt;p&gt;Go to “Player settings” / “Other settings” / “Configuration”, select “.NET 4.x Equivalent” on “Scripting Runtime Version”. Unity will ask to restart, you can confirm.&lt;/p&gt;
+
+&lt;p&gt;After restart, go back to “Player settings”, select “.NET Standard 2.0” on “Api Compability Level”.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
+&lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;To represent the cities route each gene of our chromosome will represent an index of a city in the route.&lt;/p&gt;
+
+&lt;p&gt;Create a C# script called “TspChromosome.cs”:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;representing-a-city&quot;&gt;Representing a city&lt;/h2&gt;
+&lt;p&gt;The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.&lt;/p&gt;
+
+&lt;p&gt;Create a C# script called “City.cs”:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=City.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
+&lt;p&gt;Now we need to evaluate the TspChromosome.&lt;/p&gt;
+
+&lt;p&gt;Our fitness function will evaluate the TspChromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.&lt;/p&gt;
+
+&lt;p&gt;Create a C# script called “TspFitness.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;running-the-genetic-algorithm&quot;&gt;Running the Genetic Algorithm&lt;/h2&gt;
+&lt;p&gt;In this step we need to configure our genetic algorithm using the TspChromosome, TspFitness and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
+
+&lt;p&gt;Create a C# script called “GAController.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.v1.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a GameObject called “GAController” in the scene and add the GAController.cs to it.&lt;/p&gt;
+
+&lt;p&gt;Save the scene.&lt;/p&gt;
+
+&lt;p&gt;Run the scene on editor and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
+&lt;p&gt;Now our GA is running inside Unity3D, but it need to display the cities route better.
+We need create a visual representation to the cities.&lt;/p&gt;
+
+&lt;h3 id=&quot;city-prefab&quot;&gt;City prefab&lt;/h3&gt;
+&lt;p&gt;We will create a prefab based on a sprite of a pin. You can use an icon as this one from &lt;a href=&quot;https://www.flaticon.com/free-icon/maps-and-flags_447031#term=pin&amp;amp;page=1&amp;amp;position=6&quot;&gt;www.flaticon.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Download it to inside your Unity3D project.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Maybe you will need to change the ‘Pixels Per Unit’ to 1000 to get a good pin size on screen.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Drag it to the hierarchy panel, rename the new GameObject to CityPrefab and drag it back to your Assets folder on Project panel. Now our CityPrefab is created.&lt;/p&gt;
+
+&lt;p&gt;Delete the CityPrefab game object from the current scene.&lt;/p&gt;
+
+&lt;h3 id=&quot;instantiating-the-cities-prefabs&quot;&gt;Instantiating the cities prefabs&lt;/h3&gt;
+&lt;p&gt;Add the following field to the GAController.cs&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change1.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Then, create the method DrawCities:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change2.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;And then call it from Start method:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change3.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Now, select the GAController game object on hierarchy and set the CityPrefab property.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
+&lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
+
+&lt;p&gt;Now we need to draw the solution: the route represented by the best chromosome of each generation.&lt;/p&gt;
+
+&lt;p&gt;One of the simplest ways to draw some lines in Unity3D is using the LineRenderer component.&lt;/p&gt;
+
+&lt;p&gt;Add the following code to the GAController.cs:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change4.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Create the method DrawRoute:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change5.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Then call it from Update method:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change6.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Before run the scene, we need to add a LineRenderer component to our GAController game object.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Change the width property of the LineRenderer from 1 to 0.1.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Run the scene again, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
+&lt;p&gt;Our sample could be considered done, but would it be nice if we you could change the cities positions while the genetic algorithm are running and see how it manages these cities positions changes.&lt;/p&gt;
+
+&lt;h3 id=&quot;citycontroller&quot;&gt;CityController&lt;/h3&gt;
+&lt;p&gt;Create a C# script called “CityController.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=CityController.cs&quot;&gt; &lt;/script&gt;
+I won’t getting in details about how this is script works, but it’s allow the user to drag the cities’ pin using the mouse or the finger touch if build it to mobile.&lt;/p&gt;
+
+&lt;p&gt;Add the CityController.cs to the CityPrefab.&lt;/p&gt;
+
+&lt;p&gt;Change the GAController.cs script adding the line below to the end of the for loop of DrawCities method:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change7.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;With only 5 C# scripts and 1 prefab we built a pretty nice sample of genetic algorithms using in Unity3D with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;How about make it 3D and using a Vector3 instead of Vector2 on City.Position?&lt;/li&gt;
+  &lt;li&gt;Maybe let user change the number of cities or change the genetic algorithm operators?&lt;/li&gt;
+  &lt;li&gt;Move the DrawCities and DrawRoutes methods to a script responsible to only draw the GA.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The full source code used in this post can be download or fork from this Gist: &lt;a href=&quot;https://gist.github.com/giacomelli/94721a46d33c6bcb1f3ae11117b7f888&quot;&gt;https://gist.github.com/giacomelli/94721a46d33c6bcb1f3ae11117b7f888&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+</feed>

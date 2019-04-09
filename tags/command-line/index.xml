@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - command-line</title>
+ <link href="//tags/command-line/index.xml" rel="self"/>
+ <link href="/tag/command-line.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/command-line.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>jumpstart</title>
+   <link href="//jumpstart"/>
+   <updated>2016-09-12T00:00:00-03:00</updated>
+   <id>//jumpstart</id>
+   <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a command-line tool to create new C# projects from prebuilt/templates.&lt;/p&gt;
+
+&lt;p&gt;As an experienced developers it’s very common we have some kind of template solution when we start a new project. Maybe it’s the latest project we work on, maybe it’s a very good template we used every time to bootstrap a specific kind of project.&lt;/p&gt;
+
+&lt;p&gt;I created &lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; to simplify the process of create the new project based on those templates or prebuilt solutions.&lt;/p&gt;
+
+&lt;p&gt;The idea of the tool was born a long time ago and became a little stronger every time that I had to create a new solution and all the projects by hand, but when I saw the message bellow in the &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt; page I decided to finally write the tool… and the name was very clear, almost.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The first name that I thought to the tool was prebuilt, but later, my friend &lt;a href=&quot;https://twitter.com/giusepe&quot;&gt;Giusepe Casagrande&lt;/a&gt; convinced me that jumpstart was really better name… and he was right!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
+&lt;p&gt;jumpstart is very simple, it get a folder with a template solution and copy it to a new folder replacing the root namespace of the template to the new project namespace.&lt;/p&gt;
+
+&lt;p&gt;A template folder like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart-template/MyClass.cs
+jumpstart-template/Properties
+jumpstart-template/Properties/AssemblyInfo.cs
+jumpstart-template/JumpStartTemplate.csproj
+JumpStartTemplate.sln
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With this command:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Amazing.NewProject
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Will become:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;My.Amazing.NewProject/MyClass.cs
+My.Amazing.NewProject/Properties
+My.Amazing.NewProject/Properties/AssemblyInfo.cs
+My.Amazing.NewProject/My.Amazing.NewProject.csproj
+My.Amazing.NewProject.sln
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The MyClass.cs, AssemblyInfo.cs, My.Amazing.NewProject.csproj and My.Amazing.NewProject.sln contents was updated by jumpstart to use the namespace My.Amazing.NewProject.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;using-it&quot;&gt;Using it&lt;/h2&gt;
+&lt;p&gt;Download it from the &lt;a href=&quot;https://github.com/giacomelli/jumpstart/releases&quot;&gt;releases page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;available-options&quot;&gt;Available options:&lt;/h3&gt;
+&lt;p&gt;To see all available options.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart.exe &lt;span class=&quot;nt&quot;&gt;-help&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are using jumpstart in Mac/Linux, remember to call it with “mono “ prefix.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;basic-using-conventions&quot;&gt;Basic (using conventions)&lt;/h3&gt;
+&lt;p&gt;If your template folder is called “jumpstart-template” and its namespace is JumpStartTemplate, the only argument you need to pass to jumpstart is -n(namespace).&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Amazing.NewProject
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The “jumpstart-template” folder should be in the same folder where you are calling jumpstart.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;advanced-specifying-template-folder-and-namespace&quot;&gt;Advanced (specifying template folder and namespace)&lt;/h3&gt;
+&lt;p&gt;For example, your template folder is “my-template” and your template namespace is “My.Template”, in this case you should call jumpstart in this way:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-tf&lt;/span&gt; my-template &lt;span class=&quot;nt&quot;&gt;-tn&lt;/span&gt; My.Template &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Amazing.NewProject
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;advanced-using-a-remote-zip-template&quot;&gt;Advanced (using a remote .zip template)&lt;/h3&gt;
+&lt;p&gt;You can use a remote .zip file as your template folder. For example, if you want to start a new project with any of those prebuilt apps that Xamarin make available on &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt;, you can use the command bellow to jumpstart your new project using those templates:&lt;/p&gt;
+
+&lt;h5 id=&quot;jumpstart-xamarin-sport-prebuilt-app&quot;&gt;jumpstart Xamarin Sport prebuilt app&lt;/h5&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart &lt;span class=&quot;nt&quot;&gt;-tf&lt;/span&gt; https://github.com/xamarin/sport/archive/master.zip &lt;span class=&quot;nt&quot;&gt;-tn&lt;/span&gt; Sport.Mobile &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; My.Sport.Mobile 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I hope you can use jumpstart in your next project bootstrap. &lt;a href=&quot;https://github.com/giacomelli/jumpstart/releases&quot;&gt;Download&lt;/a&gt; and use it.&lt;/p&gt;
+
+&lt;p&gt;If you want to colaborate, take a look on its &lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - c</title>
+ <link href="//tags/c/index.xml" rel="self"/>
+ <link href="/tag/c.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/c.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Nibble</title>
+   <link href="//nibble"/>
+   <updated>2014-05-11T00:00:00-03:00</updated>
+   <id>//nibble</id>
+   <content type="html">&lt;p&gt;Looking in some backups I found one of my first games. I made it about 14 years ago: a Nibble in 461 lines of C.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/ibnpKDo0jDI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;I push the source code and binary files to a GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/Nibble&quot;&gt;https://github.com/giacomelli/Nibble&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>

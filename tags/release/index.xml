@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - release</title>
+ <link href="//tags/release/index.xml" rel="self"/>
+ <link href="/tag/release.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/release.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>GeneticSharp v2.4.0 - New crossovers and TPL implementations</title>
+   <link href="//GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations"/>
+   <updated>2019-01-19T00:00:00-02:00</updated>
+   <id>//GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.4.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;p&gt;The additions of this version are the two new crossovers implementations and a new option of ITaskExecutor that use TPL.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;crossovers&quot;&gt;Crossovers&lt;/h1&gt;
+&lt;h3 id=&quot;alternating-position-ap&quot;&gt;Alternating-position (AP)&lt;/h3&gt;
+&lt;p&gt;The alternating position crossover operator (Larrañaga et al. 1996a) simply creates an offspring by selecting alternately the next element of the first parent and the next element of the second parent, omitting the elements already present in the offspring.&lt;/p&gt;
+
+&lt;h3 id=&quot;voting-recombination-crossover-vr&quot;&gt;Voting Recombination Crossover (VR)&lt;/h3&gt;
+&lt;p&gt;It can be seen as a P-sexual crossover operator, where p (parents number) is a natural number greater than, or equal to, 2.&lt;/p&gt;
+
+&lt;p&gt;It starts by defining a threshold, which is a natural number smaller than, or equal to p.&lt;/p&gt;
+
+&lt;p&gt;Next, for every; i E {l, 2, . . .N} the set of ith elements of all the parents is considered. If in this set an element occurs at least the threshold number of times, it is copied into the offspring.&lt;/p&gt;
+
+&lt;h1 id=&quot;tpl&quot;&gt;TPL&lt;/h1&gt;
+&lt;p&gt;Three new classes were implemented to run some key points of genetic algorithm using TPL.&lt;/p&gt;
+
+&lt;p&gt;Those new classes can be used alone, but normally you will use all them together. You can see a sample usage at unit test &lt;code class=&quot;highlighter-rouge&quot;&gt;Start_TplManyGenerations_Optimization&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;tpltaskexecutor&quot;&gt;TplTaskExecutor:&lt;/h3&gt;
+&lt;p&gt;An ITaskExecutor’s implementation that executes the tasks in a parallel fashion using Task Parallel Library (TPL).&lt;/p&gt;
+
+&lt;h3 id=&quot;tplpopulation&quot;&gt;TplPopulation&lt;/h3&gt;
+&lt;p&gt;Represents a population of candidate solutions (chromosomes) using TPL to create them.&lt;/p&gt;
+
+&lt;h3 id=&quot;tploperatorsstrategy&quot;&gt;TplOperatorsStrategy&lt;/h3&gt;
+&lt;p&gt;A new interface called IOperatorsStrategy was added to GeneticAlgorithm as an option. Two options of operators strategy were created, the default one, called DefaultOperatorsStrategy and the new one called TplOperatosStrategy.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
+&lt;p&gt;I would like to thanks to &lt;a href=&quot;https://github.com/EMostafaAli&quot;&gt;EMostafaAli&lt;/a&gt; and &lt;a href=&quot;https://github.com/InRedikaWB&quot;&gt;Alexey I.&lt;/a&gt; for opened some issues and made small pull requests and &lt;a href=&quot;https://github.com/codingdna2&quot;&gt;Dan&lt;/a&gt; for contributing with the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/56&quot;&gt;TPL implementations&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v2.2.0 - Sudoku sample</title>
+   <link href="//GeneticSharp-v2.2.0-Sudoku-sample"/>
+   <updated>2018-11-03T00:00:00-03:00</updated>
+   <id>//GeneticSharp-v2.2.0-Sudoku sample</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.2.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;p&gt;The additions of this version are the new whole sample and extensions showing how to use GeneticSharp to solve a Sudoku.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The GeneticSharp.Extensions project receive those new features:&lt;/p&gt;
+
+&lt;h1 id=&quot;multiple&quot;&gt;Multiple&lt;/h1&gt;
+&lt;h3 id=&quot;multiplechromosome&quot;&gt;MultipleChromosome&lt;/h3&gt;
+&lt;p&gt;Compound chromosome to artificially increase genetics diversity by evolving a list of chromosomes instead of just one.
+Sub-genes are inlined into a single compound list of genes.&lt;/p&gt;
+
+&lt;h3 id=&quot;multiplefitness&quot;&gt;MultipleFitness&lt;/h3&gt;
+&lt;p&gt;Fitness class that can evaluate a compound chromosome by summing over the evaluation of its sub-chromosomes.&lt;/p&gt;
+
+&lt;h1 id=&quot;sudoku&quot;&gt;Sudoku&lt;/h1&gt;
+&lt;h3 id=&quot;isudokuchromosome&quot;&gt;ISudokuChromosome:&lt;/h3&gt;
+&lt;p&gt;Represents each type of chromosome for solving a sudoku is simply required to output a list of candidate sudokus.&lt;/p&gt;
+
+&lt;h3 id=&quot;sudokuboard&quot;&gt;SudokuBoard&lt;/h3&gt;
+&lt;p&gt;A class that represents a Sudoku, fully or partially completed. 
+Holds a list of 81 int for cells, with 0 for empty cells.
+Can parse strings and files from most common formats and displays the sudoku in an easy to read format.&lt;/p&gt;
+
+&lt;h3 id=&quot;sudokucellschromosome&quot;&gt;SudokuCellsChromosome&lt;/h3&gt;
+&lt;p&gt;This simple chromosome simply represents each cell by a gene with a value between 1 and 9, accounting for the target mask if given.&lt;/p&gt;
+
+&lt;h3 id=&quot;sudokufitness&quot;&gt;SudokuFitness&lt;/h3&gt;
+&lt;p&gt;Evaluates a sudoku chromosome for completion by counting duplicates in rows, columns, boxes, and differences from the target mask.&lt;/p&gt;
+
+&lt;h3 id=&quot;sudokupermutationschromosome&quot;&gt;SudokuPermutationsChromosome&lt;/h3&gt;
+&lt;p&gt;This more elaborated chromosome manipulates rows instead of cells, and each of its 9 gene holds an integer for the index of the row’s permutation amongst all that respect the target mask.
+Permutations are computed once when a new Sudoku is encountered, and stored in a static dictionary for further reference.&lt;/p&gt;
+
+&lt;h3 id=&quot;sudokurandompermutationschromosome&quot;&gt;SudokuRandomPermutationsChromosome&lt;/h3&gt;
+&lt;p&gt;This chromosome aims at increasing genetic diversity of SudokuPermutationsChromosome, which exhibits only 9 permutation genes.
+Here, instead, an arbitrary number of Sudokus are generated where for each row, a random gene is picked amongst an arbitrary number of corresponding permutation genes.&lt;/p&gt;
+
+&lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
+&lt;p&gt;GTK# sample
+&lt;img src=&quot;https://user-images.githubusercontent.com/177389/47957137-6bff2200-df8f-11e8-8b07-a144289389a0.png&quot; alt=&quot;gtk-sudoku-sample&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
+&lt;p&gt;I would like to thanks to Jean-Sylvain Boige (@jsboige) for contributing with those great new samples and extensions and for use GeneticSharp in his &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/43#issuecomment-433662175&quot;&gt;Artificial Intelligence course in French engineering schools (course)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Take a look on the pull-request for more details about those new features: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/43&quot;&gt;New Sudoku extension and GTK# sample #43&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v2.1.0</title>
+   <link href="//GeneticSharp-v2.1.0"/>
+   <updated>2018-10-30T00:00:00-03:00</updated>
+   <id>//GeneticSharp-v2.1.0</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.1.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;h3 id=&quot;features&quot;&gt;Features&lt;/h3&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add constructor with values to FloatingPointChromosome &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/issues/33&quot;&gt;#33&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As it is now whenever you create an instance of FloatingPointChromosome, it will randomly create gene values.
+I have a case where I need to stop optimization at some time, save results to DB and resume it later. For this, I need to be able to give gene values to FloatingPointChromosome.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;New NuGet version &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/issues/44&quot;&gt;#44&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bug-fix&quot;&gt;Bug fix&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Bug/Error when using ParallelTaskExecutor &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/issues/40&quot;&gt;#40&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I just discovered that when running the optimizer within a Task/Tread/TPL Dataflow block with TaskExecutor set to ParallelTaskExecutor when instantiating GeneticAlgorithm, it blocks all other outside operations during the lifetime of the optimizer run. This does not happen when not setting the TaskExecutor option.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h3&gt;
+
+&lt;p&gt;I would like to thanks to &lt;a href=&quot;https://github.com/MattWolf74&quot;&gt;@MattWolf74&lt;/a&gt;  and &lt;a href=&quot;https://github.com/mersadk&quot;&gt;@mersadk&lt;/a&gt; for contributing to the open issues and pull-request&lt;/p&gt;
+
+&lt;p&gt;If you want to use this new version on your project, just get the 2.1.0 version from NuGet:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; update-package GeneticSharp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v2.0.0 - .NET Core</title>
+   <link href="//GeneticSharp-v2.0.0-dotnet-core"/>
+   <updated>2018-05-12T00:00:00-03:00</updated>
+   <id>//GeneticSharp-v2.0.0-dotnet-core</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases/tag/v2.0.0&quot;&gt;GeneticSharp v2.0.0&lt;/a&gt;&lt;/strong&gt; is out with support to .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/netcore.svg&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;In march GenetichSharp start to support .NET Standard 2.0 in the 2.0.0-rc version. Two months have pass and in the meanwhile the community have time to test that release candidate version and now Unity3D has an official .NET Standard 2.0 profile.&lt;/p&gt;
+
+&lt;p&gt;So, it’s time to release the GeneticSharp v2.0.0.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing&quot;&gt;Installing&lt;/h2&gt;
+&lt;p&gt;Only GeneticSharp:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;GeneticSharp and extensions (TSP, AutoConfig, Bitmap equality, Equality equation, Equation solver, Function builder, etc):&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp.Extensions
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’re still in a .NET Framework version lower than 4.6.2 project use the &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp/1.2.0&quot;&gt;1.2.0 version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 1.2.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I’ve already talk about these breaking changes on the post about the release candidate version, but I guess is good to point them again:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GeneticSharp NuGet package was split into two packages:
+    &lt;ul&gt;
+      &lt;li&gt;GeneticSharp: only GeneticSharp.Domain.dll and GeneticSharp.Infrastructure.Framework.dll&lt;/li&gt;
+      &lt;li&gt;GeneticSharp.Extensions: depends on GenetiSharp.Package and add the GeneticSharp.Extensions.dll.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SmartThreadPoolTaskExecutor does not exists anymore. You should use ParallelTaskExecutor class (not disposable).&lt;/li&gt;
+  &lt;li&gt;The projects are not signed anymore:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/6911#issuecomment-309647478&quot;&gt;Error signing output with public key from file ‘x.snk’ – Assembly signing not supported&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In the ConsoleApp the EquationSolverSampleController was removed until the &lt;a href=&quot;https://github.com/pieterderycke/Jace&quot;&gt;Jace&lt;/a&gt; library suportt .NET Core.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>DocsByReflection v1.0.13 - .NET Standard 2.0</title>
+   <link href="//DocsByRelection-v1.0.13-netstandard2.0"/>
+   <updated>2018-04-05T00:00:00-03:00</updated>
+   <id>//DocsByRelection-v1.0.13-netstandard2.0</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/DocsByReflection/releases/tag/v1.0.13&quot;&gt;DocsByReflection v1.0.13&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you don’t know what is DocsByReflection or what you can do with it, take a look in my previous post about it &lt;a href=&quot;http://diegogiacomelli.com.br/getting-your-code-documentation-at-runtime&quot;&gt;“Getting your code documentation at runtime”&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;net-standard-20-and-net-framework-46&quot;&gt;.NET Standard 2.0 and .NET Framework 4.6&lt;/h2&gt;
+&lt;p&gt;In this version &lt;a href=&quot;https://github.com/giacomelli/DocsByReflection&quot;&gt;DocsByReflection&lt;/a&gt; starts to support .NET Standard 2.0.&lt;/p&gt;
+
+&lt;p&gt;Now, if you need to use the library on .NET Standard 2.0 or .NET Framework 4.6 projects:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package DocsByReflection.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;net-framework&quot;&gt;.NET Framework&lt;/h2&gt;
+&lt;p&gt;If you are in a .NET Framework project lower than .NET Framework 4.6 you can use the previous version:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package DocsByReflection &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 1.0.12.20
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h2&gt;
+&lt;p&gt;I would like to thanks &lt;a href=&quot;https://github.com/onionhammer&quot;&gt;Erik O’Leary&lt;/a&gt; to perform the whole migration of DocsByReflection to .NET Standard 2.0.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Porting GeneticSharp to .NET Core</title>
+   <link href="//porting-GeneticSharp-to-dotnet-core"/>
+   <updated>2018-03-28T00:00:00-03:00</updated>
+   <id>//porting-GeneticSharp-to-dotnet-core</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases/tag/v2.0.0-rc1&quot;&gt;GeneticSharp v2.0.0-rc1&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;p&gt;In this version GeneticSharp starts to support .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
+
+&lt;p&gt;Porting &lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+to &lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/netcore.svg&quot; /&gt;
+      &lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/ogiacomelli/status/958114986601172992&quot;&gt;Sometime ago I started to porting GeneticSharp to .NET Core&lt;/a&gt; and today, after more than 40 hours of work, I finally finish it.&lt;/p&gt;
+
+&lt;p&gt;Although GeneticSharp born as a multi-platform library that ran in any OS supported by .NET Framework and Mono, convert it to .NET Core was a desired thing, because .NET Core is where .NET ecosystem is targeting.&lt;/p&gt;
+
+&lt;h2 id=&quot;release-candidate&quot;&gt;Release candidate&lt;/h2&gt;
+&lt;p&gt;This 2.0.0-rc1 was already published to nuget.org, but it’s marked as a pre-realease package. I will kept it as a RC until get sure that there is no issue with the porting and until the Unity3d remove the “experimental” status to its support to .NET Standard 2.0.&lt;/p&gt;
+
+&lt;p&gt;If you are in .NET Core or in .NET Framework 4.6.2+ project, please try the the &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp/2.0.0-rc1&quot;&gt;2.0.0-rc1&lt;/a&gt; version.&lt;/p&gt;
+
+&lt;p&gt;Only GeneticSharp:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 2.0.0-rc1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;GeneticSharp and extensions (TSP, AutoConfig, Bitmap equality, Equality equation, Equation solver, Function builder, etc):&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp.Extensions &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 2.0.0-rc1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’re still in a .NET Framework version lower than 4.6.2 project use the &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp/1.2.0&quot;&gt;1.2.0 version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 1.2.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;porting&quot;&gt;Porting&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;warmup&quot;&gt;Warmup&lt;/h3&gt;
+
+&lt;p&gt;To start the porting I followed the good pratices describe on links below:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/porting/libraries&quot;&gt;Porting to .NET Core - Libraries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/porting/index&quot;&gt;Porting to .NET Core from .NET Framework&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Based on those reads, I decided to support the .NET Standard 2.0 (netstandard2.0) and the .NET Framework 4.6.2 (net462). This meaning that GeneticSharp can be used in .NET Standard and .NET Framework projects, with no differences.&lt;/p&gt;
+
+&lt;p&gt;Another thing that I considered was the Unity3d support, so based on this post &lt;a href=&quot;https://blogs.unity3d.com/pt/2018/01/10/get-early-access-to-unity-2018-1-the-beta-is-out/&quot;&gt;Unity 2018.1 - .NET Standard 2.0 and .NET 4.6 support&lt;/a&gt; Unity is already using a experimental support to netstandard2.0 and net462 libraries.&lt;/p&gt;
+
+&lt;h3 id=&quot;domain&quot;&gt;Domain&lt;/h3&gt;
+&lt;p&gt;The domain part of the library, the GeneticSharp.Domain library was the easy part to port, if I cleary remember there was no change it all, besides the changes on .csproj.&lt;/p&gt;
+
+&lt;h3 id=&quot;extensions&quot;&gt;Extensions&lt;/h3&gt;
+&lt;p&gt;The extensions from GeneticSharp.Extensions project needed some more work, because the System.Drawing do not exists directly in .NET Standard 2.0. That was resolved using the &lt;a href=&quot;https://www.nuget.org/packages/System.Drawing.Common/&quot;&gt;System.Drawing.Common&lt;/a&gt; NuGet package.&lt;/p&gt;
+
+&lt;p&gt;The NCalc library used on FunctionBuilderFitness was updated to use the &lt;a href=&quot;https://www.nuget.org/packages/NCalc.NetCore/&quot;&gt;NCalc.NetCore&lt;/a&gt; version.&lt;/p&gt;
+
+&lt;h3 id=&quot;threading&quot;&gt;Threading&lt;/h3&gt;
+&lt;p&gt;One of the most tricky porting was the GeneticSharp.Infrastructure.Threading, because it used the external library &lt;a href=&quot;https://github.com/amibar/SmartThreadPool&quot;&gt;SmartThreadPool&lt;/a&gt; and that one was not supporting .NET Core at that time. I decided to implement the parallel task executor using the .NET built-in ThreadPool class, this implementation was done on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Infrastructure.Framework/Threading/ParallelTaskExecutor.cs&quot;&gt;ParallelTaskExecutor&lt;/a&gt; and its use can be tested on  &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Infrastructure.Framework.UnitTests/Threading/ParallelTaskExecutorTest.cs&quot;&gt;ParallelTaskExecutorTest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;gtkapp&quot;&gt;GtkApp&lt;/h3&gt;
+&lt;p&gt;GeneticSharp sample app (GeneticSharp.Runner.GtkApp) was built using Gtk# 2, but only version 3 was ported to .NET Core, and there are huge breaking changes between these two Gtk# versions, so for a while I’ll keeping the sample app still running only on .NET Framework/Mono.&lt;/p&gt;
+
+&lt;p&gt;I hope in a near future we can built a cross-platform sample app, maybe using Xamarin Forms for iOS, Android, macOS and UWP. This would be great, but perform this task during the to .NET Core supporting is far from the scope right now.&lt;/p&gt;
+
+&lt;p&gt;The links below are some readings that I did while looking for some GTK# alternatives:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.xamarin.com/building-xamarin-forms-apps-net-standard/&quot;&gt;Building Xamarin.Forms Apps with .NET &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.xamarin.com/preview-bringing-macos-to-xamarin-forms/&quot;&gt;Preview: Bringing macOS to Xamarin.Forms&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/xamarin/mac/get-started/hello-mac&quot;&gt;Xamarin.Mac - Hello, Mac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;unit-tests&quot;&gt;Unit tests&lt;/h3&gt;
+&lt;p&gt;Unit tests projects were using the &lt;a href=&quot;https://github.com/ayende/rhino-mocks&quot;&gt;Rhino Mocks&lt;/a&gt; as the mocking library, but Rhino Mocks was not supporting (maybe never) .NET Core, so it was replaced by the amazing &lt;a href=&quot;http://nsubstitute.github.io/&quot;&gt;NSubstitute&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;code-coverage&quot;&gt;Code Coverage&lt;/h4&gt;
+&lt;p&gt;As the time I wrote this, there was no unanimity about what is the best cross-platform tool to collect code-coverage in .NET Core.
+There are some tools, but each one has some pros and cons:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;VS 2017 Code Coverage
+Can be easily used on Windows platform directly on VS 2017 or in command line:
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet &lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--collect&lt;/span&gt;:&lt;span class=&quot;s2&quot;&gt;&quot;Code Coverage&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/SteveGilham/altcover&quot;&gt;altcover&lt;/a&gt;
+Instrumenting coverage tool for .net/.net core and Mono, emitting NCover or OpenCover format output.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/lucaslorentz/minicover&quot;&gt;MiniCover&lt;/a&gt;
+Minimalist Code Coverage Tool for .NET Core.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/tonerdo/coverlet&quot;&gt;coverlet&lt;/a&gt;
+Cross platform code coverage library for .NET Core.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I guess the most promising tool is the coverlet, but I’ll waiting until the end of GeneticSharp 2.0.0 release candidate period to choose one.&lt;/p&gt;
+
+&lt;h3 id=&quot;problems-readings-tricks-and-hacks&quot;&gt;Problems, readings, tricks and hacks&lt;/h3&gt;
+&lt;p&gt;Of course that a porting always come with some problems that will you need to figure out by doing some research and solve them, most of time, using some trick and hacks. These one was some of I’ve done:&lt;/p&gt;
+
+&lt;h4 id=&quot;net-sdk-20-projects-targeting-net-4x-on-mono&quot;&gt;.NET SDK 2.0 projects targeting .NET 4.x on Mono&lt;/h4&gt;
+&lt;p&gt;As GeneticSharp need to support .NET Framework 4.6.2, but the msbuild does not know where to looking for the framework assemblies in macOS and Linux, so I found thi .NET SDK issue comment &lt;a href=&quot;https://github.com/dotnet/sdk/issues/335#issuecomment-368669050&quot;&gt;issue comment&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;When compiling .NET SDK 2.0 projects targeting .NET 4.x on Mono using ‘dotnet build’ you have to teach MSBuild where the Mono copy of the reference asssemblies is.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This msbuild file &lt;a href=&quot;src/msbuilds/GeneticSharp.dotnet-core.targets&quot;&gt;GeneticSharp.dotnet-core.targets&lt;/a&gt; was created and referenced in all .csproj.&lt;/p&gt;
+
+&lt;h4 id=&quot;dotnet-test-failed-to-initialize-client-proxy&quot;&gt;dotnet test “Failed to initialize client proxy”&lt;/h4&gt;
+&lt;p&gt;Sometimes dotnet test gives the error:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Starting &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;execution, please wait...
+Failed to initialize client proxy: could not connect to &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;process.
+
+Test Run Aborted
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Delete the “obj” and “bin” folders from unit test project will “fix” the problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The GeneticSharp NuGet package was split into two packages:
+    &lt;ul&gt;
+      &lt;li&gt;GeneticSharp: only GeneticSharp.Domain.dll and GeneticSharp.Infrastructure.Framework.dll&lt;/li&gt;
+      &lt;li&gt;GeneticSharp.Extensions: depends on GenetiSharp.Package and add the GeneticSharp.Extensions.dll.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SmartThreadPoolTaskExecutor does not exists anymore. You should use ParallelTaskExecutor class (not disposable).&lt;/li&gt;
+  &lt;li&gt;The projects are not signed anymore:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/6911#issuecomment-309647478&quot;&gt;Error signing output with public key from file ‘x.snk’ – Assembly signing not supported&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In the ConsoleApp the EquationSolverSampleController was removed until the &lt;a href=&quot;https://github.com/pieterderycke/Jace&quot;&gt;Jace&lt;/a&gt; library suportt .NET Core.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;reads-during-the-porting&quot;&gt;Reads during the porting&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/conclusion.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Some readings I did during the whole process, maybe can be useful to someone porting a library to .NET Core too.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/amibar/SmartThreadPool/pull/17&quot;&gt;SmartThreadPool - Adding support to .NET Core 2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/43605256/956886&quot;&gt;How to set &lt;code class=&quot;highlighter-rouge&quot;&gt;OutputPath&lt;/code&gt; attribute in Visual Studio 2017 project ( new .csproj file format ) without target framework cluttering the resolved path?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/42787747/956886&quot;&gt;How do you multi-target a .NET Core class library with csproj?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.natemcmaster.com/blog/2017/03/09/vs2015-to-vs2017-upgrade/&quot;&gt;Old csproj to new csproj: Visual Studio 2017 upgrade guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wrightfully.com/guide-to-nsubstitute-for-rhino-mocks-users&quot;&gt;A Guide to NSubstitute for Rhino.Mocks Users&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/4710&quot;&gt;Duplicate ‘System.Reflection.AssemblyCompanyAttribute’ attribute&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nunit/dotnet-test-nunit/issues/122&quot;&gt;NUnit - Support .NET Core 2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://weblog.west-wind.com/posts/2017/Jun/22/MultiTargeting-and-Porting-a-NET-Library-to-NET-Core-20&quot;&gt;Multi-Targeting and Porting a .NET Library to .NET Core 2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/porting/project-structure&quot;&gt;Organizing your project to support .NET Framework and .NET Core&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/standard/issues/443&quot;&gt;System.Drawing.Bitmap class is claimed to be present in netcoreapp2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/dotnet/2017/01/19/net-core-image-processing/&quot;&gt;.NET Core Image Processing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Microsoft/vstest/issues/981&quot;&gt;Add support for dotnet test –collect:”Code Coverage”&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages&quot;&gt;Building pre-release packages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/NuGet/Home/issues/6636&quot;&gt;dotnet pack with nuspec file does not set PackageVersion from csproj&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/NuGet/Home/issues/5655&quot;&gt;Invalid warning “Assembly outside lib folder.” in dotnet pack&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/NuGet/Home/issues/3891#issuecomment-375501212&quot;&gt;Feature : Allow project reference DLLs to be added to the parent nupkg for pack target like IncludeReferencedProjects in nuget.exe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/5504&quot;&gt;https://github.com/dotnet/cli/issues/5504&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Now I’m planning to create a GeneticSharp’s sample using Unity3d’s new beta features, like the new ECS (Entity Component System), C# Job System and the Burst compiler.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v1.2.0 - Sequence mutations</title>
+   <link href="//GeneticSharp-v1.2.0-sequence-mutations"/>
+   <updated>2018-01-26T00:00:00-02:00</updated>
+   <id>//GeneticSharp-v1.2.0-sequence-mutations</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v1.2.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;p&gt;The additions of this version are the new sequence mutation operators: Displacement, InsertionMutation and Partial Shuffle (PSM).&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;Displacement Mutation&lt;/strong&gt;: a substring is randomly selected from chromosome, is removed, then replaced at a randomly selected position.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Insertion Mutation&lt;/strong&gt;: a gene is randomly selected from chromosome, is removed, then replaced at a randomly selected position.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Partial Shuffle Mutation (PSM)&lt;/strong&gt;: we take a sequence S limited by two positions i and j randomly chosen. The gene order in this sequence will be shuffled. Sequence will be shuffled until it becomes different than the starting order.&lt;/p&gt;
+
+&lt;p&gt;I would like to thanks to Ahmet Can Saner (&lt;a href=&quot;https://github.com/cansaner&quot;&gt;@cansaner&lt;/a&gt;) for contribute with those great new mutations that him developed during his master degree.&lt;/p&gt;
+
+&lt;p&gt;If you want to use the new mutations in your project, just get the new GeneticSharp version from Nuget.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GeneticSharp v1.1.0 - Binary chromosomes</title>
+   <link href="//GeneticSharp-v1.1.0-binary-chromosomes"/>
+   <updated>2017-06-11T00:00:00-03:00</updated>
+   <id>//GeneticSharp-v1.1.0-binary-chromosomes</id>
+   <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v1.1.0&lt;/a&gt;&lt;/strong&gt; is out. The greatest additions of this version are the binary chromosomes: &lt;strong&gt;FloatingPointChromosome and IntegerChromosome.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Binary chromosomes can be directly used when your solution chromosome can be represented as numbers or a string representation of 0 and 1.&lt;/p&gt;
+
+&lt;p&gt;A new sample has been added to the GeneticSharp.Runner.GtkApp, this sample called “Function optimization” show the FloatingPointChromsome in action:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/Q62tGjEDsYM &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Besides these new chromosomes, there is a new mutation: FlipBit, a special mutation to IBinaryChromosome that takes the chosen gene and inverts the bits.&lt;/p&gt;
+
+&lt;p&gt;If you want to use the new chromosomes in your project, just get the new GeneticSharp version from Nuget.&lt;/p&gt;
+
+&lt;p&gt;In the next days I will post a tutorial showing how to optimize a very simple function using GeneticSharp and the new FloatingPointChromosome.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron 2.0.0</title>
+   <link href="//buildron.2.0.0"/>
+   <updated>2016-09-24T00:00:00-03:00</updated>
+   <id>//buildron.2.0.0</id>
+   <content type="html">&lt;p&gt;After some months to test the &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;v2.0.0-RC1&lt;/a&gt; we are releasing the final version of &lt;a href=&quot;https://github.com/skahal/Buildron/&quot;&gt;Buildron&lt;/a&gt; mods support with this &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0&quot;&gt;2.0.0 version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Mods supports represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
+
+&lt;h2 id=&quot;mods-available&quot;&gt;Mods available&lt;/h2&gt;
+&lt;p&gt;The classic visual and behavior that you already know at Buildron was moved to mods, you can see them at &lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;Buildron Classic Mods repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Right now we have 9 mods developed to Buildron:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/Buildron-ConsoleMod/releases&quot;&gt;ConsoleMod&lt;/a&gt;: adds a console window to Buildron and let you monitor his events.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Classic Mods
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;BuildMod&lt;/a&gt;: represents each build as part of totem.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;CameraMod&lt;/a&gt;: auto position of camera to show all builds and users.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;EasterEggMod&lt;/a&gt;: surprise.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;EnvironmentMod&lt;/a&gt;: the classic Tron style floor.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;SoundMod&lt;/a&gt;: the classic explosion sounds and allow change the sounds for each user.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;UserMod&lt;/a&gt;: each user is represented by a robot and an avatar.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod/releases&quot;&gt;SlackBotMod&lt;/a&gt;: adds a bot to your Slack that acts as Buildron and your team can interact with it, like filter builds, sort builds, move camera, receive build status change notifications and taking screenshots.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Mod-Samples&quot;&gt;ToastyMod&lt;/a&gt;: the Mortal Kombat “Toasty!” easter egg that can be configured to show on build success, running or failed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;developing-new-mods&quot;&gt;Developing new mods&lt;/h2&gt;
+&lt;p&gt;Do you want to develop your own mod to Buildron? Take a look on our wiki pages about mods and start to build your mod now:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://diegogiacomelli.com.br/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+</feed>

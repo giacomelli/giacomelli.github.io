@@ -1,0 +1,5 @@
+/* INCLUDE: styel.css */
+{% include_absolute _site/libs/style.css %}
+
+/* INCLUDE: GreedNav */
+{% include_absolute libs/GreedNav/greedynav.min.css %}

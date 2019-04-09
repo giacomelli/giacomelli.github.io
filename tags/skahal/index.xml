@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - skahal</title>
+ <link href="//tags/skahal/index.xml" rel="self"/>
+ <link href="/tag/skahal.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/skahal.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Buildron 2.0.0</title>
+   <link href="//buildron.2.0.0"/>
+   <updated>2016-09-24T00:00:00-03:00</updated>
+   <id>//buildron.2.0.0</id>
+   <content type="html">&lt;p&gt;After some months to test the &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;v2.0.0-RC1&lt;/a&gt; we are releasing the final version of &lt;a href=&quot;https://github.com/skahal/Buildron/&quot;&gt;Buildron&lt;/a&gt; mods support with this &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0&quot;&gt;2.0.0 version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Mods supports represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
+
+&lt;h2 id=&quot;mods-available&quot;&gt;Mods available&lt;/h2&gt;
+&lt;p&gt;The classic visual and behavior that you already know at Buildron was moved to mods, you can see them at &lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;Buildron Classic Mods repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Right now we have 9 mods developed to Buildron:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/Buildron-ConsoleMod/releases&quot;&gt;ConsoleMod&lt;/a&gt;: adds a console window to Buildron and let you monitor his events.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Classic Mods
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;BuildMod&lt;/a&gt;: represents each build as part of totem.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;CameraMod&lt;/a&gt;: auto position of camera to show all builds and users.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;EasterEggMod&lt;/a&gt;: surprise.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;EnvironmentMod&lt;/a&gt;: the classic Tron style floor.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;SoundMod&lt;/a&gt;: the classic explosion sounds and allow change the sounds for each user.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Classic-Mods&quot;&gt;UserMod&lt;/a&gt;: each user is represented by a robot and an avatar.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod/releases&quot;&gt;SlackBotMod&lt;/a&gt;: adds a bot to your Slack that acts as Buildron and your team can interact with it, like filter builds, sort builds, move camera, receive build status change notifications and taking screenshots.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/Buildron-Mod-Samples&quot;&gt;ToastyMod&lt;/a&gt;: the Mortal Kombat “Toasty!” easter egg that can be configured to show on build success, running or failed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;developing-new-mods&quot;&gt;Developing new mods&lt;/h2&gt;
+&lt;p&gt;Do you want to develop your own mod to Buildron? Take a look on our wiki pages about mods and start to build your mod now:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://diegogiacomelli.com.br/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Starting a Buildron mod with a mod template</title>
+   <link href="//starting-a-buildron-mod-with-a-mod-template"/>
+   <updated>2016-09-04T00:00:00-03:00</updated>
+   <id>//starting-a-buildron-mod-with-a-mod-template</id>
+   <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+&lt;p&gt;Download the Buildron-Mod-Template.zip from &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;releases page&lt;/a&gt;.
+Unzip it in any folder.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-solution&quot;&gt;Creating the solution&lt;/h2&gt;
+&lt;p&gt;Open a prompt (win) or a terminal (linux/mac).&lt;/p&gt;
+
+&lt;p&gt;Go to the folder where you unzip Buildron-Mod-Template.zip.&lt;/p&gt;
+
+&lt;p&gt;Type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart-exe &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &amp;lt;the name of your mod&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are in Linux/Mac andfix commands with “mono “.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example, if your mod name is “MyAmazingMod”, you should type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jumpstart.exe &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyAmazingMod
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a tool that I made to help create solutions from pre built templates. I will talk about of it in an future post.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;build: full Buildron executable with the classic mods to all platforms (linux, mac and win).&lt;/li&gt;
+  &lt;li&gt;src
+    &lt;ul&gt;
+      &lt;li&gt;Code: the C# class library of your mod&lt;/li&gt;
+      &lt;li&gt;Unity: the Unity3d project of your mod.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;the-c-project&quot;&gt;The C# project&lt;/h2&gt;
+&lt;p&gt;Open the MyAmazingMod/src/Code/MyAmazingMod.sln.&lt;/p&gt;
+
+&lt;p&gt;Select the configuration of your platform.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Inside of it you can see the Mod.cs and ModController.cs.&lt;/p&gt;
+
+&lt;p&gt;Compile the whole solution.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-unity3d-project&quot;&gt;The Unity3d project&lt;/h2&gt;
+&lt;p&gt;Open the MyAmazingMod/src/Unity/MyAmazingMod on Unity3d.&lt;/p&gt;
+
+&lt;p&gt;Open the scene Assets/SimulatorScene and click on play button.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Click on the menu “Buildron/Show Simulator”.&lt;/p&gt;
+
+&lt;p&gt;In the simulator click on button “BuildStatusChanged”.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;You will see a box falling down every time you hit the button. This behavior is made by Mod.cs and ModController.cs on C# project. If you are curious about it, take a look on the classes implementations.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing-on-buildron&quot;&gt;Testing on Buildron&lt;/h2&gt;
+&lt;p&gt;In the Unity3d editor click on menu “Buildron / Build mod”.&lt;/p&gt;
+
+&lt;p&gt;Select your platform: Mac, Linux or Windows.&lt;/p&gt;
+
+&lt;p&gt;Type your Buildron mods folder:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Linux: ../../../build/linux/Mods&lt;/li&gt;
+  &lt;li&gt;Mac: ../../../build/mac/Buildron.app/Mods&lt;/li&gt;
+  &lt;li&gt;Win: ../../../build/win/Mods&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Click on “Build” button.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Go to folder MyAmazingMod/build and open the Buildron of your platform.&lt;/p&gt;
+
+&lt;p&gt;Hit the play button on Buildron.&lt;/p&gt;
+
+&lt;p&gt;You should see the same falling down box that you see on simulator falling down inside Buildron every time a build changed status.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;With this post you learned how you can starting to create your own mod from mod template.&lt;/p&gt;
+
+&lt;p&gt;If you want to build more sofisticated mods, please take a look on our tutorial &lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;“Creating a mod”&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron 2.0.0-RC1 - Mods support</title>
+   <link href="//buildron.2.0.0-rc1-mods-support"/>
+   <updated>2016-08-28T00:00:00-03:00</updated>
+   <id>//buildron.2.0.0-rc1-mods-support</id>
+   <content type="html">&lt;p&gt;After some months of hard work I finally released the Buildron mods support.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;This &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;Buildron 2.0.0-RC1&lt;/a&gt; represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
+
+&lt;p&gt;Hope to see you building some mods to Buildron. We’re curious about what crazy mods ideas you could have ;).&lt;/p&gt;
+
+&lt;p&gt;We really appreciate your opinion about the mods support, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-introduction&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-tutorial-creating-a-mod&quot;&gt;tutorial&lt;/a&gt; and &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;. Please, get in touch at &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;mods&quot;&gt;Mods&lt;/h3&gt;
+&lt;p&gt;The classic visual and behavior that you already know at Buildron was moved to mods too, you can see them at &lt;a href=&quot;http://github.com/skahal/Buildron-Classic-Mods&quot;&gt;Buildron Classic Mods&lt;/a&gt; repository.&lt;/p&gt;
+
+&lt;p&gt;The full list of mods is available here: &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-Mods-list&quot;&gt;Mods list&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;i-wanna-build-a-mod&quot;&gt;I wanna build a mod&lt;/h3&gt;
+&lt;p&gt;If you want to build a mod, take a look on this &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt; and this &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial creating a mod&lt;/a&gt; that teach how build Buildron’s mod.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Buildron - Your builds, our world! ...and now our open source code too</title>
+   <link href="//buildron-your-builds-our-world-and-now-our-open-source-code-too"/>
+   <updated>2016-06-02T00:00:00-03:00</updated>
+   <id>//buildron-your-builds-our-world-and-now-our-open-source-code-too</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to continuous integration server like TeamCity, Jenkins and Hudson.&lt;/p&gt;
+
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;We’ve built it as a &lt;a href=&quot;http://skahal.com&quot;&gt;Skahal’s&lt;/a&gt; product and now we decide to &lt;strong&gt;open source it: &lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;http://github.com/skahal/buildron&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can run it on Windows, OSX and Linux: &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;https://github.com/skahal/Buildron/releases&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a remote control app too (Windows, OSX, Linux, iOS and Android), where you can sort and filter builds, among other things: &lt;a href=&quot;https://github.com/skahal/Buildron-rc/releases&quot;&gt;https://github.com/skahal/Buildron-rc/releases&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Give it a try:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/sEghUYUvTHg &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+</content>
+ </entry>
+ 
+</feed>

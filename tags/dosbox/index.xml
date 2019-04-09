@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - dosbox</title>
+ <link href="//tags/dosbox/index.xml" rel="self"/>
+ <link href="/tag/dosbox.html"/>
+ <updated>2019-04-09T19:21:48-03:00</updated>
+ <id>/tag/dosbox.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Testing js-dos</title>
+   <link href="//testing-js-dos"/>
+   <updated>2016-08-04T00:00:00-03:00</updated>
+   <id>//testing-js-dos</id>
+   <content type="html">&lt;p&gt;Recenlty I discovered the project &lt;a href=&quot;https://github.com/kripken/emscripten&quot;&gt;Emscripten&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Emscripten is an LLVM-to-JavaScript compiler. It takes LLVM bitcode - which can be generated from C/C++, using llvm-gcc (DragonEgg) or clang, or any other language that can be converted into LLVM - and compiles that into JavaScript, which can be run on the web (or anywhere else JavaScript can run).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And after this discovered the &lt;a href=&quot;https://js-dos.com&quot;&gt;js-dos&lt;/a&gt; project:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A javascript version of dosbox that can run dos programs and games in browser.
+js-dos provides javascript API to easily run DOS programs and games in browser. This API allows to run unmodified versions of DOS programs, in other words you can run DOS binary in browser.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;js-dos use Emscripten and &lt;a href=&quot;https://github.com/dreamlayers/em-dosbox&quot;&gt;em-dosbox&lt;/a&gt; projects do built his easy-to-use api.&lt;/p&gt;
+
+&lt;p&gt;Below I made a test with it and put one of my first games, a Nibble clone wrote with 461 lines of C to run in browser.&lt;/p&gt;
+
+&lt;p&gt;This is all JS code to start js-dos in this sample:&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dosbox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Dosbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;dosbox&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;onload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dosbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;dosbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;NIBBLE.zip&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./NIBBLE.EXE&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;onrun&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dosbox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;App '&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;' is runned&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Below is the result. Enjoy it!&lt;/p&gt;
+&lt;iframe src=&quot;/assets/2016/08/04/testing-js-dos/nibble.html &quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; style=&quot;width:100%; height:500px&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The full sample can be download here: &lt;a href=&quot;/assets/2016/08/04/testing-js-dos/sample.zip&quot;&gt;sample&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: tested on Chrome 64 bits.&lt;/em&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+</feed>
