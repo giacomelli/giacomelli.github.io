@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - DocsByReflection</title>
  <link href="//tags/docsbyreflection/index.xml" rel="self"/>
  <link href="/tag/DocsByReflection.html"/>
- <updated>2019-04-09T19:34:44-03:00</updated>
+ <updated>2019-04-09T19:50:58-03:00</updated>
  <id>/tag/DocsByReflection.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -17,7 +17,7 @@
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/DocsByReflection/releases/tag/v1.0.13&quot;&gt;DocsByReflection v1.0.13&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;If you don’t know what is DocsByReflection or what you can do with it, take a look in my previous post about it &lt;a href=&quot;http://diegogiacomelli.com.br/getting-your-code-documentation-at-runtime&quot;&gt;“Getting your code documentation at runtime”&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;If you don’t know what is DocsByReflection or what you can do with it, take a look in my previous post about it “&lt;a href=&quot;/getting-your-code-documentation-at-runtime&quot;&gt;Getting your code documentation at runtime&lt;/a&gt;”.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;net-standard-20-and-net-framework-46&quot;&gt;.NET Standard 2.0 and .NET Framework 4.6&lt;/h2&gt;

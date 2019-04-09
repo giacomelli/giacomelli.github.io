@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2019-04-09T19:34:44-03:00</updated>
+ <updated>2019-04-09T19:50:58-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -78,8 +78,8 @@
 &lt;blockquote&gt;
   &lt;p&gt;If you need some introduction to genetic algorithms or GeneticSharp:&lt;/p&gt;
   &lt;ul&gt;
-    &lt;li&gt;Introduction to genetic algorithms: &lt;a href=&quot;http://diegogiacomelli.com.br/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/li&gt;
-    &lt;li&gt;Using GeneticSharp on Unity3D: &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Introduction to genetic algorithms: &lt;a href=&quot;/function-optimization-with-geneticsharp&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Using GeneticSharp on Unity3D: &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/blockquote&gt;
 
@@ -293,7 +293,7 @@ div.gist-meta { display:none; }
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial  &lt;a href=&quot;/function-optimization-with-geneticsharp&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;creating-the-unity3d-project&quot;&gt;Creating the Unity3D project&lt;/h2&gt;
@@ -557,7 +557,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://diegogiacomelli.com.br/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;

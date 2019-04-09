@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - skahal</title>
  <link href="//tags/skahal/index.xml" rel="self"/>
  <link href="/tag/skahal.html"/>
- <updated>2019-04-09T19:34:44-03:00</updated>
+ <updated>2019-04-09T19:50:58-03:00</updated>
  <id>/tag/skahal.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -52,7 +52,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://diegogiacomelli.com.br/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;

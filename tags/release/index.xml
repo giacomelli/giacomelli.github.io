@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - release</title>
  <link href="//tags/release/index.xml" rel="self"/>
  <link href="/tag/release.html"/>
- <updated>2019-04-09T19:34:44-03:00</updated>
+ <updated>2019-04-09T19:50:58-03:00</updated>
  <id>/tag/release.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -237,7 +237,7 @@ I have a case where I need to stop optimization at some time, save results to DB
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/DocsByReflection/releases/tag/v1.0.13&quot;&gt;DocsByReflection v1.0.13&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;If you don’t know what is DocsByReflection or what you can do with it, take a look in my previous post about it &lt;a href=&quot;http://diegogiacomelli.com.br/getting-your-code-documentation-at-runtime&quot;&gt;“Getting your code documentation at runtime”&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;If you don’t know what is DocsByReflection or what you can do with it, take a look in my previous post about it “&lt;a href=&quot;/getting-your-code-documentation-at-runtime&quot;&gt;Getting your code documentation at runtime&lt;/a&gt;”.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;net-standard-20-and-net-framework-46&quot;&gt;.NET Standard 2.0 and .NET Framework 4.6&lt;/h2&gt;
@@ -554,7 +554,7 @@ Test Run Aborted
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://diegogiacomelli.com.br/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;
