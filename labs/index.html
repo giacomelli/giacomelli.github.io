@@ -94,19 +94,16 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
     
 
 <div class="posts">
- 
 
-    
-    
     <article class="post">
 
-    <h1><a href="/testing-js-dos">Testing js-dos</a></h1>
+    <h1><a href="/testing-js-dos/">Testing js-dos</a></h1>
 
     <div class="entry">
     Recenlty I discovered the project Emscripten: Emscripten is an LLVM-to-JavaScript compiler. It takes LLVM bitcode - which can be generated from C/C++, using llvm-gcc (DragonEgg) or clang, or any other language that can be converted into LLVM - and compiles that into JavaScript, which can be run on the web...
     </div>
 
-    <a href="/testing-js-dos" class="button">Read more</a>
+    <a href="/testing-js-dos/" class="button">Read more</a>
     </article>
 
 </div>
@@ -122,20 +119,70 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
       </div>
       <div class="right-bar-container">
-          <br>
+          <style>
+     .portifolio-slideshow {
+          border-color: black;
+          border-width: 1px;
+          border-style: dotted;
+          padding: 10px;
+          margin-bottom: 10px;
+          width: 118%;
+     }
+     .portifolio-slide {
+          display: none;
+     }
+     .portifolio-slide a {
+          text-decoration: none;          
+     }
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-4531139417583317"
-     data-ad-slot="3308598273"></ins>
+     .portifolio-slide a img {
+          max-width: 128px;
+          margin:auto;
+          margin-bottom:5px;          
+     }
+
+     .portifolio-slide a h2 {
+          margin:0;          
+     }
+</style>
+<div class="portifolio-slideshow" >
+     <div class="portifolio-slide">
+          <a href="https://github.com/giacomelli/GeneticSharp">     
+               <img src="https://github.com/giacomelli/GeneticSharp/raw/master/docs/logo/logo-small.png">
+               A fast, extensible, multi-platform and multithreading C# Genetic Algorithm library that simplifies the development of applications using Genetic Algorithms (GAs).
+          </a>
+     </div>
+     <div class="portifolio-slide">
+          <a href="https://github.com/skahal/SpaceInvadersRemake">     
+               <img src="https://github.com/skahal/SpaceInvadersRemake/raw/master/docs/images/Alien2.png">
+               SIR, a Space Invaders Remake that I and my friend <a href="http://giusepe.com">Giusepe Casagrande</a> built in Unity3D.
+          </a>
+     </div>
+     <div class="portifolio-slide">
+          <a href="https://github.com/skahal/Buildron">     
+               <img src="https://github.com/skahal/Buildron/raw/master/docs/images/Buildron-logo-128x128.png">
+               Buildron, a continuous integration radiator that I and my friend <a href="http://giusepe.com">Giusepe Casagrande</a> built using Unity3D
+          </a>
+     </div>
+     <div class="portifolio-slide">
+          <a href="https://skahal.github.io/press/kit/snb/index.html">
+               <img src="https://skahal.github.io/press/kit/snb/images/2_iPad_01.png">     
+               Ships N' Battles, an <a href="https://itunes.apple.com/us/app/ships-n-battles-hd/id510480132?mt=8">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.skahal.shipsnbattles">Android</a> and <a href="https://itunes.apple.com/pt/app/ships-n-battles/id531527189?mt=12">Mac</a> game that I and my friend <a href="http://giusepe.com">Giusepe Casagrande</a> built using Unity3D
+          </a>
+     </div>
+     <div class="portifolio-slide">
+          <a href="https://github.com/giacomelli/HarSharp">
+               <h2>HarSharp</h2>
+               A small and easy-to-use library to parse HTTP Archive (HAR) format to .NET objects
+          </a>
+     </div>
+</div>
+
 <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
+  var slides = document.getElementsByClassName("portifolio-slide");
+  var slideIndex = Math.floor(Math.random() * slides.length);
+  slides[slideIndex].style.display = "block"; 
 </script>
-
-<br>
           <a class="github-button" href="https://github.com/giacomelli" aria-label="Follow @giacomelli on GitHub">Follow @giacomelli</a> 
           <a href="https://twitter.com/ogiacomelli" class="twitter-follow-button" data-show-count="false">Follow @ogiacomelli</a>
           <!-- HTML elements for search -->

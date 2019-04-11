@@ -7,7 +7,7 @@
       "title"    : "dotnet new templates for GeneticSharp",
       "category" : "News",
       "tags"     : "geneticsharp, dotnet",
-      "url"      : "/dotnet-new-templates-for-GeneticSharp",
+      "url"      : "/dotnet-new-templates-for-GeneticSharp/",
       "author"   : ""
     } ,
     
@@ -15,7 +15,7 @@
       "title"    : "GeneticSharp v2.4.0 - New crossovers and TPL implementations",
       "category" : "News",
       "tags"     : "geneticsharp, dotnet, release",
-      "url"      : "/GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations",
+      "url"      : "/GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations/",
       "author"   : ""
     } ,
     
@@ -23,7 +23,7 @@
       "title"    : "GeneticSharp v2.2.0 - Sudoku sample",
       "category" : "News",
       "tags"     : "geneticsharp, dotnet, release",
-      "url"      : "/GeneticSharp-v2.2.0-Sudoku-sample",
+      "url"      : "/GeneticSharp-v2.2.0-Sudoku-sample/",
       "author"   : ""
     } ,
     
@@ -31,7 +31,7 @@
       "title"    : "GeneticSharp v2.1.0",
       "category" : "News",
       "tags"     : "geneticsharp, dotnet, release",
-      "url"      : "/GeneticSharp-v2.1.0",
+      "url"      : "/GeneticSharp-v2.1.0/",
       "author"   : ""
     } ,
     
@@ -39,7 +39,7 @@
       "title"    : "GeneticSharp Unity3d Samples released on Google Play",
       "category" : "News",
       "tags"     : "geneticsharp, unity3d, dotnet, android, google play",
-      "url"      : "/GeneticSharp-Unity3d-Samples-released-on-Google-Play",
+      "url"      : "/GeneticSharp-Unity3d-Samples-released-on-Google-Play/",
       "author"   : ""
     } ,
     
@@ -47,7 +47,7 @@
       "title"    : "GeneticSharp - Unity3d sample",
       "category" : "News",
       "tags"     : "geneticsharp, unity3d, gamedev, tsp, car2d, dotnet",
-      "url"      : "/GeneticSharp-Unity3d-sample",
+      "url"      : "/GeneticSharp-Unity3d-sample/",
       "author"   : ""
     } ,
     
@@ -55,7 +55,7 @@
       "title"    : "GeneticSharp v2.0.0 - .NET Core",
       "category" : "News",
       "tags"     : "geneticsharp, dotnet, release",
-      "url"      : "/GeneticSharp-v2.0.0-dotnet-core",
+      "url"      : "/GeneticSharp-v2.0.0-dotnet-core/",
       "author"   : ""
     } ,
     
@@ -63,7 +63,7 @@
       "title"    : "DocsByReflection v1.0.13 - .NET Standard 2.0",
       "category" : "News",
       "tags"     : "DocsByReflection, dotnet, release",
-      "url"      : "/DocsByRelection-v1.0.13-netstandard2.0",
+      "url"      : "/DocsByRelection-v1.0.13-netstandard2.0/",
       "author"   : ""
     } ,
     
@@ -71,7 +71,7 @@
       "title"    : "GeneticSharp v1.2.0 - Sequence mutations",
       "category" : "News",
       "tags"     : "geneticsharp, dotnet, release",
-      "url"      : "/GeneticSharp-v1.2.0-sequence-mutations",
+      "url"      : "/GeneticSharp-v1.2.0-sequence-mutations/",
       "author"   : ""
     } ,
     
@@ -79,7 +79,7 @@
       "title"    : "Unity3D ScenePreview inspector",
       "category" : "News",
       "tags"     : "unity3d, gamedev, open source",
-      "url"      : "/unity3d-scenepreview-inspector",
+      "url"      : "/unity3d-scenepreview-inspector/",
       "author"   : ""
     } ,
     
@@ -87,7 +87,7 @@
       "title"    : "GeneticSharp v1.1.0 - Binary chromosomes",
       "category" : "News",
       "tags"     : "geneticsharp, dotnet, release",
-      "url"      : "/GeneticSharp-v1.1.0-binary-chromosomes",
+      "url"      : "/GeneticSharp-v1.1.0-binary-chromosomes/",
       "author"   : ""
     } ,
     
@@ -95,7 +95,7 @@
       "title"    : "Buildron 2.0.0",
       "category" : "News",
       "tags"     : "buildron, continuous integration, skahal, open source, dotnet, unity3d, release",
-      "url"      : "/buildron.2.0.0",
+      "url"      : "/buildron.2.0.0/",
       "author"   : ""
     } ,
     
@@ -103,7 +103,7 @@
       "title"    : "Buildron SlackBotMod",
       "category" : "News",
       "tags"     : "Buildron, slack, unity3d, open source, dotnet, bot",
-      "url"      : "/buildron-slackbotmod",
+      "url"      : "/buildron-slackbotmod/",
       "author"   : ""
     } ,
     
@@ -111,7 +111,7 @@
       "title"    : "jumpstart",
       "category" : "News",
       "tags"     : "jumpstart, open source, dotnet, command line",
-      "url"      : "/jumpstart",
+      "url"      : "/jumpstart/",
       "author"   : ""
     } ,
     
@@ -119,7 +119,7 @@
       "title"    : "Buildron 2.0.0-RC1 - Mods support",
       "category" : "News",
       "tags"     : "buildron, mods, continuous integration, skahal, open source, dotnet, unity3d",
-      "url"      : "/buildron.2.0.0-rc1-mods-support",
+      "url"      : "/buildron.2.0.0-rc1-mods-support/",
       "author"   : ""
     } ,
     
@@ -127,7 +127,7 @@
       "title"    : "Buildron - Your builds, our world! ...and now our open source code too",
       "category" : "News",
       "tags"     : "buildron, continuous integration, skahal, open source, dotnet, unity3d",
-      "url"      : "/buildron-your-builds-our-world-and-now-our-open-source-code-too",
+      "url"      : "/buildron-your-builds-our-world-and-now-our-open-source-code-too/",
       "author"   : ""
     } ,
     
@@ -135,7 +135,7 @@
       "title"    : "Nibble",
       "category" : "News",
       "tags"     : "gamedev, c, open source",
-      "url"      : "/nibble",
+      "url"      : "/nibble/",
       "author"   : ""
     } 
      
@@ -147,7 +147,7 @@
       "title"    : "jogosdaqui - um pouco de história, open source e colaboração (pt-BR)",
       "category" : "Article",
       "tags"     : "jogosdaqui, pt br, brasil",
-      "url"      : "/jogosdaqui-um-pouco-de-historia-open-source-e-colaboracao",
+      "url"      : "/jogosdaqui-um-pouco-de-historia-open-source-e-colaboracao/",
       "author"   : ""
     } ,
     
@@ -155,7 +155,7 @@
       "title"    : "GeneticSharp Car2D",
       "category" : "Article",
       "tags"     : "geneticsharp, unity3d, tsp, car2d, dotnet",
-      "url"      : "/GeneticSharp-Car2D",
+      "url"      : "/GeneticSharp-Car2D/",
       "author"   : ""
     } ,
     
@@ -163,7 +163,7 @@
       "title"    : "Porting GeneticSharp to .NET Core",
       "category" : "Article",
       "tags"     : "geneticsharp, dotnet, release",
-      "url"      : "/porting-GeneticSharp-to-dotnet-core",
+      "url"      : "/porting-GeneticSharp-to-dotnet-core/",
       "author"   : ""
     } ,
     
@@ -171,7 +171,7 @@
       "title"    : "DDD by quotes",
       "category" : "Article",
       "tags"     : "ddd, design patterns, book",
-      "url"      : "/ddd-by-quotes",
+      "url"      : "/ddd-by-quotes/",
       "author"   : ""
     } ,
     
@@ -179,7 +179,7 @@
       "title"    : "Why we should avoid DateTime.UtcNow inside a Linq to Entities query?",
       "category" : "Article",
       "tags"     : "dotnet, csharp, linq to entities",
-      "url"      : "/why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query",
+      "url"      : "/why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query/",
       "author"   : ""
     } 
      
@@ -191,7 +191,7 @@
       "title"    : "TSP with GeneticSharp and Unity3D",
       "category" : "Tutorial",
       "tags"     : "geneticsharp, unity3d, tsp, dotnet",
-      "url"      : "/tsp-with-GeneticSharp-and-Unity3d",
+      "url"      : "/tsp-with-GeneticSharp-and-Unity3d/",
       "author"   : ""
     } ,
     
@@ -199,7 +199,7 @@
       "title"    : "Function optimization with GeneticSharp",
       "category" : "Tutorial",
       "tags"     : "geneticsharp, dotnet, genetic algorithm",
-      "url"      : "/function-optimization-with-geneticsharp",
+      "url"      : "/function-optimization-with-geneticsharp/",
       "author"   : ""
     } ,
     
@@ -207,7 +207,7 @@
       "title"    : "Sending a Slackbot message from Unity3d",
       "category" : "Tutorial",
       "tags"     : "slack, unity3d, gamedev, open source, gist, dotnet, bot",
-      "url"      : "/sending-a-slackbot-message-from-unity3d",
+      "url"      : "/sending-a-slackbot-message-from-unity3d/",
       "author"   : ""
     } ,
     
@@ -215,7 +215,7 @@
       "title"    : "Creating a ConsoleMod to Buildron",
       "category" : "Tutorial",
       "tags"     : "buildron, unity3d, open source, dotnet, mods",
-      "url"      : "/creating-a-consolemod-to-buildron",
+      "url"      : "/creating-a-consolemod-to-buildron/",
       "author"   : ""
     } ,
     
@@ -223,7 +223,7 @@
       "title"    : "Starting a Buildron mod with a mod template",
       "category" : "Tutorial",
       "tags"     : "buildron, mods, continuous integration, skahal, open source, dotnet, unity3d",
-      "url"      : "/starting-a-buildron-mod-with-a-mod-template",
+      "url"      : "/starting-a-buildron-mod-with-a-mod-template/",
       "author"   : ""
     } ,
     
@@ -231,7 +231,7 @@
       "title"    : "Using a FxCop badge on your GitHub repository",
       "category" : "Tutorial",
       "tags"     : "dotnet, open source",
-      "url"      : "/using-a-fxcop-badge-on-your-github-repository",
+      "url"      : "/using-a-fxcop-badge-on-your-github-repository/",
       "author"   : ""
     } ,
     
@@ -239,7 +239,7 @@
       "title"    : "Auto tracking your time with ControlPlane + Toggl",
       "category" : "Tutorial",
       "tags"     : "time tracking, toggl, controlplane",
-      "url"      : "/auto-tracking-your-time-with-controlplane-toggl",
+      "url"      : "/auto-tracking-your-time-with-controlplane-toggl/",
       "author"   : ""
     } ,
     
@@ -247,7 +247,7 @@
       "title"    : "Getting your code documentation at runtime",
       "category" : "Tutorial",
       "tags"     : "dotnet, csharp, docsbyreflection, open source",
-      "url"      : "/getting-your-code-documentation-at-runtime",
+      "url"      : "/getting-your-code-documentation-at-runtime/",
       "author"   : ""
     } ,
     
@@ -255,7 +255,7 @@
       "title"    : "Improving your debug with DebuggerDisplay",
       "category" : "Tutorial",
       "tags"     : "dotnet, csharp, debug",
-      "url"      : "/improving-your-debug-with-debuggerdisplay",
+      "url"      : "/improving-your-debug-with-debuggerdisplay/",
       "author"   : ""
     } ,
     
@@ -263,7 +263,7 @@
       "title"    : "Using sensitive data on your Travis CI build",
       "category" : "Tutorial",
       "tags"     : "continuous integration, travis ci, functional tests",
-      "url"      : "/using-sensitive-data-on-your-travis-ci-build",
+      "url"      : "/using-sensitive-data-on-your-travis-ci-build/",
       "author"   : ""
     } 
      
@@ -275,7 +275,7 @@
       "title"    : "Testing js-dos",
       "category" : "Lab",
       "tags"     : "dosbox, javascript",
-      "url"      : "/testing-js-dos",
+      "url"      : "/testing-js-dos/",
       "author"   : ""
     } 
      

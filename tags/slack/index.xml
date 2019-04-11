@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - slack</title>
  <link href="//tags/slack/index.xml" rel="self"/>
  <link href="/tag/slack.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/slack.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Buildron SlackBotMod</title>
-   <link href="//buildron-slackbotmod"/>
+   <link href="//buildron-slackbotmod/"/>
    <updated>2016-09-22T00:00:00-03:00</updated>
    <id>//buildron-slackbotmod</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to help software development teams to see the current status of their continous integration server and &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; is the omnipresent communication app for almost every developer in the world.&lt;/p&gt;
@@ -82,7 +82,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
  
  <entry>
    <title>Sending a Slackbot message from Unity3d</title>
-   <link href="//sending-a-slackbot-message-from-unity3d"/>
+   <link href="//sending-a-slackbot-message-from-unity3d/"/>
    <updated>2016-09-17T00:00:00-03:00</updated>
    <id>//sending-a-slackbot-message-from-unity3d</id>
    <content type="html">&lt;p&gt;I was looking for a way to send a message to a Slack channel using the Slackbot API.&lt;/p&gt;

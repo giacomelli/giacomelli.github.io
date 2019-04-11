@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - travis-ci</title>
  <link href="//tags/travis-ci/index.xml" rel="self"/>
  <link href="/tag/travis-ci.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/travis-ci.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Using sensitive data on your Travis CI build</title>
-   <link href="//using-sensitive-data-on-your-travis-ci-build"/>
+   <link href="//using-sensitive-data-on-your-travis-ci-build/"/>
    <updated>2014-07-13T21:00:00-03:00</updated>
    <id>//using-sensitive-data-on-your-travis-ci-build</id>
    <content type="html">&lt;p&gt;You have programmed an amazing functional tests to validate your infrastructure service that connect on Google Docs.&lt;/p&gt;

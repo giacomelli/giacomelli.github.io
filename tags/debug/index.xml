@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - debug</title>
  <link href="//tags/debug/index.xml" rel="self"/>
  <link href="/tag/debug.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/debug.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Improving your debug with DebuggerDisplay</title>
-   <link href="//improving-your-debug-with-debuggerdisplay"/>
+   <link href="//improving-your-debug-with-debuggerdisplay/"/>
    <updated>2014-07-14T00:00:00-03:00</updated>
    <id>//improving-your-debug-with-debuggerdisplay</id>
    <content type="html">&lt;p&gt;There is an amazing and easy to use custom attribute on .NET Framework stack that I rarely see in use. It helps and improve the way you can debug your code and you just need a line of code to use it: &lt;strong&gt;DebuggerDisplay&lt;/strong&gt;.&lt;/p&gt;

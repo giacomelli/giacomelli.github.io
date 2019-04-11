@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - linq-to-entities</title>
  <link href="//tags/linq-to-entities/index.xml" rel="self"/>
  <link href="/tag/linq-to-entities.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/linq-to-entities.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Why we should avoid DateTime.UtcNow inside a Linq to Entities query?</title>
-   <link href="//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query"/>
+   <link href="//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query/"/>
    <updated>2014-05-12T00:00:00-03:00</updated>
    <id>//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;Because we can get unexpected results! (after read this tip, will be expected results ;))&lt;/strong&gt;&lt;/p&gt;

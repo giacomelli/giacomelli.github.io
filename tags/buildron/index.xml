@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - Buildron</title>
  <link href="//tags/buildron/index.xml" rel="self"/>
  <link href="/tag/Buildron.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/Buildron.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Buildron SlackBotMod</title>
-   <link href="//buildron-slackbotmod"/>
+   <link href="//buildron-slackbotmod/"/>
    <updated>2016-09-22T00:00:00-03:00</updated>
    <id>//buildron-slackbotmod</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to help software development teams to see the current status of their continous integration server and &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; is the omnipresent communication app for almost every developer in the world.&lt;/p&gt;

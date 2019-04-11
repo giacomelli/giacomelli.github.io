@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - csharp</title>
  <link href="//tags/csharp/index.xml" rel="self"/>
  <link href="/tag/csharp.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/csharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Getting your code documentation at runtime</title>
-   <link href="//getting-your-code-documentation-at-runtime"/>
+   <link href="//getting-your-code-documentation-at-runtime/"/>
    <updated>2014-08-03T00:00:00-03:00</updated>
    <id>//getting-your-code-documentation-at-runtime</id>
    <content type="html">&lt;p&gt;In some situations, like generate a live console for a web api or generate code using T4 template we need a way to read the code documentation at runtime.&lt;/p&gt;
@@ -52,7 +52,7 @@
  
  <entry>
    <title>Improving your debug with DebuggerDisplay</title>
-   <link href="//improving-your-debug-with-debuggerdisplay"/>
+   <link href="//improving-your-debug-with-debuggerdisplay/"/>
    <updated>2014-07-14T00:00:00-03:00</updated>
    <id>//improving-your-debug-with-debuggerdisplay</id>
    <content type="html">&lt;p&gt;There is an amazing and easy to use custom attribute on .NET Framework stack that I rarely see in use. It helps and improve the way you can debug your code and you just need a line of code to use it: &lt;strong&gt;DebuggerDisplay&lt;/strong&gt;.&lt;/p&gt;
@@ -109,7 +109,7 @@
  
  <entry>
    <title>Why we should avoid DateTime.UtcNow inside a Linq to Entities query?</title>
-   <link href="//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query"/>
+   <link href="//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query/"/>
    <updated>2014-05-12T00:00:00-03:00</updated>
    <id>//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;Because we can get unexpected results! (after read this tip, will be expected results ;))&lt;/strong&gt;&lt;/p&gt;

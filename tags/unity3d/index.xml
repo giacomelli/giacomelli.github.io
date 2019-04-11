@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>GeneticSharp Unity3d Samples released on Google Play</title>
-   <link href="//GeneticSharp-Unity3d-Samples-released-on-Google-Play"/>
+   <link href="//GeneticSharp-Unity3d-Samples-released-on-Google-Play/"/>
    <updated>2018-09-22T00:00:00-03:00</updated>
    <id>//GeneticSharp-Unity3d-Samples-released-on-Google-Play</id>
    <content type="html">&lt;p&gt;I published on Google Play the &lt;strong&gt;GeneticSharp Unity3d Samples&lt;/strong&gt;.&lt;/p&gt;
@@ -40,7 +40,7 @@
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
 &lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
 
-&lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
@@ -61,7 +61,7 @@
  
  <entry>
    <title>GeneticSharp Car2D</title>
-   <link href="//GeneticSharp-Car2D"/>
+   <link href="//GeneticSharp-Car2D/"/>
    <updated>2018-06-01T00:00:00-03:00</updated>
    <id>//GeneticSharp-Car2D</id>
    <content type="html">&lt;p&gt;I made an Unity3D sample for &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; inspired by amazing &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt; where a genetic algorithm tries to design 2D cars to overcome roads challenges.&lt;/p&gt;
@@ -78,8 +78,8 @@
 &lt;blockquote&gt;
   &lt;p&gt;If you need some introduction to genetic algorithms or GeneticSharp:&lt;/p&gt;
   &lt;ul&gt;
-    &lt;li&gt;Introduction to genetic algorithms: &lt;a href=&quot;/function-optimization-with-geneticsharp&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/li&gt;
-    &lt;li&gt;Using GeneticSharp on Unity3D: &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Introduction to genetic algorithms: &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Using GeneticSharp on Unity3D: &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/blockquote&gt;
 
@@ -227,7 +227,7 @@ It’s quite clear that the best cars design to each of the 3 roads are differen
  
  <entry>
    <title>GeneticSharp - Unity3d sample</title>
-   <link href="//GeneticSharp-Unity3d-sample"/>
+   <link href="//GeneticSharp-Unity3d-sample/"/>
    <updated>2018-05-31T00:00:00-03:00</updated>
    <id>//GeneticSharp-Unity3d-sample</id>
    <content type="html">&lt;p&gt;I just pushed to GeneticSharp master branch the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;GeneticSharp.Runners.UnityApp&lt;/a&gt;.&lt;/p&gt;
@@ -265,7 +265,7 @@ It’s quite clear that the best cars design to each of the 3 roads are differen
  
  <entry>
    <title>TSP with GeneticSharp and Unity3D</title>
-   <link href="//tsp-with-GeneticSharp-and-Unity3d"/>
+   <link href="//tsp-with-GeneticSharp-and-Unity3d/"/>
    <updated>2018-05-16T00:00:00-03:00</updated>
    <id>//tsp-with-GeneticSharp-and-Unity3d</id>
    <content type="html">&lt;style&gt;
@@ -293,7 +293,7 @@ div.gist-meta { display:none; }
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial  &lt;a href=&quot;/function-optimization-with-geneticsharp&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial  &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;creating-the-unity3d-project&quot;&gt;Creating the Unity3D project&lt;/h2&gt;
@@ -476,7 +476,7 @@ I won’t getting in details about how this is script works, but it’s allow th
  
  <entry>
    <title>Unity3D ScenePreview inspector</title>
-   <link href="//unity3d-scenepreview-inspector"/>
+   <link href="//unity3d-scenepreview-inspector/"/>
    <updated>2017-11-26T00:00:00-02:00</updated>
    <id>//unity3d-scenepreview-inspector</id>
    <content type="html">&lt;p&gt;I’m working in a new game prototype and in this process I was creating some experimental levels to test the mechanics, but by the name of scene I was having dificult to remember which mechanic the level was about and I had to open each level to discover that one was looking for, so I thought: it will be cool have an image preview of the scene when we select the file in hierarchy.&lt;/p&gt;
@@ -516,7 +516,7 @@ I won’t getting in details about how this is script works, but it’s allow th
  
  <entry>
    <title>Buildron 2.0.0</title>
-   <link href="//buildron.2.0.0"/>
+   <link href="//buildron.2.0.0/"/>
    <updated>2016-09-24T00:00:00-03:00</updated>
    <id>//buildron.2.0.0</id>
    <content type="html">&lt;p&gt;After some months to test the &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;v2.0.0-RC1&lt;/a&gt; we are releasing the final version of &lt;a href=&quot;https://github.com/skahal/Buildron/&quot;&gt;Buildron&lt;/a&gt; mods support with this &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0&quot;&gt;2.0.0 version&lt;/a&gt;.&lt;/p&gt;
@@ -557,7 +557,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/starting-a-buildron-mod-with-a-mod-template/&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;
@@ -575,7 +575,7 @@ I won’t getting in details about how this is script works, but it’s allow th
  
  <entry>
    <title>Buildron SlackBotMod</title>
-   <link href="//buildron-slackbotmod"/>
+   <link href="//buildron-slackbotmod/"/>
    <updated>2016-09-22T00:00:00-03:00</updated>
    <id>//buildron-slackbotmod</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to help software development teams to see the current status of their continous integration server and &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; is the omnipresent communication app for almost every developer in the world.&lt;/p&gt;
@@ -646,7 +646,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
  
  <entry>
    <title>Sending a Slackbot message from Unity3d</title>
-   <link href="//sending-a-slackbot-message-from-unity3d"/>
+   <link href="//sending-a-slackbot-message-from-unity3d/"/>
    <updated>2016-09-17T00:00:00-03:00</updated>
    <id>//sending-a-slackbot-message-from-unity3d</id>
    <content type="html">&lt;p&gt;I was looking for a way to send a message to a Slack channel using the Slackbot API.&lt;/p&gt;
@@ -672,7 +672,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
  
  <entry>
    <title>Creating a ConsoleMod to Buildron</title>
-   <link href="//creating-a-consolemod-to-buildron"/>
+   <link href="//creating-a-consolemod-to-buildron/"/>
    <updated>2016-09-15T00:00:00-03:00</updated>
    <id>//creating-a-consolemod-to-buildron</id>
    <content type="html">&lt;p&gt;In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.&lt;/p&gt;
@@ -910,7 +910,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
  
  <entry>
    <title>Starting a Buildron mod with a mod template</title>
-   <link href="//starting-a-buildron-mod-with-a-mod-template"/>
+   <link href="//starting-a-buildron-mod-with-a-mod-template/"/>
    <updated>2016-09-04T00:00:00-03:00</updated>
    <id>//starting-a-buildron-mod-with-a-mod-template</id>
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
@@ -1033,7 +1033,7 @@ Unzip it in any folder.&lt;/p&gt;
  
  <entry>
    <title>Buildron 2.0.0-RC1 - Mods support</title>
-   <link href="//buildron.2.0.0-rc1-mods-support"/>
+   <link href="//buildron.2.0.0-rc1-mods-support/"/>
    <updated>2016-08-28T00:00:00-03:00</updated>
    <id>//buildron.2.0.0-rc1-mods-support</id>
    <content type="html">&lt;p&gt;After some months of hard work I finally released the Buildron mods support.&lt;/p&gt;
@@ -1068,7 +1068,7 @@ Unzip it in any folder.&lt;/p&gt;
  
  <entry>
    <title>Buildron - Your builds, our world! ...and now our open source code too</title>
-   <link href="//buildron-your-builds-our-world-and-now-our-open-source-code-too"/>
+   <link href="//buildron-your-builds-our-world-and-now-our-open-source-code-too/"/>
    <updated>2016-06-02T00:00:00-03:00</updated>
    <id>//buildron-your-builds-our-world-and-now-our-open-source-code-too</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to continuous integration server like TeamCity, Jenkins and Hudson.&lt;/p&gt;

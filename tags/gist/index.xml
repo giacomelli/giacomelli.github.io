@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - gist</title>
  <link href="//tags/gist/index.xml" rel="self"/>
  <link href="/tag/gist.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/gist.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Sending a Slackbot message from Unity3d</title>
-   <link href="//sending-a-slackbot-message-from-unity3d"/>
+   <link href="//sending-a-slackbot-message-from-unity3d/"/>
    <updated>2016-09-17T00:00:00-03:00</updated>
    <id>//sending-a-slackbot-message-from-unity3d</id>
    <content type="html">&lt;p&gt;I was looking for a way to send a message to a Slack channel using the Slackbot API.&lt;/p&gt;

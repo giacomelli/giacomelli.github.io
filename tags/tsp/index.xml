@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - tsp</title>
  <link href="//tags/tsp/index.xml" rel="self"/>
  <link href="/tag/tsp.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/tsp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>GeneticSharp Car2D</title>
-   <link href="//GeneticSharp-Car2D"/>
+   <link href="//GeneticSharp-Car2D/"/>
    <updated>2018-06-01T00:00:00-03:00</updated>
    <id>//GeneticSharp-Car2D</id>
    <content type="html">&lt;p&gt;I made an Unity3D sample for &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; inspired by amazing &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt; where a genetic algorithm tries to design 2D cars to overcome roads challenges.&lt;/p&gt;
@@ -28,8 +28,8 @@
 &lt;blockquote&gt;
   &lt;p&gt;If you need some introduction to genetic algorithms or GeneticSharp:&lt;/p&gt;
   &lt;ul&gt;
-    &lt;li&gt;Introduction to genetic algorithms: &lt;a href=&quot;/function-optimization-with-geneticsharp&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/li&gt;
-    &lt;li&gt;Using GeneticSharp on Unity3D: &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Introduction to genetic algorithms: &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Using GeneticSharp on Unity3D: &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/blockquote&gt;
 
@@ -177,7 +177,7 @@ It’s quite clear that the best cars design to each of the 3 roads are differen
  
  <entry>
    <title>GeneticSharp - Unity3d sample</title>
-   <link href="//GeneticSharp-Unity3d-sample"/>
+   <link href="//GeneticSharp-Unity3d-sample/"/>
    <updated>2018-05-31T00:00:00-03:00</updated>
    <id>//GeneticSharp-Unity3d-sample</id>
    <content type="html">&lt;p&gt;I just pushed to GeneticSharp master branch the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;GeneticSharp.Runners.UnityApp&lt;/a&gt;.&lt;/p&gt;
@@ -215,7 +215,7 @@ It’s quite clear that the best cars design to each of the 3 roads are differen
  
  <entry>
    <title>TSP with GeneticSharp and Unity3D</title>
-   <link href="//tsp-with-GeneticSharp-and-Unity3d"/>
+   <link href="//tsp-with-GeneticSharp-and-Unity3d/"/>
    <updated>2018-05-16T00:00:00-03:00</updated>
    <id>//tsp-with-GeneticSharp-and-Unity3d</id>
    <content type="html">&lt;style&gt;
@@ -243,7 +243,7 @@ div.gist-meta { display:none; }
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial  &lt;a href=&quot;/function-optimization-with-geneticsharp&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial  &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;creating-the-unity3d-project&quot;&gt;Creating the Unity3D project&lt;/h2&gt;

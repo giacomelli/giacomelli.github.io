@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - genetic-algorithm</title>
  <link href="//tags/genetic-algorithm/index.xml" rel="self"/>
  <link href="/tag/genetic-algorithm.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/genetic-algorithm.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Function optimization with GeneticSharp</title>
-   <link href="//function-optimization-with-geneticsharp"/>
+   <link href="//function-optimization-with-geneticsharp/"/>
    <updated>2017-06-13T00:00:00-03:00</updated>
    <id>//function-optimization-with-geneticsharp</id>
    <content type="html">&lt;p&gt;In this tutorial we will learn how to use GeneticSharp to optimize the inputs of math function and more about genetic algorithms meanwhile.&lt;/p&gt;
@@ -143,17 +143,6 @@
 &lt;p&gt;We receive a IChromosome in the variable “c”, then we cast it to FloatingPointChromosme.&lt;/p&gt;
 
 &lt;p&gt;To allow us to evaluate the chromosome we need to convert it from its genotype (FloatingPointChromosome) to its phenotype (x1, y1 and x2, y2), we do this calling the ToFloatingPoints method. This method return an array of numbers using that configuration we used when we created our Euclidean distance chromosome. Now we have our X1, Y1 and X2 and Y2 numbers we just need to pass it to the Euclidean distance function and return the value as the fitness value of the current chromosome.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;script async=&quot;&quot; src=&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-4531139417583317&quot; data-ad-slot=&quot;3308598273&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-selection&quot;&gt;Creating the selection&lt;/h2&gt;
 &lt;center&gt;

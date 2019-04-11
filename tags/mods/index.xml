@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - mods</title>
  <link href="//tags/mods/index.xml" rel="self"/>
  <link href="/tag/mods.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/mods.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Creating a ConsoleMod to Buildron</title>
-   <link href="//creating-a-consolemod-to-buildron"/>
+   <link href="//creating-a-consolemod-to-buildron/"/>
    <updated>2016-09-15T00:00:00-03:00</updated>
    <id>//creating-a-consolemod-to-buildron</id>
    <content type="html">&lt;p&gt;In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.&lt;/p&gt;
@@ -249,7 +249,7 @@
  
  <entry>
    <title>Starting a Buildron mod with a mod template</title>
-   <link href="//starting-a-buildron-mod-with-a-mod-template"/>
+   <link href="//starting-a-buildron-mod-with-a-mod-template/"/>
    <updated>2016-09-04T00:00:00-03:00</updated>
    <id>//starting-a-buildron-mod-with-a-mod-template</id>
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
@@ -372,7 +372,7 @@ Unzip it in any folder.&lt;/p&gt;
  
  <entry>
    <title>Buildron 2.0.0-RC1 - Mods support</title>
-   <link href="//buildron.2.0.0-rc1-mods-support"/>
+   <link href="//buildron.2.0.0-rc1-mods-support/"/>
    <updated>2016-08-28T00:00:00-03:00</updated>
    <id>//buildron.2.0.0-rc1-mods-support</id>
    <content type="html">&lt;p&gt;After some months of hard work I finally released the Buildron mods support.&lt;/p&gt;

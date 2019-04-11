@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>GeneticSharp - Unity3d sample</title>
-   <link href="//GeneticSharp-Unity3d-sample"/>
+   <link href="//GeneticSharp-Unity3d-sample/"/>
    <updated>2018-05-31T00:00:00-03:00</updated>
    <id>//GeneticSharp-Unity3d-sample</id>
    <content type="html">&lt;p&gt;I just pushed to GeneticSharp master branch the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;GeneticSharp.Runners.UnityApp&lt;/a&gt;.&lt;/p&gt;
@@ -49,7 +49,7 @@
  
  <entry>
    <title>Unity3D ScenePreview inspector</title>
-   <link href="//unity3d-scenepreview-inspector"/>
+   <link href="//unity3d-scenepreview-inspector/"/>
    <updated>2017-11-26T00:00:00-02:00</updated>
    <id>//unity3d-scenepreview-inspector</id>
    <content type="html">&lt;p&gt;I’m working in a new game prototype and in this process I was creating some experimental levels to test the mechanics, but by the name of scene I was having dificult to remember which mechanic the level was about and I had to open each level to discover that one was looking for, so I thought: it will be cool have an image preview of the scene when we select the file in hierarchy.&lt;/p&gt;
@@ -89,7 +89,7 @@
  
  <entry>
    <title>Sending a Slackbot message from Unity3d</title>
-   <link href="//sending-a-slackbot-message-from-unity3d"/>
+   <link href="//sending-a-slackbot-message-from-unity3d/"/>
    <updated>2016-09-17T00:00:00-03:00</updated>
    <id>//sending-a-slackbot-message-from-unity3d</id>
    <content type="html">&lt;p&gt;I was looking for a way to send a message to a Slack channel using the Slackbot API.&lt;/p&gt;
@@ -115,7 +115,7 @@
  
  <entry>
    <title>Nibble</title>
-   <link href="//nibble"/>
+   <link href="//nibble/"/>
    <updated>2014-05-11T00:00:00-03:00</updated>
    <id>//nibble</id>
    <content type="html">&lt;p&gt;Looking in some backups I found one of my first games. I made it about 14 years ago: a Nibble in 461 lines of C.&lt;/p&gt;

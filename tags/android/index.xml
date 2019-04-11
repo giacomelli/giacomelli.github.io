@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - android</title>
  <link href="//tags/android/index.xml" rel="self"/>
  <link href="/tag/android.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/android.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>GeneticSharp Unity3d Samples released on Google Play</title>
-   <link href="//GeneticSharp-Unity3d-Samples-released-on-Google-Play"/>
+   <link href="//GeneticSharp-Unity3d-Samples-released-on-Google-Play/"/>
    <updated>2018-09-22T00:00:00-03:00</updated>
    <id>//GeneticSharp-Unity3d-Samples-released-on-Google-Play</id>
    <content type="html">&lt;p&gt;I published on Google Play the &lt;strong&gt;GeneticSharp Unity3d Samples&lt;/strong&gt;.&lt;/p&gt;
@@ -40,7 +40,7 @@
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
 &lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
 
-&lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;

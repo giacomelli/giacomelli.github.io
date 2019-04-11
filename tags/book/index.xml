@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - book</title>
  <link href="//tags/book/index.xml" rel="self"/>
  <link href="/tag/book.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/book.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>DDD by quotes</title>
-   <link href="//ddd-by-quotes"/>
+   <link href="//ddd-by-quotes/"/>
    <updated>2014-05-12T00:00:00-03:00</updated>
    <id>//ddd-by-quotes</id>
    <content type="html">&lt;p&gt;The Eric Evans’ book &lt;a href=&quot;http://amzn.to/2aygz2G&quot;&gt;“Domain-Driven Design - Tackling Complexity in the Heart of Software”&lt;/a&gt; is like a Bible for who intend to use DDD, so, I guess that some quotes of the book can help us to validate our DDD approach.&lt;/p&gt;

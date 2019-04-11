@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - continuous-integration</title>
  <link href="//tags/continuous-integration/index.xml" rel="self"/>
  <link href="/tag/continuous-integration.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/continuous-integration.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Buildron 2.0.0</title>
-   <link href="//buildron.2.0.0"/>
+   <link href="//buildron.2.0.0/"/>
    <updated>2016-09-24T00:00:00-03:00</updated>
    <id>//buildron.2.0.0</id>
    <content type="html">&lt;p&gt;After some months to test the &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;v2.0.0-RC1&lt;/a&gt; we are releasing the final version of &lt;a href=&quot;https://github.com/skahal/Buildron/&quot;&gt;Buildron&lt;/a&gt; mods support with this &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0&quot;&gt;2.0.0 version&lt;/a&gt;.&lt;/p&gt;
@@ -52,7 +52,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/starting-a-buildron-mod-with-a-mod-template/&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;
@@ -70,7 +70,7 @@
  
  <entry>
    <title>Starting a Buildron mod with a mod template</title>
-   <link href="//starting-a-buildron-mod-with-a-mod-template"/>
+   <link href="//starting-a-buildron-mod-with-a-mod-template/"/>
    <updated>2016-09-04T00:00:00-03:00</updated>
    <id>//starting-a-buildron-mod-with-a-mod-template</id>
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
@@ -193,7 +193,7 @@ Unzip it in any folder.&lt;/p&gt;
  
  <entry>
    <title>Buildron 2.0.0-RC1 - Mods support</title>
-   <link href="//buildron.2.0.0-rc1-mods-support"/>
+   <link href="//buildron.2.0.0-rc1-mods-support/"/>
    <updated>2016-08-28T00:00:00-03:00</updated>
    <id>//buildron.2.0.0-rc1-mods-support</id>
    <content type="html">&lt;p&gt;After some months of hard work I finally released the Buildron mods support.&lt;/p&gt;
@@ -228,7 +228,7 @@ Unzip it in any folder.&lt;/p&gt;
  
  <entry>
    <title>Buildron - Your builds, our world! ...and now our open source code too</title>
-   <link href="//buildron-your-builds-our-world-and-now-our-open-source-code-too"/>
+   <link href="//buildron-your-builds-our-world-and-now-our-open-source-code-too/"/>
    <updated>2016-06-02T00:00:00-03:00</updated>
    <id>//buildron-your-builds-our-world-and-now-our-open-source-code-too</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to continuous integration server like TeamCity, Jenkins and Hudson.&lt;/p&gt;
@@ -253,7 +253,7 @@ Unzip it in any folder.&lt;/p&gt;
  
  <entry>
    <title>Using sensitive data on your Travis CI build</title>
-   <link href="//using-sensitive-data-on-your-travis-ci-build"/>
+   <link href="//using-sensitive-data-on-your-travis-ci-build/"/>
    <updated>2014-07-13T21:00:00-03:00</updated>
    <id>//using-sensitive-data-on-your-travis-ci-build</id>
    <content type="html">&lt;p&gt;You have programmed an amazing functional tests to validate your infrastructure service that connect on Google Docs.&lt;/p&gt;

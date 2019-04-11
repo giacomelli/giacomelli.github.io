@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>dotnet new templates for GeneticSharp</title>
-   <link href="//dotnet-new-templates-for-GeneticSharp"/>
+   <link href="//dotnet-new-templates-for-GeneticSharp/"/>
    <updated>2019-02-03T00:00:00-02:00</updated>
    <id>//dotnet-new-templates-for-GeneticSharp</id>
    <content type="html">&lt;p&gt;Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the &lt;strong&gt;dotnet new&lt;/strong&gt; command.&lt;/p&gt;
@@ -62,7 +62,7 @@
  
  <entry>
    <title>GeneticSharp v2.4.0 - New crossovers and TPL implementations</title>
-   <link href="//GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations"/>
+   <link href="//GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations/"/>
    <updated>2019-01-19T00:00:00-02:00</updated>
    <id>//GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.4.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
@@ -109,7 +109,7 @@
  
  <entry>
    <title>GeneticSharp v2.2.0 - Sudoku sample</title>
-   <link href="//GeneticSharp-v2.2.0-Sudoku-sample"/>
+   <link href="//GeneticSharp-v2.2.0-Sudoku-sample/"/>
    <updated>2018-11-03T00:00:00-03:00</updated>
    <id>//GeneticSharp-v2.2.0-Sudoku sample</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.2.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
@@ -170,7 +170,7 @@ Here, instead, an arbitrary number of Sudokus are generated where for each row, 
  
  <entry>
    <title>GeneticSharp v2.1.0</title>
-   <link href="//GeneticSharp-v2.1.0"/>
+   <link href="//GeneticSharp-v2.1.0/"/>
    <updated>2018-10-30T00:00:00-03:00</updated>
    <id>//GeneticSharp-v2.1.0</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.1.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
@@ -218,7 +218,7 @@ I have a case where I need to stop optimization at some time, save results to DB
  
  <entry>
    <title>GeneticSharp Unity3d Samples released on Google Play</title>
-   <link href="//GeneticSharp-Unity3d-Samples-released-on-Google-Play"/>
+   <link href="//GeneticSharp-Unity3d-Samples-released-on-Google-Play/"/>
    <updated>2018-09-22T00:00:00-03:00</updated>
    <id>//GeneticSharp-Unity3d-Samples-released-on-Google-Play</id>
    <content type="html">&lt;p&gt;I published on Google Play the &lt;strong&gt;GeneticSharp Unity3d Samples&lt;/strong&gt;.&lt;/p&gt;
@@ -247,7 +247,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
 &lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
 
-&lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
@@ -268,7 +268,7 @@ I have a case where I need to stop optimization at some time, save results to DB
  
  <entry>
    <title>GeneticSharp Car2D</title>
-   <link href="//GeneticSharp-Car2D"/>
+   <link href="//GeneticSharp-Car2D/"/>
    <updated>2018-06-01T00:00:00-03:00</updated>
    <id>//GeneticSharp-Car2D</id>
    <content type="html">&lt;p&gt;I made an Unity3D sample for &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; inspired by amazing &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt; where a genetic algorithm tries to design 2D cars to overcome roads challenges.&lt;/p&gt;
@@ -285,8 +285,8 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;blockquote&gt;
   &lt;p&gt;If you need some introduction to genetic algorithms or GeneticSharp:&lt;/p&gt;
   &lt;ul&gt;
-    &lt;li&gt;Introduction to genetic algorithms: &lt;a href=&quot;/function-optimization-with-geneticsharp&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/li&gt;
-    &lt;li&gt;Using GeneticSharp on Unity3D: &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Introduction to genetic algorithms: &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Using GeneticSharp on Unity3D: &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/blockquote&gt;
 
@@ -434,7 +434,7 @@ It’s quite clear that the best cars design to each of the 3 roads are differen
  
  <entry>
    <title>GeneticSharp - Unity3d sample</title>
-   <link href="//GeneticSharp-Unity3d-sample"/>
+   <link href="//GeneticSharp-Unity3d-sample/"/>
    <updated>2018-05-31T00:00:00-03:00</updated>
    <id>//GeneticSharp-Unity3d-sample</id>
    <content type="html">&lt;p&gt;I just pushed to GeneticSharp master branch the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;GeneticSharp.Runners.UnityApp&lt;/a&gt;.&lt;/p&gt;
@@ -472,7 +472,7 @@ It’s quite clear that the best cars design to each of the 3 roads are differen
  
  <entry>
    <title>TSP with GeneticSharp and Unity3D</title>
-   <link href="//tsp-with-GeneticSharp-and-Unity3d"/>
+   <link href="//tsp-with-GeneticSharp-and-Unity3d/"/>
    <updated>2018-05-16T00:00:00-03:00</updated>
    <id>//tsp-with-GeneticSharp-and-Unity3d</id>
    <content type="html">&lt;style&gt;
@@ -500,7 +500,7 @@ div.gist-meta { display:none; }
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial  &lt;a href=&quot;/function-optimization-with-geneticsharp&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial  &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;creating-the-unity3d-project&quot;&gt;Creating the Unity3D project&lt;/h2&gt;
@@ -683,7 +683,7 @@ I won’t getting in details about how this is script works, but it’s allow th
  
  <entry>
    <title>GeneticSharp v2.0.0 - .NET Core</title>
-   <link href="//GeneticSharp-v2.0.0-dotnet-core"/>
+   <link href="//GeneticSharp-v2.0.0-dotnet-core/"/>
    <updated>2018-05-12T00:00:00-03:00</updated>
    <id>//GeneticSharp-v2.0.0-dotnet-core</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases/tag/v2.0.0&quot;&gt;GeneticSharp v2.0.0&lt;/a&gt;&lt;/strong&gt; is out with support to .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
@@ -747,13 +747,13 @@ I won’t getting in details about how this is script works, but it’s allow th
  
  <entry>
    <title>DocsByReflection v1.0.13 - .NET Standard 2.0</title>
-   <link href="//DocsByRelection-v1.0.13-netstandard2.0"/>
+   <link href="//DocsByRelection-v1.0.13-netstandard2.0/"/>
    <updated>2018-04-05T00:00:00-03:00</updated>
    <id>//DocsByRelection-v1.0.13-netstandard2.0</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/DocsByReflection/releases/tag/v1.0.13&quot;&gt;DocsByReflection v1.0.13&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;If you don’t know what is DocsByReflection or what you can do with it, take a look in my previous post about it “&lt;a href=&quot;/getting-your-code-documentation-at-runtime&quot;&gt;Getting your code documentation at runtime&lt;/a&gt;”.&lt;/p&gt;
+  &lt;p&gt;If you don’t know what is DocsByReflection or what you can do with it, take a look in my previous post about it “&lt;a href=&quot;/getting-your-code-documentation-at-runtime/&quot;&gt;Getting your code documentation at runtime&lt;/a&gt;”.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;net-standard-20-and-net-framework-46&quot;&gt;.NET Standard 2.0 and .NET Framework 4.6&lt;/h2&gt;
@@ -777,7 +777,7 @@ I won’t getting in details about how this is script works, but it’s allow th
  
  <entry>
    <title>Porting GeneticSharp to .NET Core</title>
-   <link href="//porting-GeneticSharp-to-dotnet-core"/>
+   <link href="//porting-GeneticSharp-to-dotnet-core/"/>
    <updated>2018-03-28T00:00:00-03:00</updated>
    <id>//porting-GeneticSharp-to-dotnet-core</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases/tag/v2.0.0-rc1&quot;&gt;GeneticSharp v2.0.0-rc1&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
@@ -968,7 +968,7 @@ Test Run Aborted
  
  <entry>
    <title>GeneticSharp v1.2.0 - Sequence mutations</title>
-   <link href="//GeneticSharp-v1.2.0-sequence-mutations"/>
+   <link href="//GeneticSharp-v1.2.0-sequence-mutations/"/>
    <updated>2018-01-26T00:00:00-02:00</updated>
    <id>//GeneticSharp-v1.2.0-sequence-mutations</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v1.2.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
@@ -997,7 +997,7 @@ Test Run Aborted
  
  <entry>
    <title>Function optimization with GeneticSharp</title>
-   <link href="//function-optimization-with-geneticsharp"/>
+   <link href="//function-optimization-with-geneticsharp/"/>
    <updated>2017-06-13T00:00:00-03:00</updated>
    <id>//function-optimization-with-geneticsharp</id>
    <content type="html">&lt;p&gt;In this tutorial we will learn how to use GeneticSharp to optimize the inputs of math function and more about genetic algorithms meanwhile.&lt;/p&gt;
@@ -1129,17 +1129,6 @@ Test Run Aborted
 &lt;p&gt;We receive a IChromosome in the variable “c”, then we cast it to FloatingPointChromosme.&lt;/p&gt;
 
 &lt;p&gt;To allow us to evaluate the chromosome we need to convert it from its genotype (FloatingPointChromosome) to its phenotype (x1, y1 and x2, y2), we do this calling the ToFloatingPoints method. This method return an array of numbers using that configuration we used when we created our Euclidean distance chromosome. Now we have our X1, Y1 and X2 and Y2 numbers we just need to pass it to the Euclidean distance function and return the value as the fitness value of the current chromosome.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;script async=&quot;&quot; src=&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-4531139417583317&quot; data-ad-slot=&quot;3308598273&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-selection&quot;&gt;Creating the selection&lt;/h2&gt;
 &lt;center&gt;
@@ -1288,7 +1277,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
  
  <entry>
    <title>GeneticSharp v1.1.0 - Binary chromosomes</title>
-   <link href="//GeneticSharp-v1.1.0-binary-chromosomes"/>
+   <link href="//GeneticSharp-v1.1.0-binary-chromosomes/"/>
    <updated>2017-06-11T00:00:00-03:00</updated>
    <id>//GeneticSharp-v1.1.0-binary-chromosomes</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v1.1.0&lt;/a&gt;&lt;/strong&gt; is out. The greatest additions of this version are the binary chromosomes: &lt;strong&gt;FloatingPointChromosome and IntegerChromosome.&lt;/strong&gt;&lt;/p&gt;
@@ -1320,7 +1309,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
  
  <entry>
    <title>Buildron 2.0.0</title>
-   <link href="//buildron.2.0.0"/>
+   <link href="//buildron.2.0.0/"/>
    <updated>2016-09-24T00:00:00-03:00</updated>
    <id>//buildron.2.0.0</id>
    <content type="html">&lt;p&gt;After some months to test the &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;v2.0.0-RC1&lt;/a&gt; we are releasing the final version of &lt;a href=&quot;https://github.com/skahal/Buildron/&quot;&gt;Buildron&lt;/a&gt; mods support with this &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0&quot;&gt;2.0.0 version&lt;/a&gt;.&lt;/p&gt;
@@ -1361,7 +1350,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/starting-a-buildron-mod-with-a-mod-template&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/starting-a-buildron-mod-with-a-mod-template/&quot;&gt;Starting a Buildron mod with a mod template&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-getting-started&quot;&gt;Getting started&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;
@@ -1379,7 +1368,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
  
  <entry>
    <title>Buildron SlackBotMod</title>
-   <link href="//buildron-slackbotmod"/>
+   <link href="//buildron-slackbotmod/"/>
    <updated>2016-09-22T00:00:00-03:00</updated>
    <id>//buildron-slackbotmod</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to help software development teams to see the current status of their continous integration server and &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; is the omnipresent communication app for almost every developer in the world.&lt;/p&gt;
@@ -1450,7 +1439,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
  
  <entry>
    <title>Sending a Slackbot message from Unity3d</title>
-   <link href="//sending-a-slackbot-message-from-unity3d"/>
+   <link href="//sending-a-slackbot-message-from-unity3d/"/>
    <updated>2016-09-17T00:00:00-03:00</updated>
    <id>//sending-a-slackbot-message-from-unity3d</id>
    <content type="html">&lt;p&gt;I was looking for a way to send a message to a Slack channel using the Slackbot API.&lt;/p&gt;
@@ -1476,7 +1465,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
  
  <entry>
    <title>Creating a ConsoleMod to Buildron</title>
-   <link href="//creating-a-consolemod-to-buildron"/>
+   <link href="//creating-a-consolemod-to-buildron/"/>
    <updated>2016-09-15T00:00:00-03:00</updated>
    <id>//creating-a-consolemod-to-buildron</id>
    <content type="html">&lt;p&gt;In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.&lt;/p&gt;
@@ -1714,7 +1703,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
  
  <entry>
    <title>jumpstart</title>
-   <link href="//jumpstart"/>
+   <link href="//jumpstart/"/>
    <updated>2016-09-12T00:00:00-03:00</updated>
    <id>//jumpstart</id>
    <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
@@ -1815,7 +1804,7 @@ My.Amazing.NewProject.sln
  
  <entry>
    <title>Starting a Buildron mod with a mod template</title>
-   <link href="//starting-a-buildron-mod-with-a-mod-template"/>
+   <link href="//starting-a-buildron-mod-with-a-mod-template/"/>
    <updated>2016-09-04T00:00:00-03:00</updated>
    <id>//starting-a-buildron-mod-with-a-mod-template</id>
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
@@ -1938,7 +1927,7 @@ Unzip it in any folder.&lt;/p&gt;
  
  <entry>
    <title>Buildron 2.0.0-RC1 - Mods support</title>
-   <link href="//buildron.2.0.0-rc1-mods-support"/>
+   <link href="//buildron.2.0.0-rc1-mods-support/"/>
    <updated>2016-08-28T00:00:00-03:00</updated>
    <id>//buildron.2.0.0-rc1-mods-support</id>
    <content type="html">&lt;p&gt;After some months of hard work I finally released the Buildron mods support.&lt;/p&gt;
@@ -1973,7 +1962,7 @@ Unzip it in any folder.&lt;/p&gt;
  
  <entry>
    <title>Buildron - Your builds, our world! ...and now our open source code too</title>
-   <link href="//buildron-your-builds-our-world-and-now-our-open-source-code-too"/>
+   <link href="//buildron-your-builds-our-world-and-now-our-open-source-code-too/"/>
    <updated>2016-06-02T00:00:00-03:00</updated>
    <id>//buildron-your-builds-our-world-and-now-our-open-source-code-too</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to continuous integration server like TeamCity, Jenkins and Hudson.&lt;/p&gt;
@@ -1998,7 +1987,7 @@ Unzip it in any folder.&lt;/p&gt;
  
  <entry>
    <title>Using a FxCop badge on your GitHub repository</title>
-   <link href="//using-a-fxcop-badge-on-your-github-repository"/>
+   <link href="//using-a-fxcop-badge-on-your-github-repository/"/>
    <updated>2015-10-26T00:00:00-02:00</updated>
    <id>//using-a-fxcop-badge-on-your-github-repository</id>
    <content type="html">&lt;p&gt;The use of badges on GitHub repositories helps us to promote good pratices about our code. Some amazing services like the &lt;a href=&quot;http://shields.io&quot;&gt;Shileds.io&lt;/a&gt; can generate almost all badges you can imagine, but what about those badges where there is no such online service to perform this job? One common case is when you program with C# and want some FxCop badge but there is no online service to run FxCop.&lt;/p&gt;
@@ -2084,7 +2073,7 @@ Custom script:&lt;/li&gt;
  
  <entry>
    <title>Getting your code documentation at runtime</title>
-   <link href="//getting-your-code-documentation-at-runtime"/>
+   <link href="//getting-your-code-documentation-at-runtime/"/>
    <updated>2014-08-03T00:00:00-03:00</updated>
    <id>//getting-your-code-documentation-at-runtime</id>
    <content type="html">&lt;p&gt;In some situations, like generate a live console for a web api or generate code using T4 template we need a way to read the code documentation at runtime.&lt;/p&gt;
@@ -2125,7 +2114,7 @@ Custom script:&lt;/li&gt;
  
  <entry>
    <title>Improving your debug with DebuggerDisplay</title>
-   <link href="//improving-your-debug-with-debuggerdisplay"/>
+   <link href="//improving-your-debug-with-debuggerdisplay/"/>
    <updated>2014-07-14T00:00:00-03:00</updated>
    <id>//improving-your-debug-with-debuggerdisplay</id>
    <content type="html">&lt;p&gt;There is an amazing and easy to use custom attribute on .NET Framework stack that I rarely see in use. It helps and improve the way you can debug your code and you just need a line of code to use it: &lt;strong&gt;DebuggerDisplay&lt;/strong&gt;.&lt;/p&gt;
@@ -2182,7 +2171,7 @@ Custom script:&lt;/li&gt;
  
  <entry>
    <title>Why we should avoid DateTime.UtcNow inside a Linq to Entities query?</title>
-   <link href="//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query"/>
+   <link href="//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query/"/>
    <updated>2014-05-12T00:00:00-03:00</updated>
    <id>//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;Because we can get unexpected results! (after read this tip, will be expected results ;))&lt;/strong&gt;&lt;/p&gt;

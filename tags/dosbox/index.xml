@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dosbox</title>
  <link href="//tags/dosbox/index.xml" rel="self"/>
  <link href="/tag/dosbox.html"/>
- <updated>2019-04-09T20:11:59-03:00</updated>
+ <updated>2019-04-11T15:22:50-03:00</updated>
  <id>/tag/dosbox.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -11,7 +11,7 @@
  
  <entry>
    <title>Testing js-dos</title>
-   <link href="//testing-js-dos"/>
+   <link href="//testing-js-dos/"/>
    <updated>2016-08-04T00:00:00-03:00</updated>
    <id>//testing-js-dos</id>
    <content type="html">&lt;p&gt;Recenlty I discovered the project &lt;a href=&quot;https://github.com/kripken/emscripten&quot;&gt;Emscripten&lt;/a&gt;:&lt;/p&gt;
