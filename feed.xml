@@ -1,4 +1,229 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-05-20T10:45:04-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">dotnet new templates for GeneticSharp</title><link href="http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp/" rel="alternate" type="text/html" title="dotnet new templates for GeneticSharp" /><published>2019-02-03T00:00:00-02:00</published><updated>2019-02-03T00:00:00-02:00</updated><id>http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp</id><content type="html" xml:base="http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp/">&lt;p&gt;Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the &lt;strong&gt;dotnet new&lt;/strong&gt; command.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-05-21T11:32:10-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity Avatar Mask and Animation Layers</title><link href="http://diegogiacomelli.com.br/unity-avatar-mask-and-animation-layers/" rel="alternate" type="text/html" title="Unity Avatar Mask and Animation Layers" /><published>2019-05-21T00:00:00-03:00</published><updated>2019-05-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-avatar-mask-and-animation-layers</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-avatar-mask-and-animation-layers/">&lt;p&gt;In this tutorial we will learn how to use &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationMaskOnImportedClips.html&quot;&gt;Avatar Mask&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationLayers.html&quot;&gt;Animation Layers&lt;/a&gt; to combine multiple animations.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Imagine we imported an animated 3D model from Asset Store, in our sample, we will use the incredible robot from the free package &lt;a href=&quot;https://assetstore.unity.com/packages/3d/characters/humanoids/sci-fi-warrior-pbr-hp-106154&quot;&gt;Sci Fi Warrior PBR HP&lt;/a&gt; by &lt;a href=&quot;https://assetstore.unity.com/publishers/23554&quot;&gt;Dungeon Mason&lt;/a&gt;.
+In this package, there are 10 animation clips:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;animation clips available on Sci Fi Warrior PBR HP &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;All those clips are animations for full body. So, when you play them:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Idle_GunMiddle&lt;/strong&gt;&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;the robot stands idle with the gun in the middle of his body &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;WalkForward_Shoot&lt;/strong&gt;&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;the robot walk forward and shoot &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;externalref&quot;&gt;&lt;p&gt;You can see all the animations available on the Sci Fi Warrior PBR HP package in this video &lt;a href=&quot;https://www.youtube.com/watch?v=fNzBdYhm3Gk&quot;&gt;https://www.youtube.com/watch?v=fNzBdYhm3Gk&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;These are great animations, although if &lt;strong&gt;we want to make the robot stands idle, but instead of keeping the gun in the middle of his body, he aims the gun or shoot?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Or &lt;strong&gt;if we want that robot walk forward but holding the gun in the middle of his body?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, we can ask to the artist to create all those animation combinations, but there is a smarter approach for this case…&lt;/p&gt;
+
+&lt;h2 id=&quot;avatar-masks-and-animation-layers-goes-to-the-rescue&quot;&gt;Avatar Masks and Animation Layers goes to the rescue&lt;/h2&gt;
+&lt;p&gt;To start, lets see what Unity Manual says about Avatar Masks and Animation Layers:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationMaskOnImportedClips.html&quot;&gt;Avatar Masks&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Masking allows you to discard some of the animation data within a clip, &lt;strong&gt;allowing the clip to animate only parts of the object or character rather than the entire thing&lt;/strong&gt;. For example, if you had a character with a throwing animation. If you wanted to be able to &lt;strong&gt;use the throwing animation in conjunction with various other body movements such as running, crouching and jumping&lt;/strong&gt;, you could create a mask for the throwing animation limiting it to just the right arm, upper body and head. This portion of the animation can then be played in a layer over the top of the base running or jumping animations.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationLayers.html&quot;&gt;Animation Layers&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Unity uses Animation Layers for managing complex state machines for different body parts. An example of this is if you have a lower-body layer for walking-jumping, and an upper-body layer for throwing objects / shooting.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;By reading those two sections is quite clear that we need to use avatar masks and animation layers together to combine our animations of different body parts. So, in the next sections, I will demonstrate how to combine three animations (Idle_GunMiddle, WalkForward_Shoot, and Shoot_single) to make the robot shoot while stands idle and walk forward with a gun in middle body. After that, I will propose you a challenge for the other animations available.&lt;/p&gt;
+
+&lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&quot;&gt;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&lt;/a&gt;. To start this tutorial you need to fork, clone or download the repository.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/giacomelli/unity-avatar-mask-and-animation-layers.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Open the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;avatar-mask-starter&lt;/code&gt; on Unity.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This starter project has an initial setup and assets to allow us to focus in the learning about Avatar Masks and Animations Layers.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Open the scene &lt;code class=&quot;highlighter-rouge&quot;&gt;_Tutorial/Scenes/TutorialScene&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you see a popup called &lt;code class=&quot;highlighter-rouge&quot;&gt;TMP importer&lt;/code&gt;, hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Import TPM Essentials&lt;/code&gt; button to import the TextMesh Pro’s assets.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Play&lt;/code&gt; button. You should see a screen like this:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;Starter project running: just HUD &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-animation-controller&quot;&gt;Creating the Animation Controller&lt;/h2&gt;
+
+&lt;p&gt;Create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Animation Controller&lt;/code&gt; (menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Create/Animation Controller&lt;/code&gt;) and open it:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;Animator window showing the animation controller created &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;All animation layers, nodes and transitions for this tutorial will be created inside this animation controller.&lt;/p&gt;
+
+&lt;p&gt;In the hierarchy, select the SciFiWarriorHP and in the Animator component set the &lt;code class=&quot;highlighter-rouge&quot;&gt;Controller&lt;/code&gt; property to our Animation Controller.&lt;/p&gt;
+
+&lt;h2 id=&quot;making-the-robot-walk-forward&quot;&gt;Making the robot walk forward&lt;/h2&gt;
+&lt;p&gt;To get something running right now, we will make the robot walk forward when the button &lt;code class=&quot;highlighter-rouge&quot;&gt;WALK / FORWARD&lt;/code&gt; became checked.&lt;/p&gt;
+
+&lt;p&gt;In the Animator opening with our Animation Controller drag the animation clip &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt; from folder &lt;code class=&quot;highlighter-rouge&quot;&gt;SciFiWarrior/Animations&lt;/code&gt;. Do the same with the clip &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Create a &lt;a href=&quot;https://docs.unity3d.com/Manual/class-Transition.html&quot;&gt;transition&lt;/a&gt; (right click on the node and  &lt;code class=&quot;highlighter-rouge&quot;&gt;Make transition&lt;/code&gt;) from &lt;code class=&quot;highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; and create another transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;WalkForward parameter created &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;We want to activate the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; is true, so select this transition and in its &lt;code class=&quot;highlighter-rouge&quot;&gt;Conditions&lt;/code&gt; list on inspector add the &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; equals  &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;WalkForward condition defined &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click the &lt;code class=&quot;highlighter-rouge&quot;&gt;reset&lt;/code&gt; to auto fit the exit and transition time:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;reseting the transition settings &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Do the same to the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;, but use &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; as the value for &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;animation base layer &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Play&lt;/code&gt; button to test the animation states. When you click on &lt;code class=&quot;highlighter-rouge&quot;&gt;WALK / FORWARD&lt;/code&gt; the robot starts to walk, when you click it again the robot stops to walk.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-the-upper-body-avatar-mask&quot;&gt;Creating the upper body avatar mask&lt;/h3&gt;
+&lt;p&gt;The animation for walk forward works pretty well, the robot walks forward while it’s aiming the gun. This is the whole movement animated inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; clip.&lt;/p&gt;
+
+&lt;p&gt;Now we want that robot walk forward without aiming the gun, instead of this, we want it keeps the gun in the middle as it does when &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt; is active. To get this done, first, we need to create an avatar mask to the upper body.&lt;/p&gt;
+
+&lt;p&gt;Create a new Avatar Mask (&lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Create/Avatar Mask&lt;/code&gt;) called &lt;code class=&quot;highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt;. In the inspector, uncheck all lower body parties, as the image below:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;only upper body &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-a-upper-body-animation-layer&quot;&gt;Creating a upper body animation layer&lt;/h3&gt;
+&lt;p&gt;With the UpperBody Avatar Mask created, we will need to create a new animation layer that will use the mask. Go to the animator window and create a new layer using the &lt;code class=&quot;highlighter-rouge&quot;&gt;+ button&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;the new layer created with the mask &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Change the &lt;code class=&quot;highlighter-rouge&quot;&gt;Weight&lt;/code&gt; property to 1 and set the Mask to the UpperBody Avatar Mask. Keep the &lt;code class=&quot;highlighter-rouge&quot;&gt;Blending&lt;/code&gt; as override.&lt;/p&gt;
+
+&lt;p&gt;Drag the animation clip &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt; from folder &lt;code class=&quot;highlighter-rouge&quot;&gt;SciFiWarrior/Animations&lt;/code&gt; to the &lt;code class=&quot;highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt; layer.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;upper body animation layer &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;testing-the-animations&quot;&gt;Testing the animations&lt;/h4&gt;
+&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Play&lt;/code&gt; button to test the animation states. When you click on &lt;code class=&quot;highlighter-rouge&quot;&gt;WALK / FORWARD&lt;/code&gt; the robot starts to walk, but now it’s not aiming the gun, instead it keeps the gun in the middle.&lt;/p&gt;
+
+&lt;h4 id=&quot;why-does-this-happen&quot;&gt;Why does this happen?&lt;/h4&gt;
+&lt;p&gt;So, this is done by the UpperBody Animation Layer that we added to our animation controller, as it’s mask was defined with our UpperBody Avatar Mask that only consider upper body parts of the humanoid, Unity overrides the base layer animation with the upper body part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;making-the-robot-shoot&quot;&gt;Making the robot shoot&lt;/h2&gt;
+&lt;p&gt;We will make the robot shoot when the button &lt;code class=&quot;highlighter-rouge&quot;&gt;SHOOT / SINGLE&lt;/code&gt; became checked, this will help us to better understand how the Avatar Mask and Animation Layer works to override the animations from the base layer with the animations from UpperBody layer.&lt;/p&gt;
+
+&lt;p&gt;In the Animator Window with our Animation Controller opened, select the UpperBody layer and drag the animation clip &lt;code class=&quot;highlighter-rouge&quot;&gt;Shoot_single&lt;/code&gt; from folder &lt;code class=&quot;highlighter-rouge&quot;&gt;SciFiWarrior/Animations&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Create a &lt;a href=&quot;https://docs.unity3d.com/Manual/class-Transition.html&quot;&gt;transition&lt;/a&gt; (right click on node and  &lt;code class=&quot;highlighter-rouge&quot;&gt;Make transition&lt;/code&gt;) from &lt;code class=&quot;highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Shoot_single&lt;/code&gt; and create another transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;Shoot_single&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;ShootSingle parameter created &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;We want to activate the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Shoot_single&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt; is true, so select this transition and in its &lt;code class=&quot;highlighter-rouge&quot;&gt;Conditions&lt;/code&gt; list on inspector add the &lt;code class=&quot;highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt; equals  &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Click the &lt;code class=&quot;highlighter-rouge&quot;&gt;reset&lt;/code&gt; to auto fit the exit and transition time.&lt;/p&gt;
+
+&lt;p&gt;Do the same to the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;, but use &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; as the value for &lt;code class=&quot;highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Play&lt;/code&gt; button to test the animation states. When you click on &lt;code class=&quot;highlighter-rouge&quot;&gt;SHOOT / SINGLE&lt;/code&gt; the robot shoot.&lt;/p&gt;
+
+&lt;p&gt;Now you can combine the two buttons &lt;code class=&quot;highlighter-rouge&quot;&gt;WALK / FORWARD&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;SHOOT / SINGLE&lt;/code&gt; and see how the animations combine.&lt;/p&gt;
+
+&lt;h2 id=&quot;challenge&quot;&gt;Challenge&lt;/h2&gt;
+&lt;p&gt;Do something is better to learn than just reading and following someone instructions because this I will challenge you to try to implement other actions:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;the remaining actions to the challenge &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 	 	 
+To implement these actions you need to do almost the same thing we did in this tutorial so far, just using another animation clips, transitions and parameters.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The challenger items are the legs because you will need to create new Avatar Masks with the &lt;code class=&quot;highlighter-rouge&quot;&gt;Transform&lt;/code&gt; option of the avatar configuration to get the right animation. New Animation Layers will be needed as well.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you have any doubt how to implement any part of this challenge, feel free to ask on this post comments or &lt;a href=&quot;about&quot;&gt;send me a message&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;The whole source code and assets for this tutorial are available on: &lt;a href=&quot;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&quot;&gt;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This repository has two main folders:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;avatar-mask-starter&lt;/strong&gt;: the one you used to make this tutorial.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;avatar-mask-complete&lt;/strong&gt;: the whole solution with all actions implemented. Use this one, in case you get stuck in any item on the challenge.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The video below shows the complete solution running:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/sl9EheTbmhE &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this tutorial, we learn how to use Avatar Masks and Animation Layers to animate a robot with different masks and layers.
+These techniques allowing us to use already existent animations and combine them.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt; and &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><category term="animation" /><category term="avatar-mask" /><category term="animation-layers" /><category term="open-source" /><summary type="html">In this tutorial we will learn how to use Avatar Mask and Animation Layers to combine multiple animations.</summary></entry><entry><title type="html">dotnet new templates for GeneticSharp</title><link href="http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp/" rel="alternate" type="text/html" title="dotnet new templates for GeneticSharp" /><published>2019-02-03T00:00:00-02:00</published><updated>2019-02-03T00:00:00-02:00</updated><id>http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp</id><content type="html" xml:base="http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp/">&lt;p&gt;Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the &lt;strong&gt;dotnet new&lt;/strong&gt; command.&lt;/p&gt;
 
 &lt;h1 id=&quot;installing-the-geneticsharptemplates&quot;&gt;Installing the GeneticSharp.Templates&lt;/h1&gt;
 &lt;p&gt;Before you can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; command to create the GeneticSharp projects from templates, you need to install it on your machine:&lt;/p&gt;
@@ -653,59 +878,4 @@ I won’t getting in details about how this is script works, but it’s allow th
 
 &lt;p&gt;Let’s evolve!&lt;/p&gt;
 
-&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="unity3d" /><category term="tsp" /><category term="dotnet" /><summary type="html">In this post I will show how to use GeneticSharp and Unity3D to solve the TSP (Travelling salesman problem). Introduction</summary></entry><entry><title type="html">GeneticSharp v2.0.0 - .NET Core</title><link href="http://diegogiacomelli.com.br/GeneticSharp-v2.0.0-dotnet-core/" rel="alternate" type="text/html" title="GeneticSharp v2.0.0 - .NET Core" /><published>2018-05-12T00:00:00-03:00</published><updated>2018-05-12T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/GeneticSharp-v2.0.0-dotnet-core</id><content type="html" xml:base="http://diegogiacomelli.com.br/GeneticSharp-v2.0.0-dotnet-core/">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases/tag/v2.0.0&quot;&gt;GeneticSharp v2.0.0&lt;/a&gt;&lt;/strong&gt; is out with support to .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/netcore.svg&quot; /&gt;
-      &lt;/center&gt;
-
-&lt;p&gt;In march GenetichSharp start to support .NET Standard 2.0 in the 2.0.0-rc version. Two months have pass and in the meanwhile the community have time to test that release candidate version and now Unity3D has an official .NET Standard 2.0 profile.&lt;/p&gt;
-
-&lt;p&gt;So, it’s time to release the GeneticSharp v2.0.0.&lt;/p&gt;
-
-&lt;h2 id=&quot;installing&quot;&gt;Installing&lt;/h2&gt;
-&lt;p&gt;Only GeneticSharp:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;GeneticSharp and extensions (TSP, AutoConfig, Bitmap equality, Equality equation, Equation solver, Function builder, etc):&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp.Extensions
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If you’re still in a .NET Framework version lower than 4.6.2 project use the &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp/1.2.0&quot;&gt;1.2.0 version&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 1.2.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png&quot; /&gt;
-      &lt;/center&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I’ve already talk about these breaking changes on the post about the release candidate version, but I guess is good to point them again:&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The GeneticSharp NuGet package was split into two packages:
-    &lt;ul&gt;
-      &lt;li&gt;GeneticSharp: only GeneticSharp.Domain.dll and GeneticSharp.Infrastructure.Framework.dll&lt;/li&gt;
-      &lt;li&gt;GeneticSharp.Extensions: depends on GenetiSharp.Package and add the GeneticSharp.Extensions.dll.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;SmartThreadPoolTaskExecutor does not exists anymore. You should use ParallelTaskExecutor class (not disposable).&lt;/li&gt;
-  &lt;li&gt;The projects are not signed anymore:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/6911#issuecomment-309647478&quot;&gt;Error signing output with public key from file ‘x.snk’ – Assembly signing not supported&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;In the ConsoleApp the EquationSolverSampleController was removed until the &lt;a href=&quot;https://github.com/pieterderycke/Jace&quot;&gt;Jace&lt;/a&gt; library suportt .NET Core.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let’s evolve!&lt;/p&gt;
-
-&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="dotnet" /><category term="release" /><summary type="html">The GeneticSharp v2.0.0 is out with support to .NET Standard 2.0 and .NET Framework 4.6.2. Introduction</summary></entry></feed>
+&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="unity3d" /><category term="tsp" /><category term="dotnet" /><summary type="html">In this post I will show how to use GeneticSharp and Unity3D to solve the TSP (Travelling salesman problem). Introduction</summary></entry></feed>

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - csharp</title>
  <link href="//tags/csharp/index.xml" rel="self"/>
  <link href="/tag/csharp.html"/>
- <updated>2019-05-20T10:45:04-03:00</updated>
+ <updated>2019-05-21T11:32:10-03:00</updated>
  <id>/tag/csharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -102,6 +102,7 @@
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;When debugging is easier than expected &lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;More information about DebuggerDisplay on official documentation: &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms228992(v=vs.110).aspx&quot;&gt;msdn.microsoft.com/en-us/library/ms228992(v=vs.110).aspx&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </content>
