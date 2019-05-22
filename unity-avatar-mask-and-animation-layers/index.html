@@ -230,7 +230,7 @@ In this package, there are 10 animation clips:</p>
 <center><span style="font-style:italic; font-size:small">WalkForward parameter created </span></center>
 <p><br /></p>
 
-<p>We want to activate the transition from <code class="highlighter-rouge">Any state</code> to <code class="highlighter-rouge">WalkForward_Shoot</code> when <code class="highlighter-rouge">WalkForward</code> is true, so select this transition and in its <code class="highlighter-rouge">Conditions</code> list on inspector add the <code class="highlighter-rouge">WalkForward</code> equals  <code class="highlighter-rouge">true</code>:</p>
+<p>We want to activate the transition from <code class="highlighter-rouge">Any state</code> to <code class="highlighter-rouge">WalkForward_Shoot</code> when <code class="highlighter-rouge">WalkForward</code> is true, so select this transition (click on the arrow connecting the state <code class="highlighter-rouge">Any State</code> to <code class="highlighter-rouge">WalkForward_Shoot</code>) and in the <code class="highlighter-rouge">Conditions</code> list on inspector add the <code class="highlighter-rouge">WalkForward</code> equals <code class="highlighter-rouge">true</code>:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition.png " />
       </center>
@@ -244,7 +244,7 @@ In this package, there are 10 animation clips:</p>
 <center><span style="font-style:italic; font-size:small">reseting the transition settings </span></center>
 <p><br /></p>
 
-<p>Do the same to the transition from <code class="highlighter-rouge">WalkForward_Shoot</code> to <code class="highlighter-rouge">Idle_GunMiddle</code>, but use <code class="highlighter-rouge">false</code> as the value for <code class="highlighter-rouge">WalkForward</code>.</p>
+<p>Repeat the same steps as above for the transition from <code class="highlighter-rouge">WalkForward_Shoot</code> to <code class="highlighter-rouge">Idle_GunMiddle</code>, but use <code class="highlighter-rouge">false</code> as the value for <code class="highlighter-rouge">WalkForward</code>.</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer.png " />
       </center>
@@ -304,11 +304,11 @@ In this package, there are 10 animation clips:</p>
 <center><span style="font-style:italic; font-size:small">ShootSingle parameter created </span></center>
 <p><br /></p>
 
-<p>We want to activate the transition from <code class="highlighter-rouge">Any state</code> to <code class="highlighter-rouge">Shoot_single</code> when <code class="highlighter-rouge">ShootSingle</code> is true, so select this transition and in its <code class="highlighter-rouge">Conditions</code> list on inspector add the <code class="highlighter-rouge">ShootSingle</code> equals  <code class="highlighter-rouge">true</code>.</p>
+<p>We want to activate the transition from <code class="highlighter-rouge">Any state</code> to <code class="highlighter-rouge">Shoot_single</code> when <code class="highlighter-rouge">ShootSingle</code> is true, so select this transition (click on the arrow connecting the state <code class="highlighter-rouge">Any State</code> to <code class="highlighter-rouge">Shoot_single</code>) and in the <code class="highlighter-rouge">Conditions</code> list on inspector add the <code class="highlighter-rouge">ShootSingle</code> equals  <code class="highlighter-rouge">true</code>.</p>
 
 <p>Click the <code class="highlighter-rouge">reset</code> to auto fit the exit and transition time.</p>
 
-<p>Do the same to the transition from <code class="highlighter-rouge">ShootSingle</code> to <code class="highlighter-rouge">Idle_GunMiddle</code>, but use <code class="highlighter-rouge">false</code> as the value for <code class="highlighter-rouge">ShootSingle</code>.</p>
+<p>Repeat the same steps as above for the transition from <code class="highlighter-rouge">ShootSingle</code> to <code class="highlighter-rouge">Idle_GunMiddle</code>, but use <code class="highlighter-rouge">false</code> as the value for <code class="highlighter-rouge">ShootSingle</code>.</p>
 
 <p>Hit the <code class="highlighter-rouge">Play</code> button to test the animation states. When you click on <code class="highlighter-rouge">SHOOT / SINGLE</code> the robot shoot.</p>
 
