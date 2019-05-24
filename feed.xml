@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-05-22T17:34:51-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity Avatar Mask and Animation Layers</title><link href="http://diegogiacomelli.com.br/unity-avatar-mask-and-animation-layers/" rel="alternate" type="text/html" title="Unity Avatar Mask and Animation Layers" /><published>2019-05-21T00:00:00-03:00</published><updated>2019-05-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-avatar-mask-and-animation-layers</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-avatar-mask-and-animation-layers/">&lt;p&gt;In this tutorial we will learn how to use &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationMaskOnImportedClips.html&quot;&gt;Avatar Mask&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationLayers.html&quot;&gt;Animation Layers&lt;/a&gt; to combine multiple animations.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-05-24T12:09:43-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (May 24th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-may-24th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (May 24th 2019)" /><published>2019-05-24T00:00:00-03:00</published><updated>2019-05-24T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-may-24th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-may-24th-2019/">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Kristin Stock&lt;/strong&gt; post a video about how she is &lt;a href=&quot;https://www.youtube.com/watch?v=zBDrH3lg4YY&quot;&gt;procedurally generating cities using Subdivsion in Unity&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dave Hunt and Yang-Hai Eakes&lt;/strong&gt; made an &lt;a href=&quot;https://blogs.unity3d.com/2019/05/14/introducing-the-animation-rigging-preview-package-for-unity-2019-1/&quot;&gt;introduction for the Animation Rigging preview package for Unity 2019.1&lt;/a&gt;.
+    &lt;blockquote&gt;
+      &lt;p&gt;Set up procedural motion on animated skeletons at runtime. You can use a set of predefined animation constraints to manually build a control rig hierarchy for a character or develop your own custom constraints in C#.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Alexander Ameye&lt;/strong&gt; launch a &lt;a href=&quot;https://alexanderameye.github.io/&quot;&gt;site with many Unity tutorials&lt;/a&gt;, like &lt;code class=&quot;highlighter-rouge&quot;&gt;Water 1: Tessellated Plane&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Toon Shading&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Shahriar Shahrabi&lt;/strong&gt; made a post showing how use &lt;a href=&quot;https://medium.com/realities-io/making-the-inception-effect-in-unity-3d-with-few-lines-of-code-fb9667d4786f&quot;&gt;deformation matrices to achieve the &lt;code class=&quot;highlighter-rouge&quot;&gt;Inception effect&lt;/code&gt;&lt;/a&gt;.
+    &lt;blockquote&gt;
+      &lt;p&gt;Have you ever wondered how your brain would react if you bend the space around you in VR? Or change the field of view and do a vertigo? Well I did, so I started writing a series of shaders which deformed the space around me, using matrices and ended up with an Inception looking effect.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Steve Cavanagh and Lyndon Homewood&lt;/strong&gt; wrote a post about the &lt;a href=&quot;https://blogs.unity3d.com/2019/05/13/introducing-the-profile-analyzer/&quot;&gt;Unity Profile Analyzer (preview)&lt;/a&gt;.
+    &lt;blockquote&gt;
+      &lt;p&gt;Have you ever needed to compare the difference in performance between two versions of your project? See the impact of an asset or code change, optimization work, settings change or Unity version upgrade?&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Unity 2019.2 beta&lt;/strong&gt; released an &lt;a href=&quot;https://forum.unity.com/threads/experimental-2d-renderer-in-lwrp.683623&quot;&gt;experimental 2D Renderer in LWRP&lt;/a&gt; with 2D lights, Lit and Unlit Sprite Masternode in Shader Graph, and Pixel Perfect Camera.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Julien Blais&lt;/strong&gt; wrote about a post about &lt;a href=&quot;https://blogs.unity3d.com/2019/05/21/how-to-use-timeline-signals&quot;&gt;new feature Signals&lt;/a&gt; added to Timeline in Unity 2019.1.
+    &lt;blockquote&gt;
+      &lt;p&gt;We’ve built Signals to establish a communication channel between Timeline and outside systems. But what does that mean? Why did we decide on this approach?&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html">Kristin Stock post a video about how she is procedurally generating cities using Subdivsion in Unity.</summary></entry><entry><title type="html">Unity Avatar Mask and Animation Layers</title><link href="http://diegogiacomelli.com.br/unity-avatar-mask-and-animation-layers/" rel="alternate" type="text/html" title="Unity Avatar Mask and Animation Layers" /><published>2019-05-21T00:00:00-03:00</published><updated>2019-05-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-avatar-mask-and-animation-layers</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-avatar-mask-and-animation-layers/">&lt;p&gt;In this tutorial we will learn how to use &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationMaskOnImportedClips.html&quot;&gt;Avatar Mask&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationLayers.html&quot;&gt;Animation Layers&lt;/a&gt; to combine multiple animations.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Imagine we imported an animated 3D model from Asset Store, in our sample, we will use the incredible robot from the free package &lt;a href=&quot;https://assetstore.unity.com/packages/3d/characters/humanoids/sci-fi-warrior-pbr-hp-106154&quot;&gt;Sci Fi Warrior PBR HP&lt;/a&gt; by &lt;a href=&quot;https://assetstore.unity.com/publishers/23554&quot;&gt;Dungeon Mason&lt;/a&gt;.
@@ -676,206 +706,4 @@ It’s quite clear that the best cars design to each of the 3 roads are differen
 &lt;h2 id=&quot;experimental-components&quot;&gt;Experimental components&lt;/h2&gt;
 &lt;p&gt;In the folder _runner/Commons there are the BitStringChromosome class and some phenotype implementations. At the moment they are experimental, but I will wait for the community feedback to see if they can be promoted to GeneticSharp library code.&lt;/p&gt;
 
-&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="unity3d" /><category term="gamedev" /><category term="tsp" /><category term="car2d" /><category term="dotnet" /><summary type="html">I just pushed to GeneticSharp master branch the GeneticSharp.Runners.UnityApp.</summary></entry><entry><title type="html">TSP with GeneticSharp and Unity3D</title><link href="http://diegogiacomelli.com.br/tsp-with-GeneticSharp-and-Unity3d/" rel="alternate" type="text/html" title="TSP with GeneticSharp and Unity3D" /><published>2018-05-16T00:00:00-03:00</published><updated>2018-05-16T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/tsp-with-GeneticSharp-and-Unity3d</id><content type="html" xml:base="http://diegogiacomelli.com.br/tsp-with-GeneticSharp-and-Unity3d/">&lt;style&gt;
-div.gist-meta { display:none; }
-&lt;/style&gt;
-
-&lt;p&gt;In this post I will show how to use GeneticSharp and Unity3D to solve the TSP (Travelling salesman problem).&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/city.png&quot; /&gt;
-      &lt;/center&gt;
-
-&lt;p&gt;According to Wikipedia &lt;em&gt;&lt;strong&gt;“The travelling salesman problem (TSP) asks the following question: “Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?”&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;TSP is a classic sample to test some optimization techniques, as well it’s fairly used to demonstrate how to implement a genetic algorithm. For these reasons I will use it to show you how to implement a basic genetic algorithm in Unity3D using GeneticSharp.&lt;/p&gt;
-
-&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
-&lt;p&gt;To better understand this tutorial, you need to have some experiences/knowledges in:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Unity3D (beginner)&lt;/li&gt;
-  &lt;li&gt;Genetic algorithms (beginner).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial  &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;creating-the-unity3d-project&quot;&gt;Creating the Unity3D project&lt;/h2&gt;
-&lt;p&gt;Using Unity 2018.1+, create a new project called TspSample.&lt;/p&gt;
-
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
-&lt;p&gt;Go to “Player settings” / “Other settings” / “Configuration”, select “.NET 4.x Equivalent” on “Scripting Runtime Version”. Unity will ask to restart, you can confirm.&lt;/p&gt;
-
-&lt;p&gt;After restart, go back to “Player settings”, select “.NET Standard 2.0” on “Api Compability Level”.&lt;/p&gt;
-
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
-&lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png&quot; /&gt;
-      &lt;/center&gt;
-
-&lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;To represent the cities route each gene of our chromosome will represent an index of a city in the route.&lt;/p&gt;
-
-&lt;p&gt;Create a C# script called “TspChromosome.cs”:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;representing-a-city&quot;&gt;Representing a city&lt;/h2&gt;
-&lt;p&gt;The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.&lt;/p&gt;
-
-&lt;p&gt;Create a C# script called “City.cs”:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=City.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
-&lt;p&gt;Now we need to evaluate the TspChromosome.&lt;/p&gt;
-
-&lt;p&gt;Our fitness function will evaluate the TspChromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.&lt;/p&gt;
-
-&lt;p&gt;Create a C# script called “TspFitness.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;running-the-genetic-algorithm&quot;&gt;Running the Genetic Algorithm&lt;/h2&gt;
-&lt;p&gt;In this step we need to configure our genetic algorithm using the TspChromosome, TspFitness and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
-
-&lt;p&gt;Create a C# script called “GAController.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.v1.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Create a GameObject called “GAController” in the scene and add the GAController.cs to it.&lt;/p&gt;
-
-&lt;p&gt;Save the scene.&lt;/p&gt;
-
-&lt;p&gt;Run the scene on editor and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
-
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
-&lt;p&gt;Now our GA is running inside Unity3D, but it need to display the cities route better.
-We need create a visual representation to the cities.&lt;/p&gt;
-
-&lt;h3 id=&quot;city-prefab&quot;&gt;City prefab&lt;/h3&gt;
-&lt;p&gt;We will create a prefab based on a sprite of a pin. You can use an icon as this one from &lt;a href=&quot;https://www.flaticon.com/free-icon/maps-and-flags_447031#term=pin&amp;amp;page=1&amp;amp;position=6&quot;&gt;www.flaticon.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Download it to inside your Unity3D project.&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Maybe you will need to change the ‘Pixels Per Unit’ to 1000 to get a good pin size on screen.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Drag it to the hierarchy panel, rename the new GameObject to CityPrefab and drag it back to your Assets folder on Project panel. Now our CityPrefab is created.&lt;/p&gt;
-
-&lt;p&gt;Delete the CityPrefab game object from the current scene.&lt;/p&gt;
-
-&lt;h3 id=&quot;instantiating-the-cities-prefabs&quot;&gt;Instantiating the cities prefabs&lt;/h3&gt;
-&lt;p&gt;Add the following field to the GAController.cs&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change1.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Then, create the method DrawCities:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change2.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;And then call it from Start method:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change3.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Now, select the GAController game object on hierarchy and set the CityPrefab property.&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
-&lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
-
-&lt;p&gt;Now we need to draw the solution: the route represented by the best chromosome of each generation.&lt;/p&gt;
-
-&lt;p&gt;One of the simplest ways to draw some lines in Unity3D is using the LineRenderer component.&lt;/p&gt;
-
-&lt;p&gt;Add the following code to the GAController.cs:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change4.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Create the method DrawRoute:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change5.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Then call it from Update method:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change6.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Before run the scene, we need to add a LineRenderer component to our GAController game object.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Change the width property of the LineRenderer from 1 to 0.1.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Run the scene again, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
-&lt;p&gt;Our sample could be considered done, but would it be nice if we you could change the cities positions while the genetic algorithm are running and see how it manages these cities positions changes.&lt;/p&gt;
-
-&lt;h3 id=&quot;citycontroller&quot;&gt;CityController&lt;/h3&gt;
-&lt;p&gt;Create a C# script called “CityController.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=CityController.cs&quot;&gt; &lt;/script&gt;
-I won’t getting in details about how this is script works, but it’s allow the user to drag the cities’ pin using the mouse or the finger touch if build it to mobile.&lt;/p&gt;
-
-&lt;p&gt;Add the CityController.cs to the CityPrefab.&lt;/p&gt;
-
-&lt;p&gt;Change the GAController.cs script adding the line below to the end of the for loop of DrawCities method:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change7.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
-
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;With only 5 C# scripts and 1 prefab we built a pretty nice sample of genetic algorithms using in Unity3D with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;How about make it 3D and using a Vector3 instead of Vector2 on City.Position?&lt;/li&gt;
-  &lt;li&gt;Maybe let user change the number of cities or change the genetic algorithm operators?&lt;/li&gt;
-  &lt;li&gt;Move the DrawCities and DrawRoutes methods to a script responsible to only draw the GA.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The full source code used in this post can be download or fork from this Gist: &lt;a href=&quot;https://gist.github.com/giacomelli/94721a46d33c6bcb1f3ae11117b7f888&quot;&gt;https://gist.github.com/giacomelli/94721a46d33c6bcb1f3ae11117b7f888&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Let’s evolve!&lt;/p&gt;
-
-&lt;div&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot; title=&quot;Freepik&quot;&gt;Freepik&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot; title=&quot;Creative Commons BY 3.0&quot; target=&quot;_blank&quot;&gt;CC 3.0 BY&lt;/a&gt;&lt;/div&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="unity3d" /><category term="tsp" /><category term="dotnet" /><summary type="html">In this post I will show how to use GeneticSharp and Unity3D to solve the TSP (Travelling salesman problem). Introduction</summary></entry></feed>
+&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="unity3d" /><category term="gamedev" /><category term="tsp" /><category term="car2d" /><category term="dotnet" /><summary type="html">I just pushed to GeneticSharp master branch the GeneticSharp.Runners.UnityApp.</summary></entry></feed>
