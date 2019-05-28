@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - animation-layers</title>
  <link href="//tags/animation-layers/index.xml" rel="self"/>
  <link href="/tag/animation-layers.html"/>
- <updated>2019-05-24T12:09:43-03:00</updated>
+ <updated>2019-05-28T06:36:12-03:00</updated>
  <id>/tag/animation-layers.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -23,7 +23,8 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;animation clips available on Sci Fi Warrior PBR HP &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation clips available on Sci Fi Warrior PBR HP&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;All those clips are animations for full body. So, when you play them:&lt;/p&gt;
@@ -32,14 +33,16 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;the robot stands idle with the gun in the middle of his body &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot stands idle with the gun in the middle of his body&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;WalkForward_Shoot&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;the robot walk forward and shoot &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot walk forward and shoot&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;externalref&quot;&gt;&lt;p&gt;You can see all the animations available on the Sci Fi Warrior PBR HP package in this video &lt;a href=&quot;https://www.youtube.com/watch?v=fNzBdYhm3Gk&quot;&gt;https://www.youtube.com/watch?v=fNzBdYhm3Gk&lt;/a&gt;&lt;/p&gt;
@@ -90,7 +93,8 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;Starter project running: just HUD &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Starter project running: just HUD&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-animation-controller&quot;&gt;Creating the Animation Controller&lt;/h2&gt;
@@ -100,7 +104,8 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;Animator window showing the animation controller created &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Animator window showing the animation controller created&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;All animation layers, nodes and transitions for this tutorial will be created inside this animation controller.&lt;/p&gt;
@@ -118,28 +123,32 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;WalkForward parameter created &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward parameter created&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;We want to activate the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; is true, so select this transition (click on the arrow connecting the state &lt;code class=&quot;highlighter-rouge&quot;&gt;Any State&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt;) and in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Conditions&lt;/code&gt; list on inspector add the &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; equals &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;WalkForward condition defined &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward condition defined&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Click the &lt;code class=&quot;highlighter-rouge&quot;&gt;reset&lt;/code&gt; to auto fit the exit and transition time:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;reseting the transition settings &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;reseting the transition settings&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Repeat the same steps as above for the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;, but use &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; as the value for &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;animation base layer &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation base layer&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Play&lt;/code&gt; button to test the animation states. When you click on &lt;code class=&quot;highlighter-rouge&quot;&gt;WALK / FORWARD&lt;/code&gt; the robot starts to walk, when you click it again the robot stops to walk.&lt;/p&gt;
@@ -153,7 +162,8 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;only upper body &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;only upper body&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;creating-a-upper-body-animation-layer&quot;&gt;Creating a upper body animation layer&lt;/h3&gt;
@@ -161,7 +171,8 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;the new layer created with the mask &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the new layer created with the mask&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Change the &lt;code class=&quot;highlighter-rouge&quot;&gt;Weight&lt;/code&gt; property to 1 and set the Mask to the UpperBody Avatar Mask. Keep the &lt;code class=&quot;highlighter-rouge&quot;&gt;Blending&lt;/code&gt; as override.&lt;/p&gt;
@@ -171,7 +182,8 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;upper body animation layer &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;upper body animation layer&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;testing-the-animations&quot;&gt;Testing the animations&lt;/h4&gt;
@@ -192,7 +204,8 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;ShootSingle parameter created &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;ShootSingle parameter created&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;We want to activate the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Shoot_single&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt; is true, so select this transition (click on the arrow connecting the state &lt;code class=&quot;highlighter-rouge&quot;&gt;Any State&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Shoot_single&lt;/code&gt;) and in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Conditions&lt;/code&gt; list on inspector add the &lt;code class=&quot;highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt; equals  &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;.&lt;/p&gt;
@@ -211,7 +224,8 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge.png &quot; /&gt;
       &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;the remaining actions to the challenge &lt;/span&gt;&lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the remaining actions to the challenge&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt; 	 	 
 To implement these actions you need to do almost the same thing we did in this tutorial so far, just using another animation clips, transitions and parameters.&lt;/p&gt;
 

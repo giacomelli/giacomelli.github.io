@@ -132,7 +132,8 @@ In this package, there are 10 animation clips:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">animation clips available on Sci Fi Warrior PBR HP </span></center>
+<center><span style="font-style:italic; font-size:small"><p>animation clips available on Sci Fi Warrior PBR HP</p>
+</span></center>
 <p><br /></p>
 
 <p>All those clips are animations for full body. So, when you play them:</p>
@@ -141,14 +142,16 @@ In this package, there are 10 animation clips:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">the robot stands idle with the gun in the middle of his body </span></center>
+<center><span style="font-style:italic; font-size:small"><p>the robot stands idle with the gun in the middle of his body</p>
+</span></center>
 <p><br /></p>
 
 <p><strong>WalkForward_Shoot</strong></p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">the robot walk forward and shoot </span></center>
+<center><span style="font-style:italic; font-size:small"><p>the robot walk forward and shoot</p>
+</span></center>
 <p><br /></p>
 
 <div class="externalref"><p>You can see all the animations available on the Sci Fi Warrior PBR HP package in this video <a href="https://www.youtube.com/watch?v=fNzBdYhm3Gk">https://www.youtube.com/watch?v=fNzBdYhm3Gk</a></p>
@@ -199,7 +202,8 @@ In this package, there are 10 animation clips:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">Starter project running: just HUD </span></center>
+<center><span style="font-style:italic; font-size:small"><p>Starter project running: just HUD</p>
+</span></center>
 <p><br /></p>
 
 <h2 id="creating-the-animation-controller">Creating the Animation Controller</h2>
@@ -209,7 +213,8 @@ In this package, there are 10 animation clips:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">Animator window showing the animation controller created </span></center>
+<center><span style="font-style:italic; font-size:small"><p>Animator window showing the animation controller created</p>
+</span></center>
 <p><br /></p>
 
 <p>All animation layers, nodes and transitions for this tutorial will be created inside this animation controller.</p>
@@ -227,28 +232,32 @@ In this package, there are 10 animation clips:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">WalkForward parameter created </span></center>
+<center><span style="font-style:italic; font-size:small"><p>WalkForward parameter created</p>
+</span></center>
 <p><br /></p>
 
 <p>We want to activate the transition from <code class="highlighter-rouge">Any state</code> to <code class="highlighter-rouge">WalkForward_Shoot</code> when <code class="highlighter-rouge">WalkForward</code> is true, so select this transition (click on the arrow connecting the state <code class="highlighter-rouge">Any State</code> to <code class="highlighter-rouge">WalkForward_Shoot</code>) and in the <code class="highlighter-rouge">Conditions</code> list on inspector add the <code class="highlighter-rouge">WalkForward</code> equals <code class="highlighter-rouge">true</code>:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">WalkForward condition defined </span></center>
+<center><span style="font-style:italic; font-size:small"><p>WalkForward condition defined</p>
+</span></center>
 <p><br /></p>
 
 <p>Click the <code class="highlighter-rouge">reset</code> to auto fit the exit and transition time:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">reseting the transition settings </span></center>
+<center><span style="font-style:italic; font-size:small"><p>reseting the transition settings</p>
+</span></center>
 <p><br /></p>
 
 <p>Repeat the same steps as above for the transition from <code class="highlighter-rouge">WalkForward_Shoot</code> to <code class="highlighter-rouge">Idle_GunMiddle</code>, but use <code class="highlighter-rouge">false</code> as the value for <code class="highlighter-rouge">WalkForward</code>.</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">animation base layer </span></center>
+<center><span style="font-style:italic; font-size:small"><p>animation base layer</p>
+</span></center>
 <p><br /></p>
 
 <p>Hit the <code class="highlighter-rouge">Play</code> button to test the animation states. When you click on <code class="highlighter-rouge">WALK / FORWARD</code> the robot starts to walk, when you click it again the robot stops to walk.</p>
@@ -262,7 +271,8 @@ In this package, there are 10 animation clips:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">only upper body </span></center>
+<center><span style="font-style:italic; font-size:small"><p>only upper body</p>
+</span></center>
 <p><br /></p>
 
 <h3 id="creating-a-upper-body-animation-layer">Creating a upper body animation layer</h3>
@@ -270,7 +280,8 @@ In this package, there are 10 animation clips:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">the new layer created with the mask </span></center>
+<center><span style="font-style:italic; font-size:small"><p>the new layer created with the mask</p>
+</span></center>
 <p><br /></p>
 
 <p>Change the <code class="highlighter-rouge">Weight</code> property to 1 and set the Mask to the UpperBody Avatar Mask. Keep the <code class="highlighter-rouge">Blending</code> as override.</p>
@@ -280,7 +291,8 @@ In this package, there are 10 animation clips:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">upper body animation layer </span></center>
+<center><span style="font-style:italic; font-size:small"><p>upper body animation layer</p>
+</span></center>
 <p><br /></p>
 
 <h4 id="testing-the-animations">Testing the animations</h4>
@@ -301,7 +313,8 @@ In this package, there are 10 animation clips:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">ShootSingle parameter created </span></center>
+<center><span style="font-style:italic; font-size:small"><p>ShootSingle parameter created</p>
+</span></center>
 <p><br /></p>
 
 <p>We want to activate the transition from <code class="highlighter-rouge">Any state</code> to <code class="highlighter-rouge">Shoot_single</code> when <code class="highlighter-rouge">ShootSingle</code> is true, so select this transition (click on the arrow connecting the state <code class="highlighter-rouge">Any State</code> to <code class="highlighter-rouge">Shoot_single</code>) and in the <code class="highlighter-rouge">Conditions</code> list on inspector add the <code class="highlighter-rouge">ShootSingle</code> equals  <code class="highlighter-rouge">true</code>.</p>
@@ -320,7 +333,8 @@ In this package, there are 10 animation clips:</p>
 <center>
         <img class="lazy" src="/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge.png " />
       </center>
-<center><span style="font-style:italic; font-size:small">the remaining actions to the challenge </span></center>
+<center><span style="font-style:italic; font-size:small"><p>the remaining actions to the challenge</p>
+</span></center>
 <p><br /> 	 	 
 To implement these actions you need to do almost the same thing we did in this tutorial so far, just using another animation clips, transitions and parameters.</p>
 

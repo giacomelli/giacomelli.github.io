@@ -4,6 +4,34 @@
     
     
     {
+      "title"    : "A Sorting Layer Debugger for Unity",
+      "category" : "Lab",
+      "tags"     : "unity3d, unitytips, sorting layers, 2D, editor window, gamedev, open source",
+      "url"      : "/a-sorting-layer-debugger-for-unity/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Unity3D ScenePreview inspector",
+      "category" : "Lab",
+      "tags"     : "unity3d, unitytips, custom editor, gamedev, open source",
+      "url"      : "/unity3d-scenepreview-inspector/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Testing js-dos",
+      "category" : "Lab",
+      "tags"     : "dosbox, javascript",
+      "url"      : "/testing-js-dos/",
+      "author"   : ""
+    } 
+     
+    ,
+  
+    
+    
+    {
       "title"    : "Unity and Game Development links (May 24th 2019)",
       "category" : "News",
       "tags"     : "unity3d, gamedev",
@@ -80,14 +108,6 @@
       "category" : "News",
       "tags"     : "geneticsharp, dotnet, release",
       "url"      : "/GeneticSharp-v1.2.0-sequence-mutations/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "Unity3D ScenePreview inspector",
-      "category" : "News",
-      "tags"     : "unity3d, gamedev, open source",
-      "url"      : "/unity3d-scenepreview-inspector/",
       "author"   : ""
     } ,
     
@@ -280,18 +300,6 @@
       "category" : "Article",
       "tags"     : "dotnet, csharp, linq to entities",
       "url"      : "/why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query/",
-      "author"   : ""
-    } 
-     
-    ,
-  
-    
-    
-    {
-      "title"    : "Testing js-dos",
-      "category" : "Lab",
-      "tags"     : "dosbox, javascript",
-      "url"      : "/testing-js-dos/",
       "author"   : ""
     } 
      

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - unitytips</title>
+ <link href="//tags/unitytips/index.xml" rel="self"/>
+ <link href="/tag/unitytips.html"/>
+ <updated>2019-05-28T06:36:12-03:00</updated>
+ <id>/tag/unitytips.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>A Sorting Layer Debugger for Unity</title>
+   <link href="//a-sorting-layer-debugger-for-unity/"/>
+   <updated>2019-05-28T00:00:00-03:00</updated>
+   <id>//a-sorting-layer-debugger-for-unity</id>
+   <content type="html">&lt;p&gt;While I was reading about &lt;a href=&quot;https://docs.unity3d.com/Manual/2DSorting.html&quot;&gt;2D Sorting&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/Manual/class-TagManager.html#SortingLayers&quot;&gt;Sorting Layers&lt;/a&gt; on Unity Manual I came up with the idea of creating a custom editor window to see which sorting layer the sprites on the scene are using.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/e_WaZrGMPdM &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;In the video above you can see the Sorting Layer Debugger been used in the &lt;a href=&quot;https://assetstore.unity.com/packages/essentials/tutorial-projects/2d-platformer-11228&quot;&gt;Unity 2D Platformer&lt;/a&gt; sample project&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/141742c3175476f03ca2437c7b35fd88.js?file=SortingLayerDebugger.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;You can open the debugger window through the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Window / Sorting Layer Debugger&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The debugger can be enabled in the edit or the play mode and it will list the Sorting Layers and the number of game objects using each layer. You can hide/show the game objects of each layer by clicking on its check box.&lt;/p&gt;
+
+&lt;p&gt;The name of Sorting Layer been used is showing in the top of each game object in the scene view.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Unity3D ScenePreview inspector</title>
+   <link href="//unity3d-scenepreview-inspector/"/>
+   <updated>2017-11-26T00:00:00-02:00</updated>
+   <id>//unity3d-scenepreview-inspector</id>
+   <content type="html">&lt;p&gt;I’m working in a new game prototype and in this process I was creating some experimental levels to test the mechanics, but by the name of scene I was having dificult to remember which mechanic the level was about and I had to open each level to discover that one was looking for, so I thought: it will be cool have an image preview of the scene when we select the file in hierarchy.&lt;/p&gt;
+
+&lt;p&gt;I google and didn’t find any project or asset in Asset Store that already did something like this (please, let me know if you know a similar tool) and, well, I prefer code something, than google something, then I coded a little inspector, that I named as ScenePreview:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a “Editor” folder.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/f74a23107fe862ae7501002ac856f932.js?file=ScenePreview.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;After this, open it and edit the line below:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Change this to a folder in your project. &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Maybe the folder where your scenes are located. Remember to create a subfolder called &quot;Resources&quot; inside of it.&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PreviewFolders&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;_scenes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;If you select any scene in the hierarchy you will see a message like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“There is no image preview for scene ‘’ at ‘’. Please play the scene on editor and image preview will be captured automatically.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So, play the scene on editor and the image preview will be taken, when you select the scene file again you see the preview.&lt;/p&gt;
+
+&lt;p&gt;That’s it! I hope this inspector can be useful to you too.&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>
