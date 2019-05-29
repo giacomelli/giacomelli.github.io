@@ -3,11 +3,63 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2019-05-28T06:36:12-03:00</updated>
+ <updated>2019-05-29T15:02:54-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Publishing WebJobs with Azure Pipelines</title>
+   <link href="//publishing-webjobs-with-azure-pipelines/"/>
+   <updated>2019-05-29T00:00:00-03:00</updated>
+   <id>//publishing-webjobs-with-azure-pipelines</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-US/azure/app-service/webjobs-sdk-get-started&quot;&gt;Azure WebJobs&lt;/a&gt; are a great way to execute background process.&lt;/p&gt;
+
+&lt;h1 id=&quot;scenario&quot;&gt;Scenario&lt;/h1&gt;
+&lt;p&gt;In last days I’ve created a &lt;a href=&quot;https://azure.microsoft.com/pt-br/services/devops/pipelines/&quot;&gt;Azure Pipelines&lt;/a&gt; that publish WebJobs, but in our specific case our WebJobs were not being published to &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/wwwroot/App_Data/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;, because “reasons” our root web app is using ‘/site/www’ as folder. So, you should expect that the new folder to deploy WebJobs is &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/www/App_Data/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;, but &lt;code class=&quot;highlighter-rouge&quot;&gt;NO&lt;/code&gt;, the new folder is &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The big problem with the above behaviour is that &lt;code class=&quot;highlighter-rouge&quot;&gt;WebDeploy&lt;/code&gt; via VS or  &lt;code class=&quot;highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; task via Azure Pipeline will still try to deploy the webjobs to the folder inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/www/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;My best suspects are these lines on &lt;a href=&quot;https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV3/azurermwebappdeployment.ts#L73&quot;&gt;AzureRmWebAppDeployment@3&lt;/a&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/1d47b7bf7e9a2b3806dbd0b0332743d2.js?file=AzureRmWebAppDeployment-lines.ts&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; just check the physical path configured on Azure when we defined a &lt;code class=&quot;highlighter-rouge&quot;&gt;VirtualApplicatoin&lt;/code&gt; parameter, but in our case it is not a virtual application, but it is a different folder than &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/wwwroot/&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;externalref&quot;&gt;&lt;p&gt;in &lt;a href=&quot;https://github.com/projectkudu/kudu/wiki/WebJobs&quot;&gt;Kudu wiki&lt;/a&gt; there is some explanation about the webjobs folders.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
+&lt;p&gt;I used the FtpUpload task to publish the WebJobs binaries to the &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt; and two instances of &lt;code class=&quot;highlighter-rouge&quot;&gt;AzureAppServiceManage&lt;/code&gt; task to stop and start the jobs:&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;you’ll need to replace the values between &amp;lt;..&amp;gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;variables&lt;/code&gt; section to specific values of your project&lt;/p&gt;
+&lt;/div&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/1d47b7bf7e9a2b3806dbd0b0332743d2.js?file=azure-pipelines.yml&quot;&gt; &lt;/script&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;I omitted some tasks from the original azure-pipelines.yml for simplicity. The original has a lot of others taks, as unit tests and web api publishing&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;extra-points-graceful-shutdown&quot;&gt;Extra points (graceful shutdown)&lt;/h1&gt;
+&lt;p&gt;Now that you’ve automate your WebJobs publishing, is a good idea improve your jobs to check if Azure has requested a shutdown. You can do this taks through the &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library#cancellation-tokens&quot;&gt;CancellationToken&lt;/a&gt; parameter passed to the job.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A function can accept a CancellationToken parameter, which enables the operating system to notify your code when the function is about to be terminated. You can use this notification to make sure the function doesn’t terminate unexpectedly in a way that leaves data in an inconsistent state.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/ftp-upload?view=azure-devops&quot;&gt;FTP Upload task&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops&quot;&gt;Azure App Service Manage task&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.amitapple.com/post/2014/05/webjobs-graceful-shutdown&quot;&gt;WebJobs Graceful Shutdown&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&amp;amp;tabs=schema&quot;&gt;YAML schema reference&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&amp;amp;tabs=yaml&quot;&gt;Predefined variables&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>dotnet new templates for GeneticSharp</title>
