@@ -3,11 +3,215 @@
  <title>Diego Giacomelli - editor-window</title>
  <link href="//tags/editor-window/index.xml" rel="self"/>
  <link href="/tag/editor-window.html"/>
- <updated>2019-05-29T15:02:54-03:00</updated>
+ <updated>2019-05-30T07:21:03-03:00</updated>
  <id>/tag/editor-window.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Coding an EditorWindow to create default animations from sprites</title>
+   <link href="//coding-an-editorwindow-to-create-default-animations-from-sprites/"/>
+   <updated>2019-05-30T00:00:00-03:00</updated>
+   <id>//coding-an-editorwindow-to-create-default-animations-from-sprites</id>
+   <content type="html">&lt;p&gt;In this tutorial, we will learn how to coding an &lt;a href=&quot;https://docs.unity3d.com/Manual/editor-EditorWindows.html&quot;&gt;EditorWindow&lt;/a&gt; that creates &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationClips.html&quot;&gt;Animation Clips&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimatorOverrideController.html&quot;&gt;Animator Override Controller&lt;/a&gt; from &lt;a href=&quot;https://docs.unity3d.com/Manual/Sprites.html&quot;&gt;Sprites&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Create animation clips from sprites is quite a simple operation to perform on Unity:&lt;/p&gt;
+&lt;center&gt;&lt;video width=&quot;640&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;
+          &lt;source src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/create-animation-clip-from-sprite.mp4 &quot; type=&quot;video/mp4&quot; /&gt;
+          Your browser does not support the video tag.
+       &lt;/video&gt;&lt;/center&gt;
+
+&lt;p&gt;But in many cases, you need to repeat this operation over and over again to create other animations to the same character, like clips for idle, walk up, walk down and walk horizontal animations.&lt;/p&gt;
+
+&lt;p&gt;When you need to this for only one character, there is no problem, but imagine you need to create the same 4 animation clip for dozens (maybe hundreds) of characters. Besides being a boring operation, you probably will make some mistake and creating some wrong clip. In cases like that, could be a good option to create your own EditorWindow to automate those operations.&lt;/p&gt;
+
+&lt;h2 id=&quot;editorwindow&quot;&gt;EditorWindow&lt;/h2&gt;
+&lt;p&gt;To start, let’s see what Unity Manual says about &lt;a href=&quot;https://docs.unity3d.com/Manual/editor-EditorWindows.html&quot;&gt;EditorWindow&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You can create any number of custom windows in your app. These behave just like the Inspector, Scene or any other built-in ones. This is a great way to add a user interface to a sub-system for your game.&lt;/p&gt;
+
+  &lt;p&gt;Making a custom Editor Window involves the following simple steps:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Create a script that derives from EditorWindow.&lt;/li&gt;
+    &lt;li&gt;Use code to trigger the window to display itself.&lt;/li&gt;
+    &lt;li&gt;Implement the GUI code for your tool.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;During this tutorial we will create a class called DefaultAnimationsEditorWindow that derives from EditorWindow, we will add a menu item to Unity Editor to allow call our EditorWindow and we will implement the GUI for the window.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, we will implement the code that allows us to create Animation Clips and Animation Override Controller from sprites.&lt;/p&gt;
+
+&lt;p&gt;The idea behind DefaultAnimationsEditorWindow is that when you have a bunch o characters using the same kind of animations, they used the same structure of sprite sheets, so you can create the animations based on the sprites indexes on sprite sheet texture.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;similar sprites sheets from Phantasy Star IV (Alys, Chaz and Demi). Sprites ripped by Ultimecia from &lt;a href=&quot;https://www.spriters-resource.com/genesis_32x_scd/ps4&quot;&gt;The Spriters Resource&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Starting with sprite to walk down and ending with the last sprite of walk horizontal, we have 9 sprites and in all sprite sheets the sprites indexes are the same:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Idle: index 1&lt;/li&gt;
+  &lt;li&gt;Walk down: indexes 0, 1 and 2.&lt;/li&gt;
+  &lt;li&gt;Walk up: indexes 3, 4 and 5.&lt;/li&gt;
+  &lt;li&gt;Walk horizontal: indexes 6, 7 and 9.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&lt;/a&gt;. To start the tutorial you need to fork, clone or download the repository.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Open the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;default-animations-editor-window-starter&lt;/code&gt; on Unity.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This starter project has an initial setup and assets to allow us to focus on the learning about how to code the EditorWindow.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Open the scene &lt;code class=&quot;highlighter-rouge&quot;&gt;_Tutorial/Scenes/TutorialScene&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Play&lt;/code&gt; button. You should see a screen like this:&lt;/p&gt;
+
+&lt;center&gt;&lt;video width=&quot;640&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;
+          &lt;source src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/starter-project-play-mode.mp4 &quot; type=&quot;video/mp4&quot; /&gt;
+          Your browser does not support the video tag.
+       &lt;/video&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;the-editor-window-code-organization&quot;&gt;The editor window code organization&lt;/h2&gt;
+
+&lt;p&gt;We will organize our DefaultAnimationsEditorWindow in 3 main classes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;DefaultAnimationsEditorWindow&lt;/strong&gt;: where is the menu and GUI for our editor window.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;DefaultAnimationsSettings&lt;/strong&gt;: this is our &lt;a href=&quot;https://docs.unity3d.com/Manual/class-ScriptableObject.html&quot;&gt;ScriptableObject&lt;/a&gt; to save our settings defined on DefaultAnimationsEditorWindow.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;DefaultAnimationsUtility&lt;/strong&gt;: here we will implement the code used by our DefaultAnimationsEditorWindow to perform an operation. Put the operation code in a separated class not bounded by the GUI allow us to use these operations in any other script. This way to work is similar to what Unity itself use in some editor operations, like: &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/AnimationUtility.html&quot;&gt;AnimationUtility&lt;/a&gt;, &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PrefabUtility.html&quot;&gt;PrefabUtility&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Sprites.SpriteUtility.html&quot;&gt;SpriteUtility&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Besides the above classes, there are some other extension method classes on the folder &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites/tree/master/default-animations-editor-window-complete/Assets/_Tutorial/Editor/DefaultAnimations/Extensions&quot;&gt;Extensions&lt;/a&gt; that are self-explanatory and I won’t talk in details, but you can check them and read their code documentation to a better understanding.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;defaultanimationseditorwindow&quot;&gt;DefaultAnimationsEditorWindow&lt;/h2&gt;
+&lt;p&gt;In the code bellow, we define the menu for the window through the method &lt;code class=&quot;highlighter-rouge&quot;&gt;ShowWindow&lt;/code&gt; and the attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Default Animations menu item&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;At the &lt;code class=&quot;highlighter-rouge&quot;&gt;OnEnable&lt;/code&gt; we read the settings from our ScriptableObject DefaultAnimationsSettings.&lt;/p&gt;
+
+&lt;p&gt;The next 3 methods just draw the components to the editor window GUI.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;editor window&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;Open &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites/blob/master/default-animations-editor-window-complete/Assets/_Tutorial/Editor/DefaultAnimations/DefaultAnimationsEditorWindow.cs &quot;&gt;DefaultAnimationsEditorWindow.cs &lt;/a&gt;hosted with ❤ by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;h2 id=&quot;defaultanimationssettings&quot;&gt;DefaultAnimationsSettings&lt;/h2&gt;
+&lt;p&gt;There are few things to talk about this class because it is just an ordinary ScriptableObject with a couple of properties that will be serialized and used by the DefaultAnimationsUtility class, a singleton to make easier to access the settings, two methods to load/create the asset and a subclass to sprite mappings.&lt;/p&gt;
+
+&lt;p&gt;The most important code of this class is the property &lt;code class=&quot;highlighter-rouge&quot;&gt;SpriteIndexes&lt;/code&gt; that figure out what are the sprite indexes from the sprite sheet that ClipToOverride is using.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;SpriteIndexes will be used by DefaultAnimationsUtility.CreateAnimationClips to know what sprites should be used to create the new animations based on the DefaultAnimationsSettings.AnimationsMapping.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;Open &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites/blob/master/default-animations-editor-window-complete/Assets/_Tutorial/Editor/DefaultAnimations/DefaultAnimationsSettings.cs &quot;&gt;DefaultAnimationsSettings.cs &lt;/a&gt;hosted with ❤ by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;h2 id=&quot;defaultanimationsutility&quot;&gt;DefaultAnimationsUtility&lt;/h2&gt;
+&lt;p&gt;In this class is where the heart of our editor window resides.&lt;/p&gt;
+
+&lt;p&gt;There are 2 important methods here: CreateAnimationClips and CreateAnimatorOverride.&lt;/p&gt;
+
+&lt;h3 id=&quot;createanimationclips&quot;&gt;CreateAnimationClips&lt;/h3&gt;
+&lt;p&gt;It iterates through the &lt;code class=&quot;highlighter-rouge&quot;&gt;AnimationsMappings&lt;/code&gt; defined in the editor window (saved on DefaultAnimationsSettings.AnimationsMapping), for each mapping it will call the method &lt;code class=&quot;highlighter-rouge&quot;&gt;CreateAnimationClip&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;CreateAnimationClip&lt;/code&gt; creates a new &lt;code class=&quot;highlighter-rouge&quot;&gt;AnimationClip&lt;/code&gt; (or load if already exists one with the same name), copying the frame rate and wrap mode from the &lt;code class=&quot;highlighter-rouge&quot;&gt;ClipToOverride&lt;/code&gt; defined in the mapping. After, if wrap mode is a loop, it uses the &lt;code class=&quot;highlighter-rouge&quot;&gt;AnimationUtility&lt;/code&gt; to set the loop time to the clip settings (through the extension methods).&lt;/p&gt;
+
+&lt;p&gt;Now is the most tricky part of this class, we need to create an &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorCurveBinding&lt;/code&gt; for the sprite and get the &lt;code class=&quot;highlighter-rouge&quot;&gt;ObjectReferenceKeyframe&lt;/code&gt; from the &lt;code class=&quot;highlighter-rouge&quot;&gt;ClipToOverride&lt;/code&gt; and create new &lt;code class=&quot;highlighter-rouge&quot;&gt;ObjectReferenceKeyframe&lt;/code&gt; to our new keyframes (&lt;code class=&quot;highlighter-rouge&quot;&gt;AnimationClipExtensions&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;createanimatoroverride&quot;&gt;CreateAnimatorOverride&lt;/h2&gt;
+&lt;p&gt;In this method we create &lt;code class=&quot;highlighter-rouge&quot;&gt;AnimatorOverrideController&lt;/code&gt; that will override each clip from the &lt;code class=&quot;highlighter-rouge&quot;&gt;DefaultAnimationsSettings.AnimatorController&lt;/code&gt; by the ClipToOverride of each mapping defined on &lt;code class=&quot;highlighter-rouge&quot;&gt;DefaultAnimationsSettings.AnimationsMapping&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;AnimatorOverrideControllerExtensions&lt;/code&gt;).&lt;/p&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;Open &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites/blob/master/default-animations-editor-window-complete/Assets/_Tutorial/Editor/DefaultAnimations/DefaultAnimationsUtility.cs &quot;&gt;DefaultAnimationsUtility.cs &lt;/a&gt;hosted with ❤ by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Copy &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites/tree/master/default-animations-editor-window-complete/Assets/_Tutorial/Editor&quot;&gt;this whole Editor folder&lt;/a&gt; to your &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/_Tutorial&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;this folder is available on your local clone of the repository inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;default-animations-editor-window-complete/Assets/_Tutorial&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Delete the DefaultAnimationsSettings scriptable object instance.&lt;/p&gt;
+
+&lt;p&gt;Open the editor window on menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Windows / Default Animations&lt;/code&gt; and configure it as showing in the video below:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/5Hk8awWCtSs &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;creating-and-using-the-default-animations&quot;&gt;Creating and using the default animations&lt;/h2&gt;
+&lt;p&gt;Drag all the sprite sheets (textures) from folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/_Tutorial/Sprites&lt;/code&gt; to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Spritesheets&lt;/code&gt; field and click on &lt;code class=&quot;highlighter-rouge&quot;&gt;Create animations&lt;/code&gt; button:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/49KKfR081Po &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;challenge&quot;&gt;Challenge&lt;/h2&gt;
+&lt;p&gt;Try to change de editor window to allow more the one set of default animations. One way to this is by creating another ScriptableObject to save the current selected &lt;code class=&quot;highlighter-rouge&quot;&gt;DefaultAnimationsSettings&lt;/code&gt; asset.&lt;/p&gt;
+
+&lt;p&gt;If you have any doubt how to implement any part of this challenge, feel free to ask on this post comments or &lt;a href=&quot;about&quot;&gt;send me a message&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;tutorial repository&lt;/a&gt; has two main folders:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;default-animations-editor-window-starter&lt;/strong&gt;: the one you used to make this tutorial.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;default-animations-editor-window-complete&lt;/strong&gt;: the whole solution with all scripts and assets implemented. Use this one, in case you get stuck in any item on the challenge.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this tutorial, we learned how to coding a custom editor window to create a set of default animation clips and animator override controller.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt; and &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>A Sorting Layer Debugger for Unity</title>
