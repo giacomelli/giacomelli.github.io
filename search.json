@@ -4,6 +4,18 @@
     
     
     {
+      "title"    : "Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects",
+      "category" : "Labs",
+      "tags"     : "unity3d, editor window, asset post processor, gamedev, open source",
+      "url"      : "/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects/",
+      "author"   : ""
+    } 
+     
+    ,
+  
+    
+    
+    {
       "title"    : "Coding an EditorWindow to create default animations from sprites",
       "category" : "Tutorial",
       "tags"     : "unity3d, editor window, animation clip, animator override controller, gamedev, open source",

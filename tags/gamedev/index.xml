@@ -3,11 +3,50 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2019-05-31T06:21:38-03:00</updated>
+ <updated>2019-05-31T07:29:13-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects</title>
+   <link href="//using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects/"/>
+   <updated>2019-05-31T00:00:00-03:00</updated>
+   <id>//using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects</id>
+   <content type="html">&lt;p&gt;I created an AssetPostProcessor and an EditorWindow to validate if assets are in the right folder and help the Unity projects to keep organized.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;There are many ways to structure folders in a Unity project, but most common ones are cited by the Unity Learn tutorial: &lt;a href=&quot;https://unity3d.com/pt/learn/tutorials/topics/tips/large-project-organisation&quot;&gt;Large Project Organisation&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To keep the project easy to navigate, avoid placing files in the root Assets folder. Use subfolders. How you organize those subfolders is generally decided by your projects but the two main ways to do it are:&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;A folder for each type of asset and subfolders in them per objects&lt;/strong&gt;, zones (For example Assets/Materials, Assets/Prefabs, with subfolders Assets/Material/Level1 or Assets/Prefabs/Enemies)&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;A folder per objects or zones&lt;/strong&gt; (Such as Assets/Level1/Enemies/Archer, Assets/Shared/UI, Assets/Forest/Trees) with all assets related to those in the folders (Assets/Forest/Trees/BigTree.fbx, Assets/Forest/Trees/Tree.mat, Assets/Forest/Trees/Tree_Bark.jpg).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;With big teams or even with the small ones is easy that some assets will be placed in wrong folders. To help to identify and keep those projects folders organized I coded a couple of editor scripts that I called &lt;code class=&quot;highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Another advantage of keeping assets organized in their proper folders is that you can &lt;a href=&quot;https://docs.unity3d.com/Manual/DefaultPresetsByFolder.html&quot;&gt;apply defaults presets to assets by folder&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;p&gt;To setup the &lt;code class=&quot;highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/2d561e29beadab641a4f8b56954f53f7&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
+
+&lt;h2 id=&quot;using&quot;&gt;Using&lt;/h2&gt;
+&lt;p&gt;You can open the window through the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Window / Folder organizer&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Just configure the folders to ignore, if should run the validation every time an asset is imported and defined a regular expression to find the assets and what is the expected folder.&lt;/p&gt;
+
+&lt;p&gt;In the video below you can see in more details how to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt; to validate if your assets are in the right folders:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/GU6jWl6MpdM &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Coding an EditorWindow to create default animations from sprites</title>
