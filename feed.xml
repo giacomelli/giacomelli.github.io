@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-05-31T07:29:13-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects</title><link href="http://diegogiacomelli.com.br/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects/" rel="alternate" type="text/html" title="Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects" /><published>2019-05-31T00:00:00-03:00</published><updated>2019-05-31T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects/">&lt;p&gt;I created an AssetPostProcessor and an EditorWindow to validate if assets are in the right folder and help the Unity projects to keep organized.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-03T09:05:27-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (June 3th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-3th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 3th 2019)" /><published>2019-06-03T00:00:00-03:00</published><updated>2019-06-03T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-3th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-3th-2019/">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Nick Davis&lt;/strong&gt; wrote a post about how Unity recently teamed up with Autodesk and Texel Logic to create a mixed-reality experience to illustrate and understand the complex nature of airflow passing over and around an IndyCar (&lt;a href=&quot;https://blogs.unity3d.com/2019/05/24/simulating-high-speed-indycars-in-ar/&quot;&gt;Simulating high-speed IndyCars in AR&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt;, online evangelist for Unity, published a video showing his techniques during the level design process (&lt;a href=&quot;https://www.youtube.com/watch?v=oKzX-wS4_so&quot;&gt;How I made a Village in Unity in 1 Hour!&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Joyce[MinionsArt]&lt;/strong&gt; released another shader tutorial on Twitter (&lt;a href=&quot;https://twitter.com/minionsart/status/1132593681452683264&quot;&gt;Using particle lifetime to create a fire system&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Keen Claassen&lt;/strong&gt; celebrated the enter of &lt;code class=&quot;highlighter-rouge&quot;&gt;Motion Matching for Unity&lt;/code&gt; on Asset Store (&lt;a href=&quot;https://www.youtube.com/watch?v=hiWvExOyBgQ&quot;&gt;Motion Matching for Unity (MxM) - Trailer&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;can produce highly fluid and responsive animations with the need for state machines or complex logic.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Chandra Foxglove&lt;/strong&gt; introduced the Terrain Tools package (preview) for Unity 2019.1 (&lt;a href=&quot;https://blogs.unity3d.com/2019/05/28/speed-up-your-work-with-the-new-terrain-tools-package&quot;&gt;Speed up your work with the new Terrain Tools Package&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;This package contains over 15 new sculpting tools, as well as a utility toolbox to streamline terrain workflow.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Making of The Heretic: Digital Humans and VFX Characters&lt;/strong&gt; is available through a &lt;a href=&quot;https://docs.google.com/presentation/d/1aiBXsNu-D9ZfpBNqcs08w7ToNJ2e7jgyoyfNUXSCWW8/edit#slide=id.g552bb7139f_6_1117&quot;&gt;Google Docs presentation&lt;/a&gt;.
+    &lt;blockquote&gt;
+      &lt;p&gt;Now the HD Render Pipeline and Post Processing are quite solid, and we were able to put much more effort into building on top of that foundation. Among other things, we put some effort into human faces and vfx-heavy characters.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The evangelist &lt;strong&gt;Keijiro Takahashi&lt;/strong&gt; released a GitHub repository with an example that shows how to connect RealSense depth camera to Unity VFX Graph (&lt;a href=&quot;https://github.com/keijiro/Rsvfx&quot;&gt;Rsvfx&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Martin Best&lt;/strong&gt; posted about the official Unity Editor for Linux (&lt;a href=&quot;&quot;&gt;Announcing the Unity Editor for Linux&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;We expect it to be fully supported by Unity 2019.3.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Anis Benyoub&lt;/strong&gt; wrote about &lt;a href=&quot;https://auzaiffe.files.wordpress.com/2019/05/digital-dragons-leveraging-ray-tracing-hardware-acceleration-in-unity.pdf&quot;&gt;Leveraging Ray Tracing
+Hardware Acceleration
+In Unity&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Elena Nizhnik&lt;/strong&gt; made a post listing the most outstanding #madewithunity projects from last days (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/01/community-component-soft-body-physics-shaders-that-deform-space-normans-island-and-our-steam-wishlist&quot;&gt;Community Component – Soft body physics, shaders that deform space, Norman’s Island and our Steam wishlist&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; again, now with a video tutorial about the new 2D lights in Unity  2019.2 (&lt;a href=&quot;https://www.youtube.com/watch?v=ZJvCphxCGJU&quot;&gt;NEW 2D LIGHTS IN UNITY 2019.2&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html">Nick Davis wrote a post about how Unity recently teamed up with Autodesk and Texel Logic to create a mixed-reality experience to illustrate and understand the complex nature of airflow passing over and around an IndyCar (Simulating high-speed IndyCars in AR).</summary></entry><entry><title type="html">Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects</title><link href="http://diegogiacomelli.com.br/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects/" rel="alternate" type="text/html" title="Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects" /><published>2019-05-31T00:00:00-03:00</published><updated>2019-05-31T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects/">&lt;p&gt;I created an AssetPostProcessor and an EditorWindow to validate if assets are in the right folder and help the Unity projects to keep organized.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;There are many ways to structure folders in a Unity project, but most common ones are cited by the Unity Learn tutorial: &lt;a href=&quot;https://unity3d.com/pt/learn/tutorials/topics/tips/large-project-organisation&quot;&gt;Large Project Organisation&lt;/a&gt;:&lt;/p&gt;
@@ -697,56 +739,4 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Acessem o &lt;a href=&quot;https://jogosdaqui.github.io&quot;&gt;https://jogosdaqui.github.io&lt;/a&gt; e aproveitem para conhecer mais sobre jogos os eletrônicos brasileiros.&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/11/21/jogosdaqui-um-pouco-de-historia-open-source-e-colaboracao/150-jogosdaqui.jpg &quot; /&gt;
-      &lt;/center&gt;</content><author><name></name></author><category term="jogosdaqui" /><category term="pt-br" /><category term="brasil" /><summary type="html">Muitos não sabem, mas além de programar, sempre gostei de ajudar a divulgar a indústria brasileira de desenvolvimento de jogos.</summary></entry><entry><title type="html">GeneticSharp v2.2.0 - Sudoku sample</title><link href="http://diegogiacomelli.com.br/GeneticSharp-v2.2.0-Sudoku-sample/" rel="alternate" type="text/html" title="GeneticSharp v2.2.0 - Sudoku sample" /><published>2018-11-03T00:00:00-03:00</published><updated>2018-11-03T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/GeneticSharp-v2.2.0-Sudoku%20sample</id><content type="html" xml:base="http://diegogiacomelli.com.br/GeneticSharp-v2.2.0-Sudoku-sample/">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.2.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
-
-&lt;p&gt;The additions of this version are the new whole sample and extensions showing how to use GeneticSharp to solve a Sudoku.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
-      &lt;/center&gt;
-
-&lt;p&gt;The GeneticSharp.Extensions project receive those new features:&lt;/p&gt;
-
-&lt;h1 id=&quot;multiple&quot;&gt;Multiple&lt;/h1&gt;
-&lt;h3 id=&quot;multiplechromosome&quot;&gt;MultipleChromosome&lt;/h3&gt;
-&lt;p&gt;Compound chromosome to artificially increase genetics diversity by evolving a list of chromosomes instead of just one.
-Sub-genes are inlined into a single compound list of genes.&lt;/p&gt;
-
-&lt;h3 id=&quot;multiplefitness&quot;&gt;MultipleFitness&lt;/h3&gt;
-&lt;p&gt;Fitness class that can evaluate a compound chromosome by summing over the evaluation of its sub-chromosomes.&lt;/p&gt;
-
-&lt;h1 id=&quot;sudoku&quot;&gt;Sudoku&lt;/h1&gt;
-&lt;h3 id=&quot;isudokuchromosome&quot;&gt;ISudokuChromosome:&lt;/h3&gt;
-&lt;p&gt;Represents each type of chromosome for solving a sudoku is simply required to output a list of candidate sudokus.&lt;/p&gt;
-
-&lt;h3 id=&quot;sudokuboard&quot;&gt;SudokuBoard&lt;/h3&gt;
-&lt;p&gt;A class that represents a Sudoku, fully or partially completed. 
-Holds a list of 81 int for cells, with 0 for empty cells.
-Can parse strings and files from most common formats and displays the sudoku in an easy to read format.&lt;/p&gt;
-
-&lt;h3 id=&quot;sudokucellschromosome&quot;&gt;SudokuCellsChromosome&lt;/h3&gt;
-&lt;p&gt;This simple chromosome simply represents each cell by a gene with a value between 1 and 9, accounting for the target mask if given.&lt;/p&gt;
-
-&lt;h3 id=&quot;sudokufitness&quot;&gt;SudokuFitness&lt;/h3&gt;
-&lt;p&gt;Evaluates a sudoku chromosome for completion by counting duplicates in rows, columns, boxes, and differences from the target mask.&lt;/p&gt;
-
-&lt;h3 id=&quot;sudokupermutationschromosome&quot;&gt;SudokuPermutationsChromosome&lt;/h3&gt;
-&lt;p&gt;This more elaborated chromosome manipulates rows instead of cells, and each of its 9 gene holds an integer for the index of the row’s permutation amongst all that respect the target mask.
-Permutations are computed once when a new Sudoku is encountered, and stored in a static dictionary for further reference.&lt;/p&gt;
-
-&lt;h3 id=&quot;sudokurandompermutationschromosome&quot;&gt;SudokuRandomPermutationsChromosome&lt;/h3&gt;
-&lt;p&gt;This chromosome aims at increasing genetic diversity of SudokuPermutationsChromosome, which exhibits only 9 permutation genes.
-Here, instead, an arbitrary number of Sudokus are generated where for each row, a random gene is picked amongst an arbitrary number of corresponding permutation genes.&lt;/p&gt;
-
-&lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
-&lt;p&gt;GTK# sample
-&lt;img src=&quot;https://user-images.githubusercontent.com/177389/47957137-6bff2200-df8f-11e8-8b07-a144289389a0.png&quot; alt=&quot;gtk-sudoku-sample&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
-&lt;p&gt;I would like to thanks to Jean-Sylvain Boige (@jsboige) for contributing with those great new samples and extensions and for use GeneticSharp in his &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/43#issuecomment-433662175&quot;&gt;Artificial Intelligence course in French engineering schools (course)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Take a look on the pull-request for more details about those new features: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/43&quot;&gt;New Sudoku extension and GTK# sample #43&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="dotnet" /><category term="release" /><summary type="html">The GeneticSharp v2.2.0 is out.</summary></entry></feed>
+      &lt;/center&gt;</content><author><name></name></author><category term="jogosdaqui" /><category term="pt-br" /><category term="brasil" /><summary type="html">Muitos não sabem, mas além de programar, sempre gostei de ajudar a divulgar a indústria brasileira de desenvolvimento de jogos.</summary></entry></feed>

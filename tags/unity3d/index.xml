@@ -3,11 +3,62 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2019-05-31T07:29:13-03:00</updated>
+ <updated>2019-06-03T09:05:27-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Unity and Game Development links (June 3th 2019)</title>
+   <link href="//unity-and-gamedev-links-june-3th-2019/"/>
+   <updated>2019-06-03T00:00:00-03:00</updated>
+   <id>//unity-and-gamedev-links-june-3th-2019</id>
+   <content type="html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Nick Davis&lt;/strong&gt; wrote a post about how Unity recently teamed up with Autodesk and Texel Logic to create a mixed-reality experience to illustrate and understand the complex nature of airflow passing over and around an IndyCar (&lt;a href=&quot;https://blogs.unity3d.com/2019/05/24/simulating-high-speed-indycars-in-ar/&quot;&gt;Simulating high-speed IndyCars in AR&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt;, online evangelist for Unity, published a video showing his techniques during the level design process (&lt;a href=&quot;https://www.youtube.com/watch?v=oKzX-wS4_so&quot;&gt;How I made a Village in Unity in 1 Hour!&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Joyce[MinionsArt]&lt;/strong&gt; released another shader tutorial on Twitter (&lt;a href=&quot;https://twitter.com/minionsart/status/1132593681452683264&quot;&gt;Using particle lifetime to create a fire system&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Keen Claassen&lt;/strong&gt; celebrated the enter of &lt;code class=&quot;highlighter-rouge&quot;&gt;Motion Matching for Unity&lt;/code&gt; on Asset Store (&lt;a href=&quot;https://www.youtube.com/watch?v=hiWvExOyBgQ&quot;&gt;Motion Matching for Unity (MxM) - Trailer&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;can produce highly fluid and responsive animations with the need for state machines or complex logic.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Chandra Foxglove&lt;/strong&gt; introduced the Terrain Tools package (preview) for Unity 2019.1 (&lt;a href=&quot;https://blogs.unity3d.com/2019/05/28/speed-up-your-work-with-the-new-terrain-tools-package&quot;&gt;Speed up your work with the new Terrain Tools Package&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;This package contains over 15 new sculpting tools, as well as a utility toolbox to streamline terrain workflow.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Making of The Heretic: Digital Humans and VFX Characters&lt;/strong&gt; is available through a &lt;a href=&quot;https://docs.google.com/presentation/d/1aiBXsNu-D9ZfpBNqcs08w7ToNJ2e7jgyoyfNUXSCWW8/edit#slide=id.g552bb7139f_6_1117&quot;&gt;Google Docs presentation&lt;/a&gt;.
+    &lt;blockquote&gt;
+      &lt;p&gt;Now the HD Render Pipeline and Post Processing are quite solid, and we were able to put much more effort into building on top of that foundation. Among other things, we put some effort into human faces and vfx-heavy characters.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The evangelist &lt;strong&gt;Keijiro Takahashi&lt;/strong&gt; released a GitHub repository with an example that shows how to connect RealSense depth camera to Unity VFX Graph (&lt;a href=&quot;https://github.com/keijiro/Rsvfx&quot;&gt;Rsvfx&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Martin Best&lt;/strong&gt; posted about the official Unity Editor for Linux (&lt;a href=&quot;&quot;&gt;Announcing the Unity Editor for Linux&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;We expect it to be fully supported by Unity 2019.3.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Anis Benyoub&lt;/strong&gt; wrote about &lt;a href=&quot;https://auzaiffe.files.wordpress.com/2019/05/digital-dragons-leveraging-ray-tracing-hardware-acceleration-in-unity.pdf&quot;&gt;Leveraging Ray Tracing
+Hardware Acceleration
+In Unity&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Elena Nizhnik&lt;/strong&gt; made a post listing the most outstanding #madewithunity projects from last days (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/01/community-component-soft-body-physics-shaders-that-deform-space-normans-island-and-our-steam-wishlist&quot;&gt;Community Component – Soft body physics, shaders that deform space, Norman’s Island and our Steam wishlist&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; again, now with a video tutorial about the new 2D lights in Unity  2019.2 (&lt;a href=&quot;https://www.youtube.com/watch?v=ZJvCphxCGJU&quot;&gt;NEW 2D LIGHTS IN UNITY 2019.2&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects</title>
