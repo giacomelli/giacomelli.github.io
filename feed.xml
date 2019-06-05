@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-04T06:21:18-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Using a Sprite Mask to create a flashlight effect</title><link href="http://diegogiacomelli.com.br/using-a-sprite-mask-to-create-a-flashlight-effect/" rel="alternate" type="text/html" title="Using a Sprite Mask to create a flashlight effect" /><published>2019-06-04T00:00:00-03:00</published><updated>2019-06-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-a-sprite-mask-to-create-a-flashlight-effect</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-a-sprite-mask-to-create-a-flashlight-effect/">&lt;p&gt;When I was reading about the &lt;a href=&quot;https://docs.unity3d.com/Manual/class-SpriteMask.html&quot;&gt;Sprite Mask&lt;/a&gt; on Unity Manual, I questioned my self &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;How long does it take to create a flashlight effect using the Sprite Mask?&quot;&lt;/code&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-05T10:02:27-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization" /><published>2019-06-05T00:00:00-03:00</published><updated>2019-06-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization/">&lt;p&gt;I decided to start a serie of posts about some most outstanding scientific papers and projects using GeneticSharp.&lt;/p&gt;
+
+&lt;p&gt;For this first post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;AeroVision - Aircraft Trajectories Optimization and Visualization&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The main motivation of the authors about the AeroVision was:
+&lt;em&gt;build program that represents an innovative and efficient way to
+minimize and visualize aircraft noise along simulated and real flight routes. There are no existing programs that offer both optimization and visualization of aircraft noise.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;To optimize aircraft trajectories using a genetic algorithm, AeroVision uses the &lt;a href=&quot;https://github.com/giacomelli/geneticsharp&quot;&gt;GeneticSharp&lt;/a&gt; library, which is a fast, extensible, multi-platform and multithreading C# Genetic Algorithm library that simplifies the development of applications using Genetic Algorithms.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The library supports a number of selection methods, of which the most basic option (elite selection) is recommended. The mutation method used by AeroVision is crossover, which is a commonly used setting. The stop criteria can be a fixed number of generations, which can be specified by the user.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Additionally, the user is free to define the number of chromosomes that are part of one population. The default population size is 70 chromosomes, each representing a possible trajectory in our case.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;For trajectory optimization we were able to achieve a &lt;code class=&quot;highlighter-rouge&quot;&gt;performance improvement of 84%&lt;/code&gt; by using a &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/wiki/multithreading&quot;&gt;multi-core and multi-threaded genetic algorithm&lt;/a&gt; based on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/wiki/crossovers&quot;&gt;crossover operations&lt;/a&gt;. This led to a major improvement on the workﬂow management and automation&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;authors&quot;&gt;Authors&lt;/h1&gt;
+&lt;p&gt;Elvan Kula and Hans Schouten wrote the paper as equirements for their degree of Bachelor of Science in Computer Science. The Dr. Ir. N. Dintzner (TU Delft, supervisor), Dr. ir. S. Hartjes (Client) and Dr. ir. M. Larson (Bachelor Project Coordinator) are the thesis committee.&lt;/p&gt;
+
+&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+&lt;p&gt;You can access the full paper directly on &lt;a href=&quot;http://resolver.tudelft.nl/uuid:91c8261d-a5f2-414a-9b83-2e0d6ad5b37f&quot;&gt;TUDelft library repository&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html">I decided to start a serie of posts about some most outstanding scientific papers and projects using GeneticSharp.</summary></entry><entry><title type="html">Using a Sprite Mask to create a flashlight effect</title><link href="http://diegogiacomelli.com.br/using-a-sprite-mask-to-create-a-flashlight-effect/" rel="alternate" type="text/html" title="Using a Sprite Mask to create a flashlight effect" /><published>2019-06-04T00:00:00-03:00</published><updated>2019-06-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-a-sprite-mask-to-create-a-flashlight-effect</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-a-sprite-mask-to-create-a-flashlight-effect/">&lt;p&gt;When I was reading about the &lt;a href=&quot;https://docs.unity3d.com/Manual/class-SpriteMask.html&quot;&gt;Sprite Mask&lt;/a&gt; on Unity Manual, I questioned my self &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;How long does it take to create a flashlight effect using the Sprite Mask?&quot;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;The answer is: &lt;code class=&quot;highlighter-rouge&quot;&gt;less than 2 minutes&lt;/code&gt;.&lt;/p&gt;
 
@@ -652,42 +675,4 @@ These techniques allowing us to use already existent animations and combine them
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="dotnet" /><summary type="html">Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the dotnet new command.</summary></entry><entry><title type="html">GeneticSharp v2.4.0 - New crossovers and TPL implementations</title><link href="http://diegogiacomelli.com.br/GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations/" rel="alternate" type="text/html" title="GeneticSharp v2.4.0 - New crossovers and TPL implementations" /><published>2019-01-19T00:00:00-02:00</published><updated>2019-01-19T00:00:00-02:00</updated><id>http://diegogiacomelli.com.br/GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations</id><content type="html" xml:base="http://diegogiacomelli.com.br/GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations/">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.4.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
-
-&lt;p&gt;The additions of this version are the two new crossovers implementations and a new option of ITaskExecutor that use TPL.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h1 id=&quot;crossovers&quot;&gt;Crossovers&lt;/h1&gt;
-&lt;h3 id=&quot;alternating-position-ap&quot;&gt;Alternating-position (AP)&lt;/h3&gt;
-&lt;p&gt;The alternating position crossover operator (Larrañaga et al. 1996a) simply creates an offspring by selecting alternately the next element of the first parent and the next element of the second parent, omitting the elements already present in the offspring.&lt;/p&gt;
-
-&lt;h3 id=&quot;voting-recombination-crossover-vr&quot;&gt;Voting Recombination Crossover (VR)&lt;/h3&gt;
-&lt;p&gt;It can be seen as a P-sexual crossover operator, where p (parents number) is a natural number greater than, or equal to, 2.&lt;/p&gt;
-
-&lt;p&gt;It starts by defining a threshold, which is a natural number smaller than, or equal to p.&lt;/p&gt;
-
-&lt;p&gt;Next, for every; i E {l, 2, . . .N} the set of ith elements of all the parents is considered. If in this set an element occurs at least the threshold number of times, it is copied into the offspring.&lt;/p&gt;
-
-&lt;h1 id=&quot;tpl&quot;&gt;TPL&lt;/h1&gt;
-&lt;p&gt;Three new classes were implemented to run some key points of genetic algorithm using TPL.&lt;/p&gt;
-
-&lt;p&gt;Those new classes can be used alone, but normally you will use all them together. You can see a sample usage at unit test &lt;code class=&quot;highlighter-rouge&quot;&gt;Start_TplManyGenerations_Optimization&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;tpltaskexecutor&quot;&gt;TplTaskExecutor:&lt;/h3&gt;
-&lt;p&gt;An ITaskExecutor’s implementation that executes the tasks in a parallel fashion using Task Parallel Library (TPL).&lt;/p&gt;
-
-&lt;h3 id=&quot;tplpopulation&quot;&gt;TplPopulation&lt;/h3&gt;
-&lt;p&gt;Represents a population of candidate solutions (chromosomes) using TPL to create them.&lt;/p&gt;
-
-&lt;h3 id=&quot;tploperatorsstrategy&quot;&gt;TplOperatorsStrategy&lt;/h3&gt;
-&lt;p&gt;A new interface called IOperatorsStrategy was added to GeneticAlgorithm as an option. Two options of operators strategy were created, the default one, called DefaultOperatorsStrategy and the new one called TplOperatosStrategy.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
-&lt;p&gt;I would like to thanks to &lt;a href=&quot;https://github.com/EMostafaAli&quot;&gt;EMostafaAli&lt;/a&gt; and &lt;a href=&quot;https://github.com/InRedikaWB&quot;&gt;Alexey I.&lt;/a&gt; for opened some issues and made small pull requests and &lt;a href=&quot;https://github.com/codingdna2&quot;&gt;Dan&lt;/a&gt; for contributing with the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/56&quot;&gt;TPL implementations&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="dotnet" /><category term="release" /><summary type="html">The GeneticSharp v2.4.0 is out.</summary></entry></feed>
+&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="dotnet" /><summary type="html">Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the dotnet new command.</summary></entry></feed>
