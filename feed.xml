@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-05T10:28:55-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization" /><published>2019-06-05T00:00:00-03:00</published><updated>2019-06-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization/">&lt;p&gt;I decided to start a series of posts about some outstanding scientific papers and projects using GeneticSharp.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-06T14:38:58-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Evolution (or from prototype to game)</title><link href="http://diegogiacomelli.com.br/evolution-or-from-prototype-to-game/" rel="alternate" type="text/html" title="Evolution (or from prototype to game)" /><published>2019-06-06T00:00:00-03:00</published><updated>2019-06-06T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/evolution-or-from-prototype-to-game</id><content type="html" xml:base="http://diegogiacomelli.com.br/evolution-or-from-prototype-to-game/">&lt;h1 id=&quot;the-importance-of-game-prototype&quot;&gt;The importance of game prototype&lt;/h1&gt;
+&lt;p&gt;Several famous books and game designers cite how the prototyping phase of a new game project is an important time to &lt;strong&gt;lay out the foundations that will guide the whole game structure&lt;/strong&gt; during its development project and, as well, to experiment with concepts and ideas of quick and unassuming way.&lt;/p&gt;
+
+&lt;p&gt;The prototyping phase, although important, often takes a small percentage in the development time of a game project or in some cases is not part of the project itself, but rather a point prior to that, where we are seeking the idea or concept that will give birth to the new project.&lt;/p&gt;
+
+&lt;h1 id=&quot;transposing-the-fog&quot;&gt;Transposing the fog&lt;/h1&gt;
+&lt;p&gt;I always find it interesting to &lt;strong&gt;compare when an idea is born, or has its first steps, with its final result&lt;/strong&gt;, because when we are at the beginning of any project or journey, the path may seem hazy and maybe it will become clear only when we manage to transpose the fog which separates the persevering from those who prefer to fear it.&lt;/p&gt;
+
+&lt;p&gt;For this reason I present the screenshots to &lt;strong&gt;compare Ships N ‘Battles in its prototype&lt;/strong&gt; phase, which, incidentally, at that stage did not have a name, only its project name “iBattleships”;) , &lt;strong&gt;with the final result of its HD version for iOS devices&lt;/strong&gt; with armv7 and retina display, that is, after letting the fog of this project back.&lt;/p&gt;
+
+&lt;h1 id=&quot;prototype-x-final-product&quot;&gt;Prototype x final product&lt;/h1&gt;
+&lt;p&gt;So we have below the screenshots of the main menu, deploy ships, aim and view the player’s ships, for the first functional prototype version running on Windows and the HD edition version running on an iPad 2:&lt;/p&gt;
+
+&lt;center&gt;
+  
+  &lt;ul id=&quot;lightSlider&quot;&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+  &lt;/ul&gt;
+  
+ &lt;/center&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+var initialized = false;
+
+$(document).ready(function() {
+  var inview = new Waypoint.Inview({
+    element: document.getElementById('lightSlider'),
+    enter: function(direction) {
+      initializeGallery();
+    }
+  });
+});
+
+function initializeGallery() {
+  if(initialized) return;
+  
+  initialized = true;
+
+  $('#lightSlider').lightSlider({
+    gallery: true,
+    pager: true,
+    controls: false,
+    thumbItem: 8,
+    item: 1,
+    loop: false,
+    slideMargin: 0,
+    autoWidth: true,
+    adaptiveHeight: true,
+    mode: &quot;fade&quot;,
+    useCSS: true,
+    cssEasing: 'ease',
+    easing: 'linear'
+  });
+}
+&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There are only two mistakes one can make along the road to truth; not going all the way, and not starting. (Buddha)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is an old post that I made years ago on &lt;a href=&quot;http://skahal.github.io&quot;&gt;Skahal&lt;/a&gt;’s blog, as the subject still relevant, I reposted it here.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="gamedev" /><category term="game-design" /><category term="motivation" /><summary type="html">The importance of game prototype Several famous books and game designers cite how the prototyping phase of a new game project is an important time to lay out the foundations that will guide the whole game structure during its development project and, as well, to experiment with concepts and ideas of quick and unassuming way.</summary></entry><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization" /><published>2019-06-05T00:00:00-03:00</published><updated>2019-06-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization/">&lt;p&gt;I decided to start a series of posts about some outstanding scientific papers and projects using GeneticSharp.&lt;/p&gt;
 
 &lt;p&gt;For this first post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;AeroVision - Aircraft Trajectories Optimization and Visualization&lt;/code&gt;.&lt;/p&gt;
 
@@ -633,46 +726,4 @@ To implement these actions you need to do almost the same thing we did in this t
 &lt;p&gt;In this tutorial, we learn how to use Avatar Masks and Animation Layers to animate a robot with different masks and layers.
 These techniques allowing us to use already existent animations and combine them.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt; and &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><category term="animation" /><category term="avatar-mask" /><category term="animation-layers" /><category term="open-source" /><summary type="html">In this tutorial we will learn how to use Avatar Mask and Animation Layers to combine multiple animations.</summary></entry><entry><title type="html">dotnet new templates for GeneticSharp</title><link href="http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp/" rel="alternate" type="text/html" title="dotnet new templates for GeneticSharp" /><published>2019-02-03T00:00:00-02:00</published><updated>2019-02-03T00:00:00-02:00</updated><id>http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp</id><content type="html" xml:base="http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp/">&lt;p&gt;Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the &lt;strong&gt;dotnet new&lt;/strong&gt; command.&lt;/p&gt;
-
-&lt;h1 id=&quot;installing-the-geneticsharptemplates&quot;&gt;Installing the GeneticSharp.Templates&lt;/h1&gt;
-&lt;p&gt;Before you can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; command to create the GeneticSharp projects from templates, you need to install it on your machine:&lt;/p&gt;
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; GeneticSharp.Templates
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;After this, if you run the command:&lt;/p&gt;
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharp &lt;span class=&quot;nt&quot;&gt;--list&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The GeneticSharp templates will be listed:&lt;/p&gt;
-
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h1 id=&quot;creating-a-new-geneticsharp-project-from-templates&quot;&gt;Creating a new GeneticSharp project from templates&lt;/h1&gt;
-
-&lt;h2 id=&quot;console-application&quot;&gt;Console Application&lt;/h2&gt;
-&lt;p&gt;Create a new console application template with GeneticSharp where you just need to implement the chromosome and fitness function.&lt;/p&gt;
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpConsoleApp &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h3 id=&quot;tsp-console-application&quot;&gt;TSP Console application&lt;/h3&gt;
-&lt;p&gt;Create a new console application template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).&lt;/p&gt;
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpTspConsoleApp &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h3 id=&quot;tsp-unity3d&quot;&gt;TSP Unity3D&lt;/h3&gt;
-&lt;p&gt;Create an Unity3D template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).&lt;/p&gt;
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="dotnet" /><summary type="html">Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the dotnet new command.</summary></entry></feed>
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt; and &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><category term="animation" /><category term="avatar-mask" /><category term="animation-layers" /><category term="open-source" /><summary type="html">In this tutorial we will learn how to use Avatar Mask and Animation Layers to combine multiple animations.</summary></entry></feed>

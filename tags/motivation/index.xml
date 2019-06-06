@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - motivation</title>
+ <link href="//tags/motivation/index.xml" rel="self"/>
+ <link href="/tag/motivation.html"/>
+ <updated>2019-06-06T14:38:58-03:00</updated>
+ <id>/tag/motivation.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Evolution (or from prototype to game)</title>
+   <link href="//evolution-or-from-prototype-to-game/"/>
+   <updated>2019-06-06T00:00:00-03:00</updated>
+   <id>//evolution-or-from-prototype-to-game</id>
+   <content type="html">&lt;h1 id=&quot;the-importance-of-game-prototype&quot;&gt;The importance of game prototype&lt;/h1&gt;
+&lt;p&gt;Several famous books and game designers cite how the prototyping phase of a new game project is an important time to &lt;strong&gt;lay out the foundations that will guide the whole game structure&lt;/strong&gt; during its development project and, as well, to experiment with concepts and ideas of quick and unassuming way.&lt;/p&gt;
+
+&lt;p&gt;The prototyping phase, although important, often takes a small percentage in the development time of a game project or in some cases is not part of the project itself, but rather a point prior to that, where we are seeking the idea or concept that will give birth to the new project.&lt;/p&gt;
+
+&lt;h1 id=&quot;transposing-the-fog&quot;&gt;Transposing the fog&lt;/h1&gt;
+&lt;p&gt;I always find it interesting to &lt;strong&gt;compare when an idea is born, or has its first steps, with its final result&lt;/strong&gt;, because when we are at the beginning of any project or journey, the path may seem hazy and maybe it will become clear only when we manage to transpose the fog which separates the persevering from those who prefer to fear it.&lt;/p&gt;
+
+&lt;p&gt;For this reason I present the screenshots to &lt;strong&gt;compare Ships N ‘Battles in its prototype&lt;/strong&gt; phase, which, incidentally, at that stage did not have a name, only its project name “iBattleships”;) , &lt;strong&gt;with the final result of its HD version for iOS devices&lt;/strong&gt; with armv7 and retina display, that is, after letting the fog of this project back.&lt;/p&gt;
+
+&lt;h1 id=&quot;prototype-x-final-product&quot;&gt;Prototype x final product&lt;/h1&gt;
+&lt;p&gt;So we have below the screenshots of the main menu, deploy ships, aim and view the player’s ships, for the first functional prototype version running on Windows and the HD edition version running on an iPad 2:&lt;/p&gt;
+
+&lt;center&gt;
+  
+  &lt;ul id=&quot;lightSlider&quot;&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips.png&quot;&gt;
+          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+        &lt;/li&gt;
+    
+  &lt;/ul&gt;
+  
+ &lt;/center&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+var initialized = false;
+
+$(document).ready(function() {
+  var inview = new Waypoint.Inview({
+    element: document.getElementById('lightSlider'),
+    enter: function(direction) {
+      initializeGallery();
+    }
+  });
+});
+
+function initializeGallery() {
+  if(initialized) return;
+  
+  initialized = true;
+
+  $('#lightSlider').lightSlider({
+    gallery: true,
+    pager: true,
+    controls: false,
+    thumbItem: 8,
+    item: 1,
+    loop: false,
+    slideMargin: 0,
+    autoWidth: true,
+    adaptiveHeight: true,
+    mode: &quot;fade&quot;,
+    useCSS: true,
+    cssEasing: 'ease',
+    easing: 'linear'
+  });
+}
+&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There are only two mistakes one can make along the road to truth; not going all the way, and not starting. (Buddha)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is an old post that I made years ago on &lt;a href=&quot;http://skahal.github.io&quot;&gt;Skahal&lt;/a&gt;’s blog, as the subject still relevant, I reposted it here.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+</feed>

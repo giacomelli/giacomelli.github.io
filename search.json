@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "Evolution (or from prototype to game)",
+      "category" : "Article",
+      "tags"     : "gamedev, game design, motivation",
+      "url"      : "/evolution-or-from-prototype-to-game/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "GeneticSharp in the Wild&amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization",
       "category" : "Article",
       "tags"     : "geneticsharp, geneticsharp in the wild",
