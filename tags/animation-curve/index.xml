@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - animation-curve</title>
  <link href="//tags/animation-curve/index.xml" rel="self"/>
  <link href="/tag/animation-curve.html"/>
- <updated>2019-06-07T06:16:23-03:00</updated>
+ <updated>2019-06-07T07:23:51-03:00</updated>
  <id>/tag/animation-curve.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -54,7 +54,7 @@
 &lt;h2 id=&quot;using&quot;&gt;Using&lt;/h2&gt;
 &lt;p&gt;You can open the window through the context menu on any &lt;code class=&quot;highlighter-rouge&quot;&gt;AnimationCurve&lt;/code&gt; property on &lt;code class=&quot;highlighter-rouge&quot;&gt;Inspector&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;In the video below you can see in more details about how to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;In the video below you can see how to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/2W-g6-k74nc &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
