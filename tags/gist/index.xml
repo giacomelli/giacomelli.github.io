@@ -3,11 +3,64 @@
  <title>Diego Giacomelli - gist</title>
  <link href="//tags/gist/index.xml" rel="self"/>
  <link href="/tag/gist.html"/>
- <updated>2019-06-06T23:13:33-03:00</updated>
+ <updated>2019-06-07T06:16:23-03:00</updated>
  <id>/tag/gist.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Easing2Curve&colon; An editor window to create animation curve from easing functions</title>
+   <link href="//easing-2-curve-an-editor-window-to-create-animation-curve-from-easing-functions/"/>
+   <updated>2019-06-07T00:00:00-03:00</updated>
+   <id>//easing-2-curve-an-editor-window-to-create-animation-curve-from-easing-functions</id>
+   <content type="html">&lt;p&gt;I coded an &lt;a href=&quot;https://docs.unity3d.com/Manual/editor-EditorWindows.html&quot;&gt;EditorWindow&lt;/a&gt; to create &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/AnimationCurve.html&quot;&gt;AnimationCurve&lt;/a&gt; using easing functions that define how much a value change over time.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;There are a bunch of classic easing functions, like: InQuad, OutElastic, InOutSin and InOutBounce. All them are functions that have a input parameter &lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt; and it return value between 0 and 1 that.&lt;/p&gt;
+
+&lt;p&gt;For example, the easing function &lt;code class=&quot;highlighter-rouge&quot;&gt;OutCirc&lt;/code&gt; is coded like:&lt;/p&gt;
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Mathf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt; editor window you can see 31 easing function availables:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Linear&lt;/li&gt;
+  &lt;li&gt;InQuad, OutQuad, InOutQuad&lt;/li&gt;
+  &lt;li&gt;InCubic, OutCubic, InOutCubic&lt;/li&gt;
+  &lt;li&gt;InQuart, OutQuart, InOutQuart&lt;/li&gt;
+  &lt;li&gt;InQuint, OutQuint, InOutQuint&lt;/li&gt;
+  &lt;li&gt;InElastic, OutElastic, InOutElastic&lt;/li&gt;
+  &lt;li&gt;InSin, OutSin, InOutSin&lt;/li&gt;
+  &lt;li&gt;InExpo, OutExpo, InOutExpo&lt;/li&gt;
+  &lt;li&gt;InCirc, OutCirc, InOutCirc&lt;/li&gt;
+  &lt;li&gt;InBack, OutBack, InOutBack&lt;/li&gt;
+  &lt;li&gt;InBounce, OutBounce and InOutBounce.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition, you can add new easing functions just implementing the &lt;code class=&quot;highlighter-rouge&quot;&gt;IEasing&lt;/code&gt; interface.&lt;/p&gt;
+
+&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;p&gt;To setup the &lt;code class=&quot;highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/7324d63679c11529e1710a5470d9ee7f&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/7324d63679c11529e1710a5470d9ee7f.js?file=Easing2CurveEditorWindow.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;using&quot;&gt;Using&lt;/h2&gt;
+&lt;p&gt;You can open the window through the context menu on any &lt;code class=&quot;highlighter-rouge&quot;&gt;AnimationCurve&lt;/code&gt; property on &lt;code class=&quot;highlighter-rouge&quot;&gt;Inspector&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the video below you can see in more details about how to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/2W-g6-k74nc &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Sending a Slackbot message from Unity3d</title>
