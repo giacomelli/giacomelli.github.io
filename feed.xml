@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-08T12:28:13-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Easing2Curve&amp;amp;colon; An editor window to create animation curve from easing functions</title><link href="http://diegogiacomelli.com.br/easing-2-curve-an-editor-window-to-create-animation-curve-from-easing-functions/" rel="alternate" type="text/html" title="Easing2Curve&amp;colon; An editor window to create animation curve from easing functions" /><published>2019-06-07T00:00:00-03:00</published><updated>2019-06-07T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/easing-2-curve-an-editor-window-to-create-animation-curve-from-easing-functions</id><content type="html" xml:base="http://diegogiacomelli.com.br/easing-2-curve-an-editor-window-to-create-animation-curve-from-easing-functions/">&lt;p&gt;I’ve coded an &lt;a href=&quot;https://docs.unity3d.com/Manual/editor-EditorWindows.html&quot;&gt;EditorWindow&lt;/a&gt; to create an &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/AnimationCurve.html&quot;&gt;AnimationCurve&lt;/a&gt; using easing functions that define how much a value changes over time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-10T13:29:30-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (June 10th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 10th 2019)" /><published>2019-06-10T00:00:00-03:00</published><updated>2019-06-10T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019/">&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/unity-and-gamdedev-links.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Toulouse de Margerie&lt;/strong&gt; wrote a post about how Unity natively maintains frame rates an how to make Unity follow a precise frame rate (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/03/precise-framerates-in-unity/&quot;&gt;Precise frame rates in Unity&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Normally, out of the box, a Unity project will attempt to run your project as fast as possible. Frames will be rendered as quickly as they can while generally being limited by your display device’s refresh rate.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Jean-Christophe Cimetiere&lt;/strong&gt;, Sr. Technical Product Manager for Mobile Plaftorms at Unity, made a forum post  about the first preview of the new Project Tiny that uses C# as the programming language (&lt;a href=&quot;https://forum.unity.com/threads/project-tiny-c-preview-available.688969/&quot;&gt;Project Tiny C# Preview available&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;We’ve been hard at work changing most of the underlying technology powering Project Tiny in response to your feedback, and in order to bring it closer to the Unity ecosystem. This preview is fully integrated with Unity’s Data-Oriented Tech Stack (DOTS) and sets up a foundation for bringing advanced features for both tiny and big use cases.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Claudia L.&lt;/strong&gt; posted about the Unity Asset Store partnership with Kochava to bring the Kochava SDK for free (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/04/bringing-the-power-of-marketing-data-to-indie-devs/&quot;&gt;Bringing the power of marketing data to indie devs&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Jeff Campbell&lt;/strong&gt; wrote an article covering his experience of porting an existing game system to Unity’s DOTS (&lt;a href=&quot;https://www.jeffcampbellmakes.games/blog/2019/5/26/diving-in-headfirst-unitys-job-system-and-jtween&quot;&gt;Porting Existing Systems to Unity’s DOTS: JTween&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Profile early and often as a DOTS implementation develops.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Alexey Zakharov&lt;/strong&gt; wrote a forum post about the UnityEditor.TypeCache API available on Unity 2019.2 or later (&lt;a href=&quot;https://forum.unity.com/threads/unityeditor-typecache-api-for-fast-extraction-of-type-attributes-in-the-editor-tooling.687682&quot;&gt;UnityEditor.TypeCache API for fast extraction of type attributes in the Editor tooling&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;For 2019.2 we optimized and extended the native cache and exposed it as a public UnityEditor.TypeCache API. It can extract information very quickly, allowing iteration over the smaller number of types we are interested in (10–100). That significantly reduces the time required to fetch types by Editor tooling.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Harry Alisavakis&lt;/strong&gt; started a series of tutorials about shaders called &lt;code class=&quot;highlighter-rouge&quot;&gt;VFX Master Shader&lt;/code&gt; (&lt;a href=&quot;https://halisavakis.com/my-take-on-shaders-vfx-master-shader-part-i/&quot;&gt;My take on shaders: VFX Master Shader (Part I)&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;While I experimented with different VFX concepts, I noticed that I was using a bunch of common shader techniques to create new shaders again and again, and I thought to myself: “Why not have one shader to rule them all?”&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a new video tutorial about the Terrain Tools Package preview  in Unity 2019.1 (&lt;a href=&quot;https://www.youtube.com/watch?v=tazRinr6nRg&quot;&gt;NEW TERRAIN TOOLS in Unity! (Tutorial)&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Unity&lt;/strong&gt; published a video tutorial to show how to create a toon outiline effect using the new Scriptable Render pass feature (&lt;a href=&quot;https://www.youtube.com/watch?v=joG_tmXUX4M&quot;&gt;How to Make a Toon Outline Effect in Unity 2019 LWRP! (Tutorial)&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;William Todd Stinson&lt;/strong&gt; wrote a blog post about how to access ARKit 3 functionality with AR foundation 2.2 and Unity 2019.1 (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/06/ar-foundation-support-for-arkit-3&quot;&gt;AR Foundation support for ARKit 3&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Unity has been working closely with Apple throughout the development of ARKit 3, and we are excited to bring these new features to Unity developers.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Kristin Stock&lt;/strong&gt; made a video showing how to create a simple build system with a circular UI (&lt;a href=&quot;https://www.youtube.com/watch?v=tKmsMfoPTC0&quot;&gt;Building System and Circular UI in Unity&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sirawat Pitaksarit&lt;/strong&gt; wrote a article about Unity Timeline, Playables and the undocumented new feature &lt;code class=&quot;highlighter-rouge&quot;&gt;Marker&lt;/code&gt; (&lt;a href=&quot;https://gametorrahod.com/timeline-marker-and-everything-leading-up-to-it/&quot;&gt;Timeline marker and everything leading up to it&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;New in Unity 2019.1, you can now create a duration-less object on the timeline, the marker.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Eduardo Oriz and Alitt Khaliq&lt;/strong&gt; made a post about the high-end asset pack &lt;code class=&quot;highlighter-rouge&quot;&gt;Buried Memories Vollume 2: Sereckh&lt;/code&gt; (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/07/introducing-serekh-new-asset-pack-buried-memories-volume-2&quot;&gt;Introducing Serekh: New asset pack, Buried Memories Volume 2&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;The Unity Icon Collective strives to democratize high-end asset production. With Buried Memories, starting with Volume 1: Yggdrasil, we hope to inspire creators to extend their own universe but especially to guide aspiring artists and others to observe, analyze and learn from the techniques of industry veterans.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">Easing2Curve&amp;amp;colon; An editor window to create animation curve from easing functions</title><link href="http://diegogiacomelli.com.br/easing-2-curve-an-editor-window-to-create-animation-curve-from-easing-functions/" rel="alternate" type="text/html" title="Easing2Curve&amp;colon; An editor window to create animation curve from easing functions" /><published>2019-06-07T00:00:00-03:00</published><updated>2019-06-07T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/easing-2-curve-an-editor-window-to-create-animation-curve-from-easing-functions</id><content type="html" xml:base="http://diegogiacomelli.com.br/easing-2-curve-an-editor-window-to-create-animation-curve-from-easing-functions/">&lt;p&gt;I’ve coded an &lt;a href=&quot;https://docs.unity3d.com/Manual/editor-EditorWindows.html&quot;&gt;EditorWindow&lt;/a&gt; to create an &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/AnimationCurve.html&quot;&gt;AnimationCurve&lt;/a&gt; using easing functions that define how much a value changes over time.&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;There are many classic easing functions, such as: InQuad, OutElastic, InOutSin, and InOutBounce. All of these are functions that have a &lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt; input parameter and a return value between 0 and 1 that.&lt;/p&gt;
@@ -500,34 +557,4 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="sorting-layers" /><category term="2D" /><category term="editor-window" /><category term="gamedev" /><category term="open-source" /><summary type="html">While I was reading about 2D Sorting and Sorting Layers on Unity Manual I came up with the idea of creating a custom editor window to see which sorting layer the sprites on the scene are using.</summary></entry><entry><title type="html">Unity and Game Development links (May 24th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-may-24th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (May 24th 2019)" /><published>2019-05-24T00:00:00-03:00</published><updated>2019-05-24T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-may-24th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-may-24th-2019/">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Kristin Stock&lt;/strong&gt; posted a video about how she is &lt;a href=&quot;https://www.youtube.com/watch?v=zBDrH3lg4YY&quot;&gt;procedurally generating cities using Subdivsion in Unity&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Dave Hunt and Yang-Hai Eakes&lt;/strong&gt; made an &lt;a href=&quot;https://blogs.unity3d.com/2019/05/14/introducing-the-animation-rigging-preview-package-for-unity-2019-1/&quot;&gt;introduction for the Animation Rigging preview package for Unity 2019.1&lt;/a&gt;.
-    &lt;blockquote&gt;
-      &lt;p&gt;Set up procedural motion on animated skeletons at runtime. You can use a set of predefined animation constraints to manually build a control rig hierarchy for a character or develop your own custom constraints in C#.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Alexander Ameye&lt;/strong&gt; launched a &lt;a href=&quot;https://alexanderameye.github.io/&quot;&gt;site with many Unity tutorials&lt;/a&gt;, like &lt;code class=&quot;highlighter-rouge&quot;&gt;Water 1: Tessellated Plane&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Toon Shading&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Shahriar Shahrabi&lt;/strong&gt; made a post showing how use &lt;a href=&quot;https://medium.com/realities-io/making-the-inception-effect-in-unity-3d-with-few-lines-of-code-fb9667d4786f&quot;&gt;deformation matrices to achieve the &lt;code class=&quot;highlighter-rouge&quot;&gt;Inception effect&lt;/code&gt;&lt;/a&gt;.
-    &lt;blockquote&gt;
-      &lt;p&gt;Have you ever wondered how your brain would react if you bend the space around you in VR? Or change the field of view and do a vertigo? Well I did, so I started writing a series of shaders which deformed the space around me, using matrices and ended up with an Inception looking effect.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Steve Cavanagh and Lyndon Homewood&lt;/strong&gt; wrote a post about the &lt;a href=&quot;https://blogs.unity3d.com/2019/05/13/introducing-the-profile-analyzer/&quot;&gt;Unity Profile Analyzer (preview)&lt;/a&gt;.
-    &lt;blockquote&gt;
-      &lt;p&gt;Have you ever needed to compare the difference in performance between two versions of your project? See the impact of an asset or code change, optimization work, settings change or Unity version upgrade?&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Unity 2019.2 beta&lt;/strong&gt; released an &lt;a href=&quot;https://forum.unity.com/threads/experimental-2d-renderer-in-lwrp.683623&quot;&gt;experimental 2D Renderer in LWRP&lt;/a&gt; with 2D lights, Lit and Unlit Sprite Masternode in Shader Graph, and Pixel Perfect Camera.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Julien Blais&lt;/strong&gt; wrote a post about &lt;a href=&quot;https://blogs.unity3d.com/2019/05/21/how-to-use-timeline-signals&quot;&gt;new feature Signals&lt;/a&gt; added to Timeline in Unity 2019.1.
-    &lt;blockquote&gt;
-      &lt;p&gt;We’ve built Signals to establish a communication channel between Timeline and outside systems. But what does that mean? Why did we decide on this approach?&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html">Kristin Stock posted a video about how she is procedurally generating cities using Subdivsion in Unity.</summary></entry></feed>
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="sorting-layers" /><category term="2D" /><category term="editor-window" /><category term="gamedev" /><category term="open-source" /><summary type="html">While I was reading about 2D Sorting and Sorting Layers on Unity Manual I came up with the idea of creating a custom editor window to see which sorting layer the sprites on the scene are using.</summary></entry></feed>
