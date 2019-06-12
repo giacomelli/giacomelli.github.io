@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - animation-curve</title>
  <link href="//tags/animation-curve/index.xml" rel="self"/>
  <link href="/tag/animation-curve.html"/>
- <updated>2019-06-11T21:16:17-03:00</updated>
+ <updated>2019-06-12T11:37:46-03:00</updated>
  <id>/tag/animation-curve.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -17,7 +17,7 @@
    <content type="html">&lt;p&gt;I’ve coded an &lt;a href=&quot;https://docs.unity3d.com/Manual/editor-EditorWindows.html&quot;&gt;EditorWindow&lt;/a&gt; to create an &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/AnimationCurve.html&quot;&gt;AnimationCurve&lt;/a&gt; using easing functions that define how much a value changes over time.&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;There are many classic easing functions, such as: InQuad, OutElastic, InOutSin, and InOutBounce. All of these are functions that have a &lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt; input parameter and a return value between 0 and 1 that.&lt;/p&gt;
+&lt;p&gt;There are many classic easing functions, such as: InQuad, OutElastic, InOutSin, and InOutBounce. All of these are functions that have a &lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt; input parameter and a return value between 0 and 1.&lt;/p&gt;
 
 &lt;p&gt;For example, the easing function &lt;code class=&quot;highlighter-rouge&quot;&gt;OutCirc&lt;/code&gt; is coded like:&lt;/p&gt;
 &lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
