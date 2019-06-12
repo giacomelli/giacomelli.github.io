@@ -3,11 +3,29 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2019-06-10T13:29:30-03:00</updated>
+ <updated>2019-06-11T21:16:17-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; MenuItem "CONTEXT/component"</title>
+   <link href="//unitytips-menuitem-context-component/"/>
+   <updated>2019-06-11T00:00:00-03:00</updated>
+   <id>//unitytips-menuitem-context-component</id>
+   <content type="html">&lt;p&gt;You can create a context menu for any component using the &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;CONTEXT/&amp;lt;component&amp;gt;/&amp;lt;menu name&amp;gt;&quot;&lt;/code&gt; on a MenuItem attribute:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/ZCGsunoO-TA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/3c05b37b9af2ec6cfef0db58a2e5e3a7.js?file=TransformContextMenu.cs&quot;&gt; &lt;/script&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Using a Sprite Mask to create a flashlight effect</title>

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-10T13:29:30-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (June 10th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 10th 2019)" /><published>2019-06-10T00:00:00-03:00</published><updated>2019-06-10T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019/">&lt;center&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-11T21:16:17-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; MenuItem “CONTEXT/component”</title><link href="http://diegogiacomelli.com.br/unitytips-menuitem-context-component/" rel="alternate" type="text/html" title="unitytips&amp;colon; MenuItem &quot;CONTEXT/component&quot;" /><published>2019-06-11T00:00:00-03:00</published><updated>2019-06-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-menuitem-context-component</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-menuitem-context-component/">&lt;p&gt;You can create a context menu for any component using the &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;CONTEXT/&amp;lt;component&amp;gt;/&amp;lt;menu name&amp;gt;&quot;&lt;/code&gt; on a MenuItem attribute:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/ZCGsunoO-TA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/3c05b37b9af2ec6cfef0db58a2e5e3a7.js?file=TransformContextMenu.cs&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">You can create a context menu for any component using the &quot;CONTEXT/&amp;lt;component&amp;gt;/&amp;lt;menu name&amp;gt;&quot; on a MenuItem attribute:</summary></entry><entry><title type="html">Unity and Game Development links (June 10th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 10th 2019)" /><published>2019-06-10T00:00:00-03:00</published><updated>2019-06-10T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019/">&lt;center&gt;
       &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/unity-and-gamdedev-links.png&quot; /&gt;
       &lt;/center&gt;
 
@@ -529,32 +537,4 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://blog.amitapple.com/post/2014/05/webjobs-graceful-shutdown&quot;&gt;WebJobs Graceful Shutdown&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&amp;amp;tabs=schema&quot;&gt;YAML schema reference&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&amp;amp;tabs=yaml&quot;&gt;Predefined variables&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="dotnet" /><category term="azure" /><category term="webjobs" /><category term="azure-pipelines" /><category term="continuous-integration" /><summary type="html">Azure WebJobs are a great way to execute background process.</summary></entry><entry><title type="html">A Sorting Layer Debugger for Unity</title><link href="http://diegogiacomelli.com.br/a-sorting-layer-debugger-for-unity/" rel="alternate" type="text/html" title="A Sorting Layer Debugger for Unity" /><published>2019-05-28T00:00:00-03:00</published><updated>2019-05-28T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/a-sorting-layer-debugger-for-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/a-sorting-layer-debugger-for-unity/">&lt;p&gt;While I was reading about &lt;a href=&quot;https://docs.unity3d.com/Manual/2DSorting.html&quot;&gt;2D Sorting&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/Manual/class-TagManager.html#SortingLayers&quot;&gt;Sorting Layers&lt;/a&gt; on Unity Manual I came up with the idea of creating a custom editor window to see which sorting layer the sprites on the scene are using.&lt;/p&gt;
-
-&lt;center&gt;
-        &lt;iframe src=&quot;https://www.youtube.com/embed/e_WaZrGMPdM &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;In the video above you can see the Sorting Layer Debugger been used in the &lt;a href=&quot;https://assetstore.unity.com/packages/essentials/tutorial-projects/2d-platformer-11228&quot;&gt;Unity 2D Platformer&lt;/a&gt; sample project&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/141742c3175476f03ca2437c7b35fd88.js?file=SortingLayerDebugger.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-&lt;p&gt;You can open the debugger window through the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Window / Sorting Layer Debugger&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The debugger can be enabled in the edit or the play mode and it will list the Sorting Layers and the number of game objects using each layer. You can hide/show the game objects of each layer by clicking on its check box.&lt;/p&gt;
-
-&lt;p&gt;The name of Sorting Layer been used is showing in the top of each game object in the scene view.&lt;/p&gt;
-
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger.png &quot; /&gt;
-      &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="sorting-layers" /><category term="2D" /><category term="editor-window" /><category term="gamedev" /><category term="open-source" /><summary type="html">While I was reading about 2D Sorting and Sorting Layers on Unity Manual I came up with the idea of creating a custom editor window to see which sorting layer the sprites on the scene are using.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="dotnet" /><category term="azure" /><category term="webjobs" /><category term="azure-pipelines" /><category term="continuous-integration" /><summary type="html">Azure WebJobs are a great way to execute background process.</summary></entry></feed>

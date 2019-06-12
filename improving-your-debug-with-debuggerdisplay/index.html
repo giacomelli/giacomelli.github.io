@@ -149,7 +149,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>In our scenario, the most important things about the Tweet class are the text, the username and the retweets count. We’ll add the DebuggerDisplay attribute to the class:</p>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">[DebuggerDisplay("{Text} ({User.UserName}) - RTs: {RetweetCount}")]</span>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nf">DebuggerDisplay</span><span class="p">(</span><span class="s">"{Text} ({User.UserName}) - RTs: {RetweetCount}"</span><span class="p">)]</span>
 <span class="k">public</span> <span class="k">class</span> <span class="nc">Tweet</span>
 <span class="p">{</span>
     <span class="k">public</span> <span class="kt">string</span> <span class="n">Text</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
