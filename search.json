@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "Using Tesseract 4 with C#",
+      "category" : "Lab",
+      "tags"     : "tesseract, ocr, dotnet",
+      "url"      : "/using-tesseract4-with-csharp/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "unitytips&amp;colon; MenuItem &quot;CONTEXT/component&quot;",
       "category" : "Lab",
       "tags"     : "unity3d, unitytips, gamedev",

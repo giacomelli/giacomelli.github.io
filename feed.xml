@@ -1,4 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-12T11:37:46-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; MenuItem “CONTEXT/component”</title><link href="http://diegogiacomelli.com.br/unitytips-menuitem-context-component/" rel="alternate" type="text/html" title="unitytips&amp;colon; MenuItem &quot;CONTEXT/component&quot;" /><published>2019-06-11T00:00:00-03:00</published><updated>2019-06-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-menuitem-context-component</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-menuitem-context-component/">&lt;p&gt;You can create a context menu for any component using the &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;CONTEXT/&amp;lt;component&amp;gt;/&amp;lt;menu name&amp;gt;&quot;&lt;/code&gt; on a MenuItem attribute:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-13T13:15:16-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Using Tesseract 4 with C#</title><link href="http://diegogiacomelli.com.br/using-tesseract4-with-csharp/" rel="alternate" type="text/html" title="Using Tesseract 4 with C#" /><published>2019-06-13T00:00:00-03:00</published><updated>2019-06-13T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-tesseract4-with-csharp</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-tesseract4-with-csharp/">&lt;p&gt;Recently I’ve to built a small tool to read the text from thounsands of images.&lt;/p&gt;
+
+&lt;p&gt;A common technique to extract text from images is know as OCR (Optical character recognition) and the best implementation, that I Know, is called &lt;a href=&quot;https://github.com/tesseract-ocr/tesseract&quot;&gt;Tesseract&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When a I started to build the tool, I used the most famous &lt;a href=&quot;https://github.com/charlesw/tesseract&quot;&gt;Tesseract’s wrapper for .NET&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Although the wrapper worked very well, I was curious about if there was a way to get better peformance results. With a little search I noticed that the .NET wrapper still use Tesseract 3, but there was a version 4 available with a lot of performance improvements:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are running Tesseract 4, you can use the “fast” integer models.&lt;/p&gt;
+
+  &lt;p&gt;Tesseract 4 also uses up to four CPU threads while processing a page, so it will be faster than Tesseract 3&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;https://github.com/tesseract-ocr/tesseract/wiki/FAQ#can-i-increase-speed-of-ocr&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, I decided to try Tesseract 4 to see how could it impact in the performance of my tool. As at the time there was no .NET wrapper for it, I removed the old wrapper and called Tesseract 4 directly as a process.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The use of Tesseract 4 cut off the time to read the images in almost half&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;tesseractservice&quot;&gt;TesseractService&lt;/h1&gt;
+&lt;p&gt;I ended up developing the class below to call the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tesseract 4&lt;/code&gt; command-line &lt;code class=&quot;highlighter-rouge&quot;&gt;(tesseract.exe)&lt;/code&gt; directly from the C# code.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=TesseractService.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Just download the gist above and add it to your .NET project.&lt;/li&gt;
+  &lt;li&gt;Install Tesseract 4
+    &lt;ul&gt;
+      &lt;li&gt;Linux and OSX: &lt;a href=&quot;https://github.com/tesseract-ocr/tesseract/wiki&quot;&gt;https://github.com/tesseract-ocr/tesseract/wiki&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Windows: &lt;a href=&quot;https://github.com/UB-Mannheim/tesseract/wiki&quot;&gt;https://github.com/UB-Mannheim/tesseract/wiki&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Download the trained data model for the language you need to read the images
+    &lt;ul&gt;
+      &lt;li&gt;More accurate, but slower: &lt;a href=&quot;https://github.com/tesseract-ocr/tessdata_best&quot;&gt;https://github.com/tesseract-ocr/tessdata_best&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Faster, but less accurate: &lt;a href=&quot;https://github.com/tesseract-ocr/tessdata_fast&quot;&gt;https://github.com/tesseract-ocr/tessdata_fast&lt;/a&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=usage-sample.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;If you try to read a image like this one:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;You will get this result after call the &lt;code class=&quot;highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;The (quick) [brown] {fox} jumps!
+Over the $43,456.78 &amp;lt;lazy&amp;gt; #90 dog
+&amp;amp; duck/goose, as 12.5% of E-mail
+from aspammer@website.com is spam.
+Der ,.schnelle&quot; braune Fuchs springt
+iiber den faulen Hund. Le renard brun
+«rapide» saute par-dessus le chien
+paresseux. La volpe marrone rapida
+salta sopra il cane pigro. El zorro
+marron rapido salta sobre el perro
+perezoso. A raposa marrom rapida
+salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/charlesw/tesseract&quot;&gt;A .Net wrapper for tesseract-ocr&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/tesseract-ocr/tesseract/wiki/FAQ#can-i-increase-speed-of-ocr&quot;&gt;Can I increase speed of OCR?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/doxakis/How-to-use-tesseract-ocr-4.0-with-csharp&quot;&gt;How to use Tesseract OCR 4.0 with C#&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://appliedmachinelearning.blog/2018/06/30/performing-ocr-by-running-parallel-instances-of-tesseract-4-0-python/&quot;&gt;Performing OCR by running parallel instances of Tesseract 4.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/tesseract-ocr/tesseract&quot;&gt;Tesseract repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="tesseract" /><category term="ocr" /><category term="dotnet" /><summary type="html">Recently I’ve to built a small tool to read the text from thounsands of images.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; MenuItem “CONTEXT/component”</title><link href="http://diegogiacomelli.com.br/unitytips-menuitem-context-component/" rel="alternate" type="text/html" title="unitytips&amp;colon; MenuItem &quot;CONTEXT/component&quot;" /><published>2019-06-11T00:00:00-03:00</published><updated>2019-06-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-menuitem-context-component</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-menuitem-context-component/">&lt;p&gt;You can create a context menu for any component using the &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;CONTEXT/&amp;lt;component&amp;gt;/&amp;lt;menu name&amp;gt;&quot;&lt;/code&gt; on a MenuItem attribute:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/ZCGsunoO-TA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -495,46 +572,4 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;In this tutorial, we learned how to coding a custom editor window to create a set of default animation clips and animator override controller.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt; and &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="editor-window" /><category term="animation-clip" /><category term="animator-override-controller" /><category term="gamedev" /><category term="open-source" /><summary type="html">In this tutorial, we will learn how to coding an EditorWindow that creates Animation Clips and Animator Override Controller from Sprites.</summary></entry><entry><title type="html">Publishing WebJobs with Azure Pipelines</title><link href="http://diegogiacomelli.com.br/publishing-webjobs-with-azure-pipelines/" rel="alternate" type="text/html" title="Publishing WebJobs with Azure Pipelines" /><published>2019-05-29T00:00:00-03:00</published><updated>2019-05-29T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/publishing-webjobs-with-azure-pipelines</id><content type="html" xml:base="http://diegogiacomelli.com.br/publishing-webjobs-with-azure-pipelines/">&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-US/azure/app-service/webjobs-sdk-get-started&quot;&gt;Azure WebJobs&lt;/a&gt; are a great way to execute background process.&lt;/p&gt;
-
-&lt;h1 id=&quot;scenario&quot;&gt;Scenario&lt;/h1&gt;
-&lt;p&gt;In last days I’ve created a &lt;a href=&quot;https://azure.microsoft.com/pt-br/services/devops/pipelines/&quot;&gt;Azure Pipelines&lt;/a&gt; that publish WebJobs, but in our specific case our WebJobs were not being published to &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/wwwroot/App_Data/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;, because “reasons” our root web app is using ‘/site/www’ as folder. So, you should expect that the new folder to deploy WebJobs is &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/www/App_Data/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;, but &lt;code class=&quot;highlighter-rouge&quot;&gt;NO&lt;/code&gt;, the new folder is &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The big problem with the above behaviour is that &lt;code class=&quot;highlighter-rouge&quot;&gt;WebDeploy&lt;/code&gt; via VS or  &lt;code class=&quot;highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; task via Azure Pipeline will still try to deploy the webjobs to the folder inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/www/&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;My best suspects are these lines on &lt;a href=&quot;https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV3/azurermwebappdeployment.ts#L73&quot;&gt;AzureRmWebAppDeployment@3&lt;/a&gt;&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/1d47b7bf7e9a2b3806dbd0b0332743d2.js?file=AzureRmWebAppDeployment-lines.ts&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; just check the physical path configured on Azure when we defined a &lt;code class=&quot;highlighter-rouge&quot;&gt;VirtualApplicatoin&lt;/code&gt; parameter, but in our case it is not a virtual application, but it is a different folder than &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/wwwroot/&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;externalref&quot;&gt;&lt;p&gt;in &lt;a href=&quot;https://github.com/projectkudu/kudu/wiki/WebJobs&quot;&gt;Kudu wiki&lt;/a&gt; there is some explanation about the webjobs folders.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
-&lt;p&gt;I used the FtpUpload task to publish the WebJobs binaries to the &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt; and two instances of &lt;code class=&quot;highlighter-rouge&quot;&gt;AzureAppServiceManage&lt;/code&gt; task to stop and start the jobs:&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;you’ll need to replace the values between &amp;lt;..&amp;gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;variables&lt;/code&gt; section to specific values of your project&lt;/p&gt;
-&lt;/div&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/1d47b7bf7e9a2b3806dbd0b0332743d2.js?file=azure-pipelines.yml&quot;&gt; &lt;/script&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;I omitted some tasks from the original azure-pipelines.yml for simplicity. The original has a lot of others taks, as unit tests and web api publishing&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;extra-points-graceful-shutdown&quot;&gt;Extra points (graceful shutdown)&lt;/h1&gt;
-&lt;p&gt;Now that you’ve automate your WebJobs publishing, is a good idea improve your jobs to check if Azure has requested a shutdown. You can do this taks through the &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library#cancellation-tokens&quot;&gt;CancellationToken&lt;/a&gt; parameter passed to the job.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;A function can accept a CancellationToken parameter, which enables the operating system to notify your code when the function is about to be terminated. You can use this notification to make sure the function doesn’t terminate unexpectedly in a way that leaves data in an inconsistent state.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/ftp-upload?view=azure-devops&quot;&gt;FTP Upload task&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops&quot;&gt;Azure App Service Manage task&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.amitapple.com/post/2014/05/webjobs-graceful-shutdown&quot;&gt;WebJobs Graceful Shutdown&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&amp;amp;tabs=schema&quot;&gt;YAML schema reference&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&amp;amp;tabs=yaml&quot;&gt;Predefined variables&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="dotnet" /><category term="azure" /><category term="webjobs" /><category term="azure-pipelines" /><category term="continuous-integration" /><summary type="html">Azure WebJobs are a great way to execute background process.</summary></entry></feed>
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt; and &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="editor-window" /><category term="animation-clip" /><category term="animator-override-controller" /><category term="gamedev" /><category term="open-source" /><summary type="html">In this tutorial, we will learn how to coding an EditorWindow that creates Animation Clips and Animator Override Controller from Sprites.</summary></entry></feed>
