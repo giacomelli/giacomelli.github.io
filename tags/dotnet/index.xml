@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2019-06-13T13:15:16-03:00</updated>
+ <updated>2019-06-13T13:25:08-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -14,7 +14,7 @@
    <link href="//using-tesseract4-with-csharp/"/>
    <updated>2019-06-13T00:00:00-03:00</updated>
    <id>//using-tesseract4-with-csharp</id>
-   <content type="html">&lt;p&gt;Recently I’ve to built a small tool to read the text from thounsands of images.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Recently I built a small tool to read the text of thousands of images.&lt;/p&gt;
 
 &lt;p&gt;A common technique to extract text from images is know as OCR (Optical character recognition) and the best implementation, that I Know, is called &lt;a href=&quot;https://github.com/tesseract-ocr/tesseract&quot;&gt;Tesseract&lt;/a&gt;.&lt;/p&gt;
 
