@@ -3,11 +3,63 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2019-06-13T13:25:08-03:00</updated>
+ <updated>2019-06-17T13:20:17-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Unity and Game Development links (June 17th 2019)</title>
+   <link href="//unity-and-gamedev-links-june-17th-2019/"/>
+   <updated>2019-06-17T00:00:00-03:00</updated>
+   <id>//unity-and-gamedev-links-june-17th-2019</id>
+   <content type="html">&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/unity-and-gamedev-links.png&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sebastian Lague&lt;/strong&gt; made an ecosystem simulation with foxes and rabbits in Unity3d (&lt;a href=&quot;https://www.youtube.com/watch?v=r_It_X7v-1E&quot;&gt;Coding Adventure: Simulating an Ecosystem&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Marius Horga&lt;/strong&gt; wrote an overview about Metal 3 (&lt;a href=&quot;http://metalkit.org/2019/06/10/introducing-metal-3.html&quot;&gt;Introducing Metal 3&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Metal 3 was announced last week at WWDC 2019. Apple presented it along with relevant numbers:&lt;/p&gt;
+
+      &lt;ul&gt;
+        &lt;li&gt;Metal can now make 100 times more draw calls than OpenGL.&lt;/li&gt;
+        &lt;li&gt;Metal runs on roughly 1.4 billion devices currently.&lt;/li&gt;
+        &lt;li&gt;Metal can drive up to 56 TFLOPS of single precision.&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mike Wuetherick&lt;/strong&gt;, Head of Tech for Unity’s Innovation Group, posted about “Sherman”, the new short film made in real-time using Unity (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/11/introducing-sherman-part-1&quot;&gt;Introducing Sherman (Part 1) – a Unity project featuring Real time fur, HDRP and Visual FX Graph for animators&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Created by the Emmy-winning team that brought you Baymax Dreams, Sherman is a new real time Unity short that delivers the most advanced real time fur ever!&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Brandi House&lt;/strong&gt; posted a guidance to transition the games between UNet and the new connected games stack (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/13/navigating-unitys-multiplayer-netcode-transition&quot;&gt;Navigating Unity’s multiplayer Netcode transition&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;As many of you know, we put UNet into maintenance mode because we believe there is a better way forward with our new connected games stack&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;War Robots case study&lt;/strong&gt; shows how Pixonic used Unity to lift up their revenue from War Robots without negatively impacting user experience (&lt;a href=&quot;https://unity.com/case-study/pixonic-war-robots&quot;&gt;Pixonic - War Robots case study&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;How do you find new revenue opportunities in a free-to-play game that’s been going strong for over five years? Moscow-based Pixonic, a Top 100-grossing game developer in the CIS, has driven War Robots’ monthly players’ spending to over $5M.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Keijiro Takahashi&lt;/strong&gt;, an Unity evangelist, released the first version of &lt;code class=&quot;highlighter-rouge&quot;&gt;MidiAnimationTrack&lt;/code&gt; that imports .mid files into Unity Timeline. It allows creating musically synchronized animation (&lt;a href=&quot;https://github.com/keijiro/MidiAnimationTrack&quot;&gt;MIDI Animation Track&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Is a custom timeline/playables package that provides functionality to control object properties based on sequence data contained in a standard MIDI file&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a new video about his 5 favorite assets from Unity Asset Store (&lt;a href=&quot;https://www.youtube.com/watch?v=LLlJzQNYsAI&quot;&gt;5 AMAZING ASSETS for Unity 2019&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; released a video about new 2D renderer in Unity (&lt;a href=&quot;https://www.youtube.com/watch?v=nkgGyO9VG54&quot;&gt;2D Lights in Unity!&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; MenuItem "CONTEXT/component"</title>
@@ -33,7 +85,7 @@
    <updated>2019-06-10T00:00:00-03:00</updated>
    <id>//unity-and-gamedev-links-june-10th-2019</id>
    <content type="html">&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/unity-and-gamdedev-links.png&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/unity-and-gamedev-links.png&quot; /&gt;
       &lt;/center&gt;
 
 &lt;ul&gt;
