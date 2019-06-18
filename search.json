@@ -36,6 +36,14 @@
     } ,
     
     {
+      "title"    : "Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects",
+      "category" : "Lab",
+      "tags"     : "unity3d, editor window, asset post processor, gamedev, open source",
+      "url"      : "/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "A Sorting Layer Debugger for Unity",
       "category" : "Lab",
       "tags"     : "unity3d, unitytips, sorting layers, 2D, editor window, gamedev, open source",
@@ -396,18 +404,6 @@
       "category" : "Tutorial",
       "tags"     : "continuous integration, travis ci, functional tests",
       "url"      : "/using-sensitive-data-on-your-travis-ci-build/",
-      "author"   : ""
-    } 
-     
-    ,
-  
-    
-    
-    {
-      "title"    : "Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects",
-      "category" : "Labs",
-      "tags"     : "unity3d, editor window, asset post processor, gamedev, open source",
-      "url"      : "/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects/",
       "author"   : ""
     } 
      
