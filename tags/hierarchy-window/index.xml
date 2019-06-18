@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - hierarchy-window</title>
+ <link href="//tags/hierarchy-window/index.xml" rel="self"/>
+ <link href="/tag/hierarchy-window.html"/>
+ <updated>2019-06-18T07:57:44-03:00</updated>
+ <id>/tag/hierarchy-window.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>unitytips&colon; Hierarchy Window Group Header</title>
+   <link href="//unitytips-hierarchy-window-group-header/"/>
+   <updated>2019-06-18T00:00:00-03:00</updated>
+   <id>//unitytips-hierarchy-window-group-header</id>
+   <content type="html">&lt;p&gt;You can create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/YS5H8Y2Ytww &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/35410d682e41a504c7869a464a96c30a.js?file=HierarchyWindowGroupHeader.cs&quot;&gt; &lt;/script&gt;
+
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Any GameObject with name that starts with “—” will be considered a group header&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>

@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-17T13:20:17-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (June 17th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 17th 2019)" /><published>2019-06-17T00:00:00-03:00</published><updated>2019-06-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/">&lt;center&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-18T07:57:44-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; Hierarchy Window Group Header</title><link href="http://diegogiacomelli.com.br/unitytips-hierarchy-window-group-header/" rel="alternate" type="text/html" title="unitytips&amp;colon; Hierarchy Window Group Header" /><published>2019-06-18T00:00:00-03:00</published><updated>2019-06-18T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-hierarchy-window-group-header</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-hierarchy-window-group-header/">&lt;p&gt;You can create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/YS5H8Y2Ytww &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/35410d682e41a504c7869a464a96c30a.js?file=HierarchyWindowGroupHeader.cs&quot;&gt; &lt;/script&gt;
+
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Any GameObject with name that starts with “—” will be considered a group header&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="hierarchy-window" /><summary type="html">You can create a visual header to any group of components on your hierarchy window using EditorApplication.hierarchyWindowItemOnGUI:</summary></entry><entry><title type="html">Unity and Game Development links (June 17th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 17th 2019)" /><published>2019-06-17T00:00:00-03:00</published><updated>2019-06-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/">&lt;center&gt;
       &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/unity-and-gamedev-links.png&quot; /&gt;
       &lt;/center&gt;
 
@@ -391,33 +403,4 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
     &lt;p&gt;&lt;strong&gt;Elena Nizhnik&lt;/strong&gt; made a post listing the most outstanding #madewithunity projects from last days (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/01/community-component-soft-body-physics-shaders-that-deform-space-normans-island-and-our-steam-wishlist&quot;&gt;Community Component – Soft body physics, shaders that deform space, Norman’s Island and our Steam wishlist&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; again, now with a video tutorial about the new 2D lights in Unity  2019.2 (&lt;a href=&quot;https://www.youtube.com/watch?v=ZJvCphxCGJU&quot;&gt;NEW 2D LIGHTS IN UNITY 2019.2&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html">Nick Davis wrote a post about how Unity recently teamed up with Autodesk and Texel Logic to create a mixed-reality experience to illustrate and understand the complex nature of airflow passing over and around an IndyCar (Simulating high-speed IndyCars in AR).</summary></entry><entry><title type="html">Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects</title><link href="http://diegogiacomelli.com.br/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects/" rel="alternate" type="text/html" title="Using an AssetPostprocessor + EditorWindow to keep assets organized on Unity projects" /><published>2019-05-31T00:00:00-03:00</published><updated>2019-05-31T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-an-assetpostprocessor-editorwindow-to-keep-assets-organized-on-unity-projects/">&lt;p&gt;I created an AssetPostProcessor and an EditorWindow to validate if assets are in the right folder and help the Unity projects to keep organized.&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;There are many ways to structure folders in a Unity project, but most common ones are cited by the Unity Learn tutorial: &lt;a href=&quot;https://unity3d.com/pt/learn/tutorials/topics/tips/large-project-organisation&quot;&gt;Large Project Organisation&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;To keep the project easy to navigate, avoid placing files in the root Assets folder. Use subfolders. How you organize those subfolders is generally decided by your projects but the two main ways to do it are:&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;A folder for each type of asset and subfolders in them per objects&lt;/strong&gt;, zones (For example Assets/Materials, Assets/Prefabs, with subfolders Assets/Material/Level1 or Assets/Prefabs/Enemies)&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;A folder per objects or zones&lt;/strong&gt; (Such as Assets/Level1/Enemies/Archer, Assets/Shared/UI, Assets/Forest/Trees) with all assets related to those in the folders (Assets/Forest/Trees/BigTree.fbx, Assets/Forest/Trees/Tree.mat, Assets/Forest/Trees/Tree_Bark.jpg).&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;With big teams or even with the small ones is easy that some assets will be placed in wrong folders. To help to identify and keep those projects folders organized I coded a couple of editor scripts that I called &lt;code class=&quot;highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Another advantage of keeping assets organized in their proper folders is that you can &lt;a href=&quot;https://docs.unity3d.com/Manual/DefaultPresetsByFolder.html&quot;&gt;apply defaults presets to assets by folder&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
-&lt;p&gt;To setup the &lt;code class=&quot;highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/2d561e29beadab641a4f8b56954f53f7&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
-
-&lt;h2 id=&quot;using&quot;&gt;Using&lt;/h2&gt;
-&lt;p&gt;You can open the window through the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Window / Folder organizer&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Just configure the folders to ignore, if should run the validation every time an asset is imported and defined a regular expression to find the assets and what is the expected folder.&lt;/p&gt;
-
-&lt;p&gt;In the video below you can see in more details how to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt; to validate if your assets are in the right folders:&lt;/p&gt;
-&lt;center&gt;
-        &lt;iframe src=&quot;https://www.youtube.com/embed/GU6jWl6MpdM &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;</content><author><name></name></author><category term="unity3d" /><category term="editor-window" /><category term="asset-post-processor" /><category term="gamedev" /><category term="open-source" /><summary type="html">I created an AssetPostProcessor and an EditorWindow to validate if assets are in the right folder and help the Unity projects to keep organized.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html">Nick Davis wrote a post about how Unity recently teamed up with Autodesk and Texel Logic to create a mixed-reality experience to illustrate and understand the complex nature of airflow passing over and around an IndyCar (Simulating high-speed IndyCars in AR).</summary></entry></feed>
