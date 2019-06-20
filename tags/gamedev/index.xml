@@ -3,11 +3,37 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2019-06-18T19:06:05-03:00</updated>
+ <updated>2019-06-20T12:52:23-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Changing the style of the Hierarchy Window Group Header</title>
+   <link href="//unitytips-changing-the-style-of-the-hierarchy-window-group-header/"/>
+   <updated>2019-06-20T00:00:00-03:00</updated>
+   <id>//unitytips-changing-the-style-of-the-hierarchy-window-group-header</id>
+   <content type="html">&lt;p&gt;In my last &lt;a href=&quot;/tags/unitytips/&quot;&gt;#unitytips&lt;/a&gt; I demonstrated how you could create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;. Now I’m improving it allowing you to &lt;strong&gt;customize its style&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/g2lq0lIJzh8 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;To change the style, you just need to edit the values of the HierarchyWindowGroupHeaderSettings in the inspector&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/bb6a9932e5f49a072c57a7c17135bf6b.js?file=HierarchyWindowGroupHeader.cs&quot;&gt; &lt;/script&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;It’s a good practice add the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to your group header game objects&lt;/p&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Hierarchy Window Group Header</title>
