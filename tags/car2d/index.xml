@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - car2d</title>
  <link href="//tags/car2d/index.xml" rel="self"/>
  <link href="/tag/car2d.html"/>
- <updated>2019-06-21T11:39:48-03:00</updated>
+ <updated>2019-06-24T12:40:56-03:00</updated>
  <id>/tag/car2d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -181,10 +181,6 @@ It’s quite clear that the best cars design to each of the 3 roads are differen
    <updated>2018-05-31T00:00:00-03:00</updated>
    <id>//GeneticSharp-Unity3d-sample</id>
    <content type="html">&lt;p&gt;I just pushed to GeneticSharp master branch the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;GeneticSharp.Runners.UnityApp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Unity3D.png&quot; /&gt;
-      &lt;/center&gt;
 
 &lt;p&gt;In this Unity3d project there are 3 samples:&lt;/p&gt;
 

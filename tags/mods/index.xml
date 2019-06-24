@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - mods</title>
  <link href="//tags/mods/index.xml" rel="self"/>
  <link href="/tag/mods.html"/>
- <updated>2019-06-21T11:39:48-03:00</updated>
+ <updated>2019-06-24T12:40:56-03:00</updated>
  <id>/tag/mods.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -376,10 +376,6 @@ Unzip it in any folder.&lt;/p&gt;
    <updated>2016-08-28T00:00:00-03:00</updated>
    <id>//buildron.2.0.0-rc1-mods-support</id>
    <content type="html">&lt;p&gt;After some months of hard work I finally released the Buildron mods support.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
-      &lt;/center&gt;
 
 &lt;p&gt;This &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;Buildron 2.0.0-RC1&lt;/a&gt; represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
 

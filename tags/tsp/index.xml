@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - tsp</title>
  <link href="//tags/tsp/index.xml" rel="self"/>
  <link href="/tag/tsp.html"/>
- <updated>2019-06-21T11:39:48-03:00</updated>
+ <updated>2019-06-24T12:40:56-03:00</updated>
  <id>/tag/tsp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -182,10 +182,6 @@ It’s quite clear that the best cars design to each of the 3 roads are differen
    <id>//GeneticSharp-Unity3d-sample</id>
    <content type="html">&lt;p&gt;I just pushed to GeneticSharp master branch the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;GeneticSharp.Runners.UnityApp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Unity3D.png&quot; /&gt;
-      &lt;/center&gt;
-
 &lt;p&gt;In this Unity3d project there are 3 samples:&lt;/p&gt;
 
 &lt;h2 id=&quot;car2d&quot;&gt;Car2D&lt;/h2&gt;
@@ -226,10 +222,6 @@ div.gist-meta { display:none; }
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/city.png&quot; /&gt;
-      &lt;/center&gt;
-
 &lt;p&gt;According to Wikipedia &lt;em&gt;&lt;strong&gt;“The travelling salesman problem (TSP) asks the following question: “Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?”&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;TSP is a classic sample to test some optimization techniques, as well it’s fairly used to demonstrate how to implement a genetic algorithm. For these reasons I will use it to show you how to implement a basic genetic algorithm in Unity3D using GeneticSharp.&lt;/p&gt;
@@ -267,7 +259,7 @@ div.gist-meta { display:none; }
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
 &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;

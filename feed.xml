@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-21T11:39:48-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Context-Sensitive Code Completion</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-context-sensitive-code-completion/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; Context-Sensitive Code Completion" /><published>2019-06-21T00:00:00-03:00</published><updated>2019-06-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-context-sensitive-code-completion</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-context-sensitive-code-completion/">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-24T12:40:56-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (June 24th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-24th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 24th 2019)" /><published>2019-06-24T00:00:00-03:00</published><updated>2019-06-24T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-24th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-24th-2019/">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video about the Buried Memories Volume 2: Serekh (&lt;a href=&quot;https://www.youtube.com/watch?v=5CTAVFOrbsM&quot;&gt;Buried Memories: Serekh – New HDRP Asset Pack for Unity! (Overview)&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Jean-Christophe Cimetiere&lt;/strong&gt; made a post about how to use Unity as a library inside other apps (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/17/add-features-powered-by-unity-to-native-mobile-apps&quot;&gt;Add features powered by Unity to native mobile apps&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Unity 2019.3 will add support for using Unity as a library controlled by native Android/Java and iOS/Objective C apps so you can easily insert AR and other Unity features.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Egor Bogatov&lt;/strong&gt; create a GitHub repository with a sample Xamarin app using Unity as a library (&lt;a href=&quot;https://github.com/EgorBo/XamarinWithUnityApp&quot;&gt;XamarinWithUnityApp&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;You can now easily add a Unity scene (e.g. ARCore scene) to any native or Xamarin app via .aar file.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Jacob Shriar&lt;/strong&gt; posted about a survey that Unity made with 1000 creatives within advertising and marketing about AR (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/18/creative-professionals-are-struggling-to-implement-augmented-reality&quot;&gt;Creative professionals are struggling to implement augmented reality&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;In anticipation for Cannes this year, we surveyed 1000 creatives within advertising and marketing to gauge a better understanding on their comfort level, technical competency, and enthusiasm towards AR, including what it means for the future of storytelling. And what we found was very telling&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Harry Alisavakis&lt;/strong&gt;, released another tutorial in his series &lt;code class=&quot;highlighter-rouge&quot;&gt;VFX Master Shader&lt;/code&gt; (&lt;a href=&quot;https://halisavakis.com/my-take-on-shaders-vfx-master-shader-part-ii/&quot;&gt;My take on shaders: VFX Master Shader (Part II)&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Nick Davis&lt;/strong&gt; wrote about how automotive companies are leveraging real-time 3D to reduce costs and accelerate development (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/19/how-real-time-3d-is-changing-every-industry&quot;&gt;How real-time 3D is changing every industry&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Real-time 3D is changing everything, in much deeper ways than most people realize. Forged in gaming, this technology continues to transform the way games are created, operated and monetized. Its impact now also extends to industries of all kinds, from film to automotive.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Seth Barton&lt;/strong&gt; made a post about how HDRP is taking next-gen graphics to a new level (&lt;a href=&quot;https://www.mcvuk.com/in-the-pipeline-unitys-hdrp-brings-next-gen-graphics-to-the-worlds-most-used-game-engine/&quot;&gt;In the pipeline: Unity’s HDRP brings next-gen graphics to the world’s most-used game engine&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;What do System Shock 3, Oddworld: Soulstorm and Harold Halibut have in common? Well, all of these incredible-looking upcoming titles are built on Unity, and more specifically will utilise Unity’s upcoming High Definition Render Pipeline or HDRP for short.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Caitlin W and Macy Mills&lt;/strong&gt; wrote a post about the new Unity’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Verified Solutions Partners&lt;/code&gt; (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/20/unitys-new-partnerships-bring-verified-solutions-to-developers-across-industries&quot;&gt;Unity’s new partnerships bring verified solutions to developers across industries&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Verified Solutions Partners represent a collection of 3rd-party SDKs, plugins, editor applications, cloud services, and more that enable the success of your project while ensuring deeper technical alignment with partners’ products and services to ensure 0% developer downtime. Partners accepted into the program go through a verification process to ensure their SDK or software is optimized for the latest version of Unity.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Elena Nizhnik&lt;/strong&gt; released a new post about &lt;code class=&quot;highlighter-rouge&quot;&gt;Community Component&lt;/code&gt;, highlighting some games, posts, videos and tools (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/22/community-component-audio-design-pixel-games-custom-tools-and-best-of-made-with-unity-on-youtube&quot;&gt;Community Component – audio design, pixel games, custom tools and Best of Made with Unity on YouTube&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; again, now with a timelapse level design video (&lt;a href=&quot;https://www.youtube.com/watch?v=f3vNNUC1tnE&quot;&gt;LEVEL DESIGN IN UNITY! - Village &amp;amp; Castle Scene (Timelapse)&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; made a video about the new Terrain System in Unity (&lt;a href=&quot;https://www.youtube.com/watch?v=MWQv2Bagwgk&quot;&gt;How to make Terrain in Unity!&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Context-Sensitive Code Completion</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-context-sensitive-code-completion/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; Context-Sensitive Code Completion" /><published>2019-06-21T00:00:00-03:00</published><updated>2019-06-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-context-sensitive-code-completion</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-context-sensitive-code-completion/">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;For this second post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Context-Sensitive Code
 Completion: Improving Predictions with Genetic Algorithms&lt;/code&gt;.&lt;/p&gt;
@@ -66,11 +110,7 @@ improving existing systems as well as in future research.&lt;/em&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Any GameObject with name that starts with “—” will be considered a group header&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="hierarchy-window" /><summary type="html">You can create a visual header to any group of components on your hierarchy window using EditorApplication.hierarchyWindowItemOnGUI:</summary></entry><entry><title type="html">Unity and Game Development links (June 17th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 17th 2019)" /><published>2019-06-17T00:00:00-03:00</published><updated>2019-06-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/">&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/unity-and-gamedev-links.png&quot; /&gt;
-      &lt;/center&gt;
-
-&lt;ul&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="hierarchy-window" /><summary type="html">You can create a visual header to any group of components on your hierarchy window using EditorApplication.hierarchyWindowItemOnGUI:</summary></entry><entry><title type="html">Unity and Game Development links (June 17th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 17th 2019)" /><published>2019-06-17T00:00:00-03:00</published><updated>2019-06-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Sebastian Lague&lt;/strong&gt; made an ecosystem simulation with foxes and rabbits in Unity3d (&lt;a href=&quot;https://www.youtube.com/watch?v=r_It_X7v-1E&quot;&gt;Coding Adventure: Simulating an Ecosystem&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
@@ -194,11 +234,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request
 &lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/3c05b37b9af2ec6cfef0db58a2e5e3a7.js?file=TransformContextMenu.cs&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">You can create a context menu for any component using the &quot;CONTEXT/&amp;lt;component&amp;gt;/&amp;lt;menu name&amp;gt;&quot; on a MenuItem attribute:</summary></entry><entry><title type="html">Unity and Game Development links (June 10th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 10th 2019)" /><published>2019-06-10T00:00:00-03:00</published><updated>2019-06-10T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019/">&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/unity-and-gamedev-links.png&quot; /&gt;
-      &lt;/center&gt;
-
-&lt;ul&gt;
+&lt;script src=&quot;https://gist.github.com/3c05b37b9af2ec6cfef0db58a2e5e3a7.js?file=TransformContextMenu.cs&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">You can create a context menu for any component using the &quot;CONTEXT/&amp;lt;component&amp;gt;/&amp;lt;menu name&amp;gt;&quot; on a MenuItem attribute:</summary></entry><entry><title type="html">Unity and Game Development links (June 10th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 10th 2019)" /><published>2019-06-10T00:00:00-03:00</published><updated>2019-06-10T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-10th-2019/">&lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Toulouse de Margerie&lt;/strong&gt; wrote a post about how Unity natively maintains frame rates an how to make Unity follow a precise frame rate (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/03/precise-framerates-in-unity/&quot;&gt;Precise frame rates in Unity&lt;/a&gt;).
     &lt;blockquote&gt;
       &lt;p&gt;Normally, out of the box, a Unity project will attempt to run your project as fast as possible. Frames will be rendered as quickly as they can while generally being limited by your display device’s refresh rate.&lt;/p&gt;
@@ -387,27 +423,4 @@ function initializeGallery() {
 &lt;/blockquote&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is an old post that I made years ago on &lt;a href=&quot;http://skahal.github.io&quot;&gt;Skahal&lt;/a&gt;’s blog, as the subject still relevant, I reposted it here.&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="gamedev" /><category term="game-design" /><category term="motivation" /><summary type="html">The importance of game prototype Several famous books and game designers cite how the prototyping phase of a new game project is an important time to lay out the foundations that will guide the whole game structure during its development project and, as well, to experiment with concepts and ideas of quick and unassuming way.</summary></entry><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization" /><published>2019-06-05T00:00:00-03:00</published><updated>2019-06-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization/">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;For this first post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;AeroVision - Aircraft Trajectories Optimization and Visualization&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;The main motivation of the authors about the AeroVision was:
-&lt;em&gt;build program that represents an innovative and efficient way to
-minimize and visualize aircraft noise along simulated and real flight routes. There are no existing programs that offer both optimization and visualization of aircraft noise.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;To optimize aircraft trajectories using a genetic algorithm, AeroVision uses the &lt;a href=&quot;https://github.com/giacomelli/geneticsharp&quot;&gt;GeneticSharp&lt;/a&gt; library, which is a fast, extensible, multi-platform and multithreading C# Genetic Algorithm library that simplifies the development of applications using Genetic Algorithms.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The library supports a number of selection methods, of which the most basic option (elite selection) is recommended. The mutation method used by AeroVision is crossover, which is a commonly used setting. The stop criteria can be a fixed number of generations, which can be specified by the user.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Additionally, the user is free to define the number of chromosomes that are part of one population. The default population size is 70 chromosomes, each representing a possible trajectory in our case.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;For trajectory optimization we were able to achieve a &lt;code class=&quot;highlighter-rouge&quot;&gt;performance improvement of 84%&lt;/code&gt; by using a &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/wiki/multithreading&quot;&gt;multi-core and multi-threaded genetic algorithm&lt;/a&gt; based on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/wiki/crossovers&quot;&gt;crossover operations&lt;/a&gt;. This led to a major improvement on the workﬂow management and automation&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;authors&quot;&gt;Authors&lt;/h1&gt;
-&lt;p&gt;Elvan Kula and Hans Schouten wrote the paper as requirements for their degree of Bachelor of Science in Computer Science. The Dr. Ir. N. Dintzner (TU Delft, supervisor), Dr. ir. S. Hartjes (Client) and Dr. ir. M. Larson (Bachelor Project Coordinator) are the thesis committee.&lt;/p&gt;
-
-&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
-&lt;p&gt;You can access the full paper directly on &lt;a href=&quot;http://resolver.tudelft.nl/uuid:91c8261d-a5f2-414a-9b83-2e0d6ad5b37f&quot;&gt;TUDelft library repository&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html">I decided to start a series of posts about some outstanding scientific papers and projects using GeneticSharp.</summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="gamedev" /><category term="game-design" /><category term="motivation" /><summary type="html">The importance of game prototype Several famous books and game designers cite how the prototyping phase of a new game project is an important time to lay out the foundations that will guide the whole game structure during its development project and, as well, to experiment with concepts and ideas of quick and unassuming way.</summary></entry></feed>

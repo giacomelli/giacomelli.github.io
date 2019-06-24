@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - open-source</title>
  <link href="//tags/open-source/index.xml" rel="self"/>
  <link href="/tag/open-source.html"/>
- <updated>2019-06-21T11:39:48-03:00</updated>
+ <updated>2019-06-24T12:40:56-03:00</updated>
  <id>/tag/open-source.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -160,7 +160,7 @@
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
 &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&lt;/a&gt;. To start the tutorial you need to fork, clone or download the repository.&lt;/p&gt;
@@ -404,7 +404,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
 &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&quot;&gt;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&lt;/a&gt;. To start this tutorial you need to fork, clone or download the repository.&lt;/p&gt;
@@ -636,10 +636,6 @@ These techniques allowing us to use already existent animations and combine them
    <updated>2016-09-24T00:00:00-03:00</updated>
    <id>//buildron.2.0.0</id>
    <content type="html">&lt;p&gt;After some months to test the &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;v2.0.0-RC1&lt;/a&gt; we are releasing the final version of &lt;a href=&quot;https://github.com/skahal/Buildron/&quot;&gt;Buildron&lt;/a&gt; mods support with this &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0&quot;&gt;2.0.0 version&lt;/a&gt;.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
-      &lt;/center&gt;
 
 &lt;p&gt;Mods supports represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
 
@@ -1255,10 +1251,6 @@ Unzip it in any folder.&lt;/p&gt;
    <id>//buildron.2.0.0-rc1-mods-support</id>
    <content type="html">&lt;p&gt;After some months of hard work I finally released the Buildron mods support.&lt;/p&gt;
 
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
-      &lt;/center&gt;
-
 &lt;p&gt;This &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;Buildron 2.0.0-RC1&lt;/a&gt; represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
 
 &lt;p&gt;Hope to see you building some mods to Buildron. We’re curious about what crazy mods ideas you could have ;).&lt;/p&gt;
@@ -1289,10 +1281,6 @@ Unzip it in any folder.&lt;/p&gt;
    <updated>2016-06-02T00:00:00-03:00</updated>
    <id>//buildron-your-builds-our-world-and-now-our-open-source-code-too</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to continuous integration server like TeamCity, Jenkins and Hudson.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
-      &lt;/center&gt;
 
 &lt;p&gt;We’ve built it as a &lt;a href=&quot;http://skahal.com&quot;&gt;Skahal’s&lt;/a&gt; product and now we decide to &lt;strong&gt;open source it: &lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;http://github.com/skahal/buildron&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 

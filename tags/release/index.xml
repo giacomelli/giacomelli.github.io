@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - release</title>
  <link href="//tags/release/index.xml" rel="self"/>
  <link href="/tag/release.html"/>
- <updated>2019-06-21T11:39:48-03:00</updated>
+ <updated>2019-06-24T12:40:56-03:00</updated>
  <id>/tag/release.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -17,10 +17,6 @@
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.4.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
 &lt;p&gt;The additions of this version are the two new crossovers implementations and a new option of ITaskExecutor that use TPL.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
-      &lt;/center&gt;
 
 &lt;h1 id=&quot;crossovers&quot;&gt;Crossovers&lt;/h1&gt;
 &lt;h3 id=&quot;alternating-position-ap&quot;&gt;Alternating-position (AP)&lt;/h3&gt;
@@ -64,10 +60,6 @@
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.2.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
 &lt;p&gt;The additions of this version are the new whole sample and extensions showing how to use GeneticSharp to solve a Sudoku.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
-      &lt;/center&gt;
 
 &lt;p&gt;The GeneticSharp.Extensions project receive those new features:&lt;/p&gt;
 
@@ -126,10 +118,6 @@ Here, instead, an arbitrary number of Sudokus are generated where for each row, 
 
 &lt;h3 id=&quot;features&quot;&gt;Features&lt;/h3&gt;
 
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
-      &lt;/center&gt;
-
 &lt;ul&gt;
   &lt;li&gt;Add constructor with values to FloatingPointChromosome &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/issues/33&quot;&gt;#33&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -174,10 +162,6 @@ I have a case where I need to stop optimization at some time, save results to DB
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/netcore.svg&quot; /&gt;
-      &lt;/center&gt;
-
 &lt;p&gt;In march GenetichSharp start to support .NET Standard 2.0 in the 2.0.0-rc version. Two months have pass and in the meanwhile the community have time to test that release candidate version and now Unity3D has an official .NET Standard 2.0 profile.&lt;/p&gt;
 
 &lt;p&gt;So, it’s time to release the GeneticSharp v2.0.0.&lt;/p&gt;
@@ -200,7 +184,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
 &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -268,11 +252,9 @@ I have a case where I need to stop optimization at some time, save results to DB
 
 &lt;p&gt;In this version GeneticSharp starts to support .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
 
-&lt;p&gt;Porting &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
-      &lt;/center&gt;
+&lt;p&gt;Porting 
 to &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/netcore.svg&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/netcore.svg &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
@@ -392,7 +374,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
 &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
 
 &lt;ul&gt;
@@ -413,7 +395,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;reads-during-the-porting&quot;&gt;Reads during the porting&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/conclusion.png &quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Some readings I did during the whole process, maybe can be useful to someone porting a library to .NET Core too.&lt;/p&gt;
@@ -459,10 +441,6 @@ Test Run Aborted
 
 &lt;p&gt;The additions of this version are the new sequence mutation operators: Displacement, InsertionMutation and Partial Shuffle (PSM).&lt;/p&gt;
 
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
-      &lt;/center&gt;
-
 &lt;p&gt;&lt;strong&gt;Displacement Mutation&lt;/strong&gt;: a substring is randomly selected from chromosome, is removed, then replaced at a randomly selected position.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Insertion Mutation&lt;/strong&gt;: a gene is randomly selected from chromosome, is removed, then replaced at a randomly selected position.&lt;/p&gt;
@@ -485,10 +463,6 @@ Test Run Aborted
    <updated>2017-06-11T00:00:00-03:00</updated>
    <id>//GeneticSharp-v1.1.0-binary-chromosomes</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v1.1.0&lt;/a&gt;&lt;/strong&gt; is out. The greatest additions of this version are the binary chromosomes: &lt;strong&gt;FloatingPointChromosome and IntegerChromosome.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/GeneticSharp.png&quot; /&gt;
-      &lt;/center&gt;
 
 &lt;p&gt;Binary chromosomes can be directly used when your solution chromosome can be represented as numbers or a string representation of 0 and 1.&lt;/p&gt;
 
@@ -517,10 +491,6 @@ Test Run Aborted
    <updated>2016-09-24T00:00:00-03:00</updated>
    <id>//buildron.2.0.0</id>
    <content type="html">&lt;p&gt;After some months to test the &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;v2.0.0-RC1&lt;/a&gt; we are releasing the final version of &lt;a href=&quot;https://github.com/skahal/Buildron/&quot;&gt;Buildron&lt;/a&gt; mods support with this &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0&quot;&gt;2.0.0 version&lt;/a&gt;.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
-      &lt;/center&gt;
 
 &lt;p&gt;Mods supports represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
 

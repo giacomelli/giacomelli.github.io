@@ -3,11 +3,65 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2019-06-21T11:39:48-03:00</updated>
+ <updated>2019-06-24T12:40:56-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Unity and Game Development links (June 24th 2019)</title>
+   <link href="//unity-and-gamedev-links-june-24th-2019/"/>
+   <updated>2019-06-24T00:00:00-03:00</updated>
+   <id>//unity-and-gamedev-links-june-24th-2019</id>
+   <content type="html">
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video about the Buried Memories Volume 2: Serekh (&lt;a href=&quot;https://www.youtube.com/watch?v=5CTAVFOrbsM&quot;&gt;Buried Memories: Serekh – New HDRP Asset Pack for Unity! (Overview)&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Jean-Christophe Cimetiere&lt;/strong&gt; made a post about how to use Unity as a library inside other apps (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/17/add-features-powered-by-unity-to-native-mobile-apps&quot;&gt;Add features powered by Unity to native mobile apps&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Unity 2019.3 will add support for using Unity as a library controlled by native Android/Java and iOS/Objective C apps so you can easily insert AR and other Unity features.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Egor Bogatov&lt;/strong&gt; create a GitHub repository with a sample Xamarin app using Unity as a library (&lt;a href=&quot;https://github.com/EgorBo/XamarinWithUnityApp&quot;&gt;XamarinWithUnityApp&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;You can now easily add a Unity scene (e.g. ARCore scene) to any native or Xamarin app via .aar file.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Jacob Shriar&lt;/strong&gt; posted about a survey that Unity made with 1000 creatives within advertising and marketing about AR (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/18/creative-professionals-are-struggling-to-implement-augmented-reality&quot;&gt;Creative professionals are struggling to implement augmented reality&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;In anticipation for Cannes this year, we surveyed 1000 creatives within advertising and marketing to gauge a better understanding on their comfort level, technical competency, and enthusiasm towards AR, including what it means for the future of storytelling. And what we found was very telling&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Harry Alisavakis&lt;/strong&gt;, released another tutorial in his series &lt;code class=&quot;highlighter-rouge&quot;&gt;VFX Master Shader&lt;/code&gt; (&lt;a href=&quot;https://halisavakis.com/my-take-on-shaders-vfx-master-shader-part-ii/&quot;&gt;My take on shaders: VFX Master Shader (Part II)&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Nick Davis&lt;/strong&gt; wrote about how automotive companies are leveraging real-time 3D to reduce costs and accelerate development (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/19/how-real-time-3d-is-changing-every-industry&quot;&gt;How real-time 3D is changing every industry&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Real-time 3D is changing everything, in much deeper ways than most people realize. Forged in gaming, this technology continues to transform the way games are created, operated and monetized. Its impact now also extends to industries of all kinds, from film to automotive.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Seth Barton&lt;/strong&gt; made a post about how HDRP is taking next-gen graphics to a new level (&lt;a href=&quot;https://www.mcvuk.com/in-the-pipeline-unitys-hdrp-brings-next-gen-graphics-to-the-worlds-most-used-game-engine/&quot;&gt;In the pipeline: Unity’s HDRP brings next-gen graphics to the world’s most-used game engine&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;What do System Shock 3, Oddworld: Soulstorm and Harold Halibut have in common? Well, all of these incredible-looking upcoming titles are built on Unity, and more specifically will utilise Unity’s upcoming High Definition Render Pipeline or HDRP for short.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Caitlin W and Macy Mills&lt;/strong&gt; wrote a post about the new Unity’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Verified Solutions Partners&lt;/code&gt; (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/20/unitys-new-partnerships-bring-verified-solutions-to-developers-across-industries&quot;&gt;Unity’s new partnerships bring verified solutions to developers across industries&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Verified Solutions Partners represent a collection of 3rd-party SDKs, plugins, editor applications, cloud services, and more that enable the success of your project while ensuring deeper technical alignment with partners’ products and services to ensure 0% developer downtime. Partners accepted into the program go through a verification process to ensure their SDK or software is optimized for the latest version of Unity.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Elena Nizhnik&lt;/strong&gt; released a new post about &lt;code class=&quot;highlighter-rouge&quot;&gt;Community Component&lt;/code&gt;, highlighting some games, posts, videos and tools (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/22/community-component-audio-design-pixel-games-custom-tools-and-best-of-made-with-unity-on-youtube&quot;&gt;Community Component – audio design, pixel games, custom tools and Best of Made with Unity on YouTube&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; again, now with a timelapse level design video (&lt;a href=&quot;https://www.youtube.com/watch?v=f3vNNUC1tnE&quot;&gt;LEVEL DESIGN IN UNITY! - Village &amp;amp; Castle Scene (Timelapse)&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; made a video about the new Terrain System in Unity (&lt;a href=&quot;https://www.youtube.com/watch?v=MWQv2Bagwgk&quot;&gt;How to make Terrain in Unity!&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Changing the style of the Hierarchy Window Group Header</title>
@@ -61,10 +115,7 @@
    <link href="//unity-and-gamedev-links-june-17th-2019/"/>
    <updated>2019-06-17T00:00:00-03:00</updated>
    <id>//unity-and-gamedev-links-june-17th-2019</id>
-   <content type="html">&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/unity-and-gamedev-links.png&quot; /&gt;
-      &lt;/center&gt;
-
+   <content type="html">
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Sebastian Lague&lt;/strong&gt; made an ecosystem simulation with foxes and rabbits in Unity3d (&lt;a href=&quot;https://www.youtube.com/watch?v=r_It_X7v-1E&quot;&gt;Coding Adventure: Simulating an Ecosystem&lt;/a&gt;).&lt;/p&gt;
@@ -131,10 +182,7 @@
    <link href="//unity-and-gamedev-links-june-10th-2019/"/>
    <updated>2019-06-10T00:00:00-03:00</updated>
    <id>//unity-and-gamedev-links-june-10th-2019</id>
-   <content type="html">&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/unity-and-gamedev-links.png&quot; /&gt;
-      &lt;/center&gt;
-
+   <content type="html">
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Toulouse de Margerie&lt;/strong&gt; wrote a post about how Unity natively maintains frame rates an how to make Unity follow a precise frame rate (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/03/precise-framerates-in-unity/&quot;&gt;Precise frame rates in Unity&lt;/a&gt;).
     &lt;blockquote&gt;
@@ -411,7 +459,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
 &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&lt;/a&gt;. To start the tutorial you need to fork, clone or download the repository.&lt;/p&gt;
@@ -694,7 +742,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
 &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&quot;&gt;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&lt;/a&gt;. To start this tutorial you need to fork, clone or download the repository.&lt;/p&gt;
@@ -893,9 +941,7 @@ These techniques allowing us to use already existent animations and combine them
 
 &lt;center&gt;
 	&lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp&quot;&gt;
-		&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/google-play-badge.png&quot; /&gt;
-      &lt;/center&gt;
+		
 	&lt;/a&gt;
 &lt;/center&gt;
 
@@ -1103,10 +1149,6 @@ It’s quite clear that the best cars design to each of the 3 roads are differen
    <id>//GeneticSharp-Unity3d-sample</id>
    <content type="html">&lt;p&gt;I just pushed to GeneticSharp master branch the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;GeneticSharp.Runners.UnityApp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Unity3D.png&quot; /&gt;
-      &lt;/center&gt;
-
 &lt;p&gt;In this Unity3d project there are 3 samples:&lt;/p&gt;
 
 &lt;h2 id=&quot;car2d&quot;&gt;Car2D&lt;/h2&gt;
@@ -1147,10 +1189,6 @@ div.gist-meta { display:none; }
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/city.png&quot; /&gt;
-      &lt;/center&gt;
-
 &lt;p&gt;According to Wikipedia &lt;em&gt;&lt;strong&gt;“The travelling salesman problem (TSP) asks the following question: “Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?”&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;TSP is a classic sample to test some optimization techniques, as well it’s fairly used to demonstrate how to implement a genetic algorithm. For these reasons I will use it to show you how to implement a basic genetic algorithm in Unity3D using GeneticSharp.&lt;/p&gt;
@@ -1188,7 +1226,7 @@ div.gist-meta { display:none; }
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
 &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
@@ -1391,10 +1429,6 @@ I won’t getting in details about how this is script works, but it’s allow th
    <updated>2016-09-24T00:00:00-03:00</updated>
    <id>//buildron.2.0.0</id>
    <content type="html">&lt;p&gt;After some months to test the &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;v2.0.0-RC1&lt;/a&gt; we are releasing the final version of &lt;a href=&quot;https://github.com/skahal/Buildron/&quot;&gt;Buildron&lt;/a&gt; mods support with this &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0&quot;&gt;2.0.0 version&lt;/a&gt;.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
-      &lt;/center&gt;
 
 &lt;p&gt;Mods supports represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
 
@@ -1909,10 +1943,6 @@ Unzip it in any folder.&lt;/p&gt;
    <id>//buildron.2.0.0-rc1-mods-support</id>
    <content type="html">&lt;p&gt;After some months of hard work I finally released the Buildron mods support.&lt;/p&gt;
 
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
-      &lt;/center&gt;
-
 &lt;p&gt;This &lt;a href=&quot;https://github.com/skahal/Buildron/releases/tag/v2.0.0-RC1&quot;&gt;Buildron 2.0.0-RC1&lt;/a&gt; represents a great change in Buildron code structure, because we built a mods support that allow any developer add his own mods to Buildron.&lt;/p&gt;
 
 &lt;p&gt;Hope to see you building some mods to Buildron. We’re curious about what crazy mods ideas you could have ;).&lt;/p&gt;
@@ -1943,10 +1973,6 @@ Unzip it in any folder.&lt;/p&gt;
    <updated>2016-06-02T00:00:00-03:00</updated>
    <id>//buildron-your-builds-our-world-and-now-our-open-source-code-too</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;Buildron&lt;/a&gt; is a build radiator to continuous integration server like TeamCity, Jenkins and Hudson.&lt;/p&gt;
-
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/Buildron.png&quot; /&gt;
-      &lt;/center&gt;
 
 &lt;p&gt;We’ve built it as a &lt;a href=&quot;http://skahal.com&quot;&gt;Skahal’s&lt;/a&gt; product and now we decide to &lt;strong&gt;open source it: &lt;a href=&quot;http://github.com/skahal/buildron&quot;&gt;http://github.com/skahal/buildron&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 

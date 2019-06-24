@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - animation</title>
  <link href="//tags/animation/index.xml" rel="self"/>
  <link href="/tag/animation.html"/>
- <updated>2019-06-21T11:39:48-03:00</updated>
+ <updated>2019-06-24T12:40:56-03:00</updated>
  <id>/tag/animation.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -71,7 +71,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
 &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png&quot; /&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&quot;&gt;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&lt;/a&gt;. To start this tutorial you need to fork, clone or download the repository.&lt;/p&gt;
