@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2019-06-24T12:40:56-03:00</updated>
+ <updated>2019-06-24T12:51:13-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -19,12 +19,12 @@
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video about the Buried Memories Volume 2: Serekh (&lt;a href=&quot;https://www.youtube.com/watch?v=5CTAVFOrbsM&quot;&gt;Buried Memories: Serekh – New HDRP Asset Pack for Unity! (Overview)&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Jean-Christophe Cimetiere&lt;/strong&gt; made a post about how to use Unity as a library inside other apps (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/17/add-features-powered-by-unity-to-native-mobile-apps&quot;&gt;Add features powered by Unity to native mobile apps&lt;/a&gt;).
+  &lt;li&gt;&lt;strong&gt;Jean-Christophe Cimetiere&lt;/strong&gt; wrote a post about how to use Unity as a library inside other apps (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/17/add-features-powered-by-unity-to-native-mobile-apps&quot;&gt;Add features powered by Unity to native mobile apps&lt;/a&gt;).
     &lt;blockquote&gt;
       &lt;p&gt;Unity 2019.3 will add support for using Unity as a library controlled by native Android/Java and iOS/Objective C apps so you can easily insert AR and other Unity features.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Egor Bogatov&lt;/strong&gt; create a GitHub repository with a sample Xamarin app using Unity as a library (&lt;a href=&quot;https://github.com/EgorBo/XamarinWithUnityApp&quot;&gt;XamarinWithUnityApp&lt;/a&gt;).
+  &lt;li&gt;&lt;strong&gt;Egor Bogatov&lt;/strong&gt; created a GitHub repository with a sample Xamarin app using Unity as a library (&lt;a href=&quot;https://github.com/EgorBo/XamarinWithUnityApp&quot;&gt;XamarinWithUnityApp&lt;/a&gt;).
     &lt;blockquote&gt;
       &lt;p&gt;You can now easily add a Unity scene (e.g. ARCore scene) to any native or Xamarin app via .aar file.&lt;/p&gt;
     &lt;/blockquote&gt;
@@ -53,7 +53,7 @@
     &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Elena Nizhnik&lt;/strong&gt; released a new post about &lt;code class=&quot;highlighter-rouge&quot;&gt;Community Component&lt;/code&gt;, highlighting some games, posts, videos and tools (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/22/community-component-audio-design-pixel-games-custom-tools-and-best-of-made-with-unity-on-youtube&quot;&gt;Community Component – audio design, pixel games, custom tools and Best of Made with Unity on YouTube&lt;/a&gt;).&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Elena Nizhnik&lt;/strong&gt; released a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Community Component&lt;/code&gt; post, highlighting some games, posts, videos and tools (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/22/community-component-audio-design-pixel-games-custom-tools-and-best-of-made-with-unity-on-youtube&quot;&gt;Community Component – audio design, pixel games, custom tools and Best of Made with Unity on YouTube&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; again, now with a timelapse level design video (&lt;a href=&quot;https://www.youtube.com/watch?v=f3vNNUC1tnE&quot;&gt;LEVEL DESIGN IN UNITY! - Village &amp;amp; Castle Scene (Timelapse)&lt;/a&gt;).&lt;/p&gt;
