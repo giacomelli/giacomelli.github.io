@@ -3,11 +3,32 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2019-06-24T12:51:13-03:00</updated>
+ <updated>2019-06-25T06:14:09-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Gist Importer</title>
+   <link href="//unitytips-gist-importer/"/>
+   <updated>2019-06-25T00:00:00-03:00</updated>
+   <id>//unitytips-gist-importer</id>
+   <content type="html">&lt;p&gt;Using the Gist below you can easily import other Gists to your Unity project just copying the URL from browser:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/YljjAkebxiE &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/9a248eecf5c1ffc477b59524f63264d3.js&quot;&gt; &lt;/script&gt;
+
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;All Gists are imported to folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Gists&lt;/code&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Changing the style of the Hierarchy Window Group Header</title>

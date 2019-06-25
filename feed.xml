@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-24T12:51:13-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (June 24th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-24th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 24th 2019)" /><published>2019-06-24T00:00:00-03:00</published><updated>2019-06-24T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-24th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-24th-2019/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-06-25T06:14:09-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; Gist Importer</title><link href="http://diegogiacomelli.com.br/unitytips-gist-importer/" rel="alternate" type="text/html" title="unitytips&amp;colon; Gist Importer" /><published>2019-06-25T00:00:00-03:00</published><updated>2019-06-25T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-gist-importer</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-gist-importer/">&lt;p&gt;Using the Gist below you can easily import other Gists to your Unity project just copying the URL from browser:&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/YljjAkebxiE &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/9a248eecf5c1ffc477b59524f63264d3.js&quot;&gt; &lt;/script&gt;
+
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;All Gists are imported to folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Gists&lt;/code&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">Using the Gist below you can easily import other Gists to your Unity project just copying the URL from browser:</summary></entry><entry><title type="html">Unity and Game Development links (June 24th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-24th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 24th 2019)" /><published>2019-06-24T00:00:00-03:00</published><updated>2019-06-24T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-24th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-24th-2019/">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video about the Buried Memories Volume 2: Serekh (&lt;a href=&quot;https://www.youtube.com/watch?v=5CTAVFOrbsM&quot;&gt;Buried Memories: Serekh – New HDRP Asset Pack for Unity! (Overview)&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
@@ -330,97 +342,4 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;In the video below you can see how to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/2W-g6-k74nc &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;</content><author><name></name></author><category term="unity3d" /><category term="editor-window" /><category term="animation-curve" /><category term="gamedev" /><category term="open-source" /><category term="gist" /><summary type="html">I’ve coded an EditorWindow to create an AnimationCurve using easing functions that define how much a value changes over time.</summary></entry><entry><title type="html">Evolution (or from prototype to game)</title><link href="http://diegogiacomelli.com.br/evolution-or-from-prototype-to-game/" rel="alternate" type="text/html" title="Evolution (or from prototype to game)" /><published>2019-06-06T00:00:00-03:00</published><updated>2019-06-06T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/evolution-or-from-prototype-to-game</id><content type="html" xml:base="http://diegogiacomelli.com.br/evolution-or-from-prototype-to-game/">&lt;h1 id=&quot;the-importance-of-game-prototype&quot;&gt;The importance of game prototype&lt;/h1&gt;
-&lt;p&gt;Several famous books and game designers cite how the prototyping phase of a new game project is an important time to &lt;strong&gt;lay out the foundations that will guide the whole game structure&lt;/strong&gt; during its development project and, as well, to experiment with concepts and ideas of quick and unassuming way.&lt;/p&gt;
-
-&lt;p&gt;The prototyping phase, although important, often takes a small percentage in the development time of a game project or in some cases is not part of the project itself, but rather a point prior to that, where we are seeking the idea or concept that will give birth to the new project.&lt;/p&gt;
-
-&lt;h1 id=&quot;transposing-the-fog&quot;&gt;Transposing the fog&lt;/h1&gt;
-&lt;p&gt;I always find it interesting to &lt;strong&gt;compare when an idea is born, or has its first steps, with its final result&lt;/strong&gt;, because when we are at the beginning of any project or journey, the path may seem hazy and maybe it will become clear only when we manage to transpose the fog which separates the persevering from those who prefer to fear it.&lt;/p&gt;
-
-&lt;p&gt;For this reason I present the screenshots to &lt;strong&gt;compare Ships N ‘Battles in its prototype&lt;/strong&gt; phase, which, incidentally, at that stage did not have a name, only its project name “iBattleships”;) , &lt;strong&gt;with the final result of its HD version for iOS devices&lt;/strong&gt; with armv7 and retina display, that is, after letting the fog of this project back.&lt;/p&gt;
-
-&lt;h1 id=&quot;prototype-x-final-product&quot;&gt;Prototype x final product&lt;/h1&gt;
-&lt;p&gt;So we have below the screenshots of the main menu, deploy ships, aim and view the player’s ships, for the first functional prototype version running on Windows and the HD edition version running on an iPad 2:&lt;/p&gt;
-
-&lt;center&gt;
-  
-  &lt;ul id=&quot;lightSlider&quot;&gt;
-    
-        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2.png&quot;&gt;
-          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
-        &lt;/li&gt;
-    
-        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2.png&quot;&gt;
-          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
-        &lt;/li&gt;
-    
-        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy.png&quot;&gt;
-          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
-        &lt;/li&gt;
-    
-        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy.png&quot;&gt;
-          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
-        &lt;/li&gt;
-    
-        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim.png&quot;&gt;
-          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
-        &lt;/li&gt;
-    
-        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim.png&quot;&gt;
-          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
-        &lt;/li&gt;
-    
-        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips.png&quot;&gt;
-          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
-        &lt;/li&gt;
-    
-        &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips.png&quot;&gt;
-          &lt;img class=&quot;lazy&quot; src=&quot;/assets/loading-image.png&quot; data-src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
-        &lt;/li&gt;
-    
-  &lt;/ul&gt;
-  
- &lt;/center&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-var initialized = false;
-
-$(document).ready(function() {
-  var inview = new Waypoint.Inview({
-    element: document.getElementById('lightSlider'),
-    enter: function(direction) {
-      initializeGallery();
-    }
-  });
-});
-
-function initializeGallery() {
-  if(initialized) return;
-  
-  initialized = true;
-
-  $('#lightSlider').lightSlider({
-    gallery: true,
-    pager: true,
-    controls: false,
-    thumbItem: 8,
-    item: 1,
-    loop: false,
-    slideMargin: 0,
-    autoWidth: true,
-    adaptiveHeight: true,
-    mode: &quot;fade&quot;,
-    useCSS: true,
-    cssEasing: 'ease',
-    easing: 'linear'
-  });
-}
-&lt;/script&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;There are only two mistakes one can make along the road to truth; not going all the way, and not starting. (Buddha)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is an old post that I made years ago on &lt;a href=&quot;http://skahal.github.io&quot;&gt;Skahal&lt;/a&gt;’s blog, as the subject still relevant, I reposted it here.&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="gamedev" /><category term="game-design" /><category term="motivation" /><summary type="html">The importance of game prototype Several famous books and game designers cite how the prototyping phase of a new game project is an important time to lay out the foundations that will guide the whole game structure during its development project and, as well, to experiment with concepts and ideas of quick and unassuming way.</summary></entry></feed>
+      &lt;/center&gt;</content><author><name></name></author><category term="unity3d" /><category term="editor-window" /><category term="animation-curve" /><category term="gamedev" /><category term="open-source" /><category term="gist" /><summary type="html">I’ve coded an EditorWindow to create an AnimationCurve using easing functions that define how much a value changes over time.</summary></entry></feed>
