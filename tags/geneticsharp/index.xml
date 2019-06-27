@@ -3,11 +3,54 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2019-06-25T06:14:09-03:00</updated>
+ <updated>2019-06-27T10:12:51-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Starting an Unity3D project with GeneticSharp using dotnet new</title>
+   <link href="//starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/"/>
+   <updated>2019-06-27T00:00:00-03:00</updated>
+   <id>//starting-an-unity3d-project-with-geneticsharp-using-dotnet-new</id>
+   <content type="html">&lt;p&gt;In this post I will show how to use &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; command to start an Unity3D project with GeneticSharp.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Sometime ago I created a NuGet package called &lt;a href=&quot;/dotnet-new-templates-for-GeneticSharp&quot;&gt;GeneticSharp.Templates&lt;/a&gt;, this package allows developers to install &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; templates using the dotnet new command.&lt;/p&gt;
+
+&lt;p&gt;Among the availables templates in &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharp.Templates&lt;/code&gt;, there is one specific to create an Unity3D project with GeneticSharp. Besides this, the project has a sample of Travelling Salesman Problem (TSP) using GeneticSharp and can be used as a scaffold to starting use genetic algorithms in your games.&lt;/p&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Create an Unity3D project using dotnet new is fast and simple, depending of your machine performance, you’ll have the sample running in less than a minute.&lt;/p&gt;
+
+&lt;p&gt;Open a terminal/prompt and type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; GeneticSharp.Templates
+dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; GeneticSharpSample
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The argument &lt;code class=&quot;highlighter-rouge&quot;&gt;-o&lt;/code&gt; is the the output folder of the Unity3D project&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you can open the &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpSample&lt;/code&gt; in Unity3D editor.
+Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; scene and hit the play button, you should see something like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Thats it, now you can use this sample to understand how to use GeneticSharp in your game.&lt;/p&gt;
+
+&lt;p&gt;If you want more details about the code and the sample itself, please, take a look on this tutorial &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you need an introduction to genetic algorithms, this tutorial could help you &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>GeneticSharp in the Wild&colon; Context-Sensitive Code Completion</title>
