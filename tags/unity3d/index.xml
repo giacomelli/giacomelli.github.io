@@ -3,11 +3,56 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2019-06-27T10:12:51-03:00</updated>
+ <updated>2019-07-01T14:00:54-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Unity and Game Development links (July 1st 2019)</title>
+   <link href="//unity-and-gamedev-links-july-1st-2019/"/>
+   <updated>2019-07-01T00:00:00-03:00</updated>
+   <id>//unity-and-gamedev-links-july-1st-2019</id>
+   <content type="html">
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Unity&lt;/strong&gt; released a YouTube tutorial about how to create a portal effect in Lightweight Render Pipeline with Shader Graph (&lt;a href=&quot;https://www.youtube.com/watch?v=TkzASwVgnj8&quot;&gt;Making Portals with Shader Graph in Unity! (Tutorial)&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Dilmer Valecillos&lt;/strong&gt; posted a video on augmented reality while implementing a dragging feature with ray-casting (&lt;a href=&quot;https://www.youtube.com/watch?v=nBftG-gXUE8&quot;&gt;AR Foundation with Unity3d and Adding Dragging Functionality with AR Raycast and Physics Raycast&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Felipe Lira&lt;/strong&gt; created a GitHub repository with a bare bones Scriptable Render Pipeline. (&lt;a href=&quot;https://github.com/phi-lira/HelloSRP&quot;&gt;HelloSRP&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Bare Bones Scriptable Render Pipeline. Use it as a base to create your own.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sebastian Lague&lt;/strong&gt; made some updates to his path creation tool (&lt;a href=&quot;https://github.com/SebLague/Path-Creator&quot;&gt;Bézier Path Creator&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;An intuitive and lightweight editor for quickly creating smooth paths in the editor.
+You can easily make objects move along these paths, or use them as a guide for spawning objects and generating meshes.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Unity&lt;/strong&gt;, started its annual survey asking for community feedback (&lt;a href=&quot;https://on.unity.com/2xdSRmX&quot;&gt;survey&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; published a YouTube video showing what he learned after making more than 100 game levels (&lt;a href=&quot;https://www.youtube.com/watch?v=WPimiBP8d6o&quot;&gt;What I Learned after Making 100+ GAME LEVELS! (Unity Level Design)&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Nichole Wong&lt;/strong&gt; wrote about the new &lt;code class=&quot;highlighter-rouge&quot;&gt;Unity Learn Premium&lt;/code&gt; (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/27/introducing-unity-learn-premium/&quot;&gt;Introducing Unity Learn Premium: Get direct guidance from experts&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;We’ve heard your requests for more advanced and in-depth content, and resources for specific industries like automotive, architecture, or media and entertainment. And we’ve also heard that you want access to experts who can give you immediate guidance and feedback on specific challenges or questions&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Eduardo Oriz and Alitt Khaliq&lt;/strong&gt; made a post showing the behind the scenes and dive further into the creative process behind Buried Memories Volume 2: Serekh (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/28/the-creative-process-behind-serekh/&quot;&gt;The creative process behind Serekh&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Developing a strong game, large or small, depends on having a dedicated team of skilled and specialized people who share a vision and care deeply about what they are making. The development of Serekh was a combined effort by Edvige Faini, the Concept Artist, and the Unity Icon Collective. Some of the most significant challenges on this project were conceptual rather than technical.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; again, with a video on tips, tricks, and list of features in Unity for making 2D games (&lt;a href=&quot;https://www.youtube.com/watch?v=-MuWAydTjY0&quot;&gt;How to make 2D Games with Unity 2019!&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Starting an Unity3D project with GeneticSharp using dotnet new</title>
