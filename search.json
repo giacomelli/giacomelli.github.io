@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "unitytips Museum",
+      "category" : "News",
+      "tags"     : "unity3d, unitytips, gamedev, blazor",
+      "url"      : "/unitytips-museum/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "Unity and Game Development links (July 1st 2019)",
       "category" : "News",
       "tags"     : "unity3d, gamedev",

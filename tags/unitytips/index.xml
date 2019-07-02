@@ -3,11 +3,43 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2019-07-01T18:45:34-03:00</updated>
+ <updated>2019-07-02T07:25:51-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips Museum</title>
+   <link href="//unitytips-museum/"/>
+   <updated>2019-07-02T00:00:00-03:00</updated>
+   <id>//unitytips-museum</id>
+   <content type="html">&lt;p&gt;I &lt;a href=&quot;https://twitter.com/ogiacomelli/status/1144379461317648384&quot;&gt;recently&lt;/a&gt; started studying &lt;a href=&quot;https://dotnet.microsoft.com/apps/aspnet/web-apps/client&quot;&gt;Blazor&lt;/a&gt; and last weekend I created this simple app that I called: &lt;code class=&quot;highlighter-rouge&quot;&gt;#unitytips Museum&lt;/code&gt;, a collection of best #unitytips.&lt;/p&gt;
+
+&lt;p&gt;You can access it directly in my site, in this url: &lt;a href=&quot;http://diegogiacomelli.com.br/apps/unitytips-museum&quot;&gt;http://diegogiacomelli.com.br/apps/unitytips-museum&lt;/a&gt;&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/B9eTNZWhojI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;the-unitytips-collection&quot;&gt;The #unitytips collection&lt;/h1&gt;
+&lt;p&gt;Every week all #unitytips retweeted by &lt;a href=&quot;https://twitter.com/unity3d&quot;&gt;@unity3d&lt;/a&gt; will be included to the collection.&lt;/p&gt;
+
+&lt;p&gt;If you know a really good #unitytips (at least 50 retweets) that should be added to the collection, please follow one of options above:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Contact me on Twitter &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/unitytips-museum&quot;&gt;Fork it on GitHub&lt;/a&gt;, add the #unitytips to the wwwroot/data/tips.json file and create a pull-request.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;about-blazor&quot;&gt;About Blazor&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Blazor can run your client-side C# code directly in the browser, using WebAssembly. Because it’s real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In a future post I will discuss what I learned about Blazor while developing the #unitytips Museum, but I can give a spoiler: I really liked it!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Gist Importer</title>
