@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-02T20:08:28-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips Museum</title><link href="http://diegogiacomelli.com.br/unitytips-museum/" rel="alternate" type="text/html" title="unitytips Museum" /><published>2019-07-02T00:00:00-03:00</published><updated>2019-07-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-museum</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-museum/">&lt;p&gt;I &lt;a href=&quot;https://twitter.com/ogiacomelli/status/1144379461317648384&quot;&gt;recently&lt;/a&gt; started studying &lt;a href=&quot;https://dotnet.microsoft.com/apps/aspnet/web-apps/client&quot;&gt;Blazor&lt;/a&gt; and last weekend I created this simple app that I called: &lt;code class=&quot;highlighter-rouge&quot;&gt;#unitytips Museum&lt;/code&gt;, a collection of best #unitytips.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-04T13:26:25-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Frixel</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; Frixel" /><published>2019-07-04T00:00:00-03:00</published><updated>2019-07-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel/">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For this third post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Frixel: 2D framing / pixel structural optimization&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Frixel is a plugin for &lt;a href=&quot;https://rhino3d.com&quot;&gt;Rhinoceros 6&lt;/a&gt;, a 3D computer graphics and computer-aided design (CAD) application.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A finite element analysis program that’s so easy a 5 year old could use it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Provided only a closed curve representing a building massing and location for core, Frixel generates a 2 dimensional grid and runs structural analysis on it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;You can tweak grid size, gravitation magnitude and lateral wind force to see how your design perfoms under different conditions. Additionally, it can run structural topology optimization to improve its mechanical performance by adding bracing in appropriate places.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
+&lt;p&gt;GeneticSharp was used to design the &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/StructuralChromosome.cs&quot;&gt;structural chromosomes&lt;/a&gt; and &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/StructuralFitness.cs&quot;&gt;fitness function&lt;/a&gt; to allow framing / pixel structural optimization through the &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/FrixelOptimizer.cs&quot;&gt;Frixel optimizer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/04/geneticsharp-in-the-wild-frixel/geneticsharp-frixel-optimization.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;functionality&quot;&gt;Functionality&lt;/h1&gt;
+&lt;p&gt;According to the developers, these are the features of Frixel:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A power-up for architect-engineer collaboration.&lt;/li&gt;
+  &lt;li&gt;A great way to test and guide options in early stage design.&lt;/li&gt;
+  &lt;li&gt;Fast. You can quickly get an understanding of structural behavior.&lt;/li&gt;
+  &lt;li&gt;Topology optimization for minimal displacement.&lt;/li&gt;
+  &lt;li&gt;Platform agnostic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;authors&quot;&gt;Authors&lt;/h1&gt;
+&lt;p&gt;The project was developed from scratch under 24 intense hours at the beyondAEC Hackathon July 2018, in Boston MA by &lt;a href=&quot;https://github.com/lelandjobson&quot;&gt;Leland Jobson&lt;/a&gt; and &lt;a href=&quot;https://github.com/EmilPoulsen&quot;&gt;Emil Poulsen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+&lt;p&gt;You can access the project repository at: &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel&quot;&gt;https://github.com/EmilPoulsen/Frixel&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html">I started a series of posts about some outstanding scientific papers and projects using GeneticSharp.</summary></entry><entry><title type="html">unitytips Museum</title><link href="http://diegogiacomelli.com.br/unitytips-museum/" rel="alternate" type="text/html" title="unitytips Museum" /><published>2019-07-02T00:00:00-03:00</published><updated>2019-07-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-museum</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-museum/">&lt;p&gt;I &lt;a href=&quot;https://twitter.com/ogiacomelli/status/1144379461317648384&quot;&gt;recently&lt;/a&gt; started studying &lt;a href=&quot;https://dotnet.microsoft.com/apps/aspnet/web-apps/client&quot;&gt;Blazor&lt;/a&gt; and last weekend I created this simple app that I called: &lt;code class=&quot;highlighter-rouge&quot;&gt;#unitytips Museum&lt;/code&gt;, a collection of best #unitytips.&lt;/p&gt;
 
 &lt;p&gt;You can access it directly in my site, in this url: &lt;a href=&quot;http://diegogiacomelli.com.br/apps/unitytips-museum&quot;&gt;http://diegogiacomelli.com.br/apps/unitytips-museum&lt;/a&gt;&lt;/p&gt;
 
@@ -253,81 +289,4 @@ improving existing systems as well as in future research.&lt;/em&gt;&lt;/p&gt;
     &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a new video about his 5 favorite assets from Unity Asset Store (&lt;a href=&quot;https://www.youtube.com/watch?v=LLlJzQNYsAI&quot;&gt;5 AMAZING ASSETS for Unity 2019&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; released a video about new 2D renderer in Unity (&lt;a href=&quot;https://www.youtube.com/watch?v=nkgGyO9VG54&quot;&gt;2D Lights in Unity!&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">Using Tesseract 4 with C#</title><link href="http://diegogiacomelli.com.br/using-tesseract4-with-csharp/" rel="alternate" type="text/html" title="Using Tesseract 4 with C#" /><published>2019-06-13T00:00:00-03:00</published><updated>2019-06-13T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-tesseract4-with-csharp</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-tesseract4-with-csharp/">&lt;p&gt;Recently I built a small tool to read the text of thousands of images.&lt;/p&gt;
-
-&lt;p&gt;A common technique to extract text from images is know as OCR (Optical character recognition) and the best implementation, that I Know, is called &lt;a href=&quot;https://github.com/tesseract-ocr/tesseract&quot;&gt;Tesseract&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;When a I started to build the tool, I used the most famous &lt;a href=&quot;https://github.com/charlesw/tesseract&quot;&gt;Tesseract’s wrapper for .NET&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Although the wrapper worked very well, I was curious about if there was a way to get better peformance results. With a little search I noticed that the .NET wrapper still use Tesseract 3, but there was a version 4 available with a lot of performance improvements:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If you are running Tesseract 4, you can use the “fast” integer models.&lt;/p&gt;
-
-  &lt;p&gt;Tesseract 4 also uses up to four CPU threads while processing a page, so it will be faster than Tesseract 3&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;https://github.com/tesseract-ocr/tesseract/wiki/FAQ#can-i-increase-speed-of-ocr&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;So, I decided to try Tesseract 4 to see how could it impact in the performance of my tool. As at the time there was no .NET wrapper for it, I removed the old wrapper and called Tesseract 4 directly as a process.&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The use of Tesseract 4 cut off the time to read the images in almost half&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;tesseractservice&quot;&gt;TesseractService&lt;/h1&gt;
-&lt;p&gt;I ended up developing the class below to call the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tesseract 4&lt;/code&gt; command-line &lt;code class=&quot;highlighter-rouge&quot;&gt;(tesseract.exe)&lt;/code&gt; directly from the C# code.&lt;/p&gt;
-
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=TesseractService.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Just download the gist above and add it to your .NET project.&lt;/li&gt;
-  &lt;li&gt;Install Tesseract 4
-    &lt;ul&gt;
-      &lt;li&gt;Linux and OSX: &lt;a href=&quot;https://github.com/tesseract-ocr/tesseract/wiki&quot;&gt;https://github.com/tesseract-ocr/tesseract/wiki&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Windows: &lt;a href=&quot;https://github.com/UB-Mannheim/tesseract/wiki&quot;&gt;https://github.com/UB-Mannheim/tesseract/wiki&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Download the trained data model for the language you need to read the images
-    &lt;ul&gt;
-      &lt;li&gt;More accurate, but slower: &lt;a href=&quot;https://github.com/tesseract-ocr/tessdata_best&quot;&gt;https://github.com/tesseract-ocr/tessdata_best&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Faster, but less accurate: &lt;a href=&quot;https://github.com/tesseract-ocr/tessdata_fast&quot;&gt;https://github.com/tesseract-ocr/tessdata_fast&lt;/a&gt;.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=usage-sample.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;If you try to read a image like this one:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;p&gt;You will get this result after call the &lt;code class=&quot;highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;The (quick) [brown] {fox} jumps!
-Over the $43,456.78 &amp;lt;lazy&amp;gt; #90 dog
-&amp;amp; duck/goose, as 12.5% of E-mail
-from aspammer@website.com is spam.
-Der ,.schnelle&quot; braune Fuchs springt
-iiber den faulen Hund. Le renard brun
-«rapide» saute par-dessus le chien
-paresseux. La volpe marrone rapida
-salta sopra il cane pigro. El zorro
-marron rapido salta sobre el perro
-perezoso. A raposa marrom rapida
-salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/charlesw/tesseract&quot;&gt;A .Net wrapper for tesseract-ocr&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/tesseract-ocr/tesseract/wiki/FAQ#can-i-increase-speed-of-ocr&quot;&gt;Can I increase speed of OCR?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/doxakis/How-to-use-tesseract-ocr-4.0-with-csharp&quot;&gt;How to use Tesseract OCR 4.0 with C#&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://appliedmachinelearning.blog/2018/06/30/performing-ocr-by-running-parallel-instances-of-tesseract-4-0-python/&quot;&gt;Performing OCR by running parallel instances of Tesseract 4.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/tesseract-ocr/tesseract&quot;&gt;Tesseract repository&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="tesseract" /><category term="ocr" /><category term="dotnet" /><summary type="html">Recently I built a small tool to read the text of thousands of images.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>

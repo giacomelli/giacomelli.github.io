@@ -3,11 +3,56 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2019-07-02T20:08:28-03:00</updated>
+ <updated>2019-07-04T13:26:25-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>GeneticSharp in the Wild&colon; Frixel</title>
+   <link href="//geneticsharp-in-the-wild-frixel/"/>
+   <updated>2019-07-04T00:00:00-03:00</updated>
+   <id>//geneticsharp-in-the-wild-frixel</id>
+   <content type="html">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For this third post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Frixel: 2D framing / pixel structural optimization&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Frixel is a plugin for &lt;a href=&quot;https://rhino3d.com&quot;&gt;Rhinoceros 6&lt;/a&gt;, a 3D computer graphics and computer-aided design (CAD) application.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A finite element analysis program that’s so easy a 5 year old could use it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Provided only a closed curve representing a building massing and location for core, Frixel generates a 2 dimensional grid and runs structural analysis on it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;You can tweak grid size, gravitation magnitude and lateral wind force to see how your design perfoms under different conditions. Additionally, it can run structural topology optimization to improve its mechanical performance by adding bracing in appropriate places.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
+&lt;p&gt;GeneticSharp was used to design the &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/StructuralChromosome.cs&quot;&gt;structural chromosomes&lt;/a&gt; and &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/StructuralFitness.cs&quot;&gt;fitness function&lt;/a&gt; to allow framing / pixel structural optimization through the &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/FrixelOptimizer.cs&quot;&gt;Frixel optimizer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/04/geneticsharp-in-the-wild-frixel/geneticsharp-frixel-optimization.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;functionality&quot;&gt;Functionality&lt;/h1&gt;
+&lt;p&gt;According to the developers, these are the features of Frixel:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A power-up for architect-engineer collaboration.&lt;/li&gt;
+  &lt;li&gt;A great way to test and guide options in early stage design.&lt;/li&gt;
+  &lt;li&gt;Fast. You can quickly get an understanding of structural behavior.&lt;/li&gt;
+  &lt;li&gt;Topology optimization for minimal displacement.&lt;/li&gt;
+  &lt;li&gt;Platform agnostic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;authors&quot;&gt;Authors&lt;/h1&gt;
+&lt;p&gt;The project was developed from scratch under 24 intense hours at the beyondAEC Hackathon July 2018, in Boston MA by &lt;a href=&quot;https://github.com/lelandjobson&quot;&gt;Leland Jobson&lt;/a&gt; and &lt;a href=&quot;https://github.com/EmilPoulsen&quot;&gt;Emil Poulsen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+&lt;p&gt;You can access the project repository at: &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel&quot;&gt;https://github.com/EmilPoulsen/Frixel&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Starting an Unity3D project with GeneticSharp using dotnet new</title>

@@ -35,9 +35,9 @@ var jd = {
                     return;
                 
                 $.getJSON("{{ site.baseurl }}/search.json", function(json) {
-                    function addItem(post) {
-                        var sanitizedTitle = post.title.replace(/&#39;/g, "'")
-                        sanitizedTitle = sanitizedTitle.replace(/&amp;#39;/g, "'")
+                    function addItem(post) {                        
+                        var sanitizedTitle = post.title.replace(/&amp;#39;/g, "'");                        
+                        sanitizedTitle = sanitizedTitle.replace(/&amp;colon;/g, ":");
                         
                         $("[list='" + title + "']").append("<li><a href='" + post.url + "'>" + sanitizedTitle + "</a></li>");
                     }
