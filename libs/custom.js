@@ -36,8 +36,7 @@ var jd = {
                 
                 $.getJSON("{{ site.baseurl }}/search.json", function(json) {
                     function addItem(post) {                        
-                        var sanitizedTitle = post.title.replace(/&amp;#39;/g, "'");                        
-                        sanitizedTitle = sanitizedTitle.replace(/&amp;colon;/g, ":");
+                        var sanitizedTitle = jd.sanitizeText(post.title);
                         
                         $("[list='" + title + "']").append("<li><a href='" + post.url + "'>" + sanitizedTitle + "</a></li>");
                     }
@@ -73,5 +72,9 @@ var jd = {
     removeAccents: function(value) {
         if (value == null) return value;
         return value.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+    },
+    sanitizeText: function(value) {
+        value = value.replace(/&amp;#39;/g, "'");                        
+        return value.replace(/&amp;colon;/g, ":");
     }
 }
