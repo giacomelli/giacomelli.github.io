@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-06T09:32:17-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Frixel</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; Frixel" /><published>2019-07-04T00:00:00-03:00</published><updated>2019-07-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel/">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-06T18:54:41-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Frixel</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; Frixel" /><published>2019-07-04T00:00:00-03:00</published><updated>2019-07-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel/">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;For this third post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Frixel: 2D framing / pixel structural optimization&lt;/code&gt;.&lt;/p&gt;
 
@@ -235,6 +235,14 @@ improving existing systems as well as in future research.&lt;/em&gt;&lt;/p&gt;
 &lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bb6a9932e5f49a072c57a7c17135bf6b.js?file=HierarchyWindowGroupHeader.cs&quot;&gt; &lt;/script&gt;
 
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;It’s a good practice add the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to your group header game objects&lt;/p&gt;
@@ -248,6 +256,13 @@ improving existing systems as well as in future research.&lt;/em&gt;&lt;/p&gt;
 &lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/35410d682e41a504c7869a464a96c30a.js?file=HierarchyWindowGroupHeader.cs&quot;&gt; &lt;/script&gt;
 
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Any GameObject with name that starts with “—” will be considered a group header&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="hierarchy-window" /><summary type="html">You can create a visual header to any group of components on your hierarchy window using EditorApplication.hierarchyWindowItemOnGUI:</summary></entry><entry><title type="html">Unity and Game Development links (June 17th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 17th 2019)" /><published>2019-06-17T00:00:00-03:00</published><updated>2019-06-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/">&lt;ul&gt;

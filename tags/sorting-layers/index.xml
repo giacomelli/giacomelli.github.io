@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - sorting-layers</title>
  <link href="//tags/sorting-layers/index.xml" rel="self"/>
  <link href="/tag/sorting-layers.html"/>
- <updated>2019-07-06T09:32:17-03:00</updated>
+ <updated>2019-07-06T18:54:41-03:00</updated>
  <id>/tag/sorting-layers.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -29,6 +29,14 @@
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request
 &lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/141742c3175476f03ca2437c7b35fd88.js?file=SortingLayerDebugger.cs&quot;&gt; &lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
 &lt;p&gt;You can open the debugger window through the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Window / Sorting Layer Debugger&lt;/code&gt;.&lt;/p&gt;
