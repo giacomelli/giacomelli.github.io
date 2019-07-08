@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-07T19:46:34-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Frixel</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; Frixel" /><published>2019-07-04T00:00:00-03:00</published><updated>2019-07-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel/">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-08T13:58:11-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (July 8th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-8th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (July 8th 2019)" /><published>2019-07-08T00:00:00-03:00</published><updated>2019-07-08T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-july-8th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-8th-2019/">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; released a YouTube video about the new Unity Terrain Tools package (&lt;a href=&quot;https://www.youtube.com/watch?v=aExdxF4OKBo&quot;&gt;Build Beautiful Terrains with Unity 2019! – New Terrain Tools Package&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Stacey Haffner&lt;/strong&gt; made a blog post about the new experience for Collaborate that they are designing, like new UI and Git command-line support (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/01/collaborate-developer-diary-1-exploring-the-new-design&quot;&gt;Collaborate Developer Diary #1: Exploring the New Design&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Based on a set of guiding principles focused on delivering value to teams with diverse skill sets, we are designing a brand new experience for Collaborate.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Matthew Crosby&lt;/strong&gt; released the Animal-AI Olympics, a AI competition with $32,000 in prizes. (&lt;a href=&quot;https://www.mdcrosby.com/blog/animalailaunch.html&quot;&gt;Animal-AI Olympics now released into the wild!&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;The Animal-AI Olympics is an AI competition with tests inspired by animal cognition. Participants are given a small environment with just seven different classes of objects that can be placed inside. In each test, the agent needs to retrieve the food in the environment, but to do so there are obstacles to overcome, ramps to climb, boxes to push, and areas that must be avoided.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Unity&lt;/strong&gt; published the IAP Playbook: 12 strategies to help you monetize your game (&lt;a href=&quot;https://create.unity3d.com/iap-playbook&quot;&gt;The IAP playbook&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;In-app purchases are an important part of your monetization strategy, but implementing them correctly can be challenging. Understanding how to create, surface, and optimize them without disrupting the game experience takes hard work.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; published a YouTube video about how to make NPCs for your games (&lt;a href=&quot;https://www.youtube.com/watch?v=FRFjggLMXFU&quot;&gt;How to Make AWESOME NPCs for Your Game!&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; made a video about how to add physics to ragdolls in Unity (&lt;a href=&quot;https://www.youtube.com/watch?v=DInV-jHm9rk&quot;&gt;RAGDOLL PHYSICS in Unity!&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pierre Bosset&lt;/strong&gt; interviewed &lt;strong&gt;Mirko Vescio&lt;/strong&gt; about how to use Substance and Unity combined for realistic architectural visualization  (&lt;a href=&quot;https://www.substance3d.com/blog/creating-realistic-archviz-experiences-oneiros-using-unity&quot;&gt;Creating Realistic Archviz Experiences by Oneiros using Unity&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;It is important not to forget that one advantage of using Unity in architectural visualization is that you can get different types of output from the same scene. For example, it is possible to make a video in cinematic mode, as well as in virtual reality mode.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Alexandre Mutel&lt;/strong&gt; released the the first preview version of &lt;code class=&quot;highlighter-rouge&quot;&gt;UnityNuGet&lt;/code&gt; providing a service to install NuGet packages into an Unity project via the Unity Package Manager (&lt;a href=&quot;https://github.com/xoofx/UnityNuGet&quot;&gt;UnityNuGet&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made another video, this time about realistic lighting in Unity (&lt;a href=&quot;https://www.youtube.com/watch?v=zmF29YGEMUU&quot;&gt;REALISTIC LIGHTING in Unity! (Tutorial)&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Frixel</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; Frixel" /><published>2019-07-04T00:00:00-03:00</published><updated>2019-07-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-frixel/">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;For this third post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Frixel: 2D framing / pixel structural optimization&lt;/code&gt;.&lt;/p&gt;
 
@@ -265,43 +299,4 @@ improving existing systems as well as in future research.&lt;/em&gt;&lt;/p&gt;
       &lt;/div&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Any GameObject with name that starts with “—” will be considered a group header&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="hierarchy-window" /><summary type="html">You can create a visual header to any group of components on your hierarchy window using EditorApplication.hierarchyWindowItemOnGUI:</summary></entry><entry><title type="html">Unity and Game Development links (June 17th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (June 17th 2019)" /><published>2019-06-17T00:00:00-03:00</published><updated>2019-06-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-june-17th-2019/">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Sebastian Lague&lt;/strong&gt; made an ecosystem simulation with foxes and rabbits in Unity3d (&lt;a href=&quot;https://www.youtube.com/watch?v=r_It_X7v-1E&quot;&gt;Coding Adventure: Simulating an Ecosystem&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Marius Horga&lt;/strong&gt; wrote an overview about Metal 3 (&lt;a href=&quot;http://metalkit.org/2019/06/10/introducing-metal-3.html&quot;&gt;Introducing Metal 3&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;Metal 3 was announced last week at WWDC 2019. Apple presented it along with relevant numbers:&lt;/p&gt;
-
-      &lt;ul&gt;
-        &lt;li&gt;Metal can now make 100 times more draw calls than OpenGL.&lt;/li&gt;
-        &lt;li&gt;Metal runs on roughly 1.4 billion devices currently.&lt;/li&gt;
-        &lt;li&gt;Metal can drive up to 56 TFLOPS of single precision.&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Mike Wuetherick&lt;/strong&gt;, Head of Tech for Unity’s Innovation Group, posted about “Sherman”, the new short film made in real-time using Unity (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/11/introducing-sherman-part-1&quot;&gt;Introducing Sherman (Part 1) – a Unity project featuring Real time fur, HDRP and Visual FX Graph for animators&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;Created by the Emmy-winning team that brought you Baymax Dreams, Sherman is a new real time Unity short that delivers the most advanced real time fur ever!&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Brandi House&lt;/strong&gt; posted a guidance to transition the games between UNet and the new connected games stack (&lt;a href=&quot;https://blogs.unity3d.com/2019/06/13/navigating-unitys-multiplayer-netcode-transition&quot;&gt;Navigating Unity’s multiplayer Netcode transition&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;As many of you know, we put UNet into maintenance mode because we believe there is a better way forward with our new connected games stack&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;War Robots case study&lt;/strong&gt; shows how Pixonic used Unity to lift up their revenue from War Robots without negatively impacting user experience (&lt;a href=&quot;https://unity.com/case-study/pixonic-war-robots&quot;&gt;Pixonic - War Robots case study&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;How do you find new revenue opportunities in a free-to-play game that’s been going strong for over five years? Moscow-based Pixonic, a Top 100-grossing game developer in the CIS, has driven War Robots’ monthly players’ spending to over $5M.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Keijiro Takahashi&lt;/strong&gt;, an Unity evangelist, released the first version of &lt;code class=&quot;highlighter-rouge&quot;&gt;MidiAnimationTrack&lt;/code&gt; that imports .mid files into Unity Timeline. It allows creating musically synchronized animation (&lt;a href=&quot;https://github.com/keijiro/MidiAnimationTrack&quot;&gt;MIDI Animation Track&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;Is a custom timeline/playables package that provides functionality to control object properties based on sequence data contained in a standard MIDI file&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a new video about his 5 favorite assets from Unity Asset Store (&lt;a href=&quot;https://www.youtube.com/watch?v=LLlJzQNYsAI&quot;&gt;5 AMAZING ASSETS for Unity 2019&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; released a video about new 2D renderer in Unity (&lt;a href=&quot;https://www.youtube.com/watch?v=nkgGyO9VG54&quot;&gt;2D Lights in Unity!&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="hierarchy-window" /><summary type="html">You can create a visual header to any group of components on your hierarchy window using EditorApplication.hierarchyWindowItemOnGUI:</summary></entry></feed>
