@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2019-07-09T07:17:56-03:00</updated>
+ <updated>2019-07-10T07:22:47-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -1527,7 +1527,7 @@ div.gist-meta { display:none; }
 
 &lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
 &lt;p&gt;Now our GA is running inside Unity3D, but it need to display the cities route better.
-We need create a visual representation to the cities.&lt;/p&gt;
+We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;h3 id=&quot;city-prefab&quot;&gt;City prefab&lt;/h3&gt;
 &lt;p&gt;We will create a prefab based on a sprite of a pin. You can use an icon as this one from &lt;a href=&quot;https://www.flaticon.com/free-icon/maps-and-flags_447031#term=pin&amp;amp;page=1&amp;amp;position=6&quot;&gt;www.flaticon.com&lt;/a&gt;.&lt;/p&gt;
