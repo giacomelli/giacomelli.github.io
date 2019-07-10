@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2019-07-10T07:22:47-03:00</updated>
+ <updated>2019-07-10T08:19:04-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -22,10 +22,13 @@
 
 &lt;p&gt;TSP is a classic sample to test some optimization techniques, as well it’s fairly used to demonstrate how to implement a genetic algorithm. For these reasons I will use it to show you how to implement a basic genetic algorithm in Blazor using GeneticSharp.&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This post is a like a mirror of the &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp an Unity3D&lt;/a&gt;. It’s using the same format to teach TSP and GeneticSharp, but instead of Unity3D, this one is teaching about Blazor.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This post is a like a mirror of the &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp an Unity3D&lt;/a&gt;. It’s using the same format to teach TSP and GeneticSharp, but instead of Unity3D, this one is about Blazor.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;You can see the final result of this tutorial on &lt;a href=&quot;/apps/geneticsharp-runner-blazorapp&quot;&gt;http://diegogiacomelli/apps/geneticsharp-runner-blazorapp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Note that the performance presented on this demo is not the performance that GeneticSharp presents in other apps kinds, like a ASP .NET Core backend app, a console app or in a Unity 3D game. As WebAssembly do not support create a new thread, we get limited to use a Timer to made this sample interactive. More details about this in next sections of the post.&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
 &lt;p&gt;To better understand this tutorial, you need to have some experiences/knowledges in:&lt;/p&gt;
@@ -35,7 +38,7 @@
   &lt;li&gt;Genetic algorithms (beginner).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;We’ll perform a very basic use of Blazor and everything you need to complete this tutorial will be explained or provided by the code samples, but if want to find out better what’s happening under the hood, take a look on &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.0&amp;amp;viewFallbackFrom=aspnetcore-2.2&amp;amp;tabs=netcore-cli&quot;&gt;Blazor Get Started page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We will perform a very basic use of Blazor and everything you need to complete this tutorial will be explained or provided by the code samples, but if you want to find out better what’s happening under the hood, take a look on &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.0&amp;amp;viewFallbackFrom=aspnetcore-2.2&amp;amp;tabs=netcore-cli&quot;&gt;Blazor Get Started page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 
@@ -58,7 +61,7 @@
 dotnet watch run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Wait for the message &lt;code class=&quot;highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down.&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
+&lt;p&gt;Wait for the message &lt;code class=&quot;highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png &quot; /&gt;
       &lt;/center&gt;
@@ -73,7 +76,7 @@ dotnet watch run
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;opening-the-project&quot;&gt;Opening the project&lt;/h2&gt;
-&lt;p&gt;I recommend to you use &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; to open the project. There is some cool VS Code extensions to work with Blazor.&lt;/p&gt;
+&lt;p&gt;I recommend to you use &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; to open the project. There are some cool VS Code extensions to work with Blazor.&lt;/p&gt;
 
 &lt;p&gt;In the same terminal where you added the GeneticSharp package, type:&lt;/p&gt;
 
@@ -152,7 +155,7 @@ dotnet watch run
 
 &lt;p&gt;Check your terminal window where the command &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet watch run&lt;/code&gt; is running, if there is no error in that window you can access the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
+&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png &quot; /&gt;
@@ -162,7 +165,7 @@ dotnet watch run
 &lt;/div&gt;
 
 &lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
-&lt;p&gt;Now our GA is running inside the browser, but it need to display the cities route better.
+&lt;p&gt;Now our GA is running inside the browser, but it needs to display the cities route better.
 We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt; add the method &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt;:&lt;/p&gt;

@@ -143,10 +143,13 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>TSP is a classic sample to test some optimization techniques, as well it’s fairly used to demonstrate how to implement a genetic algorithm. For these reasons I will use it to show you how to implement a basic genetic algorithm in Blazor using GeneticSharp.</p>
 
-<div class="note"><p>This post is a like a mirror of the <a href="/tsp-with-GeneticSharp-and-Unity3d">TSP with GeneticSharp an Unity3D</a>. It’s using the same format to teach TSP and GeneticSharp, but instead of Unity3D, this one is teaching about Blazor.</p>
+<div class="note"><p>This post is a like a mirror of the <a href="/tsp-with-GeneticSharp-and-Unity3d">TSP with GeneticSharp an Unity3D</a>. It’s using the same format to teach TSP and GeneticSharp, but instead of Unity3D, this one is about Blazor.</p>
 </div>
 
 <p>You can see the final result of this tutorial on <a href="/apps/geneticsharp-runner-blazorapp">http://diegogiacomelli/apps/geneticsharp-runner-blazorapp</a>.</p>
+
+<div class="note"><p>Note that the performance presented on this demo is not the performance that GeneticSharp presents in other apps kinds, like a ASP .NET Core backend app, a console app or in a Unity 3D game. As WebAssembly do not support create a new thread, we get limited to use a Timer to made this sample interactive. More details about this in next sections of the post.</p>
+</div>
 
 <h2 id="prerequisites">Prerequisites</h2>
 <p>To better understand this tutorial, you need to have some experiences/knowledges in:</p>
@@ -156,7 +159,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
   <li>Genetic algorithms (beginner).</li>
 </ul>
 
-<p>We’ll perform a very basic use of Blazor and everything you need to complete this tutorial will be explained or provided by the code samples, but if want to find out better what’s happening under the hood, take a look on <a href="https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.0&amp;viewFallbackFrom=aspnetcore-2.2&amp;tabs=netcore-cli">Blazor Get Started page</a>.</p>
+<p>We will perform a very basic use of Blazor and everything you need to complete this tutorial will be explained or provided by the code samples, but if you want to find out better what’s happening under the hood, take a look on <a href="https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.0&amp;viewFallbackFrom=aspnetcore-2.2&amp;tabs=netcore-cli">Blazor Get Started page</a>.</p>
 
 <p>If you need an introduction to genetic algorithms, take a look at this tutorial <a href="/function-optimization-with-geneticsharp/">Function optimization with GeneticSharp</a>.</p>
 
@@ -179,7 +182,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 dotnet watch run
 </code></pre></div></div>
 
-<p>Wait for the message <code class="highlighter-rouge">Application started. Press Ctrl+C to shut down.</code> show up in terminal, then open the url <a href="http://localhost:5000">http://localhost:5000</a> on your browser, you should see something like this:</p>
+<p>Wait for the message <code class="highlighter-rouge">Application started. Press Ctrl+C to shut down</code> show up in terminal, then open the url <a href="http://localhost:5000">http://localhost:5000</a> on your browser, you should see something like this:</p>
 <center>
         <img class="lazy" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png " />
       </center>
@@ -194,7 +197,7 @@ dotnet watch run
 <p><br /></p>
 
 <h2 id="opening-the-project">Opening the project</h2>
-<p>I recommend to you use <a href="https://code.visualstudio.com/">Visual Studio Code</a> to open the project. There is some cool VS Code extensions to work with Blazor.</p>
+<p>I recommend to you use <a href="https://code.visualstudio.com/">Visual Studio Code</a> to open the project. There are some cool VS Code extensions to work with Blazor.</p>
 
 <p>In the same terminal where you added the GeneticSharp package, type:</p>
 
@@ -273,7 +276,7 @@ dotnet watch run
 
 <p>Check your terminal window where the command <code class="highlighter-rouge">dotnet watch run</code> is running, if there is no error in that window you can access the url <a href="http://localhost:5000/tsp">http://localhost:5000/tsp</a>.</p>
 
-<p>Hit the <code class="highlighter-rouge">Run</code> button and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.</p>
+<p>Hit the <code class="highlighter-rouge">Run</code> button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.</p>
 
 <center>
         <img class="lazy" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png " />
@@ -283,7 +286,7 @@ dotnet watch run
 </div>
 
 <h2 id="drawing-the-cities">Drawing the cities</h2>
-<p>Now our GA is running inside the browser, but it need to display the cities route better.
+<p>Now our GA is running inside the browser, but it needs to display the cities route better.
 We need to create a visual representation to the cities.</p>
 
 <p>In the <code class="highlighter-rouge">Tsp.razor</code> add the method <code class="highlighter-rouge">DrawCitiesAsync</code>:</p>
