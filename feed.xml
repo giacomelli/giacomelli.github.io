@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-10T19:21:08-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">TSP with GeneticSharp and Blazor</title><link href="http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/" rel="alternate" type="text/html" title="TSP with GeneticSharp and Blazor" /><published>2019-07-10T00:00:00-03:00</published><updated>2019-07-10T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor</id><content type="html" xml:base="http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/">&lt;p&gt;In this post I will show how to use GeneticSharp and Blazor to solve the TSP (Travelling salesman problem).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-11T10:49:08-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">GeneticSharp 2.6.0 - Blazor template</title><link href="http://diegogiacomelli.com.br/geneticsharp-2.6.0-blazor-template/" rel="alternate" type="text/html" title="GeneticSharp 2.6.0 - Blazor template" /><published>2019-07-11T00:00:00-03:00</published><updated>2019-07-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-2.6.0-blazor-template</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-2.6.0-blazor-template/">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp 2.6.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
+
+&lt;h1 id=&quot;blazor-template&quot;&gt;Blazor template&lt;/h1&gt;
+&lt;p&gt;Now we have 4 &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; templates, besides the &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpConsoleApp&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspConsoleApp&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspUnity3d&lt;/code&gt; already existent, a new template for a Blazor client app was added: &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspBlazorApp&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new -i GeneticSharp.Templates
+dotnet new GeneticSharpTspBlazorApp -o TspBlazorApp
+cd TspBlazorApp
+dotnet run
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;new-papers-and-projects-using-geneticsharp&quot;&gt;New papers and projects using GeneticSharp&lt;/h1&gt;
+&lt;p&gt;Four papers and one project were added to the list:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/docs/mentioning-GeneticSharp/Design-of-a-warehouse-order-picking-policy-using-genetic-algorithm.pdf&quot;&gt;Design of a warehouse order picking policy using genetic algorithm (paper)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/document/8643945&quot;&gt;Fabrication of Adiabatic Quantum-Flux-Parametron Integrated Circuits Using an Automatic Placement Tool Based on Genetic Algorithms (paper)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/docs/mentioning-GeneticSharp/Modelling-and-Simulation-Analysis-of-Goal-Oriented-Business-Process.pdf&quot;&gt;Modelling and Simulation Analysis of Goal-Oriented Business Process (paper)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/docs/mentioning-GeneticSharp/Optimisation-par-algorithme-genetique-de-structures-lattices.pdf&quot;&gt;Optimization by genetic algorithm of lattices structures for the media generation in additive manufacturing (paper)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://trussoptimizationweb.herokuapp.com&quot;&gt;TrussOptimization (project)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;how-to-install-the-new-version&quot;&gt;How to install the new version&lt;/h1&gt;
+&lt;h3 id=&quot;net-standard-20&quot;&gt;.NET Standard 2.0&lt;/h3&gt;
+&lt;p&gt;Only GeneticSharp:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;GeneticSharp and extensions (TSP, AutoConfig, Bitmap equality, Equality equation, Equation solver, Function builder, etc):&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp.Extensions
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;unity3d&quot;&gt;Unity3D&lt;/h2&gt;
+&lt;p&gt;You should use the &lt;a href=&quot;https://github.com/xoofx/UnityNuGet&quot;&gt;UnityNuGet&lt;/a&gt; to install GeneticSharp directly from NuGet.&lt;/p&gt;
+
+&lt;p&gt;Or you can use the latest GeneticSharp.unitypackage available on our &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="dotnet" /><category term="release" /><category term="blazor" /><summary type="html">The GeneticSharp 2.6.0 is out.</summary></entry><entry><title type="html">TSP with GeneticSharp and Blazor</title><link href="http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/" rel="alternate" type="text/html" title="TSP with GeneticSharp and Blazor" /><published>2019-07-10T00:00:00-03:00</published><updated>2019-07-10T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor</id><content type="html" xml:base="http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/">&lt;p&gt;In this post I will show how to use GeneticSharp and Blazor to solve the TSP (Travelling salesman problem).&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -436,43 +480,4 @@ Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; 
     &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; again, now with a timelapse level design video (&lt;a href=&quot;https://www.youtube.com/watch?v=f3vNNUC1tnE&quot;&gt;LEVEL DESIGN IN UNITY! - Village &amp;amp; Castle Scene (Timelapse)&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; made a video about the new Terrain System in Unity (&lt;a href=&quot;https://www.youtube.com/watch?v=MWQv2Bagwgk&quot;&gt;How to make Terrain in Unity!&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Context-Sensitive Code Completion</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-context-sensitive-code-completion/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; Context-Sensitive Code Completion" /><published>2019-06-21T00:00:00-03:00</published><updated>2019-06-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-context-sensitive-code-completion</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-context-sensitive-code-completion/">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;For this second post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Context-Sensitive Code
-Completion: Improving Predictions with Genetic Algorithms&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;The main motivation of the author about this paper was:
-&lt;em&gt;Current methods of training code completion systems can possibly be improved in order
-to reduce prediction errors. This requires that the amount of information considered in a
-pattern is optimized. The question raised is then: how should the training of predictive
-models be focused in order to increase prediction quality?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This thesis will aim to answer the question: to what extent is it possible to improve predictions
-of existing state-of-the-art code completion systems with a genetic algorithm?&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;GeneticSharp is an open-source Genetic Algorithm library for C#, released under the MIT
-license (Giacomelli). It has an extensible interface that allows for most, if not all, functionality
-to be implemented from scratch via interfaces or leveraged by extending base classes. Classes
-and interfaces also use the same terminology that has already been established, which makes
-the translation from theory to implementation much more clear.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;As a result of the new training scheme, the quality of predictions can be increased without
-losing generalizability. Application of the new training scheme could possibly be applied
-to any code completion systems that trains a predictive model, making it a candidate for
-improving existing systems as well as in future research.&lt;/em&gt;&lt;/p&gt;
-
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/06/21/geneticsharp-in-the-wild-context-sensitive-code-completion/gscc-vs-genecscc.png &quot; /&gt;
-      &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;results comparison between GCC and GeneCSCC (developed using GeneticSharp)&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;author&quot;&gt;Author&lt;/h1&gt;
-&lt;p&gt;Marcus Ording wrote the paper for his degree project in Computer Engineering at KTH Royal Institute of Technology from Stockholm, Sweden.&lt;/p&gt;
-
-&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
-&lt;p&gt;You can access the full paper directly on &lt;a href=&quot;http://www.diva-portal.org/smash/get/diva2:1088591/FULLTEXT01.pdf&quot;&gt;DiVA Portal&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html">I decided to start a series of posts about some outstanding scientific papers and projects using GeneticSharp.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>
