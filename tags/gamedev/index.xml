@@ -3,11 +3,60 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2019-07-11T10:49:08-03:00</updated>
+ <updated>2019-07-15T13:42:10-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Unity and Game Development links (July 15th 2019)</title>
+   <link href="//unity-and-gamedev-links-july-15th-2019/"/>
+   <updated>2019-07-15T00:00:00-03:00</updated>
+   <id>//unity-and-gamedev-links-july-15th-2019</id>
+   <content type="html">
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Alexander Ameye&lt;/strong&gt; made a tutorial about edge detection shaders with Shader Graph and how to use some Lightweight Rendering Pipeline customization to generate DepthNormals (&lt;a href=&quot;https://alexanderameye.github.io/edgedetection&quot;&gt;Edge Detection Shader&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cyan&lt;/strong&gt; made a blog post about Render Textures and how to read them  in a C# script (&lt;a href=&quot;https://cyangamedev.wordpress.com/2019/07/08/render-textures/&quot;&gt;Render Textures&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Render Textures are stored and handled on the GPU, which means we can’t access the data from them in a C# script which runs on the CPU – and you shouldn’t really need to for most effects. However, I wanted my player to be able to interact with water which was based on a Render Texture and only spawn particles if the player was in the water, along with some other effects.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Frank Manley&lt;/strong&gt; wrote about the Unity Hackweek 2019 (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/08/unity-hackweek-2019-tackling-hard-problems-building-team-skills&quot;&gt;Unity Hackweek 2019: Tackling hard problems, building team skills&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;What happens when you put 700+ people from Unity and our ecosystem in a secluded location once a year and tell them to solve hard tech, coding, and process problems? Their instructions? Unleash your creativity, collaborate like crazy, and embrace diverse perspectives.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tracy Joseph and Brittany Edmond,&lt;/strong&gt; wrote a blog post about their experience on Cannes Lions 2019 (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/09/cannes-lions-2019-celebrating-creativity-innovation-storytelling&quot;&gt;Cannes Lions 2019: Celebrating creativity, innovation &amp;amp; storytelling&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;This year at the Cannes Lions International Festival of Creativity, Unity showed up as the leading real-time 3D creation platform.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Garrexus&lt;/strong&gt; made a breakdown on the Screen space Cosmic shader (&lt;a href=&quot;https://realtimevfx.com/t/screen-space-cosmic-shader-breakdown-unity-ase-shaders-textures-included/9753&quot;&gt;Screen space Cosmic shader breakdown (Unity/ASE, Shaders/Textures included)&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Alexander Ameye&lt;/strong&gt; again, now with a tutorial about collision effect (&lt;a href=&quot;https://alexanderameye.github.io/collision.html&quot;&gt;Collision Effect&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tenzin W. and Eduardo Oriz,&lt;/strong&gt; wrote about the results of the latest Asset Store challenge (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/11/the-winners-inside-the-vault-3d-environment-art-contest&quot;&gt;The Winners! Inside the Vault: 3D Environment Art Contest&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;A number of judges evaluated all of the impressive submissions to pick the winners of the latest Asset Store challenge: Use Substance Painter to texture stunning assets that expand the futuristic world of Buried Memories: Yggdrasil.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Anis Benyoub&lt;/strong&gt; made a speech about ray tracing hardware acceleration (&lt;a href=&quot;https://www.youtube.com/watch?v=wbuvrAdNtmQ&quot;&gt;Anis Benyoub - Leveraging Ray Tracing Hardware Acceleration In The Unity Game Engine&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Ray tracing hardware acceleration (RTX) is a newly available feature that allows graphics developers to increase their image quality. While solving complex problems, properly integrating this new set of APIs (DXR and Vulkan ray tracing) in a game engine is tricky, especially so when the engine supports anything from mobile to virtual production.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; published a video about gamepad input (&lt;a href=&quot;https://www.youtube.com/watch?v=p-3S73MaDP8&quot;&gt;CONTROLLER INPUT in Unity!&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video showing how to make terrains (&lt;a href=&quot;https://www.youtube.com/watch?v=2Vvwjfp-hg8&quot;&gt;How to make Terrains with Unity 2019! (Tutorial)&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Hierarchy Window Layer Info</title>

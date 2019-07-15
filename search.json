@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "Unity and Game Development links (July 15th 2019)",
+      "category" : "News",
+      "tags"     : "unity3d, gamedev",
+      "url"      : "/unity-and-gamedev-links-july-15th-2019/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "GeneticSharp 2.6.0 - Blazor template",
       "category" : "News",
       "tags"     : "geneticsharp, dotnet, release, blazor",
