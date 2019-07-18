@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-17T09:11:18-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; Hierarchy Window GameObject Icon</title><link href="http://diegogiacomelli.com.br/unitytips-hierarchy-window-gameobject-icon/" rel="alternate" type="text/html" title="unitytips&amp;colon; Hierarchy Window GameObject Icon" /><published>2019-07-16T00:00:00-03:00</published><updated>2019-07-16T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-hierarchy-window-gameobject-icon</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-hierarchy-window-gameobject-icon/">&lt;p&gt;You can show the game objects icons in hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorGUIUtility.ObjectContent&lt;/code&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-18T12:53:58-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Design of a Warehouse Order Picking Policy</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; Design of a Warehouse Order Picking Policy" /><published>2019-07-18T00:00:00-03:00</published><updated>2019-07-18T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy/">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For this fourth post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Design of a Warehouse Order Picking Policy - Using Genetic Algorithm&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The main motivation of the author about this paper was:
+&lt;em&gt;improving order-picking process is considered which is an essential
+operation critically impacting warehouse and supply chain performance.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The study is composed of two phases: In the first phase, the
+shortest path between each pair of items is determined in a pick list leading to the
+second phase of determining the sequence of all items to be picked. A
+mathematical model is utilized to find the shortest path between each item pair in
+a pick list.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;A genetic algorithm based approach is developed to decide the picking
+sequence of all items in an order list, given the shortest distance between each pair
+of items. The performance of the proposed algorithms is compared to popular
+heuristics used for multi-block warehouses, namely: S-Shape and Largest Gap.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahmet Can Saner, the paper author made &lt;a href=&quot;http://diegogiacomelli.com.br/GeneticSharp-v1.2.0-sequence-mutations/&quot;&gt;great contributions to GeneticSharp&lt;/a&gt;, that him developed during his master degree, like: Displacement Mutation, Insertion Mutation and Partial Shuffle Mutation (PSM).&lt;/p&gt;
+
+&lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;For 25-item pick lists, all of the proposed
+GA algorithms are superior to S-Shape and Largest Gap heuristics, in terms of travelled
+distance. GA with order crossover operator, inversion mutation operator provides the best
+results in terms of average travelled distance&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;For 50-item pick lists, all of the proposed GA
+algorithms are superior to S-Shape, in terms of travelled distance. But when compared to
+Largest Gap heuristic, only GA algorithms with inversion mutation operator performs
+better than Largest Gap, in terms of travelled distance.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;For 100-
+item pick lists, only GA algorithms with inversion mutation operator performs better than
+both S-Shape and Largest Gap heuristics, in terms of travelled distance. GA with order
+crossover operator, inversion mutation operator setting performs the best in terms of
+average travelled distance for pick lists of size 100.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;author&quot;&gt;Author&lt;/h1&gt;
+&lt;p&gt;Ahmet Can Saner, with Dr. Zehra
+Düzgi supervision, wrote the paper for his master degree at Istanbul Bilgi University.&lt;/p&gt;
+
+&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+&lt;p&gt;You can access the full paper directly on &lt;a href=&quot;http://openaccess.bilgi.edu.tr:8080/xmlui/bitstream/handle/11411/1310/Design%20of%20a%20warehouse%20order%20picking%20policy%20using%20genetic%20algorithm.pdf?sequence=1&amp;amp;isAllowed=y&quot;&gt;Istanbul Bilgi University library&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html">I started a series of posts about some outstanding scientific papers and projects using GeneticSharp.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Hierarchy Window GameObject Icon</title><link href="http://diegogiacomelli.com.br/unitytips-hierarchy-window-gameobject-icon/" rel="alternate" type="text/html" title="unitytips&amp;colon; Hierarchy Window GameObject Icon" /><published>2019-07-16T00:00:00-03:00</published><updated>2019-07-16T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-hierarchy-window-gameobject-icon</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-hierarchy-window-gameobject-icon/">&lt;p&gt;You can show the game objects icons in hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorGUIUtility.ObjectContent&lt;/code&gt;&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/fwtQ51ybHpc &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -450,38 +495,4 @@ You can easily make objects move along these paths, or use them as a guide for s
     &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; again, with a video on tips, tricks, and list of features in Unity for making 2D games (&lt;a href=&quot;https://www.youtube.com/watch?v=-MuWAydTjY0&quot;&gt;How to make 2D Games with Unity 2019!&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">Starting an Unity3D project with GeneticSharp using dotnet new</title><link href="http://diegogiacomelli.com.br/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/" rel="alternate" type="text/html" title="Starting an Unity3D project with GeneticSharp using dotnet new" /><published>2019-06-27T00:00:00-03:00</published><updated>2019-06-27T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new</id><content type="html" xml:base="http://diegogiacomelli.com.br/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/">&lt;p&gt;In this post I will show how to use &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; command to start an Unity3D project with GeneticSharp.&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Sometime ago I created a NuGet package called &lt;a href=&quot;/dotnet-new-templates-for-GeneticSharp&quot;&gt;GeneticSharp.Templates&lt;/a&gt;, this package allows developers to install &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; templates using the dotnet new command.&lt;/p&gt;
-
-&lt;p&gt;Among the availables templates in &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharp.Templates&lt;/code&gt;, there is one specific to create an Unity3D project with GeneticSharp. Besides this, the project has a sample of Travelling Salesman Problem (TSP) using GeneticSharp and can be used as a scaffold to starting use genetic algorithms in your games.&lt;/p&gt;
-
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-&lt;p&gt;Create an Unity3D project using dotnet new is fast and simple, depending of your machine performance, you’ll have the sample running in less than a minute.&lt;/p&gt;
-
-&lt;p&gt;Open a terminal/prompt and type:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; GeneticSharp.Templates
-dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; GeneticSharpSample
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The argument &lt;code class=&quot;highlighter-rouge&quot;&gt;-o&lt;/code&gt; is the the output folder of the Unity3D project&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now you can open the &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpSample&lt;/code&gt; in Unity3D editor.
-Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; scene and hit the play button, you should see something like this:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Thats it, now you can use this sample to understand how to use GeneticSharp in your game.&lt;/p&gt;
-
-&lt;p&gt;If you want more details about the code and the sample itself, please, take a look on this tutorial &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If you need an introduction to genetic algorithms, this tutorial could help you &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="unity3d" /><category term="dotnet" /><summary type="html">In this post I will show how to use dotnet new command to start an Unity3D project with GeneticSharp. Introduction Sometime ago I created a NuGet package called GeneticSharp.Templates, this package allows developers to install GeneticSharp templates using the dotnet new command.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>

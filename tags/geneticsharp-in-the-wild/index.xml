@@ -3,11 +3,65 @@
  <title>Diego Giacomelli - geneticsharp-in-the-wild</title>
  <link href="//tags/geneticsharp-in-the-wild/index.xml" rel="self"/>
  <link href="/tag/geneticsharp-in-the-wild.html"/>
- <updated>2019-07-17T09:11:18-03:00</updated>
+ <updated>2019-07-18T12:53:58-03:00</updated>
  <id>/tag/geneticsharp-in-the-wild.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>GeneticSharp in the Wild&colon; Design of a Warehouse Order Picking Policy</title>
+   <link href="//geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy/"/>
+   <updated>2019-07-18T00:00:00-03:00</updated>
+   <id>//geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy</id>
+   <content type="html">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For this fourth post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Design of a Warehouse Order Picking Policy - Using Genetic Algorithm&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The main motivation of the author about this paper was:
+&lt;em&gt;improving order-picking process is considered which is an essential
+operation critically impacting warehouse and supply chain performance.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The study is composed of two phases: In the first phase, the
+shortest path between each pair of items is determined in a pick list leading to the
+second phase of determining the sequence of all items to be picked. A
+mathematical model is utilized to find the shortest path between each item pair in
+a pick list.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;A genetic algorithm based approach is developed to decide the picking
+sequence of all items in an order list, given the shortest distance between each pair
+of items. The performance of the proposed algorithms is compared to popular
+heuristics used for multi-block warehouses, namely: S-Shape and Largest Gap.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahmet Can Saner, the paper author made &lt;a href=&quot;http://diegogiacomelli.com.br/GeneticSharp-v1.2.0-sequence-mutations/&quot;&gt;great contributions to GeneticSharp&lt;/a&gt;, that him developed during his master degree, like: Displacement Mutation, Insertion Mutation and Partial Shuffle Mutation (PSM).&lt;/p&gt;
+
+&lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;For 25-item pick lists, all of the proposed
+GA algorithms are superior to S-Shape and Largest Gap heuristics, in terms of travelled
+distance. GA with order crossover operator, inversion mutation operator provides the best
+results in terms of average travelled distance&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;For 50-item pick lists, all of the proposed GA
+algorithms are superior to S-Shape, in terms of travelled distance. But when compared to
+Largest Gap heuristic, only GA algorithms with inversion mutation operator performs
+better than Largest Gap, in terms of travelled distance.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;For 100-
+item pick lists, only GA algorithms with inversion mutation operator performs better than
+both S-Shape and Largest Gap heuristics, in terms of travelled distance. GA with order
+crossover operator, inversion mutation operator setting performs the best in terms of
+average travelled distance for pick lists of size 100.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;author&quot;&gt;Author&lt;/h1&gt;
+&lt;p&gt;Ahmet Can Saner, with Dr. Zehra
+Düzgi supervision, wrote the paper for his master degree at Istanbul Bilgi University.&lt;/p&gt;
+
+&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+&lt;p&gt;You can access the full paper directly on &lt;a href=&quot;http://openaccess.bilgi.edu.tr:8080/xmlui/bitstream/handle/11411/1310/Design%20of%20a%20warehouse%20order%20picking%20policy%20using%20genetic%20algorithm.pdf?sequence=1&amp;amp;isAllowed=y&quot;&gt;Istanbul Bilgi University library&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>GeneticSharp in the Wild&colon; Frixel</title>
