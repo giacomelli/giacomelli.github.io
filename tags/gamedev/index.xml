@@ -3,11 +3,49 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2019-07-18T12:53:58-03:00</updated>
+ <updated>2019-07-22T13:37:44-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Unity and Game Development links (July 22th 2019)</title>
+   <link href="//unity-and-gamedev-links-july-22th-2019/"/>
+   <updated>2019-07-22T00:00:00-03:00</updated>
+   <id>//unity-and-gamedev-links-july-22th-2019</id>
+   <content type="html">
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Stephen Palmer&lt;/strong&gt; presented the preview of Addressables, the Unity new system for editor and runtime asset management. (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/15/addressable-asset-system&quot;&gt;Addressable Asset System&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;What we found when talking to developers about their experience using Asset Bundles was that almost everyone doing so successfully were more or less writing the same high level systems a thousand slightly different ways. Addressables was born out of this obvious need for a framework to solve a set of common problems related to addressing, building, and loading assets.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cyan&lt;/strong&gt; made a blog post about Voronoi noise, a type of noise based on cells,  and shaders (&lt;a href=&quot;https://cyangamedev.wordpress.com/2019/07/16/voronoi/&quot;&gt;Voronoi&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Kat Woolley&lt;/strong&gt; introduced the Creator Kits, a beginners kit to learn Unity basics without writing code. (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/17/creator-kits-get-creating-quickly&quot;&gt;Creator Kits – Get creating quickly&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;We’ve produced three kits: A puzzle game, an FPS and an RPG. Get a brief introduction to each game genre and learn the basics of Unity without writing code. The kits offer beginners a good way to create your own game in under an hour before embarking on something with a broader scope like the Game Kits.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Unity&lt;/strong&gt; made a case study about Playkot, the creators of Age Of Magic (&lt;a href=&quot;https://unity.com/case-study/playkot-age-of-magic&quot;&gt;Playkot – A Unity developer case study&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;How do a businessman and a software developer working at an improvised kitchen table in St. Petersburg, Russia go on to produce sophisticated social games and mobile RPGs with some of the best graphics in the industry? Meet Sasha Pavlov and Oleg Sysoev, who started Playkot Games in 2009. Since then, they’ve grown their team to 150+ by carefully combining the right people, adopting Unity, and implementing the right strategies to capture significant market share around the world.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Anna Lee&lt;/strong&gt; wrote a blog post on the series &lt;code class=&quot;highlighter-rouge&quot;&gt;Faces of Unity&lt;/code&gt;, now presenting Dave Hunt, Lead Technical Artist in Copenhagen (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/19/faces-of-unity-dave-hunt&quot;&gt;Faces of Unity – Dave Hunt)&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Learn more about Dave as he shares about his career journey and work-life balance as a parent here at Unity!&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; published a video about learnings in 10 years of game development! (&lt;a href=&quot;https://youtu.be/T18X1HuawRc&quot;&gt;What I learned after 10 Years of Game Development!&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video showing how to make explosions and shockwave effects in Unity (&lt;a href=&quot;https://youtu.be/u7lwL7ubwKA&quot;&gt;SHOCKWAVE &amp;amp; EXPLOSION IN UNITY 2019! (Tutorial)&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Hierarchy Window GameObject Icon</title>
