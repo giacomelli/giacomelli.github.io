@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-22T13:37:44-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (July 22th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-22th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (July 22th 2019)" /><published>2019-07-22T00:00:00-03:00</published><updated>2019-07-22T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-july-22th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-22th-2019/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-07-23T07:17:23-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; Scene Preview Window</title><link href="http://diegogiacomelli.com.br/unitytips-scene-preview-window/" rel="alternate" type="text/html" title="unitytips&amp;colon; Scene Preview Window" /><published>2019-07-23T00:00:00-03:00</published><updated>2019-07-23T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-scene-preview-window</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-scene-preview-window/">&lt;p&gt;I created this window that extends the Unity 3D editor so you can preview the scenes by selecting them in the project window.&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/eh8nqfDCUVo &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
+&lt;p&gt;As can be seen from the video above the extension can be used in two ways after adding the &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene Preview&lt;/code&gt; window to the editor (via the&lt;code class=&quot;highlighter-rouge&quot;&gt; Window / Scene Preview&lt;/code&gt; menu):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Selects &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene&lt;/code&gt; and clicking the &lt;code class=&quot;highlighter-rouge&quot;&gt;Capture screenshot&lt;/code&gt; button in both edit mode and play mode.&lt;/li&gt;
+  &lt;li&gt;Running &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene&lt;/code&gt; in play mode and if there is still no preview screenshot for the scene, a screenshot will be taken automatically after 10 seconds.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Below you can see only the code of &lt;code class=&quot;highlighter-rouge&quot;&gt;ScenePreviewEditor.cs&lt;/code&gt;. There are 3 more files for this extension.&lt;/p&gt;
+
+&lt;p&gt;Download the full &lt;a href=&quot;https://gist.github.com/giacomelli/ad9d4dcdb702d2d1edf0663628ca9608&quot;&gt;gist&lt;/a&gt; or use the &lt;a href=&quot;/unitytips-gist-importer&quot;&gt;Gist Importer&lt;/a&gt; to import the complete &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene Preview Window&lt;/code&gt; for your project.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ad9d4dcdb702d2d1edf0663628ca9608.js?file=ScenePreviewWindow.cs&quot;&gt; &lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs files inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="editor-window" /><summary type="html">I created this window that extends the Unity 3D editor so you can preview the scenes by selecting them in the project window.</summary></entry><entry><title type="html">Unity and Game Development links (July 22th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-22th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (July 22th 2019)" /><published>2019-07-22T00:00:00-03:00</published><updated>2019-07-22T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-july-22th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-22th-2019/">&lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Stephen Palmer&lt;/strong&gt; presented the preview of Addressables, the Unity new system for editor and runtime asset management. (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/15/addressable-asset-system&quot;&gt;Addressable Asset System&lt;/a&gt;).
     &lt;blockquote&gt;
       &lt;p&gt;What we found when talking to developers about their experience using Asset Bundles was that almost everyone doing so successfully were more or less writing the same high level systems a thousand slightly different ways. Addressables was born out of this obvious need for a framework to solve a set of common problems related to addressing, building, and loading assets.&lt;/p&gt;
@@ -465,27 +496,4 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;p&gt;The project was developed from scratch under 24 intense hours at the beyondAEC Hackathon July 2018, in Boston MA by &lt;a href=&quot;https://github.com/lelandjobson&quot;&gt;Leland Jobson&lt;/a&gt; and &lt;a href=&quot;https://github.com/EmilPoulsen&quot;&gt;Emil Poulsen&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
-&lt;p&gt;You can access the project repository at: &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel&quot;&gt;https://github.com/EmilPoulsen/Frixel&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html">I started a series of posts about some outstanding scientific papers and projects using GeneticSharp.</summary></entry><entry><title type="html">unitytips Museum</title><link href="http://diegogiacomelli.com.br/unitytips-museum/" rel="alternate" type="text/html" title="unitytips Museum" /><published>2019-07-02T00:00:00-03:00</published><updated>2019-07-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-museum</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-museum/">&lt;p&gt;I &lt;a href=&quot;https://twitter.com/ogiacomelli/status/1144379461317648384&quot;&gt;recently&lt;/a&gt; started studying &lt;a href=&quot;https://dotnet.microsoft.com/apps/aspnet/web-apps/client&quot;&gt;Blazor&lt;/a&gt; and last weekend I created this simple app that I called: &lt;code class=&quot;highlighter-rouge&quot;&gt;#unitytips Museum&lt;/code&gt;, a collection of best #unitytips.&lt;/p&gt;
-
-&lt;p&gt;You can access it directly in my site, in this url: &lt;a href=&quot;http://diegogiacomelli.com.br/apps/unitytips-museum&quot;&gt;http://diegogiacomelli.com.br/apps/unitytips-museum&lt;/a&gt;&lt;/p&gt;
-
-&lt;center&gt;
-        &lt;iframe src=&quot;https://www.youtube.com/embed/B9eTNZWhojI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;
-
-&lt;h1 id=&quot;the-unitytips-collection&quot;&gt;The #unitytips collection&lt;/h1&gt;
-&lt;p&gt;Every week all #unitytips retweeted by &lt;a href=&quot;https://twitter.com/unity3d&quot;&gt;@unity3d&lt;/a&gt; will be included to the collection.&lt;/p&gt;
-
-&lt;p&gt;If you know a really good #unitytips (at least 50 retweets) that should be added to the collection, please follow one of options above:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Contact me on Twitter &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/unitytips-museum&quot;&gt;Fork it on GitHub&lt;/a&gt;, add the #unitytips to the wwwroot/data/tips.json file and create a pull-request.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;about-blazor&quot;&gt;About Blazor&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Blazor can run your client-side C# code directly in the browser, using WebAssembly. Because it’s real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In a future post I will discuss what I learned about Blazor while developing the #unitytips Museum, but I can give a spoiler: I really liked it!&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="blazor" /><summary type="html">I recently started studying Blazor and last weekend I created this simple app that I called: #unitytips Museum, a collection of best #unitytips.</summary></entry></feed>
+&lt;p&gt;You can access the project repository at: &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel&quot;&gt;https://github.com/EmilPoulsen/Frixel&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html">I started a series of posts about some outstanding scientific papers and projects using GeneticSharp.</summary></entry></feed>

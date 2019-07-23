@@ -3,11 +3,51 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2019-07-22T13:37:44-03:00</updated>
+ <updated>2019-07-23T07:17:23-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Scene Preview Window</title>
+   <link href="//unitytips-scene-preview-window/"/>
+   <updated>2019-07-23T00:00:00-03:00</updated>
+   <id>//unitytips-scene-preview-window</id>
+   <content type="html">&lt;p&gt;I created this window that extends the Unity 3D editor so you can preview the scenes by selecting them in the project window.&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/eh8nqfDCUVo &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
+&lt;p&gt;As can be seen from the video above the extension can be used in two ways after adding the &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene Preview&lt;/code&gt; window to the editor (via the&lt;code class=&quot;highlighter-rouge&quot;&gt; Window / Scene Preview&lt;/code&gt; menu):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Selects &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene&lt;/code&gt; and clicking the &lt;code class=&quot;highlighter-rouge&quot;&gt;Capture screenshot&lt;/code&gt; button in both edit mode and play mode.&lt;/li&gt;
+  &lt;li&gt;Running &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene&lt;/code&gt; in play mode and if there is still no preview screenshot for the scene, a screenshot will be taken automatically after 10 seconds.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Below you can see only the code of &lt;code class=&quot;highlighter-rouge&quot;&gt;ScenePreviewEditor.cs&lt;/code&gt;. There are 3 more files for this extension.&lt;/p&gt;
+
+&lt;p&gt;Download the full &lt;a href=&quot;https://gist.github.com/giacomelli/ad9d4dcdb702d2d1edf0663628ca9608&quot;&gt;gist&lt;/a&gt; or use the &lt;a href=&quot;/unitytips-gist-importer&quot;&gt;Gist Importer&lt;/a&gt; to import the complete &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene Preview Window&lt;/code&gt; for your project.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ad9d4dcdb702d2d1edf0663628ca9608.js?file=ScenePreviewWindow.cs&quot;&gt; &lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs files inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Unity and Game Development links (July 22th 2019)</title>
@@ -1763,6 +1803,9 @@ I won’t getting in details about how this is script works, but it’s allow th
    <content type="html">&lt;p&gt;I’m working in a new game prototype and in this process I was creating some experimental levels to test the mechanics, but by the name of scene I was having dificult to remember which mechanic the level was about and I had to open each level to discover that one was looking for, so I thought: it will be cool have an image preview of the scene when we select the file in hierarchy.&lt;/p&gt;
 
 &lt;p&gt;I google and didn’t find any project or asset in Asset Store that already did something like this (please, let me know if you know a similar tool) and, well, I prefer code something, than google something, then I coded a little inspector, that I named as ScenePreview:&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;UPDATED: I created a new Scene Preview solution, now using its own window editor: &lt;a href=&quot;/unitytips-scene-preview-window/&quot;&gt;Scene Preview Window&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
