@@ -4,14 +4,6 @@
     
     
     {
-      "title"    : "TSP with GeneticSharp and Blazor",
-      "category" : "Tutorial",
-      "tags"     : "geneticsharp, blazor, webassembly, tsp, dotnet",
-      "url"      : "/generating-pdf-from-razor-template-with-razor2pdf/",
-      "author"   : ""
-    } ,
-    
-    {
       "title"    : "Publishing a .NET Core project to SonarCloud with Cake",
       "category" : "Tutorial",
       "tags"     : "dotnet, sonar, cake",
