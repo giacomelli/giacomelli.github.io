@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - sonar</title>
+ <link href="//tags/sonar/index.xml" rel="self"/>
+ <link href="/tag/sonar.html"/>
+ <updated>2019-07-25T15:40:05-03:00</updated>
+ <id>/tag/sonar.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Publishing a .NET Core project to SonarCloud with Cake</title>
+   <link href="//publishing-a-dotnet-core-project-to-sonarcloud-with-cake/"/>
+   <updated>2019-07-25T00:00:00-03:00</updated>
+   <id>//publishing-a-dotnet-core-project-to-sonarcloud-with-cake</id>
+   <content type="html">&lt;p&gt;In this post I will show how to use &lt;a href=&quot;https://cakebuild.net/&quot;&gt;Cake&lt;/a&gt; to build and test a .NET Core project and then publish the results to &lt;a href=&quot;https://sonarcloud.io&quot;&gt;SonarCloud&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Cake&lt;/strong&gt; (C# Make) is a cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;SonarCloud&lt;/strong&gt; is a cloud service offered by SonarSource and based on SonarQube. SonarQube is a widely adopted open source platform to inspect continuously the quality of source code and detect bugs, vulnerabilities and code smells.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Cake&lt;/strong&gt;: install the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cake&lt;/code&gt; on your .NET Core project before start this tutorial. Follow this &lt;a href=&quot;https://cakebuild.net/docs/tutorials/setting-up-a-new-project&quot;&gt;Setting Up A New Project&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SonarCloud&lt;/strong&gt;: create an account and add a project on &lt;a href=&quot;https://sonarcloud.io&quot;&gt;https://sonarcloud.io&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;creating-the-buildcake&quot;&gt;Creating the build.cake&lt;/h2&gt;
+&lt;p&gt;In project root folder, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;build.cake&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-the-tools-and-addin-references&quot;&gt;Adding the tools and addin references&lt;/h3&gt;
+&lt;p&gt;Add the lines below to the file:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v1.cake&quot;&gt; &lt;/script&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;We’ll use those tools and addins to create the complete .cake script.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;setting-the-variables&quot;&gt;Setting the variables&lt;/h3&gt;
+&lt;p&gt;Now we need to set some variables:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v2.cake&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Where:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;solutionDir&lt;/strong&gt;: is the subfolder where your solution source code is located.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;sonarLogin&lt;/strong&gt;: Change the &lt;code class=&quot;highlighter-rouge&quot;&gt;[SONARCLOUD-USER-TOKEN]&lt;/code&gt; for a token you can generate at the page &lt;a href=&quot;https://sonarcloud.io/account/security/&quot;&gt;https://sonarcloud.io/account/security/&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;branch&lt;/strong&gt;: if you are using git, then the &lt;code class=&quot;highlighter-rouge&quot;&gt;GitBranchCurrent(&quot;.&quot;).FriendlyName&lt;/code&gt; will pass the right branch name to SonarCloud, otherwise you can set it manually.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are using &lt;code class=&quot;highlighter-rouge&quot;&gt;AppVeyor&lt;/code&gt; you can use line bellow to allow discover the branch name locally and in the AppVeyor:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v3.cake&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;build-task&quot;&gt;Build task&lt;/h3&gt;
+&lt;p&gt;The first task definitions will build our .NET Core project:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v4.cake&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;test-task&quot;&gt;Test task&lt;/h3&gt;
+&lt;p&gt;Now we will define the task to run our tests:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v5.cake&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;This task use &lt;code class=&quot;highlighter-rouge&quot;&gt;OpenCover&lt;/code&gt; to collect the code coverage. Install it on your test project using the &lt;code class=&quot;highlighter-rouge&quot;&gt;OpenCover&lt;/code&gt; NuGet package:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package OpenCover
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;sonar-tasks&quot;&gt;Sonar tasks&lt;/h3&gt;
+&lt;p&gt;The lasts tasks to define are responsible to scan the project and send the build and tests results to SonarCloud:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v6.cake&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Where:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Key&lt;/strong&gt;: is your project key on SonarCloud. You can get it throw these steps on &lt;a href=&quot;https://sonarcloud.io&quot;&gt;SonarCloud&lt;/a&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;Select your project.&lt;/li&gt;
+      &lt;li&gt;Open the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Administration / Update Key&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Organization&lt;/strong&gt;: is the name of your organization on SonarCloud. If your &lt;code class=&quot;highlighter-rouge&quot;&gt;projects&lt;/code&gt; page is &lt;code class=&quot;highlighter-rouge&quot;&gt;https://sonarcloud.io/organizations/YOUR-ORGANIZATION/projects&lt;/code&gt;, then your &lt;strong&gt;Organization&lt;/strong&gt; value is &lt;code class=&quot;highlighter-rouge&quot;&gt;YOUR-ORGANIZATION&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Exclusions&lt;/strong&gt;: here you can define the wildcards to excluse some files fron Sonar scan, like sample, docs and test files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;defining-the-tasks-order&quot;&gt;Defining the tasks order&lt;/h3&gt;
+&lt;p&gt;The last part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;build.cake&lt;/code&gt; file define the order that tasks will run:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v7.cake&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;running-the-buildcake&quot;&gt;Running the build.cake&lt;/h2&gt;
+&lt;p&gt;Now, every time you want to build, test and publish the results to SonarCloud you need to type this command on your project root folder:&lt;/p&gt;
+
+&lt;p&gt;MacOS:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./build.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Windows:&lt;/p&gt;
+
+&lt;p&gt;Open a &lt;code class=&quot;highlighter-rouge&quot;&gt;powershell&lt;/code&gt; terminal:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.&lt;span class=&quot;se&quot;&gt;\b&lt;/span&gt;uild.ps1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When the build finish, you should see something like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Cake build&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then open your project on &lt;a href=&quot;https://sonarcloud.io/projects&quot;&gt;SonarCloud&lt;/a&gt;:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;SonarCloud dashboard&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s it, now your project is ready to using cake to publish results to SonarCloud.&lt;/p&gt;
+
+&lt;h2 id=&quot;complete-buildcake&quot;&gt;Complete build.cake&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.cake&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;extras&quot;&gt;Extras&lt;/h2&gt;
+&lt;p&gt;If you are using git, you can add this lines to your .gitignore file:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tools/**
+!tools/packages.config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+</feed>

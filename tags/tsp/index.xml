@@ -3,11 +3,227 @@
  <title>Diego Giacomelli - tsp</title>
  <link href="//tags/tsp/index.xml" rel="self"/>
  <link href="/tag/tsp.html"/>
- <updated>2019-07-24T10:24:35-03:00</updated>
+ <updated>2019-07-25T15:40:05-03:00</updated>
  <id>/tag/tsp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>TSP with GeneticSharp and Blazor</title>
+   <link href="//generating-pdf-from-razor-template-with-razor2pdf/"/>
+   <updated>2019-07-25T00:00:00-03:00</updated>
+   <id>//generating-pdf-from-razor-template-with-razor2pdf</id>
+   <content type="html">&lt;h2 id=&quot;readings&quot;&gt;Readings&lt;/h2&gt;
+&lt;p&gt;https://medium.com/volosoft/convert-html-and-export-to-pdf-using-dinktopdf-on-asp-net-boilerplate-e2354676b357&lt;/p&gt;
+
+&lt;p&gt;In this post I will show how to use GeneticSharp and Blazor to solve the TSP (Travelling salesman problem).&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;According to Wikipedia The travelling salesman problem (TSP) asks the following question:&lt;em&gt;&lt;strong&gt;“Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?”&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;TSP is a classic sample to test some optimization techniques, as well it’s fairly used to demonstrate how to implement a genetic algorithm. For these reasons I will use it to show you how to implement a basic genetic algorithm in Blazor using GeneticSharp.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This post is a like a mirror of the &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp an Unity3D&lt;/a&gt;. It’s using the same format to teach TSP and GeneticSharp, but instead of Unity3D, this one is about Blazor.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can see the final result of this tutorial on &lt;a href=&quot;/apps/geneticsharp-runner-blazorapp&quot;&gt;http://diegogiacomelli/apps/geneticsharp-runner-blazorapp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Note that the performance presented on this demo is not the performance that GeneticSharp presents in other apps kinds, like a ASP .NET Core backend app, a console app or in a Unity 3D game. As WebAssembly do not support create a new thread, we get limited to use a Timer to made this sample interactive. More details about this in next sections of the post.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;To better understand this tutorial, you need to have some experiences/knowledges in:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Blazor (beginner)&lt;/li&gt;
+  &lt;li&gt;Genetic algorithms (beginner).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We will perform a very basic use of Blazor and everything you need to complete this tutorial will be explained or provided by the code samples, but if you want to find out better what’s happening under the hood, take a look on &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.0&amp;amp;viewFallbackFrom=aspnetcore-2.2&amp;amp;tabs=netcore-cli&quot;&gt;Blazor Get Started page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-blazor-project&quot;&gt;Creating the Blazor project&lt;/h2&gt;
+&lt;p&gt;Open a terminal and type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview6.19307.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;This will install the latest Blazor templates for .NET Core.&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This tutorial is based on Blazor &lt;code class=&quot;highlighter-rouge&quot;&gt;preview6&lt;/code&gt;. If you are doing this tutorial using a newer Blazor version and have encountered some problem, leave a comment at the end of the post or contact me on &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now we’ll create a scaffold Blazor app using the &lt;code class=&quot;highlighter-rouge&quot;&gt;blazor&lt;/code&gt; template:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new blazor &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; TspWithGeneticSharp
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;TspWithGeneticSharp
+dotnet watch run
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Wait for the message &lt;code class=&quot;highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/generating-pdf-from-razor-template-with-razor2pdf/blazor-scaffold-app.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
+&lt;p&gt;Open a new terminal in the same folder and type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet add package GeneticSharp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;This will install the latest &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp/&quot;&gt;GeneticSharp NuGet package&lt;/a&gt; in your newly created Blazor app.&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;opening-the-project&quot;&gt;Opening the project&lt;/h2&gt;
+&lt;p&gt;I recommend to you use &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; to open the project. There are some cool VS Code extensions to work with Blazor.&lt;/p&gt;
+
+&lt;p&gt;In the same terminal where you added the GeneticSharp package, type:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;code &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;This will open the Blazor project with VS Code.&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the root folder of your Blazor project create a new subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp&lt;/code&gt;. We’ll add all our C# classes inside this folder.&lt;/p&gt;
+
+&lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;To represent the cities route each gene of our chromosome will represent an index of a city in the route.&lt;/p&gt;
+
+&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome.cs&lt;/code&gt;:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;representing-a-city&quot;&gt;Representing a city&lt;/h2&gt;
+&lt;p&gt;The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.&lt;/p&gt;
+
+&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspCity.cs&lt;/code&gt;:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspCity.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
+&lt;p&gt;Now we need to evaluate the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our fitness function will evaluate the chromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.&lt;/p&gt;
+
+&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;configuring-the-genetic-algorithm&quot;&gt;Configuring the Genetic Algorithm&lt;/h2&gt;
+&lt;p&gt;In this step we need to configure our genetic algorithm using the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness&lt;/code&gt; and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
+
+&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspGA.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspGA.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-timer&quot;&gt;Why use Timer?&lt;/h3&gt;
+&lt;p&gt;GeneticSharp can be used as single threading or multithreading to evaluate chromosomes with the fitness function, but WebAssembly (and Blazor) can use just the UI thread, in this scenario when we call &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticAlgorithm.Start&lt;/code&gt; method it freezes the UI until the GA finish.&lt;/p&gt;
+
+&lt;p&gt;To avoid this behavior, the solution is: run each generation of the GA inside a step in a &lt;code class=&quot;highlighter-rouge&quot;&gt;System.Threading.Timer&lt;/code&gt; as you can see in the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspGA.Run&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;APIs that aren’t applicable inside of a web browser (for example, accessing the file system, opening a socket, and &lt;strong&gt;threading&lt;/strong&gt;) throw a PlatformNotSupportedException.
+(&lt;a href=&quot;https://docs.microsoft.com/pt-br/aspnet/core/blazor/?view=aspnetcore-3.0&quot;&gt;https://docs.microsoft.com/pt-br/aspnet/core/blazor/?view=aspnetcore-3.0&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;creating-the-razor-page&quot;&gt;Creating the Razor page&lt;/h2&gt;
+&lt;p&gt;Inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Pages&lt;/code&gt; create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=Tsp.v1.razor&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;As we need to interop with JavaScript to manipulate DOM, we will use some helper JS functions. Add the file &lt;code class=&quot;highlighter-rouge&quot;&gt;canvas-helper.js&lt;/code&gt; inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;wwwroot/js&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=canvas-helper.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; and add the tag below inside the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;head&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
+&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=index.canvas-helper.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-ijsruntime-do-access-dom&quot;&gt;Why use IJSRuntime do access DOM?&lt;/h3&gt;
+&lt;p&gt;It’s awesome we can now use C# in the browser with Blazor. But unfortunately we can’t do everything with it, yet. Currently, WebAssembly isn’t able to directly access the DOM API, which means that Blazor isn’t able to either.
+(&lt;a href=&quot;https://chrissainty.com/blazor-bites-javascript-interop&quot;&gt;https://chrissainty.com/blazor-bites-javascript-interop/&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id=&quot;webassembly-roadmap&quot;&gt;WebAssembly roadmap&lt;/h3&gt;
+&lt;p&gt;DOM integration is in the WebAssembly roadmap: &lt;a href=&quot;https://webassembly.org/docs/future-features&quot;&gt;https://webassembly.org/docs/future-features/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Check your terminal window where the command &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet watch run&lt;/code&gt; is running, if there is no error in that window you can access the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/generating-pdf-from-razor-template-with-razor2pdf/console-window.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
+&lt;p&gt;Now our GA is running inside the browser, but it needs to display the cities route better.
+We need to create a visual representation to the cities.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt; add the method &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt;:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsync.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Then call it from &lt;code class=&quot;highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;highlighter-rouge&quot;&gt;clearCanvas&lt;/code&gt; call:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsyncCall.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now you should see something like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/generating-pdf-from-razor-template-with-razor2pdf/draw-cities.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
+&lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
+
+&lt;p&gt;Now we need to draw the solution: the route represented by the best chromosome of each generation.&lt;/p&gt;
+
+&lt;p&gt;Add the following method to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsync.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Then call it from &lt;code class=&quot;highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt; call:&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsyncCall.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/generating-pdf-from-razor-template-with-razor2pdf/draw-route.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;With only 4 C# classes, 1 JS file and 1 Blazor page we built a pretty nice sample of genetic algorithms using Blazor with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Maybe let user change the genetic algorithm operators (crossover, mutation, selection, etc)?&lt;/li&gt;
+  &lt;li&gt;Move the DrawCitiesAsync and DrawRouteAsync to &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/components?view=aspnetcore-3.0&quot;&gt;Blazor components&lt;/a&gt; responsible to only draw them?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The full source code used in this post can be download or fork from this Gist: &lt;a href=&quot;https://gist.github.com/giacomelli/9addc5182943ba25eb82201e30c76418&quot;&gt;https://gist.github.com/giacomelli/9addc5182943ba25eb82201e30c76418&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s evolve!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt; and &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>TSP with GeneticSharp and Blazor</title>
