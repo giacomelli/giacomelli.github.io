@@ -3,11 +3,28 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2019-07-29T12:48:32-03:00</updated>
+ <updated>2019-07-30T07:11:13-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Unity Toasty Notification</title>
+   <link href="//unity-toasty-notification/"/>
+   <updated>2019-07-30T00:00:00-03:00</updated>
+   <id>//unity-toasty-notification</id>
+   <content type="html">&lt;p&gt;Last saturday I created the &lt;a href=&quot;https://github.com/giacomelli/Giacomelli.Unity.ToastyNotification&quot;&gt;ToastyNotification&lt;/a&gt; package, a fun editor log interceptor that play Mortal Kombat’s Toasty easter-egg every time an error is logged.&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/wwhz2wPN_wU &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;p&gt;Just install the &lt;code class=&quot;highlighter-rouge&quot;&gt;ToastyNotification.package&lt;/code&gt; from the repository &lt;a href=&quot;https://github.com/giacomelli/Giacomelli.Unity.ToastyNotification/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now every time your game raise an error on Unity’s editor console log, the Toasty Notifcation will warning you 😉!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Scene Preview Window</title>
