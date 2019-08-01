@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - sonar</title>
  <link href="//tags/sonar/index.xml" rel="self"/>
  <link href="/tag/sonar.html"/>
- <updated>2019-07-31T07:39:23-03:00</updated>
+ <updated>2019-08-01T15:07:25-03:00</updated>
  <id>/tag/sonar.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -70,9 +70,9 @@
 &lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v5.cake&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;This task use &lt;code class=&quot;highlighter-rouge&quot;&gt;OpenCover&lt;/code&gt; to collect the code coverage. Install it on your test project using the &lt;code class=&quot;highlighter-rouge&quot;&gt;OpenCover&lt;/code&gt; NuGet package:&lt;/p&gt;
+&lt;p&gt;This task use &lt;code class=&quot;highlighter-rouge&quot;&gt;Coverlet&lt;/code&gt; to collect the code coverage. Install it on your test project using the &lt;code class=&quot;highlighter-rouge&quot;&gt;Coverlet&lt;/code&gt; NuGet package:&lt;/p&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package OpenCover
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package coverlet.msbuild
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;sonar-tasks&quot;&gt;Sonar tasks&lt;/h3&gt;
