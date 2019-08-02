@@ -1,4 +1,151 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-01T15:07:25-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity Toasty Notification</title><link href="http://diegogiacomelli.com.br/unity-toasty-notification/" rel="alternate" type="text/html" title="Unity Toasty Notification" /><published>2019-07-30T00:00:00-03:00</published><updated>2019-07-30T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-toasty-notification</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-toasty-notification/">&lt;p&gt;Last saturday I created the &lt;a href=&quot;https://github.com/giacomelli/Giacomelli.Unity.ToastyNotification&quot;&gt;ToastyNotification&lt;/a&gt; package, a fun editor log interceptor that play Mortal Kombat’s Toasty easter-egg every time an error is logged.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-02T12:55:35-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Developing Web APIs - Good Practices</title><link href="http://diegogiacomelli.com.br/developing-web-apis-good-practices/" rel="alternate" type="text/html" title="Developing Web APIs - Good Practices" /><published>2019-08-02T00:00:00-03:00</published><updated>2019-08-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/developing-web-apis-good-practices</id><content type="html" xml:base="http://diegogiacomelli.com.br/developing-web-apis-good-practices/">&lt;p&gt;Some days ago a coworker asked me what do I thought about wich status code a web api should return and if there are some the good pratices to follow. When him asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.&lt;/p&gt;
+
+&lt;p&gt;The list below is not intended to be right and definitive, there is no silver bullet, but just things that I learned and tested in more of a decade working with web apis. Things that worked for me and my projects can easily not work for you and your projects, because context is other  and challenges too.&lt;/p&gt;
+
+&lt;p&gt;Besides, if you disagree with some of this points, please let a comment in the end of the post, we could learn more with it!&lt;/p&gt;
+
+&lt;h1 id=&quot;rest-or-not-restful&quot;&gt;REST or not RESTful?&lt;/h1&gt;
+&lt;p&gt;First of all, build a software that really attend the requisites, that has good code quality and has good performance is more important than follow someone’s guidance, with this said I always try to implement REST web apis, but exceptions exists and we need to work with them, so don’t try to force some operation than will don’t fit well on REST way.&lt;/p&gt;
+
+&lt;p&gt;Remember, REST is a style architecture and as every architecture, you can (and most of time should) adapt it for your project needs and capacities.&lt;/p&gt;
+
+&lt;h1 id=&quot;verbs-and-urls&quot;&gt;Verbs and URLs&lt;/h1&gt;
+&lt;p&gt;Probably the most important rule about web api is to respect the meaning of verbs, this will really make the life easer for those whom are consuming your web api.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;: to retrieve something.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;: to create something.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PUT&lt;/code&gt;: to complete update something.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;: to partially update something.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DELETE&lt;/code&gt;: to delete something&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then, combining with URLs, you get a really clear way to work:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;/resource  : returns all resources.&lt;/li&gt;
+      &lt;li&gt;/resource/1: returns the resource with id 1.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;/resource: creates a bunch of resources  (rarelly used).&lt;/li&gt;
+      &lt;li&gt;/resource/1: Not used.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PUT&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;/resource: complete updates a bunch of resources (rarelly used).&lt;/li&gt;
+      &lt;li&gt;/resource/1: complete updates the resource with id 1.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;/resource: partial updates a bunch of resources (rarelly used).&lt;/li&gt;
+      &lt;li&gt;/resource/1: partial updates the resource with id 1.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DELETE&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;/resource: deletes all resources (rarelly used, mostly never).&lt;/li&gt;
+      &lt;li&gt;/resource/1: delete the resource with id 1.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;status-code&quot;&gt;Status code&lt;/h1&gt;
+&lt;p&gt;I try to keep the range of returned status code small, the smallest one has only 3 status:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;200&lt;/code&gt;: succesful request.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;400&lt;/code&gt;: a client error.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;500&lt;/code&gt; : a server error.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course, you can extend this one, like use &lt;code class=&quot;highlighter-rouge&quot;&gt;201 (created)&lt;/code&gt; to return status for POST verbs, and &lt;code class=&quot;highlighter-rouge&quot;&gt;401&lt;/code&gt; to unauthorized requests, but try to keep this list small, so will be easy to who consume your API take decisions about what do with different status code.&lt;/p&gt;
+
+&lt;p&gt;Another good pratice is return an &lt;code class=&quot;highlighter-rouge&quot;&gt;error code&lt;/code&gt; and an &lt;code class=&quot;highlighter-rouge&quot;&gt;error message&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;json&lt;/code&gt; of requests that result in &lt;code class=&quot;highlighter-rouge&quot;&gt;400&lt;/code&gt; status code (client error), this way the client can react or display different informations to the end user. 
+In most of case &lt;code class=&quot;highlighter-rouge&quot;&gt;400&lt;/code&gt; status code are about some business logic rule that need to be respect to result in a sucessful request, so provide some information to client can help it to understand what is wrong in the request.&lt;/p&gt;
+
+&lt;h1 id=&quot;versioning&quot;&gt;Versioning&lt;/h1&gt;
+&lt;p&gt;I see a lot of developers using &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt; inside the code to “versioning” their web apis, I really dislike this method, I can understand that this is easy to deploy a new web api version to the same vitual application using this technique, but we need to agree that we do versioning using some SCM, like Git, SVN and Mercurial with everything else that correspond to our code, why should we do versioning inside the code in the case of web api?&lt;/p&gt;
+
+&lt;p&gt;In most of case your web api will have only one version, especially when you are developing a &lt;code class=&quot;highlighter-rouge&quot;&gt;SPA&lt;/code&gt; app and it is the only client of your web api.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Versioning of APIs is a controversial topic—you will find a lot of contradictory guidance on the internet.
+The pattern that is most commonly practiced is probably the one with a version identifier in a path
+segment of URLs. Since there is little consensus on versioning, simply offering our opinions on the topic may not be very helpful, but we offer two thoughts:&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Doing nothing at all for API versioning is an intelligent approach that is getting more attention&lt;/li&gt;
+    &lt;li&gt;Links and version identifiers in URLs make awkward bedfellows&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://cloud.google.com/files/apigee/apigee-web-api-design-the-missing-link-ebook.pdf&quot;&gt;Web API Design: The Missing Link&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;my-web-api-really-need-versions&quot;&gt;My web api really need versions&lt;/h2&gt;
+&lt;p&gt;In this case, the approach that I use is create a new site/virtual application every time that I need to publish a major version of my web api, so, in the code of the routes there is no &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;v2&lt;/code&gt; and so on.&lt;/p&gt;
+
+&lt;p&gt;Let say I have a web api publish on &lt;code class=&quot;highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v1&lt;/code&gt;, than I made some breaking changes to the public interface of the web api and need to publish another version in a separated url to avoid any impact to the users that still use the old &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt;. I will just create the new &lt;code class=&quot;highlighter-rouge&quot;&gt;v2&lt;/code&gt; virtual application, and the urls will be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v1&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v2&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In a moment in future you will want to remove the support to the &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt; version, in that moment you could configure your virtual application to redirect (status code &lt;code class=&quot;highlighter-rouge&quot;&gt;301&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;302&lt;/code&gt;) to the next/latest version.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Of course, it’s a good pratice too have some public changelog about your web api versions releases to notify the clients developers.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;describing&quot;&gt;Describing&lt;/h1&gt;
+&lt;p&gt;In the field of how to describe a web api REST I can cite &lt;code class=&quot;highlighter-rouge&quot;&gt;Swagger&lt;/code&gt;. It is not a attempt to create a WSDL like to web api REST, but it is a good attempt to create an open standard for describing web apis REST.&lt;/p&gt;
+
+&lt;p&gt;Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.&lt;/p&gt;
+
+&lt;p&gt;I use Swagger a lot and really love it, mainly because Swagger UI that allow you generate a nice live console and documentation for your web api.&lt;/p&gt;
+
+&lt;p&gt;There are many implementations of Swagger for most of languages: C#, Java, Python, Ruby, etc.&lt;/p&gt;
+
+&lt;p&gt;If you are using ASP .NET Web API, there a some projects to auto generate the Swagger specification, like &lt;a href=&quot;https://github.com/domaindrivendev/Swashbuckle.AspNetCore&quot;&gt;Swashbuckle.AspNetCore&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Swagger is very popular nowadays, but if you never see it in action, take a look on &lt;a href=&quot;https://developer.marvel.com/docs&quot;&gt;Marvel API&lt;/a&gt; that use Swagger and Swagger UI.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;other-conventions-and-good-pratices&quot;&gt;Other conventions and good pratices&lt;/h1&gt;
+&lt;p&gt;To keep our lifes as developers easier is good define some conventions of how our web api REST will behave, the best effort I know in this field is the very good &lt;strong&gt;Apigee e-books&lt;/strong&gt;. The e-books are not an attempt to create a bible or a mantra about how to design your api, but rather a collection of conventions observed in large web REST apis, like Twitter, Facebook, Linkedin, Google, etc.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Most of the good pratices that I used, tested and mentioned in this post I learned from my experience and Apigee books.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;I probably forgot some learnings that I still use in my web apis developing, maybe because it’s so common to perform it that I even do not notice them, but the ones cited above I think are the most remarkable.&lt;/p&gt;
+
+&lt;h1 id=&quot;further-readings&quot;&gt;Further readings&lt;/h1&gt;
+&lt;p&gt;I really recomment you read the books bellow, they have a detailed a lot of good pratices about how do develop good web apis and can help you to design yours.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf&quot;&gt;Web API Design&lt;/a&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;The success of an API design is measured by how quickly developers can get
+up to speed and start enjoying success using your API.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/files/apigee/apigee-web-api-design-the-missing-link-ebook.pdf&quot;&gt;Web API Design: The Missing Link&lt;/a&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;When you design any interface, you should try to put yourself in the shoes of the user&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="web-api" /><category term="good-pratices" /><summary type="html">Some days ago a coworker asked me what do I thought about wich status code a web api should return and if there are some the good pratices to follow. When him asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.</summary></entry><entry><title type="html">Unity Toasty Notification</title><link href="http://diegogiacomelli.com.br/unity-toasty-notification/" rel="alternate" type="text/html" title="Unity Toasty Notification" /><published>2019-07-30T00:00:00-03:00</published><updated>2019-07-30T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-toasty-notification</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-toasty-notification/">&lt;p&gt;Last saturday I created the &lt;a href=&quot;https://github.com/giacomelli/Giacomelli.Unity.ToastyNotification&quot;&gt;ToastyNotification&lt;/a&gt; package, a fun editor log interceptor that play Mortal Kombat’s Toasty easter-egg every time an error is logged.&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/wwhz2wPN_wU &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -373,208 +520,4 @@ dotnet run
 
 &lt;p&gt;Or you can use the latest GeneticSharp.unitypackage available on our &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="dotnet" /><category term="release" /><category term="blazor" /><summary type="html">The GeneticSharp 2.6.0 is out.</summary></entry><entry><title type="html">TSP with GeneticSharp and Blazor</title><link href="http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/" rel="alternate" type="text/html" title="TSP with GeneticSharp and Blazor" /><published>2019-07-10T00:00:00-03:00</published><updated>2019-07-10T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor</id><content type="html" xml:base="http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/">&lt;p&gt;In this post I will show how to use GeneticSharp and Blazor to solve the TSP (Travelling salesman problem).&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;According to Wikipedia The travelling salesman problem (TSP) asks the following question:&lt;em&gt;&lt;strong&gt;“Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?”&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;TSP is a classic sample to test some optimization techniques, as well it’s fairly used to demonstrate how to implement a genetic algorithm. For these reasons I will use it to show you how to implement a basic genetic algorithm in Blazor using GeneticSharp.&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This post is a like a mirror of the &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d&quot;&gt;TSP with GeneticSharp an Unity3D&lt;/a&gt;. It’s using the same format to teach TSP and GeneticSharp, but instead of Unity3D, this one is about Blazor.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;You can see the final result of this tutorial on &lt;a href=&quot;/apps/geneticsharp-runner-blazorapp&quot;&gt;http://diegogiacomelli/apps/geneticsharp-runner-blazorapp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Note that the performance presented on this demo is not the performance that GeneticSharp presents in other apps kinds, like a ASP .NET Core backend app, a console app or in a Unity 3D game. As WebAssembly do not support create a new thread, we get limited to use a Timer to made this sample interactive. More details about this in next sections of the post.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
-&lt;p&gt;To better understand this tutorial, you need to have some experiences/knowledges in:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Blazor (beginner)&lt;/li&gt;
-  &lt;li&gt;Genetic algorithms (beginner).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We will perform a very basic use of Blazor and everything you need to complete this tutorial will be explained or provided by the code samples, but if you want to find out better what’s happening under the hood, take a look on &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.0&amp;amp;viewFallbackFrom=aspnetcore-2.2&amp;amp;tabs=netcore-cli&quot;&gt;Blazor Get Started page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you need an introduction to genetic algorithms, take a look at this tutorial &lt;a href=&quot;/function-optimization-with-geneticsharp/&quot;&gt;Function optimization with GeneticSharp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;creating-the-blazor-project&quot;&gt;Creating the Blazor project&lt;/h2&gt;
-&lt;p&gt;Open a terminal and type:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview6.19307.2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;This will install the latest Blazor templates for .NET Core.&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This tutorial is based on Blazor &lt;code class=&quot;highlighter-rouge&quot;&gt;preview6&lt;/code&gt;. If you are doing this tutorial using a newer Blazor version and have encountered some problem, leave a comment at the end of the post or contact me on &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Now we’ll create a scaffold Blazor app using the &lt;code class=&quot;highlighter-rouge&quot;&gt;blazor&lt;/code&gt; template:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new blazor &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; TspWithGeneticSharp
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;TspWithGeneticSharp
-dotnet watch run
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Wait for the message &lt;code class=&quot;highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
-&lt;p&gt;Open a new terminal in the same folder and type:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet add package GeneticSharp
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;This will install the latest &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp/&quot;&gt;GeneticSharp NuGet package&lt;/a&gt; in your newly created Blazor app.&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;opening-the-project&quot;&gt;Opening the project&lt;/h2&gt;
-&lt;p&gt;I recommend to you use &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; to open the project. There are some cool VS Code extensions to work with Blazor.&lt;/p&gt;
-
-&lt;p&gt;In the same terminal where you added the GeneticSharp package, type:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;code &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;This will open the Blazor project with VS Code.&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;In the root folder of your Blazor project create a new subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp&lt;/code&gt;. We’ll add all our C# classes inside this folder.&lt;/p&gt;
-
-&lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;
-
-&lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;To represent the cities route each gene of our chromosome will represent an index of a city in the route.&lt;/p&gt;
-
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome.cs&lt;/code&gt;:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;representing-a-city&quot;&gt;Representing a city&lt;/h2&gt;
-&lt;p&gt;The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.&lt;/p&gt;
-
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspCity.cs&lt;/code&gt;:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspCity.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
-&lt;p&gt;Now we need to evaluate the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Our fitness function will evaluate the chromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.&lt;/p&gt;
-
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;configuring-the-genetic-algorithm&quot;&gt;Configuring the Genetic Algorithm&lt;/h2&gt;
-&lt;p&gt;In this step we need to configure our genetic algorithm using the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness&lt;/code&gt; and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
-
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspGA.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspGA.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-timer&quot;&gt;Why use Timer?&lt;/h3&gt;
-&lt;p&gt;GeneticSharp can be used as single threading or multithreading to evaluate chromosomes with the fitness function, but WebAssembly (and Blazor) can use just the UI thread, in this scenario when we call &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticAlgorithm.Start&lt;/code&gt; method it freezes the UI until the GA finish.&lt;/p&gt;
-
-&lt;p&gt;To avoid this behavior, the solution is: run each generation of the GA inside a step in a &lt;code class=&quot;highlighter-rouge&quot;&gt;System.Threading.Timer&lt;/code&gt; as you can see in the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspGA.Run&lt;/code&gt; method.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;APIs that aren’t applicable inside of a web browser (for example, accessing the file system, opening a socket, and &lt;strong&gt;threading&lt;/strong&gt;) throw a PlatformNotSupportedException.
-(&lt;a href=&quot;https://docs.microsoft.com/pt-br/aspnet/core/blazor/?view=aspnetcore-3.0&quot;&gt;https://docs.microsoft.com/pt-br/aspnet/core/blazor/?view=aspnetcore-3.0&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;creating-the-razor-page&quot;&gt;Creating the Razor page&lt;/h2&gt;
-&lt;p&gt;Inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Pages&lt;/code&gt; create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=Tsp.v1.razor&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;As we need to interop with JavaScript to manipulate DOM, we will use some helper JS functions. Add the file &lt;code class=&quot;highlighter-rouge&quot;&gt;canvas-helper.js&lt;/code&gt; inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;wwwroot/js&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=canvas-helper.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; and add the tag below inside the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;head&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=index.canvas-helper.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-ijsruntime-do-access-dom&quot;&gt;Why use IJSRuntime do access DOM?&lt;/h3&gt;
-&lt;p&gt;It’s awesome we can now use C# in the browser with Blazor. But unfortunately we can’t do everything with it, yet. Currently, WebAssembly isn’t able to directly access the DOM API, which means that Blazor isn’t able to either.
-(&lt;a href=&quot;https://chrissainty.com/blazor-bites-javascript-interop&quot;&gt;https://chrissainty.com/blazor-bites-javascript-interop/&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h3 id=&quot;webassembly-roadmap&quot;&gt;WebAssembly roadmap&lt;/h3&gt;
-&lt;p&gt;DOM integration is in the WebAssembly roadmap: &lt;a href=&quot;https://webassembly.org/docs/future-features&quot;&gt;https://webassembly.org/docs/future-features/&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Check your terminal window where the command &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet watch run&lt;/code&gt; is running, if there is no error in that window you can access the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
-
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
-&lt;p&gt;Now our GA is running inside the browser, but it needs to display the cities route better.
-We need to create a visual representation to the cities.&lt;/p&gt;
-
-&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt; add the method &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt;:&lt;/p&gt;
-
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsync.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Then call it from &lt;code class=&quot;highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;highlighter-rouge&quot;&gt;clearCanvas&lt;/code&gt; call:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsyncCall.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now you should see something like this:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
-&lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
-
-&lt;p&gt;Now we need to draw the solution: the route represented by the best chromosome of each generation.&lt;/p&gt;
-
-&lt;p&gt;Add the following method to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsync.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Then call it from &lt;code class=&quot;highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt; call:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsyncCall.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;With only 4 C# classes, 1 JS file and 1 Blazor page we built a pretty nice sample of genetic algorithms using Blazor with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Maybe let user change the genetic algorithm operators (crossover, mutation, selection, etc)?&lt;/li&gt;
-  &lt;li&gt;Move the DrawCitiesAsync and DrawRouteAsync to &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/components?view=aspnetcore-3.0&quot;&gt;Blazor components&lt;/a&gt; responsible to only draw them?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The full source code used in this post can be download or fork from this Gist: &lt;a href=&quot;https://gist.github.com/giacomelli/9addc5182943ba25eb82201e30c76418&quot;&gt;https://gist.github.com/giacomelli/9addc5182943ba25eb82201e30c76418&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Let’s evolve!&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt; and &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="blazor" /><category term="webassembly" /><category term="tsp" /><category term="dotnet" /><summary type="html">In this post I will show how to use GeneticSharp and Blazor to solve the TSP (Travelling salesman problem). Introduction</summary></entry></feed>
+&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="dotnet" /><category term="release" /><category term="blazor" /><summary type="html">The GeneticSharp 2.6.0 is out.</summary></entry></feed>
