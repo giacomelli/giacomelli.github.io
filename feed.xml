@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-02T18:35:52-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Developing Web APIs - Good Practices</title><link href="http://diegogiacomelli.com.br/developing-web-apis-good-practices/" rel="alternate" type="text/html" title="Developing Web APIs - Good Practices" /><published>2019-08-02T00:00:00-03:00</published><updated>2019-08-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/developing-web-apis-good-practices</id><content type="html" xml:base="http://diegogiacomelli.com.br/developing-web-apis-good-practices/">&lt;p&gt;Some days ago a coworker asked me what do I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-05T11:06:38-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (Aug 5th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (Aug 5th 2019)" /><published>2019-08-05T00:00:00-03:00</published><updated>2019-08-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Phi Dinh&lt;/strong&gt; remembered a Twitter moment with tips and tutorials about the shaders used on Recompile. (&lt;a href=&quot;https://twitter.com/i/moments/1122251136239570947&quot;&gt;Recompile Unity Tips and Tutorials&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Thomas Krogh-Jacobsen&lt;/strong&gt; wrote a blog post about Unity 2019.2 release. This version has more than 170 new features. (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/30/heres-whats-in-the-brand-new-unity-2019-2&quot;&gt;Here’s what’s in the brand-new Unity 2019.2&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;Screen.cutouts for iOS/Android, Burst Compiler updates, TypeCache API in Editor code, PhysX Cloth Solver update, DSPGraph audio mixing/rendering engine, Intel® VTune™ Amplifier support, IDE support moving to packages, .NET 4.x is now default and Incremental Garbage Collection.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video about Unity 2019.2 features too (&lt;a href=&quot;https://www.youtube.com/watch?v=qoERAtLGq-8&quot;&gt;Unity 2019.2 is now available!&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/qoERAtLGq-8 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Andy Touch&lt;/strong&gt; created a Twitter thread to about the different 2D Light Types available in Unity 2019.2 (&lt;a href=&quot;https://twitter.com/andytouch/status/1156204606562738176&quot;&gt;2D Light Types&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Dilmer Valecillos&lt;/strong&gt; made a video showing how to use low polly assets for VR (&lt;a href=&quot;https://www.youtube.com/watch?v=4SVUeuV6TpU&quot;&gt;Unity3d Oculus Quest Development - Adding A Low Poly Asset for VR Usage from the Asset Store&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Alex Lindman&lt;/strong&gt; wrote a blog post about custom lighting in Shader Graph (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/31/custom-lighting-in-shader-graph-expanding-your-graphs-in-2019&quot;&gt;Custom Lighting in Shader Graph: Expanding your graphs in 2019&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;With the release of Unity Editor 2019.1, the Shader Graph package officially came out of preview! Now, in 2019.2, we’re bringing even more features and functionality to Shader Graph.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Kenney&lt;/strong&gt; has an incredible collection of free game assets that any game developer can use (&lt;a href=&quot;https://kenney.nl/assets&quot;&gt;Kenney Assets&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;License: (CC0 1.0 Universal) You’re free to use these game assets in any project, personal or commercial. There’s no need to ask permission before using these. Giving attribution is not required, but is greatly appreciated!&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Lindsay Cox&lt;/strong&gt; made a peformance test comparing single thead, TPL and C# Job System (&lt;a href=&quot;http://lindsaycox.co.uk/blog/unity/single-thread-vs-tasks-vs-unity-c-jobs-simple-performance-test/&quot;&gt;Single Thread Vs Tasks Vs Unity C# Jobs – Simple Performance Test&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;In conclusion then, based on the above tests, if you are going to crunch through work without the Burst Compiler, maybe look at using something like Tasks first before opting for Jobs. If you are going to use the Burst Compiler, use the Job System.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Kristin Stock&lt;/strong&gt; made a video on procedurally generated low-poly planets (&lt;a href=&quot;https://www.youtube.com/watch?v=2FfzEdALOGQ&quot;&gt;Procedurally Generated Low-Poly Planets in Unity&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/2FfzEdALOGQ &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Eduardo Oriz and Mike Geig&lt;/strong&gt; wrote a blog post about how to set up your Unity project for retro 16-bit games (&lt;a href=&quot;https://blogs.unity3d.com/2019/08/02/2d-pixel-perfect-how-to-set-up-your-unity-project-for-retro-16-bit-games&quot;&gt;2D Pixel Perfect: How to set up your Unity project for retro 16-bit games&lt;/a&gt;).
+    &lt;blockquote&gt;
+      &lt;p&gt;In our first 2D Pixel Perfect guide for retro games, we showed you how to set up the 2D Pixel Perfect tool and how 8-bit graphics were made back in the day. In this post, we fast-forward to the 16-bit era. With the help of Mega Cat Studios, you’ll learn how to create authentic art for Sega Genesis (or Mega Drive) and Super NES-style games using Unity settings, graphics structures, and color palettes&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Unity&lt;/strong&gt; released the &lt;code class=&quot;highlighter-rouge&quot;&gt;ML-Agents Beta 0.9.0&lt;/code&gt; (&lt;a href=&quot;https://github.com/Unity-Technologies/ml-agents/releases/tag/0.9.0&quot;&gt;ML-Agents Beta 0.9.0&lt;/a&gt;)
+    &lt;blockquote&gt;
+      &lt;p&gt;Generative Adversarial Imitation Learning, pre-training for the PPO trainer, training generalized reinforcement learning agents, options for Nature and ResNet CNN architectures.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">Developing Web APIs - Good Practices</title><link href="http://diegogiacomelli.com.br/developing-web-apis-good-practices/" rel="alternate" type="text/html" title="Developing Web APIs - Good Practices" /><published>2019-08-02T00:00:00-03:00</published><updated>2019-08-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/developing-web-apis-good-practices</id><content type="html" xml:base="http://diegogiacomelli.com.br/developing-web-apis-good-practices/">&lt;p&gt;Some days ago a coworker asked me what do I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.&lt;/p&gt;
 
 &lt;p&gt;The list below is not intended to be right and definitive, there is no silver bullet, but just things that I learned and tested in more of a decade working with web apis. Things that worked for me and my projects can easily not work for you and your projects, because context is other  and challenges too.&lt;/p&gt;
 
@@ -476,48 +530,4 @@ Düzgi supervision, wrote the paper for his master degree at Istanbul Bilgi Univ
     &lt;p&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; published a video about gamepad input (&lt;a href=&quot;https://www.youtube.com/watch?v=p-3S73MaDP8&quot;&gt;CONTROLLER INPUT in Unity!&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video showing how to make terrains (&lt;a href=&quot;https://www.youtube.com/watch?v=2Vvwjfp-hg8&quot;&gt;How to make Terrains with Unity 2019! (Tutorial)&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">GeneticSharp 2.6.0 - Blazor template</title><link href="http://diegogiacomelli.com.br/geneticsharp-2.6.0-blazor-template/" rel="alternate" type="text/html" title="GeneticSharp 2.6.0 - Blazor template" /><published>2019-07-11T00:00:00-03:00</published><updated>2019-07-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-2.6.0-blazor-template</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-2.6.0-blazor-template/">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp 2.6.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
-
-&lt;h1 id=&quot;blazor-template&quot;&gt;Blazor template&lt;/h1&gt;
-&lt;p&gt;Now we have 4 &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; templates, besides the &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpConsoleApp&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspConsoleApp&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspUnity3d&lt;/code&gt; already existent, a new template for a Blazor client app was added: &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspBlazorApp&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new -i GeneticSharp.Templates
-dotnet new GeneticSharpTspBlazorApp -o TspBlazorApp
-cd TspBlazorApp
-dotnet run
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;new-papers-and-projects-using-geneticsharp&quot;&gt;New papers and projects using GeneticSharp&lt;/h1&gt;
-&lt;p&gt;Four papers and one project were added to the list:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/docs/mentioning-GeneticSharp/Design-of-a-warehouse-order-picking-policy-using-genetic-algorithm.pdf&quot;&gt;Design of a warehouse order picking policy using genetic algorithm (paper)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/document/8643945&quot;&gt;Fabrication of Adiabatic Quantum-Flux-Parametron Integrated Circuits Using an Automatic Placement Tool Based on Genetic Algorithms (paper)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/docs/mentioning-GeneticSharp/Modelling-and-Simulation-Analysis-of-Goal-Oriented-Business-Process.pdf&quot;&gt;Modelling and Simulation Analysis of Goal-Oriented Business Process (paper)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/docs/mentioning-GeneticSharp/Optimisation-par-algorithme-genetique-de-structures-lattices.pdf&quot;&gt;Optimization by genetic algorithm of lattices structures for the media generation in additive manufacturing (paper)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://trussoptimizationweb.herokuapp.com&quot;&gt;TrussOptimization (project)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;how-to-install-the-new-version&quot;&gt;How to install the new version&lt;/h1&gt;
-&lt;h3 id=&quot;net-standard-20&quot;&gt;.NET Standard 2.0&lt;/h3&gt;
-&lt;p&gt;Only GeneticSharp:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;GeneticSharp and extensions (TSP, AutoConfig, Bitmap equality, Equality equation, Equation solver, Function builder, etc):&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp.Extensions
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;unity3d&quot;&gt;Unity3D&lt;/h2&gt;
-&lt;p&gt;You should use the &lt;a href=&quot;https://github.com/xoofx/UnityNuGet&quot;&gt;UnityNuGet&lt;/a&gt; to install GeneticSharp directly from NuGet.&lt;/p&gt;
-
-&lt;p&gt;Or you can use the latest GeneticSharp.unitypackage available on our &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Let’s evolve!&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="dotnet" /><category term="release" /><category term="blazor" /><summary type="html">The GeneticSharp 2.6.0 is out.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>
