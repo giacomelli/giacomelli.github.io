@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-05T11:06:38-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (Aug 5th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (Aug 5th 2019)" /><published>2019-08-05T00:00:00-03:00</published><updated>2019-08-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-05T12:34:32-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (Aug 5th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (Aug 5th 2019)" /><published>2019-08-05T00:00:00-03:00</published><updated>2019-08-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Phi Dinh&lt;/strong&gt; remembered a Twitter moment with tips and tutorials about the shaders used on Recompile. (&lt;a href=&quot;https://twitter.com/i/moments/1122251136239570947&quot;&gt;Recompile Unity Tips and Tutorials&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
@@ -15,12 +15,12 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Andy Touch&lt;/strong&gt; created a Twitter thread to about the different 2D Light Types available in Unity 2019.2 (&lt;a href=&quot;https://twitter.com/andytouch/status/1156204606562738176&quot;&gt;2D Light Types&lt;/a&gt;).&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Andy Touch&lt;/strong&gt; created a Twitter thread about the different 2D Light Types available in Unity 2019.2 (&lt;a href=&quot;https://twitter.com/andytouch/status/1156204606562738176&quot;&gt;2D Light Types&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Dilmer Valecillos&lt;/strong&gt; made a video showing how to use low polly assets for VR (&lt;a href=&quot;https://www.youtube.com/watch?v=4SVUeuV6TpU&quot;&gt;Unity3d Oculus Quest Development - Adding A Low Poly Asset for VR Usage from the Asset Store&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Alex Lindman&lt;/strong&gt; wrote a blog post about custom lighting in Shader Graph (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/31/custom-lighting-in-shader-graph-expanding-your-graphs-in-2019&quot;&gt;Custom Lighting in Shader Graph: Expanding your graphs in 2019&lt;/a&gt;).
+  &lt;li&gt;&lt;strong&gt;Alex Lindman&lt;/strong&gt; wrote a blog post on custom lighting in Shader Graph (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/31/custom-lighting-in-shader-graph-expanding-your-graphs-in-2019&quot;&gt;Custom Lighting in Shader Graph: Expanding your graphs in 2019&lt;/a&gt;).
     &lt;blockquote&gt;
       &lt;p&gt;With the release of Unity Editor 2019.1, the Shader Graph package officially came out of preview! Now, in 2019.2, we’re bringing even more features and functionality to Shader Graph.&lt;/p&gt;
     &lt;/blockquote&gt;
