@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - web-api</title>
  <link href="//tags/web-api/index.xml" rel="self"/>
  <link href="/tag/web-api.html"/>
- <updated>2019-08-07T07:36:11-03:00</updated>
+ <updated>2019-08-07T08:41:59-03:00</updated>
  <id>/tag/web-api.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -14,7 +14,7 @@
    <link href="//developing-web-apis-good-practices/"/>
    <updated>2019-08-02T00:00:00-03:00</updated>
    <id>//developing-web-apis-good-practices</id>
-   <content type="html">&lt;p&gt;Some days ago a coworker asked me what do I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Some days ago a coworker asked me what I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.&lt;/p&gt;
 
 &lt;p&gt;The list below is not intended to be right and definitive, there is no silver bullet, but just things that I learned and tested in more of a decade working with web apis. Things that worked for me and my projects can easily not work for you and your projects, because context is other  and challenges too.&lt;/p&gt;
 
@@ -86,7 +86,7 @@
 In most cases, &lt;code class=&quot;highlighter-rouge&quot;&gt;400&lt;/code&gt; status code are about some business logic rule that need to be respect to result in a sucessful request, so provide some information to client can help it to understand what is wrong in the request.&lt;/p&gt;
 
 &lt;h1 id=&quot;versioning&quot;&gt;Versioning&lt;/h1&gt;
-&lt;p&gt;I see a lot of developers using &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt; inside the code to “versioning” their web apis, I really dislike this method, I can understand that this is easy to deploy a new web api version to the same virtual application using this technique, but we need to agree that we do versioning using some SCM, like Git, SVN and Mercurial with everything else that correspond to our code, why should we do versioning inside the code in the case of web api?&lt;/p&gt;
+&lt;p&gt;I see a lot of developers using &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt; inside the code to “versioning” their web apis, I really dislike this method, I can understand it is easy to deploy a new web api version to the same virtual application using this technique, but we need to agree that we do versioning using some SCM, like Git, SVN and Mercurial with everything else that correspond to our code, why should we do versioning inside the code in the case of web api?&lt;/p&gt;
 
 &lt;p&gt;In most of case your web api will have only one version, especially when you are developing a &lt;code class=&quot;highlighter-rouge&quot;&gt;SPA&lt;/code&gt; app and it is the only client of your web api.&lt;/p&gt;
 
@@ -145,7 +145,7 @@ segment of URLs. Since there is little consensus on versioning, simply offering 
 &lt;p&gt;I probably forgot some learnings that I still use in my web apis developing, maybe because it’s so common to perform it that I even do not notice them, but the ones cited above I think are the most remarkable.&lt;/p&gt;
 
 &lt;h1 id=&quot;further-readings&quot;&gt;Further readings&lt;/h1&gt;
-&lt;p&gt;I really recommend you to read the books bellow, they have a detailed a lot of good practices about how do develop good web apis and can help you to design yours.&lt;/p&gt;
+&lt;p&gt;I really recommend you to read the books bellow, they have detailed a lot of good practices about how do develop good web apis and can help you to design yours.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf&quot;&gt;Web API Design&lt;/a&gt;

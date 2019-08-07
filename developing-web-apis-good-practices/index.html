@@ -11,13 +11,13 @@
 	<meta name="twitter:site" content="@ogiacomelli" />
 
     
-    <meta name="description" content="Some days ago a coworker asked me what do I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.
+    <meta name="description" content="Some days ago a coworker asked me what I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.
 
 " />
-    <meta property="og:description" content="Some days ago a coworker asked me what do I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.
+    <meta property="og:description" content="Some days ago a coworker asked me what I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.
 
 " />
-    <meta name="twitter:description" content="Some days ago a coworker asked me what do I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.
+    <meta name="twitter:description" content="Some days ago a coworker asked me what I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.
 
 " />
     
@@ -127,9 +127,13 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
    
  
     <div class="post-info-box">
-      <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>02/08/2019</span></div>      
+      <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>02/08/2019</span></div>   
+      
+
+<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>9 minutes to read</span></div>
+   
     </div>
-    <p>Some days ago a coworker asked me what do I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.</p>
+    <p>Some days ago a coworker asked me what I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.</p>
 
 <p>The list below is not intended to be right and definitive, there is no silver bullet, but just things that I learned and tested in more of a decade working with web apis. Things that worked for me and my projects can easily not work for you and your projects, because context is other  and challenges too.</p>
 
@@ -201,7 +205,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 In most cases, <code class="highlighter-rouge">400</code> status code are about some business logic rule that need to be respect to result in a sucessful request, so provide some information to client can help it to understand what is wrong in the request.</p>
 
 <h1 id="versioning">Versioning</h1>
-<p>I see a lot of developers using <code class="highlighter-rouge">v1</code> inside the code to “versioning” their web apis, I really dislike this method, I can understand that this is easy to deploy a new web api version to the same virtual application using this technique, but we need to agree that we do versioning using some SCM, like Git, SVN and Mercurial with everything else that correspond to our code, why should we do versioning inside the code in the case of web api?</p>
+<p>I see a lot of developers using <code class="highlighter-rouge">v1</code> inside the code to “versioning” their web apis, I really dislike this method, I can understand it is easy to deploy a new web api version to the same virtual application using this technique, but we need to agree that we do versioning using some SCM, like Git, SVN and Mercurial with everything else that correspond to our code, why should we do versioning inside the code in the case of web api?</p>
 
 <p>In most of case your web api will have only one version, especially when you are developing a <code class="highlighter-rouge">SPA</code> app and it is the only client of your web api.</p>
 
@@ -260,7 +264,7 @@ segment of URLs. Since there is little consensus on versioning, simply offering 
 <p>I probably forgot some learnings that I still use in my web apis developing, maybe because it’s so common to perform it that I even do not notice them, but the ones cited above I think are the most remarkable.</p>
 
 <h1 id="further-readings">Further readings</h1>
-<p>I really recommend you to read the books bellow, they have a detailed a lot of good practices about how do develop good web apis and can help you to design yours.</p>
+<p>I really recommend you to read the books bellow, they have detailed a lot of good practices about how do develop good web apis and can help you to design yours.</p>
 
 <ul>
   <li><a href="https://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf">Web API Design</a>
