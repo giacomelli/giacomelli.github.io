@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-07T08:41:59-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity and Game Development links (Aug 5th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (Aug 5th 2019)" /><published>2019-08-05T00:00:00-03:00</published><updated>2019-08-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-08T11:17:06-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Deploying a T4 Template with dotnet pack</title><link href="http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack/" rel="alternate" type="text/html" title="Deploying a T4 Template with dotnet pack" /><published>2019-08-08T00:00:00-03:00</published><updated>2019-08-08T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack</id><content type="html" xml:base="http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack/">&lt;p&gt;In this post I will show how to deploy a T4 Template to a target project using a NuGet package built with dotnet CLI pack command.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Recently I had to distribute a T4 template inside a NuGet package, so developers who installed the NuGet package would get, in addition to the library assemblies, a T4 template to help generate some scaffold code.&lt;/p&gt;
+
+&lt;p&gt;Nowadays there are two main ways to build a NuGet package: creating a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt; file or defining the package properties directly inside your &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The project that I want to distributed via NuGet is a .NET Standard library, so I decided to use the the dotnet core way: define the package properties inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-nuget-project&quot;&gt;Creating the NuGet project&lt;/h2&gt;
+&lt;p&gt;We will create a sample project to use during the post. Open a command-line/terminal and type:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=create-sample-project.sh&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Let’s say that the T4 Template that we want to distribute is located inside a folder called &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates&lt;/code&gt; and the file is named &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now open the &lt;code class=&quot;highlighter-rouge&quot;&gt;SampleNugetProject.csproj&lt;/code&gt; in the Visual Studio and add a &lt;code class=&quot;highlighter-rouge&quot;&gt;T4 Template&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Add new item…&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our &lt;code class=&quot;highlighter-rouge&quot;&gt;Solution Explorer&lt;/code&gt; should look like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;creating-a-targets&quot;&gt;Creating a .targets&lt;/h2&gt;
+&lt;p&gt;We need to create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.targets&lt;/code&gt; file, it will be used to copy the T4 Template from the NuGet package folder to the target project in the build process:&lt;/p&gt;
+
+&lt;p&gt;Create a file with the same name of your NuGet package project, but with the extensions &lt;code class=&quot;highlighter-rouge&quot;&gt;.targets&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For our sample the file will be &lt;code class=&quot;highlighter-rouge&quot;&gt;SampleNugetProject.targets&lt;/code&gt;:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=SampleNugetProject.targets&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;changing-the-csproj&quot;&gt;Changing the .csproj&lt;/h2&gt;
+&lt;p&gt;In the project &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; just add this &lt;code class=&quot;highlighter-rouge&quot;&gt;ItemGroup&lt;/code&gt;:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=SampleNugetProject.csproj&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;building-the-nuget-package&quot;&gt;Building the NuGet package&lt;/h2&gt;
+&lt;p&gt;Inside the folder where are our &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;.targets&lt;/code&gt; files, type:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=dotnet-pack.sh&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;This will create a file &lt;code class=&quot;highlighter-rouge&quot;&gt;bin\Debug\SampleNugetProject.1.0.0.nupkg&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing-the-nuget-package&quot;&gt;Testing the NuGet package&lt;/h2&gt;
+&lt;p&gt;Create a new .NET Core project to test the package:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=create-TargetTestProject.sh&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Now, add the NuGet package to the target project.&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=add-package.sh&quot;&gt; &lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To test our NuGet package without publish it to a NuGet source, just use the &lt;code class=&quot;highlighter-rouge&quot;&gt;--source&lt;/code&gt; option and point it to the &lt;code class=&quot;highlighter-rouge&quot;&gt;SampleNugetProject.1.0.0.nupkg&lt;/code&gt; folder.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If we look to our &lt;code class=&quot;highlighter-rouge&quot;&gt;TargetTestProject&lt;/code&gt; there is no &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt; file yet, this is because it will copied from NuGet package folder to the project structure during the build process.&lt;/p&gt;
+
+&lt;p&gt;Just build the target project and the &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt; will be copied.&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=dotnet-build.sh&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;That’s it, now we have created a NuGet package that copy a T4 Template to target project’s structure.&lt;/p&gt;
+
+&lt;p&gt;You can expand this solution to copy other kind of files to the target project.&lt;/p&gt;
+
+&lt;p&gt;If you want to dig deeper into generating NuGet packages using dotnet-cli, starts with &lt;a href=&quot;https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package-dotnet-cli&quot;&gt;Create a NuGet package using the dotnet CLI&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script&gt;
+        $(document).ready(function() {
+          $('.gist-meta').remove();
+        });
+      &lt;/script&gt;</content><author><name></name></author><category term="dotnet" /><category term="t4-template" /><category term="nuget" /><summary type="html">In this post I will show how to deploy a T4 Template to a target project using a NuGet package built with dotnet CLI pack command. Introduction</summary></entry><entry><title type="html">Unity and Game Development links (Aug 5th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (Aug 5th 2019)" /><published>2019-08-05T00:00:00-03:00</published><updated>2019-08-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Phi Dinh&lt;/strong&gt; remembered a Twitter moment with tips and tutorials about the shaders used on Recompile. (&lt;a href=&quot;https://twitter.com/i/moments/1122251136239570947&quot;&gt;Recompile Unity Tips and Tutorials&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
@@ -491,43 +584,4 @@ Düzgi supervision, wrote the paper for his master degree at Istanbul Bilgi Univ
 &lt;p&gt;The icons used in the video are &lt;a href=&quot;https://fontawesome.com/icons&quot;&gt;Font Awesome&lt;/a&gt; icons and I used &lt;a href=&quot;http://fa2png.io/&quot;&gt;fa2png.io&lt;/a&gt; to convert them to .png.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="hierarchy-window" /><summary type="html">You can show the game objects icons in hierarchy window using EditorGUIUtility.ObjectContent</summary></entry><entry><title type="html">Unity and Game Development links (July 15th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-15th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (July 15th 2019)" /><published>2019-07-15T00:00:00-03:00</published><updated>2019-07-15T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-july-15th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-15th-2019/">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Alexander Ameye&lt;/strong&gt; made a tutorial about edge detection shaders with Shader Graph and how to use some Lightweight Rendering Pipeline customization to generate DepthNormals (&lt;a href=&quot;https://alexanderameye.github.io/edgedetection&quot;&gt;Edge Detection Shader&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Cyan&lt;/strong&gt; made a blog post about Render Textures and how to read them  in a C# script (&lt;a href=&quot;https://cyangamedev.wordpress.com/2019/07/08/render-textures/&quot;&gt;Render Textures&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;Render Textures are stored and handled on the GPU, which means we can’t access the data from them in a C# script which runs on the CPU – and you shouldn’t really need to for most effects. However, I wanted my player to be able to interact with water which was based on a Render Texture and only spawn particles if the player was in the water, along with some other effects.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Frank Manley&lt;/strong&gt; wrote about the Unity Hackweek 2019 (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/08/unity-hackweek-2019-tackling-hard-problems-building-team-skills&quot;&gt;Unity Hackweek 2019: Tackling hard problems, building team skills&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;What happens when you put 700+ people from Unity and our ecosystem in a secluded location once a year and tell them to solve hard tech, coding, and process problems? Their instructions? Unleash your creativity, collaborate like crazy, and embrace diverse perspectives.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Tracy Joseph and Brittany Edmond,&lt;/strong&gt; wrote a blog post about their experience on Cannes Lions 2019 (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/09/cannes-lions-2019-celebrating-creativity-innovation-storytelling&quot;&gt;Cannes Lions 2019: Celebrating creativity, innovation &amp;amp; storytelling&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;This year at the Cannes Lions International Festival of Creativity, Unity showed up as the leading real-time 3D creation platform.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Garrexus&lt;/strong&gt; made a breakdown on the Screen space Cosmic shader (&lt;a href=&quot;https://realtimevfx.com/t/screen-space-cosmic-shader-breakdown-unity-ase-shaders-textures-included/9753&quot;&gt;Screen space Cosmic shader breakdown (Unity/ASE, Shaders/Textures included)&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Alexander Ameye&lt;/strong&gt; again, now with a tutorial about collision effect (&lt;a href=&quot;https://alexanderameye.github.io/collision.html&quot;&gt;Collision Effect&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Tenzin W. and Eduardo Oriz,&lt;/strong&gt; wrote about the results of the latest Asset Store challenge (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/11/the-winners-inside-the-vault-3d-environment-art-contest&quot;&gt;The Winners! Inside the Vault: 3D Environment Art Contest&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;A number of judges evaluated all of the impressive submissions to pick the winners of the latest Asset Store challenge: Use Substance Painter to texture stunning assets that expand the futuristic world of Buried Memories: Yggdrasil.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Anis Benyoub&lt;/strong&gt; made a speech about ray tracing hardware acceleration (&lt;a href=&quot;https://www.youtube.com/watch?v=wbuvrAdNtmQ&quot;&gt;Anis Benyoub - Leveraging Ray Tracing Hardware Acceleration In The Unity Game Engine&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;Ray tracing hardware acceleration (RTX) is a newly available feature that allows graphics developers to increase their image quality. While solving complex problems, properly integrating this new set of APIs (DXR and Vulkan ray tracing) in a game engine is tricky, especially so when the engine supports anything from mobile to virtual production.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; published a video about gamepad input (&lt;a href=&quot;https://www.youtube.com/watch?v=p-3S73MaDP8&quot;&gt;CONTROLLER INPUT in Unity!&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video showing how to make terrains (&lt;a href=&quot;https://www.youtube.com/watch?v=2Vvwjfp-hg8&quot;&gt;How to make Terrains with Unity 2019! (Tutorial)&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="hierarchy-window" /><summary type="html">You can show the game objects icons in hierarchy window using EditorGUIUtility.ObjectContent</summary></entry></feed>
