@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - azure-service-bus</title>
  <link href="//tags/azure-service-bus/index.xml" rel="self"/>
  <link href="/tag/azure-service-bus.html"/>
- <updated>2019-08-13T14:10:02-03:00</updated>
+ <updated>2019-08-13T14:33:39-03:00</updated>
  <id>/tag/azure-service-bus.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -22,7 +22,7 @@
 
 &lt;p&gt;A simple solution to overcome this limitation is split the messages in blocks lower or equal to 256 KB size.&lt;/p&gt;
 
-&lt;p&gt;Below is a simplified version of the code that I used for Stantard tier  case:&lt;/p&gt;
+&lt;p&gt;Below is a simplified version of the code that I used for Standard tier  case:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request
 &lt;/pre&gt;&lt;/noscript&gt;
