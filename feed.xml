@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-08T11:17:06-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Deploying a T4 Template with dotnet pack</title><link href="http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack/" rel="alternate" type="text/html" title="Deploying a T4 Template with dotnet pack" /><published>2019-08-08T00:00:00-03:00</published><updated>2019-08-08T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack</id><content type="html" xml:base="http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack/">&lt;p&gt;In this post I will show how to deploy a T4 Template to a target project using a NuGet package built with dotnet CLI pack command.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-13T09:59:36-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Can I send batch messages larger than 256 KB to Azure Service Bus?</title><link href="http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/" rel="alternate" type="text/html" title="Can I send batch messages larger than 256 KB to Azure Service Bus?" /><published>2019-08-13T00:00:00-03:00</published><updated>2019-08-13T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus</id><content type="html" xml:base="http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/">&lt;h2 id=&quot;the-short-answer&quot;&gt;The short answer&lt;/h2&gt;
+&lt;p&gt;NO!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-long-answer&quot;&gt;The long answer&lt;/h2&gt;
+&lt;p&gt;The Azure Service Bus maximum message size is 256 KB for &lt;code class=&quot;highlighter-rouge&quot;&gt;Standard tier&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;1 MB&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;Premium tier&lt;/code&gt; (&lt;a href=&quot;https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas&quot;&gt;https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;A simple solution to overcome this limitation is split the messages in blocks lower or equal to 256 KB size.&lt;/p&gt;
+
+&lt;p&gt;Below is a simplified version of the code that I used for Stantard tier  case:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ed0d6eb6a8457eabed916e86c369c56c.js&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="dotnet" /><category term="azure" /><category term="azure-service-bus" /><summary type="html">The short answer NO!</summary></entry><entry><title type="html">Deploying a T4 Template with dotnet pack</title><link href="http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack/" rel="alternate" type="text/html" title="Deploying a T4 Template with dotnet pack" /><published>2019-08-08T00:00:00-03:00</published><updated>2019-08-08T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack</id><content type="html" xml:base="http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack/">&lt;p&gt;In this post I will show how to deploy a T4 Template to a target project using a NuGet package built with dotnet CLI pack command.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -563,25 +575,4 @@ average travelled distance for pick lists of size 100.&lt;/em&gt;&lt;/li&gt;
 Düzgi supervision, wrote the paper for his master degree at Istanbul Bilgi University.&lt;/p&gt;
 
 &lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
-&lt;p&gt;You can access the full paper directly on &lt;a href=&quot;http://openaccess.bilgi.edu.tr:8080/xmlui/bitstream/handle/11411/1310/Design%20of%20a%20warehouse%20order%20picking%20policy%20using%20genetic%20algorithm.pdf?sequence=1&amp;amp;isAllowed=y&quot;&gt;Istanbul Bilgi University library&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html">I started a series of posts about some outstanding scientific papers and projects using GeneticSharp.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Hierarchy Window GameObject Icon</title><link href="http://diegogiacomelli.com.br/unitytips-hierarchy-window-gameobject-icon/" rel="alternate" type="text/html" title="unitytips&amp;colon; Hierarchy Window GameObject Icon" /><published>2019-07-16T00:00:00-03:00</published><updated>2019-07-16T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-hierarchy-window-gameobject-icon</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-hierarchy-window-gameobject-icon/">&lt;p&gt;You can show the game objects icons in hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorGUIUtility.ObjectContent&lt;/code&gt;&lt;/p&gt;
-&lt;center&gt;
-        &lt;iframe src=&quot;https://www.youtube.com/embed/fwtQ51ybHpc &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/a73c947508ee0b32eef7c422620ec6b6.js?file=HierarchyWindowGameObjectIcon.cs&quot;&gt; &lt;/script&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
-&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
-        &lt;div class=&quot;gist-file&quot;&gt;
-          &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-&lt;p&gt;The icons used in the video are &lt;a href=&quot;https://fontawesome.com/icons&quot;&gt;Font Awesome&lt;/a&gt; icons and I used &lt;a href=&quot;http://fa2png.io/&quot;&gt;fa2png.io&lt;/a&gt; to convert them to .png.&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="hierarchy-window" /><summary type="html">You can show the game objects icons in hierarchy window using EditorGUIUtility.ObjectContent</summary></entry></feed>
+&lt;p&gt;You can access the full paper directly on &lt;a href=&quot;http://openaccess.bilgi.edu.tr:8080/xmlui/bitstream/handle/11411/1310/Design%20of%20a%20warehouse%20order%20picking%20policy%20using%20genetic%20algorithm.pdf?sequence=1&amp;amp;isAllowed=y&quot;&gt;Istanbul Bilgi University library&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html">I started a series of posts about some outstanding scientific papers and projects using GeneticSharp.</summary></entry></feed>
