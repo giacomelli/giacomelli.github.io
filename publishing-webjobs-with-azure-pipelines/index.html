@@ -130,10 +130,20 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>29/05/2019</span></div>   
       
 
-<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>1 minutes to read</span></div>
+<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>2 minutes to read</span></div>
    
     </div>
     <p><a href="https://docs.microsoft.com/en-US/azure/app-service/webjobs-sdk-get-started">Azure WebJobs</a> are a great way to execute background process.</p>
+
+<h1 id="scenario">Scenario</h1>
+<p>In last days I’ve created a <a href="https://azure.microsoft.com/pt-br/services/devops/pipelines/">Azure Pipelines</a> that publish WebJobs, but in our specific case our WebJobs were not being published to <code class="highlighter-rouge">/site/wwwroot/App_Data/jobs/Continuous/&lt;webjobs name&gt;</code>, because “reasons” our root web app is using ‘/site/www’ as folder. So, you should expect that the new folder to deploy WebJobs is <code class="highlighter-rouge">/site/www/App_Data/jobs/Continuous/&lt;webjobs name&gt;</code>, but <code class="highlighter-rouge">NO</code>, the new folder is <code class="highlighter-rouge">/site/jobs/Continuous/&lt;webjobs name&gt;</code>.</p>
+
+<p>The big problem with the above behaviour is that <code class="highlighter-rouge">WebDeploy</code> via VS or  <code class="highlighter-rouge">AzureRmWebAppDeployment</code> task via Azure Pipeline will still try to deploy the webjobs to the folder inside <code class="highlighter-rouge">/site/www/</code></p>
+
+<p>My best suspects are these lines on <a href="https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV3/azurermwebappdeployment.ts#L73">AzureRmWebAppDeployment@3</a></p>
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/1d47b7bf7e9a2b3806dbd0b0332743d2.js?file=AzureRmWebAppDeployment-lines.ts"> </script>
 
 <p>The <code class="highlighter-rouge">AzureRmWebAppDeployment</code> just check the physical path configured on Azure when we defined a <code class="highlighter-rouge">VirtualApplicatoin</code> parameter, but in our case it is not a virtual application, but it is a different folder than <code class="highlighter-rouge">/site/wwwroot/</code>.</p>
 <div class="externalref"><p>in <a href="https://github.com/projectkudu/kudu/wiki/WebJobs">Kudu wiki</a> there is some explanation about the webjobs folders.</p>
