@@ -93,7 +93,13 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
     <h1><a href="/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/">Can I send batch messages larger than 256 KB to Azure Service Bus?</a></h1>
 
     <div class="entry">
-    The short answer NO! The long answer The Azure Service Bus maximum message size is 256 KB for Standard tier and 1 MB for Premium tier (https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas). A simple solution to overcome this limitation is split the messages in blocks lower or equal to 256 KB size. Below is a...
+    The short answer
+NO!
+
+The long answer
+The Azure Service Bus maximum message size is 256 KB for Standard tier and 1 MB for Premium tier (https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas).
+
+
     </div>
 
     <a href="/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/" class="button">Read more</a>
@@ -536,7 +542,7 @@ Code
     <h1><a href="/publishing-webjobs-with-azure-pipelines/">Publishing WebJobs with Azure Pipelines</a></h1>
 
     <div class="entry">
-    Azure WebJobs are a great way to execute background process. Scenario In last days I’ve created a Azure Pipelines that publish WebJobs, but in our specific case our WebJobs were not being published to /site/wwwroot/App_Data/jobs/Continuous/&lt;webjobs name&gt;, because “reasons” our root web app is using ‘/site/www’ as folder. So, you should...
+    Azure WebJobs are a great way to execute background process. The AzureRmWebAppDeployment just check the physical path configured on Azure when we defined a VirtualApplicatoin parameter, but in our case it is not a virtual application, but it is a different folder than /site/wwwroot/. in Kudu wiki there is some...
     </div>
 
     <a href="/publishing-webjobs-with-azure-pipelines/" class="button">Read more</a>

@@ -33,8 +33,8 @@ NO!
     
 
     
-		<meta property="twitter:image" content="https://avatars2.githubusercontent.com/u/177389?v=3&s=128" />
-    
+	    <meta property="twitter:image" content="http://diegogiacomelli.com.br/assets/logos/azure.svg" />
+	
     <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -120,6 +120,14 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 
 
+
+  
+    <center>
+   
+    <img src="/assets/loading-image.png" data-src="/assets/logos/azure.svg" class="lazy" style="max-height: 200px;max-width: 100%;" alt="Logo do post"/> 
+  
+    </center>
+   
  
     <div class="post-info-box">
       <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>13/08/2019</span></div>   
@@ -131,14 +139,6 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="the-long-answer">The long answer</h2>
 <p>The Azure Service Bus maximum message size is 256 KB for <code class="highlighter-rouge">Standard tier</code> and <code class="highlighter-rouge">1 MB</code> for <code class="highlighter-rouge">Premium tier</code> (<a href="https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas">https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas</a>).</p>
-
-<p>A simple solution to overcome this limitation is split the messages in blocks lower or equal to 256 KB size.</p>
-
-<p>Below is a simplified version of the code that I used for Stantard tier  case:</p>
-
-<noscript><pre>400: Invalid request
-</pre></noscript>
-<script src="https://gist.github.com/ed0d6eb6a8457eabed916e86c369c56c.js"> </script>
 
     
   </div>
