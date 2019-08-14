@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "Dapper and the NVARCHAR(4000) arguments",
+      "category" : "Lab",
+      "tags"     : "dotnet, dapper, sql",
+      "url"      : "/dapper-and-the-nvarchar-4000-arguments/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "Can I send batch messages larger than 256 KB to Azure Service Bus?",
       "category" : "Lab",
       "tags"     : "dotnet, azure, azure service bus",
@@ -594,7 +602,7 @@
     {
       "title"    : "Why we should avoid DateTime.UtcNow inside a Linq to Entities query?",
       "category" : "Article",
-      "tags"     : "dotnet, csharp, linq to entities",
+      "tags"     : "dotnet, csharp, linq to entities, sql",
       "url"      : "/why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query/",
       "author"   : ""
     } 

@@ -95,6 +95,17 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
     <article class="post">
 
+    <h1><a href="/dapper-and-the-nvarchar-4000-arguments/">Dapper and the NVARCHAR(4000) arguments</a></h1>
+
+    <div class="entry">
+    Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as NVARCHAR (4000). This happen because Dapper cannot infer what is the exactly type and length of the table column on database. The downside of the NVARCHAR...
+    </div>
+
+    <a href="/dapper-and-the-nvarchar-4000-arguments/" class="button">Read more</a>
+    </article>
+
+    <article class="post">
+
     <h1><a href="/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/">Can I send batch messages larger than 256 KB to Azure Service Bus?</a></h1>
 
     <div class="entry">

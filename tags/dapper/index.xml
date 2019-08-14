@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - dapper</title>
+ <link href="//tags/dapper/index.xml" rel="self"/>
+ <link href="/tag/dapper.html"/>
+ <updated>2019-08-14T12:57:34-03:00</updated>
+ <id>/tag/dapper.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Dapper and the NVARCHAR(4000) arguments</title>
+   <link href="//dapper-and-the-nvarchar-4000-arguments/"/>
+   <updated>2019-08-14T00:00:00-03:00</updated>
+   <id>//dapper-and-the-nvarchar-4000-arguments</id>
+   <content type="html">&lt;p&gt;Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as &lt;code class=&quot;highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This happen because Dapper cannot infer what is the exactly type and length of the table column on database.&lt;/p&gt;
+
+&lt;p&gt;The downside of the &lt;code class=&quot;highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt; in arguments is that the database can choose a bad execution plan for the query.&lt;/p&gt;
+
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
+
+&lt;p&gt;To avoid this you can pass the type of the argument to Dapper:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample1.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;To make this solution easier to use I made two extension methods &lt;code class=&quot;highlighter-rouge&quot;&gt;ToVarChar&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ToNVarChar&lt;/code&gt;:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample2.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h1 id=&quot;extension-methods&quot;&gt;Extension methods&lt;/h1&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=DapperArgumentExtensions.cs&quot;&gt; &lt;/script&gt;
+
+</content>
+ </entry>
+ 
+</feed>

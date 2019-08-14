@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-13T14:33:39-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Can I send batch messages larger than 256 KB to Azure Service Bus?</title><link href="http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/" rel="alternate" type="text/html" title="Can I send batch messages larger than 256 KB to Azure Service Bus?" /><published>2019-08-13T00:00:00-03:00</published><updated>2019-08-13T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus</id><content type="html" xml:base="http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/">&lt;h2 id=&quot;the-short-answer&quot;&gt;The short answer&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-14T12:57:34-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Dapper and the NVARCHAR(4000) arguments</title><link href="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/" rel="alternate" type="text/html" title="Dapper and the NVARCHAR(4000) arguments" /><published>2019-08-14T00:00:00-03:00</published><updated>2019-08-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments</id><content type="html" xml:base="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/">&lt;p&gt;Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as &lt;code class=&quot;highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This happen because Dapper cannot infer what is the exactly type and length of the table column on database.&lt;/p&gt;
+
+&lt;p&gt;The downside of the &lt;code class=&quot;highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt; in arguments is that the database can choose a bad execution plan for the query.&lt;/p&gt;
+
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
+
+&lt;p&gt;To avoid this you can pass the type of the argument to Dapper:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample1.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;To make this solution easier to use I made two extension methods &lt;code class=&quot;highlighter-rouge&quot;&gt;ToVarChar&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ToNVarChar&lt;/code&gt;:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample2.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h1 id=&quot;extension-methods&quot;&gt;Extension methods&lt;/h1&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=DapperArgumentExtensions.cs&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="dotnet" /><category term="dapper" /><category term="sql" /><summary type="html">Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as NVARCHAR (4000).</summary></entry><entry><title type="html">Can I send batch messages larger than 256 KB to Azure Service Bus?</title><link href="http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/" rel="alternate" type="text/html" title="Can I send batch messages larger than 256 KB to Azure Service Bus?" /><published>2019-08-13T00:00:00-03:00</published><updated>2019-08-13T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus</id><content type="html" xml:base="http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/">&lt;h2 id=&quot;the-short-answer&quot;&gt;The short answer&lt;/h2&gt;
 &lt;p&gt;NO!&lt;/p&gt;
 
 &lt;h2 id=&quot;the-long-answer&quot;&gt;The long answer&lt;/h2&gt;
@@ -530,49 +553,4 @@ up to speed and start enjoying success using your API.&lt;/p&gt;
     &lt;p&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; published a video about learnings in 10 years of game development! (&lt;a href=&quot;https://youtu.be/T18X1HuawRc&quot;&gt;What I learned after 10 Years of Game Development!&lt;/a&gt;).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video showing how to make explosions and shockwave effects in Unity (&lt;a href=&quot;https://youtu.be/u7lwL7ubwKA&quot;&gt;SHOCKWAVE &amp;amp; EXPLOSION IN UNITY 2019! (Tutorial)&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Design of a Warehouse Order Picking Policy</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;colon; Design of a Warehouse Order Picking Policy" /><published>2019-07-18T00:00:00-03:00</published><updated>2019-07-18T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy/">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;For this fourth post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Design of a Warehouse Order Picking Policy - Using Genetic Algorithm&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;The main motivation of the author about this paper was:
-&lt;em&gt;improving order-picking process is considered which is an essential
-operation critically impacting warehouse and supply chain performance.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The study is composed of two phases: In the first phase, the
-shortest path between each pair of items is determined in a pick list leading to the
-second phase of determining the sequence of all items to be picked. A
-mathematical model is utilized to find the shortest path between each item pair in
-a pick list.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;A genetic algorithm based approach is developed to decide the picking
-sequence of all items in an order list, given the shortest distance between each pair
-of items. The performance of the proposed algorithms is compared to popular
-heuristics used for multi-block warehouses, namely: S-Shape and Largest Gap.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Ahmet Can Saner, the paper author made &lt;a href=&quot;http://diegogiacomelli.com.br/GeneticSharp-v1.2.0-sequence-mutations/&quot;&gt;great contributions to GeneticSharp&lt;/a&gt;, that him developed during his master degree, like: Displacement Mutation, Insertion Mutation and Partial Shuffle Mutation (PSM).&lt;/p&gt;
-
-&lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;For 25-item pick lists, all of the proposed
-GA algorithms are superior to S-Shape and Largest Gap heuristics, in terms of travelled
-distance. GA with order crossover operator, inversion mutation operator provides the best
-results in terms of average travelled distance&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;For 50-item pick lists, all of the proposed GA
-algorithms are superior to S-Shape, in terms of travelled distance. But when compared to
-Largest Gap heuristic, only GA algorithms with inversion mutation operator performs
-better than Largest Gap, in terms of travelled distance.&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;For 100-
-item pick lists, only GA algorithms with inversion mutation operator performs better than
-both S-Shape and Largest Gap heuristics, in terms of travelled distance. GA with order
-crossover operator, inversion mutation operator setting performs the best in terms of
-average travelled distance for pick lists of size 100.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;author&quot;&gt;Author&lt;/h1&gt;
-&lt;p&gt;Ahmet Can Saner, with Dr. Zehra
-Düzgi supervision, wrote the paper for his master degree at Istanbul Bilgi University.&lt;/p&gt;
-
-&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
-&lt;p&gt;You can access the full paper directly on &lt;a href=&quot;http://openaccess.bilgi.edu.tr:8080/xmlui/bitstream/handle/11411/1310/Design%20of%20a%20warehouse%20order%20picking%20policy%20using%20genetic%20algorithm.pdf?sequence=1&amp;amp;isAllowed=y&quot;&gt;Istanbul Bilgi University library&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html">I started a series of posts about some outstanding scientific papers and projects using GeneticSharp.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>
