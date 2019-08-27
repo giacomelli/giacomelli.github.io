@@ -3,11 +3,34 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2019-08-21T08:35:57-03:00</updated>
+ <updated>2019-08-27T07:44:31-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Expression body definition</title>
+   <link href="//unitytips-expression-body-definition/"/>
+   <updated>2019-08-27T00:00:00-03:00</updated>
+   <id>//unitytips-expression-body-definition</id>
+   <content type="html">&lt;p&gt;When you have a single line method, you can use &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition&quot;&gt;expression body definition&lt;/a&gt; do simplify and reduce the lines of code:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Expression body definitions for methods and read-only properties are supported starting with C# 6. Expression body definitions for constructors, finalizers, property accessors, and indexers are supported starting with C# 7.0.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So you can use the expression body definition for other members, like properties:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
+      &lt;/center&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Unity Toasty Notification</title>

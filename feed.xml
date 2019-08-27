@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-21T08:35:57-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Dapper and the NVARCHAR(4000) arguments</title><link href="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/" rel="alternate" type="text/html" title="Dapper and the NVARCHAR(4000) arguments" /><published>2019-08-14T00:00:00-03:00</published><updated>2019-08-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments</id><content type="html" xml:base="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/">&lt;p&gt;Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as &lt;code class=&quot;highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-27T07:44:31-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; Expression body definition</title><link href="http://diegogiacomelli.com.br/unitytips-expression-body-definition/" rel="alternate" type="text/html" title="unitytips&amp;colon; Expression body definition" /><published>2019-08-27T00:00:00-03:00</published><updated>2019-08-27T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-expression-body-definition</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-expression-body-definition/">&lt;p&gt;When you have a single line method, you can use &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition&quot;&gt;expression body definition&lt;/a&gt; do simplify and reduce the lines of code:&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Expression body definitions for methods and read-only properties are supported starting with C# 6. Expression body definitions for constructors, finalizers, property accessors, and indexers are supported starting with C# 7.0.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So you can use the expression body definition for other members, like properties:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
+      &lt;/center&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="csharp" /><summary type="html">When you have a single line method, you can use expression body definition do simplify and reduce the lines of code:</summary></entry><entry><title type="html">Dapper and the NVARCHAR(4000) arguments</title><link href="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/" rel="alternate" type="text/html" title="Dapper and the NVARCHAR(4000) arguments" /><published>2019-08-14T00:00:00-03:00</published><updated>2019-08-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments</id><content type="html" xml:base="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/">&lt;p&gt;Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as &lt;code class=&quot;highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;This happen because Dapper cannot infer what is the exactly type and length of the table column on database.&lt;/p&gt;
 
@@ -525,32 +538,4 @@ up to speed and start enjoying success using your API.&lt;/p&gt;
       &lt;/div&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs files inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="editor-window" /><summary type="html">I created this window that extends the Unity 3D editor so you can preview the scenes by selecting them in the project window.</summary></entry><entry><title type="html">Unity and Game Development links (July 22th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-22th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (July 22th 2019)" /><published>2019-07-22T00:00:00-03:00</published><updated>2019-07-22T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-july-22th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-22th-2019/">&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Stephen Palmer&lt;/strong&gt; presented the preview of Addressables, the Unity new system for editor and runtime asset management. (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/15/addressable-asset-system&quot;&gt;Addressable Asset System&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;What we found when talking to developers about their experience using Asset Bundles was that almost everyone doing so successfully were more or less writing the same high level systems a thousand slightly different ways. Addressables was born out of this obvious need for a framework to solve a set of common problems related to addressing, building, and loading assets.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cyan&lt;/strong&gt; made a blog post about Voronoi noise, a type of noise based on cells,  and shaders (&lt;a href=&quot;https://cyangamedev.wordpress.com/2019/07/16/voronoi/&quot;&gt;Voronoi&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Kat Woolley&lt;/strong&gt; introduced the Creator Kits, a beginners kit to learn Unity basics without writing code. (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/17/creator-kits-get-creating-quickly&quot;&gt;Creator Kits – Get creating quickly&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;We’ve produced three kits: A puzzle game, an FPS and an RPG. Get a brief introduction to each game genre and learn the basics of Unity without writing code. The kits offer beginners a good way to create your own game in under an hour before embarking on something with a broader scope like the Game Kits.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Unity&lt;/strong&gt; made a case study about Playkot, the creators of Age Of Magic (&lt;a href=&quot;https://unity.com/case-study/playkot-age-of-magic&quot;&gt;Playkot – A Unity developer case study&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;How do a businessman and a software developer working at an improvised kitchen table in St. Petersburg, Russia go on to produce sophisticated social games and mobile RPGs with some of the best graphics in the industry? Meet Sasha Pavlov and Oleg Sysoev, who started Playkot Games in 2009. Since then, they’ve grown their team to 150+ by carefully combining the right people, adopting Unity, and implementing the right strategies to capture significant market share around the world.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Anna Lee&lt;/strong&gt; wrote a blog post on the series &lt;code class=&quot;highlighter-rouge&quot;&gt;Faces of Unity&lt;/code&gt;, now presenting Dave Hunt, Lead Technical Artist in Copenhagen (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/19/faces-of-unity-dave-hunt&quot;&gt;Faces of Unity – Dave Hunt)&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;Learn more about Dave as he shares about his career journey and work-life balance as a parent here at Unity!&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Brackeys&lt;/strong&gt; published a video about learnings in 10 years of game development! (&lt;a href=&quot;https://youtu.be/T18X1HuawRc&quot;&gt;What I learned after 10 Years of Game Development!&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video showing how to make explosions and shockwave effects in Unity (&lt;a href=&quot;https://youtu.be/u7lwL7ubwKA&quot;&gt;SHOCKWAVE &amp;amp; EXPLOSION IN UNITY 2019! (Tutorial)&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="editor-window" /><summary type="html">I created this window that extends the Unity 3D editor so you can preview the scenes by selecting them in the project window.</summary></entry></feed>
