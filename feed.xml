@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-08-28T10:09:27-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; Expression body definition</title><link href="http://diegogiacomelli.com.br/unitytips-expression-body-definition/" rel="alternate" type="text/html" title="unitytips&amp;colon; Expression body definition" /><published>2019-08-27T00:00:00-03:00</published><updated>2019-08-27T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-expression-body-definition</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-expression-body-definition/">&lt;p&gt;When you have a single line method, you can use &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition&quot;&gt;expression body definition&lt;/a&gt; do simplify and reduce the lines of code:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-09-03T08:17:34-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; String interpolation</title><link href="http://diegogiacomelli.com.br/unitytips-string-interpolation/" rel="alternate" type="text/html" title="unitytips&amp;colon; String interpolation" /><published>2019-09-03T00:00:00-03:00</published><updated>2019-09-03T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-string-interpolation</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-string-interpolation/">&lt;p&gt;Since C# 6.0 you can use &lt;a href=&quot;https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/tokens/interpolated&quot;&gt;String interpolation&lt;/a&gt; to make code more readable:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The sample lines will result in the same string&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The $ special character identifies a string literal as an interpolated string.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;String interpolation provides a more readable and convenient syntax to create formatted strings than a string composite formatting feature.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="csharp" /><summary type="html">Since C# 6.0 you can use String interpolation to make code more readable: The sample lines will result in the same string</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Expression body definition</title><link href="http://diegogiacomelli.com.br/unitytips-expression-body-definition/" rel="alternate" type="text/html" title="unitytips&amp;colon; Expression body definition" /><published>2019-08-27T00:00:00-03:00</published><updated>2019-08-27T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-expression-body-definition</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-expression-body-definition/">&lt;p&gt;When you have a single line method, you can use &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition&quot;&gt;expression body definition&lt;/a&gt; do simplify and reduce the lines of code:&lt;/p&gt;
 
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
@@ -507,35 +521,4 @@ up to speed and start enjoying success using your API.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tools/**
 !tools/packages.config
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="dotnet" /><category term="sonar" /><category term="cake" /><summary type="html">In this post I will show how to use Cake to build and test a .NET Core project and then publish the results to SonarCloud. Introduction</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Scene Preview Window</title><link href="http://diegogiacomelli.com.br/unitytips-scene-preview-window/" rel="alternate" type="text/html" title="unitytips&amp;colon; Scene Preview Window" /><published>2019-07-23T00:00:00-03:00</published><updated>2019-07-23T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-scene-preview-window</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-scene-preview-window/">&lt;p&gt;I created this window that extends the Unity 3D editor so you can preview the scenes by selecting them in the project window.&lt;/p&gt;
-&lt;center&gt;
-        &lt;iframe src=&quot;https://www.youtube.com/embed/eh8nqfDCUVo &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;
-
-&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
-&lt;p&gt;As can be seen from the video above the extension can be used in two ways after adding the &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene Preview&lt;/code&gt; window to the editor (via the&lt;code class=&quot;highlighter-rouge&quot;&gt; Window / Scene Preview&lt;/code&gt; menu):&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Selects &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene&lt;/code&gt; and clicking the &lt;code class=&quot;highlighter-rouge&quot;&gt;Capture screenshot&lt;/code&gt; button in both edit mode and play mode.&lt;/li&gt;
-  &lt;li&gt;Running &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene&lt;/code&gt; in play mode and if there is still no preview screenshot for the scene, a screenshot will be taken automatically after 10 seconds.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;Below you can see only the code of &lt;code class=&quot;highlighter-rouge&quot;&gt;ScenePreviewEditor.cs&lt;/code&gt;. There are 3 more files for this extension.&lt;/p&gt;
-
-&lt;p&gt;Download the full &lt;a href=&quot;https://gist.github.com/giacomelli/ad9d4dcdb702d2d1edf0663628ca9608&quot;&gt;gist&lt;/a&gt; or use the &lt;a href=&quot;/unitytips-gist-importer&quot;&gt;Gist Importer&lt;/a&gt; to import the complete &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene Preview Window&lt;/code&gt; for your project.&lt;/p&gt;
-
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/ad9d4dcdb702d2d1edf0663628ca9608.js?file=ScenePreviewWindow.cs&quot;&gt; &lt;/script&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
-&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
-        &lt;div class=&quot;gist-file&quot;&gt;
-          &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs files inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="editor-window" /><summary type="html">I created this window that extends the Unity 3D editor so you can preview the scenes by selecting them in the project window.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="dotnet" /><category term="sonar" /><category term="cake" /><summary type="html">In this post I will show how to use Cake to build and test a .NET Core project and then publish the results to SonarCloud. Introduction</summary></entry></feed>

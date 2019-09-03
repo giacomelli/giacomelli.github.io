@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "unitytips&amp;colon; String interpolation",
+      "category" : "Article",
+      "tags"     : "unity3d, unitytips, csharp",
+      "url"      : "/unitytips-string-interpolation/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "unitytips&amp;colon; Expression body definition",
       "category" : "Article",
       "tags"     : "unity3d, unitytips, csharp",
