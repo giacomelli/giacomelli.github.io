@@ -3,11 +3,64 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2019-09-03T08:17:34-03:00</updated>
+ <updated>2019-09-04T10:15:11-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Creating dotnet new templates with samples</title>
+   <link href="//creating-dotnet-new-templates-with-samples/"/>
+   <updated>2019-09-04T00:00:00-03:00</updated>
+   <id>//creating-dotnet-new-templates-with-samples</id>
+   <content type="html">&lt;p&gt;In this post I will show the needed steps and samples to create dotnet new templates.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Recently a friend asked me about the steps I follow to create dotnet new templates, while I was describing the steps to him I realized that information could be usefull to someone else or even to my future self.&lt;/p&gt;
+
+&lt;p&gt;Sometime ago I created some dotnet new templates for GeneticSharp: &lt;a href=&quot;http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp/&quot;&gt;dotnet new templates for GeneticSharp&lt;/a&gt; and I will use that template as samples for the steps below.&lt;/p&gt;
+
+&lt;h2 id=&quot;nuget-pack--dotnet-pack&quot;&gt;Nuget pack / dotnet pack&lt;/h2&gt;
+&lt;p&gt;Nowadays there are two main ways to build a dotnet new template: creating a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt; file or defining the package properties directly inside your &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To GeneticSharp templates I used a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;steps-and-samples&quot;&gt;Steps and samples&lt;/h2&gt;
+&lt;p&gt;When I was trying to create the first templates I used this Microsoft documentation to learn about it: &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates&quot;&gt;Custom templates for dotnet new&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating&quot;&gt;Creating&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates&lt;/code&gt; folder: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Define the templates in the &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; or create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt;: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/Templates/GeneticSharp.Templates.nuspec&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; folder inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates&lt;/code&gt; folder: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates/content&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Create a subfolder inside &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; for each template and put your template project source code there: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates/content/ConsoleApp&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;For each template folder, create a subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;template.config&lt;/code&gt; then create a &lt;code class=&quot;highlighter-rouge&quot;&gt;template.json&lt;/code&gt; file: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/Templates/content/ConsoleApp/.template.config/template.json&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;In this &lt;code class=&quot;highlighter-rouge&quot;&gt;.json&lt;/code&gt; you should define things like template name (shortName) and what it’s root namespace that will be replaced when a new project use this template (sourceName)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;building-and-testing&quot;&gt;Building and testing&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Now you can create the &lt;code class=&quot;highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; with the &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet pack&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;nuget pack&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;You can test your templates locally installing them directly from the &lt;code class=&quot;highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; file: &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new -i your_templates_file.nupkg&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Install the template: &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new template_shortname -n new_project_namespace -o output_folder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Here a &lt;code class=&quot;highlighter-rouge&quot;&gt;.cmd&lt;/code&gt; sample for last 3 steps: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/tools/buildTemplatesNuget.cmd&quot;&gt;sample&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;publishing&quot;&gt;Publishing&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;If everything is right you can publish your &lt;code class=&quot;highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; on &lt;a href=&quot;&quot;&gt;http://nuget.org&lt;/a&gt; or to your private NuGet feed: &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp.Templates/&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;That’s it, with just 9 steps you can create your own dotnet new template and jumpstart your next project setup.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Dapper and the NVARCHAR(4000) arguments</title>

@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-09-03T08:17:34-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; String interpolation</title><link href="http://diegogiacomelli.com.br/unitytips-string-interpolation/" rel="alternate" type="text/html" title="unitytips&amp;colon; String interpolation" /><published>2019-09-03T00:00:00-03:00</published><updated>2019-09-03T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-string-interpolation</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-string-interpolation/">&lt;p&gt;Since C# 6.0 you can use &lt;a href=&quot;https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/tokens/interpolated&quot;&gt;String interpolation&lt;/a&gt; to make code more readable:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-09-04T10:15:11-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Creating dotnet new templates with samples</title><link href="http://diegogiacomelli.com.br/creating-dotnet-new-templates-with-samples/" rel="alternate" type="text/html" title="Creating dotnet new templates with samples" /><published>2019-09-04T00:00:00-03:00</published><updated>2019-09-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/creating-dotnet-new-templates-with-samples</id><content type="html" xml:base="http://diegogiacomelli.com.br/creating-dotnet-new-templates-with-samples/">&lt;p&gt;In this post I will show the needed steps and samples to create dotnet new templates.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Recently a friend asked me about the steps I follow to create dotnet new templates, while I was describing the steps to him I realized that information could be usefull to someone else or even to my future self.&lt;/p&gt;
+
+&lt;p&gt;Sometime ago I created some dotnet new templates for GeneticSharp: &lt;a href=&quot;http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp/&quot;&gt;dotnet new templates for GeneticSharp&lt;/a&gt; and I will use that template as samples for the steps below.&lt;/p&gt;
+
+&lt;h2 id=&quot;nuget-pack--dotnet-pack&quot;&gt;Nuget pack / dotnet pack&lt;/h2&gt;
+&lt;p&gt;Nowadays there are two main ways to build a dotnet new template: creating a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt; file or defining the package properties directly inside your &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To GeneticSharp templates I used a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;steps-and-samples&quot;&gt;Steps and samples&lt;/h2&gt;
+&lt;p&gt;When I was trying to create the first templates I used this Microsoft documentation to learn about it: &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates&quot;&gt;Custom templates for dotnet new&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating&quot;&gt;Creating&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates&lt;/code&gt; folder: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Define the templates in the &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; or create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt;: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/Templates/GeneticSharp.Templates.nuspec&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; folder inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates&lt;/code&gt; folder: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates/content&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Create a subfolder inside &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; for each template and put your template project source code there: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates/content/ConsoleApp&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;For each template folder, create a subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;template.config&lt;/code&gt; then create a &lt;code class=&quot;highlighter-rouge&quot;&gt;template.json&lt;/code&gt; file: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/Templates/content/ConsoleApp/.template.config/template.json&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;In this &lt;code class=&quot;highlighter-rouge&quot;&gt;.json&lt;/code&gt; you should define things like template name (shortName) and what it’s root namespace that will be replaced when a new project use this template (sourceName)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;building-and-testing&quot;&gt;Building and testing&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Now you can create the &lt;code class=&quot;highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; with the &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet pack&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;nuget pack&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;You can test your templates locally installing them directly from the &lt;code class=&quot;highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; file: &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new -i your_templates_file.nupkg&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Install the template: &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new template_shortname -n new_project_namespace -o output_folder&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Here a &lt;code class=&quot;highlighter-rouge&quot;&gt;.cmd&lt;/code&gt; sample for last 3 steps: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/tools/buildTemplatesNuget.cmd&quot;&gt;sample&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;publishing&quot;&gt;Publishing&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;If everything is right you can publish your &lt;code class=&quot;highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; on &lt;a href=&quot;&quot;&gt;http://nuget.org&lt;/a&gt; or to your private NuGet feed: &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp.Templates/&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;That’s it, with just 9 steps you can create your own dotnet new template and jumpstart your next project setup.&lt;/p&gt;</content><author><name></name></author><category term="dotnet" /><summary type="html">In this post I will show the needed steps and samples to create dotnet new templates. Introduction</summary></entry><entry><title type="html">unitytips&amp;amp;colon; String interpolation</title><link href="http://diegogiacomelli.com.br/unitytips-string-interpolation/" rel="alternate" type="text/html" title="unitytips&amp;colon; String interpolation" /><published>2019-09-03T00:00:00-03:00</published><updated>2019-09-03T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-string-interpolation</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-string-interpolation/">&lt;p&gt;Since C# 6.0 you can use &lt;a href=&quot;https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/tokens/interpolated&quot;&gt;String interpolation&lt;/a&gt; to make code more readable:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
       &lt;/center&gt;
@@ -394,131 +438,4 @@ up to speed and start enjoying success using your API.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/moYfppZzf2c &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">Publishing a .NET Core project to SonarCloud with Cake</title><link href="http://diegogiacomelli.com.br/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/" rel="alternate" type="text/html" title="Publishing a .NET Core project to SonarCloud with Cake" /><published>2019-07-25T00:00:00-03:00</published><updated>2019-07-25T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/publishing-a-dotnet-core-project-to-sonarcloud-with-cake</id><content type="html" xml:base="http://diegogiacomelli.com.br/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/">&lt;p&gt;In this post I will show how to use &lt;a href=&quot;https://cakebuild.net/&quot;&gt;Cake&lt;/a&gt; to build and test a .NET Core project and then publish the results to &lt;a href=&quot;https://sonarcloud.io&quot;&gt;SonarCloud&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Cake&lt;/strong&gt; (C# Make) is a cross-platform build automation system with a C# DSL for tasks such as compiling code, copying files and folders, running unit tests, compressing files and building NuGet packages.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;SonarCloud&lt;/strong&gt; is a cloud service offered by SonarSource and based on SonarQube. SonarQube is a widely adopted open source platform to inspect continuously the quality of source code and detect bugs, vulnerabilities and code smells.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Cake&lt;/strong&gt;: install the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cake&lt;/code&gt; on your .NET Core project before start this tutorial. Follow this &lt;a href=&quot;https://cakebuild.net/docs/tutorials/setting-up-a-new-project&quot;&gt;Setting Up A New Project&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;SonarCloud&lt;/strong&gt;: create an account and add a project on &lt;a href=&quot;https://sonarcloud.io&quot;&gt;https://sonarcloud.io&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;creating-the-buildcake&quot;&gt;Creating the build.cake&lt;/h2&gt;
-&lt;p&gt;In project root folder, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;build.cake&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;adding-the-tools-and-addin-references&quot;&gt;Adding the tools and addin references&lt;/h3&gt;
-&lt;p&gt;Add the lines below to the file:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v1.cake&quot;&gt; &lt;/script&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;We’ll use those tools and addins to create the complete .cake script.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;setting-the-variables&quot;&gt;Setting the variables&lt;/h3&gt;
-&lt;p&gt;Now we need to set some variables:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v2.cake&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Where:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;solutionDir&lt;/strong&gt;: is the subfolder where your solution source code is located.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;sonarLogin&lt;/strong&gt;: Change the &lt;code class=&quot;highlighter-rouge&quot;&gt;[SONARCLOUD-USER-TOKEN]&lt;/code&gt; for a token you can generate at the page &lt;a href=&quot;https://sonarcloud.io/account/security/&quot;&gt;https://sonarcloud.io/account/security/&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;branch&lt;/strong&gt;: if you are using git, then the &lt;code class=&quot;highlighter-rouge&quot;&gt;GitBranchCurrent(&quot;.&quot;).FriendlyName&lt;/code&gt; will pass the right branch name to SonarCloud, otherwise you can set it manually.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you are using &lt;code class=&quot;highlighter-rouge&quot;&gt;AppVeyor&lt;/code&gt; you can use line bellow to allow discover the branch name locally and in the AppVeyor:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v3.cake&quot;&gt; &lt;/script&gt;
-
-&lt;h3 id=&quot;build-task&quot;&gt;Build task&lt;/h3&gt;
-&lt;p&gt;The first task definitions will build our .NET Core project:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v4.cake&quot;&gt; &lt;/script&gt;
-
-&lt;h3 id=&quot;test-task&quot;&gt;Test task&lt;/h3&gt;
-&lt;p&gt;Now we will define the task to run our tests:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v5.cake&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;This task use &lt;code class=&quot;highlighter-rouge&quot;&gt;Coverlet&lt;/code&gt; to collect the code coverage. Install it on your test project using the &lt;code class=&quot;highlighter-rouge&quot;&gt;Coverlet&lt;/code&gt; NuGet package:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package coverlet.msbuild
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;sonar-tasks&quot;&gt;Sonar tasks&lt;/h3&gt;
-&lt;p&gt;The lasts tasks to define are responsible to scan the project and send the build and tests results to SonarCloud:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v6.cake&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Where:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Key&lt;/strong&gt;: is your project key on SonarCloud. You can get it throw these steps on &lt;a href=&quot;https://sonarcloud.io&quot;&gt;SonarCloud&lt;/a&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;Select your project.&lt;/li&gt;
-      &lt;li&gt;Open the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Administration / Update Key&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Organization&lt;/strong&gt;: is the name of your organization on SonarCloud. If your &lt;code class=&quot;highlighter-rouge&quot;&gt;projects&lt;/code&gt; page is &lt;code class=&quot;highlighter-rouge&quot;&gt;https://sonarcloud.io/organizations/YOUR-ORGANIZATION/projects&lt;/code&gt;, then your &lt;strong&gt;Organization&lt;/strong&gt; value is &lt;code class=&quot;highlighter-rouge&quot;&gt;YOUR-ORGANIZATION&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Exclusions&lt;/strong&gt;: here you can define the wildcards to excluse some files fron Sonar scan, like sample, docs and test files.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;defining-the-tasks-order&quot;&gt;Defining the tasks order&lt;/h3&gt;
-&lt;p&gt;The last part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;build.cake&lt;/code&gt; file define the order that tasks will run:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v7.cake&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;running-the-buildcake&quot;&gt;Running the build.cake&lt;/h2&gt;
-&lt;p&gt;Now, every time you want to build, test and publish the results to SonarCloud you need to type this command on your project root folder:&lt;/p&gt;
-
-&lt;p&gt;MacOS:&lt;/p&gt;
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./build.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Windows:&lt;/p&gt;
-
-&lt;p&gt;Open a &lt;code class=&quot;highlighter-rouge&quot;&gt;powershell&lt;/code&gt; terminal:&lt;/p&gt;
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.&lt;span class=&quot;se&quot;&gt;\b&lt;/span&gt;uild.ps1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;When the build finish, you should see something like this:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal.png &quot; /&gt;
-      &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Cake build&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Then open your project on &lt;a href=&quot;https://sonarcloud.io/projects&quot;&gt;SonarCloud&lt;/a&gt;:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard.png &quot; /&gt;
-      &lt;/center&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;SonarCloud dashboard&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;That’s it, now your project is ready to using cake to publish results to SonarCloud.&lt;/p&gt;
-
-&lt;h2 id=&quot;complete-buildcake&quot;&gt;Complete build.cake&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.cake&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;extras&quot;&gt;Extras&lt;/h2&gt;
-&lt;p&gt;If you are using git, you can add this lines to your .gitignore file:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tools/**
-!tools/packages.config
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="dotnet" /><category term="sonar" /><category term="cake" /><summary type="html">In this post I will show how to use Cake to build and test a .NET Core project and then publish the results to SonarCloud. Introduction</summary></entry></feed>
+      &lt;/center&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>
