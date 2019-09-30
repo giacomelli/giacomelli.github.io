@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-09-22T09:24:16-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Creating dotnet new templates with samples</title><link href="http://diegogiacomelli.com.br/creating-dotnet-new-templates-with-samples/" rel="alternate" type="text/html" title="Creating dotnet new templates with samples" /><published>2019-09-04T00:00:00-03:00</published><updated>2019-09-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/creating-dotnet-new-templates-with-samples</id><content type="html" xml:base="http://diegogiacomelli.com.br/creating-dotnet-new-templates-with-samples/">&lt;p&gt;In this post I will show the needed steps and samples to create dotnet new templates.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2019-09-30T10:35:58-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">HarSharp 2.0.0. - .NET Core</title><link href="http://diegogiacomelli.com.br/harsharp-2.0.0-dotnet-core/" rel="alternate" type="text/html" title="HarSharp 2.0.0. - .NET Core" /><published>2019-09-30T00:00:00-03:00</published><updated>2019-09-30T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/harsharp-2.0.0-dotnet-core</id><content type="html" xml:base="http://diegogiacomelli.com.br/harsharp-2.0.0-dotnet-core/">&lt;p&gt;The HTTP Archive (HAR) format as defined in the W3C Specification is an archival format for HTTP transactions that can be used by a web browser to export detailed performance data about web pages it loads.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/harsharp&quot;&gt;HarSharp&lt;/a&gt; is a small and easy-to-use library to parse HAR files to .NET objects that I created some years ago for .NET Framework, today I released the version 2.0.0 with support to .NET Core / .NET Standard.&lt;/p&gt;
+
+&lt;p&gt;NuGet package:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;install-package HarSharp&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;More details at: &lt;a href=&quot;&quot;&gt;https://github.com/giacomelli/harsharp&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
+&lt;p&gt;I would like to thanks to &lt;a href=&quot;https://github.com/andrecosta-tw&quot;&gt;André Costa&lt;/a&gt; and &lt;a href=&quot;https://github.com/mmoreira2000&quot;&gt;mmoreira2000&lt;/a&gt; for made pull-requests for bug fixes and &lt;a href=&quot;https://github.com/Thoorium&quot;&gt;Olivier Beaudoin&lt;/a&gt; for contributing with the &lt;a href=&quot;https://github.com/giacomelli/HarSharp/pull/9&quot;&gt;support to .NET Core / .NET Standard&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="harsharp" /><category term="dotnet" /><category term="release" /><summary type="html">The HTTP Archive (HAR) format as defined in the W3C Specification is an archival format for HTTP transactions that can be used by a web browser to export detailed performance data about web pages it loads.</summary></entry><entry><title type="html">Creating dotnet new templates with samples</title><link href="http://diegogiacomelli.com.br/creating-dotnet-new-templates-with-samples/" rel="alternate" type="text/html" title="Creating dotnet new templates with samples" /><published>2019-09-04T00:00:00-03:00</published><updated>2019-09-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/creating-dotnet-new-templates-with-samples</id><content type="html" xml:base="http://diegogiacomelli.com.br/creating-dotnet-new-templates-with-samples/">&lt;p&gt;In this post I will show the needed steps and samples to create dotnet new templates.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -406,36 +420,4 @@ up to speed and start enjoying success using your API.&lt;/p&gt;
 &lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
 &lt;p&gt;Just install the &lt;code class=&quot;highlighter-rouge&quot;&gt;ToastyNotification.package&lt;/code&gt; from the repository &lt;a href=&quot;https://github.com/giacomelli/Giacomelli.Unity.ToastyNotification/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Now every time your game raise an error on Unity’s editor console log, the Toasty Notifcation will warning you 😉!&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="console-log" /><summary type="html">Last saturday I created the ToastyNotification package, a fun editor log interceptor that play Mortal Kombat’s Toasty easter-egg every time an error is logged.</summary></entry><entry><title type="html">Unity and Game Development links (July 29th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-29th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (July 29th 2019)" /><published>2019-07-29T00:00:00-03:00</published><updated>2019-07-29T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-july-29th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-july-29th-2019/">&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Kristin Stock&lt;/strong&gt; published an amazing video about SPH (Smoothed Particle Hydrodynamics) in Unity. (&lt;a href=&quot;https://www.youtube.com/watch?v=NJBz8rMJ0ZU&quot;&gt;Fluid Simulation / Smoothed Particle Hydrodynamics in Unity&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;
-        &lt;iframe src=&quot;https://www.youtube.com/embed/NJBz8rMJ0ZU &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;SIGGRAPH 2019&lt;/strong&gt; is taking place in Los Angeles, between July 28 and August 1. Unity has made a page where you can see the Unity’s  presentations calendar (&lt;a href=&quot;https://unity.com/events/siggraph-2019&quot;&gt;Unity at SIGGRAPH 2019&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Kin&lt;/strong&gt; is a currency for the digital world that just now caught my attention. There is an SDK for Unity. They are posing a challenge for Unity developers, the deadline is December 30, 2019 (&lt;a href=&quot;https://kin.org/developers/unityapply/gaming-challenge/&quot;&gt;Kin Gaming Challenge&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;Kin enables the free and instant transfer of value between users, no matter how small the amount. This lets users give something more meaningful than a like, making your app even more fun and engaging.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Lasse Jon Fuglsang Pedersen and Robert Cupisz&lt;/strong&gt; in the making of The Heretic, a real-time short film made with Unity. (&lt;a href=&quot;https://www.youtube.com/watch?v=5H9Jo2qjJXs&quot;&gt;Lasse Jon Fuglsang Pedersen, Robert Cupisz - Making of The Heretic&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;
-        &lt;iframe src=&quot;https://www.youtube.com/embed/5H9Jo2qjJXs &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made two videos, one showing his top 5 assets for Unity in 2019 (&lt;a href=&quot;https://www.youtube.com/watch?v=s-4s9KhO_D0&quot;&gt;5 AWESOME ASSETS FOR UNITY 2019!&lt;/a&gt;) and a second one about the new Multiplayer system that Unity is working on (&lt;a href=&quot;https://www.youtube.com/watch?v=n3kcbUBuPpk&quot;&gt;NEW MULTIPLAYER in Unity 2019 – Connected Games (Overview)&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Tyler Hurd&lt;/strong&gt; presented to the world a tool that him have been working: Actuator leverages real-time physics and tracked VR devices for rigging, animating and puppeteering. (&lt;a href=&quot;http://tylerhurd.com/projects/actuator/&quot;&gt;Actuator)&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;
-        &lt;iframe src=&quot;https://www.youtube.com/embed/moYfppZzf2c &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;Now every time your game raise an error on Unity’s editor console log, the Toasty Notifcation will warning you 😉!&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="console-log" /><summary type="html">Last saturday I created the ToastyNotification package, a fun editor log interceptor that play Mortal Kombat’s Toasty easter-egg every time an error is logged.</summary></entry></feed>
