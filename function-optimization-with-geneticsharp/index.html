@@ -212,8 +212,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>Open the Program.cs file and inside the Main function enter the code below:</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingAnEuclideanDistanceChromsome.cs"> </script>
 
 <p>In the code above we create two variables to represent our rectangle area size: maxWidth and maxHeight, then we created a new instance of FloatingPointChromome, this will be the template to all chromsome in our solution.</p>
@@ -241,8 +240,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>In GeneticSharp a population is represented by the <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Populations/IPopulation.cs">IPopulation</a> interface, but in most cases you can directly use the <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Populations/Population.cs">Population</a> class.</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingThePopulation.cs"> </script>
 
 <p>We created a population that will have a minimum number of 50 chromosomes and a maximum number of 100 and used our chromosome template as the “Adam chromosome” (yeah, you get the reference) of our GA.</p>
@@ -256,8 +254,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>In GeneticSharp we represent a fitness function through the <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/IFitness.cs">IFitness</a> interface. Almost always you wil have to code a class that implement this interface, but for our tutorial we can use the simple and lower friction class <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/FuncFitness.cs">FuncFitness</a>. This class allow us to build our fitness evalution as its constructor argument.</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheFitnessFunction.cs"> </script>
 
 <p>We receive a IChromosome in the variable “c”, then we cast it to FloatingPointChromosme.</p>
@@ -275,8 +272,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>Besides this, you can use the already implemented classic selections: <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/EliteSelection.cs">Elite</a>, <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/RouletteWheelSelection.cs">Roulete Wheel</a>, <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/StochasticUniversalSamplingSelection.cs">Stochastic Universal Sampling</a> and <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/TournamentSelection.cs">Tournament</a>.</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheSelection.cs"> </script>
 
 <p>Elite selection is a good option, because it will select the chromosomes with the best fitness (greatest distance). You can try the others selection options too and see how they change the GA speed and results.</p>
@@ -294,8 +290,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
   <p>Some of those classics crossovers, like OX1 and OX2, cannot be used in our tutorial because they need chromosomes with ordered genes and this is not the case of our chromosomes with 0101001100 genes. Do not worry, because GeneticSharp will warn you if you try to use an invalid chromosome in an ordered crossover</p>
 </blockquote>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheCrossover.cs"> </script>
 
 <p>Uniform Crossover enables the parent chromosomes to contribute the gene level rather than the segment level, for example: if the mix probability is 0.5, the offspring has approximately half of the genes from first parent and the other half from second parent.</p>
@@ -316,8 +311,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>Like the other operators, you can create your own mutation implementing the <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/IMutation.cs">IMutation</a> interface or extending <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/MutationBase.cs">MutationBase</a> or use some from the GeneticSharp menu: <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/FlipBitMutation.cs">Flip-bit</a>, <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/ReverseSequenceMutation.cs">Reverse Sequence (RSM)</a>, <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/TworsMutation.cs">Twors</a> and <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/UniformMutation.cs">Uniform</a>.</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheMutation.cs"> </script>
 
 <p>Flip-bit mutation is a mutation specific to chromosomes that implement <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Chromosomes/IBinaryChromosome.cs">IBinaryChromosome</a> interface, as our FloatingPointChromosome does. It will randomly chose a gene and flip it bit, so a gene with value 0 will turn to 1 and vice-versa.</p>
@@ -333,8 +327,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>If you have some special condition to terminate your GA you can implement the <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/ITermination.cs">ITermination</a> interface or extend the <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/TerminationBase.cs">TerminationBase</a> class, but for most of cases you just need to use some of the availables terminations: <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/GenerationNu">Generation number</a>, <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/TimeEvolvingTermination.cs">Time evolving</a>, <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/FitnessStagnationTermination.cs">Fitness stagnation</a>, <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/FitnessThresholdTermination.cs">Fitness threshold</a>, <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/AndTermination.cs">And</a> e <a href="https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/OrTermination.cs">Or</a> (allows combine others terminations).</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheTermination.cs"> </script>
 
 <p>In our tutorial we will use the fitness stagnation termination with a expected stagnant generations number of 100, this mean that if our GA generate the same best chromsome fitness in the last 100 generations then it will be terminated.</p>
@@ -346,8 +339,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=RunningtheGA1.cs"> </script>
 
 <p>So the GA ran, but where is the result? You can always get the best chromosome from the GeneticAlgorithm.BestChromosome property.</p>
@@ -357,8 +349,7 @@ realtime how the genetic algorithm is evolving.</p>
 
 <p>Let’s replace our last “ga.Start();” line to the code below:</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=RunningtheGA2.cs"> </script>
 
 <p>Now if your run the program you will see an output like that:</p>
@@ -391,8 +382,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 
 <p>When you finish the tutorial your source code will be this one:</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CompleteSourceCode.cs"> </script>
 
 <h2 id="conclusion">Conclusion</h2>

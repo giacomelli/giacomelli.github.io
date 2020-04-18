@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - webassembly</title>
  <link href="//tags/webassembly/index.xml" rel="self"/>
  <link href="/tag/webassembly.html"/>
- <updated>2020-03-21T21:10:44-03:00</updated>
+ <updated>2020-04-18T14:39:56-03:00</updated>
  <id>/tag/webassembly.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -98,16 +98,14 @@ dotnet watch run
 &lt;p&gt;To represent the cities route each gene of our chromosome will represent an index of a city in the route.&lt;/p&gt;
 
 &lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome.cs&lt;/code&gt;:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;representing-a-city&quot;&gt;Representing a city&lt;/h2&gt;
 &lt;p&gt;The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.&lt;/p&gt;
 
 &lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspCity.cs&lt;/code&gt;:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspCity.cs&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
@@ -115,14 +113,12 @@ dotnet watch run
 
 &lt;p&gt;Our fitness function will evaluate the chromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;configuring-the-genetic-algorithm&quot;&gt;Configuring the Genetic Algorithm&lt;/h2&gt;
 &lt;p&gt;In this step we need to configure our genetic algorithm using the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness&lt;/code&gt; and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspGA.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspGA.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspGA.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspGA.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-timer&quot;&gt;Why use Timer?&lt;/h3&gt;
 &lt;p&gt;GeneticSharp can be used as single threading or multithreading to evaluate chromosomes with the fitness function, but WebAssembly (and Blazor) can use just the UI thread, in this scenario when we call &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticAlgorithm.Start&lt;/code&gt; method it freezes the UI until the GA finish.&lt;/p&gt;
@@ -136,14 +132,11 @@ dotnet watch run
 &lt;/div&gt;
 
 &lt;h2 id=&quot;creating-the-razor-page&quot;&gt;Creating the Razor page&lt;/h2&gt;
-&lt;p&gt;Inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Pages&lt;/code&gt; create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=Tsp.v1.razor&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Pages&lt;/code&gt; create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=Tsp.v1.razor&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;As we need to interop with JavaScript to manipulate DOM, we will use some helper JS functions. Add the file &lt;code class=&quot;highlighter-rouge&quot;&gt;canvas-helper.js&lt;/code&gt; inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;wwwroot/js&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=canvas-helper.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;As we need to interop with JavaScript to manipulate DOM, we will use some helper JS functions. Add the file &lt;code class=&quot;highlighter-rouge&quot;&gt;canvas-helper.js&lt;/code&gt; inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;wwwroot/js&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=canvas-helper.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; and add the tag below inside the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;head&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request
-&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=index.canvas-helper.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; and add the tag below inside the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;head&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=index.canvas-helper.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-ijsruntime-do-access-dom&quot;&gt;Why use IJSRuntime do access DOM?&lt;/h3&gt;
 &lt;p&gt;It’s awesome we can now use C# in the browser with Blazor. But unfortunately we can’t do everything with it, yet. Currently, WebAssembly isn’t able to directly access the DOM API, which means that Blazor isn’t able to either.
@@ -170,13 +163,11 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt; add the method &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt;:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsync.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Then call it from &lt;code class=&quot;highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;highlighter-rouge&quot;&gt;clearCanvas&lt;/code&gt; call:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsyncCall.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
@@ -192,13 +183,11 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;p&gt;Now we need to draw the solution: the route represented by the best chromosome of each generation.&lt;/p&gt;
 
 &lt;p&gt;Add the following method to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsync.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Then call it from &lt;code class=&quot;highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt; call:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsyncCall.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;

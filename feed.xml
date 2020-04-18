@@ -1,4 +1,156 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-03-21T21:10:44-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Azure Pipelines - Generating DB Script with SqlPackage.exe</title><link href="http://diegogiacomelli.com.br/azure-pipelines-generating-db-script/" rel="alternate" type="text/html" title="Azure Pipelines - Generating DB Script with SqlPackage.exe" /><published>2019-12-17T00:00:00-03:00</published><updated>2019-12-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/azure-pipelines-generating-db-script</id><content type="html" xml:base="http://diegogiacomelli.com.br/azure-pipelines-generating-db-script/">&lt;p&gt;Recently I needed to automate the generation of a database script deploy from a SQL Server Database Project on our Azure Pipelines continuous integration. Below I will describe the steps to achieve such thing.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-04-18T14:39:56-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Google Play Games Plugin for Unity&amp;amp;colon; Tips &amp;amp; Tricks</title><link href="http://diegogiacomelli.com.br/google-play-games-plugin-for-unity-tips-and-tricks/" rel="alternate" type="text/html" title="Google Play Games Plugin for Unity&amp;colon; Tips &amp; Tricks" /><published>2020-04-18T00:00:00-03:00</published><updated>2020-04-18T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/google-play-games-plugin-for-unity-tips-and-tricks</id><content type="html" xml:base="http://diegogiacomelli.com.br/google-play-games-plugin-for-unity-tips-and-tricks/">&lt;p&gt;In this post I will list some tips and tricks that I learned while using the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Google Play Games Plugin for Unity&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The Unity3D has a code interface for questions regarding social features in games, these interfaces are called &lt;a href=&quot;https://docs.unity3d.com/Manual/net-SocialAPI.html&quot;&gt;Social API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It provides a unified interface to different social back-ends, such as GameCenter, and is meant to be used primarily by programmers on the game project.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When you use it on a real platform, you will need to use some plugin that implement those interfaces, in the case of Android this job is done by the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Google Play Games Plugin for Unity&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;configuring-the-game-on-google-play-console&quot;&gt;Configuring the game on Google Play Console&lt;/h2&gt;
+&lt;p&gt;First of all you need to create the game on &lt;a href=&quot;https://play.google.com/publish&quot;&gt;Google Play Console&lt;/a&gt; as any other game and make an app release (an &lt;code class=&quot;highlighter-rouge&quot;&gt;Internal test track&lt;/code&gt; already works).&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Services &amp;amp; APIS&lt;/code&gt; menu, after enter on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Google Play game services&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fill only the required information for test, then go to menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Linked apps&lt;/code&gt; and link it to your game on with the app on Google Play Console.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-some-achievements-for-test&quot;&gt;Creating some achievements for test&lt;/h2&gt;
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Game services section&lt;/code&gt; open the &lt;code class=&quot;highlighter-rouge&quot;&gt;Achievements&lt;/code&gt; menu and add some achievements.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-the-plugin&quot;&gt;Installing the plugin&lt;/h2&gt;
+&lt;p&gt;To install the &lt;code class=&quot;highlighter-rouge&quot;&gt;Google Play Games Plugin for Unity&lt;/code&gt;, you should follow the steps in &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity#plugin-installation&quot;&gt;Plugin Installation&lt;/a&gt; and &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity#android-setup&quot;&gt;Android Setup&lt;/a&gt; sections.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;oauth-and-upload-certificate&quot;&gt;OAuth and Upload Certificate&lt;/h2&gt;
+&lt;p&gt;One thing can be a little confusing is about the certificate fingerprints.&lt;/p&gt;
+
+&lt;p&gt;Go to &lt;a href=&quot;https://play.google.com/publish&quot;&gt;Google Play Console&lt;/a&gt; on &lt;code class=&quot;highlighter-rouge&quot;&gt;App Signing&lt;/code&gt;section and use the option &lt;code class=&quot;highlighter-rouge&quot;&gt;App Signing by Google Play&lt;/code&gt;&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you need to copy your &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1&lt;/code&gt; fingerprint of your &lt;code class=&quot;highlighter-rouge&quot;&gt;Upload certificate&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;App signing&lt;/code&gt; section.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then go to your OAuth credentials on &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API console&lt;/a&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;the Google API console&lt;/code&gt;, select your game on the top dropdown, then go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; menu and edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt;. Paste the fingertip on the field &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt; and save it.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;remember to remove the &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1&lt;/code&gt; prefix, if you copied it together.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;testing-on-android&quot;&gt;Testing on Android&lt;/h2&gt;
+&lt;p&gt;Now we have the basic setup done, we need to write some code to test it on an Android device:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/c8bff996de4473c201f010b17d42fd2b.js?file=AchievementsController.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Add the script above to a game object in the scene, build and run the game on a Android device.&lt;/p&gt;
+
+&lt;p&gt;If everything was done correctly, you should see a screen like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/conclusion.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;With this basic setup you can start to use the other features from Google Play Games Plugin for Unity plugin, as:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;unlock/reveal/increment achievement&lt;/li&gt;
+  &lt;li&gt;post score to leaderboard&lt;/li&gt;
+  &lt;li&gt;cloud save read/write&lt;/li&gt;
+  &lt;li&gt;show built-in achievement/leaderboards UI&lt;/li&gt;
+  &lt;li&gt;events&lt;/li&gt;
+  &lt;li&gt;video recording of gameplay&lt;/li&gt;
+  &lt;li&gt;nearby connections&lt;/li&gt;
+  &lt;li&gt;turn-based multiplayer&lt;/li&gt;
+  &lt;li&gt;real-time multiplayer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learn more about then on &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;plugin GitHub page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;extra-tips-and-tricks&quot;&gt;Extra tips and tricks&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/extra-tips-tricks.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;Below a list of tips and tricks for non-common scenarios.&lt;/p&gt;
+
+&lt;h3 id=&quot;log-on-device&quot;&gt;Log on device&lt;/h3&gt;
+&lt;p&gt;If anything goes wrong on Android device you will need to see it logs, to do so, you can use adb logcat:&lt;/p&gt;
+
+&lt;p&gt;On MacOS, this shell do the job:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /usr/local/Caskroom/android-platform-tools/29.0.5/platform-tools/
+
+./adb logcat &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; Unity PackageManager dalvikvm DEBUG
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;If you are using a different version of Android Platform Tools you will need to change the &lt;code class=&quot;highlighter-rouge&quot;&gt;29.0.5&lt;/code&gt; version.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;assembly-definition&quot;&gt;Assembly definition&lt;/h3&gt;
+&lt;p&gt;If your game is using &lt;a href=&quot;https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html&quot;&gt;Assembly Definition&lt;/a&gt; you will need this step.&lt;/p&gt;
+
+&lt;p&gt;The plugin code come without any assembly definition, so to use in our code you will need to create two assembly definitions to the plugin:&lt;/p&gt;
+
+&lt;p&gt;Go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/GooglePlayGames&lt;/code&gt; folder and create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Assembly Definition&lt;/code&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;GooglePlayGames&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/GooglePlayGames/Editor&lt;/code&gt; folder and create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Assembly Definition&lt;/code&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;GooglePlayGames.Editor&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, go to your game assembly definition and add a reference to the &lt;code class=&quot;highlighter-rouge&quot;&gt;GooglePlayGames&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;After this, if you receive some compilation error about &lt;code class=&quot;highlighter-rouge&quot;&gt;BasicApi.Nearby&lt;/code&gt; namespace, just close and open Unity again.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;exception-class-not-found-comgoogleandroidgmsgamesgames&quot;&gt;Exception class not found com.google.android.gms.games.Games&lt;/h3&gt;
+&lt;p&gt;If you see the the log message above on the adb logcat, you need to check on Unity &lt;code class=&quot;highlighter-rouge&quot;&gt;Player Settings / Publishing Settings&lt;/code&gt; if the minify settings are set up correctly as describe here: &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity/blob/master/README.md#play-games-services-proguard-configuration&quot;&gt;Play Games Services Proguard configuration&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><category term="android" /><summary type="html">In this post I will list some tips and tricks that I learned while using the Google Play Games Plugin for Unity.</summary></entry><entry><title type="html">Azure Pipelines - Generating DB Script with SqlPackage.exe</title><link href="http://diegogiacomelli.com.br/azure-pipelines-generating-db-script/" rel="alternate" type="text/html" title="Azure Pipelines - Generating DB Script with SqlPackage.exe" /><published>2019-12-17T00:00:00-03:00</published><updated>2019-12-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/azure-pipelines-generating-db-script</id><content type="html" xml:base="http://diegogiacomelli.com.br/azure-pipelines-generating-db-script/">&lt;p&gt;Recently I needed to automate the generation of a database script deploy from a SQL Server Database Project on our Azure Pipelines continuous integration. Below I will describe the steps to achieve such thing.&lt;/p&gt;
 
 &lt;h1 id=&quot;building-the-solution&quot;&gt;Building the solution&lt;/h1&gt;
 &lt;p&gt;A SQL Server Database Project has a solution (.sln) as any other kind of Visual Studio projects and we need to build it to generate our &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15&quot;&gt;DACPAC&lt;/a&gt;.&lt;/p&gt;
@@ -7,8 +159,7 @@
   &lt;p&gt;A data-tier application (DAC) is a logical database management entity that defines all of the SQL Server objects - like tables, views, and instance objects, including logins - associated with a user’s database. A DAC is a self-contained unit of SQL Server database deployment that enables data-tier developers and database administrators to package SQL Server objects into a portable artifact called a DAC package, also known as a DACPAC&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=solution-build.yml&quot;&gt; &lt;/script&gt;
 
 &lt;blockquote&gt;
@@ -18,24 +169,20 @@
 &lt;h1 id=&quot;generating-the-sql-script&quot;&gt;Generating the .sql script&lt;/h1&gt;
 &lt;p&gt;With our .dacpac file built, now we need to generate our .sql database script. To perform this operation we need the &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15&quot;&gt;sqlpackage.exe&lt;/a&gt;, this command-line is available in some Azure Pipelines images, as &lt;code class=&quot;highlighter-rouge&quot;&gt;vs2017-win2016&lt;/code&gt;, so you need to use it on your &lt;code class=&quot;highlighter-rouge&quot;&gt;azure-pipelines.yml&lt;/code&gt; file:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=image.yml&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Add the &lt;code class=&quot;highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task below to generate the .sql database script:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-generate.yml&quot;&gt; &lt;/script&gt;
 
 &lt;h1 id=&quot;publishing-the-sql-script&quot;&gt;Publishing the .sql script&lt;/h1&gt;
 &lt;p&gt;Now we need to publish the .sql file to the build artifacts:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-publish.yml&quot;&gt; &lt;/script&gt;
 
 &lt;h1 id=&quot;complete-azure-pipelinesyml&quot;&gt;Complete azure-pipelines.yml&lt;/h1&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=azure-pipelines.yml&quot;&gt; &lt;/script&gt;
 
 &lt;h1 id=&quot;extra-points&quot;&gt;Extra points&lt;/h1&gt;
@@ -134,19 +281,16 @@
 
 &lt;p&gt;To avoid this you can pass the type of the argument to Dapper:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample1.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;To make this solution easier to use I made two extension methods &lt;code class=&quot;highlighter-rouge&quot;&gt;ToVarChar&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ToNVarChar&lt;/code&gt;:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample2.cs&quot;&gt; &lt;/script&gt;
 
 &lt;h1 id=&quot;extension-methods&quot;&gt;Extension methods&lt;/h1&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=DapperArgumentExtensions.cs&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="dotnet" /><category term="dapper" /><category term="sql" /><summary type="html">Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as NVARCHAR (4000).</summary></entry><entry><title type="html">Can I send batch messages larger than 256 KB to Azure Service Bus?</title><link href="http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/" rel="alternate" type="text/html" title="Can I send batch messages larger than 256 KB to Azure Service Bus?" /><published>2019-08-13T00:00:00-03:00</published><updated>2019-08-13T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus</id><content type="html" xml:base="http://diegogiacomelli.com.br/can-i-send-batch-messages-larger-than-256-kb-to-azure-service-bus/">&lt;h2 id=&quot;the-short-answer&quot;&gt;The short answer&lt;/h2&gt;
 &lt;p&gt;NO!&lt;/p&gt;
 
@@ -157,8 +301,7 @@
 
 &lt;p&gt;Below is a simplified version of the code that I used for Standard tier  case:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/ed0d6eb6a8457eabed916e86c369c56c.js&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="dotnet" /><category term="azure" /><category term="azure-service-bus" /><summary type="html">The short answer NO!</summary></entry><entry><title type="html">Deploying a T4 Template with dotnet pack</title><link href="http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack/" rel="alternate" type="text/html" title="Deploying a T4 Template with dotnet pack" /><published>2019-08-08T00:00:00-03:00</published><updated>2019-08-08T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack</id><content type="html" xml:base="http://diegogiacomelli.com.br/deploying-a-t4-template-with-dotnet-pack/">&lt;p&gt;In this post I will show how to deploy a T4 Template to a target project using a NuGet package built with dotnet CLI pack command.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
@@ -172,8 +315,7 @@
 &lt;h2 id=&quot;creating-the-nuget-project&quot;&gt;Creating the NuGet project&lt;/h2&gt;
 &lt;p&gt;We will create a sample project to use during the post. Open a command-line/terminal and type:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=create-sample-project.sh&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Let’s say that the T4 Template that we want to distribute is located inside a folder called &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates&lt;/code&gt; and the file is named &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt;.&lt;/p&gt;
@@ -198,22 +340,19 @@
 
 &lt;p&gt;For our sample the file will be &lt;code class=&quot;highlighter-rouge&quot;&gt;SampleNugetProject.targets&lt;/code&gt;:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=SampleNugetProject.targets&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;changing-the-csproj&quot;&gt;Changing the .csproj&lt;/h2&gt;
 &lt;p&gt;In the project &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; just add this &lt;code class=&quot;highlighter-rouge&quot;&gt;ItemGroup&lt;/code&gt;:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=SampleNugetProject.csproj&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;building-the-nuget-package&quot;&gt;Building the NuGet package&lt;/h2&gt;
 &lt;p&gt;Inside the folder where are our &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;.targets&lt;/code&gt; files, type:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=dotnet-pack.sh&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;This will create a file &lt;code class=&quot;highlighter-rouge&quot;&gt;bin\Debug\SampleNugetProject.1.0.0.nupkg&lt;/code&gt;.&lt;/p&gt;
@@ -221,13 +360,11 @@
 &lt;h2 id=&quot;testing-the-nuget-package&quot;&gt;Testing the NuGet package&lt;/h2&gt;
 &lt;p&gt;Create a new .NET Core project to test the package:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=create-TargetTestProject.sh&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Now, add the NuGet package to the target project.&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=add-package.sh&quot;&gt; &lt;/script&gt;
 
 &lt;blockquote&gt;
@@ -237,8 +374,7 @@
 &lt;p&gt;If we look to our &lt;code class=&quot;highlighter-rouge&quot;&gt;TargetTestProject&lt;/code&gt; there is no &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt; file yet, this is because it will copied from NuGet package folder to the project structure during the build process.&lt;/p&gt;
 
 &lt;p&gt;Just build the target project and the &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt; will be copied.&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=dotnet-build.sh&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -306,151 +442,4 @@
       &lt;p&gt;Generative Adversarial Imitation Learning, pre-training for the PPO trainer, training generalized reinforcement learning agents, options for Nature and ResNet CNN architectures.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry><entry><title type="html">Developing Web APIs - Good Practices</title><link href="http://diegogiacomelli.com.br/developing-web-apis-good-practices/" rel="alternate" type="text/html" title="Developing Web APIs - Good Practices" /><published>2019-08-02T00:00:00-03:00</published><updated>2019-08-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/developing-web-apis-good-practices</id><content type="html" xml:base="http://diegogiacomelli.com.br/developing-web-apis-good-practices/">&lt;p&gt;Some days ago a coworker asked me what I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.&lt;/p&gt;
-
-&lt;p&gt;The list below is not intended to be right and definitive, there is no silver bullet, but just things that I learned and tested in more of a decade working with web apis. Things that worked for me and my projects can easily not work for you and your projects, because context is other  and challenges too.&lt;/p&gt;
-
-&lt;p&gt;Besides, if you disagree with some of this points, please let a comment in the end of the post, we could learn more with it!&lt;/p&gt;
-
-&lt;h1 id=&quot;rest-or-not-restful&quot;&gt;REST or not RESTful?&lt;/h1&gt;
-&lt;p&gt;First of all, build a software that really attend the requisites, that has good code quality and has good performance is more important than follow someone’s guidance, with this said I always try to implement REST web apis, but exceptions exists and we need to work with them, so don’t try to force some operation than will don’t fit well on REST way.&lt;/p&gt;
-
-&lt;p&gt;Remember, REST is a style architecture and as every architecture, you can (and most of time should) adapt it for your project needs and capacities.&lt;/p&gt;
-
-&lt;h1 id=&quot;verbs-and-urls&quot;&gt;Verbs and URLs&lt;/h1&gt;
-&lt;p&gt;Probably the most important rule about web api is to respect the meaning of verbs, this will really make the life easer for those whom are consuming your web api.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;: to retrieve something.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;: to create something.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PUT&lt;/code&gt;: to complete update something.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;: to partially update something.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DELETE&lt;/code&gt;: to delete something&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Then, combining with URLs, you get a really clear way to work:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;/resource  : returns all resources.&lt;/li&gt;
-      &lt;li&gt;/resource/1: returns the resource with id 1.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;/resource: creates a bunch of resources  (rarelly used).&lt;/li&gt;
-      &lt;li&gt;/resource/1: Not used.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PUT&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;/resource: complete updates a bunch of resources (rarelly used).&lt;/li&gt;
-      &lt;li&gt;/resource/1: complete updates the resource with id 1.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;/resource: partial updates a bunch of resources (rarelly used).&lt;/li&gt;
-      &lt;li&gt;/resource/1: partial updates the resource with id 1.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DELETE&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;/resource: deletes all resources (rarelly used, mostly never).&lt;/li&gt;
-      &lt;li&gt;/resource/1: delete the resource with id 1.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;status-code&quot;&gt;Status code&lt;/h1&gt;
-&lt;p&gt;I try to keep the range of returned status code small, the smallest one has only 3 status:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;200&lt;/code&gt;: succesful request.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;400&lt;/code&gt;: a client error.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;500&lt;/code&gt; : a server error.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Of course, you can extend this one, like use &lt;code class=&quot;highlighter-rouge&quot;&gt;201 (created)&lt;/code&gt; to return status for POST verbs, and &lt;code class=&quot;highlighter-rouge&quot;&gt;401&lt;/code&gt; to unauthorized requests, but try to keep this list small, so it will be easy to who consume your API take decisions about what to do with different status code.&lt;/p&gt;
-
-&lt;p&gt;Another good pratice is return an &lt;code class=&quot;highlighter-rouge&quot;&gt;error code&lt;/code&gt; and an &lt;code class=&quot;highlighter-rouge&quot;&gt;error message&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;json&lt;/code&gt; of requests that result in &lt;code class=&quot;highlighter-rouge&quot;&gt;400&lt;/code&gt; status code (client error), this way the client can react or display different informations to the end user. 
-In most cases, &lt;code class=&quot;highlighter-rouge&quot;&gt;400&lt;/code&gt; status code are about some business logic rule that need to be respect to result in a sucessful request, so provide some information to client can help it to understand what is wrong in the request.&lt;/p&gt;
-
-&lt;h1 id=&quot;versioning&quot;&gt;Versioning&lt;/h1&gt;
-&lt;p&gt;I see a lot of developers using &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt; inside the code to “versioning” their web apis, I really dislike this method, I can understand it is easy to deploy a new web api version to the same virtual application using this technique, but we need to agree that we do versioning using some SCM, like Git, SVN and Mercurial with everything else that correspond to our code, why should we do versioning inside the code in the case of web api?&lt;/p&gt;
-
-&lt;p&gt;In most of case your web api will have only one version, especially when you are developing a &lt;code class=&quot;highlighter-rouge&quot;&gt;SPA&lt;/code&gt; app and it is the only client of your web api.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Versioning of APIs is a controversial topic—you will find a lot of contradictory guidance on the internet.
-The pattern that is most commonly practiced is probably the one with a version identifier in a path
-segment of URLs. Since there is little consensus on versioning, simply offering our opinions on the topic may not be very helpful, but we offer two thoughts:&lt;/p&gt;
-  &lt;ol&gt;
-    &lt;li&gt;Doing nothing at all for API versioning is an intelligent approach that is getting more attention&lt;/li&gt;
-    &lt;li&gt;Links and version identifiers in URLs make awkward bedfellows&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://cloud.google.com/files/apigee/apigee-web-api-design-the-missing-link-ebook.pdf&quot;&gt;Web API Design: The Missing Link&lt;/a&gt;&lt;/p&gt;
-&lt;/span&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;my-web-api-really-need-versions&quot;&gt;My web api really need versions&lt;/h2&gt;
-&lt;p&gt;In this case, the approach that I use is create a new site/virtual application every time that I need to publish a major version of my web api, so, in the code of the routes there is no &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;v2&lt;/code&gt; and so on.&lt;/p&gt;
-
-&lt;p&gt;Let say I have a web api publish on &lt;code class=&quot;highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v1&lt;/code&gt;, than I made some breaking changes to the public interface of the web api and need to publish another version in a separated url to avoid any impact to the users that still use the old &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt;. I will just create the new &lt;code class=&quot;highlighter-rouge&quot;&gt;v2&lt;/code&gt; virtual application, and the urls will be:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v1&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v2&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In a moment in future you will want to remove the support to the &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt; version, in that moment you could configure your virtual application to redirect (status code &lt;code class=&quot;highlighter-rouge&quot;&gt;301&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;302&lt;/code&gt;) to the next/latest version.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Of course, it’s a good pratice too have some public changelog about your web api versions releases to notify the clients developers.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;describing&quot;&gt;Describing&lt;/h1&gt;
-&lt;p&gt;In the field of how to describe a web api REST I can cite &lt;code class=&quot;highlighter-rouge&quot;&gt;Swagger&lt;/code&gt;. It is not a attempt to create a WSDL like to web api REST, but it is a good attempt to create an open standard for describing web apis REST.&lt;/p&gt;
-
-&lt;p&gt;Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.&lt;/p&gt;
-
-&lt;p&gt;I use Swagger a lot and really love it, mainly because Swagger UI that allow you generate a nice live console and documentation for your web api.&lt;/p&gt;
-
-&lt;p&gt;There are many implementations of Swagger for most of languages: C#, Java, Python, Ruby, etc.&lt;/p&gt;
-
-&lt;p&gt;If you are using ASP .NET Web API, there a some projects to auto generate the Swagger specification, like &lt;a href=&quot;https://github.com/domaindrivendev/Swashbuckle.AspNetCore&quot;&gt;Swashbuckle.AspNetCore&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Swagger is very popular nowadays, but if you never see it in action, take a look on &lt;a href=&quot;https://developer.marvel.com/docs&quot;&gt;Marvel API&lt;/a&gt; that use Swagger and Swagger UI.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;other-conventions-and-good-pratices&quot;&gt;Other conventions and good pratices&lt;/h1&gt;
-&lt;p&gt;To keep our lifes as developers easier is good to define some conventions of how our web api REST will behave, the best effort I know in this field are the very good &lt;strong&gt;Apigee e-books&lt;/strong&gt;. The e-books are not an attempt to create a bible or a mantra about how to design your api, but rather a collection of conventions observed in large web REST apis, like Twitter, Facebook, Linkedin, Google, etc.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Most of the good pratices that I used, tested and mentioned in this post I learned from my experience and Apigee books.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;I probably forgot some learnings that I still use in my web apis developing, maybe because it’s so common to perform it that I even do not notice them, but the ones cited above I think are the most remarkable.&lt;/p&gt;
-
-&lt;h1 id=&quot;further-readings&quot;&gt;Further readings&lt;/h1&gt;
-&lt;p&gt;I really recommend you to read the books bellow, they have detailed a lot of good practices about how do develop good web apis and can help you to design yours.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf&quot;&gt;Web API Design&lt;/a&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;The success of an API design is measured by how quickly developers can get
-up to speed and start enjoying success using your API.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cloud.google.com/files/apigee/apigee-web-api-design-the-missing-link-ebook.pdf&quot;&gt;Web API Design: The Missing Link&lt;/a&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;When you design any interface, you should try to put yourself in the shoes of the user&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="web-api" /><category term="good-pratices" /><summary type="html">Some days ago a coworker asked me what I thought about wich status code a web api should return and if there are some good pratices to follow. When he asked this, I remembered that I’ve followed some good pratices, most of them based on my emperical knowledge of years of development and consuming web apis. For this reason I wrote this post as a way to organize and document what are those good pratices that I follow. Maybe it can be useful to someone.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>

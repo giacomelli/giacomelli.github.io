@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - custom-editor</title>
  <link href="//tags/custom-editor/index.xml" rel="self"/>
  <link href="/tag/custom-editor.html"/>
- <updated>2020-03-21T21:10:44-03:00</updated>
+ <updated>2020-04-18T14:39:56-03:00</updated>
  <id>/tag/custom-editor.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -28,8 +28,7 @@
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a “Editor” folder.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/f74a23107fe862ae7501002ac856f932.js?file=ScenePreview.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - sorting-layers</title>
  <link href="//tags/sorting-layers/index.xml" rel="self"/>
  <link href="/tag/sorting-layers.html"/>
- <updated>2020-03-21T21:10:44-03:00</updated>
+ <updated>2020-04-18T14:39:56-03:00</updated>
  <id>/tag/sorting-layers.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -26,8 +26,7 @@
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/141742c3175476f03ca2437c7b35fd88.js?file=SortingLayerDebugger.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;

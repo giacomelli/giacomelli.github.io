@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - animation-curve</title>
  <link href="//tags/animation-curve/index.xml" rel="self"/>
  <link href="/tag/animation-curve.html"/>
- <updated>2020-03-21T21:10:44-03:00</updated>
+ <updated>2020-04-18T14:39:56-03:00</updated>
  <id>/tag/animation-curve.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -47,8 +47,7 @@
 &lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
 &lt;p&gt;To setup the &lt;code class=&quot;highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/7324d63679c11529e1710a5470d9ee7f&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/7324d63679c11529e1710a5470d9ee7f.js?file=Easing2CurveEditorWindow.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;

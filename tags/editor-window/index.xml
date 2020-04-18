@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - editor-window</title>
  <link href="//tags/editor-window/index.xml" rel="self"/>
  <link href="/tag/editor-window.html"/>
- <updated>2020-03-21T21:10:44-03:00</updated>
+ <updated>2020-04-18T14:39:56-03:00</updated>
  <id>/tag/editor-window.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -32,8 +32,7 @@
 
 &lt;p&gt;Download the full &lt;a href=&quot;https://gist.github.com/giacomelli/ad9d4dcdb702d2d1edf0663628ca9608&quot;&gt;gist&lt;/a&gt; or use the &lt;a href=&quot;/unitytips-gist-importer&quot;&gt;Gist Importer&lt;/a&gt; to import the complete &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene Preview Window&lt;/code&gt; for your project.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/ad9d4dcdb702d2d1edf0663628ca9608.js?file=ScenePreviewWindow.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -87,8 +86,7 @@
 &lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
 &lt;p&gt;To setup the &lt;code class=&quot;highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/7324d63679c11529e1710a5470d9ee7f&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/7324d63679c11529e1710a5470d9ee7f.js?file=Easing2CurveEditorWindow.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -377,8 +375,7 @@
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/141742c3175476f03ca2437c7b35fd88.js?file=SortingLayerDebugger.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;

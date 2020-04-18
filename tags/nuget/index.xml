@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - nuget</title>
  <link href="//tags/nuget/index.xml" rel="self"/>
  <link href="/tag/nuget.html"/>
- <updated>2020-03-21T21:10:44-03:00</updated>
+ <updated>2020-04-18T14:39:56-03:00</updated>
  <id>/tag/nuget.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -27,8 +27,7 @@
 &lt;h2 id=&quot;creating-the-nuget-project&quot;&gt;Creating the NuGet project&lt;/h2&gt;
 &lt;p&gt;We will create a sample project to use during the post. Open a command-line/terminal and type:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=create-sample-project.sh&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Let’s say that the T4 Template that we want to distribute is located inside a folder called &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates&lt;/code&gt; and the file is named &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt;.&lt;/p&gt;
@@ -53,22 +52,19 @@
 
 &lt;p&gt;For our sample the file will be &lt;code class=&quot;highlighter-rouge&quot;&gt;SampleNugetProject.targets&lt;/code&gt;:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=SampleNugetProject.targets&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;changing-the-csproj&quot;&gt;Changing the .csproj&lt;/h2&gt;
 &lt;p&gt;In the project &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; just add this &lt;code class=&quot;highlighter-rouge&quot;&gt;ItemGroup&lt;/code&gt;:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=SampleNugetProject.csproj&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;building-the-nuget-package&quot;&gt;Building the NuGet package&lt;/h2&gt;
 &lt;p&gt;Inside the folder where are our &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;.targets&lt;/code&gt; files, type:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=dotnet-pack.sh&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;This will create a file &lt;code class=&quot;highlighter-rouge&quot;&gt;bin\Debug\SampleNugetProject.1.0.0.nupkg&lt;/code&gt;.&lt;/p&gt;
@@ -76,13 +72,11 @@
 &lt;h2 id=&quot;testing-the-nuget-package&quot;&gt;Testing the NuGet package&lt;/h2&gt;
 &lt;p&gt;Create a new .NET Core project to test the package:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=create-TargetTestProject.sh&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Now, add the NuGet package to the target project.&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=add-package.sh&quot;&gt; &lt;/script&gt;
 
 &lt;blockquote&gt;
@@ -92,8 +86,7 @@
 &lt;p&gt;If we look to our &lt;code class=&quot;highlighter-rouge&quot;&gt;TargetTestProject&lt;/code&gt; there is no &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt; file yet, this is because it will copied from NuGet package folder to the project structure during the build process.&lt;/p&gt;
 
 &lt;p&gt;Just build the target project and the &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt; will be copied.&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=dotnet-build.sh&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;

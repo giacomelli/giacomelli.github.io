@@ -147,8 +147,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
   <p>A data-tier application (DAC) is a logical database management entity that defines all of the SQL Server objects - like tables, views, and instance objects, including logins - associated with a user’s database. A DAC is a self-contained unit of SQL Server database deployment that enables data-tier developers and database administrators to package SQL Server objects into a portable artifact called a DAC package, also known as a DACPAC</p>
 </blockquote>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=solution-build.yml"> </script>
 
 <blockquote>
@@ -158,24 +157,20 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 <h1 id="generating-the-sql-script">Generating the .sql script</h1>
 <p>With our .dacpac file built, now we need to generate our .sql database script. To perform this operation we need the <a href="https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15">sqlpackage.exe</a>, this command-line is available in some Azure Pipelines images, as <code class="highlighter-rouge">vs2017-win2016</code>, so you need to use it on your <code class="highlighter-rouge">azure-pipelines.yml</code> file:</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=image.yml"> </script>
 
 <p>Add the <code class="highlighter-rouge">CmdLine</code> task below to generate the .sql database script:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-generate.yml"> </script>
 
 <h1 id="publishing-the-sql-script">Publishing the .sql script</h1>
 <p>Now we need to publish the .sql file to the build artifacts:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-publish.yml"> </script>
 
 <h1 id="complete-azure-pipelinesyml">Complete azure-pipelines.yml</h1>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=azure-pipelines.yml"> </script>
 
 <h1 id="extra-points">Extra points</h1>

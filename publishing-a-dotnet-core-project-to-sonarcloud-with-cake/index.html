@@ -163,8 +163,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h3 id="adding-the-tools-and-addin-references">Adding the tools and addin references</h3>
 <p>Add the lines below to the file:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v1.cake"> </script>
 
 <div class="note"><p>We’ll use those tools and addins to create the complete .cake script.</p>
@@ -172,8 +171,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h3 id="setting-the-variables">Setting the variables</h3>
 <p>Now we need to set some variables:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v2.cake"> </script>
 
 <p>Where:</p>
@@ -184,20 +182,17 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </ul>
 
 <p>If you are using <code class="highlighter-rouge">AppVeyor</code> you can use line bellow to allow discover the branch name locally and in the AppVeyor:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v3.cake"> </script>
 
 <h3 id="build-task">Build task</h3>
 <p>The first task definitions will build our .NET Core project:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v4.cake"> </script>
 
 <h3 id="test-task">Test task</h3>
 <p>Now we will define the task to run our tests:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v5.cake"> </script>
 
 <p>This task use <code class="highlighter-rouge">Coverlet</code> to collect the code coverage. Install it on your test project using the <code class="highlighter-rouge">Coverlet</code> NuGet package:</p>
@@ -207,8 +202,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h3 id="sonar-tasks">Sonar tasks</h3>
 <p>The lasts tasks to define are responsible to scan the project and send the build and tests results to SonarCloud:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v6.cake"> </script>
 
 <p>Where:</p>
@@ -226,8 +220,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h3 id="defining-the-tasks-order">Defining the tasks order</h3>
 <p>The last part of the <code class="highlighter-rouge">build.cake</code> file define the order that tasks will run:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v7.cake"> </script>
 
 <h2 id="running-the-buildcake">Running the build.cake</h2>
@@ -262,8 +255,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 <p>That’s it, now your project is ready to using cake to publish results to SonarCloud.</p>
 
 <h2 id="complete-buildcake">Complete build.cake</h2>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.cake"> </script>
 
 <h2 id="extras">Extras</h2>

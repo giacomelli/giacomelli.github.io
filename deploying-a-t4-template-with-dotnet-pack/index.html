@@ -157,8 +157,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 <h2 id="creating-the-nuget-project">Creating the NuGet project</h2>
 <p>We will create a sample project to use during the post. Open a command-line/terminal and type:</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=create-sample-project.sh"> </script>
 
 <p>Let’s say that the T4 Template that we want to distribute is located inside a folder called <code class="highlighter-rouge">Templates</code> and the file is named <code class="highlighter-rouge">Scaffold.tt</code>.</p>
@@ -183,22 +182,19 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>For our sample the file will be <code class="highlighter-rouge">SampleNugetProject.targets</code>:</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=SampleNugetProject.targets"> </script>
 
 <h2 id="changing-the-csproj">Changing the .csproj</h2>
 <p>In the project <code class="highlighter-rouge">.csproj</code> just add this <code class="highlighter-rouge">ItemGroup</code>:</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=SampleNugetProject.csproj"> </script>
 
 <h2 id="building-the-nuget-package">Building the NuGet package</h2>
 <p>Inside the folder where are our <code class="highlighter-rouge">.csproj</code> and <code class="highlighter-rouge">.targets</code> files, type:</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=dotnet-pack.sh"> </script>
 
 <p>This will create a file <code class="highlighter-rouge">bin\Debug\SampleNugetProject.1.0.0.nupkg</code>.</p>
@@ -206,13 +202,11 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 <h2 id="testing-the-nuget-package">Testing the NuGet package</h2>
 <p>Create a new .NET Core project to test the package:</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=create-TargetTestProject.sh"> </script>
 
 <p>Now, add the NuGet package to the target project.</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=add-package.sh"> </script>
 
 <blockquote>
@@ -222,8 +216,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 <p>If we look to our <code class="highlighter-rouge">TargetTestProject</code> there is no <code class="highlighter-rouge">Scaffold.tt</code> file yet, this is because it will copied from NuGet package folder to the project structure during the build process.</p>
 
 <p>Just build the target project and the <code class="highlighter-rouge">Scaffold.tt</code> will be copied.</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=dotnet-build.sh"> </script>
 
 <h2 id="conclusion">Conclusion</h2>

@@ -3,11 +3,172 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2020-03-21T21:10:44-03:00</updated>
+ <updated>2020-04-18T14:39:56-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Google Play Games Plugin for Unity&colon; Tips & Tricks</title>
+   <link href="//google-play-games-plugin-for-unity-tips-and-tricks/"/>
+   <updated>2020-04-18T00:00:00-03:00</updated>
+   <id>//google-play-games-plugin-for-unity-tips-and-tricks</id>
+   <content type="html">&lt;p&gt;In this post I will list some tips and tricks that I learned while using the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Google Play Games Plugin for Unity&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The Unity3D has a code interface for questions regarding social features in games, these interfaces are called &lt;a href=&quot;https://docs.unity3d.com/Manual/net-SocialAPI.html&quot;&gt;Social API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It provides a unified interface to different social back-ends, such as GameCenter, and is meant to be used primarily by programmers on the game project.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When you use it on a real platform, you will need to use some plugin that implement those interfaces, in the case of Android this job is done by the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Google Play Games Plugin for Unity&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;configuring-the-game-on-google-play-console&quot;&gt;Configuring the game on Google Play Console&lt;/h2&gt;
+&lt;p&gt;First of all you need to create the game on &lt;a href=&quot;https://play.google.com/publish&quot;&gt;Google Play Console&lt;/a&gt; as any other game and make an app release (an &lt;code class=&quot;highlighter-rouge&quot;&gt;Internal test track&lt;/code&gt; already works).&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Services &amp;amp; APIS&lt;/code&gt; menu, after enter on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Google Play game services&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fill only the required information for test, then go to menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Linked apps&lt;/code&gt; and link it to your game on with the app on Google Play Console.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-some-achievements-for-test&quot;&gt;Creating some achievements for test&lt;/h2&gt;
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Game services section&lt;/code&gt; open the &lt;code class=&quot;highlighter-rouge&quot;&gt;Achievements&lt;/code&gt; menu and add some achievements.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-the-plugin&quot;&gt;Installing the plugin&lt;/h2&gt;
+&lt;p&gt;To install the &lt;code class=&quot;highlighter-rouge&quot;&gt;Google Play Games Plugin for Unity&lt;/code&gt;, you should follow the steps in &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity#plugin-installation&quot;&gt;Plugin Installation&lt;/a&gt; and &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity#android-setup&quot;&gt;Android Setup&lt;/a&gt; sections.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;oauth-and-upload-certificate&quot;&gt;OAuth and Upload Certificate&lt;/h2&gt;
+&lt;p&gt;One thing can be a little confusing is about the certificate fingerprints.&lt;/p&gt;
+
+&lt;p&gt;Go to &lt;a href=&quot;https://play.google.com/publish&quot;&gt;Google Play Console&lt;/a&gt; on &lt;code class=&quot;highlighter-rouge&quot;&gt;App Signing&lt;/code&gt;section and use the option &lt;code class=&quot;highlighter-rouge&quot;&gt;App Signing by Google Play&lt;/code&gt;&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you need to copy your &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1&lt;/code&gt; fingerprint of your &lt;code class=&quot;highlighter-rouge&quot;&gt;Upload certificate&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;App signing&lt;/code&gt; section.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then go to your OAuth credentials on &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API console&lt;/a&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;the Google API console&lt;/code&gt;, select your game on the top dropdown, then go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; menu and edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt;. Paste the fingertip on the field &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt; and save it.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;remember to remove the &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1&lt;/code&gt; prefix, if you copied it together.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;testing-on-android&quot;&gt;Testing on Android&lt;/h2&gt;
+&lt;p&gt;Now we have the basic setup done, we need to write some code to test it on an Android device:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/c8bff996de4473c201f010b17d42fd2b.js?file=AchievementsController.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Add the script above to a game object in the scene, build and run the game on a Android device.&lt;/p&gt;
+
+&lt;p&gt;If everything was done correctly, you should see a screen like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/conclusion.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;With this basic setup you can start to use the other features from Google Play Games Plugin for Unity plugin, as:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;unlock/reveal/increment achievement&lt;/li&gt;
+  &lt;li&gt;post score to leaderboard&lt;/li&gt;
+  &lt;li&gt;cloud save read/write&lt;/li&gt;
+  &lt;li&gt;show built-in achievement/leaderboards UI&lt;/li&gt;
+  &lt;li&gt;events&lt;/li&gt;
+  &lt;li&gt;video recording of gameplay&lt;/li&gt;
+  &lt;li&gt;nearby connections&lt;/li&gt;
+  &lt;li&gt;turn-based multiplayer&lt;/li&gt;
+  &lt;li&gt;real-time multiplayer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learn more about then on &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;plugin GitHub page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;extra-tips-and-tricks&quot;&gt;Extra tips and tricks&lt;/h2&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/extra-tips-tricks.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;Below a list of tips and tricks for non-common scenarios.&lt;/p&gt;
+
+&lt;h3 id=&quot;log-on-device&quot;&gt;Log on device&lt;/h3&gt;
+&lt;p&gt;If anything goes wrong on Android device you will need to see it logs, to do so, you can use adb logcat:&lt;/p&gt;
+
+&lt;p&gt;On MacOS, this shell do the job:&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /usr/local/Caskroom/android-platform-tools/29.0.5/platform-tools/
+
+./adb logcat &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; Unity PackageManager dalvikvm DEBUG
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;If you are using a different version of Android Platform Tools you will need to change the &lt;code class=&quot;highlighter-rouge&quot;&gt;29.0.5&lt;/code&gt; version.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;assembly-definition&quot;&gt;Assembly definition&lt;/h3&gt;
+&lt;p&gt;If your game is using &lt;a href=&quot;https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html&quot;&gt;Assembly Definition&lt;/a&gt; you will need this step.&lt;/p&gt;
+
+&lt;p&gt;The plugin code come without any assembly definition, so to use in our code you will need to create two assembly definitions to the plugin:&lt;/p&gt;
+
+&lt;p&gt;Go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/GooglePlayGames&lt;/code&gt; folder and create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Assembly Definition&lt;/code&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;GooglePlayGames&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/GooglePlayGames/Editor&lt;/code&gt; folder and create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Assembly Definition&lt;/code&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;GooglePlayGames.Editor&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor.png &quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, go to your game assembly definition and add a reference to the &lt;code class=&quot;highlighter-rouge&quot;&gt;GooglePlayGames&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;After this, if you receive some compilation error about &lt;code class=&quot;highlighter-rouge&quot;&gt;BasicApi.Nearby&lt;/code&gt; namespace, just close and open Unity again.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;exception-class-not-found-comgoogleandroidgmsgamesgames&quot;&gt;Exception class not found com.google.android.gms.games.Games&lt;/h3&gt;
+&lt;p&gt;If you see the the log message above on the adb logcat, you need to check on Unity &lt;code class=&quot;highlighter-rouge&quot;&gt;Player Settings / Publishing Settings&lt;/code&gt; if the minify settings are set up correctly as describe here: &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity/blob/master/README.md#play-games-services-proguard-configuration&quot;&gt;Play Games Services Proguard configuration&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Unity and Game Development links (Aug 5th 2019)</title>
@@ -156,8 +317,7 @@
 
 &lt;p&gt;Download the full &lt;a href=&quot;https://gist.github.com/giacomelli/ad9d4dcdb702d2d1edf0663628ca9608&quot;&gt;gist&lt;/a&gt; or use the &lt;a href=&quot;/unitytips-gist-importer&quot;&gt;Gist Importer&lt;/a&gt; to import the complete &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene Preview Window&lt;/code&gt; for your project.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/ad9d4dcdb702d2d1edf0663628ca9608.js?file=ScenePreviewWindow.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -222,8 +382,7 @@
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/a73c947508ee0b32eef7c422620ec6b6.js?file=HierarchyWindowGameObjectIcon.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -301,8 +460,7 @@
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/096005d0d0df79b94321f950138220a3.js?file=HierarchyWindowLayerInfo.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -447,8 +605,7 @@ You can easily make objects move along these paths, or use them as a guide for s
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/9a248eecf5c1ffc477b59524f63264d3.js&quot;&gt; &lt;/script&gt;
 
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;All Gists are imported to folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Gists&lt;/code&gt;&lt;/p&gt;
@@ -526,8 +683,7 @@ You can easily make objects move along these paths, or use them as a guide for s
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bb6a9932e5f49a072c57a7c17135bf6b.js?file=HierarchyWindowGroupHeader.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -556,8 +712,7 @@ You can easily make objects move along these paths, or use them as a guide for s
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/35410d682e41a504c7869a464a96c30a.js?file=HierarchyWindowGroupHeader.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -633,8 +788,7 @@ You can easily make objects move along these paths, or use them as a guide for s
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/3c05b37b9af2ec6cfef0db58a2e5e3a7.js?file=TransformContextMenu.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -748,8 +902,7 @@ You can easily make objects move along these paths, or use them as a guide for s
 &lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
 &lt;p&gt;To setup the &lt;code class=&quot;highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/7324d63679c11529e1710a5470d9ee7f&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/7324d63679c11529e1710a5470d9ee7f.js?file=Easing2CurveEditorWindow.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -1208,8 +1361,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/141742c3175476f03ca2437c7b35fd88.js?file=SortingLayerDebugger.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -1576,8 +1728,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a “Editor” folder.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/f74a23107fe862ae7501002ac856f932.js?file=ScenePreview.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -1627,8 +1778,7 @@ These techniques allowing us to use already existent animations and combine them
 
 &lt;h1 id=&quot;botcontroller&quot;&gt;BotController&lt;/h1&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;
 
 </content>

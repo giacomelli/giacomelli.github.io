@@ -203,16 +203,14 @@ div.gist-meta { display:none; }
 <p>To represent the cities route each gene of our chromosome will represent an index of a city in the route.</p>
 
 <p>Create a C# script called “TspChromosome.cs”:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspChromosome.cs"> </script>
 
 <h2 id="representing-a-city">Representing a city</h2>
 <p>The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.</p>
 
 <p>Create a C# script called “City.cs”:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=City.cs"> </script>
 
 <h2 id="the-fitness-function">The fitness function</h2>
@@ -220,14 +218,12 @@ div.gist-meta { display:none; }
 
 <p>Our fitness function will evaluate the TspChromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.</p>
 
-<p>Create a C# script called “TspFitness.cs”: <noscript>&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;</noscript><script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspFitness.cs"> </script></p>
+<p>Create a C# script called “TspFitness.cs”: <noscript>&lt;pre&gt;400: Invalid request&lt;/pre&gt;</noscript><script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspFitness.cs"> </script></p>
 
 <h2 id="running-the-genetic-algorithm">Running the Genetic Algorithm</h2>
 <p>In this step we need to configure our genetic algorithm using the TspChromosome, TspFitness and some classic GA operators already built in GeneticSharp.</p>
 
-<p>Create a C# script called “GAController.cs”: <noscript>&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;</noscript><script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.v1.cs"> </script></p>
+<p>Create a C# script called “GAController.cs”: <noscript>&lt;pre&gt;400: Invalid request&lt;/pre&gt;</noscript><script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.v1.cs"> </script></p>
 
 <p>Create a GameObject called “GAController” in the scene and add the GAController.cs to it.</p>
 
@@ -257,18 +253,15 @@ We need to create a visual representation to the cities.</p>
 
 <h3 id="instantiating-the-cities-prefabs">Instantiating the cities prefabs</h3>
 <p>Add the following field to the GAController.cs</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change1.cs"> </script>
 
 <p>Then, create the method DrawCities:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change2.cs"> </script>
 
 <p>And then call it from Start method:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change3.cs"> </script>
 
 <p>Now, select the GAController game object on hierarchy and set the CityPrefab property.</p>
@@ -289,18 +282,15 @@ We need to create a visual representation to the cities.</p>
 <p>One of the simplest ways to draw some lines in Unity3D is using the LineRenderer component.</p>
 
 <p>Add the following code to the GAController.cs:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change4.cs"> </script>
 
 <p>Create the method DrawRoute:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change5.cs"> </script>
 
 <p>Then call it from Update method:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change6.cs"> </script>
 
 <p>Before run the scene, we need to add a LineRenderer component to our GAController game object.</p>
@@ -318,15 +308,13 @@ We need to create a visual representation to the cities.</p>
 <p>Our sample could be considered done, but would it be nice if we you could change the cities positions while the genetic algorithm are running and see how it manages these cities positions changes.</p>
 
 <h3 id="citycontroller">CityController</h3>
-<p>Create a C# script called “CityController.cs”: <noscript>&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;</noscript><script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=CityController.cs"> </script>
+<p>Create a C# script called “CityController.cs”: <noscript>&lt;pre&gt;400: Invalid request&lt;/pre&gt;</noscript><script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=CityController.cs"> </script>
 I won’t getting in details about how this is script works, but it’s allow the user to drag the cities’ pin using the mouse or the finger touch if build it to mobile.</p>
 
 <p>Add the CityController.cs to the CityPrefab.</p>
 
 <p>Change the GAController.cs script adding the line below to the end of the for loop of DrawCities method:</p>
-<noscript><pre>400: Invalid request
-</pre></noscript>
+<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change7.cs"> </script>
 
 <p>Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.</p>
