@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-04-18T14:55:28-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Google Play Games Plugin for Unity&amp;amp;colon; Tips &amp;amp; Tricks</title><link href="http://diegogiacomelli.com.br/google-play-games-plugin-for-unity-tips-and-tricks/" rel="alternate" type="text/html" title="Google Play Games Plugin for Unity&amp;colon; Tips &amp; Tricks" /><published>2020-04-18T00:00:00-03:00</published><updated>2020-04-18T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/google-play-games-plugin-for-unity-tips-and-tricks</id><content type="html" xml:base="http://diegogiacomelli.com.br/google-play-games-plugin-for-unity-tips-and-tricks/">&lt;p&gt;In this post I will list some tips and tricks that I learned while using the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Google Play Games Plugin for Unity&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-04-21T08:20:12-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; TimeSpan Box Drawer</title><link href="http://diegogiacomelli.com.br/unitytips-timespan-box-drawer/" rel="alternate" type="text/html" title="unitytips&amp;colon; TimeSpan Box Drawer" /><published>2020-04-21T00:00:00-03:00</published><updated>2020-04-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-timespan-box-drawer</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-timespan-box-drawer/">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyDrawer.html&quot;&gt;PropertyDrawer&lt;/a&gt; to display a help box on inspector showing the time information in seconds fields using &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-timespan-format-strings&quot;&gt;TimeSpan format strings&lt;/a&gt;:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxAttribute.cs&quot;&gt; &lt;/script&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxDrawer.cs&quot;&gt; &lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxDrawerUsage.cs&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="property-drawer" /><summary type="html">You can create a PropertyDrawer to display a help box on inspector showing the time information in seconds fields using TimeSpan format strings:</summary></entry><entry><title type="html">Google Play Games Plugin for Unity&amp;amp;colon; Tips &amp;amp; Tricks</title><link href="http://diegogiacomelli.com.br/google-play-games-plugin-for-unity-tips-and-tricks/" rel="alternate" type="text/html" title="Google Play Games Plugin for Unity&amp;colon; Tips &amp; Tricks" /><published>2020-04-18T00:00:00-03:00</published><updated>2020-04-18T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/google-play-games-plugin-for-unity-tips-and-tricks</id><content type="html" xml:base="http://diegogiacomelli.com.br/google-play-games-plugin-for-unity-tips-and-tricks/">&lt;p&gt;In this post I will list some tips and tricks that I learned while using the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Google Play Games Plugin for Unity&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;The Unity3D has a code interface for questions regarding social features in games, these interfaces are called &lt;a href=&quot;https://docs.unity3d.com/Manual/net-SocialAPI.html&quot;&gt;Social API&lt;/a&gt;.&lt;/p&gt;
@@ -388,58 +410,4 @@
         $(document).ready(function() {
           $('.gist-meta').remove();
         });
-      &lt;/script&gt;</content><author><name></name></author><category term="dotnet" /><category term="t4-template" /><category term="nuget" /><summary type="html">In this post I will show how to deploy a T4 Template to a target project using a NuGet package built with dotnet CLI pack command. Introduction</summary></entry><entry><title type="html">Unity and Game Development links (Aug 5th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (Aug 5th 2019)" /><published>2019-08-05T00:00:00-03:00</published><updated>2019-08-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-aug-5th-2019/">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Phi Dinh&lt;/strong&gt; remembered a Twitter moment with tips and tutorials about the shaders used on Recompile. (&lt;a href=&quot;https://twitter.com/i/moments/1122251136239570947&quot;&gt;Recompile Unity Tips and Tutorials&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Thomas Krogh-Jacobsen&lt;/strong&gt; wrote a blog post about Unity 2019.2 release. This version has more than 170 new features. (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/30/heres-whats-in-the-brand-new-unity-2019-2&quot;&gt;Here’s what’s in the brand-new Unity 2019.2&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;Screen.cutouts for iOS/Android, Burst Compiler updates, TypeCache API in Editor code, PhysX Cloth Solver update, DSPGraph audio mixing/rendering engine, Intel® VTune™ Amplifier support, IDE support moving to packages, .NET 4.x is now default and Incremental Garbage Collection.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Sykoo&lt;/strong&gt; made a video about Unity 2019.2 features too (&lt;a href=&quot;https://www.youtube.com/watch?v=qoERAtLGq-8&quot;&gt;Unity 2019.2 is now available!&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;
-        &lt;iframe src=&quot;https://www.youtube.com/embed/qoERAtLGq-8 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Andy Touch&lt;/strong&gt; created a Twitter thread about the different 2D Light Types available in Unity 2019.2 (&lt;a href=&quot;https://twitter.com/andytouch/status/1156204606562738176&quot;&gt;2D Light Types&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Dilmer Valecillos&lt;/strong&gt; made a video showing how to use low polly assets for VR (&lt;a href=&quot;https://www.youtube.com/watch?v=4SVUeuV6TpU&quot;&gt;Unity3d Oculus Quest Development - Adding A Low Poly Asset for VR Usage from the Asset Store&lt;/a&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Alex Lindman&lt;/strong&gt; wrote a blog post on custom lighting in Shader Graph (&lt;a href=&quot;https://blogs.unity3d.com/2019/07/31/custom-lighting-in-shader-graph-expanding-your-graphs-in-2019&quot;&gt;Custom Lighting in Shader Graph: Expanding your graphs in 2019&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;With the release of Unity Editor 2019.1, the Shader Graph package officially came out of preview! Now, in 2019.2, we’re bringing even more features and functionality to Shader Graph.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Kenney&lt;/strong&gt; has an incredible collection of free game assets that any game developer can use (&lt;a href=&quot;https://kenney.nl/assets&quot;&gt;Kenney Assets&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;License: (CC0 1.0 Universal) You’re free to use these game assets in any project, personal or commercial. There’s no need to ask permission before using these. Giving attribution is not required, but is greatly appreciated!&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Lindsay Cox&lt;/strong&gt; made a peformance test comparing single thead, TPL and C# Job System (&lt;a href=&quot;http://lindsaycox.co.uk/blog/unity/single-thread-vs-tasks-vs-unity-c-jobs-simple-performance-test/&quot;&gt;Single Thread Vs Tasks Vs Unity C# Jobs – Simple Performance Test&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;In conclusion then, based on the above tests, if you are going to crunch through work without the Burst Compiler, maybe look at using something like Tasks first before opting for Jobs. If you are going to use the Burst Compiler, use the Job System.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Kristin Stock&lt;/strong&gt; made a video on procedurally generated low-poly planets (&lt;a href=&quot;https://www.youtube.com/watch?v=2FfzEdALOGQ&quot;&gt;Procedurally Generated Low-Poly Planets in Unity&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;
-        &lt;iframe src=&quot;https://www.youtube.com/embed/2FfzEdALOGQ &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-      &lt;/center&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Eduardo Oriz and Mike Geig&lt;/strong&gt; wrote a blog post about how to set up your Unity project for retro 16-bit games (&lt;a href=&quot;https://blogs.unity3d.com/2019/08/02/2d-pixel-perfect-how-to-set-up-your-unity-project-for-retro-16-bit-games&quot;&gt;2D Pixel Perfect: How to set up your Unity project for retro 16-bit games&lt;/a&gt;).
-    &lt;blockquote&gt;
-      &lt;p&gt;In our first 2D Pixel Perfect guide for retro games, we showed you how to set up the 2D Pixel Perfect tool and how 8-bit graphics were made back in the day. In this post, we fast-forward to the 16-bit era. With the help of Mega Cat Studios, you’ll learn how to create authentic art for Sega Genesis (or Mega Drive) and Super NES-style games using Unity settings, graphics structures, and color palettes&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Unity&lt;/strong&gt; released the &lt;code class=&quot;highlighter-rouge&quot;&gt;ML-Agents Beta 0.9.0&lt;/code&gt; (&lt;a href=&quot;https://github.com/Unity-Technologies/ml-agents/releases/tag/0.9.0&quot;&gt;ML-Agents Beta 0.9.0&lt;/a&gt;)
-    &lt;blockquote&gt;
-      &lt;p&gt;Generative Adversarial Imitation Learning, pre-training for the PPO trainer, training generalized reinforcement learning agents, options for Nature and ResNet CNN architectures.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="unity3d" /><category term="gamedev" /><summary type="html"></summary></entry></feed>
+      &lt;/script&gt;</content><author><name></name></author><category term="dotnet" /><category term="t4-template" /><category term="nuget" /><summary type="html">In this post I will show how to deploy a T4 Template to a target project using a NuGet package built with dotnet CLI pack command. Introduction</summary></entry></feed>
