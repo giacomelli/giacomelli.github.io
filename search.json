@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "unitytips&amp;colon; Using ScriptableObject and EditorApplication.isPlaying to refresh the game view",
+      "category" : "Lab",
+      "tags"     : "unity3d, unitytips, gamedev, custom editor",
+      "url"      : "/unitytips-using-scriptableobject-and-editorapplication-isplaying-to-refresh-the-game-view/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "unitytips&amp;colon; TimeSpan Box Drawer",
       "category" : "Lab",
       "tags"     : "unity3d, unitytips, gamedev, property drawer",

@@ -3,11 +3,24 @@
  <title>Diego Giacomelli - custom-editor</title>
  <link href="//tags/custom-editor/index.xml" rel="self"/>
  <link href="/tag/custom-editor.html"/>
- <updated>2020-04-25T22:54:49-03:00</updated>
+ <updated>2020-04-28T09:40:00-03:00</updated>
  <id>/tag/custom-editor.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Using ScriptableObject and EditorApplication.isPlaying to refresh the game view</title>
+   <link href="//unitytips-using-scriptableobject-and-editorapplication-isplaying-to-refresh-the-game-view/"/>
+   <updated>2020-04-28T00:00:00-03:00</updated>
+   <id>//unitytips-using-scriptableobject-and-editorapplication-isplaying-to-refresh-the-game-view</id>
+   <content type="html">&lt;p&gt;You can use &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/EditorApplication-isPlaying.html&quot;&gt;EditorApplication.isPlaying&lt;/a&gt; in your custom editor to update the game view when a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/ScriptableObject.html&quot;&gt;ScriptableObject&lt;/a&gt; is updated and you need to restart the scene or do something more complex to see the result of ScriptableObject changed during the game’s playing in the editor.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/oM5-RJU6g2I &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Unity3D ScenePreview inspector</title>
