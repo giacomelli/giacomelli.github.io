@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "unitytips&amp;colon; Dynamic Log",
+      "category" : "Lab",
+      "tags"     : "unity3d, unitytips, gamedev, logging",
+      "url"      : "/unitytips-dynamic-log/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "unitytips&amp;colon; Using ScriptableObject and EditorApplication.isPlaying to refresh the game view",
       "category" : "Lab",
       "tags"     : "unity3d, unitytips, gamedev, custom editor",
