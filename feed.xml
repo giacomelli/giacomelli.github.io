@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-06-30T06:57:05-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; Dynamic Log</title><link href="http://diegogiacomelli.com.br/unitytips-dynamic-log/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Dynamic Log" /><published>2020-06-30T00:00:00-03:00</published><updated>2020-06-30T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-dynamic-log</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-dynamic-log/">&lt;p&gt;You can create a simple logging component to record logs from any UnityEvent and configure them directly in the editor:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-07-07T10:59:07-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; Social Share</title><link href="http://diegogiacomelli.com.br/unitytips-social-share/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Social Share" /><published>2020-07-07T00:00:00-03:00</published><updated>2020-07-07T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-social-share</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-social-share/">&lt;p&gt;Using &lt;a href=&quot;https://github.com/yasirkula&quot;&gt;Süleyman Yasir KULA&lt;/a&gt; &lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare&quot;&gt;Unity Native Share Plugin&lt;/a&gt; you can easily add native share to your Android/iOS games.&lt;/p&gt;
+
+&lt;p&gt;I made the gist below that uses the plugin to add a social share component to any game object.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/07/07/unitytips-social-share/component.jpg &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/c03ec79fa0f0def94726f4b6914b4769.js?file=SocialShare.cs&quot;&gt; &lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">Using Süleyman Yasir KULA Unity Native Share Plugin you can easily add native share to your Android/iOS games.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Dynamic Log</title><link href="http://diegogiacomelli.com.br/unitytips-dynamic-log/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Dynamic Log" /><published>2020-06-30T00:00:00-03:00</published><updated>2020-06-30T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-dynamic-log</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-dynamic-log/">&lt;p&gt;You can create a simple logging component to record logs from any UnityEvent and configure them directly in the editor:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/HHcZeWjV7vY &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -316,24 +333,4 @@
 &lt;p&gt;So you can use the expression body definition for other members, like properties:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
-      &lt;/center&gt;</content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="unitytips" /><category term="csharp" /><summary type="html">When you have a single line method, you can use expression body definition do simplify and reduce the lines of code:</summary></entry><entry><title type="html">Dapper and the NVARCHAR(4000) arguments</title><link href="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/" rel="alternate" type="text/html" title="Dapper and the NVARCHAR(4000) arguments" /><published>2019-08-14T00:00:00-03:00</published><updated>2019-08-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments</id><content type="html" xml:base="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/">&lt;p&gt;Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as &lt;code class=&quot;highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;This happen because Dapper cannot infer what is the exactly type and length of the table column on database.&lt;/p&gt;
-
-&lt;p&gt;The downside of the &lt;code class=&quot;highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt; in arguments is that the database can choose a bad execution plan for the query.&lt;/p&gt;
-
-&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
-
-&lt;p&gt;To avoid this you can pass the type of the argument to Dapper:&lt;/p&gt;
-
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample1.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;To make this solution easier to use I made two extension methods &lt;code class=&quot;highlighter-rouge&quot;&gt;ToVarChar&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ToNVarChar&lt;/code&gt;:&lt;/p&gt;
-
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample2.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h1 id=&quot;extension-methods&quot;&gt;Extension methods&lt;/h1&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=DapperArgumentExtensions.cs&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="Lab" /><category term="dotnet" /><category term="dapper" /><category term="sql" /><summary type="html">Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as NVARCHAR (4000).</summary></entry></feed>
+      &lt;/center&gt;</content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="unitytips" /><category term="csharp" /><summary type="html">When you have a single line method, you can use expression body definition do simplify and reduce the lines of code:</summary></entry></feed>
