@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "unitytips&amp;colon; SettingsProvider",
+      "category" : "Lab",
+      "tags"     : "unity3d, unitytips, gamedev, custom editor",
+      "url"      : "/unitytips-settings-provider/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "unitytips&amp;colon; HelpBox Attribute (with docs button)",
       "category" : "Lab",
       "tags"     : "unity3d, unitytips, gamedev, custom editor",
