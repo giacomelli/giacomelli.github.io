@@ -71,7 +71,7 @@
             card.find('#text').text(text);
             card.css('display', 'inline');
 
-            card.insertBefore($('#ad'));
+            $('.cards').append(card);
         }
 
         function addOSCard(result) {            
@@ -82,9 +82,9 @@
         }
 
         
-        function addDeviceCard(result) {            
-            if(result.device == undefined || result.device.type == null)
-                return;
+        function addDeviceCard(result) {       
+            if(result.device == undefined || result.device.type == null)                
+                result.device.type = 'Desktop'
                 
             var text = result.device.model == undefined ? result.device.type :  `${result.device.vendor} ${result.device.model}`;
             addCard('Dispositivo', result.device.type, text);            
@@ -133,13 +133,18 @@
                 screenshotButton.attr('disabled', 'disabled');
                 var mainContainer = document.getElementById("main-container");
                 var useHeight = $('#main-container').prop('scrollHeight');
-                
-                html2canvas(mainContainer, {scale: 1, scrollY: 0, height: useHeight }).then(canvas => {
+
+                var previousWidth = $('#main-container').css('width');
+                $('#main-container').css('width', '1200px');          
+
+                html2canvas(mainContainer, {scale: 1 }).then(canvas => {
                     var download = $("#download-screenshot-button");
                     download.attr('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
                     download.attr('download', 'meunavegador.png');
                     screenshotButton.css('display', 'none');
                     download.css('display', 'inline');
+                    
+                    $('#main-container').css('width', previousWidth);
                 });            
             });
         }
@@ -158,26 +163,26 @@
             <div class="row justify-content-md-center">     
                 <div class="col">
                     <h1>Meu navegador</h1>
-                    <button type="button" class="btn btn-primary" id="screenshot-button">Tirar print da tela</button>
-                    <a type="button" class="btn btn-success" id="download-screenshot-button">Download do print da tela</a>
+                    <button type="button" class="btn btn-primary" id="screenshot-button">Gerar imagem</button>
+                    <a type="button" class="btn btn-success" id="download-screenshot-button">Download da imagem</a>
                 </div>                                
             </div>                              
         </div>
 
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4531139417583317"
+            data-ad-slot="4101415088"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
         <div id="main-container" class="container">
             <div class="cards row justify-content-md-center">                               
-                <div id="ad" class="card col">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-4531139417583317"
-                        data-ad-slot="4101415088"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
+                
             </div>
 
             <div class="row justify-content-md-center footer">          
