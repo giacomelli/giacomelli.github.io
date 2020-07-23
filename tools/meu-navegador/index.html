@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt">
+    <head>        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script data-ad-client="ca-pub-4531139417583317" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="scripts/html2canvas.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/ua-parser-js@0/dist/ua-parser.min.js"></script>
+        <style>
+            .card {
+                margin: 10px;
+                padding: 10px;
+                min-width: 300px;
+                max-width: 400px;                
+            }
+            .card-title, .card-text {
+                text-align: center;
+            }
+
+            .copyright {
+                font-size: 10pt;
+                font-style: italic;
+                margin-top: 50pt;
+                margin-left: 10pt;
+            }
+            #download-screenshot-button {
+                display: none;
+            }
+            .btn {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <script>
+        $(function(){
+            var parser = new UAParser();    
+            var result = parser.getResult();            
+    
+            addOSCard(result);
+            addDeviceCard(result);
+            addBrowserCard(result);      
+            addConnectionCard(result);                  
+            addCard('Data/Hora', 'datetime', new Date());
+            addLanguageCard(result);
+
+            var screenshotButton = $('#screenshot-button'); 
+                       
+            screenshotButton.click(function() {
+                var mainContainer = document.getElementById("main-container");
+                var useHeight = $('#main-container').prop('scrollHeight');
+                
+                html2canvas(mainContainer, {scale: 1, scrollY: -window.scrollY, height: useHeight }).then(canvas => {
+                    var download = $("#download-screenshot-button");
+                    download.attr('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+                    download.attr('download', 'meunavegador.png');
+                    screenshotButton.css('display', 'none');
+                    download.css('display', 'inline');
+                });            
+            });
+        });
+
+        function addCard(title, img, text) {
+            var card = $('#template').clone();
+            card.attr('id', title);            
+            card.find('img').attr('src',  `assets/images/${img}.png`);
+            card.find('#title').text(title);
+            card.find('#text').text(text);
+            card.css('display', 'inline');
+
+            $('#main-container > .row').append(card);
+        }
+
+        function addOSCard(result) {            
+            if(result.os == undefined)
+                return;
+                
+            addCard('Sistema Operacional', result.os.name,  `${result.os.name} ${result.os.version}`);            
+        }
+
+        
+        function addDeviceCard(result) {            
+            if(result.device == undefined || result.device.type == null)
+                return;
+                
+            var text = result.device.model == undefined ? result.device.type :  `${result.device.vendor} ${result.device.model}`;
+            addCard('Dispositivo', result.device.type, text);            
+        }
+
+        function addBrowserCard(result) {            
+            if(result.browser == undefined)
+                return;
+                
+            addCard('Navegador', result.browser.name, `${result.browser.name} ${result.browser.version}`);
+        }
+        
+        function addConnectionCard(result) {            
+            if(navigator.connection == undefined)
+                return;
+                
+            addCard('Conexão', 'connection', `${navigator.connection.effectiveType} / ${navigator.connection.downlink} Mbps`);
+        }
+
+        function addLanguageCard(result) {            
+            if(navigator.language == undefined)
+                return;
+
+            var language = navigator.language;
+
+            switch(language)
+            {
+                case 'pt-BR':
+                    language = 'Português';
+                    break;
+
+                case 'en-US':
+                    language = 'Inglês';
+                    break;
+            }
+
+            addCard('Idioma', 'language', language);
+        }       
+    </script>
+    </head>
+    <body>        
+        <div id="template" class="card col" style="display: none;">
+            <img class="card-img-top" crossOrigin="anonymous" onerror="if (this.src != 'error.jpg') this.src = 'assets/images/unknow.png';">
+            <div class="card-body">
+            <h5 class="card-title" id='title'></h5>            
+            <p class="card-text" id='text'></p> 
+            </div>          
+        </div>
+
+        
+        <div id="main-container" class="container">
+            <div class="row justify-content-md-center">                               
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="screenshot-button">Tirar print da tela</button>
+            <a type="button" class="btn btn-success" id="download-screenshot-button">Download do print da tela</a>
+        </div>        
+        
+        <div class="copyright">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </body>
+    </html>
