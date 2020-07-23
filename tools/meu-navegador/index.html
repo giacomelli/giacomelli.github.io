@@ -63,6 +63,9 @@
         });
 
         function addCard(title, img, text) {
+            if(img != undefined)
+                img = img.toLowerCase();
+
             var card = $('#template').clone();
             card.attr('id', title);            
             card.find('img').attr('src',  `assets/images/${img}.png`);
