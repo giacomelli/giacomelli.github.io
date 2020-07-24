@@ -94,7 +94,12 @@
             var text = result.device.type;
             
             if(result.device.model != undefined)
-                text += ` ${result.device.model}`;
+            {
+                if(text == 'Desktop')
+                    text += ` ${result.device.model}`;                    
+                else            
+                    text = result.device.model;                    
+            }
 
             if(result.cpu.architecture != undefined)
                 text += ` (${result.cpu.architecture})`;
@@ -130,6 +135,7 @@
                     break;
 
                 case 'en-US':
+                case 'en':
                     language = 'Inglês';
                     break;
             }
