@@ -2,6 +2,15 @@
 <html lang="pt">
     <head>        
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50922592-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-50922592-1');
+        </script>
         <script data-ad-client="ca-pub-4531139417583317" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -100,6 +109,9 @@
                 else            
                     text = result.device.model;                    
             }
+
+            if(result.device.vendor != undefined)
+                text = `${result.device.vendor} ${text}`; 
 
             if(result.cpu.architecture != undefined)
                 text += ` (${result.cpu.architecture})`;
