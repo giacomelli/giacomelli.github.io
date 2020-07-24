@@ -50,6 +50,7 @@
             var parser = new UAParser();    
             var result = parser.getResult();            
     
+            console.log(result);
             addOSCard(result);
             addDeviceCard(result);
             addBrowserCard(result);      
@@ -77,8 +78,12 @@
         function addOSCard(result) {            
             if(result.os == undefined)
                 return;
+
+            var text = result.os.name;
+            if(result.os.version != undefined)
+                text += ` ${result.os.version}`;
                 
-            addCard('Sistema Operacional', result.os.name,  `${result.os.name} ${result.os.version}`);            
+            addCard('Sistema Operacional', result.os.name,  text);            
         }
 
         
@@ -86,7 +91,14 @@
             if(result.device == undefined || result.device.type == null)                
                 result.device.type = 'Desktop'
                 
-            var text = result.device.model == undefined ? result.device.type :  `${result.device.vendor} ${result.device.model}`;
+            var text = result.device.type;
+            
+            if(result.device.model != undefined)
+                text += ` ${result.device.model}`;
+
+            if(result.cpu.architecture != undefined)
+                text += ` (${result.cpu.architecture})`;
+
             addCard('Dispositivo', result.device.type, text);            
         }
 
