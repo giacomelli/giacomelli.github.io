@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-07-24T17:24:47-03:00</updated>
+ <updated>2020-07-25T17:31:44-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -64,7 +64,7 @@
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=SampleComponent.cs&quot;&gt; &lt;/script&gt;
-&lt;p&gt;t&lt;/p&gt;
+
 </content>
  </entry>
  
