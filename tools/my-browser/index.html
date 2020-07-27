@@ -2,7 +2,7 @@
 <html lang="pt">
     <head>        
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{{my-browser}}</title>
+        <title>My Browser</title>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50922592-1"></script>
         <script>
@@ -65,7 +65,7 @@
             addDeviceCard(result);
             addBrowserCard(result);      
             addConnectionCard(result);                  
-            addCard('{{datetime}}', 'datetime', new Date());
+            addCard('Date/Time', 'datetime', new Date());
             addLanguageCard(result);
 
             addScreenshotButton();
@@ -93,7 +93,7 @@
             if(result.os.version != undefined)
                 text += ` ${result.os.version}`;
                 
-            addCard('{{os}}', result.os.name,  text);            
+            addCard('OS', result.os.name,  text);            
         }
 
         
@@ -117,21 +117,21 @@
             if(result.cpu.architecture != undefined)
                 text += ` (${result.cpu.architecture})`;
 
-            addCard('{{device}}', result.device.type, text);            
+            addCard('Device', result.device.type, text);            
         }
 
         function addBrowserCard(result) {            
             if(result.browser == undefined)
                 return;
                 
-            addCard('{{browser}}', result.browser.name, `${result.browser.name} ${result.browser.version}`);
+            addCard('Browser', result.browser.name, `${result.browser.name} ${result.browser.version}`);
         }
         
         function addConnectionCard(result) {            
             if(navigator.connection == undefined)
                 return;
                 
-            addCard('{{connection}}', 'connection', `${navigator.connection.effectiveType} / ${navigator.connection.downlink} Mbps`);
+            addCard('Connection', 'connection', `${navigator.connection.effectiveType} / ${navigator.connection.downlink} Mbps`);
         }
 
         function addLanguageCard(result) {            
@@ -144,23 +144,23 @@
             {
                 case 'pt-BR':
                 case 'pt':
-                    language = '{{portuguese}}';
+                    language = 'Portuguese';
                     break;
 
                 case 'en-US':
                 case 'en':
-                    language = '{{english}}';
+                    language = 'English';
                     break;
             }
 
-            addCard('{{language}}', 'language', language);
+            addCard('Language', 'language', language);
         }       
 
         function addScreenshotButton() {
             var screenshotButton = $('#screenshot-button'); 
                        
             screenshotButton.click(function() {
-                screenshotButton.text("{{wait-msg}}");
+                screenshotButton.text("Wait...");
                 screenshotButton.attr('disabled', 'disabled');
                 var mainContainer = document.getElementById("main-container");
                 var useHeight = $('#main-container').prop('scrollHeight');
@@ -171,7 +171,7 @@
                 html2canvas(mainContainer, {scale: 1 }).then(canvas => {
                     var download = $("#download-screenshot-button");
                     download.attr('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
-                    download.attr('download', '{{image-name}}.png');
+                    download.attr('download', 'mybrowser.png');
                     screenshotButton.css('display', 'none');
                     download.css('display', 'inline');
                     
@@ -193,9 +193,9 @@
         <div class="container">
             <div class="row justify-content-md-center">     
                 <div class="col">
-                    <h1>{{my-browser}}</h1>
-                    <button type="button" class="btn btn-primary" id="screenshot-button">{{generate-image}}</button>
-                    <a type="button" class="btn btn-success" id="download-screenshot-button">{{download-image}}</a>
+                    <h1>My Browser</h1>
+                    <button type="button" class="btn btn-primary" id="screenshot-button">Generate image</button>
+                    <a type="button" class="btn btn-success" id="download-screenshot-button">Download image</a>
                 </div>                                
             </div>                              
         </div>
@@ -224,7 +224,7 @@
             </div>
 
             <div class="row justify-content-md-center footer">          
-                {{my-browser}} - {{my-browser-url}} 
+                My Browser - http://diegogiacomelli.com.br/tools/my-browser 
             </div>
         </div>
         
