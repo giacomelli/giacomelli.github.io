@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2020-07-27T14:42:07-03:00</updated>
+ <updated>2020-07-28T09:17:27-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -883,6 +883,9 @@ You can easily make objects move along these paths, or use them as a guide for s
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Any GameObject with name that starts with “—” will be considered a group header&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can set tag of the headers game objects as &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to avoid them on runtime&lt;/p&gt;
+&lt;/div&gt;
 </content>
  </entry>
  

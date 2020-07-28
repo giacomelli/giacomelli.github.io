@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-07-27T14:42:07-03:00</updated>
+ <updated>2020-07-28T09:17:27-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -972,6 +972,9 @@ Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; 
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Any GameObject with name that starts with “—” will be considered a group header&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can set tag of the headers game objects as &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to avoid them on runtime&lt;/p&gt;
+&lt;/div&gt;
 </content>
  </entry>
  
