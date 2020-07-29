@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - good-pratices</title>
  <link href="//tags/good-pratices/index.xml" rel="self"/>
  <link href="/tag/good-pratices.html"/>
- <updated>2020-07-28T10:25:45-03:00</updated>
+ <updated>2020-07-29T06:06:35-03:00</updated>
  <id>/tag/good-pratices.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -47,7 +47,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;
     &lt;ul&gt;
-      &lt;li&gt;/resource: creates a bunch of resources  (rarelly used).&lt;/li&gt;
+      &lt;li&gt;/resource: creates a new resource.&lt;/li&gt;
       &lt;li&gt;/resource/1: Not used.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
