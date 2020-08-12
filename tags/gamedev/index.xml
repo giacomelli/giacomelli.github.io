@@ -3,11 +3,34 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2020-08-12T06:58:33-03:00</updated>
+ <updated>2020-08-12T12:55:40-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Puzzimals&colon; Open beta</title>
+   <link href="//puzzimals-open-beta/"/>
+   <updated>2020-08-12T00:00:00-03:00</updated>
+   <id>//puzzimals-open-beta</id>
+   <content type="html">&lt;p&gt;After 4 months of work, I am finally starting the open beta of Puzzimals: &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&lt;/a&gt;&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/RmLcK4Z7EUY &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;cute-but-challenging&quot;&gt;Cute, but challenging!&lt;/h2&gt;
+
+&lt;p&gt;Don’t let the cute look or super fun animations fool you, Puzzimals is a cube-matching game challenging you to match identical tiles in 100 levels of thought-provoking puzzles in a world map.&lt;/p&gt;
+
+&lt;p&gt;Packed with features and creative puzzles you can combine cubes of ice, wild cards, bombs and so much more!&lt;/p&gt;
+
+&lt;p&gt;Each level unlocks and increases in difficulty and offers an almost infinite number of combos.&lt;/p&gt;
+
+&lt;p&gt;Fans of casual puzzle games will enjoy the crisp, colorful graphics featuring cute animals and the compelling music offers great relaxation.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; SettingsProvider</title>
