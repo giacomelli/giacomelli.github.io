@@ -1,4 +1,121 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-08-21T11:08:54-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Puzzimals&amp;amp;colon; Open beta</title><link href="http://diegogiacomelli.com.br/puzzimals-open-beta/" rel="alternate" type="text/html" title="Puzzimals&amp;amp;colon; Open beta" /><published>2020-08-12T00:00:00-03:00</published><updated>2020-08-12T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/puzzimals-open-beta</id><content type="html" xml:base="http://diegogiacomelli.com.br/puzzimals-open-beta/">&lt;p&gt;After 4 months of work, I am finally starting the open beta of Puzzimals: &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-08-21T11:49:28-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Drawing a Maurer Rose With Unity</title><link href="http://diegogiacomelli.com.br/drawing-a-maurer-rose-with-unity/" rel="alternate" type="text/html" title="Drawing a Maurer Rose With Unity" /><published>2020-08-21T00:00:00-03:00</published><updated>2020-08-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/drawing-a-maurer-rose-with-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/drawing-a-maurer-rose-with-unity/">&lt;p&gt;In this tutorial we will learn how to draw a &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Maurer Rose&lt;/a&gt; with a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/LineRenderer.html&quot;&gt;LineRenderer&lt;/a&gt; in Unity.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Recently, I was watching a video by [Daniel Shiffman] (https://twitter.com/shiffman) about Maurer Rose that inspired me to try it out at Unity.&lt;/p&gt;
+
+&lt;p&gt;Now you must be thinking “What the hell is a Maurer Rose?”, Well, I didn’t know it until I watched [that video] (https://youtu.be/4uU9lZ-HSqA).&lt;/p&gt;
+
+&lt;p&gt;Let’s see what Wikipedia says about:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A Maurer rose of the rose r = sin(nθ) consists of the 360 lines successively connecting the above 361 points. Thus a Maurer rose is a polygonal curve with vertices on a rose.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The following gif shows the evolution of a Maurer Rose (n = 2, d = 29°) from 1 point to 361 points.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;definition&quot;&gt;Definition&lt;/h1&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;A Maurer Rose is always defined by two input parameters: &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; represents the number of petals. The rose has n petals if n is odd, and 2n petals if n is even (look to the gif above, n = 2, then 4 petals).&lt;/li&gt;
+  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt; represents the angle in degrees for each line.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Let r = sin(nθ) be a rose in the polar coordinate system, where n is a positive integer.&lt;/p&gt;
+
+  &lt;p&gt;We then take 361 points on the rose:
+(sin(nk), k) (k = 0, d, 2d, 3d, …, 360d),
+where d is a positive integer and the angles are in degrees, not radians.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This definition talks about &lt;a href=&quot;https://en.wikipedia.org/wiki/Polar_coordinate_system&quot;&gt;polar coordinate system&lt;/a&gt;. The more important thing to know about it is this: &lt;code class=&quot;highlighter-rouge&quot;&gt;each point on a plane is determined by a distance from a reference point and an angle from a reference direction&lt;/code&gt;. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-formula&quot;&gt;The formula&lt;/h1&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/math.png &quot; style=&quot;max-height:200px&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;The basic formula is: &lt;code class=&quot;highlighter-rouge&quot;&gt;r = sin(nθ)&lt;/code&gt; and we need to apply it to 361 points, where:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;r = sin(n * (d * point))&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In C# the code is something like this:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/9dc5d4d408c00e92143827293a017936.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;We calculate the angle for each point, then we get the &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt; and find the &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt; for the second point on the polar coordinate system.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Mathf.PI / 180f&lt;/code&gt; is to convert from degrees to radians to work properly with the Mathf functions.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;maurerroselinerenderer&quot;&gt;MaurerRoseLineRenderer&lt;/h1&gt;
+&lt;p&gt;Now the complete code for a MonoBehaviour that takes the formula we saw in the previous section and combine it with a LineRenderer to draw the Maurer Rose.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/f4aba5c5d7cbeb396ca784dff150e194.js&quot;&gt; &lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;h1 id=&quot;using-the-maurerroselinerenderer&quot;&gt;Using the MaurerRoseLineRenderer&lt;/h1&gt;
+&lt;p&gt;To use it, just create a new GameObject and add the &lt;code class=&quot;highlighter-rouge&quot;&gt;MaurerRoseLineRenderer&lt;/code&gt; component to it.&lt;/p&gt;
+
+&lt;p&gt;If you just hit play button, you will see something like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Go to the LineRenderer component and change the line width to &lt;code class=&quot;highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h1&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/programmer.png &quot; style=&quot;max-height:200px&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;If you change the values of &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt; of the component in the inspector, you will see a new Maurer Rose been drawing.&lt;/p&gt;
+
+&lt;p&gt;The image below shows the result of 6 different inputs (the same inputs used on &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Wikipedia&lt;/a&gt;):&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h1&gt;
+&lt;center&gt;
+      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/beyond.png &quot; style=&quot;max-height:200px&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Now that you understand what is a Maurer Rose and how to code it inside Unity you can try to do some crazy things with it, like animate the input values or the number of points, or still using it to build a particle system.&lt;/p&gt;
+
+&lt;p&gt;Below I show my realtime try on this matter:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/apps/maurer-rose/index.html&quot; target=&quot;_blank&quot;&gt;Open in a new window&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&quot;/apps/maurer-rose/index.html&quot; style=&quot;width: 960px;height: 700px;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this tutorial, we learned how to draw a Maurer Rose with a LineRenderer.
+This simple formula show how math can be used to explore creativity and beauty.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The font used on the WebGL sample is from &lt;a href=&quot;http://kenney.nl&quot;&gt;Kenney&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="Tutorial" /><category term="unity3d" /><category term="gamedev" /><category term="math" /><category term="curves" /><summary type="html">In this tutorial we will learn how to draw a Maurer Rose with a LineRenderer in Unity.</summary></entry><entry><title type="html">Puzzimals&amp;amp;colon; Open beta</title><link href="http://diegogiacomelli.com.br/puzzimals-open-beta/" rel="alternate" type="text/html" title="Puzzimals&amp;amp;colon; Open beta" /><published>2020-08-12T00:00:00-03:00</published><updated>2020-08-12T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/puzzimals-open-beta</id><content type="html" xml:base="http://diegogiacomelli.com.br/puzzimals-open-beta/">&lt;p&gt;After 4 months of work, I am finally starting the open beta of Puzzimals: &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&lt;/a&gt;&lt;/p&gt;
 
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/RmLcK4Z7EUY &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -302,18 +419,4 @@
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=azure-pipelines.yml&quot;&gt; &lt;/script&gt;
 
 &lt;h1 id=&quot;extra-points&quot;&gt;Extra points&lt;/h1&gt;
-&lt;p&gt;In the approach described above the .sql files is not automatically applied to the database, so someone need to download, check and apply the file manually against the target database. If you want to apply the database script automatically you can change &lt;code class=&quot;highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task that generate the .sql file to update the target database using the &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15#publish-parameters-properties-and-sqlcmd-variables&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;action:publish&lt;/code&gt; option of sqlpackage.exe&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="Article" /><category term="dotnet" /><category term="azure" /><category term="azure-pipelines" /><category term="database" /><category term="continuous-integration" /><summary type="html">Recently I needed to automate the generation of a database script deploy from a SQL Server Database Project on our Azure Pipelines continuous integration. Below I will describe the steps to achieve such thing.</summary></entry><entry><title type="html">HarSharp 2.0.0. - .NET Core</title><link href="http://diegogiacomelli.com.br/harsharp-2.0.0-dotnet-core/" rel="alternate" type="text/html" title="HarSharp 2.0.0. - .NET Core" /><published>2019-09-30T00:00:00-03:00</published><updated>2019-09-30T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/harsharp-2.0.0-dotnet-core</id><content type="html" xml:base="http://diegogiacomelli.com.br/harsharp-2.0.0-dotnet-core/">&lt;p&gt;The HTTP Archive (HAR) format as defined in the W3C Specification is an archival format for HTTP transactions that can be used by a web browser to export detailed performance data about web pages it loads.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/harsharp&quot;&gt;HarSharp&lt;/a&gt; is a small and easy-to-use library to parse HAR files to .NET objects that I created some years ago for .NET Framework, today I released the version 2.0.0 with support to .NET Core / .NET Standard.&lt;/p&gt;
-
-&lt;p&gt;NuGet package:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;install-package HarSharp&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;More details at: &lt;a href=&quot;&quot;&gt;https://github.com/giacomelli/harsharp&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
-&lt;p&gt;I would like to thanks to &lt;a href=&quot;https://github.com/andrecosta-tw&quot;&gt;André Costa&lt;/a&gt; and &lt;a href=&quot;https://github.com/mmoreira2000&quot;&gt;mmoreira2000&lt;/a&gt; for made pull-requests for bug fixes and &lt;a href=&quot;https://github.com/Thoorium&quot;&gt;Olivier Beaudoin&lt;/a&gt; for contributing with the &lt;a href=&quot;https://github.com/giacomelli/HarSharp/pull/9&quot;&gt;support to .NET Core / .NET Standard&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="News" /><category term="harsharp" /><category term="dotnet" /><category term="release" /><summary type="html">The HTTP Archive (HAR) format as defined in the W3C Specification is an archival format for HTTP transactions that can be used by a web browser to export detailed performance data about web pages it loads.</summary></entry></feed>
+&lt;p&gt;In the approach described above the .sql files is not automatically applied to the database, so someone need to download, check and apply the file manually against the target database. If you want to apply the database script automatically you can change &lt;code class=&quot;highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task that generate the .sql file to update the target database using the &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15#publish-parameters-properties-and-sqlcmd-variables&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;action:publish&lt;/code&gt; option of sqlpackage.exe&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="Article" /><category term="dotnet" /><category term="azure" /><category term="azure-pipelines" /><category term="database" /><category term="continuous-integration" /><summary type="html">Recently I needed to automate the generation of a database script deploy from a SQL Server Database Project on our Azure Pipelines continuous integration. Below I will describe the steps to achieve such thing.</summary></entry></feed>
