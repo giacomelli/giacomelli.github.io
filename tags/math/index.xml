@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - math</title>
  <link href="//tags/math/index.xml" rel="self"/>
  <link href="/tag/math.html"/>
- <updated>2020-08-21T11:58:59-03:00</updated>
+ <updated>2020-08-21T12:09:23-03:00</updated>
  <id>/tag/math.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -17,9 +17,9 @@
    <content type="html">&lt;p&gt;In this tutorial we will learn how to draw a &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Maurer Rose&lt;/a&gt; with a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/LineRenderer.html&quot;&gt;LineRenderer&lt;/a&gt; in Unity.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Recently, I was watching a video by [Daniel Shiffman] (https://twitter.com/shiffman) about Maurer Rose that inspired me to try it out at Unity.&lt;/p&gt;
+&lt;p&gt;Recently, I was watching a video by &lt;a href=&quot;https://twitter.com/shiffman&quot;&gt;Daniel Shiffman&lt;/a&gt; about Maurer Rose that inspired me to try it out at Unity.&lt;/p&gt;
 
-&lt;p&gt;Now you must be thinking “What the hell is a Maurer Rose?”, Well, I didn’t know it until I watched [that video] (https://youtu.be/4uU9lZ-HSqA).&lt;/p&gt;
+&lt;p&gt;Now you must be thinking “What the hell is a Maurer Rose?”, Well, I didn’t know it until I watched &lt;a href=&quot;https://youtu.be/4uU9lZ-HSqA&quot;&gt;that video&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Let’s see what Wikipedia says about:&lt;/p&gt;
 
