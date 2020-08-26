@@ -4,6 +4,138 @@
     
     
     {
+      "title"    : "Kenney Jam 2020 entry&amp;colon; Curseings",
+      "category" : "Article",
+      "tags"     : "game jam, games, made with unity",
+      "url"      : "/keeney-jam-2020-entry-curseings/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Azure Pipelines - Generating DB Script with SqlPackage.exe",
+      "category" : "Article",
+      "tags"     : "dotnet, azure, azure pipelines, database, continuous integration",
+      "url"      : "/azure-pipelines-generating-db-script/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "unitytips&amp;colon; String interpolation",
+      "category" : "Article",
+      "tags"     : "unity3d, unitytips, csharp",
+      "url"      : "/unitytips-string-interpolation/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "unitytips&amp;colon; Expression body definition",
+      "category" : "Article",
+      "tags"     : "unity3d, unitytips, csharp",
+      "url"      : "/unitytips-expression-body-definition/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Developing Web APIs - Good Practices",
+      "category" : "Article",
+      "tags"     : "web api, good pratices",
+      "url"      : "/developing-web-apis-good-practices/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "GeneticSharp in the Wild&amp;colon; Design of a Warehouse Order Picking Policy",
+      "category" : "Article",
+      "tags"     : "geneticsharp, geneticsharp in the wild",
+      "url"      : "/geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "GeneticSharp in the Wild&amp;colon; Frixel",
+      "category" : "Article",
+      "tags"     : "geneticsharp, geneticsharp in the wild",
+      "url"      : "/geneticsharp-in-the-wild-frixel/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "GeneticSharp in the Wild&amp;colon; Context-Sensitive Code Completion",
+      "category" : "Article",
+      "tags"     : "geneticsharp, geneticsharp in the wild",
+      "url"      : "/geneticsharp-in-the-wild-context-sensitive-code-completion/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Evolution (or from prototype to game)",
+      "category" : "Article",
+      "tags"     : "gamedev, game design, motivation",
+      "url"      : "/evolution-or-from-prototype-to-game/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "GeneticSharp in the Wild&amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization",
+      "category" : "Article",
+      "tags"     : "geneticsharp, geneticsharp in the wild",
+      "url"      : "/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Publishing WebJobs with Azure Pipelines",
+      "category" : "Article",
+      "tags"     : "dotnet, azure, webjobs, azure pipelines, continuous integration",
+      "url"      : "/publishing-webjobs-with-azure-pipelines/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "jogosdaqui - um pouco de história, open source e colaboração (pt-BR)",
+      "category" : "Article",
+      "tags"     : "jogosdaqui, pt br, brasil",
+      "url"      : "/jogosdaqui-um-pouco-de-historia-open-source-e-colaboracao/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "GeneticSharp Car2D",
+      "category" : "Article",
+      "tags"     : "geneticsharp, unity3d, tsp, car2d, dotnet",
+      "url"      : "/GeneticSharp-Car2D/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Porting GeneticSharp to .NET Core",
+      "category" : "Article",
+      "tags"     : "geneticsharp, dotnet, release",
+      "url"      : "/porting-GeneticSharp-to-dotnet-core/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "DDD by quotes",
+      "category" : "Article",
+      "tags"     : "ddd, design patterns, book",
+      "url"      : "/ddd-by-quotes/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Why we should avoid DateTime.UtcNow inside a Linq to Entities query?",
+      "category" : "Article",
+      "tags"     : "dotnet, csharp, linq to entities, sql",
+      "url"      : "/why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query/",
+      "author"   : ""
+    } 
+     
+    ,
+  
+    
+    
+    {
       "title"    : "Drawing a Maurer Rose With Unity",
       "category" : "Tutorial",
       "tags"     : "unity3d, gamedev, math, curves",
@@ -592,130 +724,6 @@
       "category" : "Lab",
       "tags"     : "dosbox, javascript",
       "url"      : "/testing-js-dos/",
-      "author"   : ""
-    } 
-     
-    ,
-  
-    
-    
-    {
-      "title"    : "Azure Pipelines - Generating DB Script with SqlPackage.exe",
-      "category" : "Article",
-      "tags"     : "dotnet, azure, azure pipelines, database, continuous integration",
-      "url"      : "/azure-pipelines-generating-db-script/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "unitytips&amp;colon; String interpolation",
-      "category" : "Article",
-      "tags"     : "unity3d, unitytips, csharp",
-      "url"      : "/unitytips-string-interpolation/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "unitytips&amp;colon; Expression body definition",
-      "category" : "Article",
-      "tags"     : "unity3d, unitytips, csharp",
-      "url"      : "/unitytips-expression-body-definition/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "Developing Web APIs - Good Practices",
-      "category" : "Article",
-      "tags"     : "web api, good pratices",
-      "url"      : "/developing-web-apis-good-practices/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "GeneticSharp in the Wild&amp;colon; Design of a Warehouse Order Picking Policy",
-      "category" : "Article",
-      "tags"     : "geneticsharp, geneticsharp in the wild",
-      "url"      : "/geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "GeneticSharp in the Wild&amp;colon; Frixel",
-      "category" : "Article",
-      "tags"     : "geneticsharp, geneticsharp in the wild",
-      "url"      : "/geneticsharp-in-the-wild-frixel/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "GeneticSharp in the Wild&amp;colon; Context-Sensitive Code Completion",
-      "category" : "Article",
-      "tags"     : "geneticsharp, geneticsharp in the wild",
-      "url"      : "/geneticsharp-in-the-wild-context-sensitive-code-completion/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "Evolution (or from prototype to game)",
-      "category" : "Article",
-      "tags"     : "gamedev, game design, motivation",
-      "url"      : "/evolution-or-from-prototype-to-game/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "GeneticSharp in the Wild&amp;colon; AeroVision - Aircraft Trajectories Optimization and Visualization",
-      "category" : "Article",
-      "tags"     : "geneticsharp, geneticsharp in the wild",
-      "url"      : "/geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "Publishing WebJobs with Azure Pipelines",
-      "category" : "Article",
-      "tags"     : "dotnet, azure, webjobs, azure pipelines, continuous integration",
-      "url"      : "/publishing-webjobs-with-azure-pipelines/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "jogosdaqui - um pouco de história, open source e colaboração (pt-BR)",
-      "category" : "Article",
-      "tags"     : "jogosdaqui, pt br, brasil",
-      "url"      : "/jogosdaqui-um-pouco-de-historia-open-source-e-colaboracao/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "GeneticSharp Car2D",
-      "category" : "Article",
-      "tags"     : "geneticsharp, unity3d, tsp, car2d, dotnet",
-      "url"      : "/GeneticSharp-Car2D/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "Porting GeneticSharp to .NET Core",
-      "category" : "Article",
-      "tags"     : "geneticsharp, dotnet, release",
-      "url"      : "/porting-GeneticSharp-to-dotnet-core/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "DDD by quotes",
-      "category" : "Article",
-      "tags"     : "ddd, design patterns, book",
-      "url"      : "/ddd-by-quotes/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "Why we should avoid DateTime.UtcNow inside a Linq to Entities query?",
-      "category" : "Article",
-      "tags"     : "dotnet, csharp, linq to entities, sql",
-      "url"      : "/why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query/",
       "author"   : ""
     } 
      
