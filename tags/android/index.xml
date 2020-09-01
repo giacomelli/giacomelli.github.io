@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - android</title>
  <link href="//tags/android/index.xml" rel="self"/>
  <link href="/tag/android.html"/>
- <updated>2020-09-01T12:46:42-03:00</updated>
+ <updated>2020-09-01T12:55:16-03:00</updated>
  <id>/tag/android.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -14,7 +14,7 @@
    <link href="//unity-distribution-portal-udp-journey-tips-and-tricks/"/>
    <updated>2020-09-01T00:00:00-03:00</updated>
    <id>//unity-distribution-portal-udp-journey-tips-and-tricks</id>
-   <content type="html">&lt;p&gt;In this post, I will list some tips and tricks that I learned in my journey using the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Unity Distribution Portal (UDP)&lt;/a&gt; to publish my game &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt; to 4 new stores, reaching millions new users, with a single build.&lt;/p&gt;
+   <content type="html">&lt;p&gt;In this post, I will list some tips and tricks that I learned in my journey using the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Unity Distribution Portal (UDP)&lt;/a&gt; to publish my game &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt; to 4 new stores, reaching millions of new users, with a single build.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Unity has recently &lt;a href=&quot;https://blogs.unity3d.com/2020/08/28/unlock-access-to-over-a-billion-new-players-for-your-android-mobile-game/&quot;&gt;launch to everyone the Unity Distribution Portal (UDP)&lt;/a&gt; a platform that enable Unity developers to distribute Android games beyond Google Play, into stores like Samsung Galaxy Store, ONE Store, Mi GetApps, HUAWEI AppGallery, QooApp Game Store, SHAREit Game Store, TPAY MOBILE Stores, APPTUTTI, and VIVEPORT.&lt;/p&gt;
