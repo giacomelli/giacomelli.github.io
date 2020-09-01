@@ -3,11 +3,231 @@
  <title>Diego Giacomelli - android</title>
  <link href="//tags/android/index.xml" rel="self"/>
  <link href="/tag/android.html"/>
- <updated>2020-08-26T16:49:06-03:00</updated>
+ <updated>2020-09-01T12:46:42-03:00</updated>
  <id>/tag/android.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Unity Distribution Portal (UDP) Journey&colon; Tips & Tricks</title>
+   <link href="//unity-distribution-portal-udp-journey-tips-and-tricks/"/>
+   <updated>2020-09-01T00:00:00-03:00</updated>
+   <id>//unity-distribution-portal-udp-journey-tips-and-tricks</id>
+   <content type="html">&lt;p&gt;In this post, I will list some tips and tricks that I learned in my journey using the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Unity Distribution Portal (UDP)&lt;/a&gt; to publish my game &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt; to 4 new stores, reaching millions new users, with a single build.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Unity has recently &lt;a href=&quot;https://blogs.unity3d.com/2020/08/28/unlock-access-to-over-a-billion-new-players-for-your-android-mobile-game/&quot;&gt;launch to everyone the Unity Distribution Portal (UDP)&lt;/a&gt; a platform that enable Unity developers to distribute Android games beyond Google Play, into stores like Samsung Galaxy Store, ONE Store, Mi GetApps, HUAWEI AppGallery, QooApp Game Store, SHAREit Game Store, TPAY MOBILE Stores, APPTUTTI, and VIVEPORT.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The Unity Distribution Portal was created to help make publishing mobile games on alternative app stores faster and easier for developers. When you submit your game, UDP automatically creates specific builds with all required SDKs in the background, saving you a substantial amount of time when publishing to multiple stores.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Unity Distribution Portal (UDP) lets you distribute your games to multiple app stores through a single hub. UDP repacks your Android build with each store’s dedicated In-App Purchase SDK. You can manage all your store submissions from the UDP console.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This post is focused on games that have IAP and use Google Play Services, like leaderboards and achievements.
+If your game does not have any of these features, publish to UDP is quite a more straightforward process and probably these tips here won’t be useful for you.&lt;/p&gt;
+
+&lt;h2 id=&quot;available-stores&quot;&gt;Available Stores&lt;/h2&gt;
+&lt;p&gt;As I write this post Unity is working to add even more stores to UDP.
+From the 9 stores supported, 7 are fully integrated with UDP. What this meaning? You just need to create your account on each store, via UDP (in some cases fill some forms and send some ID and bank docs), and UDP will perform all the steps need to make your game available on the store.&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;Is not the intent of this post cover everything about how to publish your game using UDP, I guess this quite well documented on &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.purchasing.udp@2.0/manual/index.html&quot;&gt;UDP package documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The idea of this post is to point out some tips and tricks that can help you, as helped me, to understand how to use UDP.&lt;/p&gt;
+
+&lt;h2 id=&quot;read-the-docs&quot;&gt;Read the docs&lt;/h2&gt;
+&lt;p&gt;Please, if you did not read the official documentation yet, go and &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.purchasing.udp@2.0/manual/index.html&quot;&gt;read it&lt;/a&gt;, then come back here. You’ll better understand this post and the whole UDP solution after educated yourself about it.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;1-implement&quot;&gt;1. Implement&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;What docs says: Set up and configure UDP in the Unity Editor, implement UDP in your game project, and populate your IAP Catalog with your in-app purchase products (if any).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;11-create-a-new-game-on-udp&quot;&gt;1.1 Create a new game on UDP&lt;/h3&gt;
+&lt;p&gt;Go to the UDP dashboard and just create a new game. 
+At this moment just set the game tile.&lt;/p&gt;
+
+&lt;h3 id=&quot;12-iap-and-target-udp&quot;&gt;1.2 IAP and Target UDP&lt;/h3&gt;
+&lt;p&gt;There is two way to use UDP on your project: using the UDP package or using the Unity IAP.
+In my case, I was using IAP already in the project.&lt;/p&gt;
+
+&lt;p&gt;This tip is in the official &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.purchasing.udp@2.0/manual/games-with-iap.html&quot;&gt;documentation&lt;/a&gt;, but would like to reinforce it:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In the Unity Editor, to choose UDP as the Android build target, select Window &amp;gt; Unity IAP &amp;gt; Android &amp;gt; Target Unity Distribution Portal (UDP).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You’ll need this when you build to UDP and remember to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Target Google Play&lt;/code&gt; when you build to Google Play.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-build--deploy&quot;&gt;2. Build &amp;amp; deploy&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;What docs says: Build your UDP Android package (apk), test it in the UDP Sandbox environment, and deploy it to the UDP console where you’ll begin preparing your game for submission to the stores.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;21-sandbox-environment-test&quot;&gt;2.1 Sandbox environment test&lt;/h3&gt;
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Sandbox Testing&lt;/code&gt; section of your game page on UDP, you will find some instructions on how to test your game on the UDP sandbox.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You will need to do this before repacking your game for the stores.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Just build your &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; on Unity and open it on emulator (like &lt;a href=&quot;https://www.bluestacks.com/&quot;&gt;BlueStacks&lt;/a&gt;) or directly on your Android device.
+If you setup UDP right, you should see a screen like below when the game starts.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;To login in this screen, use the accounts in the setup on &lt;code class=&quot;highlighter-rouge&quot;&gt;Sandbox Test Account&lt;/code&gt;. Remember those e-mails don’t need to exist, they are just test accounts to validate UDP setup&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Perform the login on the UDP sandbox and test your IAP.&lt;/p&gt;
+
+&lt;p&gt;After this, you can refresh your game page on UDP and you should see the result below on &lt;code class=&quot;highlighter-rouge&quot;&gt;Sandbox Testing&lt;/code&gt; section:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you did not setup the UDP on your project, you should see a message like this on UDP dashboard notifications &lt;code class=&quot;highlighter-rouge&quot;&gt;apk analytics failed, caused by: analyse apk failed, caused by:Failed to find GameSettings.prop, please import udp sdk and generate GameSettings.&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;22-package-name-extensions-and-google-play-services&quot;&gt;2.2 Package name extensions and Google Play Services&lt;/h3&gt;
+&lt;p&gt;When UDP repacks your game with store-specific SDK it will, most of the time, change the name of the package, adding a store-specific extension, like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.gs&lt;/code&gt; to Samsung Galaxy Store&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.unity.migc&lt;/code&gt; to Mi GetApps&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.qooapp&lt;/code&gt; QooApp to Game Store&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Because of this extension, we will need to configure a new OAuth credential to each extension on &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API Console&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In my case on the &lt;code class=&quot;highlighter-rouge&quot;&gt;App Signature&lt;/code&gt; section of the game info, a used the recommend option &lt;code class=&quot;highlighter-rouge&quot;&gt;Export and upload your own key and certificate&lt;/code&gt;. This is the same certificate used by Google Play Services and APIs.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;Go to &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API Console&lt;/a&gt;, select your game project on the dropdown, then go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section, then on the &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt; section select the item with the name of your game, then copy the value of the field &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, go back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section and click on the button &lt;code class=&quot;highlighter-rouge&quot;&gt;Create credentials&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth client ID&lt;/code&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;In the new page, select &lt;code class=&quot;highlighter-rouge&quot;&gt;Android&lt;/code&gt; on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Application type&lt;/code&gt; dropdown.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Name&lt;/code&gt; field you can write anything you want, but maybe use your game name following with the extension store can help to find it later.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Package name&lt;/code&gt; field you should add the exact package name for the specific store on UDP. For example, in my case for Mi GetApps store, the package name was &lt;code class=&quot;highlighter-rouge&quot;&gt;br.com.diegogiacomelli.puzzimals.unity.migc&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you have doubted what is the exact package name for your game on a specific store on UDP, you can click on &lt;code class=&quot;highlighter-rouge&quot;&gt;Advanced&lt;/code&gt; link of that store on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Publish&lt;/code&gt; tab of UDP&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now in the field &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt; you should paste the value you copy before from the original &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt; configuration.&lt;/p&gt;
+
+&lt;p&gt;Then click on the button &lt;code class=&quot;highlighter-rouge&quot;&gt;Create&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You will need to repeat those steps for each store that change your package name.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;3-game-info&quot;&gt;3. Game Info&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;What docs says: On the UDP console, provide app store listing information and resources for your game, such as multi-language descriptions, multi-currency price points, screenshots, video trailers, and create releases for distribution.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;31-import-from-google-play&quot;&gt;3.1 Import from Google Play&lt;/h3&gt;
+&lt;p&gt;As you follow the UDP documentation you will reach the point will need to create your game on the UDP dashboard.
+If you already have the game published on Google Play, as was my case with &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt;, you can use the right-top button &lt;code class=&quot;highlighter-rouge&quot;&gt;IMPORT FROM GOOGLE PLAY&lt;/code&gt; in the game page.&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;After the import, you can edit the information as well.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can add the argument &lt;code class=&quot;highlighter-rouge&quot;&gt;hl&lt;/code&gt; to your Google Play url to import a specific translation, like &lt;code class=&quot;highlighter-rouge&quot;&gt;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&amp;amp;hl=pt&lt;/code&gt; to import Portuguese translation&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;4-submission&quot;&gt;4. Submission&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;What docs says: Sign up with the stores using your UnityID, and register your game with the app stores directly from inside the UDP console.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Publish&lt;/code&gt; tab, select a store and click on &lt;code class=&quot;highlighter-rouge&quot;&gt;Sign up to...&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Follow the needed steps for each store you would like to publish.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;5-publish&quot;&gt;5. Publish&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;What docs says: Select the stores you want to submit your game to. UDP automatically repacks your game into store-specific builds and submits them to the stores along with the relevant game descriptions.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;51-upload&quot;&gt;5.1 Upload&lt;/h3&gt;
+&lt;p&gt;Now that you have a valid UDP &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; and game info filled, you can upload it on the UDP dashboard, inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;Binary&lt;/code&gt; section.&lt;/p&gt;
+
+&lt;h3 id=&quot;52-testing-your-repack-apk&quot;&gt;5.2 Testing your repack .apk&lt;/h3&gt;
+&lt;p&gt;Now the specific store should show a &lt;code class=&quot;highlighter-rouge&quot;&gt;Repack game&lt;/code&gt; dropdown on the UDP dashboard.&lt;/p&gt;
+
+&lt;p&gt;Select &lt;code class=&quot;highlighter-rouge&quot;&gt;Repack game&lt;/code&gt; and UDP should generate a new &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; of your game with the store SDK. This &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; will be available to download on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Advanced&lt;/code&gt; link. Download it from the &lt;code class=&quot;highlighter-rouge&quot;&gt;Download APK Certificate&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For each store, you need to test your repack &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; to certificate that everything in your game is running ok.&lt;/p&gt;
+
+&lt;p&gt;Open the repack &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; on an emulator or an Android device.&lt;/p&gt;
+
+&lt;p&gt;Test your IAP and Google Play Services, they are working as expected?&lt;/p&gt;
+
+&lt;p&gt;For each store, you will see different screens. For example, for QooApp you will see something like this:&lt;/p&gt;
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;53-send-it-to-review&quot;&gt;5.3 Send it to review&lt;/h3&gt;
+&lt;p&gt;Now you can select &lt;code class=&quot;highlighter-rouge&quot;&gt;Submit to Store&lt;/code&gt; in the dropdown, then select the checkbox store on &lt;code class=&quot;highlighter-rouge&quot;&gt;Publish&lt;/code&gt; page and click on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Publish&lt;/code&gt; button.
+UDP will send the game to store review and you can monitor the progress on the dashboard.
+UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button.png &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;6-performance&quot;&gt;6. Performance&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;What docs says: When your game is published, monitor its performance across the different stores from the UDP reporting dashboard.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Wait the game been published on the store and will see the &lt;code class=&quot;highlighter-rouge&quot;&gt;Reporting Dashboard&lt;/code&gt; been populated with stats about the game.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;With these tips and tricks that I learned while using UDP I hope I helped you to the UDP Journey:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Implement UDP in your Unity project&lt;/li&gt;
+  &lt;li&gt;Build and deploy your game to UDP&lt;/li&gt;
+  &lt;li&gt;Edit your game information&lt;/li&gt;
+  &lt;li&gt;Prepare your game for submission&lt;/li&gt;
+  &lt;li&gt;Publish to stores&lt;/li&gt;
+  &lt;li&gt;Track game performance&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Google Play Games Plugin for Unity&colon; Tips & Tricks</title>
