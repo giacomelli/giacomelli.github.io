@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - math</title>
  <link href="//tags/math/index.xml" rel="self"/>
  <link href="/tag/math.html"/>
- <updated>2020-09-01T12:55:16-03:00</updated>
+ <updated>2020-09-02T16:55:37-03:00</updated>
  <id>/tag/math.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -32,7 +32,7 @@
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;definition&quot;&gt;Definition&lt;/h1&gt;
+&lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
 &lt;center&gt;
       &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
@@ -54,7 +54,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 
 &lt;p&gt;This definition talks about &lt;a href=&quot;https://en.wikipedia.org/wiki/Polar_coordinate_system&quot;&gt;polar coordinate system&lt;/a&gt;. The more important thing to know about it is this: &lt;code class=&quot;highlighter-rouge&quot;&gt;each point on a plane is determined by a distance from a reference point and an angle from a reference direction&lt;/code&gt;. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.&lt;/p&gt;
 
-&lt;h1 id=&quot;the-formula&quot;&gt;The formula&lt;/h1&gt;
+&lt;h2 id=&quot;the-formula&quot;&gt;The formula&lt;/h2&gt;
 &lt;center&gt;
       &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/math.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
@@ -73,7 +73,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Mathf.PI / 180f&lt;/code&gt; is to convert from degrees to radians to work properly with the Mathf functions.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;h1 id=&quot;maurerroselinerenderer&quot;&gt;MaurerRoseLineRenderer&lt;/h1&gt;
+&lt;h2 id=&quot;maurerroselinerenderer&quot;&gt;MaurerRoseLineRenderer&lt;/h2&gt;
 &lt;p&gt;Now the complete code for a MonoBehaviour that takes the formula we saw in the previous section and combine it with a LineRenderer to draw the Maurer Rose.&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
@@ -87,7 +87,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
         &lt;/div&gt;
       &lt;/div&gt;
 
-&lt;h1 id=&quot;using-the-maurerroselinerenderer&quot;&gt;Using the MaurerRoseLineRenderer&lt;/h1&gt;
+&lt;h2 id=&quot;using-the-maurerroselinerenderer&quot;&gt;Using the MaurerRoseLineRenderer&lt;/h2&gt;
 &lt;p&gt;To use it, just create a new GameObject and add the &lt;code class=&quot;highlighter-rouge&quot;&gt;MaurerRoseLineRenderer&lt;/code&gt; component to it.&lt;/p&gt;
 
 &lt;p&gt;If you just hit play button, you will see something like this:&lt;/p&gt;
@@ -101,7 +101,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h1&gt;
+&lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
 &lt;center&gt;
       &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/programmer.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
@@ -113,7 +113,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h1&gt;
+&lt;h2 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h2&gt;
 &lt;center&gt;
       &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/beyond.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-09-01T12:55:16-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity Distribution Portal (UDP) Journey&amp;amp;colon; Tips &amp;amp; Tricks</title><link href="http://diegogiacomelli.com.br/unity-distribution-portal-udp-journey-tips-and-tricks/" rel="alternate" type="text/html" title="Unity Distribution Portal (UDP) Journey&amp;amp;colon; Tips &amp;amp; Tricks" /><published>2020-09-01T00:00:00-03:00</published><updated>2020-09-01T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-distribution-portal-udp-journey-tips-and-tricks</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-distribution-portal-udp-journey-tips-and-tricks/">&lt;p&gt;In this post, I will list some tips and tricks that I learned in my journey using the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Unity Distribution Portal (UDP)&lt;/a&gt; to publish my game &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt; to 4 new stores, reaching millions of new users, with a single build.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-09-02T16:55:37-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity Distribution Portal (UDP) Journey&amp;amp;colon; Tips &amp;amp; Tricks</title><link href="http://diegogiacomelli.com.br/unity-distribution-portal-udp-journey-tips-and-tricks/" rel="alternate" type="text/html" title="Unity Distribution Portal (UDP) Journey&amp;amp;colon; Tips &amp;amp; Tricks" /><published>2020-09-01T00:00:00-03:00</published><updated>2020-09-01T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-distribution-portal-udp-journey-tips-and-tricks</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-distribution-portal-udp-journey-tips-and-tricks/">&lt;p&gt;In this post, I will list some tips and tricks that I learned in my journey using the &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity&quot;&gt;Unity Distribution Portal (UDP)&lt;/a&gt; to publish my game &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt; to 4 new stores, reaching millions of new users, with a single build.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Unity has recently &lt;a href=&quot;https://blogs.unity3d.com/2020/08/28/unlock-access-to-over-a-billion-new-players-for-your-android-mobile-game/&quot;&gt;launch to everyone the Unity Distribution Portal (UDP)&lt;/a&gt; a platform that enable Unity developers to distribute Android games beyond Google Play, into stores like Samsung Galaxy Store, ONE Store, Mi GetApps, HUAWEI AppGallery, QooApp Game Store, SHAREit Game Store, TPAY MOBILE Stores, APPTUTTI, and VIVEPORT.&lt;/p&gt;
@@ -212,7 +212,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="Tutorial" /><category term="unity3d" /><category term="gamedev" /><category term="android" /><category term="self-publishing" /><category term="udp" /><summary type="html">In this post, I will list some tips and tricks that I learned in my journey using the Unity Distribution Portal (UDP) to publish my game Puzzimals to 4 new stores, reaching millions of new users, with a single build.</summary></entry><entry><title type="html">Kenney Jam 2020 entry&amp;amp;colon; Curseings</title><link href="http://diegogiacomelli.com.br/keeney-jam-2020-entry-curseings/" rel="alternate" type="text/html" title="Kenney Jam 2020 entry&amp;amp;colon; Curseings" /><published>2020-08-26T00:00:00-03:00</published><updated>2020-08-26T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/keeney-jam-2020-entry-curseings</id><content type="html" xml:base="http://diegogiacomelli.com.br/keeney-jam-2020-entry-curseings/">&lt;p&gt;Last weekend I participated in &lt;strong&gt;Kenney Jam 2020&lt;/strong&gt; (my first game jam).
 The experience was really good, when you have so strong boundaries to make a game, in this case, &lt;strong&gt;48 hours and just use assets from &lt;a href=&quot;http://Kenney.nl/assets&quot;&gt;Kenney&lt;/a&gt;&lt;/strong&gt;, you need to turn your way of think and expectations to a very specific and clear objective: release a fun and playable game the target just the core mechanics.&lt;/p&gt;
 
-&lt;h1 id=&quot;the-theme&quot;&gt;The theme&lt;/h1&gt;
+&lt;h2 id=&quot;the-theme&quot;&gt;The theme&lt;/h2&gt;
 &lt;p&gt;The theme for this game jam was &lt;strong&gt;“Cursed”&lt;/strong&gt;.
 I took some time thinking about what game I would like to play and develop with such a theme, then I remembered how much I loved to play Lemmings and how those little ones were cursed to live in the small world where some of them should sacrifice for the others.&lt;/p&gt;
 
@@ -224,7 +224,7 @@ I took some time thinking about what game I would like to play and develop with 
         &lt;iframe src=&quot;https://www.youtube.com/embed/I3fRyrc6yrA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;how-to-play&quot;&gt;How to play&lt;/h1&gt;
+&lt;h2 id=&quot;how-to-play&quot;&gt;How to play&lt;/h2&gt;
 &lt;p&gt;The game can be download for Windows and Mac here: &lt;a href=&quot;https://giacomelli.itch.io/curseings&quot;&gt;https://giacomelli.itch.io/curseings&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -240,7 +240,7 @@ I took some time thinking about what game I would like to play and develop with 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;how-to-vote&quot;&gt;How to vote&lt;/h1&gt;
+&lt;h2 id=&quot;how-to-vote&quot;&gt;How to vote&lt;/h2&gt;
 &lt;p&gt;If you liked the game, &lt;strong&gt;you can cast a vote&lt;/strong&gt; for the game jam here: &lt;a href=&quot;https://itch.io/jam/kenney-jam-2020/rate/737655&quot;&gt;https://itch.io/jam/kenney-jam-2020/rate/737655&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="Article" /><category term="game-jam" /><category term="games" /><category term="made-with-unity" /><summary type="html">Last weekend I participated in Kenney Jam 2020 (my first game jam). The experience was really good, when you have so strong boundaries to make a game, in this case, 48 hours and just use assets from Kenney, you need to turn your way of think and expectations to a very specific and clear objective: release a fun and playable game the target just the core mechanics.</summary></entry><entry><title type="html">Drawing a Maurer Rose With Unity</title><link href="http://diegogiacomelli.com.br/drawing-a-maurer-rose-with-unity/" rel="alternate" type="text/html" title="Drawing a Maurer Rose With Unity" /><published>2020-08-21T00:00:00-03:00</published><updated>2020-08-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/drawing-a-maurer-rose-with-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/drawing-a-maurer-rose-with-unity/">&lt;p&gt;In this tutorial we will learn how to draw a &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Maurer Rose&lt;/a&gt; with a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/LineRenderer.html&quot;&gt;LineRenderer&lt;/a&gt; in Unity.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
@@ -259,7 +259,7 @@ I took some time thinking about what game I would like to play and develop with 
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;definition&quot;&gt;Definition&lt;/h1&gt;
+&lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
 &lt;center&gt;
       &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
@@ -281,7 +281,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 
 &lt;p&gt;This definition talks about &lt;a href=&quot;https://en.wikipedia.org/wiki/Polar_coordinate_system&quot;&gt;polar coordinate system&lt;/a&gt;. The more important thing to know about it is this: &lt;code class=&quot;highlighter-rouge&quot;&gt;each point on a plane is determined by a distance from a reference point and an angle from a reference direction&lt;/code&gt;. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.&lt;/p&gt;
 
-&lt;h1 id=&quot;the-formula&quot;&gt;The formula&lt;/h1&gt;
+&lt;h2 id=&quot;the-formula&quot;&gt;The formula&lt;/h2&gt;
 &lt;center&gt;
       &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/math.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
@@ -300,7 +300,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Mathf.PI / 180f&lt;/code&gt; is to convert from degrees to radians to work properly with the Mathf functions.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;h1 id=&quot;maurerroselinerenderer&quot;&gt;MaurerRoseLineRenderer&lt;/h1&gt;
+&lt;h2 id=&quot;maurerroselinerenderer&quot;&gt;MaurerRoseLineRenderer&lt;/h2&gt;
 &lt;p&gt;Now the complete code for a MonoBehaviour that takes the formula we saw in the previous section and combine it with a LineRenderer to draw the Maurer Rose.&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
@@ -314,7 +314,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
         &lt;/div&gt;
       &lt;/div&gt;
 
-&lt;h1 id=&quot;using-the-maurerroselinerenderer&quot;&gt;Using the MaurerRoseLineRenderer&lt;/h1&gt;
+&lt;h2 id=&quot;using-the-maurerroselinerenderer&quot;&gt;Using the MaurerRoseLineRenderer&lt;/h2&gt;
 &lt;p&gt;To use it, just create a new GameObject and add the &lt;code class=&quot;highlighter-rouge&quot;&gt;MaurerRoseLineRenderer&lt;/code&gt; component to it.&lt;/p&gt;
 
 &lt;p&gt;If you just hit play button, you will see something like this:&lt;/p&gt;
@@ -328,7 +328,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h1&gt;
+&lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
 &lt;center&gt;
       &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/programmer.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
@@ -340,7 +340,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h1&gt;
+&lt;h2 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h2&gt;
 &lt;center&gt;
       &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/beyond.png &quot; style=&quot;max-height:200px&quot; /&gt;
       &lt;/center&gt;
