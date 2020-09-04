@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2020-09-04T16:32:39-03:00</updated>
+ <updated>2020-09-04T16:39:20-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -29,7 +29,11 @@ To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unit
   &lt;li&gt;Features: &lt;code class=&quot;highlighter-rouge&quot;&gt;74&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;highlighted-features&quot;&gt;Highlighted Features&lt;/h1&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/yYjqJvd8lQI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;my-feature-highlights&quot;&gt;My feature highlights&lt;/h1&gt;
 &lt;p&gt;Below are the features that most caught my attention and that I believe can positively impact my development workflow.&lt;/p&gt;
 
 &lt;h2 id=&quot;focused-inspector&quot;&gt;Focused Inspector&lt;/h2&gt;

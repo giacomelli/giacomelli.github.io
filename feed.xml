@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-09-04T16:32:39-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity 2020.1&amp;amp;colon; What’s new</title><link href="http://diegogiacomelli.com.br/unity-2020-1-whats-new/" rel="alternate" type="text/html" title="Unity 2020.1&amp;amp;colon; What’s new" /><published>2020-09-04T00:00:00-03:00</published><updated>2020-09-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-2020-1-whats-new</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-2020-1-whats-new/">&lt;h1 id=&quot;unity-20201&quot;&gt;Unity 2020.1&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-09-04T16:39:20-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Unity 2020.1&amp;amp;colon; What’s new</title><link href="http://diegogiacomelli.com.br/unity-2020-1-whats-new/" rel="alternate" type="text/html" title="Unity 2020.1&amp;amp;colon; What’s new" /><published>2020-09-04T00:00:00-03:00</published><updated>2020-09-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-2020-1-whats-new</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-2020-1-whats-new/">&lt;h1 id=&quot;unity-20201&quot;&gt;Unity 2020.1&lt;/h1&gt;
 &lt;p&gt;The Unity 2020.1 was official release on &lt;a href=&quot;https://blogs.unity3d.com/2020/07/23/unity-2020-1-is-now-available/&quot;&gt;July 23, 2020&lt;/a&gt; with a lot of fixes, API changes, changes, improvements and features.
 You can find the new features directly on the Unity manual accessing this search: &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/30_search.html?q=newin20201&quot;&gt;newin20201&lt;/a&gt;.
 To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unity/whats-new/2020.1.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
@@ -12,7 +12,11 @@ To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unit
   &lt;li&gt;Features: &lt;code class=&quot;highlighter-rouge&quot;&gt;74&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;highlighted-features&quot;&gt;Highlighted Features&lt;/h1&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/yYjqJvd8lQI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h1 id=&quot;my-feature-highlights&quot;&gt;My feature highlights&lt;/h1&gt;
 &lt;p&gt;Below are the features that most caught my attention and that I believe can positively impact my development workflow.&lt;/p&gt;
 
 &lt;h2 id=&quot;focused-inspector&quot;&gt;Focused Inspector&lt;/h2&gt;
