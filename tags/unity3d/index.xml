@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-09-04T16:44:55-03:00</updated>
+ <updated>2020-09-04T19:24:18-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -64,14 +64,16 @@ From the component’s &lt;code class=&quot;highlighter-rouge&quot;&gt;More item
 
 &lt;h2 id=&quot;previewscenestage&quot;&gt;PreviewSceneStage&lt;/h2&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;Editor: Introduced PreviewSceneStage. Implement custom stages by inheriting from this class.
-I found this interesting but did not found any good documentation on how to use it.&lt;/p&gt;
+  &lt;p&gt;Editor: Introduced PreviewSceneStage. Implement custom stages by inheriting from this class.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;I found this interesting but did not found any good documentation on how to use it.&lt;/p&gt;
 
 &lt;h2 id=&quot;switch-between-debug-and-release-code-optimizations&quot;&gt;Switch between debug and release code optimizations&lt;/h2&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Editor: Support to switch between debug and release code optimizations without restarting the Unity Editor improving Unity Editor performance when compiling in release.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;center&gt;
         &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode.png &quot; /&gt;
       &lt;/center&gt;
@@ -95,6 +97,7 @@ I found this interesting but did not found any good documentation on how to use 
 &lt;blockquote&gt;
   &lt;p&gt;Input: The Input System has moved out of preview.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/sQaF9_jd9k4 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -104,7 +107,7 @@ I found this interesting but did not found any good documentation on how to use 
   &lt;p&gt;Particles: Abiltiy to save and restore Particle System state data, making it possible to save a snapshot of an entire Particle System at a point in time. A use case for this is for efficient rewind support, by saving periodic keyframes of the particle state, to avoid full resimulations.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;This seems to be possible through methods &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.GetPlaybackState.html&quot;&gt;GetPlaybackState&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.SetPlaybackState.html&quot;&gt;SetPlaybackState&lt;/a&gt;, but seems they were already available in Unity 2019.4.&lt;/p&gt;
+&lt;p&gt;It seems to be possible through methods &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.GetPlaybackState.html&quot;&gt;GetPlaybackState&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.SetPlaybackState.html&quot;&gt;SetPlaybackState&lt;/a&gt;, but they were already available in Unity 2019.4.&lt;/p&gt;
 
 &lt;h2 id=&quot;new-component-articulationbody&quot;&gt;New component ArticulationBody&lt;/h2&gt;
 &lt;blockquote&gt;

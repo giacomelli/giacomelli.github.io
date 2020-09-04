@@ -195,14 +195,16 @@ From the component’s <code class="highlighter-rouge">More items (⋮) menu</co
 
 <h2 id="previewscenestage">PreviewSceneStage</h2>
 <blockquote>
-  <p>Editor: Introduced PreviewSceneStage. Implement custom stages by inheriting from this class.
-I found this interesting but did not found any good documentation on how to use it.</p>
+  <p>Editor: Introduced PreviewSceneStage. Implement custom stages by inheriting from this class.</p>
 </blockquote>
+
+<p>I found this interesting but did not found any good documentation on how to use it.</p>
 
 <h2 id="switch-between-debug-and-release-code-optimizations">Switch between debug and release code optimizations</h2>
 <blockquote>
   <p>Editor: Support to switch between debug and release code optimizations without restarting the Unity Editor improving Unity Editor performance when compiling in release.</p>
 </blockquote>
+
 <center>
         <img class="lazy" src="/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode.png " />
       </center>
@@ -226,6 +228,7 @@ I found this interesting but did not found any good documentation on how to use 
 <blockquote>
   <p>Input: The Input System has moved out of preview.</p>
 </blockquote>
+
 <center>
         <iframe src="https://www.youtube.com/embed/sQaF9_jd9k4 " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
       </center>
@@ -235,7 +238,7 @@ I found this interesting but did not found any good documentation on how to use 
   <p>Particles: Abiltiy to save and restore Particle System state data, making it possible to save a snapshot of an entire Particle System at a point in time. A use case for this is for efficient rewind support, by saving periodic keyframes of the particle state, to avoid full resimulations.</p>
 </blockquote>
 
-<p>This seems to be possible through methods <a href="https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.GetPlaybackState.html">GetPlaybackState</a> and <a href="https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.SetPlaybackState.html">SetPlaybackState</a>, but seems they were already available in Unity 2019.4.</p>
+<p>It seems to be possible through methods <a href="https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.GetPlaybackState.html">GetPlaybackState</a> and <a href="https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.SetPlaybackState.html">SetPlaybackState</a>, but they were already available in Unity 2019.4.</p>
 
 <h2 id="new-component-articulationbody">New component ArticulationBody</h2>
 <blockquote>
