@@ -3,11 +3,31 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-09-06T05:15:01-03:00</updated>
+ <updated>2020-09-08T05:43:38-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Focused Inspector</title>
+   <link href="//unitytips-focused-inspector/"/>
+   <updated>2020-09-08T00:00:00-03:00</updated>
+   <id>//unitytips-focused-inspector</id>
+   <content type="html">&lt;p&gt;Starting in Unity 2020.1, you can add a dedicated inspector window for a specific GameObject, Component, or Asset. 
+It always displays the properties of the item you opened it for, even if you select something else in the editor.&lt;/p&gt;
+
+&lt;p&gt;To activate a Focused Inspector, select an item &lt;code class=&quot;highlighter-rouge&quot;&gt;(GameObject, Component, or Asset)&lt;/code&gt; and in the context menu hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Properties...&lt;/code&gt; menu item.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;More details in the official documentation: &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/InspectorFocused.html&quot;&gt;Focused Inspectors&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Unity 2020.1&colon; What's new</title>
