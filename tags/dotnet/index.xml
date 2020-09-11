@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2020-09-08T05:43:38-03:00</updated>
+ <updated>2020-09-11T05:49:58-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -539,9 +539,7 @@ dotnet watch run
 &lt;p&gt;In the root folder of your Blazor project create a new subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp&lt;/code&gt;. We’ll add all our C# classes inside this folder.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;
+&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -657,7 +655,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Let’s evolve!&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -1331,9 +1329,7 @@ div.gist-meta { display:none; }
 &lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;
+&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -1507,9 +1503,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;
+&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;I’ve already talk about these breaking changes on the post about the release candidate version, but I guess is good to point them again:&lt;/p&gt;
@@ -1577,9 +1571,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;In this version GeneticSharp starts to support .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
 
 &lt;p&gt;Porting 
-to &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/netcore.svg &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;&lt;/p&gt;
+to &lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/netcore.svg &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -1697,9 +1689,7 @@ Test Run Aborted
 &lt;p&gt;Delete the “obj” and “bin” folders from unit test project will “fix” the problem.&lt;/p&gt;
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;
+&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The GeneticSharp NuGet package was split into two packages:
@@ -1718,9 +1708,7 @@ Test Run Aborted
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;reads-during-the-porting&quot;&gt;Reads during the porting&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;
+&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Some readings I did during the whole process, maybe can be useful to someone porting a library to .NET Core too.&lt;/p&gt;
 

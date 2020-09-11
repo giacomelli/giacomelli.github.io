@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - editor-window</title>
  <link href="//tags/editor-window/index.xml" rel="self"/>
  <link href="/tag/editor-window.html"/>
- <updated>2020-09-08T05:43:38-03:00</updated>
+ <updated>2020-09-11T05:49:58-03:00</updated>
  <id>/tag/editor-window.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -212,9 +212,7 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;
+&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&lt;/a&gt;. To start the tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -354,7 +352,7 @@
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;In this tutorial, we learned how to coding a custom editor window to create a set of default animation clips and animator override controller.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

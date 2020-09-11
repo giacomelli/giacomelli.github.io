@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - release</title>
  <link href="//tags/release/index.xml" rel="self"/>
  <link href="/tag/release.html"/>
- <updated>2020-09-08T05:43:38-03:00</updated>
+ <updated>2020-09-11T05:49:58-03:00</updated>
  <id>/tag/release.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -259,9 +259,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;
+&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;I’ve already talk about these breaking changes on the post about the release candidate version, but I guess is good to point them again:&lt;/p&gt;
@@ -329,9 +327,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;p&gt;In this version GeneticSharp starts to support .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
 
 &lt;p&gt;Porting 
-to &lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/netcore.svg &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;&lt;/p&gt;
+to &lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/netcore.svg &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -449,9 +445,7 @@ Test Run Aborted
 &lt;p&gt;Delete the “obj” and “bin” folders from unit test project will “fix” the problem.&lt;/p&gt;
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;
+&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The GeneticSharp NuGet package was split into two packages:
@@ -470,9 +464,7 @@ Test Run Aborted
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;reads-during-the-porting&quot;&gt;Reads during the porting&lt;/h2&gt;
-&lt;center&gt;
-      &lt;img class=&quot;lazy&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;
-      &lt;/center&gt;
+&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Some readings I did during the whole process, maybe can be useful to someone porting a library to .NET Core too.&lt;/p&gt;
 
