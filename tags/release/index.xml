@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - release</title>
  <link href="//tags/release/index.xml" rel="self"/>
  <link href="/tag/release.html"/>
- <updated>2020-09-11T11:14:41-03:00</updated>
+ <updated>2020-09-12T10:29:35-03:00</updated>
  <id>/tag/release.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -49,7 +49,7 @@ dotnet run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
@@ -357,7 +357,7 @@ to &lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/netcore.svg &quot
 
 &lt;h2 id=&quot;porting&quot;&gt;Porting&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;warmup&quot;&gt;Warmup&lt;/h3&gt;
@@ -489,7 +489,7 @@ Test Run Aborted
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Now I’m planning to create a GeneticSharp’s sample using Unity3d’s new beta features, like the new ECS (Entity Component System), C# Job System and the Burst compiler.&lt;/p&gt;
@@ -599,7 +599,7 @@ Test Run Aborted
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;

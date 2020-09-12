@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - genetic-algorithm</title>
  <link href="//tags/genetic-algorithm/index.xml" rel="self"/>
  <link href="/tag/genetic-algorithm.html"/>
- <updated>2020-09-11T11:14:41-03:00</updated>
+ <updated>2020-09-12T10:29:35-03:00</updated>
  <id>/tag/genetic-algorithm.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -29,13 +29,13 @@
 
 &lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/problem.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/problem.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;In our sample we will optimize the input of a mathematical function, this function will be used as our fitness evaluation function. For this sample we will use a function that everyone saw in school time, the famous &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_distance&quot;&gt;Euclidean distance&lt;/a&gt; or commonly know as distance of two points function:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;We will consider our chromosome fitness as the result of this function. The higher the result, the better is the chromosome fitness.&lt;/p&gt;
@@ -44,7 +44,7 @@
 
 &lt;h2 id=&quot;what-our-genetic-algorithm-is-looking-for&quot;&gt;What our genetic algorithm is looking for?&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/telescope.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/telescope.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The goal of our genetic algortim is &lt;strong&gt;find the input values of Euclidean distance function: X1, Y1 and X2, Y2 that result in the greatest distance in a rectangular area&lt;/strong&gt;.&lt;/p&gt;
@@ -57,7 +57,7 @@
 
 &lt;h2 id=&quot;creating-the-project&quot;&gt;Creating the project&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/project.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/project.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Open your IDE (Visual Studio/Xamarin Studio) and create a new console project.&lt;/p&gt;
@@ -73,7 +73,7 @@
 
 &lt;h2 id=&quot;creating-an-euclidean-distance-chromosome&quot;&gt;Creating an Euclidean distance chromosome&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Chromosome is the representation of a possible solution in genetic algoritms.&lt;/p&gt;
@@ -109,7 +109,7 @@
 
 &lt;h2 id=&quot;creating-the-population&quot;&gt;Creating the population&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/population.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/population.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The population represents the possible solutions to our problem, so we need to create a population of our Euclidean distance chromosome.&lt;/p&gt;
@@ -123,7 +123,7 @@
 
 &lt;h2 id=&quot;creating-the-fitness-function&quot;&gt;Creating the fitness function&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/score.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/score.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The fitness function is where the genetic algoritm will evaluate and give a value (fitness) to each chromosome generated inside it. A good fitness function can guide your GA to a fast and optimum solution.&lt;/p&gt;
@@ -139,7 +139,7 @@
 
 &lt;h2 id=&quot;creating-the-selection&quot;&gt;Creating the selection&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/podium.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/podium.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;A selection is the genetic algorithm operator responsible for decing which chromosomes of current population will be selected as parent of the next population.&lt;/p&gt;
@@ -155,7 +155,7 @@
 
 &lt;h2 id=&quot;creating-the-crossover&quot;&gt;Creating the crossover&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/cross.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/cross.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing these selected chromosomes.&lt;/p&gt;
@@ -175,7 +175,7 @@
 
 &lt;h2 id=&quot;creating-the-mutation&quot;&gt;Creating the mutation&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/mutation.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/mutation.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The biology definition of mutations is: 
@@ -194,7 +194,7 @@
 
 &lt;h2 id=&quot;creating-the-termination&quot;&gt;Creating the termination&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/end.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/end.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;A termination decide when a GA should be stopped. GeneticSharp use the generation number termination with just one generation as default termination. This mean that the genetic algoritm will run just one generation when you call the Start method, after this you can increment the expected generation number of the termination and call the method Resume how many times you want.&lt;/p&gt;
@@ -210,7 +210,7 @@
 
 &lt;h2 id=&quot;running-the-ga&quot;&gt;Running the GA&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/running.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/running.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.&lt;/p&gt;
@@ -246,14 +246,14 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;If we plot these generations the output image will be like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;We can see that in the first generations (black lines) the genetic algorithm as some intermediate results and at the end (red line) &lt;strong&gt;it found the best possible solution: a diagonal.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;complete-source-code&quot;&gt;Complete source code&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/programmer.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/programmer.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;When you finish the tutorial your source code will be this one:&lt;/p&gt;
@@ -263,7 +263,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;In this tutorial we learn how genetic algoritm works and how to use GeneticSharp to solve a very simple sample. Now you can try it to solve more complex problems.&lt;/p&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - command-line</title>
  <link href="//tags/command-line/index.xml" rel="self"/>
  <link href="/tag/command-line.html"/>
- <updated>2020-09-11T11:14:41-03:00</updated>
+ <updated>2020-09-12T10:29:35-03:00</updated>
  <id>/tag/command-line.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -17,7 +17,7 @@
    <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a command-line tool to create new C# projects from prebuilt/templates.&lt;/p&gt;
@@ -29,7 +29,7 @@
 &lt;p&gt;The idea of the tool was born a long time ago and became a little stronger every time that I had to create a new solution and all the projects by hand, but when I saw the message bellow in the &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt; page I decided to finally write the tool… and the name was very clear, almost.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;

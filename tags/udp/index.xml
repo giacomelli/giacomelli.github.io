@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - udp</title>
  <link href="//tags/udp/index.xml" rel="self"/>
  <link href="/tag/udp.html"/>
- <updated>2020-09-11T11:14:41-03:00</updated>
+ <updated>2020-09-12T10:29:35-03:00</updated>
  <id>/tag/udp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -43,7 +43,7 @@ From the 9 stores supported, 7 are fully integrated with UDP. What this meaning?
 &lt;p&gt;Please, if you did not read the official documentation yet, go and &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.purchasing.udp@2.0/manual/index.html&quot;&gt;read it&lt;/a&gt;, then come back here. You’ll better understand this post and the whole UDP solution after educated yourself about it.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;1-implement&quot;&gt;1. Implement&lt;/h2&gt;
@@ -67,7 +67,7 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 
 &lt;p&gt;You’ll need this when you build to UDP and remember to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Target Google Play&lt;/code&gt; when you build to Google Play.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;hr /&gt;
@@ -86,7 +86,7 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 &lt;p&gt;Just build your &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; on Unity and open it on emulator (like &lt;a href=&quot;https://www.bluestacks.com/&quot;&gt;BlueStacks&lt;/a&gt;) or directly on your Android device.
 If you setup UDP right, you should see a screen like below when the game starts.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;To login in this screen, use the accounts in the setup on &lt;code class=&quot;highlighter-rouge&quot;&gt;Sandbox Test Account&lt;/code&gt;. Remember those e-mails don’t need to exist, they are just test accounts to validate UDP setup&lt;/p&gt;
@@ -96,7 +96,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 
 &lt;p&gt;After this, you can refresh your game page on UDP and you should see the result below on &lt;code class=&quot;highlighter-rouge&quot;&gt;Sandbox Testing&lt;/code&gt; section:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you did not setup the UDP on your project, you should see a message like this on UDP dashboard notifications &lt;code class=&quot;highlighter-rouge&quot;&gt;apk analytics failed, caused by: analyse apk failed, caused by:Failed to find GameSettings.prop, please import udp sdk and generate GameSettings.&lt;/code&gt;&lt;/p&gt;
@@ -116,7 +116,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;In my case on the &lt;code class=&quot;highlighter-rouge&quot;&gt;App Signature&lt;/code&gt; section of the game info, a used the recommend option &lt;code class=&quot;highlighter-rouge&quot;&gt;Export and upload your own key and certificate&lt;/code&gt;. This is the same certificate used by Google Play Services and APIs.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Go to &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API Console&lt;/a&gt;, select your game project on the dropdown, then go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section, then on the &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt; section select the item with the name of your game, then copy the value of the field &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt;.&lt;/p&gt;
@@ -124,7 +124,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;Now, go back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section and click on the button &lt;code class=&quot;highlighter-rouge&quot;&gt;Create credentials&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth client ID&lt;/code&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;In the new page, select &lt;code class=&quot;highlighter-rouge&quot;&gt;Android&lt;/code&gt; on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Application type&lt;/code&gt; dropdown.&lt;/p&gt;
@@ -153,7 +153,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;As you follow the UDP documentation you will reach the point will need to create your game on the UDP dashboard.
 If you already have the game published on Google Play, as was my case with &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt;, you can use the right-top button &lt;code class=&quot;highlighter-rouge&quot;&gt;IMPORT FROM GOOGLE PLAY&lt;/code&gt; in the game page.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;After the import, you can edit the information as well.&lt;/p&gt;
@@ -195,7 +195,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
 
 &lt;p&gt;For each store, you will see different screens. For example, for QooApp you will see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;53-send-it-to-review&quot;&gt;5.3 Send it to review&lt;/h3&gt;
@@ -204,7 +204,7 @@ UDP will send the game to store review and you can monitor the progress on the d
 UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;hr /&gt;

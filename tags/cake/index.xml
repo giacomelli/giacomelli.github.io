@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - cake</title>
  <link href="//tags/cake/index.xml" rel="self"/>
  <link href="/tag/cake.html"/>
- <updated>2020-09-11T11:14:41-03:00</updated>
+ <updated>2020-09-12T10:29:35-03:00</updated>
  <id>/tag/cake.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -108,7 +108,7 @@
 
 &lt;p&gt;When the build finish, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Cake build&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -116,7 +116,7 @@
 
 &lt;p&gt;Then open your project on &lt;a href=&quot;https://sonarcloud.io/projects&quot;&gt;SonarCloud&lt;/a&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;SonarCloud dashboard&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;

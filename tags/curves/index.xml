@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - curves</title>
  <link href="//tags/curves/index.xml" rel="self"/>
  <link href="/tag/curves.html"/>
- <updated>2020-09-11T11:14:41-03:00</updated>
+ <updated>2020-09-12T10:29:35-03:00</updated>
  <id>/tag/curves.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -43,7 +43,7 @@ At that time we did not find any builtin or other solution to make this workflow
 &lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/problem.png &quot; style=&quot;max-height:200px&quot; /&gt;
 If we just try to open our download &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extension&lt;/code&gt; .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;This is not a problem if you have only one environment or if you don’t need different configurations for different environments, but as I’ve already explained, we needed different configs for different environments.&lt;/p&gt;
@@ -57,14 +57,14 @@ If we just try to open our download &lt;code class=&quot;highlighter-rouge&quot;
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;files-structure&quot;&gt;Files structure&lt;/h2&gt;
 &lt;p&gt;Move the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt; files to a subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt;.
 At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If have any doubt about the files structure during this tutorial, you can download the full solution in section &lt;code class=&quot;highlighter-rouge&quot;&gt;Download&lt;/code&gt; at the end of the tutorial&lt;/p&gt;
@@ -155,7 +155,7 @@ Here we are basically defining the order of each function that will be called wh
 &lt;h2 id=&quot;running-the-gulp-for-the-first-time&quot;&gt;Running the gulp for the first time&lt;/h2&gt;
 &lt;p&gt;Now, if you just run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;creating-the-configjson-files&quot;&gt;Creating the &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files&lt;/h2&gt;
@@ -187,12 +187,12 @@ Here is the content of each one:&lt;/p&gt;
 &lt;h2 id=&quot;running-the-gulp-for-the-second-time&quot;&gt;Running the gulp for the second time&lt;/h2&gt;
 &lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;There is a new subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt; created. Load it on Chrome Extensions page:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The plugin should work ok.&lt;/p&gt;
@@ -243,7 +243,7 @@ Here is the content of each one:&lt;/p&gt;
 
 &lt;h2 id=&quot;running-the-gulp-for-each-environment&quot;&gt;Running the gulp for each environment&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder.
 This will use &lt;code class=&quot;highlighter-rouge&quot;&gt;DEV&lt;/code&gt; configuration from config.js and manifest.json&lt;/p&gt;
@@ -253,13 +253,13 @@ This will use &lt;code class=&quot;highlighter-rouge&quot;&gt;DEV&lt;/code&gt; c
 &lt;p&gt;Now, try to run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config TEST&lt;/code&gt;.
 In the Chrome Extensions page you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Your extension is using the TEST environment values.
 When you click on the extension icon on the Chrome toolbar, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can try to run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config PROD&lt;/code&gt;. To see the &lt;code class=&quot;highlighter-rouge&quot;&gt;PROD&lt;/code&gt; environment values on the extension.&lt;/p&gt;
@@ -305,7 +305,7 @@ You can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;--config&lt;/cod
 
 &lt;p&gt;The following gif shows the evolution of a Maurer Rose (n = 2, d = 29°) from 1 point to 361 points.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
@@ -364,13 +364,13 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 
 &lt;p&gt;If you just hit play button, you will see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Go to the LineRenderer component and change the line width to &lt;code class=&quot;highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
@@ -380,7 +380,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 
 &lt;p&gt;The image below shows the result of 6 different inputs (the same inputs used on &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Wikipedia&lt;/a&gt;):&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h2&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2020-09-11T11:14:41-03:00</updated>
+ <updated>2020-09-12T10:29:35-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -207,7 +207,7 @@
 
 &lt;p&gt;Now open the &lt;code class=&quot;highlighter-rouge&quot;&gt;SampleNugetProject.csproj&lt;/code&gt; in the Visual Studio and add a &lt;code class=&quot;highlighter-rouge&quot;&gt;T4 Template&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Add new item…&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -215,7 +215,7 @@
 
 &lt;p&gt;Our &lt;code class=&quot;highlighter-rouge&quot;&gt;Solution Explorer&lt;/code&gt; should look like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;creating-a-targets&quot;&gt;Creating a .targets&lt;/h2&gt;
@@ -377,7 +377,7 @@
 
 &lt;p&gt;When the build finish, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Cake build&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -385,7 +385,7 @@
 
 &lt;p&gt;Then open your project on &lt;a href=&quot;https://sonarcloud.io/projects&quot;&gt;SonarCloud&lt;/a&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;SonarCloud dashboard&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -423,7 +423,7 @@ dotnet run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
@@ -513,7 +513,7 @@ dotnet watch run
 
 &lt;p&gt;Wait for the message &lt;code class=&quot;highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
@@ -599,7 +599,7 @@ dotnet watch run
 &lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.&lt;/p&gt;
@@ -622,7 +622,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
@@ -640,7 +640,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -686,7 +686,7 @@ dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&g
 &lt;p&gt;Now you can open the &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpSample&lt;/code&gt; in Unity3D editor.
 Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; scene and hit the play button, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -758,7 +758,7 @@ Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; 
 
 &lt;p&gt;If you try to read a image like this one:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;You will get this result after call the &lt;code class=&quot;highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:
@@ -855,7 +855,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The GeneticSharp templates will be listed:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h1 id=&quot;creating-a-new-geneticsharp-project-from-templates&quot;&gt;Creating a new GeneticSharp project from templates&lt;/h1&gt;
@@ -865,7 +865,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpConsoleApp &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;tsp-console-application&quot;&gt;TSP Console application&lt;/h3&gt;
@@ -873,7 +873,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpTspConsoleApp &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;tsp-unity3d&quot;&gt;TSP Unity3D&lt;/h3&gt;
@@ -881,7 +881,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Let’s evolve!&lt;/p&gt;
@@ -1055,7 +1055,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;p&gt;Based on famous BoxCar2D, this sample uses a genetic algorithm to create car designs to overcome road challenges, like gaps, hills, and obstacles.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
@@ -1064,14 +1064,14 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
 &lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;
@@ -1089,7 +1089,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
@@ -1149,7 +1149,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;p&gt;The fitness of each car (chromosome) to the road will be the &lt;strong&gt;sum of the max distance&lt;/strong&gt; reach by it &lt;strong&gt;plus the average velocity&lt;/strong&gt; at that moment.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
@@ -1165,7 +1165,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 
 &lt;p&gt;Besides that, the chromosomes are evaluated in parallel using the GeneticSharp’s ParallelTaskExecutor and you can see all them in 4x4 grid:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -1313,7 +1313,7 @@ div.gist-meta { display:none; }
 &lt;p&gt;Using Unity 2018.1+, create a new project called TspSample.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
@@ -1322,7 +1322,7 @@ div.gist-meta { display:none; }
 &lt;p&gt;After restart, go back to “Player settings”, select “.NET Standard 2.0” on “Api Compability Level”.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
@@ -1365,7 +1365,7 @@ div.gist-meta { display:none; }
 &lt;p&gt;Run the scene on editor and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
@@ -1399,12 +1399,12 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now, select the GAController game object on hierarchy and set the CityPrefab property.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
@@ -1434,7 +1434,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Run the scene again, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
@@ -1453,7 +1453,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -1601,7 +1601,7 @@ to &lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/netcore.svg &quot
 
 &lt;h2 id=&quot;porting&quot;&gt;Porting&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;warmup&quot;&gt;Warmup&lt;/h3&gt;
@@ -1733,7 +1733,7 @@ Test Run Aborted
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Now I’m planning to create a GeneticSharp’s sample using Unity3d’s new beta features, like the new ECS (Entity Component System), C# Job System and the Burst compiler.&lt;/p&gt;
@@ -1789,13 +1789,13 @@ Test Run Aborted
 
 &lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/problem.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/problem.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;In our sample we will optimize the input of a mathematical function, this function will be used as our fitness evaluation function. For this sample we will use a function that everyone saw in school time, the famous &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_distance&quot;&gt;Euclidean distance&lt;/a&gt; or commonly know as distance of two points function:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;We will consider our chromosome fitness as the result of this function. The higher the result, the better is the chromosome fitness.&lt;/p&gt;
@@ -1804,7 +1804,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;what-our-genetic-algorithm-is-looking-for&quot;&gt;What our genetic algorithm is looking for?&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/telescope.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/telescope.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The goal of our genetic algortim is &lt;strong&gt;find the input values of Euclidean distance function: X1, Y1 and X2, Y2 that result in the greatest distance in a rectangular area&lt;/strong&gt;.&lt;/p&gt;
@@ -1817,7 +1817,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;creating-the-project&quot;&gt;Creating the project&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/project.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/project.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Open your IDE (Visual Studio/Xamarin Studio) and create a new console project.&lt;/p&gt;
@@ -1833,7 +1833,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;creating-an-euclidean-distance-chromosome&quot;&gt;Creating an Euclidean distance chromosome&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Chromosome is the representation of a possible solution in genetic algoritms.&lt;/p&gt;
@@ -1869,7 +1869,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;creating-the-population&quot;&gt;Creating the population&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/population.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/population.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The population represents the possible solutions to our problem, so we need to create a population of our Euclidean distance chromosome.&lt;/p&gt;
@@ -1883,7 +1883,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;creating-the-fitness-function&quot;&gt;Creating the fitness function&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/score.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/score.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The fitness function is where the genetic algoritm will evaluate and give a value (fitness) to each chromosome generated inside it. A good fitness function can guide your GA to a fast and optimum solution.&lt;/p&gt;
@@ -1899,7 +1899,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;creating-the-selection&quot;&gt;Creating the selection&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/podium.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/podium.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;A selection is the genetic algorithm operator responsible for decing which chromosomes of current population will be selected as parent of the next population.&lt;/p&gt;
@@ -1915,7 +1915,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;creating-the-crossover&quot;&gt;Creating the crossover&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/cross.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/cross.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing these selected chromosomes.&lt;/p&gt;
@@ -1935,7 +1935,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;creating-the-mutation&quot;&gt;Creating the mutation&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/mutation.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/mutation.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The biology definition of mutations is: 
@@ -1954,7 +1954,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;creating-the-termination&quot;&gt;Creating the termination&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/end.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/end.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;A termination decide when a GA should be stopped. GeneticSharp use the generation number termination with just one generation as default termination. This mean that the genetic algoritm will run just one generation when you call the Start method, after this you can increment the expected generation number of the termination and call the method Resume how many times you want.&lt;/p&gt;
@@ -1970,7 +1970,7 @@ Test Run Aborted
 
 &lt;h2 id=&quot;running-the-ga&quot;&gt;Running the GA&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/running.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/running.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.&lt;/p&gt;
@@ -2006,14 +2006,14 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;If we plot these generations the output image will be like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;We can see that in the first generations (black lines) the genetic algorithm as some intermediate results and at the end (red line) &lt;strong&gt;it found the best possible solution: a diagonal.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;complete-source-code&quot;&gt;Complete source code&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/programmer.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/programmer.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;When you finish the tutorial your source code will be this one:&lt;/p&gt;
@@ -2023,7 +2023,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;In this tutorial we learn how genetic algoritm works and how to use GeneticSharp to solve a very simple sample. Now you can try it to solve more complex problems.&lt;/p&gt;
@@ -2109,7 +2109,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -2128,7 +2128,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;p&gt;For these reasons, I made a mod called &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt; that let you interact with Buildron through the Slack.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
@@ -2138,49 +2138,49 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;p&gt;Your team can be notified by Buildron about builds status changed. In the mod preferences you can choose what status you want to receive notifications (running|succes|failed).&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;filter-builds&quot;&gt;Filter builds&lt;/h3&gt;
 &lt;p&gt;Filter buils by status or text.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;reset-filter&quot;&gt;Reset filter&lt;/h3&gt;
 &lt;p&gt;Reset previous builds filter (no filter).&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;sort-builds&quot;&gt;Sort builds&lt;/h3&gt;
 &lt;p&gt;Sort buils by status, text or date.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;move-camera&quot;&gt;Move camera&lt;/h3&gt;
 &lt;p&gt;Move the camera the amount of pixels define in the x,y,z coordinates.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;reset-camera&quot;&gt;Reset camera&lt;/h3&gt;
 &lt;p&gt;Reset the camera position.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;take-a-screenshot&quot;&gt;Take a screenshot&lt;/h3&gt;
 &lt;p&gt;Take a screenshot of current Buildron state.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -2203,7 +2203,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;p&gt;Then I decided to try a very raw solution using the Unity3d WWWForm and it worked well, very simple, but can be useful to someone. The result is the code bellow:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h1 id=&quot;botcontroller&quot;&gt;BotController&lt;/h1&gt;
@@ -2414,14 +2414,14 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
 &lt;p&gt;You should see a scene like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;In the menu “Buildron”, click on “Show Simulator”.&lt;/p&gt;
 
 &lt;p&gt;Click on “BuildFound”, “BuildStatusChanged” and “BuildRemoved” buttons, you should see these events been registered on ConsoledMod window.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Hit the “Play” button again to stop playing the scene.&lt;/p&gt;
@@ -2440,7 +2440,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
 &lt;p&gt;You should see the ConsoleMod window registering a lot of Buildron events.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -2460,7 +2460,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a command-line tool to create new C# projects from prebuilt/templates.&lt;/p&gt;
@@ -2472,7 +2472,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;p&gt;The idea of the tool was born a long time ago and became a little stronger every time that I had to create a new solution and all the projects by hand, but when I saw the message bellow in the &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt; page I decided to finally write the tool… and the name was very clear, almost.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -2561,7 +2561,7 @@ My.Amazing.NewProject.sln
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
@@ -2592,7 +2592,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:&lt;/p&gt;
@@ -2608,7 +2608,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;the-c-project&quot;&gt;The C# project&lt;/h2&gt;
@@ -2617,7 +2617,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;Select the configuration of your platform.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Inside of it you can see the Mod.cs and ModController.cs.&lt;/p&gt;
@@ -2629,14 +2629,14 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;Open the scene Assets/SimulatorScene and click on play button.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Click on the menu “Buildron/Show Simulator”.&lt;/p&gt;
 
 &lt;p&gt;In the simulator click on button “BuildStatusChanged”.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;You will see a box falling down every time you hit the button. This behavior is made by Mod.cs and ModController.cs on C# project. If you are curious about it, take a look on the classes implementations.&lt;/p&gt;
@@ -2656,7 +2656,7 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;Click on “Build” button.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Go to folder MyAmazingMod/build and open the Buildron of your platform.&lt;/p&gt;
@@ -2666,7 +2666,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;You should see the same falling down box that you see on simulator falling down inside Buildron every time a build changed status.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -2690,7 +2690,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;We really appreciate your opinion about the mods support, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-introduction&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-tutorial-creating-a-mod&quot;&gt;tutorial&lt;/a&gt; and &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;. Please, get in touch at &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -2737,7 +2737,7 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;h3 id=&quot;badgessharp&quot;&gt;BadgesSharp&lt;/h3&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;To fill this gap I created the BadgesSharp service: &lt;a href=&quot;http://badgessharp.apphb.com&quot;&gt;http://badgessharp.apphb.com&lt;/a&gt;. BadgesSharp is a free service to generate badges that need some kind of input and processing before you can display them on GitHub repositories.&lt;/p&gt;
@@ -2879,7 +2879,7 @@ Custom script:&lt;/li&gt;
 &lt;p&gt;You are debugging a list of Tweets, let me say 200 tweets, and all tweets in the debugger view looks like the image below:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;It’s clear that is not easy to know what tweets are inside that list. Of course you can use breakpoint conditions, trace, logs and many others resources to help the debug process, but DebuggerDisplay is an easier and very cheap solution.&lt;/p&gt;
@@ -2898,13 +2898,13 @@ Custom script:&lt;/li&gt;
 
 &lt;p&gt;&lt;strong&gt;Now, that “secret” tweet list looks like:&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;When debugging is easier than expected&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;

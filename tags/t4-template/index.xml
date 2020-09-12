@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - t4-template</title>
  <link href="//tags/t4-template/index.xml" rel="self"/>
  <link href="/tag/t4-template.html"/>
- <updated>2020-09-11T11:14:41-03:00</updated>
+ <updated>2020-09-12T10:29:35-03:00</updated>
  <id>/tag/t4-template.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -34,7 +34,7 @@
 
 &lt;p&gt;Now open the &lt;code class=&quot;highlighter-rouge&quot;&gt;SampleNugetProject.csproj&lt;/code&gt; in the Visual Studio and add a &lt;code class=&quot;highlighter-rouge&quot;&gt;T4 Template&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Add new item…&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -42,7 +42,7 @@
 
 &lt;p&gt;Our &lt;code class=&quot;highlighter-rouge&quot;&gt;Solution Explorer&lt;/code&gt; should look like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;creating-a-targets&quot;&gt;Creating a .targets&lt;/h2&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - car2d</title>
  <link href="//tags/car2d/index.xml" rel="self"/>
  <link href="/tag/car2d.html"/>
- <updated>2020-09-11T11:14:41-03:00</updated>
+ <updated>2020-09-12T10:29:35-03:00</updated>
  <id>/tag/car2d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -18,7 +18,7 @@
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
@@ -78,7 +78,7 @@
 &lt;p&gt;The fitness of each car (chromosome) to the road will be the &lt;strong&gt;sum of the max distance&lt;/strong&gt; reach by it &lt;strong&gt;plus the average velocity&lt;/strong&gt; at that moment.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
@@ -94,7 +94,7 @@
 
 &lt;p&gt;Besides that, the chromosomes are evaluated in parallel using the GeneticSharp’s ParallelTaskExecutor and you can see all them in 4x4 grid:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;

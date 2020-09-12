@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2020-09-11T11:14:41-03:00</updated>
+ <updated>2020-09-12T10:29:35-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -20,7 +20,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;p&gt;To activate a Focused Inspector, select an item &lt;code class=&quot;highlighter-rouge&quot;&gt;(GameObject, Component, or Asset)&lt;/code&gt; and in the context menu hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Properties...&lt;/code&gt; menu item.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -36,7 +36,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <id>//unitytips-settings-provider</id>
    <content type="html">&lt;p&gt;You can add a custom section to &lt;a href=&quot;https://docs.unity3d.com/Manual/comp-ManagerGroup.html&quot;&gt;Project Settings&lt;/a&gt; window that allows you to configure some global settings for your project using a &lt;a href=&quot;https://docs.unity3d.com/2018.3/Documentation/ScriptReference/SettingsProvider.html&quot;&gt;SettingsProvider&lt;/a&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/07/21/unitytips-settings-provider/settings-provider.jpg &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/07/21/unitytips-settings-provider/settings-provider.jpg &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -63,7 +63,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <id>//unitytips-helpbox-attribute</id>
    <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyAttribute.html&quot;&gt;PropertyAttribute&lt;/a&gt; to display a help box on inspector showing a few lines of information, like &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/EditorGUI.HelpBox.html&quot;&gt;EditorGUI.HelpBox&lt;/a&gt;, but with a &lt;code class=&quot;highlighter-rouge&quot;&gt;docs&lt;/code&gt; button to the documentation page.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/07/14/unitytips-helpbox-attribute/sample-component.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/07/14/unitytips-helpbox-attribute/sample-component.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -97,7 +97,7 @@ It always displays the properties of the item you opened it for, even if you sel
 
 &lt;p&gt;I made the gist below that uses the plugin to add a social share component to any game object.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/07/07/unitytips-social-share/component.jpg &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/07/07/unitytips-social-share/component.jpg &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
@@ -158,7 +158,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <id>//unitytips-timespan-box-drawer</id>
    <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyDrawer.html&quot;&gt;PropertyDrawer&lt;/a&gt; to display a help box on inspector showing the time information in seconds fields using &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-timespan-format-strings&quot;&gt;TimeSpan format strings&lt;/a&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -190,7 +190,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <id>//unitytips-string-interpolation</id>
    <content type="html">&lt;p&gt;Since C# 6.0 you can use &lt;a href=&quot;https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/tokens/interpolated&quot;&gt;String interpolation&lt;/a&gt; to make code more readable:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The sample lines will result in the same string&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -214,7 +214,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <content type="html">&lt;p&gt;When you have a single line method, you can use &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition&quot;&gt;expression body definition&lt;/a&gt; do simplify and reduce the lines of code:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -223,7 +223,7 @@ It always displays the properties of the item you opened it for, even if you sel
 
 &lt;p&gt;So you can use the expression body definition for other members, like properties:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
       &lt;/center&gt;
 
 </content>
@@ -530,7 +530,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;p&gt;The name of Sorting Layer been used is showing in the top of each game object in the scene view.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger.png &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -551,7 +551,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;/div&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
+        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
