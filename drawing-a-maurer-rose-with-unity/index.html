@@ -155,11 +155,11 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <p>The following gif shows the evolution of a Maurer Rose (n = 2, d = 29°) from 1 point to 361 points.</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif " />
+        <img class="screenshot" src="/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif " />
       </center>
 
 <h2 id="definition">Definition</h2>
-<p><img class="lazy icon" src="/assets/logos/project.png " style="max-height:200px" /></p>
+<p><img class="icon" src="/assets/logos/project.png " style="max-height:200px" /></p>
 
 <p>A Maurer Rose is always defined by two input parameters: <code class="highlighter-rouge">n</code> and <code class="highlighter-rouge">d</code>.</p>
 
@@ -179,7 +179,7 @@ where d is a positive integer and the angles are in degrees, not radians.</p>
 <p>This definition talks about <a href="https://en.wikipedia.org/wiki/Polar_coordinate_system">polar coordinate system</a>. The more important thing to know about it is this: <code class="highlighter-rouge">each point on a plane is determined by a distance from a reference point and an angle from a reference direction</code>. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.</p>
 
 <h2 id="the-formula">The formula</h2>
-<p><img class="lazy icon" src="/assets/logos/math.png " style="max-height:200px" /></p>
+<p><img class="icon" src="/assets/logos/math.png " style="max-height:200px" /></p>
 
 <p>The basic formula is: <code class="highlighter-rouge">r = sin(nθ)</code> and we need to apply it to 361 points, where:</p>
 
@@ -214,27 +214,27 @@ where d is a positive integer and the angles are in degrees, not radians.</p>
 
 <p>If you just hit play button, you will see something like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png " />
+        <img class="screenshot" src="/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png " />
       </center>
 
 <p><br />
 Go to the LineRenderer component and change the line width to <code class="highlighter-rouge">0.03</code>, then hit play button again.</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png " />
+        <img class="screenshot" src="/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png " />
       </center>
 
 <h2 id="testing-new-inputs">Testing new inputs</h2>
-<p><img class="lazy icon" src="/assets/logos/programmer.png " style="max-height:200px" /></p>
+<p><img class="icon" src="/assets/logos/programmer.png " style="max-height:200px" /></p>
 
 <p>If you change the values of <code class="highlighter-rouge">N</code> and <code class="highlighter-rouge">D</code> of the component in the inspector, you will see a new Maurer Rose been drawing.</p>
 
 <p>The image below shows the result of 6 different inputs (the same inputs used on <a href="https://en.wikipedia.org/wiki/Maurer_rose">Wikipedia</a>):</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png " />
+        <img class="screenshot" src="/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png " />
       </center>
 
 <h2 id="going-beyond">Going beyond</h2>
-<p><img class="lazy icon" src="/assets/logos/beyond.png " style="max-height:200px" /></p>
+<p><img class="icon" src="/assets/logos/beyond.png " style="max-height:200px" /></p>
 
 <p>Now that you understand what is a Maurer Rose and how to code it inside Unity you can try to do some crazy things with it, like animate the input values or the number of points, or still using it to build a particle system.</p>
 
@@ -338,14 +338,14 @@ This simple formula show how math can be used to explore creativity and beauty.<
      <div class="portifolio-slide">
           <a href="GeneticSharp-Car2D">
                <center>
-        <img class='lazy screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
+        <img class='screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
       </center>
                GeneticSharp Car2D, an Unity3D sample for GeneticSharp where a genetic algorithm tries to design 2D cars to overcome roads challenges
           </a>
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp">               
-          <img class='lazy icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
+          <img class='icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
           GeneticSharp Unity3d Samples on Google Play
           </a>
      </div>
@@ -615,7 +615,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 	</script>
 	<!-- End Google Analytics -->
 
-
-    <script> new LazyLoad({ elements_selector: ".lazy" });</script>
+    
   </body>
 </html>

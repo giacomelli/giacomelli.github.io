@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-09-13T07:56:02-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Using Gulp for Chrome Extension development workflow</title><link href="http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow/" rel="alternate" type="text/html" title="Using Gulp for Chrome Extension development workflow" /><published>2020-09-11T00:00:00-03:00</published><updated>2020-09-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow/">&lt;p&gt;In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-09-13T08:19:39-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Using Gulp for Chrome Extension development workflow</title><link href="http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow/" rel="alternate" type="text/html" title="Using Gulp for Chrome Extension development workflow" /><published>2020-09-11T00:00:00-03:00</published><updated>2020-09-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow/">&lt;p&gt;In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;A few months ago we built a Chrome Extension to a customer to allow users to capture Netflix captions and sent them to the customer web site to study them later.&lt;/p&gt;
@@ -6,7 +6,7 @@
 &lt;p&gt;While we were developing it we needed to change some configurations on the extension to use different URLs of our API depending on what environment the Chrome Extension was using, like DEV (local), TEST, and Production.&lt;/p&gt;
 
 &lt;h2 id=&quot;chrome-extension&quot;&gt;Chrome Extension&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/chrome-extension.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/chrome-extension.png &quot; style=&quot;max-height:200px&quot; /&gt;
 For this tutorial, I’ll use a Chrome Extension basic sample called &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt;.&lt;br /&gt; 
 You can download it from this page &lt;a href=&quot;https://developer.chrome.com/extensions/samples&quot;&gt;https://developer.chrome.com/extensions/samples&lt;/a&gt; or directly from &lt;a href=&quot;https://developer.chrome.com/extensions/examples/tutorials/hello_extensions.zip&quot;&gt;here&lt;/a&gt;.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -14,7 +14,7 @@ You can download it from this page &lt;a href=&quot;https://developer.chrome.com
 &lt;/div&gt;
 
 &lt;h2 id=&quot;gulp&quot;&gt;Gulp&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/gulp.svg &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/gulp.svg &quot; style=&quot;max-height:200px&quot; /&gt;
 At that time we did not find any builtin or other solution to make this workflow easier and streamlined, so we decided to create our own solution using &lt;code class=&quot;highlighter-rouge&quot;&gt;Gulp&lt;/code&gt;. This whole solution will be explaining below.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -24,10 +24,10 @@ At that time we did not find any builtin or other solution to make this workflow
 &lt;p&gt;We decided to use &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt;, because a Chrome Extensions is a bunch of .js, .html and .json files. Perfect to use gulp.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/problem.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/problem.png &quot; style=&quot;max-height:200px&quot; /&gt;
 If we just try to open our download &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extension&lt;/code&gt; .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;This is not a problem if you have only one environment or if you don’t need different configurations for different environments, but as I’ve already explained, we needed different configs for different environments.&lt;/p&gt;
@@ -41,14 +41,14 @@ If we just try to open our download &lt;code class=&quot;highlighter-rouge&quot;
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;files-structure&quot;&gt;Files structure&lt;/h2&gt;
 &lt;p&gt;Move the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt; files to a subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt;.
 At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If have any doubt about the files structure during this tutorial, you can download the full solution in section &lt;code class=&quot;highlighter-rouge&quot;&gt;Download&lt;/code&gt; at the end of the tutorial&lt;/p&gt;
@@ -74,7 +74,7 @@ At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;p&gt;This is the full &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; file that will allow our development workflow for different environments.&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-gulpfilejs-sections&quot;&gt;The gulpfile.js sections&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
 Now I will explain each section of it.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -128,7 +128,7 @@ Here we are basically defining the order of each function that will be called wh
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=watch.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;packagesjson-file&quot;&gt;packages.json file&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/package.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/package.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Change the content of &lt;code class=&quot;highlighter-rouge&quot;&gt;packages.json&lt;/code&gt; file to the content below to update the dependencies.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
@@ -139,11 +139,11 @@ Here we are basically defining the order of each function that will be called wh
 &lt;h2 id=&quot;running-the-gulp-for-the-first-time&quot;&gt;Running the gulp for the first time&lt;/h2&gt;
 &lt;p&gt;Now, if you just run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;creating-the-configjson-files&quot;&gt;Creating the &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/config.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/config.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We need to create our &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
 They are 3 files:&lt;/p&gt;
@@ -171,12 +171,12 @@ Here is the content of each one:&lt;/p&gt;
 &lt;h2 id=&quot;running-the-gulp-for-the-second-time&quot;&gt;Running the gulp for the second time&lt;/h2&gt;
 &lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;There is a new subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt; created. Load it on Chrome Extensions page:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The plugin should work ok.&lt;/p&gt;
@@ -206,7 +206,7 @@ Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&
 &lt;p&gt;The line &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;/scripts/config.js&quot;&lt;/code&gt; is what we need to access the configuration values.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-manifestjson-files&quot;&gt;Creating the &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/manifest.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/manifest.png &quot; style=&quot;max-height:200px&quot; /&gt;
 We need to create our &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files, in the same way, we created our &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 They are 3 files:&lt;/p&gt;
@@ -227,7 +227,7 @@ Here is the content of each one:&lt;/p&gt;
 
 &lt;h2 id=&quot;running-the-gulp-for-each-environment&quot;&gt;Running the gulp for each environment&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder.
 This will use &lt;code class=&quot;highlighter-rouge&quot;&gt;DEV&lt;/code&gt; configuration from config.js and manifest.json&lt;/p&gt;
@@ -237,13 +237,13 @@ This will use &lt;code class=&quot;highlighter-rouge&quot;&gt;DEV&lt;/code&gt; c
 &lt;p&gt;Now, try to run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config TEST&lt;/code&gt;.
 In the Chrome Extensions page you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Your extension is using the TEST environment values.
 When you click on the extension icon on the Chrome toolbar, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can try to run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config PROD&lt;/code&gt;. To see the &lt;code class=&quot;highlighter-rouge&quot;&gt;PROD&lt;/code&gt; environment values on the extension.&lt;/p&gt;
@@ -261,7 +261,7 @@ You can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;--config&lt;/cod
 &lt;p&gt;In this .zip are all files mentioned in this tutorial, you just need to set up your gulp environment and call the &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install gulp&lt;/code&gt; before starting to use it.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
 
@@ -271,7 +271,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;p&gt;To activate a Focused Inspector, select an item &lt;code class=&quot;highlighter-rouge&quot;&gt;(GameObject, Component, or Asset)&lt;/code&gt; and in the context menu hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Properties...&lt;/code&gt; menu item.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -306,7 +306,7 @@ To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unit
 Unity went further, allowing an editor focused on a component too.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;for-gameobjects-and-project-assets&quot;&gt;For GameObjects and Project Assets&lt;/h3&gt;
@@ -336,7 +336,7 @@ From the component’s &lt;code class=&quot;highlighter-rouge&quot;&gt;More item
 &lt;/blockquote&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;lighting-settings-as-an-asset&quot;&gt;Lighting settings as an asset&lt;/h2&gt;
@@ -346,7 +346,7 @@ From the component’s &lt;code class=&quot;highlighter-rouge&quot;&gt;More item
 
 &lt;p&gt;This can be quite useful when we need different lighting setups for different target platforms.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;graphics-getpixeldata-api-was-added&quot;&gt;Graphics: GetPixelData API was added&lt;/h2&gt;
@@ -417,7 +417,7 @@ From the 9 stores supported, 7 are fully integrated with UDP. What this meaning?
 &lt;p&gt;Please, if you did not read the official documentation yet, go and &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.purchasing.udp@2.0/manual/index.html&quot;&gt;read it&lt;/a&gt;, then come back here. You’ll better understand this post and the whole UDP solution after educated yourself about it.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;1-implement&quot;&gt;1. Implement&lt;/h2&gt;
@@ -441,7 +441,7 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 
 &lt;p&gt;You’ll need this when you build to UDP and remember to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Target Google Play&lt;/code&gt; when you build to Google Play.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;hr /&gt;
@@ -460,7 +460,7 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 &lt;p&gt;Just build your &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; on Unity and open it on emulator (like &lt;a href=&quot;https://www.bluestacks.com/&quot;&gt;BlueStacks&lt;/a&gt;) or directly on your Android device.
 If you setup UDP right, you should see a screen like below when the game starts.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;To login in this screen, use the accounts in the setup on &lt;code class=&quot;highlighter-rouge&quot;&gt;Sandbox Test Account&lt;/code&gt;. Remember those e-mails don’t need to exist, they are just test accounts to validate UDP setup&lt;/p&gt;
@@ -470,7 +470,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 
 &lt;p&gt;After this, you can refresh your game page on UDP and you should see the result below on &lt;code class=&quot;highlighter-rouge&quot;&gt;Sandbox Testing&lt;/code&gt; section:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you did not setup the UDP on your project, you should see a message like this on UDP dashboard notifications &lt;code class=&quot;highlighter-rouge&quot;&gt;apk analytics failed, caused by: analyse apk failed, caused by:Failed to find GameSettings.prop, please import udp sdk and generate GameSettings.&lt;/code&gt;&lt;/p&gt;
@@ -490,7 +490,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;In my case on the &lt;code class=&quot;highlighter-rouge&quot;&gt;App Signature&lt;/code&gt; section of the game info, a used the recommend option &lt;code class=&quot;highlighter-rouge&quot;&gt;Export and upload your own key and certificate&lt;/code&gt;. This is the same certificate used by Google Play Services and APIs.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Go to &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API Console&lt;/a&gt;, select your game project on the dropdown, then go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section, then on the &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt; section select the item with the name of your game, then copy the value of the field &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt;.&lt;/p&gt;
@@ -498,7 +498,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;Now, go back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section and click on the button &lt;code class=&quot;highlighter-rouge&quot;&gt;Create credentials&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth client ID&lt;/code&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;In the new page, select &lt;code class=&quot;highlighter-rouge&quot;&gt;Android&lt;/code&gt; on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Application type&lt;/code&gt; dropdown.&lt;/p&gt;
@@ -527,7 +527,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;As you follow the UDP documentation you will reach the point will need to create your game on the UDP dashboard.
 If you already have the game published on Google Play, as was my case with &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt;, you can use the right-top button &lt;code class=&quot;highlighter-rouge&quot;&gt;IMPORT FROM GOOGLE PLAY&lt;/code&gt; in the game page.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;After the import, you can edit the information as well.&lt;/p&gt;
@@ -569,7 +569,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
 
 &lt;p&gt;For each store, you will see different screens. For example, for QooApp you will see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;53-send-it-to-review&quot;&gt;5.3 Send it to review&lt;/h3&gt;
@@ -578,7 +578,7 @@ UDP will send the game to store review and you can monitor the progress on the d
 UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;hr /&gt;
@@ -626,7 +626,7 @@ I took some time thinking about what game I would like to play and develop with 
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -646,11 +646,11 @@ I took some time thinking about what game I would like to play and develop with 
 
 &lt;p&gt;The following gif shows the evolution of a Maurer Rose (n = 2, d = 29°) from 1 point to 361 points.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A Maurer Rose is always defined by two input parameters: &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt;.&lt;/p&gt;
 
@@ -670,7 +670,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;p&gt;This definition talks about &lt;a href=&quot;https://en.wikipedia.org/wiki/Polar_coordinate_system&quot;&gt;polar coordinate system&lt;/a&gt;. The more important thing to know about it is this: &lt;code class=&quot;highlighter-rouge&quot;&gt;each point on a plane is determined by a distance from a reference point and an angle from a reference direction&lt;/code&gt;. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-formula&quot;&gt;The formula&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/math.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/math.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The basic formula is: &lt;code class=&quot;highlighter-rouge&quot;&gt;r = sin(nθ)&lt;/code&gt; and we need to apply it to 361 points, where:&lt;/p&gt;
 
@@ -705,27 +705,27 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 
 &lt;p&gt;If you just hit play button, you will see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Go to the LineRenderer component and change the line width to &lt;code class=&quot;highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/programmer.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/programmer.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you change the values of &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt; of the component in the inspector, you will see a new Maurer Rose been drawing.&lt;/p&gt;
 
 &lt;p&gt;The image below shows the result of 6 different inputs (the same inputs used on &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Wikipedia&lt;/a&gt;):&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/beyond.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/beyond.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that you understand what is a Maurer Rose and how to code it inside Unity you can try to do some crazy things with it, like animate the input values or the number of points, or still using it to build a particle system.&lt;/p&gt;
 
@@ -756,7 +756,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;Fans of casual puzzle games will enjoy the crisp, colorful graphics featuring cute animals and the compelling music offers great relaxation.&lt;/p&gt;</content><author><name></name></author><category term="News" /><category term="unity3d" /><category term="gamedev" /><category term="games" /><summary type="html">After 4 months of work, I am finally starting the open beta of Puzzimals: https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals</summary></entry><entry><title type="html">unitytips&amp;amp;colon; SettingsProvider</title><link href="http://diegogiacomelli.com.br/unitytips-settings-provider/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; SettingsProvider" /><published>2020-07-21T00:00:00-03:00</published><updated>2020-07-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-settings-provider</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-settings-provider/">&lt;p&gt;You can add a custom section to &lt;a href=&quot;https://docs.unity3d.com/Manual/comp-ManagerGroup.html&quot;&gt;Project Settings&lt;/a&gt; window that allows you to configure some global settings for your project using a &lt;a href=&quot;https://docs.unity3d.com/2018.3/Documentation/ScriptReference/SettingsProvider.html&quot;&gt;SettingsProvider&lt;/a&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/07/21/unitytips-settings-provider/settings-provider.jpg &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/07/21/unitytips-settings-provider/settings-provider.jpg &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -774,7 +774,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
         &lt;/div&gt;
       &lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="custom-editor" /><summary type="html">You can add a custom section to Project Settings window that allows you to configure some global settings for your project using a SettingsProvider</summary></entry><entry><title type="html">unitytips&amp;amp;colon; HelpBox Attribute (with docs button)</title><link href="http://diegogiacomelli.com.br/unitytips-helpbox-attribute/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; HelpBox Attribute (with docs button)" /><published>2020-07-14T00:00:00-03:00</published><updated>2020-07-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-helpbox-attribute</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-helpbox-attribute/">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyAttribute.html&quot;&gt;PropertyAttribute&lt;/a&gt; to display a help box on inspector showing a few lines of information, like &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/EditorGUI.HelpBox.html&quot;&gt;EditorGUI.HelpBox&lt;/a&gt;, but with a &lt;code class=&quot;highlighter-rouge&quot;&gt;docs&lt;/code&gt; button to the documentation page.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/07/14/unitytips-helpbox-attribute/sample-component.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/07/14/unitytips-helpbox-attribute/sample-component.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -798,7 +798,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;I made the gist below that uses the plugin to add a social share component to any game object.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/07/07/unitytips-social-share/component.jpg &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/07/07/unitytips-social-share/component.jpg &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;

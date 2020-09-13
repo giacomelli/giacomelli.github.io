@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - avatar-mask</title>
  <link href="//tags/avatar-mask/index.xml" rel="self"/>
  <link href="/tag/avatar-mask.html"/>
- <updated>2020-09-13T07:56:02-03:00</updated>
+ <updated>2020-09-13T08:19:39-03:00</updated>
  <id>/tag/avatar-mask.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -21,7 +21,7 @@
 In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation clips available on Sci Fi Warrior PBR HP&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -31,7 +31,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Idle_GunMiddle&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot stands idle with the gun in the middle of his body&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -39,7 +39,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;WalkForward_Shoot&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot walk forward and shoot&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -70,7 +70,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;By reading those two sections is quite clear that we need to use avatar masks and animation layers together to combine our animations of different body parts. So, in the next sections, I will demonstrate how to combine three animations (Idle_GunMiddle, WalkForward_Shoot, and Shoot_single) to make the robot shoot while stands idle and walk forward with a gun in middle body. After that, I will propose you a challenge for the other animations available.&lt;/p&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&quot;&gt;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&lt;/a&gt;. To start this tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -89,7 +89,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Play&lt;/code&gt; button. You should see a screen like this:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Starter project running: just HUD&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -100,7 +100,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Animation Controller&lt;/code&gt; (menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Create/Animation Controller&lt;/code&gt;) and open it:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Animator window showing the animation controller created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -119,7 +119,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward parameter created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -127,7 +127,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;We want to activate the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; is true, so select this transition (click on the arrow connecting the state &lt;code class=&quot;highlighter-rouge&quot;&gt;Any State&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt;) and in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Conditions&lt;/code&gt; list on inspector add the &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; equals &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward condition defined&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -135,7 +135,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Click the &lt;code class=&quot;highlighter-rouge&quot;&gt;reset&lt;/code&gt; to auto fit the exit and transition time:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;reseting the transition settings&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -143,7 +143,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Repeat the same steps as above for the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;, but use &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; as the value for &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation base layer&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -158,7 +158,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Create a new Avatar Mask (&lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Create/Avatar Mask&lt;/code&gt;) called &lt;code class=&quot;highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt;. In the inspector, uncheck all lower body parties, as the image below:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;only upper body&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -167,7 +167,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;h3 id=&quot;creating-a-upper-body-animation-layer&quot;&gt;Creating a upper body animation layer&lt;/h3&gt;
 &lt;p&gt;With the UpperBody Avatar Mask created, we will need to create a new animation layer that will use the mask. Go to the animator window and create a new layer using the &lt;code class=&quot;highlighter-rouge&quot;&gt;+ button&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the new layer created with the mask&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -178,7 +178,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Drag the animation clip &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt; from folder &lt;code class=&quot;highlighter-rouge&quot;&gt;SciFiWarrior/Animations&lt;/code&gt; to the &lt;code class=&quot;highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt; layer.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;upper body animation layer&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -200,7 +200,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;ShootSingle parameter created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -220,7 +220,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Do something is better to learn than just reading and following someone instructions because this I will challenge you to try to implement other actions:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the remaining actions to the challenge&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;

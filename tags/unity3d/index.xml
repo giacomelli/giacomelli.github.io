@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-09-13T07:56:02-03:00</updated>
+ <updated>2020-09-13T08:19:39-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -22,7 +22,7 @@
 &lt;p&gt;While we were developing it we needed to change some configurations on the extension to use different URLs of our API depending on what environment the Chrome Extension was using, like DEV (local), TEST, and Production.&lt;/p&gt;
 
 &lt;h2 id=&quot;chrome-extension&quot;&gt;Chrome Extension&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/chrome-extension.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/chrome-extension.png &quot; style=&quot;max-height:200px&quot; /&gt;
 For this tutorial, I’ll use a Chrome Extension basic sample called &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt;.&lt;br /&gt; 
 You can download it from this page &lt;a href=&quot;https://developer.chrome.com/extensions/samples&quot;&gt;https://developer.chrome.com/extensions/samples&lt;/a&gt; or directly from &lt;a href=&quot;https://developer.chrome.com/extensions/examples/tutorials/hello_extensions.zip&quot;&gt;here&lt;/a&gt;.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -30,7 +30,7 @@ You can download it from this page &lt;a href=&quot;https://developer.chrome.com
 &lt;/div&gt;
 
 &lt;h2 id=&quot;gulp&quot;&gt;Gulp&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/gulp.svg &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/gulp.svg &quot; style=&quot;max-height:200px&quot; /&gt;
 At that time we did not find any builtin or other solution to make this workflow easier and streamlined, so we decided to create our own solution using &lt;code class=&quot;highlighter-rouge&quot;&gt;Gulp&lt;/code&gt;. This whole solution will be explaining below.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -40,10 +40,10 @@ At that time we did not find any builtin or other solution to make this workflow
 &lt;p&gt;We decided to use &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt;, because a Chrome Extensions is a bunch of .js, .html and .json files. Perfect to use gulp.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/problem.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/problem.png &quot; style=&quot;max-height:200px&quot; /&gt;
 If we just try to open our download &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extension&lt;/code&gt; .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;This is not a problem if you have only one environment or if you don’t need different configurations for different environments, but as I’ve already explained, we needed different configs for different environments.&lt;/p&gt;
@@ -57,14 +57,14 @@ If we just try to open our download &lt;code class=&quot;highlighter-rouge&quot;
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;files-structure&quot;&gt;Files structure&lt;/h2&gt;
 &lt;p&gt;Move the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt; files to a subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt;.
 At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If have any doubt about the files structure during this tutorial, you can download the full solution in section &lt;code class=&quot;highlighter-rouge&quot;&gt;Download&lt;/code&gt; at the end of the tutorial&lt;/p&gt;
@@ -90,7 +90,7 @@ At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;p&gt;This is the full &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; file that will allow our development workflow for different environments.&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-gulpfilejs-sections&quot;&gt;The gulpfile.js sections&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
 Now I will explain each section of it.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -144,7 +144,7 @@ Here we are basically defining the order of each function that will be called wh
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=watch.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;packagesjson-file&quot;&gt;packages.json file&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/package.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/package.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Change the content of &lt;code class=&quot;highlighter-rouge&quot;&gt;packages.json&lt;/code&gt; file to the content below to update the dependencies.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
@@ -155,11 +155,11 @@ Here we are basically defining the order of each function that will be called wh
 &lt;h2 id=&quot;running-the-gulp-for-the-first-time&quot;&gt;Running the gulp for the first time&lt;/h2&gt;
 &lt;p&gt;Now, if you just run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;creating-the-configjson-files&quot;&gt;Creating the &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/config.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/config.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We need to create our &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
 They are 3 files:&lt;/p&gt;
@@ -187,12 +187,12 @@ Here is the content of each one:&lt;/p&gt;
 &lt;h2 id=&quot;running-the-gulp-for-the-second-time&quot;&gt;Running the gulp for the second time&lt;/h2&gt;
 &lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;There is a new subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt; created. Load it on Chrome Extensions page:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The plugin should work ok.&lt;/p&gt;
@@ -222,7 +222,7 @@ Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&
 &lt;p&gt;The line &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;/scripts/config.js&quot;&lt;/code&gt; is what we need to access the configuration values.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-manifestjson-files&quot;&gt;Creating the &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/manifest.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/manifest.png &quot; style=&quot;max-height:200px&quot; /&gt;
 We need to create our &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files, in the same way, we created our &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 They are 3 files:&lt;/p&gt;
@@ -243,7 +243,7 @@ Here is the content of each one:&lt;/p&gt;
 
 &lt;h2 id=&quot;running-the-gulp-for-each-environment&quot;&gt;Running the gulp for each environment&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder.
 This will use &lt;code class=&quot;highlighter-rouge&quot;&gt;DEV&lt;/code&gt; configuration from config.js and manifest.json&lt;/p&gt;
@@ -253,13 +253,13 @@ This will use &lt;code class=&quot;highlighter-rouge&quot;&gt;DEV&lt;/code&gt; c
 &lt;p&gt;Now, try to run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config TEST&lt;/code&gt;.
 In the Chrome Extensions page you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Your extension is using the TEST environment values.
 When you click on the extension icon on the Chrome toolbar, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can try to run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config PROD&lt;/code&gt;. To see the &lt;code class=&quot;highlighter-rouge&quot;&gt;PROD&lt;/code&gt; environment values on the extension.&lt;/p&gt;
@@ -277,7 +277,7 @@ You can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;--config&lt;/cod
 &lt;p&gt;In this .zip are all files mentioned in this tutorial, you just need to set up your gulp environment and call the &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install gulp&lt;/code&gt; before starting to use it.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
 
@@ -296,7 +296,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;p&gt;To activate a Focused Inspector, select an item &lt;code class=&quot;highlighter-rouge&quot;&gt;(GameObject, Component, or Asset)&lt;/code&gt; and in the context menu hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Properties...&lt;/code&gt; menu item.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -341,7 +341,7 @@ To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unit
 Unity went further, allowing an editor focused on a component too.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;for-gameobjects-and-project-assets&quot;&gt;For GameObjects and Project Assets&lt;/h3&gt;
@@ -371,7 +371,7 @@ From the component’s &lt;code class=&quot;highlighter-rouge&quot;&gt;More item
 &lt;/blockquote&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;lighting-settings-as-an-asset&quot;&gt;Lighting settings as an asset&lt;/h2&gt;
@@ -381,7 +381,7 @@ From the component’s &lt;code class=&quot;highlighter-rouge&quot;&gt;More item
 
 &lt;p&gt;This can be quite useful when we need different lighting setups for different target platforms.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;graphics-getpixeldata-api-was-added&quot;&gt;Graphics: GetPixelData API was added&lt;/h2&gt;
@@ -461,7 +461,7 @@ From the 9 stores supported, 7 are fully integrated with UDP. What this meaning?
 &lt;p&gt;Please, if you did not read the official documentation yet, go and &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.purchasing.udp@2.0/manual/index.html&quot;&gt;read it&lt;/a&gt;, then come back here. You’ll better understand this post and the whole UDP solution after educated yourself about it.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;1-implement&quot;&gt;1. Implement&lt;/h2&gt;
@@ -485,7 +485,7 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 
 &lt;p&gt;You’ll need this when you build to UDP and remember to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Target Google Play&lt;/code&gt; when you build to Google Play.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;hr /&gt;
@@ -504,7 +504,7 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 &lt;p&gt;Just build your &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; on Unity and open it on emulator (like &lt;a href=&quot;https://www.bluestacks.com/&quot;&gt;BlueStacks&lt;/a&gt;) or directly on your Android device.
 If you setup UDP right, you should see a screen like below when the game starts.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;To login in this screen, use the accounts in the setup on &lt;code class=&quot;highlighter-rouge&quot;&gt;Sandbox Test Account&lt;/code&gt;. Remember those e-mails don’t need to exist, they are just test accounts to validate UDP setup&lt;/p&gt;
@@ -514,7 +514,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 
 &lt;p&gt;After this, you can refresh your game page on UDP and you should see the result below on &lt;code class=&quot;highlighter-rouge&quot;&gt;Sandbox Testing&lt;/code&gt; section:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you did not setup the UDP on your project, you should see a message like this on UDP dashboard notifications &lt;code class=&quot;highlighter-rouge&quot;&gt;apk analytics failed, caused by: analyse apk failed, caused by:Failed to find GameSettings.prop, please import udp sdk and generate GameSettings.&lt;/code&gt;&lt;/p&gt;
@@ -534,7 +534,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;In my case on the &lt;code class=&quot;highlighter-rouge&quot;&gt;App Signature&lt;/code&gt; section of the game info, a used the recommend option &lt;code class=&quot;highlighter-rouge&quot;&gt;Export and upload your own key and certificate&lt;/code&gt;. This is the same certificate used by Google Play Services and APIs.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Go to &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API Console&lt;/a&gt;, select your game project on the dropdown, then go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section, then on the &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt; section select the item with the name of your game, then copy the value of the field &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt;.&lt;/p&gt;
@@ -542,7 +542,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;Now, go back to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section and click on the button &lt;code class=&quot;highlighter-rouge&quot;&gt;Create credentials&lt;/code&gt;, then &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth client ID&lt;/code&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;In the new page, select &lt;code class=&quot;highlighter-rouge&quot;&gt;Android&lt;/code&gt; on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Application type&lt;/code&gt; dropdown.&lt;/p&gt;
@@ -571,7 +571,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;As you follow the UDP documentation you will reach the point will need to create your game on the UDP dashboard.
 If you already have the game published on Google Play, as was my case with &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt;, you can use the right-top button &lt;code class=&quot;highlighter-rouge&quot;&gt;IMPORT FROM GOOGLE PLAY&lt;/code&gt; in the game page.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;After the import, you can edit the information as well.&lt;/p&gt;
@@ -613,7 +613,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
 
 &lt;p&gt;For each store, you will see different screens. For example, for QooApp you will see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;53-send-it-to-review&quot;&gt;5.3 Send it to review&lt;/h3&gt;
@@ -622,7 +622,7 @@ UDP will send the game to store review and you can monitor the progress on the d
 UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;hr /&gt;
@@ -667,11 +667,11 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 
 &lt;p&gt;The following gif shows the evolution of a Maurer Rose (n = 2, d = 29°) from 1 point to 361 points.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A Maurer Rose is always defined by two input parameters: &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt;.&lt;/p&gt;
 
@@ -691,7 +691,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;p&gt;This definition talks about &lt;a href=&quot;https://en.wikipedia.org/wiki/Polar_coordinate_system&quot;&gt;polar coordinate system&lt;/a&gt;. The more important thing to know about it is this: &lt;code class=&quot;highlighter-rouge&quot;&gt;each point on a plane is determined by a distance from a reference point and an angle from a reference direction&lt;/code&gt;. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-formula&quot;&gt;The formula&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/math.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/math.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The basic formula is: &lt;code class=&quot;highlighter-rouge&quot;&gt;r = sin(nθ)&lt;/code&gt; and we need to apply it to 361 points, where:&lt;/p&gt;
 
@@ -726,27 +726,27 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 
 &lt;p&gt;If you just hit play button, you will see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Go to the LineRenderer component and change the line width to &lt;code class=&quot;highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/programmer.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/programmer.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you change the values of &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt; of the component in the inspector, you will see a new Maurer Rose been drawing.&lt;/p&gt;
 
 &lt;p&gt;The image below shows the result of 6 different inputs (the same inputs used on &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Wikipedia&lt;/a&gt;):&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/beyond.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/beyond.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that you understand what is a Maurer Rose and how to code it inside Unity you can try to do some crazy things with it, like animate the input values or the number of points, or still using it to build a particle system.&lt;/p&gt;
 
@@ -795,7 +795,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
    <id>//unitytips-settings-provider</id>
    <content type="html">&lt;p&gt;You can add a custom section to &lt;a href=&quot;https://docs.unity3d.com/Manual/comp-ManagerGroup.html&quot;&gt;Project Settings&lt;/a&gt; window that allows you to configure some global settings for your project using a &lt;a href=&quot;https://docs.unity3d.com/2018.3/Documentation/ScriptReference/SettingsProvider.html&quot;&gt;SettingsProvider&lt;/a&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/07/21/unitytips-settings-provider/settings-provider.jpg &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/07/21/unitytips-settings-provider/settings-provider.jpg &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -822,7 +822,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
    <id>//unitytips-helpbox-attribute</id>
    <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyAttribute.html&quot;&gt;PropertyAttribute&lt;/a&gt; to display a help box on inspector showing a few lines of information, like &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/EditorGUI.HelpBox.html&quot;&gt;EditorGUI.HelpBox&lt;/a&gt;, but with a &lt;code class=&quot;highlighter-rouge&quot;&gt;docs&lt;/code&gt; button to the documentation page.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/07/14/unitytips-helpbox-attribute/sample-component.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/07/14/unitytips-helpbox-attribute/sample-component.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -856,7 +856,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;I made the gist below that uses the plugin to add a social share component to any game object.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/07/07/unitytips-social-share/component.jpg &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/07/07/unitytips-social-share/component.jpg &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
@@ -917,7 +917,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
    <id>//unitytips-timespan-box-drawer</id>
    <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyDrawer.html&quot;&gt;PropertyDrawer&lt;/a&gt; to display a help box on inspector showing the time information in seconds fields using &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-timespan-format-strings&quot;&gt;TimeSpan format strings&lt;/a&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -961,26 +961,26 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;h2 id=&quot;configuring-the-game-on-google-play-console&quot;&gt;Configuring the game on Google Play Console&lt;/h2&gt;
 &lt;p&gt;First of all you need to create the game on &lt;a href=&quot;https://play.google.com/publish&quot;&gt;Google Play Console&lt;/a&gt; as any other game and make an app release (an &lt;code class=&quot;highlighter-rouge&quot;&gt;Internal test track&lt;/code&gt; already works).&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Services &amp;amp; APIS&lt;/code&gt; menu, after enter on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Google Play game services&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Fill only the required information for test, then go to menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Linked apps&lt;/code&gt; and link it to your game on with the app on Google Play Console.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-some-achievements-for-test&quot;&gt;Creating some achievements for test&lt;/h2&gt;
 &lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Game services section&lt;/code&gt; open the &lt;code class=&quot;highlighter-rouge&quot;&gt;Achievements&lt;/code&gt; menu and add some achievements.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -991,7 +991,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;h2 id=&quot;installing-the-plugin&quot;&gt;Installing the plugin&lt;/h2&gt;
 &lt;p&gt;To install the &lt;code class=&quot;highlighter-rouge&quot;&gt;Google Play Games Plugin for Unity&lt;/code&gt;, you should follow the steps in &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity#plugin-installation&quot;&gt;Plugin Installation&lt;/a&gt; and &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity#android-setup&quot;&gt;Android Setup&lt;/a&gt; sections.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -1000,25 +1000,25 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;Go to &lt;a href=&quot;https://play.google.com/publish&quot;&gt;Google Play Console&lt;/a&gt; on &lt;code class=&quot;highlighter-rouge&quot;&gt;App Signing&lt;/code&gt;section and use the option &lt;code class=&quot;highlighter-rouge&quot;&gt;App Signing by Google Play&lt;/code&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now you need to copy your &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1&lt;/code&gt; fingerprint of your &lt;code class=&quot;highlighter-rouge&quot;&gt;Upload certificate&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;App signing&lt;/code&gt; section.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then go to your OAuth credentials on &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API console&lt;/a&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;the Google API console&lt;/code&gt;, select your game on the top dropdown, then go to &lt;code class=&quot;highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; menu and edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt;. Paste the fingertip on the field &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt; and save it.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -1036,12 +1036,12 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;If everything was done correctly, you should see a screen like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/conclusion.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/conclusion.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;With this basic setup you can start to use the other features from Google Play Games Plugin for Unity plugin, as:&lt;/p&gt;
@@ -1061,7 +1061,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;h2 id=&quot;extra-tips-and-tricks&quot;&gt;Extra tips and tricks&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/extra-tips-tricks.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/extra-tips-tricks.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;Below a list of tips and tricks for non-common scenarios.&lt;/p&gt;
 
@@ -1084,13 +1084,13 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;Go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/GooglePlayGames&lt;/code&gt; folder and create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Assembly Definition&lt;/code&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;GooglePlayGames&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/GooglePlayGames/Editor&lt;/code&gt; folder and create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Assembly Definition&lt;/code&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;GooglePlayGames.Editor&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -1114,7 +1114,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
    <id>//unitytips-string-interpolation</id>
    <content type="html">&lt;p&gt;Since C# 6.0 you can use &lt;a href=&quot;https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/tokens/interpolated&quot;&gt;String interpolation&lt;/a&gt; to make code more readable:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The sample lines will result in the same string&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -1138,7 +1138,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
    <content type="html">&lt;p&gt;When you have a single line method, you can use &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition&quot;&gt;expression body definition&lt;/a&gt; do simplify and reduce the lines of code:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -1147,7 +1147,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;So you can use the expression body definition for other members, like properties:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
       &lt;/center&gt;
 
 </content>
@@ -1604,7 +1604,7 @@ dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&g
 &lt;p&gt;Now you can open the &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpSample&lt;/code&gt; in Unity3D editor.
 Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; scene and hit the play button, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -2105,7 +2105,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The idea behind DefaultAnimationsEditorWindow is that when you have a bunch o characters using the same kind of animations, they used the same structure of sprite sheets, so you can create the animations based on the sprites indexes on sprite sheet texture.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;similar sprites sheets from Phantasy Star IV (Alys, Chaz and Demi). Sprites ripped by Ultimecia from &lt;a href=&quot;https://www.spriters-resource.com/genesis_32x_scd/ps4&quot;&gt;The Spriters Resource&lt;/a&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2114,7 +2114,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Starting with sprite to walk down and ending with the last sprite of walk horizontal, we have 9 sprites and in all sprite sheets the sprites indexes are the same:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;ul&gt;
@@ -2125,7 +2125,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&lt;/a&gt;. To start the tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -2167,7 +2167,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;defaultanimationseditorwindow&quot;&gt;DefaultAnimationsEditorWindow&lt;/h2&gt;
 &lt;p&gt;In the code bellow, we define the menu for the window through the method &lt;code class=&quot;highlighter-rouge&quot;&gt;ShowWindow&lt;/code&gt; and the attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Default Animations menu item&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2177,7 +2177,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The next 3 methods just draw the components to the editor window GUI.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;editor window&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2305,7 +2305,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The name of Sorting Layer been used is showing in the top of each game object in the scene view.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2364,7 +2364,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation clips available on Sci Fi Warrior PBR HP&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2374,7 +2374,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Idle_GunMiddle&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot stands idle with the gun in the middle of his body&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2382,7 +2382,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;WalkForward_Shoot&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot walk forward and shoot&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2413,7 +2413,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;By reading those two sections is quite clear that we need to use avatar masks and animation layers together to combine our animations of different body parts. So, in the next sections, I will demonstrate how to combine three animations (Idle_GunMiddle, WalkForward_Shoot, and Shoot_single) to make the robot shoot while stands idle and walk forward with a gun in middle body. After that, I will propose you a challenge for the other animations available.&lt;/p&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&quot;&gt;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&lt;/a&gt;. To start this tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -2432,7 +2432,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Play&lt;/code&gt; button. You should see a screen like this:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Starter project running: just HUD&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2443,7 +2443,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Animation Controller&lt;/code&gt; (menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Create/Animation Controller&lt;/code&gt;) and open it:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Animator window showing the animation controller created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2462,7 +2462,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward parameter created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2470,7 +2470,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;We want to activate the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; is true, so select this transition (click on the arrow connecting the state &lt;code class=&quot;highlighter-rouge&quot;&gt;Any State&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt;) and in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Conditions&lt;/code&gt; list on inspector add the &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; equals &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward condition defined&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2478,7 +2478,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Click the &lt;code class=&quot;highlighter-rouge&quot;&gt;reset&lt;/code&gt; to auto fit the exit and transition time:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;reseting the transition settings&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2486,7 +2486,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Repeat the same steps as above for the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;, but use &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; as the value for &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation base layer&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2501,7 +2501,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Create a new Avatar Mask (&lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Create/Avatar Mask&lt;/code&gt;) called &lt;code class=&quot;highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt;. In the inspector, uncheck all lower body parties, as the image below:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;only upper body&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2510,7 +2510,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;h3 id=&quot;creating-a-upper-body-animation-layer&quot;&gt;Creating a upper body animation layer&lt;/h3&gt;
 &lt;p&gt;With the UpperBody Avatar Mask created, we will need to create a new animation layer that will use the mask. Go to the animator window and create a new layer using the &lt;code class=&quot;highlighter-rouge&quot;&gt;+ button&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the new layer created with the mask&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2521,7 +2521,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Drag the animation clip &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt; from folder &lt;code class=&quot;highlighter-rouge&quot;&gt;SciFiWarrior/Animations&lt;/code&gt; to the &lt;code class=&quot;highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt; layer.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;upper body animation layer&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2543,7 +2543,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;ShootSingle parameter created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2563,7 +2563,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Do something is better to learn than just reading and following someone instructions because this I will challenge you to try to implement other actions:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the remaining actions to the challenge&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -2621,7 +2621,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Based on famous BoxCar2D, this sample uses a genetic algorithm to create car designs to overcome road challenges, like gaps, hills, and obstacles.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
@@ -2630,14 +2630,14 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
 &lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;
@@ -2655,7 +2655,7 @@ These techniques allowing us to use already existent animations and combine them
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
@@ -2715,7 +2715,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;The fitness of each car (chromosome) to the road will be the &lt;strong&gt;sum of the max distance&lt;/strong&gt; reach by it &lt;strong&gt;plus the average velocity&lt;/strong&gt; at that moment.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
@@ -2731,7 +2731,7 @@ These techniques allowing us to use already existent animations and combine them
 
 &lt;p&gt;Besides that, the chromosomes are evaluated in parallel using the GeneticSharp’s ParallelTaskExecutor and you can see all them in 4x4 grid:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -2879,7 +2879,7 @@ div.gist-meta { display:none; }
 &lt;p&gt;Using Unity 2018.1+, create a new project called TspSample.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
@@ -2888,14 +2888,14 @@ div.gist-meta { display:none; }
 &lt;p&gt;After restart, go back to “Player settings”, select “.NET Standard 2.0” on “Api Compability Level”.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -2931,7 +2931,7 @@ div.gist-meta { display:none; }
 &lt;p&gt;Run the scene on editor and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
@@ -2965,12 +2965,12 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now, select the GAController game object on hierarchy and set the CityPrefab property.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
@@ -3000,7 +3000,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Run the scene again, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
@@ -3019,7 +3019,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -3052,7 +3052,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/div&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -3135,7 +3135,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -3154,7 +3154,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;For these reasons, I made a mod called &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt; that let you interact with Buildron through the Slack.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
@@ -3164,49 +3164,49 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;Your team can be notified by Buildron about builds status changed. In the mod preferences you can choose what status you want to receive notifications (running|succes|failed).&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;filter-builds&quot;&gt;Filter builds&lt;/h3&gt;
 &lt;p&gt;Filter buils by status or text.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;reset-filter&quot;&gt;Reset filter&lt;/h3&gt;
 &lt;p&gt;Reset previous builds filter (no filter).&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;sort-builds&quot;&gt;Sort builds&lt;/h3&gt;
 &lt;p&gt;Sort buils by status, text or date.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;move-camera&quot;&gt;Move camera&lt;/h3&gt;
 &lt;p&gt;Move the camera the amount of pixels define in the x,y,z coordinates.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;reset-camera&quot;&gt;Reset camera&lt;/h3&gt;
 &lt;p&gt;Reset the camera position.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;take-a-screenshot&quot;&gt;Take a screenshot&lt;/h3&gt;
 &lt;p&gt;Take a screenshot of current Buildron state.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -3229,7 +3229,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;p&gt;Then I decided to try a very raw solution using the Unity3d WWWForm and it worked well, very simple, but can be useful to someone. The result is the code bellow:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h1 id=&quot;botcontroller&quot;&gt;BotController&lt;/h1&gt;
@@ -3440,14 +3440,14 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
 &lt;p&gt;You should see a scene like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;In the menu “Buildron”, click on “Show Simulator”.&lt;/p&gt;
 
 &lt;p&gt;Click on “BuildFound”, “BuildStatusChanged” and “BuildRemoved” buttons, you should see these events been registered on ConsoledMod window.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Hit the “Play” button again to stop playing the scene.&lt;/p&gt;
@@ -3466,7 +3466,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
 &lt;p&gt;You should see the ConsoleMod window registering a lot of Buildron events.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -3486,7 +3486,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
@@ -3517,7 +3517,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:&lt;/p&gt;
@@ -3533,7 +3533,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;the-c-project&quot;&gt;The C# project&lt;/h2&gt;
@@ -3542,7 +3542,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;Select the configuration of your platform.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Inside of it you can see the Mod.cs and ModController.cs.&lt;/p&gt;
@@ -3554,14 +3554,14 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;Open the scene Assets/SimulatorScene and click on play button.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Click on the menu “Buildron/Show Simulator”.&lt;/p&gt;
 
 &lt;p&gt;In the simulator click on button “BuildStatusChanged”.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;You will see a box falling down every time you hit the button. This behavior is made by Mod.cs and ModController.cs on C# project. If you are curious about it, take a look on the classes implementations.&lt;/p&gt;
@@ -3581,7 +3581,7 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;Click on “Build” button.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Go to folder MyAmazingMod/build and open the Buildron of your platform.&lt;/p&gt;
@@ -3591,7 +3591,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;You should see the same falling down box that you see on simulator falling down inside Buildron every time a build changed status.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -3615,7 +3615,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;We really appreciate your opinion about the mods support, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-introduction&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-tutorial-creating-a-mod&quot;&gt;tutorial&lt;/a&gt; and &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;. Please, get in touch at &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;

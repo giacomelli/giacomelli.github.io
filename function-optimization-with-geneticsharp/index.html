@@ -126,7 +126,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
   
     <center>
    
-    <img src="/assets/loading-image.png" data-src="/assets/logos/GeneticSharp.png" class="lazy" style="max-height: 200px;max-width: 100%;" alt="Logo do post"/> 
+    <img src="/assets/logos/GeneticSharp.png" style="max-height: 200px;max-width: 100%;" alt="Post logo"/> 
   
     </center>
    
@@ -163,13 +163,13 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="the-problem">The problem</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/problem.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/problem.png " />
       </center>
 
 <p>In our sample we will optimize the input of a mathematical function, this function will be used as our fitness evaluation function. For this sample we will use a function that everyone saw in school time, the famous <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a> or commonly know as distance of two points function:</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction.png " />
       </center>
 
 <p>We will consider our chromosome fitness as the result of this function. The higher the result, the better is the chromosome fitness.</p>
@@ -178,7 +178,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="what-our-genetic-algorithm-is-looking-for">What our genetic algorithm is looking for?</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/telescope.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/telescope.png " />
       </center>
 
 <p>The goal of our genetic algortim is <strong>find the input values of Euclidean distance function: X1, Y1 and X2, Y2 that result in the greatest distance in a rectangular area</strong>.</p>
@@ -191,7 +191,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="creating-the-project">Creating the project</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/project.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/project.png " />
       </center>
 
 <p>Open your IDE (Visual Studio/Xamarin Studio) and create a new console project.</p>
@@ -207,7 +207,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="creating-an-euclidean-distance-chromosome">Creating an Euclidean distance chromosome</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome.png " />
       </center>
 
 <p>Chromosome is the representation of a possible solution in genetic algoritms.</p>
@@ -243,7 +243,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="creating-the-population">Creating the population</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/population.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/population.png " />
       </center>
 
 <p>The population represents the possible solutions to our problem, so we need to create a population of our Euclidean distance chromosome.</p>
@@ -257,7 +257,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="creating-the-fitness-function">Creating the fitness function</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/score.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/score.png " />
       </center>
 
 <p>The fitness function is where the genetic algoritm will evaluate and give a value (fitness) to each chromosome generated inside it. A good fitness function can guide your GA to a fast and optimum solution.</p>
@@ -273,7 +273,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="creating-the-selection">Creating the selection</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/podium.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/podium.png " />
       </center>
 
 <p>A selection is the genetic algorithm operator responsible for decing which chromosomes of current population will be selected as parent of the next population.</p>
@@ -289,7 +289,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="creating-the-crossover">Creating the crossover</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/cross.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/cross.png " />
       </center>
 
 <p>The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing these selected chromosomes.</p>
@@ -309,7 +309,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="creating-the-mutation">Creating the mutation</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/mutation.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/mutation.png " />
       </center>
 
 <p>The biology definition of mutations is: 
@@ -328,7 +328,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="creating-the-termination">Creating the termination</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/end.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/end.png " />
       </center>
 
 <p>A termination decide when a GA should be stopped. GeneticSharp use the generation number termination with just one generation as default termination. This mean that the genetic algoritm will run just one generation when you call the Start method, after this you can increment the expected generation number of the termination and call the method Resume how many times you want.</p>
@@ -344,7 +344,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <h2 id="running-the-ga">Running the GA</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/running.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/running.png " />
       </center>
 
 <p>Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.</p>
@@ -380,14 +380,14 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </code></pre></div></div>
 <p>If we plot these generations the output image will be like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot.png " />
       </center>
 
 <p>We can see that in the first generations (black lines) the genetic algorithm as some intermediate results and at the end (red line) <strong>it found the best possible solution: a diagonal.</strong></p>
 
 <h2 id="complete-source-code">Complete source code</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/programmer.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/programmer.png " />
       </center>
 
 <p>When you finish the tutorial your source code will be this one:</p>
@@ -397,7 +397,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 
 <h2 id="conclusion">Conclusion</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion.png " />
+        <img class="screenshot" src="/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion.png " />
       </center>
 
 <p>In this tutorial we learn how genetic algoritm works and how to use GeneticSharp to solve a very simple sample. Now you can try it to solve more complex problems.</p>
@@ -492,14 +492,14 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
      <div class="portifolio-slide">
           <a href="GeneticSharp-Car2D">
                <center>
-        <img class='lazy screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
+        <img class='screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
       </center>
                GeneticSharp Car2D, an Unity3D sample for GeneticSharp where a genetic algorithm tries to design 2D cars to overcome roads challenges
           </a>
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp">               
-          <img class='lazy icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
+          <img class='icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
           GeneticSharp Unity3d Samples on Google Play
           </a>
      </div>
@@ -769,7 +769,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 	</script>
 	<!-- End Google Analytics -->
 
-
-    <script> new LazyLoad({ elements_selector: ".lazy" });</script>
+    
   </body>
 </html>

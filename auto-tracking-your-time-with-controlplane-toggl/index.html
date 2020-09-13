@@ -191,46 +191,46 @@ curl -v -u &lt;api-token&gt;:api_token \
 <p>The first thing, you must create the context, go to ControlPlane preferences:</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences.png " />
+        <img class="screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences.png " />
       </center>
 
 <p>Select tab “Contexts”, and add I new context, in my case a called it “Skahal”:</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext.png " />
+        <img class="screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext.png " />
       </center>
 
 <h3 id="5-configuring-the-evidence-sources">5) Configuring the evidence sources</h3>
 <p>Select the tab “Evidences sources”, the option “Running Application” should be checked:</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources.png " />
+        <img class="screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources.png " />
       </center>
 
 <h3 id="6-configuring-the-rules">6) Configuring the rules</h3>
 <p>Select the tab “Rules”, add a new rule to your context, the rule must be of type “Running Application” to Unity 3D:</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules.png " />
+        <img class="screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules.png " />
       </center>
 
 <h3 id="7-configuring-the-actions">7) Configuring the actions</h3>
 <p>Select the tab “Actions”, we’ll create 3 new actions: the first one is a task to open Safari in the Toggl timer task page, this is an optional action, but I like to see the task running (and I can stop/start it manually sometimes). Add a action of type “Open URL” with the address “https://www.toggl.com/app/timer”, select “On Arrival” and your context:</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions.png " />
+        <img class="screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions.png " />
       </center>
 
 <p>The second one is a action to start the task in the Toggl when the context starts. Add a action of type “Shell Script”, in the field “Parameter” type the path to your startTogglTimeEntry.sh script, select “On Arrival” and your context:</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask.png " />
+        <img class="screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask.png " />
       </center>
 
 <p>The third one is a action to stop the task in the Toggl when the context ends. Add a action of type “Shell Script”, in the field “Parameter” type the path to your stopTogglTimeEntry.sh script, select “On Arrival” and your context:</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask.png " />
+        <img class="screenshot" src="/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask.png " />
       </center>
 
 <h3 id="8-test-everything">8) Test everything</h3>
@@ -325,14 +325,14 @@ curl -v -u &lt;api-token&gt;:api_token \
      <div class="portifolio-slide">
           <a href="GeneticSharp-Car2D">
                <center>
-        <img class='lazy screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
+        <img class='screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
       </center>
                GeneticSharp Car2D, an Unity3D sample for GeneticSharp where a genetic algorithm tries to design 2D cars to overcome roads challenges
           </a>
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp">               
-          <img class='lazy icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
+          <img class='icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
           GeneticSharp Unity3d Samples on Google Play
           </a>
      </div>
@@ -602,7 +602,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 	</script>
 	<!-- End Google Analytics -->
 
-
-    <script> new LazyLoad({ elements_selector: ".lazy" });</script>
+    
   </body>
 </html>

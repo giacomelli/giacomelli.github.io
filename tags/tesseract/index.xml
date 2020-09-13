@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - tesseract</title>
  <link href="//tags/tesseract/index.xml" rel="self"/>
  <link href="/tag/tesseract.html"/>
- <updated>2020-09-13T07:56:02-03:00</updated>
+ <updated>2020-09-13T08:19:39-03:00</updated>
  <id>/tag/tesseract.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -65,7 +65,7 @@
 
 &lt;p&gt;If you try to read a image like this one:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;You will get this result after call the &lt;code class=&quot;highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:

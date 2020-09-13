@@ -132,7 +132,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
   
     <center>
    
-    <img src="/assets/loading-image.png" data-src="/assets/logos/city.png" class="lazy" style="max-height: 200px;max-width: 100%;" alt="Logo do post"/> 
+    <img src="/assets/logos/city.png" style="max-height: 200px;max-width: 100%;" alt="Post logo"/> 
   
     </center>
    
@@ -203,7 +203,7 @@ dotnet watch run
 
 <p>Wait for the message <code class="highlighter-rouge">Application started. Press Ctrl+C to shut down</code> show up in terminal, then open the url <a href="http://localhost:5000">http://localhost:5000</a> on your browser, you should see something like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png " />
+        <img class="screenshot" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png " />
       </center>
 
 <h2 id="installing-geneticsharp">Installing GeneticSharp</h2>
@@ -229,7 +229,7 @@ dotnet watch run
 <p>In the root folder of your Blazor project create a new subfolder called <code class="highlighter-rouge">Tsp</code>. We’ll add all our C# classes inside this folder.</p>
 
 <h2 id="defining-the-tsp-chromosome">Defining the TSP chromosome</h2>
-<p><img class="lazy icon" src="/assets/logos/route.png " style="max-height:200px" /></p>
+<p><img class="icon" src="/assets/logos/route.png " style="max-height:200px" /></p>
 
 <p>The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent <em><strong>“the shortest possible route that visits each city and returns to the origin city”</strong></em>.</p>
 
@@ -289,7 +289,7 @@ dotnet watch run
 <p>Hit the <code class="highlighter-rouge">Run</code> button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png " />
+        <img class="screenshot" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png " />
       </center>
 
 <div class="note"><p>This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.</p>
@@ -312,7 +312,7 @@ We need to create a visual representation to the cities.</p>
 
 <p>Now you should see something like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif " />
+        <img class="screenshot" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif " />
       </center>
 
 <h2 id="drawing-the-route">Drawing the route</h2>
@@ -330,7 +330,7 @@ We need to create a visual representation to the cities.</p>
 
 <p>Reload the url <a href="http://localhost:5000/tsp">http://localhost:5000/tsp</a> again, and hit the <code class="highlighter-rouge">Run</code> button, now you should see the route been optimizing as the generations are ran:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif " />
+        <img class="screenshot" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif " />
       </center>
 
 <h2 id="conclusion">Conclusion</h2>
@@ -436,14 +436,14 @@ We need to create a visual representation to the cities.</p>
      <div class="portifolio-slide">
           <a href="GeneticSharp-Car2D">
                <center>
-        <img class='lazy screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
+        <img class='screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
       </center>
                GeneticSharp Car2D, an Unity3D sample for GeneticSharp where a genetic algorithm tries to design 2D cars to overcome roads challenges
           </a>
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp">               
-          <img class='lazy icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
+          <img class='icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
           GeneticSharp Unity3d Samples on Google Play
           </a>
      </div>
@@ -713,7 +713,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 	</script>
 	<!-- End Google Analytics -->
 
-
-    <script> new LazyLoad({ elements_selector: ".lazy" });</script>
+    
   </body>
 </html>

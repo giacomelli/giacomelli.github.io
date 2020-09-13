@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - tsp</title>
  <link href="//tags/tsp/index.xml" rel="self"/>
  <link href="/tag/tsp.html"/>
- <updated>2020-09-13T07:56:02-03:00</updated>
+ <updated>2020-09-13T08:19:39-03:00</updated>
  <id>/tag/tsp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -63,7 +63,7 @@ dotnet watch run
 
 &lt;p&gt;Wait for the message &lt;code class=&quot;highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
@@ -89,7 +89,7 @@ dotnet watch run
 &lt;p&gt;In the root folder of your Blazor project create a new subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp&lt;/code&gt;. We’ll add all our C# classes inside this folder.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -149,7 +149,7 @@ dotnet watch run
 &lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.&lt;/p&gt;
@@ -172,7 +172,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
@@ -190,7 +190,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -218,7 +218,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
@@ -278,7 +278,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;p&gt;The fitness of each car (chromosome) to the road will be the &lt;strong&gt;sum of the max distance&lt;/strong&gt; reach by it &lt;strong&gt;plus the average velocity&lt;/strong&gt; at that moment.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
@@ -294,7 +294,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Besides that, the chromosomes are evaluated in parallel using the GeneticSharp’s ParallelTaskExecutor and you can see all them in 4x4 grid:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -442,7 +442,7 @@ div.gist-meta { display:none; }
 &lt;p&gt;Using Unity 2018.1+, create a new project called TspSample.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
@@ -451,14 +451,14 @@ div.gist-meta { display:none; }
 &lt;p&gt;After restart, go back to “Player settings”, select “.NET Standard 2.0” on “Api Compability Level”.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -494,7 +494,7 @@ div.gist-meta { display:none; }
 &lt;p&gt;Run the scene on editor and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
@@ -528,12 +528,12 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now, select the GAController game object on hierarchy and set the CityPrefab property.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
@@ -563,7 +563,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Run the scene again, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
@@ -582,7 +582,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;

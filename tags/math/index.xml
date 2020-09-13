@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - math</title>
  <link href="//tags/math/index.xml" rel="self"/>
  <link href="/tag/math.html"/>
- <updated>2020-09-13T07:56:02-03:00</updated>
+ <updated>2020-09-13T08:19:39-03:00</updated>
  <id>/tag/math.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -22,7 +22,7 @@
 &lt;p&gt;While we were developing it we needed to change some configurations on the extension to use different URLs of our API depending on what environment the Chrome Extension was using, like DEV (local), TEST, and Production.&lt;/p&gt;
 
 &lt;h2 id=&quot;chrome-extension&quot;&gt;Chrome Extension&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/chrome-extension.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/chrome-extension.png &quot; style=&quot;max-height:200px&quot; /&gt;
 For this tutorial, I’ll use a Chrome Extension basic sample called &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt;.&lt;br /&gt; 
 You can download it from this page &lt;a href=&quot;https://developer.chrome.com/extensions/samples&quot;&gt;https://developer.chrome.com/extensions/samples&lt;/a&gt; or directly from &lt;a href=&quot;https://developer.chrome.com/extensions/examples/tutorials/hello_extensions.zip&quot;&gt;here&lt;/a&gt;.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -30,7 +30,7 @@ You can download it from this page &lt;a href=&quot;https://developer.chrome.com
 &lt;/div&gt;
 
 &lt;h2 id=&quot;gulp&quot;&gt;Gulp&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/gulp.svg &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/gulp.svg &quot; style=&quot;max-height:200px&quot; /&gt;
 At that time we did not find any builtin or other solution to make this workflow easier and streamlined, so we decided to create our own solution using &lt;code class=&quot;highlighter-rouge&quot;&gt;Gulp&lt;/code&gt;. This whole solution will be explaining below.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -40,10 +40,10 @@ At that time we did not find any builtin or other solution to make this workflow
 &lt;p&gt;We decided to use &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt;, because a Chrome Extensions is a bunch of .js, .html and .json files. Perfect to use gulp.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/problem.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/problem.png &quot; style=&quot;max-height:200px&quot; /&gt;
 If we just try to open our download &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extension&lt;/code&gt; .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;This is not a problem if you have only one environment or if you don’t need different configurations for different environments, but as I’ve already explained, we needed different configs for different environments.&lt;/p&gt;
@@ -57,14 +57,14 @@ If we just try to open our download &lt;code class=&quot;highlighter-rouge&quot;
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;files-structure&quot;&gt;Files structure&lt;/h2&gt;
 &lt;p&gt;Move the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt; files to a subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt;.
 At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If have any doubt about the files structure during this tutorial, you can download the full solution in section &lt;code class=&quot;highlighter-rouge&quot;&gt;Download&lt;/code&gt; at the end of the tutorial&lt;/p&gt;
@@ -90,7 +90,7 @@ At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;p&gt;This is the full &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; file that will allow our development workflow for different environments.&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-gulpfilejs-sections&quot;&gt;The gulpfile.js sections&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
 Now I will explain each section of it.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -144,7 +144,7 @@ Here we are basically defining the order of each function that will be called wh
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=watch.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;packagesjson-file&quot;&gt;packages.json file&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/package.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/package.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Change the content of &lt;code class=&quot;highlighter-rouge&quot;&gt;packages.json&lt;/code&gt; file to the content below to update the dependencies.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
@@ -155,11 +155,11 @@ Here we are basically defining the order of each function that will be called wh
 &lt;h2 id=&quot;running-the-gulp-for-the-first-time&quot;&gt;Running the gulp for the first time&lt;/h2&gt;
 &lt;p&gt;Now, if you just run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;creating-the-configjson-files&quot;&gt;Creating the &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/config.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/config.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We need to create our &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
 They are 3 files:&lt;/p&gt;
@@ -187,12 +187,12 @@ Here is the content of each one:&lt;/p&gt;
 &lt;h2 id=&quot;running-the-gulp-for-the-second-time&quot;&gt;Running the gulp for the second time&lt;/h2&gt;
 &lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;There is a new subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt; created. Load it on Chrome Extensions page:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The plugin should work ok.&lt;/p&gt;
@@ -222,7 +222,7 @@ Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&
 &lt;p&gt;The line &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;/scripts/config.js&quot;&lt;/code&gt; is what we need to access the configuration values.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-manifestjson-files&quot;&gt;Creating the &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/manifest.png &quot; style=&quot;max-height:200px&quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/manifest.png &quot; style=&quot;max-height:200px&quot; /&gt;
 We need to create our &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files, in the same way, we created our &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 They are 3 files:&lt;/p&gt;
@@ -243,7 +243,7 @@ Here is the content of each one:&lt;/p&gt;
 
 &lt;h2 id=&quot;running-the-gulp-for-each-environment&quot;&gt;Running the gulp for each environment&lt;/h2&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
       &lt;/center&gt;
 &lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder.
 This will use &lt;code class=&quot;highlighter-rouge&quot;&gt;DEV&lt;/code&gt; configuration from config.js and manifest.json&lt;/p&gt;
@@ -253,13 +253,13 @@ This will use &lt;code class=&quot;highlighter-rouge&quot;&gt;DEV&lt;/code&gt; c
 &lt;p&gt;Now, try to run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config TEST&lt;/code&gt;.
 In the Chrome Extensions page you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Your extension is using the TEST environment values.
 When you click on the extension icon on the Chrome toolbar, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can try to run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config PROD&lt;/code&gt;. To see the &lt;code class=&quot;highlighter-rouge&quot;&gt;PROD&lt;/code&gt; environment values on the extension.&lt;/p&gt;
@@ -277,7 +277,7 @@ You can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;--config&lt;/cod
 &lt;p&gt;In this .zip are all files mentioned in this tutorial, you just need to set up your gulp environment and call the &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install gulp&lt;/code&gt; before starting to use it.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
 
@@ -305,11 +305,11 @@ You can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;--config&lt;/cod
 
 &lt;p&gt;The following gif shows the evolution of a Maurer Rose (n = 2, d = 29°) from 1 point to 361 points.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A Maurer Rose is always defined by two input parameters: &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt;.&lt;/p&gt;
 
@@ -329,7 +329,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;p&gt;This definition talks about &lt;a href=&quot;https://en.wikipedia.org/wiki/Polar_coordinate_system&quot;&gt;polar coordinate system&lt;/a&gt;. The more important thing to know about it is this: &lt;code class=&quot;highlighter-rouge&quot;&gt;each point on a plane is determined by a distance from a reference point and an angle from a reference direction&lt;/code&gt;. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-formula&quot;&gt;The formula&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/math.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/math.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The basic formula is: &lt;code class=&quot;highlighter-rouge&quot;&gt;r = sin(nθ)&lt;/code&gt; and we need to apply it to 361 points, where:&lt;/p&gt;
 
@@ -364,27 +364,27 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 
 &lt;p&gt;If you just hit play button, you will see something like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Go to the LineRenderer component and change the line width to &lt;code class=&quot;highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/programmer.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/programmer.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you change the values of &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt; of the component in the inspector, you will see a new Maurer Rose been drawing.&lt;/p&gt;
 
 &lt;p&gt;The image below shows the result of 6 different inputs (the same inputs used on &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Wikipedia&lt;/a&gt;):&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/beyond.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/beyond.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that you understand what is a Maurer Rose and how to code it inside Unity you can try to do some crazy things with it, like animate the input values or the number of points, or still using it to build a particle system.&lt;/p&gt;
 

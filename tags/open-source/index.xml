@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - open-source</title>
  <link href="//tags/open-source/index.xml" rel="self"/>
  <link href="/tag/open-source.html"/>
- <updated>2020-09-13T07:56:02-03:00</updated>
+ <updated>2020-09-13T08:19:39-03:00</updated>
  <id>/tag/open-source.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -153,7 +153,7 @@
 
 &lt;p&gt;The idea behind DefaultAnimationsEditorWindow is that when you have a bunch o characters using the same kind of animations, they used the same structure of sprite sheets, so you can create the animations based on the sprites indexes on sprite sheet texture.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;similar sprites sheets from Phantasy Star IV (Alys, Chaz and Demi). Sprites ripped by Ultimecia from &lt;a href=&quot;https://www.spriters-resource.com/genesis_32x_scd/ps4&quot;&gt;The Spriters Resource&lt;/a&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -162,7 +162,7 @@
 &lt;p&gt;Starting with sprite to walk down and ending with the last sprite of walk horizontal, we have 9 sprites and in all sprite sheets the sprites indexes are the same:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;ul&gt;
@@ -173,7 +173,7 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&lt;/a&gt;. To start the tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -215,7 +215,7 @@
 &lt;h2 id=&quot;defaultanimationseditorwindow&quot;&gt;DefaultAnimationsEditorWindow&lt;/h2&gt;
 &lt;p&gt;In the code bellow, we define the menu for the window through the method &lt;code class=&quot;highlighter-rouge&quot;&gt;ShowWindow&lt;/code&gt; and the attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Default Animations menu item&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -225,7 +225,7 @@
 
 &lt;p&gt;The next 3 methods just draw the components to the editor window GUI.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;editor window&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -353,7 +353,7 @@
 &lt;p&gt;The name of Sorting Layer been used is showing in the top of each game object in the scene view.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -373,7 +373,7 @@
 In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation clips available on Sci Fi Warrior PBR HP&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -383,7 +383,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Idle_GunMiddle&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot stands idle with the gun in the middle of his body&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -391,7 +391,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;WalkForward_Shoot&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot walk forward and shoot&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -422,7 +422,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;By reading those two sections is quite clear that we need to use avatar masks and animation layers together to combine our animations of different body parts. So, in the next sections, I will demonstrate how to combine three animations (Idle_GunMiddle, WalkForward_Shoot, and Shoot_single) to make the robot shoot while stands idle and walk forward with a gun in middle body. After that, I will propose you a challenge for the other animations available.&lt;/p&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;lazy icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&quot;&gt;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&lt;/a&gt;. To start this tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -441,7 +441,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Play&lt;/code&gt; button. You should see a screen like this:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Starter project running: just HUD&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -452,7 +452,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Animation Controller&lt;/code&gt; (menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Create/Animation Controller&lt;/code&gt;) and open it:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Animator window showing the animation controller created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -471,7 +471,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward parameter created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -479,7 +479,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;We want to activate the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; is true, so select this transition (click on the arrow connecting the state &lt;code class=&quot;highlighter-rouge&quot;&gt;Any State&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt;) and in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Conditions&lt;/code&gt; list on inspector add the &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; equals &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward condition defined&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -487,7 +487,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Click the &lt;code class=&quot;highlighter-rouge&quot;&gt;reset&lt;/code&gt; to auto fit the exit and transition time:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;reseting the transition settings&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -495,7 +495,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Repeat the same steps as above for the transition from &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;, but use &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; as the value for &lt;code class=&quot;highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation base layer&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -510,7 +510,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Create a new Avatar Mask (&lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Create/Avatar Mask&lt;/code&gt;) called &lt;code class=&quot;highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt;. In the inspector, uncheck all lower body parties, as the image below:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;only upper body&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -519,7 +519,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;h3 id=&quot;creating-a-upper-body-animation-layer&quot;&gt;Creating a upper body animation layer&lt;/h3&gt;
 &lt;p&gt;With the UpperBody Avatar Mask created, we will need to create a new animation layer that will use the mask. Go to the animator window and create a new layer using the &lt;code class=&quot;highlighter-rouge&quot;&gt;+ button&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the new layer created with the mask&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -530,7 +530,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Drag the animation clip &lt;code class=&quot;highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt; from folder &lt;code class=&quot;highlighter-rouge&quot;&gt;SciFiWarrior/Animations&lt;/code&gt; to the &lt;code class=&quot;highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt; layer.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;upper body animation layer&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -552,7 +552,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;ShootSingle parameter created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -572,7 +572,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Do something is better to learn than just reading and following someone instructions because this I will challenge you to try to implement other actions:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the remaining actions to the challenge&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -620,7 +620,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;/div&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -703,7 +703,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -722,7 +722,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;For these reasons, I made a mod called &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt; that let you interact with Buildron through the Slack.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
@@ -732,49 +732,49 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Your team can be notified by Buildron about builds status changed. In the mod preferences you can choose what status you want to receive notifications (running|succes|failed).&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;filter-builds&quot;&gt;Filter builds&lt;/h3&gt;
 &lt;p&gt;Filter buils by status or text.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;reset-filter&quot;&gt;Reset filter&lt;/h3&gt;
 &lt;p&gt;Reset previous builds filter (no filter).&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;sort-builds&quot;&gt;Sort builds&lt;/h3&gt;
 &lt;p&gt;Sort buils by status, text or date.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;move-camera&quot;&gt;Move camera&lt;/h3&gt;
 &lt;p&gt;Move the camera the amount of pixels define in the x,y,z coordinates.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;reset-camera&quot;&gt;Reset camera&lt;/h3&gt;
 &lt;p&gt;Reset the camera position.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;take-a-screenshot&quot;&gt;Take a screenshot&lt;/h3&gt;
 &lt;p&gt;Take a screenshot of current Buildron state.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -797,7 +797,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;p&gt;Then I decided to try a very raw solution using the Unity3d WWWForm and it worked well, very simple, but can be useful to someone. The result is the code bellow:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h1 id=&quot;botcontroller&quot;&gt;BotController&lt;/h1&gt;
@@ -1008,14 +1008,14 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
 &lt;p&gt;You should see a scene like this:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;In the menu “Buildron”, click on “Show Simulator”.&lt;/p&gt;
 
 &lt;p&gt;Click on “BuildFound”, “BuildStatusChanged” and “BuildRemoved” buttons, you should see these events been registered on ConsoledMod window.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Hit the “Play” button again to stop playing the scene.&lt;/p&gt;
@@ -1034,7 +1034,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
 &lt;p&gt;You should see the ConsoleMod window registering a lot of Buildron events.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -1054,7 +1054,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a command-line tool to create new C# projects from prebuilt/templates.&lt;/p&gt;
@@ -1066,7 +1066,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;p&gt;The idea of the tool was born a long time ago and became a little stronger every time that I had to create a new solution and all the projects by hand, but when I saw the message bellow in the &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt; page I decided to finally write the tool… and the name was very clear, almost.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -1155,7 +1155,7 @@ My.Amazing.NewProject.sln
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
@@ -1186,7 +1186,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:&lt;/p&gt;
@@ -1202,7 +1202,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;the-c-project&quot;&gt;The C# project&lt;/h2&gt;
@@ -1211,7 +1211,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;Select the configuration of your platform.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Inside of it you can see the Mod.cs and ModController.cs.&lt;/p&gt;
@@ -1223,14 +1223,14 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;Open the scene Assets/SimulatorScene and click on play button.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Click on the menu “Buildron/Show Simulator”.&lt;/p&gt;
 
 &lt;p&gt;In the simulator click on button “BuildStatusChanged”.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;You will see a box falling down every time you hit the button. This behavior is made by Mod.cs and ModController.cs on C# project. If you are curious about it, take a look on the classes implementations.&lt;/p&gt;
@@ -1250,7 +1250,7 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;Click on “Build” button.&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;Go to folder MyAmazingMod/build and open the Buildron of your platform.&lt;/p&gt;
@@ -1260,7 +1260,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;You should see the same falling down box that you see on simulator falling down inside Buildron every time a build changed status.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -1284,7 +1284,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;We really appreciate your opinion about the mods support, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-introduction&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-tutorial-creating-a-mod&quot;&gt;tutorial&lt;/a&gt; and &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;. Please, get in touch at &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -1331,7 +1331,7 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;h3 id=&quot;badgessharp&quot;&gt;BadgesSharp&lt;/h3&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;To fill this gap I created the BadgesSharp service: &lt;a href=&quot;http://badgessharp.apphb.com&quot;&gt;http://badgessharp.apphb.com&lt;/a&gt;. BadgesSharp is a free service to generate badges that need some kind of input and processing before you can display them on GitHub repositories.&lt;/p&gt;

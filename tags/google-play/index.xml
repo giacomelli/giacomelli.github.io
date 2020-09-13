@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - google-play</title>
  <link href="//tags/google-play/index.xml" rel="self"/>
  <link href="/tag/google-play.html"/>
- <updated>2020-09-13T07:56:02-03:00</updated>
+ <updated>2020-09-13T08:19:39-03:00</updated>
  <id>/tag/google-play.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -32,7 +32,7 @@
 &lt;p&gt;Based on famous BoxCar2D, this sample uses a genetic algorithm to create car designs to overcome road challenges, like gaps, hills, and obstacles.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
@@ -41,14 +41,14 @@
 &lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
 &lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;

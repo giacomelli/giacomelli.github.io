@@ -126,7 +126,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
   
     <center>
    
-    <img src="/assets/loading-image.png" data-src="/assets/logos/Unity3d.png" class="lazy" style="max-height: 200px;max-width: 100%;" alt="Logo do post"/> 
+    <img src="/assets/logos/Unity3d.png" style="max-height: 200px;max-width: 100%;" alt="Post logo"/> 
   
     </center>
    
@@ -177,7 +177,7 @@ From the 9 stores supported, 7 are fully integrated with UDP. What this meaning?
 <p>Please, if you did not read the official documentation yet, go and <a href="https://docs.unity3d.com/Packages/com.unity.purchasing.udp@2.0/manual/index.html">read it</a>, then come back here. You’ll better understand this post and the whole UDP solution after educated yourself about it.</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey.png " />
+        <img class="screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey.png " />
       </center>
 
 <h2 id="1-implement">1. Implement</h2>
@@ -201,7 +201,7 @@ In my case, I was using IAP already in the project.</p>
 
 <p>You’ll need this when you build to UDP and remember to use the <code class="highlighter-rouge">Target Google Play</code> when you build to Google Play.</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp.png " />
+        <img class="screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp.png " />
       </center>
 
 <hr />
@@ -220,7 +220,7 @@ In my case, I was using IAP already in the project.</p>
 <p>Just build your <code class="highlighter-rouge">.apk</code> on Unity and open it on emulator (like <a href="https://www.bluestacks.com/">BlueStacks</a>) or directly on your Android device.
 If you setup UDP right, you should see a screen like below when the game starts.</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login.png " />
+        <img class="screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login.png " />
       </center>
 
 <div class="note"><p>To login in this screen, use the accounts in the setup on <code class="highlighter-rouge">Sandbox Test Account</code>. Remember those e-mails don’t need to exist, they are just test accounts to validate UDP setup</p>
@@ -230,7 +230,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 
 <p>After this, you can refresh your game page on UDP and you should see the result below on <code class="highlighter-rouge">Sandbox Testing</code> section:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing.png " />
+        <img class="screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing.png " />
       </center>
 
 <div class="note"><p>If you did not setup the UDP on your project, you should see a message like this on UDP dashboard notifications <code class="highlighter-rouge">apk analytics failed, caused by: analyse apk failed, caused by:Failed to find GameSettings.prop, please import udp sdk and generate GameSettings.</code></p>
@@ -250,7 +250,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 <p>In my case on the <code class="highlighter-rouge">App Signature</code> section of the game info, a used the recommend option <code class="highlighter-rouge">Export and upload your own key and certificate</code>. This is the same certificate used by Google Play Services and APIs.</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature.png " />
+        <img class="screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature.png " />
       </center>
 
 <p>Go to <a href="https://console.developers.google.com/apis">Google API Console</a>, select your game project on the dropdown, then go to <code class="highlighter-rouge">Credentials</code> section, then on the <code class="highlighter-rouge">OAuth 2.0 Client IDs</code> section select the item with the name of your game, then copy the value of the field <code class="highlighter-rouge">SHA-1 certificate fingertip</code>.</p>
@@ -258,7 +258,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 <p>Now, go back to the <code class="highlighter-rouge">Credentials</code> section and click on the button <code class="highlighter-rouge">Create credentials</code>, then <code class="highlighter-rouge">OAuth client ID</code>.</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials.png " />
+        <img class="screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials.png " />
       </center>
 
 <p>In the new page, select <code class="highlighter-rouge">Android</code> on the <code class="highlighter-rouge">Application type</code> dropdown.</p>
@@ -287,7 +287,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 <p>As you follow the UDP documentation you will reach the point will need to create your game on the UDP dashboard.
 If you already have the game published on Google Play, as was my case with <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals">Puzzimals</a>, you can use the right-top button <code class="highlighter-rouge">IMPORT FROM GOOGLE PLAY</code> in the game page.</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google.png " />
+        <img class="screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google.png " />
       </center>
 
 <p>After the import, you can edit the information as well.</p>
@@ -329,7 +329,7 @@ If you already have the game published on Google Play, as was my case with <a hr
 
 <p>For each store, you will see different screens. For example, for QooApp you will see something like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login.png " />
+        <img class="screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login.png " />
       </center>
 
 <h3 id="53-send-it-to-review">5.3 Send it to review</h3>
@@ -338,7 +338,7 @@ UDP will send the game to store review and you can monitor the progress on the d
 UDP will send to you an e-mail when the game is approved.</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button.png " />
+        <img class="screenshot" src="/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button.png " />
       </center>
 
 <hr />
@@ -450,14 +450,14 @@ UDP will send to you an e-mail when the game is approved.</p>
      <div class="portifolio-slide">
           <a href="GeneticSharp-Car2D">
                <center>
-        <img class='lazy screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
+        <img class='screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
       </center>
                GeneticSharp Car2D, an Unity3D sample for GeneticSharp where a genetic algorithm tries to design 2D cars to overcome roads challenges
           </a>
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp">               
-          <img class='lazy icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
+          <img class='icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
           GeneticSharp Unity3d Samples on Google Play
           </a>
      </div>
@@ -727,7 +727,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 	</script>
 	<!-- End Google Analytics -->
 
-
-    <script> new LazyLoad({ elements_selector: ".lazy" });</script>
+    
   </body>
 </html>

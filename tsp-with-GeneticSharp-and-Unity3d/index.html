@@ -138,7 +138,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
   
     <center>
    
-    <img src="/assets/loading-image.png" data-src="/assets/logos/city.png" class="lazy" style="max-height: 200px;max-width: 100%;" alt="Logo do post"/> 
+    <img src="/assets/logos/city.png" style="max-height: 200px;max-width: 100%;" alt="Post logo"/> 
   
     </center>
    
@@ -188,7 +188,7 @@ div.gist-meta { display:none; }
 <p>Using Unity 2018.1+, create a new project called TspSample.</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png " />
+        <img class="screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png " />
       </center>
 
 <h2 id="using-net-standard-20">Using .NET Standard 2.0</h2>
@@ -197,14 +197,14 @@ div.gist-meta { display:none; }
 <p>After restart, go back to “Player settings”, select “.NET Standard 2.0” on “Api Compability Level”.</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png " />
+        <img class="screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png " />
       </center>
 
 <h2 id="installing-geneticsharp">Installing GeneticSharp</h2>
 <p>Install GeneticSharp using the .unitypackage available on <a href="https://github.com/giacomelli/GeneticSharp/releases">GeneticSharp release page</a>.</p>
 
 <h2 id="defining-the-tsp-chromosome">Defining the TSP chromosome</h2>
-<p><img class="lazy icon" src="/assets/logos/route.png " style="max-height:200px" /></p>
+<p><img class="icon" src="/assets/logos/route.png " style="max-height:200px" /></p>
 
 <p>The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent <em><strong>“the shortest possible route that visits each city and returns to the origin city”</strong></em>.</p>
 
@@ -240,7 +240,7 @@ div.gist-meta { display:none; }
 <p>Run the scene on editor and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png " />
+        <img class="screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png " />
       </center>
 
 <h2 id="drawing-the-cities">Drawing the cities</h2>
@@ -274,12 +274,12 @@ We need to create a visual representation to the cities.</p>
 
 <p>Now, select the GAController game object on hierarchy and set the CityPrefab property.</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png " />
+        <img class="screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png " />
       </center>
 
 <p>Try to run the scene, you should see something like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png " />
+        <img class="screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png " />
       </center>
 
 <h2 id="drawing-the-route">Drawing the route</h2>
@@ -309,7 +309,7 @@ We need to create a visual representation to the cities.</p>
 
 <p>Run the scene again, now you should see the route been optimizing as the generations are ran:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png " />
+        <img class="screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png " />
       </center>
 
 <h2 id="changing-the-cities-positions">Changing the cities positions</h2>
@@ -328,7 +328,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 <p>Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.</p>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif " />
+        <img class="screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif " />
       </center>
 
 <h2 id="conclusion">Conclusion</h2>
@@ -433,14 +433,14 @@ I won’t getting in details about how this is script works, but it’s allow th
      <div class="portifolio-slide">
           <a href="GeneticSharp-Car2D">
                <center>
-        <img class='lazy screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
+        <img class='screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
       </center>
                GeneticSharp Car2D, an Unity3D sample for GeneticSharp where a genetic algorithm tries to design 2D cars to overcome roads challenges
           </a>
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp">               
-          <img class='lazy icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
+          <img class='icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
           GeneticSharp Unity3d Samples on Google Play
           </a>
      </div>
@@ -710,7 +710,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 	</script>
 	<!-- End Google Analytics -->
 
-
-    <script> new LazyLoad({ elements_selector: ".lazy" });</script>
+    
   </body>
 </html>

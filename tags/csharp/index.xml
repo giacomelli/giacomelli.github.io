@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - csharp</title>
  <link href="//tags/csharp/index.xml" rel="self"/>
  <link href="/tag/csharp.html"/>
- <updated>2020-09-13T07:56:02-03:00</updated>
+ <updated>2020-09-13T08:19:39-03:00</updated>
  <id>/tag/csharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,7 +16,7 @@
    <id>//unitytips-string-interpolation</id>
    <content type="html">&lt;p&gt;Since C# 6.0 you can use &lt;a href=&quot;https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/tokens/interpolated&quot;&gt;String interpolation&lt;/a&gt; to make code more readable:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The sample lines will result in the same string&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -40,7 +40,7 @@
    <content type="html">&lt;p&gt;When you have a single line method, you can use &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition&quot;&gt;expression body definition&lt;/a&gt; do simplify and reduce the lines of code:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -49,7 +49,7 @@
 
 &lt;p&gt;So you can use the expression body definition for other members, like properties:&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
       &lt;/center&gt;
 
 </content>
@@ -120,7 +120,7 @@
 &lt;p&gt;You are debugging a list of Tweets, let me say 200 tweets, and all tweets in the debugger view looks like the image below:&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;It’s clear that is not easy to know what tweets are inside that list. Of course you can use breakpoint conditions, trace, logs and many others resources to help the debug process, but DebuggerDisplay is an easier and very cheap solution.&lt;/p&gt;
@@ -139,13 +139,13 @@
 
 &lt;p&gt;&lt;strong&gt;Now, that “secret” tweet list looks like:&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;When debugging is easier than expected&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;

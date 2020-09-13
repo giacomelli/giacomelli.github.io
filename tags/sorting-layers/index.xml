@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - sorting-layers</title>
  <link href="//tags/sorting-layers/index.xml" rel="self"/>
  <link href="/tag/sorting-layers.html"/>
- <updated>2020-09-13T07:56:02-03:00</updated>
+ <updated>2020-09-13T08:19:39-03:00</updated>
  <id>/tag/sorting-layers.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -45,7 +45,7 @@
 &lt;p&gt;The name of Sorting Layer been used is showing in the top of each game object in the scene view.&lt;/p&gt;
 
 &lt;center&gt;
-        &lt;img class=&quot;lazy screenshot&quot; src=&quot;/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger.png &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger.png &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;

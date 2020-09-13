@@ -126,7 +126,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
   
     <center>
    
-    <img src="/assets/loading-image.png" data-src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/logo.png" class="lazy" style="max-height: 200px;max-width: 100%;" alt="Logo do post"/> 
+    <img src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/logo.png" style="max-height: 200px;max-width: 100%;" alt="Post logo"/> 
   
     </center>
    
@@ -156,7 +156,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 <p>While we were developing it we needed to change some configurations on the extension to use different URLs of our API depending on what environment the Chrome Extension was using, like DEV (local), TEST, and Production.</p>
 
 <h2 id="chrome-extension">Chrome Extension</h2>
-<p><img class="lazy icon" src="/assets/logos/chrome-extension.png " style="max-height:200px" />
+<p><img class="icon" src="/assets/logos/chrome-extension.png " style="max-height:200px" />
 For this tutorial, I’ll use a Chrome Extension basic sample called <code class="highlighter-rouge">Hello Extensions</code>.<br /> 
 You can download it from this page <a href="https://developer.chrome.com/extensions/samples">https://developer.chrome.com/extensions/samples</a> or directly from <a href="https://developer.chrome.com/extensions/examples/tutorials/hello_extensions.zip">here</a>.
 <br /><br /><br /><br /></p>
@@ -164,7 +164,7 @@ You can download it from this page <a href="https://developer.chrome.com/extensi
 </div>
 
 <h2 id="gulp">Gulp</h2>
-<p><img class="lazy icon" src="/assets/logos/gulp.svg " style="max-height:200px" />
+<p><img class="icon" src="/assets/logos/gulp.svg " style="max-height:200px" />
 At that time we did not find any builtin or other solution to make this workflow easier and streamlined, so we decided to create our own solution using <code class="highlighter-rouge">Gulp</code>. This whole solution will be explaining below.
 <br /><br /><br /><br /><br /></p>
 <blockquote>
@@ -174,10 +174,10 @@ At that time we did not find any builtin or other solution to make this workflow
 <p>We decided to use <code class="highlighter-rouge">gulp</code>, because a Chrome Extensions is a bunch of .js, .html and .json files. Perfect to use gulp.</p>
 
 <h2 id="the-problem">The problem</h2>
-<p><img class="lazy icon" src="/assets/logos/problem.png " style="max-height:200px" />
+<p><img class="icon" src="/assets/logos/problem.png " style="max-height:200px" />
 If we just try to open our download <code class="highlighter-rouge">Hello Extension</code> .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png " />
+        <img class="screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png " />
       </center>
 
 <p>This is not a problem if you have only one environment or if you don’t need different configurations for different environments, but as I’ve already explained, we needed different configs for different environments.</p>
@@ -191,14 +191,14 @@ If we just try to open our download <code class="highlighter-rouge">Hello Extens
 </ul>
 
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png " />
+        <img class="screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png " />
       </center>
 
 <h2 id="files-structure">Files structure</h2>
 <p>Move the <code class="highlighter-rouge">Hello Extensions</code> files to a subfolder called <code class="highlighter-rouge">src</code>.
 At the end of this tutorial, our files structure will look like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png " />
+        <img class="screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png " />
       </center>
 
 <div class="note"><p>If have any doubt about the files structure during this tutorial, you can download the full solution in section <code class="highlighter-rouge">Download</code> at the end of the tutorial</p>
@@ -224,7 +224,7 @@ At the end of this tutorial, our files structure will look like this:</p>
 <p>This is the full <code class="highlighter-rouge">gulpfile.js</code> file that will allow our development workflow for different environments.<br /></p>
 
 <h2 id="the-gulpfilejs-sections">The gulpfile.js sections</h2>
-<p><img class="lazy icon" src="/assets/logos/project.png " style="max-height:200px" />
+<p><img class="icon" src="/assets/logos/project.png " style="max-height:200px" />
 Now I will explain each section of it.
 <br /><br /><br /><br /><br /><br /></p>
 
@@ -278,7 +278,7 @@ Here we are basically defining the order of each function that will be called wh
 <script src="https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=watch.section.js"> </script>
 
 <h2 id="packagesjson-file">packages.json file</h2>
-<p><img class="lazy icon" src="/assets/logos/package.png " style="max-height:200px" /></p>
+<p><img class="icon" src="/assets/logos/package.png " style="max-height:200px" /></p>
 
 <p>Change the content of <code class="highlighter-rouge">packages.json</code> file to the content below to update the dependencies.</p>
 <noscript><pre>400: Invalid request</pre></noscript>
@@ -289,11 +289,11 @@ Here we are basically defining the order of each function that will be called wh
 <h2 id="running-the-gulp-for-the-first-time">Running the gulp for the first time</h2>
 <p>Now, if you just run the command <code class="highlighter-rouge">gulp</code> in the root folder, you should see an output like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png " />
+        <img class="screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png " />
       </center>
 
 <h2 id="creating-the-configjson-files">Creating the <code class="highlighter-rouge">config.json</code> files</h2>
-<p><img class="lazy icon" src="/assets/logos/config.png " style="max-height:200px" /></p>
+<p><img class="icon" src="/assets/logos/config.png " style="max-height:200px" /></p>
 
 <p>We need to create our <code class="highlighter-rouge">config.json</code> files.
 They are 3 files:</p>
@@ -321,12 +321,12 @@ Here is the content of each one:</p>
 <h2 id="running-the-gulp-for-the-second-time">Running the gulp for the second time</h2>
 <p>Run the command <code class="highlighter-rouge">gulp</code> in the root folder, you should see an output like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png " />
+        <img class="screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png " />
       </center>
 
 <p>There is a new subfolder <code class="highlighter-rouge">dist</code> created. Load it on Chrome Extensions page:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png " />
+        <img class="screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png " />
       </center>
 
 <p>The plugin should work ok.</p>
@@ -356,7 +356,7 @@ Open the <code class="highlighter-rouge">manifest.json</code> and change it to t
 <p>The line <code class="highlighter-rouge">"/scripts/config.js"</code> is what we need to access the configuration values.</p>
 
 <h2 id="creating-the-manifestjson-files">Creating the <code class="highlighter-rouge">manifest.json</code> files</h2>
-<p><img class="lazy icon" src="/assets/logos/manifest.png " style="max-height:200px" />
+<p><img class="icon" src="/assets/logos/manifest.png " style="max-height:200px" />
 We need to create our <code class="highlighter-rouge">manifest.json</code> files, in the same way, we created our <code class="highlighter-rouge">config.json</code> files.
 <br /><br /><br /><br /><br />
 They are 3 files:</p>
@@ -377,7 +377,7 @@ Here is the content of each one:</p>
 
 <h2 id="running-the-gulp-for-each-environment">Running the gulp for each environment</h2>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png " />
+        <img class="screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png " />
       </center>
 <p>Run the command <code class="highlighter-rouge">gulp</code> in the root folder.
 This will use <code class="highlighter-rouge">DEV</code> configuration from config.js and manifest.json</p>
@@ -387,13 +387,13 @@ This will use <code class="highlighter-rouge">DEV</code> configuration from conf
 <p>Now, try to run <code class="highlighter-rouge">gulp --config TEST</code>.
 In the Chrome Extensions page you should see something like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png " />
+        <img class="screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png " />
       </center>
 
 <p>Your extension is using the TEST environment values.
 When you click on the extension icon on the Chrome toolbar, you should see something like this:</p>
 <center>
-        <img class="lazy screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png " />
+        <img class="screenshot" src="/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png " />
       </center>
 
 <div class="note"><p>You can try to run <code class="highlighter-rouge">gulp --config PROD</code>. To see the <code class="highlighter-rouge">PROD</code> environment values on the extension.</p>
@@ -411,7 +411,7 @@ You can use the <code class="highlighter-rouge">--config</code> option combine, 
 <p>In this .zip are all files mentioned in this tutorial, you just need to set up your gulp environment and call the <code class="highlighter-rouge">npm install</code> and <code class="highlighter-rouge">npm install gulp</code> before starting to use it.</p>
 
 <h2 id="conclusion">Conclusion</h2>
-<p><img class="lazy icon" src="/assets/logos/conclusion.png " style="max-height:200px" /></p>
+<p><img class="icon" src="/assets/logos/conclusion.png " style="max-height:200px" /></p>
 
 <p>In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.</p>
 
@@ -504,14 +504,14 @@ You can use the <code class="highlighter-rouge">--config</code> option combine, 
      <div class="portifolio-slide">
           <a href="GeneticSharp-Car2D">
                <center>
-        <img class='lazy screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
+        <img class='screenshot' src='/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png '>
       </center>
                GeneticSharp Car2D, an Unity3D sample for GeneticSharp where a genetic algorithm tries to design 2D cars to overcome roads challenges
           </a>
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp">               
-          <img class='lazy icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
+          <img class='icon' src='/assets/logos/google-play-badge.png ' style='max-height:200px'>
           GeneticSharp Unity3d Samples on Google Play
           </a>
      </div>
@@ -781,7 +781,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 	</script>
 	<!-- End Google Analytics -->
 
-
-    <script> new LazyLoad({ elements_selector: ".lazy" });</script>
+    
   </body>
 </html>
