@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - curves</title>
  <link href="//tags/curves/index.xml" rel="self"/>
  <link href="/tag/curves.html"/>
- <updated>2020-09-12T11:30:35-03:00</updated>
+ <updated>2020-09-13T07:56:02-03:00</updated>
  <id>/tag/curves.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -391,7 +391,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 &lt;p&gt;Below I show my realtime try on this matter:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/apps/maurer-rose/index.html&quot; target=&quot;_blank&quot;&gt;Open in a new window&lt;/a&gt;&lt;/p&gt;
-&lt;iframe src=&quot;/apps/maurer-rose/index.html&quot; style=&quot;width: 960px;height: 700px;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/apps/maurer-rose/index.html&quot; style=&quot;width: 100%;min-height: 700px;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;In this tutorial, we learned how to draw a Maurer Rose with a LineRenderer.
