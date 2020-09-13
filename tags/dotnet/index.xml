@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -27,16 +27,16 @@
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=solution-build.yml&quot;&gt; &lt;/script&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;The variables used in the script portions are described in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Complete azure-pipelines.yml&lt;/code&gt; in the end of this post&lt;/p&gt;
+  &lt;p&gt;The variables used in the script portions are described in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Complete azure-pipelines.yml&lt;/code&gt; in the end of this post&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h1 id=&quot;generating-the-sql-script&quot;&gt;Generating the .sql script&lt;/h1&gt;
-&lt;p&gt;With our .dacpac file built, now we need to generate our .sql database script. To perform this operation we need the &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15&quot;&gt;sqlpackage.exe&lt;/a&gt;, this command-line is available in some Azure Pipelines images, as &lt;code class=&quot;highlighter-rouge&quot;&gt;vs2017-win2016&lt;/code&gt;, so you need to use it on your &lt;code class=&quot;highlighter-rouge&quot;&gt;azure-pipelines.yml&lt;/code&gt; file:&lt;/p&gt;
+&lt;p&gt;With our .dacpac file built, now we need to generate our .sql database script. To perform this operation we need the &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15&quot;&gt;sqlpackage.exe&lt;/a&gt;, this command-line is available in some Azure Pipelines images, as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vs2017-win2016&lt;/code&gt;, so you need to use it on your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;azure-pipelines.yml&lt;/code&gt; file:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=image.yml&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Add the &lt;code class=&quot;highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task below to generate the .sql database script:&lt;/p&gt;
+&lt;p&gt;Add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task below to generate the .sql database script:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-generate.yml&quot;&gt; &lt;/script&gt;
 
@@ -50,7 +50,7 @@
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=azure-pipelines.yml&quot;&gt; &lt;/script&gt;
 
 &lt;h1 id=&quot;extra-points&quot;&gt;Extra points&lt;/h1&gt;
-&lt;p&gt;In the approach described above the .sql files is not automatically applied to the database, so someone need to download, check and apply the file manually against the target database. If you want to apply the database script automatically you can change &lt;code class=&quot;highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task that generate the .sql file to update the target database using the &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15#publish-parameters-properties-and-sqlcmd-variables&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;action:publish&lt;/code&gt; option of sqlpackage.exe&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the approach described above the .sql files is not automatically applied to the database, so someone need to download, check and apply the file manually against the target database. If you want to apply the database script automatically you can change &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task that generate the .sql file to update the target database using the &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15#publish-parameters-properties-and-sqlcmd-variables&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;action:publish&lt;/code&gt; option of sqlpackage.exe&lt;/a&gt;.&lt;/p&gt;
 
 </content>
  </entry>
@@ -92,38 +92,38 @@
 &lt;p&gt;Sometime ago I created some dotnet new templates for GeneticSharp: &lt;a href=&quot;http://diegogiacomelli.com.br/dotnet-new-templates-for-GeneticSharp/&quot;&gt;dotnet new templates for GeneticSharp&lt;/a&gt; and I will use that template as samples for the steps below.&lt;/p&gt;
 
 &lt;h2 id=&quot;nuget-pack--dotnet-pack&quot;&gt;Nuget pack / dotnet pack&lt;/h2&gt;
-&lt;p&gt;Nowadays there are two main ways to build a dotnet new template: creating a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt; file or defining the package properties directly inside your &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Nowadays there are two main ways to build a dotnet new template: creating a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt; file or defining the package properties directly inside your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.csproj&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;To GeneticSharp templates I used a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To GeneticSharp templates I used a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;steps-and-samples&quot;&gt;Steps and samples&lt;/h2&gt;
 &lt;p&gt;When I was trying to create the first templates I used this Microsoft documentation to learn about it: &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates&quot;&gt;Custom templates for dotnet new&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;creating&quot;&gt;Creating&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates&lt;/code&gt; folder: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Define the templates in the &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; or create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt;: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/Templates/GeneticSharp.Templates.nuspec&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Create a &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; folder inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates&lt;/code&gt; folder: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates/content&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Create a subfolder inside &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt; for each template and put your template project source code there: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates/content/ConsoleApp&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;For each template folder, create a subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;template.config&lt;/code&gt; then create a &lt;code class=&quot;highlighter-rouge&quot;&gt;template.json&lt;/code&gt; file: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/Templates/content/ConsoleApp/.template.config/template.json&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Templates&lt;/code&gt; folder: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Define the templates in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; or create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt;: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/Templates/GeneticSharp.Templates.nuspec&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;content&lt;/code&gt; folder inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Templates&lt;/code&gt; folder: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates/content&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Create a subfolder inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;content&lt;/code&gt; for each template and put your template project source code there: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/Templates/content/ConsoleApp&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;For each template folder, create a subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;template.config&lt;/code&gt; then create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;template.json&lt;/code&gt; file: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/Templates/content/ConsoleApp/.template.config/template.json&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;In this &lt;code class=&quot;highlighter-rouge&quot;&gt;.json&lt;/code&gt; you should define things like template name (shortName) and what it’s root namespace that will be replaced when a new project use this template (sourceName)&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;In this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.json&lt;/code&gt; you should define things like template name (shortName) and what it’s root namespace that will be replaced when a new project use this template (sourceName)&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;building-and-testing&quot;&gt;Building and testing&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Now you can create the &lt;code class=&quot;highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; with the &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet pack&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;nuget pack&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;You can test your templates locally installing them directly from the &lt;code class=&quot;highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; file: &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new -i your_templates_file.nupkg&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Install the template: &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new template_shortname -n new_project_namespace -o output_folder&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Now you can create the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet pack&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nuget pack&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;You can test your templates locally installing them directly from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; file: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet new -i your_templates_file.nupkg&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Install the template: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet new template_shortname -n new_project_namespace -o output_folder&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Here a &lt;code class=&quot;highlighter-rouge&quot;&gt;.cmd&lt;/code&gt; sample for last 3 steps: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/tools/buildTemplatesNuget.cmd&quot;&gt;sample&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Here a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.cmd&lt;/code&gt; sample for last 3 steps: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/tools/buildTemplatesNuget.cmd&quot;&gt;sample&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;publishing&quot;&gt;Publishing&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;If everything is right you can publish your &lt;code class=&quot;highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; on &lt;a href=&quot;&quot;&gt;http://nuget.org&lt;/a&gt; or to your private NuGet feed: &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp.Templates/&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;If everything is right you can publish your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; on &lt;a href=&quot;&quot;&gt;http://nuget.org&lt;/a&gt; or to your private NuGet feed: &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp.Templates/&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
@@ -136,11 +136,11 @@
    <link href="//dapper-and-the-nvarchar-4000-arguments/"/>
    <updated>2019-08-14T00:00:00-03:00</updated>
    <id>//dapper-and-the-nvarchar-4000-arguments</id>
-   <content type="html">&lt;p&gt;Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as &lt;code class=&quot;highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;This happen because Dapper cannot infer what is the exactly type and length of the table column on database.&lt;/p&gt;
 
-&lt;p&gt;The downside of the &lt;code class=&quot;highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt; in arguments is that the database can choose a bad execution plan for the query.&lt;/p&gt;
+&lt;p&gt;The downside of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt; in arguments is that the database can choose a bad execution plan for the query.&lt;/p&gt;
 
 &lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
 
@@ -149,7 +149,7 @@
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample1.cs&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;To make this solution easier to use I made two extension methods &lt;code class=&quot;highlighter-rouge&quot;&gt;ToVarChar&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ToNVarChar&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;To make this solution easier to use I made two extension methods &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ToVarChar&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ToNVarChar&lt;/code&gt;:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample2.cs&quot;&gt; &lt;/script&gt;
@@ -170,7 +170,7 @@
 &lt;p&gt;NO!&lt;/p&gt;
 
 &lt;h2 id=&quot;the-long-answer&quot;&gt;The long answer&lt;/h2&gt;
-&lt;p&gt;The Azure Service Bus maximum message size is 256 KB for &lt;code class=&quot;highlighter-rouge&quot;&gt;Standard tier&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;1 MB&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;Premium tier&lt;/code&gt; (&lt;a href=&quot;https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas&quot;&gt;https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The Azure Service Bus maximum message size is 256 KB for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Standard tier&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1 MB&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Premium tier&lt;/code&gt; (&lt;a href=&quot;https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas&quot;&gt;https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;A simple solution to overcome this limitation is split the messages in blocks lower or equal to 256 KB size.&lt;/p&gt;
 
@@ -193,9 +193,9 @@
 
 &lt;p&gt;Recently I had to distribute a T4 template inside a NuGet package, so developers who installed the NuGet package would get, in addition to the library assemblies, a T4 template to help generate some scaffold code.&lt;/p&gt;
 
-&lt;p&gt;Nowadays there are two main ways to build a NuGet package: creating a &lt;code class=&quot;highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt; file or defining the package properties directly inside your &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Nowadays there are two main ways to build a NuGet package: creating a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nuspec&lt;/code&gt; file or defining the package properties directly inside your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.csproj&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;The project that I want to distributed via NuGet is a .NET Standard library, so I decided to use the the dotnet core way: define the package properties inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;The project that I want to distributed via NuGet is a .NET Standard library, so I decided to use the the dotnet core way: define the package properties inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; file.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-nuget-project&quot;&gt;Creating the NuGet project&lt;/h2&gt;
 &lt;p&gt;We will create a sample project to use during the post. Open a command-line/terminal and type:&lt;/p&gt;
@@ -203,9 +203,9 @@
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=create-sample-project.sh&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Let’s say that the T4 Template that we want to distribute is located inside a folder called &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates&lt;/code&gt; and the file is named &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s say that the T4 Template that we want to distribute is located inside a folder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Templates&lt;/code&gt; and the file is named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Now open the &lt;code class=&quot;highlighter-rouge&quot;&gt;SampleNugetProject.csproj&lt;/code&gt; in the Visual Studio and add a &lt;code class=&quot;highlighter-rouge&quot;&gt;T4 Template&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Now open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SampleNugetProject.csproj&lt;/code&gt; in the Visual Studio and add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;T4 Template&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template.png &quot; /&gt;
       &lt;/center&gt;
@@ -213,34 +213,34 @@
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Our &lt;code class=&quot;highlighter-rouge&quot;&gt;Solution Explorer&lt;/code&gt; should look like this:&lt;/p&gt;
+&lt;p&gt;Our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Solution Explorer&lt;/code&gt; should look like this:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;creating-a-targets&quot;&gt;Creating a .targets&lt;/h2&gt;
-&lt;p&gt;We need to create a &lt;code class=&quot;highlighter-rouge&quot;&gt;.targets&lt;/code&gt; file, it will be used to copy the T4 Template from the NuGet package folder to the target project in the build process:&lt;/p&gt;
+&lt;p&gt;We need to create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.targets&lt;/code&gt; file, it will be used to copy the T4 Template from the NuGet package folder to the target project in the build process:&lt;/p&gt;
 
-&lt;p&gt;Create a file with the same name of your NuGet package project, but with the extensions &lt;code class=&quot;highlighter-rouge&quot;&gt;.targets&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Create a file with the same name of your NuGet package project, but with the extensions &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.targets&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;For our sample the file will be &lt;code class=&quot;highlighter-rouge&quot;&gt;SampleNugetProject.targets&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;For our sample the file will be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SampleNugetProject.targets&lt;/code&gt;:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=SampleNugetProject.targets&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;changing-the-csproj&quot;&gt;Changing the .csproj&lt;/h2&gt;
-&lt;p&gt;In the project &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; just add this &lt;code class=&quot;highlighter-rouge&quot;&gt;ItemGroup&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;In the project &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; just add this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ItemGroup&lt;/code&gt;:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=SampleNugetProject.csproj&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;building-the-nuget-package&quot;&gt;Building the NuGet package&lt;/h2&gt;
-&lt;p&gt;Inside the folder where are our &lt;code class=&quot;highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;.targets&lt;/code&gt; files, type:&lt;/p&gt;
+&lt;p&gt;Inside the folder where are our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.csproj&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.targets&lt;/code&gt; files, type:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=dotnet-pack.sh&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;This will create a file &lt;code class=&quot;highlighter-rouge&quot;&gt;bin\Debug\SampleNugetProject.1.0.0.nupkg&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This will create a file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bin\Debug\SampleNugetProject.1.0.0.nupkg&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;testing-the-nuget-package&quot;&gt;Testing the NuGet package&lt;/h2&gt;
 &lt;p&gt;Create a new .NET Core project to test the package:&lt;/p&gt;
@@ -253,12 +253,12 @@
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=add-package.sh&quot;&gt; &lt;/script&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;To test our NuGet package without publish it to a NuGet source, just use the &lt;code class=&quot;highlighter-rouge&quot;&gt;--source&lt;/code&gt; option and point it to the &lt;code class=&quot;highlighter-rouge&quot;&gt;SampleNugetProject.1.0.0.nupkg&lt;/code&gt; folder.&lt;/p&gt;
+  &lt;p&gt;To test our NuGet package without publish it to a NuGet source, just use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--source&lt;/code&gt; option and point it to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SampleNugetProject.1.0.0.nupkg&lt;/code&gt; folder.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;If we look to our &lt;code class=&quot;highlighter-rouge&quot;&gt;TargetTestProject&lt;/code&gt; there is no &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt; file yet, this is because it will copied from NuGet package folder to the project structure during the build process.&lt;/p&gt;
+&lt;p&gt;If we look to our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TargetTestProject&lt;/code&gt; there is no &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt; file yet, this is because it will copied from NuGet package folder to the project structure during the build process.&lt;/p&gt;
 
-&lt;p&gt;Just build the target project and the &lt;code class=&quot;highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt; will be copied.&lt;/p&gt;
+&lt;p&gt;Just build the target project and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt; will be copied.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/34f72d3e54b5ac658a924bbb0f1f7e72.js?file=dotnet-build.sh&quot;&gt; &lt;/script&gt;
 
@@ -293,12 +293,12 @@
 
 &lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Cake&lt;/strong&gt;: install the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cake&lt;/code&gt; on your .NET Core project before start this tutorial. Follow this &lt;a href=&quot;https://cakebuild.net/docs/tutorials/setting-up-a-new-project&quot;&gt;Setting Up A New Project&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cake&lt;/strong&gt;: install the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Cake&lt;/code&gt; on your .NET Core project before start this tutorial. Follow this &lt;a href=&quot;https://cakebuild.net/docs/tutorials/setting-up-a-new-project&quot;&gt;Setting Up A New Project&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;SonarCloud&lt;/strong&gt;: create an account and add a project on &lt;a href=&quot;https://sonarcloud.io&quot;&gt;https://sonarcloud.io&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;creating-the-buildcake&quot;&gt;Creating the build.cake&lt;/h2&gt;
-&lt;p&gt;In project root folder, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;build.cake&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In project root folder, create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.cake&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;adding-the-tools-and-addin-references&quot;&gt;Adding the tools and addin references&lt;/h3&gt;
 &lt;p&gt;Add the lines below to the file:&lt;/p&gt;
@@ -316,11 +316,11 @@
 &lt;p&gt;Where:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;solutionDir&lt;/strong&gt;: is the subfolder where your solution source code is located.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;sonarLogin&lt;/strong&gt;: Change the &lt;code class=&quot;highlighter-rouge&quot;&gt;[SONARCLOUD-USER-TOKEN]&lt;/code&gt; for a token you can generate at the page &lt;a href=&quot;https://sonarcloud.io/account/security/&quot;&gt;https://sonarcloud.io/account/security/&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;branch&lt;/strong&gt;: if you are using git, then the &lt;code class=&quot;highlighter-rouge&quot;&gt;GitBranchCurrent(&quot;.&quot;).FriendlyName&lt;/code&gt; will pass the right branch name to SonarCloud, otherwise you can set it manually.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;sonarLogin&lt;/strong&gt;: Change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[SONARCLOUD-USER-TOKEN]&lt;/code&gt; for a token you can generate at the page &lt;a href=&quot;https://sonarcloud.io/account/security/&quot;&gt;https://sonarcloud.io/account/security/&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;branch&lt;/strong&gt;: if you are using git, then the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GitBranchCurrent(&quot;.&quot;).FriendlyName&lt;/code&gt; will pass the right branch name to SonarCloud, otherwise you can set it manually.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;If you are using &lt;code class=&quot;highlighter-rouge&quot;&gt;AppVeyor&lt;/code&gt; you can use line bellow to allow discover the branch name locally and in the AppVeyor:&lt;/p&gt;
+&lt;p&gt;If you are using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AppVeyor&lt;/code&gt; you can use line bellow to allow discover the branch name locally and in the AppVeyor:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v3.cake&quot;&gt; &lt;/script&gt;
 
@@ -334,7 +334,7 @@
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v5.cake&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;This task use &lt;code class=&quot;highlighter-rouge&quot;&gt;Coverlet&lt;/code&gt; to collect the code coverage. Install it on your test project using the &lt;code class=&quot;highlighter-rouge&quot;&gt;Coverlet&lt;/code&gt; NuGet package:&lt;/p&gt;
+&lt;p&gt;This task use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Coverlet&lt;/code&gt; to collect the code coverage. Install it on your test project using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Coverlet&lt;/code&gt; NuGet package:&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package coverlet.msbuild
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -350,15 +350,15 @@
   &lt;li&gt;&lt;strong&gt;Key&lt;/strong&gt;: is your project key on SonarCloud. You can get it throw these steps on &lt;a href=&quot;https://sonarcloud.io&quot;&gt;SonarCloud&lt;/a&gt;:
     &lt;ul&gt;
       &lt;li&gt;Select your project.&lt;/li&gt;
-      &lt;li&gt;Open the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Administration / Update Key&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Open the menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Administration / Update Key&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Organization&lt;/strong&gt;: is the name of your organization on SonarCloud. If your &lt;code class=&quot;highlighter-rouge&quot;&gt;projects&lt;/code&gt; page is &lt;code class=&quot;highlighter-rouge&quot;&gt;https://sonarcloud.io/organizations/YOUR-ORGANIZATION/projects&lt;/code&gt;, then your &lt;strong&gt;Organization&lt;/strong&gt; value is &lt;code class=&quot;highlighter-rouge&quot;&gt;YOUR-ORGANIZATION&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Organization&lt;/strong&gt;: is the name of your organization on SonarCloud. If your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;projects&lt;/code&gt; page is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://sonarcloud.io/organizations/YOUR-ORGANIZATION/projects&lt;/code&gt;, then your &lt;strong&gt;Organization&lt;/strong&gt; value is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YOUR-ORGANIZATION&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Exclusions&lt;/strong&gt;: here you can define the wildcards to excluse some files fron Sonar scan, like sample, docs and test files.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;defining-the-tasks-order&quot;&gt;Defining the tasks order&lt;/h3&gt;
-&lt;p&gt;The last part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;build.cake&lt;/code&gt; file define the order that tasks will run:&lt;/p&gt;
+&lt;p&gt;The last part of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.cake&lt;/code&gt; file define the order that tasks will run:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v7.cake&quot;&gt; &lt;/script&gt;
 
@@ -371,7 +371,7 @@
 
 &lt;p&gt;Windows:&lt;/p&gt;
 
-&lt;p&gt;Open a &lt;code class=&quot;highlighter-rouge&quot;&gt;powershell&lt;/code&gt; terminal:&lt;/p&gt;
+&lt;p&gt;Open a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;powershell&lt;/code&gt; terminal:&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.&lt;span class=&quot;se&quot;&gt;\b&lt;/span&gt;uild.ps1
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -400,7 +400,7 @@
 &lt;h2 id=&quot;extras&quot;&gt;Extras&lt;/h2&gt;
 &lt;p&gt;If you are using git, you can add this lines to your .gitignore file:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tools/**
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tools/**
 !tools/packages.config
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </content>
@@ -414,9 +414,9 @@
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp 2.6.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
 &lt;h1 id=&quot;blazor-template&quot;&gt;Blazor template&lt;/h1&gt;
-&lt;p&gt;Now we have 4 &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; templates, besides the &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpConsoleApp&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspConsoleApp&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspUnity3d&lt;/code&gt; already existent, a new template for a Blazor client app was added: &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspBlazorApp&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Now we have 4 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; templates, besides the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpConsoleApp&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspConsoleApp&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspUnity3d&lt;/code&gt; already existent, a new template for a Blazor client app was added: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspBlazorApp&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new -i GeneticSharp.Templates
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new -i GeneticSharp.Templates
 dotnet new GeneticSharpTspBlazorApp -o TspBlazorApp
 cd TspBlazorApp
 dotnet run
@@ -501,17 +501,17 @@ dotnet run
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This tutorial is based on Blazor &lt;code class=&quot;highlighter-rouge&quot;&gt;preview6&lt;/code&gt;. If you are doing this tutorial using a newer Blazor version and have encountered some problem, leave a comment at the end of the post or contact me on &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This tutorial is based on Blazor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;preview6&lt;/code&gt;. If you are doing this tutorial using a newer Blazor version and have encountered some problem, leave a comment at the end of the post or contact me on &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Now we’ll create a scaffold Blazor app using the &lt;code class=&quot;highlighter-rouge&quot;&gt;blazor&lt;/code&gt; template:&lt;/p&gt;
+&lt;p&gt;Now we’ll create a scaffold Blazor app using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blazor&lt;/code&gt; template:&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new blazor &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; TspWithGeneticSharp
 &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;TspWithGeneticSharp
 dotnet watch run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Wait for the message &lt;code class=&quot;highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
+&lt;p&gt;Wait for the message &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png &quot; /&gt;
       &lt;/center&gt;
@@ -536,7 +536,7 @@ dotnet watch run
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;In the root folder of your Blazor project create a new subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp&lt;/code&gt;. We’ll add all our C# classes inside this folder.&lt;/p&gt;
+&lt;p&gt;In the root folder of your Blazor project create a new subfolder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp&lt;/code&gt;. We’ll add all our C# classes inside this folder.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
@@ -545,33 +545,33 @@ dotnet watch run
 
 &lt;p&gt;To represent the cities route each gene of our chromosome will represent an index of a city in the route.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome.cs&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspChromosome.cs&lt;/code&gt;:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;representing-a-city&quot;&gt;Representing a city&lt;/h2&gt;
 &lt;p&gt;The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspCity.cs&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspCity.cs&lt;/code&gt;:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspCity.cs&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
-&lt;p&gt;Now we need to evaluate the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now we need to evaluate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Our fitness function will evaluate the chromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspFitness.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;configuring-the-genetic-algorithm&quot;&gt;Configuring the Genetic Algorithm&lt;/h2&gt;
-&lt;p&gt;In this step we need to configure our genetic algorithm using the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness&lt;/code&gt; and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
+&lt;p&gt;In this step we need to configure our genetic algorithm using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspFitness&lt;/code&gt; and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspGA.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspGA.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspGA.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspGA.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-timer&quot;&gt;Why use Timer?&lt;/h3&gt;
-&lt;p&gt;GeneticSharp can be used as single threading or multithreading to evaluate chromosomes with the fitness function, but WebAssembly (and Blazor) can use just the UI thread, in this scenario when we call &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticAlgorithm.Start&lt;/code&gt; method it freezes the UI until the GA finish.&lt;/p&gt;
+&lt;p&gt;GeneticSharp can be used as single threading or multithreading to evaluate chromosomes with the fitness function, but WebAssembly (and Blazor) can use just the UI thread, in this scenario when we call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticAlgorithm.Start&lt;/code&gt; method it freezes the UI until the GA finish.&lt;/p&gt;
 
-&lt;p&gt;To avoid this behavior, the solution is: run each generation of the GA inside a step in a &lt;code class=&quot;highlighter-rouge&quot;&gt;System.Threading.Timer&lt;/code&gt; as you can see in the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspGA.Run&lt;/code&gt; method.&lt;/p&gt;
+&lt;p&gt;To avoid this behavior, the solution is: run each generation of the GA inside a step in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System.Threading.Timer&lt;/code&gt; as you can see in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspGA.Run&lt;/code&gt; method.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;APIs that aren’t applicable inside of a web browser (for example, accessing the file system, opening a socket, and &lt;strong&gt;threading&lt;/strong&gt;) throw a PlatformNotSupportedException.
@@ -580,11 +580,11 @@ dotnet watch run
 &lt;/div&gt;
 
 &lt;h2 id=&quot;creating-the-razor-page&quot;&gt;Creating the Razor page&lt;/h2&gt;
-&lt;p&gt;Inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Pages&lt;/code&gt; create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=Tsp.v1.razor&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Inside the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pages&lt;/code&gt; create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=Tsp.v1.razor&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;As we need to interop with JavaScript to manipulate DOM, we will use some helper JS functions. Add the file &lt;code class=&quot;highlighter-rouge&quot;&gt;canvas-helper.js&lt;/code&gt; inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;wwwroot/js&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=canvas-helper.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;As we need to interop with JavaScript to manipulate DOM, we will use some helper JS functions. Add the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;canvas-helper.js&lt;/code&gt; inside the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wwwroot/js&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=canvas-helper.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; and add the tag below inside the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;head&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=index.canvas-helper.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Open the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; and add the tag below inside the tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;head&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=index.canvas-helper.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-ijsruntime-do-access-dom&quot;&gt;Why use IJSRuntime do access DOM?&lt;/h3&gt;
 &lt;p&gt;It’s awesome we can now use C# in the browser with Blazor. But unfortunately we can’t do everything with it, yet. Currently, WebAssembly isn’t able to directly access the DOM API, which means that Blazor isn’t able to either.
@@ -594,9 +594,9 @@ dotnet watch run
 &lt;p&gt;DOM integration is in the WebAssembly roadmap: &lt;a href=&quot;https://webassembly.org/docs/future-features&quot;&gt;https://webassembly.org/docs/future-features/&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Check your terminal window where the command &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet watch run&lt;/code&gt; is running, if there is no error in that window you can access the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Check your terminal window where the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet watch run&lt;/code&gt; is running, if there is no error in that window you can access the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
+&lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png &quot; /&gt;
@@ -609,12 +609,12 @@ dotnet watch run
 &lt;p&gt;Now our GA is running inside the browser, but it needs to display the cities route better.
 We need to create a visual representation to the cities.&lt;/p&gt;
 
-&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt; add the method &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt; add the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt;:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsync.cs&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Then call it from &lt;code class=&quot;highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;highlighter-rouge&quot;&gt;clearCanvas&lt;/code&gt; call:&lt;/p&gt;
+&lt;p&gt;Then call it from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clearCanvas&lt;/code&gt; call:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsyncCall.cs&quot;&gt; &lt;/script&gt;
 
@@ -630,15 +630,15 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now we need to draw the solution: the route represented by the best chromosome of each generation.&lt;/p&gt;
 
-&lt;p&gt;Add the following method to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Add the following method to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsync.cs&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Then call it from &lt;code class=&quot;highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt; call:&lt;/p&gt;
+&lt;p&gt;Then call it from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt; call:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsyncCall.cs&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
+&lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
       &lt;/center&gt;
@@ -664,12 +664,12 @@ We need to create a visual representation to the cities.&lt;/p&gt;
    <link href="//starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/"/>
    <updated>2019-06-27T00:00:00-03:00</updated>
    <id>//starting-an-unity3d-project-with-geneticsharp-using-dotnet-new</id>
-   <content type="html">&lt;p&gt;In this post I will show how to use &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; command to start an Unity3D project with GeneticSharp.&lt;/p&gt;
+   <content type="html">&lt;p&gt;In this post I will show how to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; command to start an Unity3D project with GeneticSharp.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Sometime ago I created a NuGet package called &lt;a href=&quot;/dotnet-new-templates-for-GeneticSharp&quot;&gt;GeneticSharp.Templates&lt;/a&gt;, this package allows developers to install &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; templates using the dotnet new command.&lt;/p&gt;
 
-&lt;p&gt;Among the availables templates in &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharp.Templates&lt;/code&gt;, there is one specific to create an Unity3D project with GeneticSharp. Besides this, the project has a sample of Travelling Salesman Problem (TSP) using GeneticSharp and can be used as a scaffold to starting use genetic algorithms in your games.&lt;/p&gt;
+&lt;p&gt;Among the availables templates in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharp.Templates&lt;/code&gt;, there is one specific to create an Unity3D project with GeneticSharp. Besides this, the project has a sample of Travelling Salesman Problem (TSP) using GeneticSharp and can be used as a scaffold to starting use genetic algorithms in your games.&lt;/p&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
 &lt;p&gt;Create an Unity3D project using dotnet new is fast and simple, depending of your machine performance, you’ll have the sample running in less than a minute.&lt;/p&gt;
@@ -679,12 +679,12 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; GeneticSharp.Templates
 dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; GeneticSharpSample
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The argument &lt;code class=&quot;highlighter-rouge&quot;&gt;-o&lt;/code&gt; is the the output folder of the Unity3D project&lt;/p&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The argument &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-o&lt;/code&gt; is the the output folder of the Unity3D project&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Now you can open the &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpSample&lt;/code&gt; in Unity3D editor.
-Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; scene and hit the play button, you should see something like this:&lt;/p&gt;
+&lt;p&gt;Now you can open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpSample&lt;/code&gt; in Unity3D editor.
+Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; scene and hit the play button, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
       &lt;/center&gt;
@@ -730,7 +730,7 @@ Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; 
 &lt;/div&gt;
 
 &lt;h1 id=&quot;tesseractservice&quot;&gt;TesseractService&lt;/h1&gt;
-&lt;p&gt;I ended up developing the class below to call the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tesseract 4&lt;/code&gt; command-line &lt;code class=&quot;highlighter-rouge&quot;&gt;(tesseract.exe)&lt;/code&gt; directly from the C# code.&lt;/p&gt;
+&lt;p&gt;I ended up developing the class below to call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tesseract 4&lt;/code&gt; command-line &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(tesseract.exe)&lt;/code&gt; directly from the C# code.&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=TesseractService.cs&quot;&gt; &lt;/script&gt;
@@ -761,8 +761,8 @@ Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; 
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;p&gt;You will get this result after call the &lt;code class=&quot;highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;The (quick) [brown] {fox} jumps!
+&lt;p&gt;You will get this result after call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The (quick) [brown] {fox} jumps!
 Over the $43,456.78 &amp;lt;lazy&amp;gt; #90 dog
 &amp;amp; duck/goose, as 12.5% of E-mail
 from aspammer@website.com is spam.
@@ -795,22 +795,22 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-US/azure/app-service/webjobs-sdk-get-started&quot;&gt;Azure WebJobs&lt;/a&gt; are a great way to execute background process.&lt;/p&gt;
 
 &lt;h1 id=&quot;scenario&quot;&gt;Scenario&lt;/h1&gt;
-&lt;p&gt;In last days I’ve created a &lt;a href=&quot;https://azure.microsoft.com/pt-br/services/devops/pipelines/&quot;&gt;Azure Pipelines&lt;/a&gt; that publish WebJobs, but in our specific case our WebJobs were not being published to &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/wwwroot/App_Data/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;, because “reasons” our root web app is using ‘/site/www’ as folder. So, you should expect that the new folder to deploy WebJobs is &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/www/App_Data/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;, but &lt;code class=&quot;highlighter-rouge&quot;&gt;NO&lt;/code&gt;, the new folder is &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In last days I’ve created a &lt;a href=&quot;https://azure.microsoft.com/pt-br/services/devops/pipelines/&quot;&gt;Azure Pipelines&lt;/a&gt; that publish WebJobs, but in our specific case our WebJobs were not being published to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/wwwroot/App_Data/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;, because “reasons” our root web app is using ‘/site/www’ as folder. So, you should expect that the new folder to deploy WebJobs is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/www/App_Data/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;, but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NO&lt;/code&gt;, the new folder is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;The big problem with the above behaviour is that &lt;code class=&quot;highlighter-rouge&quot;&gt;WebDeploy&lt;/code&gt; via VS or  &lt;code class=&quot;highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; task via Azure Pipeline will still try to deploy the webjobs to the folder inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/www/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The big problem with the above behaviour is that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WebDeploy&lt;/code&gt; via VS or  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; task via Azure Pipeline will still try to deploy the webjobs to the folder inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/www/&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;My best suspects are these lines on &lt;a href=&quot;https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV3/azurermwebappdeployment.ts#L73&quot;&gt;AzureRmWebAppDeployment@3&lt;/a&gt;&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/1d47b7bf7e9a2b3806dbd0b0332743d2.js?file=AzureRmWebAppDeployment-lines.ts&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; just check the physical path configured on Azure when we defined a &lt;code class=&quot;highlighter-rouge&quot;&gt;VirtualApplicatoin&lt;/code&gt; parameter, but in our case it is not a virtual application, but it is a different folder than &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/wwwroot/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; just check the physical path configured on Azure when we defined a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VirtualApplicatoin&lt;/code&gt; parameter, but in our case it is not a virtual application, but it is a different folder than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/wwwroot/&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&quot;externalref&quot;&gt;&lt;p&gt;in &lt;a href=&quot;https://github.com/projectkudu/kudu/wiki/WebJobs&quot;&gt;Kudu wiki&lt;/a&gt; there is some explanation about the webjobs folders.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
-&lt;p&gt;I used the FtpUpload task to publish the WebJobs binaries to the &lt;code class=&quot;highlighter-rouge&quot;&gt;/site/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt; and two instances of &lt;code class=&quot;highlighter-rouge&quot;&gt;AzureAppServiceManage&lt;/code&gt; task to stop and start the jobs:&lt;/p&gt;
+&lt;p&gt;I used the FtpUpload task to publish the WebJobs binaries to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt; and two instances of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AzureAppServiceManage&lt;/code&gt; task to stop and start the jobs:&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;you’ll need to replace the values between &amp;lt;..&amp;gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;variables&lt;/code&gt; section to specific values of your project&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;you’ll need to replace the values between &amp;lt;..&amp;gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;variables&lt;/code&gt; section to specific values of your project&lt;/p&gt;
 &lt;/div&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/1d47b7bf7e9a2b3806dbd0b0332743d2.js?file=azure-pipelines.yml&quot;&gt; &lt;/script&gt;
@@ -845,7 +845,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
    <content type="html">&lt;p&gt;Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the &lt;strong&gt;dotnet new&lt;/strong&gt; command.&lt;/p&gt;
 
 &lt;h1 id=&quot;installing-the-geneticsharptemplates&quot;&gt;Installing the GeneticSharp.Templates&lt;/h1&gt;
-&lt;p&gt;Before you can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; command to create the GeneticSharp projects from templates, you need to install it on your machine:&lt;/p&gt;
+&lt;p&gt;Before you can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; command to create the GeneticSharp projects from templates, you need to install it on your machine:&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; GeneticSharp.Templates
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;After this, if you run the command:&lt;/p&gt;
@@ -911,7 +911,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;h1 id=&quot;tpl&quot;&gt;TPL&lt;/h1&gt;
 &lt;p&gt;Three new classes were implemented to run some key points of genetic algorithm using TPL.&lt;/p&gt;
 
-&lt;p&gt;Those new classes can be used alone, but normally you will use all them together. You can see a sample usage at unit test &lt;code class=&quot;highlighter-rouge&quot;&gt;Start_TplManyGenerations_Optimization&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Those new classes can be used alone, but normally you will use all them together. You can see a sample usage at unit test &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Start_TplManyGenerations_Optimization&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;tpltaskexecutor&quot;&gt;TplTaskExecutor:&lt;/h3&gt;
 &lt;p&gt;An ITaskExecutor’s implementation that executes the tasks in a parallel fashion using Task Parallel Library (TPL).&lt;/p&gt;
@@ -1714,7 +1714,7 @@ Test Run Aborted
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/amibar/SmartThreadPool/pull/17&quot;&gt;SmartThreadPool - Adding support to .NET Core 2.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/43605256/956886&quot;&gt;How to set &lt;code class=&quot;highlighter-rouge&quot;&gt;OutputPath&lt;/code&gt; attribute in Visual Studio 2017 project ( new .csproj file format ) without target framework cluttering the resolved path?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/43605256/956886&quot;&gt;How to set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OutputPath&lt;/code&gt; attribute in Visual Studio 2017 project ( new .csproj file format ) without target framework cluttering the resolved path?&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/42787747/956886&quot;&gt;How do you multi-target a .NET Core class library with csproj?&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.natemcmaster.com/blog/2017/03/09/vs2015-to-vs2017-upgrade/&quot;&gt;Old csproj to new csproj: Visual Studio 2017 upgrade guide&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://wrightfully.com/guide-to-nsubstitute-for-rhino-mocks-users&quot;&gt;A Guide to NSubstitute for Rhino.Mocks Users&lt;/a&gt;&lt;/li&gt;
@@ -1990,7 +1990,7 @@ realtime how the genetic algorithm is evolving.&lt;/p&gt;
 
 &lt;p&gt;Now if your run the program you will see an output like that:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Generation  1: (178,330),(974,228) = 802.508566932466
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Generation  1: (178,330),(974,228) = 802.508566932466
 Generation  2: (950,487),(45,520) = 905.601457596
 Generation  3: (935,103),(38,617) = 1033.83025686038
 Generation  4: (998,680),(49,65) = 1130.85189127489
@@ -2751,14 +2751,14 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;h3 id=&quot;run-fxcop&quot;&gt;Run FxCop&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;C:\Program Files (x86)\Microsoft Fxcop 10.0\FxCopCmd.exe&quot; /project:[Your FxCop file].FxCop /out:fxcop-report.xml
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;C:\Program Files (x86)\Microsoft Fxcop 10.0\FxCopCmd.exe&quot; /project:[Your FxCop file].FxCop /out:fxcop-report.xml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;The report will be saved to fxcop-report.xml&lt;/p&gt;
 
 &lt;h3 id=&quot;generate-fxcop-badge&quot;&gt;Generate FxCop badge&lt;/h3&gt;
 &lt;p&gt;Download &lt;a href=&quot;https://github.com/giacomelli/BadgesSharp/releases&quot;&gt;BadgesSharpCmd&lt;/a&gt; and run it:&amp;lt;/p&amp;gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BadgesSharpCmd -o [your GitHub username] -r [your GitHub repository] -a %GITHUB_REPO_TOKEN% -b FxCop -c fxcop-report.xml
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BadgesSharpCmd -o [your GitHub username] -r [your GitHub repository] -a %GITHUB_REPO_TOKEN% -b FxCop -c fxcop-report.xml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Note: you will need a GitHub personal token: &lt;a href=&quot;https://github.com/settings/tokens&quot;&gt;https://github.com/settings/tokens&lt;/a&gt;.&lt;/p&gt;
@@ -2768,7 +2768,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;h3 id=&quot;show-the-badge-at-your-github-repository&quot;&gt;Show the badge at your GitHub repository&lt;/h3&gt;
 &lt;p&gt;Edit your readme.md and add the line below:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![FxCop](https://badgessharp.apphb.com/badges/:owner/:repo/FxCop)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![FxCop](https://badgessharp.apphb.com/badges/:owner/:repo/FxCop)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Sample badges: &lt;img src=&quot;https://badgessharp.apphb.com/badges/giacomelli/BadgesSharp/FxCop&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://badgessharp.apphb.com/badges/giacomelli/SampleProject/FxCop&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -2802,7 +2802,7 @@ Custom script:&lt;/li&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BadgesSharpCmd -o [your GitHub username] -r [your GitHub repository] -a %GITHUB_REPO_TOKEN% -b FxCop -c &quot;%system.teamcity.build.tempDir%\fxcop-output-*\fxcop-result.xml&quot;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BadgesSharpCmd -o [your GitHub username] -r [your GitHub repository] -a %GITHUB_REPO_TOKEN% -b FxCop -c &quot;%system.teamcity.build.tempDir%\fxcop-output-*\fxcop-result.xml&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
@@ -2850,7 +2850,7 @@ Custom script:&lt;/li&gt;
 &lt;h4 id=&quot;nuget&quot;&gt;Nuget&lt;/h4&gt;
 &lt;p&gt;If you want just use it, there is a NuGet package with latest binaries version:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Install-Package DocsByReflection
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Install-Package DocsByReflection
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </content>
  </entry>

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - controlplane</title>
  <link href="//tags/controlplane/index.xml" rel="self"/>
  <link href="/tag/controlplane.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/controlplane.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -27,7 +27,7 @@
 &lt;h3 id=&quot;1-create-the-starttoggltimeentrysh&quot;&gt;1) Create the startTogglTimeEntry.sh&lt;/h3&gt;
 &lt;p&gt;We will create the follow shell script that uses Toggl api to starts a task:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo 'Starting &quot;Programming&quot; task on toggl.com'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo 'Starting &quot;Programming&quot; task on toggl.com'
 curl -v -u &amp;lt;api-token&amp;gt;:api_token \
     -H &quot;Content-Type: application/json&quot; \
     -d '{&quot;time_entry&quot;:{&quot;description&quot;:&quot;Programming&quot;,&quot;tags&quot;:[],&quot;pid&quot;:&amp;lt;project-id&amp;gt;,&quot;created_with&quot;:&quot;curl&quot;}}' \
@@ -45,7 +45,7 @@ curl -v -u &amp;lt;api-token&amp;gt;:api_token \
 
 &lt;h3 id=&quot;2-create-the-stoptoggltimeentrysh&quot;&gt;2) Create the stopTogglTimeEntry.sh&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;taskid=`curl -v -u &amp;lt;api-token&amp;gt;:api_token -X GET https://www.toggl.com/api/v8/time_entries/current | grep -Eo '&quot;id&quot;:([0-9])+' | cut -d: -f2`
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;taskid=`curl -v -u &amp;lt;api-token&amp;gt;:api_token -X GET https://www.toggl.com/api/v8/time_entries/current | grep -Eo '&quot;id&quot;:([0-9])+' | cut -d: -f2`
  
 curl -v -u &amp;lt;api-token&amp;gt;:api_token \
     -H &quot;Content-Type: application/json&quot; \

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -17,7 +17,7 @@
    <content type="html">&lt;p&gt;Starting in Unity 2020.1, you can add a dedicated inspector window for a specific GameObject, Component, or Asset. 
 It always displays the properties of the item you opened it for, even if you select something else in the editor.&lt;/p&gt;
 
-&lt;p&gt;To activate a Focused Inspector, select an item &lt;code class=&quot;highlighter-rouge&quot;&gt;(GameObject, Component, or Asset)&lt;/code&gt; and in the context menu hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Properties...&lt;/code&gt; menu item.&lt;/p&gt;
+&lt;p&gt;To activate a Focused Inspector, select an item &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(GameObject, Component, or Asset)&lt;/code&gt; and in the context menu hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Properties...&lt;/code&gt; menu item.&lt;/p&gt;
 
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
@@ -61,7 +61,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <link href="//unitytips-helpbox-attribute/"/>
    <updated>2020-07-14T00:00:00-03:00</updated>
    <id>//unitytips-helpbox-attribute</id>
-   <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyAttribute.html&quot;&gt;PropertyAttribute&lt;/a&gt; to display a help box on inspector showing a few lines of information, like &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/EditorGUI.HelpBox.html&quot;&gt;EditorGUI.HelpBox&lt;/a&gt;, but with a &lt;code class=&quot;highlighter-rouge&quot;&gt;docs&lt;/code&gt; button to the documentation page.&lt;/p&gt;
+   <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyAttribute.html&quot;&gt;PropertyAttribute&lt;/a&gt; to display a help box on inspector showing a few lines of information, like &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/EditorGUI.HelpBox.html&quot;&gt;EditorGUI.HelpBox&lt;/a&gt;, but with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docs&lt;/code&gt; button to the documentation page.&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/07/14/unitytips-helpbox-attribute/sample-component.png &quot; /&gt;
       &lt;/center&gt;
@@ -240,7 +240,7 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
-&lt;p&gt;Just install the &lt;code class=&quot;highlighter-rouge&quot;&gt;ToastyNotification.package&lt;/code&gt; from the repository &lt;a href=&quot;https://github.com/giacomelli/Giacomelli.Unity.ToastyNotification/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Just install the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ToastyNotification.package&lt;/code&gt; from the repository &lt;a href=&quot;https://github.com/giacomelli/Giacomelli.Unity.ToastyNotification/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now every time your game raise an error on Unity’s editor console log, the Toasty Notifcation will warning you 😉!&lt;/p&gt;
 </content>
@@ -257,17 +257,17 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
-&lt;p&gt;As can be seen from the video above the extension can be used in two ways after adding the &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene Preview&lt;/code&gt; window to the editor (via the&lt;code class=&quot;highlighter-rouge&quot;&gt; Window / Scene Preview&lt;/code&gt; menu):&lt;/p&gt;
+&lt;p&gt;As can be seen from the video above the extension can be used in two ways after adding the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scene Preview&lt;/code&gt; window to the editor (via the&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; Window / Scene Preview&lt;/code&gt; menu):&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Selects &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene&lt;/code&gt; and clicking the &lt;code class=&quot;highlighter-rouge&quot;&gt;Capture screenshot&lt;/code&gt; button in both edit mode and play mode.&lt;/li&gt;
-  &lt;li&gt;Running &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene&lt;/code&gt; in play mode and if there is still no preview screenshot for the scene, a screenshot will be taken automatically after 10 seconds.&lt;/li&gt;
+  &lt;li&gt;Selects &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scene&lt;/code&gt; and clicking the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Capture screenshot&lt;/code&gt; button in both edit mode and play mode.&lt;/li&gt;
+  &lt;li&gt;Running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scene&lt;/code&gt; in play mode and if there is still no preview screenshot for the scene, a screenshot will be taken automatically after 10 seconds.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;Below you can see only the code of &lt;code class=&quot;highlighter-rouge&quot;&gt;ScenePreviewEditor.cs&lt;/code&gt;. There are 3 more files for this extension.&lt;/p&gt;
+&lt;p&gt;Below you can see only the code of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ScenePreviewEditor.cs&lt;/code&gt;. There are 3 more files for this extension.&lt;/p&gt;
 
-&lt;p&gt;Download the full &lt;a href=&quot;https://gist.github.com/giacomelli/ad9d4dcdb702d2d1edf0663628ca9608&quot;&gt;gist&lt;/a&gt; or use the &lt;a href=&quot;/unitytips-gist-importer&quot;&gt;Gist Importer&lt;/a&gt; to import the complete &lt;code class=&quot;highlighter-rouge&quot;&gt;Scene Preview Window&lt;/code&gt; for your project.&lt;/p&gt;
+&lt;p&gt;Download the full &lt;a href=&quot;https://gist.github.com/giacomelli/ad9d4dcdb702d2d1edf0663628ca9608&quot;&gt;gist&lt;/a&gt; or use the &lt;a href=&quot;/unitytips-gist-importer&quot;&gt;Gist Importer&lt;/a&gt; to import the complete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scene Preview Window&lt;/code&gt; for your project.&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/ad9d4dcdb702d2d1edf0663628ca9608.js?file=ScenePreviewWindow.cs&quot;&gt; &lt;/script&gt;
@@ -280,7 +280,7 @@ It always displays the properties of the item you opened it for, even if you sel
         &lt;/div&gt;
       &lt;/div&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs files inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs files inside any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
 &lt;/div&gt;
 </content>
  </entry>
@@ -290,7 +290,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <link href="//unitytips-hierarchy-window-gameobject-icon/"/>
    <updated>2019-07-16T00:00:00-03:00</updated>
    <id>//unitytips-hierarchy-window-gameobject-icon</id>
-   <content type="html">&lt;p&gt;You can show the game objects icons in hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorGUIUtility.ObjectContent&lt;/code&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;You can show the game objects icons in hierarchy window using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorGUIUtility.ObjectContent&lt;/code&gt;&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/fwtQ51ybHpc &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -309,7 +309,7 @@ It always displays the properties of the item you opened it for, even if you sel
 
 &lt;p&gt;The icons used in the video are &lt;a href=&quot;https://fontawesome.com/icons&quot;&gt;Font Awesome&lt;/a&gt; icons and I used &lt;a href=&quot;http://fa2png.io/&quot;&gt;fa2png.io&lt;/a&gt; to convert them to .png.&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
 &lt;/div&gt;
 </content>
  </entry>
@@ -319,7 +319,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <link href="//unitytips-hierarchy-window-layer-info/"/>
    <updated>2019-07-09T00:00:00-03:00</updated>
    <id>//unitytips-hierarchy-window-layer-info</id>
-   <content type="html">&lt;p&gt;You can create a visual layer info to any component on your hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;:&lt;/p&gt;
+   <content type="html">&lt;p&gt;You can create a visual layer info to any component on your hierarchy window using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/JxvOshwNdfE &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -343,7 +343,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <link href="//unitytips-museum/"/>
    <updated>2019-07-02T00:00:00-03:00</updated>
    <id>//unitytips-museum</id>
-   <content type="html">&lt;p&gt;I &lt;a href=&quot;https://twitter.com/ogiacomelli/status/1144379461317648384&quot;&gt;recently&lt;/a&gt; started studying &lt;a href=&quot;https://dotnet.microsoft.com/apps/aspnet/web-apps/client&quot;&gt;Blazor&lt;/a&gt; and last weekend I created this simple app that I called: &lt;code class=&quot;highlighter-rouge&quot;&gt;#unitytips Museum&lt;/code&gt;, a collection of best #unitytips.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I &lt;a href=&quot;https://twitter.com/ogiacomelli/status/1144379461317648384&quot;&gt;recently&lt;/a&gt; started studying &lt;a href=&quot;https://dotnet.microsoft.com/apps/aspnet/web-apps/client&quot;&gt;Blazor&lt;/a&gt; and last weekend I created this simple app that I called: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#unitytips Museum&lt;/code&gt;, a collection of best #unitytips.&lt;/p&gt;
 
 &lt;p&gt;You can access it directly in my site, in this url: &lt;a href=&quot;http://diegogiacomelli.com.br/apps/unitytips-museum&quot;&gt;http://diegogiacomelli.com.br/apps/unitytips-museum&lt;/a&gt;&lt;/p&gt;
 
@@ -384,7 +384,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/9a248eecf5c1ffc477b59524f63264d3.js&quot;&gt; &lt;/script&gt;
 
-&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;All Gists are imported to folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/Gists&lt;/code&gt;&lt;/p&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;All Gists are imported to folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/Gists&lt;/code&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </content>
@@ -395,7 +395,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <link href="//unitytips-changing-the-style-of-the-hierarchy-window-group-header/"/>
    <updated>2019-06-20T00:00:00-03:00</updated>
    <id>//unitytips-changing-the-style-of-the-hierarchy-window-group-header</id>
-   <content type="html">&lt;p&gt;In my last &lt;a href=&quot;/tags/unitytips/&quot;&gt;#unitytips&lt;/a&gt; I demonstrated how you could create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;. Now I’m improving it allowing you to &lt;strong&gt;customize its style&lt;/strong&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;In my last &lt;a href=&quot;/tags/unitytips/&quot;&gt;#unitytips&lt;/a&gt; I demonstrated how you could create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;. Now I’m improving it allowing you to &lt;strong&gt;customize its style&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/g2lq0lIJzh8 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -416,9 +416,9 @@ It always displays the properties of the item you opened it for, even if you sel
         &lt;/div&gt;
       &lt;/div&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;It’s a good practice add the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to your group header game objects&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;It’s a good practice add the tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to your group header game objects&lt;/p&gt;
 &lt;/div&gt;
 </content>
  </entry>
@@ -428,7 +428,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <link href="//unitytips-hierarchy-window-group-header/"/>
    <updated>2019-06-18T00:00:00-03:00</updated>
    <id>//unitytips-hierarchy-window-group-header</id>
-   <content type="html">&lt;p&gt;You can create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;:&lt;/p&gt;
+   <content type="html">&lt;p&gt;You can create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/YS5H8Y2Ytww &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -448,7 +448,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can set tag of the headers game objects as &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to avoid them on runtime&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can set tag of the headers game objects as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to avoid them on runtime&lt;/p&gt;
 &lt;/div&gt;
 </content>
  </entry>
@@ -458,7 +458,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <link href="//unitytips-menuitem-context-component/"/>
    <updated>2019-06-11T00:00:00-03:00</updated>
    <id>//unitytips-menuitem-context-component</id>
-   <content type="html">&lt;p&gt;You can create a context menu for any component using the &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;CONTEXT/&amp;lt;component&amp;gt;/&amp;lt;menu name&amp;gt;&quot;&lt;/code&gt; on a MenuItem attribute:&lt;/p&gt;
+   <content type="html">&lt;p&gt;You can create a context menu for any component using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;CONTEXT/&amp;lt;component&amp;gt;/&amp;lt;menu name&amp;gt;&quot;&lt;/code&gt; on a MenuItem attribute:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/ZCGsunoO-TA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -482,9 +482,9 @@ It always displays the properties of the item you opened it for, even if you sel
    <link href="//using-a-sprite-mask-to-create-a-flashlight-effect/"/>
    <updated>2019-06-04T00:00:00-03:00</updated>
    <id>//using-a-sprite-mask-to-create-a-flashlight-effect</id>
-   <content type="html">&lt;p&gt;When I was reading about the &lt;a href=&quot;https://docs.unity3d.com/Manual/class-SpriteMask.html&quot;&gt;Sprite Mask&lt;/a&gt; on Unity Manual, I questioned my self &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;How long does it take to create a flashlight effect using the Sprite Mask?&quot;&lt;/code&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;When I was reading about the &lt;a href=&quot;https://docs.unity3d.com/Manual/class-SpriteMask.html&quot;&gt;Sprite Mask&lt;/a&gt; on Unity Manual, I questioned my self &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;How long does it take to create a flashlight effect using the Sprite Mask?&quot;&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;The answer is: &lt;code class=&quot;highlighter-rouge&quot;&gt;less than 2 minutes&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The answer is: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;less than 2 minutes&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can check this by watching the video tutorial that I made showing how to add the a flashlight effect to the &lt;a href=&quot;https://assetstore.unity.com/packages/essentials/tutorial-projects/2d-roguelike-29825&quot;&gt;Unity 2D Roguelike sample project&lt;/a&gt;:&lt;/p&gt;
 &lt;center&gt;
@@ -509,7 +509,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/141742c3175476f03ca2437c7b35fd88.js?file=SortingLayerDebugger.cs&quot;&gt; &lt;/script&gt;
@@ -523,7 +523,7 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/div&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-&lt;p&gt;You can open the debugger window through the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Window / Sorting Layer Debugger&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can open the debugger window through the menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Window / Sorting Layer Debugger&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;The debugger can be enabled in the edit or the play mode and it will list the Sorting Layers and the number of game objects using each layer. You can hide/show the game objects of each layer by clicking on its check box.&lt;/p&gt;
 

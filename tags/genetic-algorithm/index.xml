@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - genetic-algorithm</title>
  <link href="//tags/genetic-algorithm/index.xml" rel="self"/>
  <link href="/tag/genetic-algorithm.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/genetic-algorithm.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -230,7 +230,7 @@ realtime how the genetic algorithm is evolving.&lt;/p&gt;
 
 &lt;p&gt;Now if your run the program you will see an output like that:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Generation  1: (178,330),(974,228) = 802.508566932466
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Generation  1: (178,330),(974,228) = 802.508566932466
 Generation  2: (950,487),(45,520) = 905.601457596
 Generation  3: (935,103),(38,617) = 1033.83025686038
 Generation  4: (998,680),(49,65) = 1130.85189127489

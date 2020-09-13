@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - blazor</title>
  <link href="//tags/blazor/index.xml" rel="self"/>
  <link href="/tag/blazor.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/blazor.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -17,9 +17,9 @@
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp 2.6.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
 &lt;h1 id=&quot;blazor-template&quot;&gt;Blazor template&lt;/h1&gt;
-&lt;p&gt;Now we have 4 &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; templates, besides the &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpConsoleApp&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspConsoleApp&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspUnity3d&lt;/code&gt; already existent, a new template for a Blazor client app was added: &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspBlazorApp&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Now we have 4 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; templates, besides the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpConsoleApp&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspConsoleApp&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspUnity3d&lt;/code&gt; already existent, a new template for a Blazor client app was added: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspBlazorApp&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new -i GeneticSharp.Templates
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new -i GeneticSharp.Templates
 dotnet new GeneticSharpTspBlazorApp -o TspBlazorApp
 cd TspBlazorApp
 dotnet run
@@ -104,17 +104,17 @@ dotnet run
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This tutorial is based on Blazor &lt;code class=&quot;highlighter-rouge&quot;&gt;preview6&lt;/code&gt;. If you are doing this tutorial using a newer Blazor version and have encountered some problem, leave a comment at the end of the post or contact me on &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This tutorial is based on Blazor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;preview6&lt;/code&gt;. If you are doing this tutorial using a newer Blazor version and have encountered some problem, leave a comment at the end of the post or contact me on &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Now we’ll create a scaffold Blazor app using the &lt;code class=&quot;highlighter-rouge&quot;&gt;blazor&lt;/code&gt; template:&lt;/p&gt;
+&lt;p&gt;Now we’ll create a scaffold Blazor app using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blazor&lt;/code&gt; template:&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new blazor &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; TspWithGeneticSharp
 &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;TspWithGeneticSharp
 dotnet watch run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Wait for the message &lt;code class=&quot;highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
+&lt;p&gt;Wait for the message &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png &quot; /&gt;
       &lt;/center&gt;
@@ -139,7 +139,7 @@ dotnet watch run
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;In the root folder of your Blazor project create a new subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp&lt;/code&gt;. We’ll add all our C# classes inside this folder.&lt;/p&gt;
+&lt;p&gt;In the root folder of your Blazor project create a new subfolder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp&lt;/code&gt;. We’ll add all our C# classes inside this folder.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
@@ -148,33 +148,33 @@ dotnet watch run
 
 &lt;p&gt;To represent the cities route each gene of our chromosome will represent an index of a city in the route.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome.cs&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspChromosome.cs&lt;/code&gt;:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;representing-a-city&quot;&gt;Representing a city&lt;/h2&gt;
 &lt;p&gt;The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspCity.cs&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspCity.cs&lt;/code&gt;:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspCity.cs&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
-&lt;p&gt;Now we need to evaluate the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now we need to evaluate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Our fitness function will evaluate the chromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspFitness.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;configuring-the-genetic-algorithm&quot;&gt;Configuring the Genetic Algorithm&lt;/h2&gt;
-&lt;p&gt;In this step we need to configure our genetic algorithm using the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;TspFitness&lt;/code&gt; and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
+&lt;p&gt;In this step we need to configure our genetic algorithm using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspFitness&lt;/code&gt; and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;TspGA.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspGA.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspGA.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspGA.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-timer&quot;&gt;Why use Timer?&lt;/h3&gt;
-&lt;p&gt;GeneticSharp can be used as single threading or multithreading to evaluate chromosomes with the fitness function, but WebAssembly (and Blazor) can use just the UI thread, in this scenario when we call &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticAlgorithm.Start&lt;/code&gt; method it freezes the UI until the GA finish.&lt;/p&gt;
+&lt;p&gt;GeneticSharp can be used as single threading or multithreading to evaluate chromosomes with the fitness function, but WebAssembly (and Blazor) can use just the UI thread, in this scenario when we call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticAlgorithm.Start&lt;/code&gt; method it freezes the UI until the GA finish.&lt;/p&gt;
 
-&lt;p&gt;To avoid this behavior, the solution is: run each generation of the GA inside a step in a &lt;code class=&quot;highlighter-rouge&quot;&gt;System.Threading.Timer&lt;/code&gt; as you can see in the &lt;code class=&quot;highlighter-rouge&quot;&gt;TspGA.Run&lt;/code&gt; method.&lt;/p&gt;
+&lt;p&gt;To avoid this behavior, the solution is: run each generation of the GA inside a step in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System.Threading.Timer&lt;/code&gt; as you can see in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspGA.Run&lt;/code&gt; method.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;APIs that aren’t applicable inside of a web browser (for example, accessing the file system, opening a socket, and &lt;strong&gt;threading&lt;/strong&gt;) throw a PlatformNotSupportedException.
@@ -183,11 +183,11 @@ dotnet watch run
 &lt;/div&gt;
 
 &lt;h2 id=&quot;creating-the-razor-page&quot;&gt;Creating the Razor page&lt;/h2&gt;
-&lt;p&gt;Inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Pages&lt;/code&gt; create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=Tsp.v1.razor&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Inside the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pages&lt;/code&gt; create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=Tsp.v1.razor&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;As we need to interop with JavaScript to manipulate DOM, we will use some helper JS functions. Add the file &lt;code class=&quot;highlighter-rouge&quot;&gt;canvas-helper.js&lt;/code&gt; inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;wwwroot/js&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=canvas-helper.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;As we need to interop with JavaScript to manipulate DOM, we will use some helper JS functions. Add the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;canvas-helper.js&lt;/code&gt; inside the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wwwroot/js&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=canvas-helper.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; and add the tag below inside the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;head&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=index.canvas-helper.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Open the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; and add the tag below inside the tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;head&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=index.canvas-helper.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-ijsruntime-do-access-dom&quot;&gt;Why use IJSRuntime do access DOM?&lt;/h3&gt;
 &lt;p&gt;It’s awesome we can now use C# in the browser with Blazor. But unfortunately we can’t do everything with it, yet. Currently, WebAssembly isn’t able to directly access the DOM API, which means that Blazor isn’t able to either.
@@ -197,9 +197,9 @@ dotnet watch run
 &lt;p&gt;DOM integration is in the WebAssembly roadmap: &lt;a href=&quot;https://webassembly.org/docs/future-features&quot;&gt;https://webassembly.org/docs/future-features/&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Check your terminal window where the command &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet watch run&lt;/code&gt; is running, if there is no error in that window you can access the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Check your terminal window where the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet watch run&lt;/code&gt; is running, if there is no error in that window you can access the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
+&lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png &quot; /&gt;
@@ -212,12 +212,12 @@ dotnet watch run
 &lt;p&gt;Now our GA is running inside the browser, but it needs to display the cities route better.
 We need to create a visual representation to the cities.&lt;/p&gt;
 
-&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt; add the method &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt; add the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt;:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsync.cs&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Then call it from &lt;code class=&quot;highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;highlighter-rouge&quot;&gt;clearCanvas&lt;/code&gt; call:&lt;/p&gt;
+&lt;p&gt;Then call it from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clearCanvas&lt;/code&gt; call:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsyncCall.cs&quot;&gt; &lt;/script&gt;
 
@@ -233,15 +233,15 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now we need to draw the solution: the route represented by the best chromosome of each generation.&lt;/p&gt;
 
-&lt;p&gt;Add the following method to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Add the following method to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsync.cs&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Then call it from &lt;code class=&quot;highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt; call:&lt;/p&gt;
+&lt;p&gt;Then call it from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt; call:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsyncCall.cs&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
+&lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
       &lt;/center&gt;
@@ -267,7 +267,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
    <link href="//unitytips-museum/"/>
    <updated>2019-07-02T00:00:00-03:00</updated>
    <id>//unitytips-museum</id>
-   <content type="html">&lt;p&gt;I &lt;a href=&quot;https://twitter.com/ogiacomelli/status/1144379461317648384&quot;&gt;recently&lt;/a&gt; started studying &lt;a href=&quot;https://dotnet.microsoft.com/apps/aspnet/web-apps/client&quot;&gt;Blazor&lt;/a&gt; and last weekend I created this simple app that I called: &lt;code class=&quot;highlighter-rouge&quot;&gt;#unitytips Museum&lt;/code&gt;, a collection of best #unitytips.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I &lt;a href=&quot;https://twitter.com/ogiacomelli/status/1144379461317648384&quot;&gt;recently&lt;/a&gt; started studying &lt;a href=&quot;https://dotnet.microsoft.com/apps/aspnet/web-apps/client&quot;&gt;Blazor&lt;/a&gt; and last weekend I created this simple app that I called: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#unitytips Museum&lt;/code&gt;, a collection of best #unitytips.&lt;/p&gt;
 
 &lt;p&gt;You can access it directly in my site, in this url: &lt;a href=&quot;http://diegogiacomelli.com.br/apps/unitytips-museum&quot;&gt;http://diegogiacomelli.com.br/apps/unitytips-museum&lt;/a&gt;&lt;/p&gt;
 

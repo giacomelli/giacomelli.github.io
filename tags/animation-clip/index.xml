@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - animation-clip</title>
  <link href="//tags/animation-clip/index.xml" rel="self"/>
  <link href="/tag/animation-clip.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/animation-clip.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -74,13 +74,13 @@
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Open the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;default-animations-editor-window-starter&lt;/code&gt; on Unity.&lt;/p&gt;
+&lt;p&gt;Open the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default-animations-editor-window-starter&lt;/code&gt; on Unity.&lt;/p&gt;
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;This starter project has an initial setup and assets to allow us to focus on the learning about how to code the EditorWindow.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Open the scene &lt;code class=&quot;highlighter-rouge&quot;&gt;_Tutorial/Scenes/TutorialScene&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Open the scene &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_Tutorial/Scenes/TutorialScene&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Play&lt;/code&gt; button. You should see a screen like this:&lt;/p&gt;
+&lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; button. You should see a screen like this:&lt;/p&gt;
 
 &lt;center&gt;&lt;video width=&quot;640&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;
           &lt;source src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/starter-project-play-mode.mp4 &quot; type=&quot;video/mp4&quot; /&gt;
@@ -107,7 +107,7 @@
 &lt;/div&gt;
 
 &lt;h2 id=&quot;defaultanimationseditorwindow&quot;&gt;DefaultAnimationsEditorWindow&lt;/h2&gt;
-&lt;p&gt;In the code bellow, we define the menu for the window through the method &lt;code class=&quot;highlighter-rouge&quot;&gt;ShowWindow&lt;/code&gt; and the attribute &lt;code class=&quot;highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In the code bellow, we define the menu for the window through the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShowWindow&lt;/code&gt; and the attribute &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item.png &quot; /&gt;
       &lt;/center&gt;
@@ -115,7 +115,7 @@
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;At the &lt;code class=&quot;highlighter-rouge&quot;&gt;OnEnable&lt;/code&gt; we read the settings from our ScriptableObject DefaultAnimationsSettings.&lt;/p&gt;
+&lt;p&gt;At the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnEnable&lt;/code&gt; we read the settings from our ScriptableObject DefaultAnimationsSettings.&lt;/p&gt;
 
 &lt;p&gt;The next 3 methods just draw the components to the editor window GUI.&lt;/p&gt;
 &lt;center&gt;
@@ -136,7 +136,7 @@
 &lt;h2 id=&quot;defaultanimationssettings&quot;&gt;DefaultAnimationsSettings&lt;/h2&gt;
 &lt;p&gt;There are few things to talk about this class because it is just an ordinary ScriptableObject with a couple of properties that will be serialized and used by the DefaultAnimationsUtility class, a singleton to make easier to access the settings, two methods to load/create the asset and a subclass to sprite mappings.&lt;/p&gt;
 
-&lt;p&gt;The most important code of this class is the property &lt;code class=&quot;highlighter-rouge&quot;&gt;SpriteIndexes&lt;/code&gt; that figure out what are the sprite indexes from the sprite sheet that ClipToOverride is using.&lt;/p&gt;
+&lt;p&gt;The most important code of this class is the property &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SpriteIndexes&lt;/code&gt; that figure out what are the sprite indexes from the sprite sheet that ClipToOverride is using.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;SpriteIndexes will be used by DefaultAnimationsUtility.CreateAnimationClips to know what sprites should be used to create the new animations based on the DefaultAnimationsSettings.AnimationsMapping.&lt;/p&gt;
 &lt;/div&gt;
@@ -155,14 +155,14 @@
 &lt;p&gt;There are 2 important methods here: CreateAnimationClips and CreateAnimatorOverride.&lt;/p&gt;
 
 &lt;h3 id=&quot;createanimationclips&quot;&gt;CreateAnimationClips&lt;/h3&gt;
-&lt;p&gt;It iterates through the &lt;code class=&quot;highlighter-rouge&quot;&gt;AnimationsMappings&lt;/code&gt; defined in the editor window (saved on DefaultAnimationsSettings.AnimationsMapping), for each mapping it will call the method &lt;code class=&quot;highlighter-rouge&quot;&gt;CreateAnimationClip&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It iterates through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AnimationsMappings&lt;/code&gt; defined in the editor window (saved on DefaultAnimationsSettings.AnimationsMapping), for each mapping it will call the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CreateAnimationClip&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;CreateAnimationClip&lt;/code&gt; creates a new &lt;code class=&quot;highlighter-rouge&quot;&gt;AnimationClip&lt;/code&gt; (or load if already exists one with the same name), copying the frame rate and wrap mode from the &lt;code class=&quot;highlighter-rouge&quot;&gt;ClipToOverride&lt;/code&gt; defined in the mapping. After, if wrap mode is a loop, it uses the &lt;code class=&quot;highlighter-rouge&quot;&gt;AnimationUtility&lt;/code&gt; to set the loop time to the clip settings (through the extension methods).&lt;/p&gt;
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CreateAnimationClip&lt;/code&gt; creates a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AnimationClip&lt;/code&gt; (or load if already exists one with the same name), copying the frame rate and wrap mode from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ClipToOverride&lt;/code&gt; defined in the mapping. After, if wrap mode is a loop, it uses the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AnimationUtility&lt;/code&gt; to set the loop time to the clip settings (through the extension methods).&lt;/p&gt;
 
-&lt;p&gt;Now is the most tricky part of this class, we need to create an &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorCurveBinding&lt;/code&gt; for the sprite and get the &lt;code class=&quot;highlighter-rouge&quot;&gt;ObjectReferenceKeyframe&lt;/code&gt; from the &lt;code class=&quot;highlighter-rouge&quot;&gt;ClipToOverride&lt;/code&gt; and create new &lt;code class=&quot;highlighter-rouge&quot;&gt;ObjectReferenceKeyframe&lt;/code&gt; to our new keyframes (&lt;code class=&quot;highlighter-rouge&quot;&gt;AnimationClipExtensions&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Now is the most tricky part of this class, we need to create an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorCurveBinding&lt;/code&gt; for the sprite and get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObjectReferenceKeyframe&lt;/code&gt; from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ClipToOverride&lt;/code&gt; and create new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObjectReferenceKeyframe&lt;/code&gt; to our new keyframes (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AnimationClipExtensions&lt;/code&gt;).&lt;/p&gt;
 
 &lt;h2 id=&quot;createanimatoroverride&quot;&gt;CreateAnimatorOverride&lt;/h2&gt;
-&lt;p&gt;In this method we create &lt;code class=&quot;highlighter-rouge&quot;&gt;AnimatorOverrideController&lt;/code&gt; that will override each clip from the &lt;code class=&quot;highlighter-rouge&quot;&gt;DefaultAnimationsSettings.AnimatorController&lt;/code&gt; by the ClipToOverride of each mapping defined on &lt;code class=&quot;highlighter-rouge&quot;&gt;DefaultAnimationsSettings.AnimationsMapping&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;AnimatorOverrideControllerExtensions&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;In this method we create &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AnimatorOverrideController&lt;/code&gt; that will override each clip from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DefaultAnimationsSettings.AnimatorController&lt;/code&gt; by the ClipToOverride of each mapping defined on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DefaultAnimationsSettings.AnimationsMapping&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AnimatorOverrideControllerExtensions&lt;/code&gt;).&lt;/p&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
 &lt;div class=&quot;gist&quot;&gt;
@@ -173,26 +173,26 @@
       &lt;/div&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;Copy &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites/tree/master/default-animations-editor-window-complete/Assets/_Tutorial/Editor&quot;&gt;this whole Editor folder&lt;/a&gt; to your &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/_Tutorial&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Copy &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites/tree/master/default-animations-editor-window-complete/Assets/_Tutorial/Editor&quot;&gt;this whole Editor folder&lt;/a&gt; to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/_Tutorial&lt;/code&gt; folder.&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;this folder is available on your local clone of the repository inside the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;default-animations-editor-window-complete/Assets/_Tutorial&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;this folder is available on your local clone of the repository inside the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default-animations-editor-window-complete/Assets/_Tutorial&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Delete the DefaultAnimationsSettings scriptable object instance.&lt;/p&gt;
 
-&lt;p&gt;Open the editor window on menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Windows / Default Animations&lt;/code&gt; and configure it as showing in the video below:&lt;/p&gt;
+&lt;p&gt;Open the editor window on menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Windows / Default Animations&lt;/code&gt; and configure it as showing in the video below:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/5Hk8awWCtSs &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;creating-and-using-the-default-animations&quot;&gt;Creating and using the default animations&lt;/h2&gt;
-&lt;p&gt;Drag all the sprite sheets (textures) from folder &lt;code class=&quot;highlighter-rouge&quot;&gt;Assets/_Tutorial/Sprites&lt;/code&gt; to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Spritesheets&lt;/code&gt; field and click on &lt;code class=&quot;highlighter-rouge&quot;&gt;Create animations&lt;/code&gt; button:&lt;/p&gt;
+&lt;p&gt;Drag all the sprite sheets (textures) from folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/_Tutorial/Sprites&lt;/code&gt; to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spritesheets&lt;/code&gt; field and click on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Create animations&lt;/code&gt; button:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/49KKfR081Po &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;challenge&quot;&gt;Challenge&lt;/h2&gt;
-&lt;p&gt;Try to change de editor window to allow more the one set of default animations. One way to this is by creating another ScriptableObject to save the current selected &lt;code class=&quot;highlighter-rouge&quot;&gt;DefaultAnimationsSettings&lt;/code&gt; asset.&lt;/p&gt;
+&lt;p&gt;Try to change de editor window to allow more the one set of default animations. One way to this is by creating another ScriptableObject to save the current selected &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DefaultAnimationsSettings&lt;/code&gt; asset.&lt;/p&gt;
 
 &lt;p&gt;If you have any doubt how to implement any part of this challenge, feel free to ask on this post comments or &lt;a href=&quot;about&quot;&gt;send me a message&lt;/a&gt;.&lt;/p&gt;
 

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - asset-post-processor</title>
  <link href="//tags/asset-post-processor/index.xml" rel="self"/>
  <link href="/tag/asset-post-processor.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/asset-post-processor.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -27,13 +27,13 @@
   &lt;p&gt;&lt;strong&gt;A folder per objects or zones&lt;/strong&gt; (Such as Assets/Level1/Enemies/Archer, Assets/Shared/UI, Assets/Forest/Trees) with all assets related to those in the folders (Assets/Forest/Trees/BigTree.fbx, Assets/Forest/Trees/Tree.mat, Assets/Forest/Trees/Tree_Bark.jpg).&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;With big teams or even with the small ones is easy that some assets will be placed in wrong folders. To help to identify and keep those projects folders organized I coded a couple of editor scripts that I called &lt;code class=&quot;highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;With big teams or even with the small ones is easy that some assets will be placed in wrong folders. To help to identify and keep those projects folders organized I coded a couple of editor scripts that I called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Another advantage of keeping assets organized in their proper folders is that you can &lt;a href=&quot;https://docs.unity3d.com/Manual/DefaultPresetsByFolder.html&quot;&gt;apply defaults presets to assets by folder&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
-&lt;p&gt;To setup the &lt;code class=&quot;highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/2d561e29beadab641a4f8b56954f53f7&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
+&lt;p&gt;To setup the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/2d561e29beadab641a4f8b56954f53f7&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
@@ -43,11 +43,11 @@
       &lt;/div&gt;
 
 &lt;h2 id=&quot;using&quot;&gt;Using&lt;/h2&gt;
-&lt;p&gt;You can open the window through the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Window / Folder organizer&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can open the window through the menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Window / Folder organizer&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Just configure the folders to ignore, if should run the validation every time an asset is imported and defined a regular expression to find the assets and what is the expected folder.&lt;/p&gt;
 
-&lt;p&gt;In the video below you can see in more details how to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt; to validate if your assets are in the right folders:&lt;/p&gt;
+&lt;p&gt;In the video below you can see in more details how to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt; to validate if your assets are in the right folders:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/GU6jWl6MpdM &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;

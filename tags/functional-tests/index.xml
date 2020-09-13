@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - functional-tests</title>
  <link href="//tags/functional-tests/index.xml" rel="self"/>
  <link href="/tag/functional-tests.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/functional-tests.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -27,14 +27,14 @@
 
 &lt;p&gt;After the RubyInstaller finish his job, open the “Start Command Prompt with Ruby” and type:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;travis encrypt GDataUsername=[your username] -r [owner/repository]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;travis encrypt GDataUsername=[your username] -r [owner/repository]
 travis encrypt GDataPassword=[your password] -r [owner/repository]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;step-2-adding-your-encrypted-variables-to-the-travisyml-file&quot;&gt;Step 2:  Adding your encrypted variables to the .travis.yml file&lt;/h3&gt;
 &lt;p&gt;Open your .travis.yaml file and add the encrypted values from previous step to the file, like the sample below:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;env:
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;env:
    global:
       - secure: &quot;The GDataUsername encrypted value&quot;
       - secure: &quot;The GDataPassword encrypted value&quot;
@@ -54,7 +54,7 @@ travis encrypt GDataPassword=[your password] -r [owner/repository]
 &lt;h3 id=&quot;step-4-testing-on-travis-ci&quot;&gt;Step 4: Testing on Travis CI&lt;/h3&gt;
 &lt;p&gt;Commit your files to GitHub and take a look on Travis CI build log, if you have set everything ok, you should see lines as below on log:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ export GDataUsername=[secure]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ export GDataUsername=[secure]
 $ export GDataPassword=[secure]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 

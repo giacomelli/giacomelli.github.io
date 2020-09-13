@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - hierarchy-window</title>
  <link href="//tags/hierarchy-window/index.xml" rel="self"/>
  <link href="/tag/hierarchy-window.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/hierarchy-window.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -14,7 +14,7 @@
    <link href="//unitytips-hierarchy-window-gameobject-icon/"/>
    <updated>2019-07-16T00:00:00-03:00</updated>
    <id>//unitytips-hierarchy-window-gameobject-icon</id>
-   <content type="html">&lt;p&gt;You can show the game objects icons in hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorGUIUtility.ObjectContent&lt;/code&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;You can show the game objects icons in hierarchy window using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorGUIUtility.ObjectContent&lt;/code&gt;&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/fwtQ51ybHpc &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -33,7 +33,7 @@
 
 &lt;p&gt;The icons used in the video are &lt;a href=&quot;https://fontawesome.com/icons&quot;&gt;Font Awesome&lt;/a&gt; icons and I used &lt;a href=&quot;http://fa2png.io/&quot;&gt;fa2png.io&lt;/a&gt; to convert them to .png.&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
 &lt;/div&gt;
 </content>
  </entry>
@@ -43,7 +43,7 @@
    <link href="//unitytips-hierarchy-window-layer-info/"/>
    <updated>2019-07-09T00:00:00-03:00</updated>
    <id>//unitytips-hierarchy-window-layer-info</id>
-   <content type="html">&lt;p&gt;You can create a visual layer info to any component on your hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;:&lt;/p&gt;
+   <content type="html">&lt;p&gt;You can create a visual layer info to any component on your hierarchy window using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/JxvOshwNdfE &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -67,7 +67,7 @@
    <link href="//unitytips-changing-the-style-of-the-hierarchy-window-group-header/"/>
    <updated>2019-06-20T00:00:00-03:00</updated>
    <id>//unitytips-changing-the-style-of-the-hierarchy-window-group-header</id>
-   <content type="html">&lt;p&gt;In my last &lt;a href=&quot;/tags/unitytips/&quot;&gt;#unitytips&lt;/a&gt; I demonstrated how you could create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;. Now I’m improving it allowing you to &lt;strong&gt;customize its style&lt;/strong&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;In my last &lt;a href=&quot;/tags/unitytips/&quot;&gt;#unitytips&lt;/a&gt; I demonstrated how you could create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;. Now I’m improving it allowing you to &lt;strong&gt;customize its style&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/g2lq0lIJzh8 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -88,9 +88,9 @@
         &lt;/div&gt;
       &lt;/div&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember that you need to save the above .cs inside any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;It’s a good practice add the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to your group header game objects&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;It’s a good practice add the tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to your group header game objects&lt;/p&gt;
 &lt;/div&gt;
 </content>
  </entry>
@@ -100,7 +100,7 @@
    <link href="//unitytips-hierarchy-window-group-header/"/>
    <updated>2019-06-18T00:00:00-03:00</updated>
    <id>//unitytips-hierarchy-window-group-header</id>
-   <content type="html">&lt;p&gt;You can create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;:&lt;/p&gt;
+   <content type="html">&lt;p&gt;You can create a visual header to any group of components on your hierarchy window using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorApplication.hierarchyWindowItemOnGUI&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/YS5H8Y2Ytww &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
@@ -120,7 +120,7 @@
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can set tag of the headers game objects as &lt;code class=&quot;highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to avoid them on runtime&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can set tag of the headers game objects as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorOnly&lt;/code&gt; to avoid them on runtime&lt;/p&gt;
 &lt;/div&gt;
 </content>
  </entry>

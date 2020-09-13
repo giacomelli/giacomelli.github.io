@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - math</title>
  <link href="//tags/math/index.xml" rel="self"/>
  <link href="/tag/math.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/math.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -23,7 +23,7 @@
 
 &lt;h2 id=&quot;chrome-extension&quot;&gt;Chrome Extension&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/chrome-extension.png &quot; style=&quot;max-height:200px&quot; /&gt;
-For this tutorial, I’ll use a Chrome Extension basic sample called &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt;.&lt;br /&gt; 
+For this tutorial, I’ll use a Chrome Extension basic sample called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt;.&lt;br /&gt; 
 You can download it from this page &lt;a href=&quot;https://developer.chrome.com/extensions/samples&quot;&gt;https://developer.chrome.com/extensions/samples&lt;/a&gt; or directly from &lt;a href=&quot;https://developer.chrome.com/extensions/examples/tutorials/hello_extensions.zip&quot;&gt;here&lt;/a&gt;.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Is not the intent of this tutorial explains how to create a Chrome Extension from scratch, for this you can use the official documentation: &lt;a href=&quot;https://developer.chrome.com/extensions/getstarted&quot;&gt;Getting Started Tutorial&lt;/a&gt;&lt;/p&gt;
@@ -31,24 +31,24 @@ You can download it from this page &lt;a href=&quot;https://developer.chrome.com
 
 &lt;h2 id=&quot;gulp&quot;&gt;Gulp&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/gulp.svg &quot; style=&quot;max-height:200px&quot; /&gt;
-At that time we did not find any builtin or other solution to make this workflow easier and streamlined, so we decided to create our own solution using &lt;code class=&quot;highlighter-rouge&quot;&gt;Gulp&lt;/code&gt;. This whole solution will be explaining below.
+At that time we did not find any builtin or other solution to make this workflow easier and streamlined, so we decided to create our own solution using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gulp&lt;/code&gt;. This whole solution will be explaining below.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;gulp is an open-source JavaScript toolkit created by Eric Schoffstall used as a streaming build system in front-end web development.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;We decided to use &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt;, because a Chrome Extensions is a bunch of .js, .html and .json files. Perfect to use gulp.&lt;/p&gt;
+&lt;p&gt;We decided to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt;, because a Chrome Extensions is a bunch of .js, .html and .json files. Perfect to use gulp.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/problem.png &quot; style=&quot;max-height:200px&quot; /&gt;
-If we just try to open our download &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extension&lt;/code&gt; .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.&lt;/p&gt;
+If we just try to open our download &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extension&lt;/code&gt; .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;This is not a problem if you have only one environment or if you don’t need different configurations for different environments, but as I’ve already explained, we needed different configs for different environments.&lt;/p&gt;
 
-&lt;p&gt;To the purpose of this tutorial we will work with 3 environments: DEV, TEST, and PROD and will use our configuration file just to change our plugin &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.html&lt;/code&gt; text:&lt;/p&gt;
+&lt;p&gt;To the purpose of this tutorial we will work with 3 environments: DEV, TEST, and PROD and will use our configuration file just to change our plugin &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.html&lt;/code&gt; text:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;DEV: Hello, World! (DEV)&lt;/li&gt;
@@ -61,33 +61,33 @@ If we just try to open our download &lt;code class=&quot;highlighter-rouge&quot;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;files-structure&quot;&gt;Files structure&lt;/h2&gt;
-&lt;p&gt;Move the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt; files to a subfolder called &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt;.
+&lt;p&gt;Move the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt; files to a subfolder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt;.
 At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;If have any doubt about the files structure during this tutorial, you can download the full solution in section &lt;code class=&quot;highlighter-rouge&quot;&gt;Download&lt;/code&gt; at the end of the tutorial&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;If have any doubt about the files structure during this tutorial, you can download the full solution in section &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Download&lt;/code&gt; at the end of the tutorial&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;installing-gulp&quot;&gt;Installing gulp&lt;/h2&gt;
 &lt;p&gt;To allow us to build our workflow, first, we need to install gulp.&lt;/p&gt;
 
 &lt;p&gt;Follow the instructions described in &lt;a href=&quot;https://gulpjs.com/docs/en/getting-started/quick-start/&quot;&gt;Quick Start&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;In the section &lt;code class=&quot;highlighter-rouge&quot;&gt;Create a project directory and navigate into it&lt;/code&gt; you just need to open the root folder of our file structure described in the previous section&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;In the section &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Create a project directory and navigate into it&lt;/code&gt; you just need to open the root folder of our file structure described in the previous section&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;In the section &lt;code class=&quot;highlighter-rouge&quot;&gt;Create a package.json file in your project directory&lt;/code&gt; you can use the default values for all the questions of the &lt;code class=&quot;highlighter-rouge&quot;&gt;npm init&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;In the section &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Create a package.json file in your project directory&lt;/code&gt; you can use the default values for all the questions of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm init&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You don’t need to perform the section &lt;code class=&quot;highlighter-rouge&quot;&gt;Create a gulpfile&lt;/code&gt;, because we will perform it in the next section.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You don’t need to perform the section &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Create a gulpfile&lt;/code&gt;, because we will perform it in the next section.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;the-gulpfilejs-file&quot;&gt;The gulpfile.js file&lt;/h2&gt;
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; in the root folder.&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; in the root folder.&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=gulpfile.js&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;This is the full &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; file that will allow our development workflow for different environments.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This is the full &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; file that will allow our development workflow for different environments.&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-gulpfilejs-sections&quot;&gt;The gulpfile.js sections&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;
@@ -95,84 +95,84 @@ Now I will explain each section of it.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;requires-section&quot;&gt;Requires section&lt;/h3&gt;
-&lt;p&gt;This section define the NPM packages need for our &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This section define the NPM packages need for our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt;.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=requires.section.js&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;The first one is &lt;a href=&quot;https://www.npmjs.com/package/gulp&quot;&gt;gulp&lt;/a&gt;, then we need the package &lt;a href=&quot;&quot;&gt;del&lt;/a&gt; that will allow us to clean our &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder, 
+&lt;p&gt;The first one is &lt;a href=&quot;https://www.npmjs.com/package/gulp&quot;&gt;gulp&lt;/a&gt;, then we need the package &lt;a href=&quot;&quot;&gt;del&lt;/a&gt; that will allow us to clean our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder, 
 after &lt;a href=&quot;https://www.npmjs.com/package/gulp-merge-json&quot;&gt;gulp-merge-json&lt;/a&gt; to allow us to merge our environment config files. The last one is &lt;a href=&quot;https://www.npmjs.com/package/fs&quot;&gt;fs&lt;/a&gt; to allow read and write files.&lt;/p&gt;
 
 &lt;h3 id=&quot;consts-section&quot;&gt;Consts section&lt;/h3&gt;
-&lt;p&gt;This is quite simple, we are just reading the command-line argument called &lt;code class=&quot;highlighter-rouge&quot;&gt;config&lt;/code&gt;. If it is not present, the default value is &lt;code class=&quot;highlighter-rouge&quot;&gt;DEV&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This is quite simple, we are just reading the command-line argument called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config&lt;/code&gt;. If it is not present, the default value is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DEV&lt;/code&gt;.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=consts.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h3 id=&quot;exports-section&quot;&gt;Exports section&lt;/h3&gt;
-&lt;p&gt;Now we jump to the last line of the file to explain the &lt;code class=&quot;highlighter-rouge&quot;&gt;exports.default&lt;/code&gt;. 
-Here we are basically defining the order of each function that will be called when we run our &lt;code class=&quot;highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; file:&lt;/p&gt;
+&lt;p&gt;Now we jump to the last line of the file to explain the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exports.default&lt;/code&gt;. 
+Here we are basically defining the order of each function that will be called when we run our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; file:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=exports.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h3 id=&quot;clean-section&quot;&gt;Clean section&lt;/h3&gt;
-&lt;p&gt;Cleans our &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Cleans our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=clean.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h3 id=&quot;copyallfiles-section&quot;&gt;CopyAllFiles section&lt;/h3&gt;
-&lt;p&gt;Copies all files from &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; folder to the &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder&lt;/p&gt;
+&lt;p&gt;Copies all files from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=copyAllFiles.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h3 id=&quot;transformconfig-section&quot;&gt;TransformConfig section&lt;/h3&gt;
-&lt;p&gt;Transforms our config.json files, merging the source one with the &lt;code class=&quot;highlighter-rouge&quot;&gt;environment&lt;/code&gt; one.&lt;/p&gt;
+&lt;p&gt;Transforms our config.json files, merging the source one with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment&lt;/code&gt; one.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=transformConfig.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h3 id=&quot;writeconfigjsfile-section&quot;&gt;WriteConfigJsFile section&lt;/h3&gt;
-&lt;p&gt;Writes our transformed &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; file to the &lt;code class=&quot;highlighter-rouge&quot;&gt;scripts&lt;/code&gt; folder to allow our Chrome Extension’s .js files access the config values.&lt;/p&gt;
+&lt;p&gt;Writes our transformed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; file to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scripts&lt;/code&gt; folder to allow our Chrome Extension’s .js files access the config values.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=writeConfigJsFile.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h3 id=&quot;transformmanifest-section&quot;&gt;TransformManifest section&lt;/h3&gt;
-&lt;p&gt;Transforms our &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; file too.&lt;/p&gt;
+&lt;p&gt;Transforms our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; file too.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=transformManifest.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h3 id=&quot;watch-section&quot;&gt;Watch section&lt;/h3&gt;
-&lt;p&gt;Watches for any change in the &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; folder and automatically repeat the previous steps.&lt;/p&gt;
+&lt;p&gt;Watches for any change in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder and automatically repeat the previous steps.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=watch.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;packagesjson-file&quot;&gt;packages.json file&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/package.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Change the content of &lt;code class=&quot;highlighter-rouge&quot;&gt;packages.json&lt;/code&gt; file to the content below to update the dependencies.&lt;/p&gt;
+&lt;p&gt;Change the content of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;packages.json&lt;/code&gt; file to the content below to update the dependencies.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=packages.json&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Then run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; in the root folder, after that run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install gulp&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install&lt;/code&gt; in the root folder, after that run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install gulp&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;running-the-gulp-for-the-first-time&quot;&gt;Running the gulp for the first time&lt;/h2&gt;
-&lt;p&gt;Now, if you just run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
+&lt;p&gt;Now, if you just run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;h2 id=&quot;creating-the-configjson-files&quot;&gt;Creating the &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files&lt;/h2&gt;
+&lt;h2 id=&quot;creating-the-configjson-files&quot;&gt;Creating the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/config.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;We need to create our &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
+&lt;p&gt;We need to create our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
 They are 3 files:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt;: the baseline file, our common configuration should be defined here and will be used for the DEV environment.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;config.TEST.json&lt;/code&gt;: the file that the define specific configuration values for the TEST environment&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;config.PROD.json&lt;/code&gt;: the file that the define specific configuration values for the PROD environment
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt;: the baseline file, our common configuration should be defined here and will be used for the DEV environment.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.TEST.json&lt;/code&gt;: the file that the define specific configuration values for the TEST environment&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.PROD.json&lt;/code&gt;: the file that the define specific configuration values for the PROD environment
 &lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you’re familiar with &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations&quot;&gt;Web.config File Transformations&lt;/a&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;appsettings.json&lt;/code&gt; files transformation, the philosophy used here is the same: the baseline file (config.json) contains all the common configuration values, and the specific environment files, like config.TEST.json and config.PROD.json, need to define only the values that are different for that environment&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you’re familiar with &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations&quot;&gt;Web.config File Transformations&lt;/a&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;appsettings.json&lt;/code&gt; files transformation, the philosophy used here is the same: the baseline file (config.json) contains all the common configuration values, and the specific environment files, like config.TEST.json and config.PROD.json, need to define only the values that are different for that environment&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Create the 3 files inside the subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt;.
+&lt;p&gt;Create the 3 files inside the subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt;.
 Here is the content of each one:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
@@ -185,54 +185,54 @@ Here is the content of each one:&lt;/p&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=config.PROD.json&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;running-the-gulp-for-the-second-time&quot;&gt;Running the gulp for the second time&lt;/h2&gt;
-&lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
+&lt;p&gt;Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;p&gt;There is a new subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt; created. Load it on Chrome Extensions page:&lt;/p&gt;
+&lt;p&gt;There is a new subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; created. Load it on Chrome Extensions page:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page.png &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;The plugin should work ok.&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember to remove the plugin previously loaded on Chrome and add it again from the &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember to remove the plugin previously loaded on Chrome and add it again from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;creating-the-hellojs&quot;&gt;Creating the &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.js&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Create a new file called &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.js&lt;/code&gt; inside the subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;scripts&lt;/code&gt;.
-We will use this file to change the &lt;code class=&quot;highlighter-rouge&quot;&gt;H1&lt;/code&gt; tag inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.html&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;creating-the-hellojs&quot;&gt;Creating the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.js&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Create a new file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.js&lt;/code&gt; inside the subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scripts&lt;/code&gt;.
+We will use this file to change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;H1&lt;/code&gt; tag inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.html&lt;/code&gt;&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=hello.js&quot;&gt; &lt;/script&gt;
 
-&lt;h2 id=&quot;loading-scripts-on-hellohtml&quot;&gt;Loading scripts on &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.html&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Change the content of &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.html&lt;/code&gt; file to the content bellow:&lt;/p&gt;
+&lt;h2 id=&quot;loading-scripts-on-hellohtml&quot;&gt;Loading scripts on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.html&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Change the content of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.html&lt;/code&gt; file to the content bellow:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=hello.html&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;This will load the .js and add an &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; attribute to our  &lt;code class=&quot;highlighter-rouge&quot;&gt;H1&lt;/code&gt; tag.&lt;/p&gt;
+&lt;p&gt;This will load the .js and add an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id&lt;/code&gt; attribute to our  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;H1&lt;/code&gt; tag.&lt;/p&gt;
 
 &lt;h2 id=&quot;reading-the-configuration-inside-the-scripts&quot;&gt;Reading the configuration inside the scripts&lt;/h2&gt;
-&lt;p&gt;The first thing we need to do is change our &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; file to allow the content of &lt;code class=&quot;highlighter-rouge&quot;&gt;scripts/config.js&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;scripts/hello.js&lt;/code&gt; been read by the extension .js.
-Open the &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; and change it to the content below:&lt;/p&gt;
+&lt;p&gt;The first thing we need to do is change our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; file to allow the content of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scripts/config.js&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scripts/hello.js&lt;/code&gt; been read by the extension .js.
+Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; and change it to the content below:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=manifest.json&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;The line &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;/scripts/config.js&quot;&lt;/code&gt; is what we need to access the configuration values.&lt;/p&gt;
+&lt;p&gt;The line &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;/scripts/config.js&quot;&lt;/code&gt; is what we need to access the configuration values.&lt;/p&gt;
 
-&lt;h2 id=&quot;creating-the-manifestjson-files&quot;&gt;Creating the &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files&lt;/h2&gt;
+&lt;h2 id=&quot;creating-the-manifestjson-files&quot;&gt;Creating the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/manifest.png &quot; style=&quot;max-height:200px&quot; /&gt;
-We need to create our &lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files, in the same way, we created our &lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
+We need to create our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files, in the same way, we created our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 They are 3 files:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt;: the baseline file, our common manifest definition, and used by DEV environment (already created).&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.TEST.json&lt;/code&gt;: the file that the define specific manifest configuration values for the TEST environment&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;manifest.PROD.json&lt;/code&gt;: the file that the define specific manifest configuration values for the PROD environment&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt;: the baseline file, our common manifest definition, and used by DEV environment (already created).&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.TEST.json&lt;/code&gt;: the file that the define specific manifest configuration values for the TEST environment&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.PROD.json&lt;/code&gt;: the file that the define specific manifest configuration values for the PROD environment&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Create the 2 files inside the subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt;.
+&lt;p&gt;Create the 2 files inside the subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt;.
 Here is the content of each one:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
@@ -245,12 +245,12 @@ Here is the content of each one:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments.png &quot; /&gt;
       &lt;/center&gt;
-&lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder.
-This will use &lt;code class=&quot;highlighter-rouge&quot;&gt;DEV&lt;/code&gt; configuration from config.js and manifest.json&lt;/p&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Is the same if you run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config DEV&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder.
+This will use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DEV&lt;/code&gt; configuration from config.js and manifest.json&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Is the same if you run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --config DEV&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Now, try to run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config TEST&lt;/code&gt;.
+&lt;p&gt;Now, try to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --config TEST&lt;/code&gt;.
 In the Chrome Extensions page you should see something like this:&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome.png &quot; /&gt;
@@ -262,19 +262,19 @@ When you click on the extension icon on the Chrome toolbar, you should see somet
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can try to run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --config PROD&lt;/code&gt;. To see the &lt;code class=&quot;highlighter-rouge&quot;&gt;PROD&lt;/code&gt; environment values on the extension.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can try to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --config PROD&lt;/code&gt;. To see the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PROD&lt;/code&gt; environment values on the extension.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;running-gulp---watch&quot;&gt;Running &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --watch&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;To have a fast and streamline workflow, we need that every time we change something on our &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; folder, the &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder automatically updates and we can see the changes right on Chrome.&lt;/p&gt;
+&lt;h2 id=&quot;running-gulp---watch&quot;&gt;Running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --watch&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;To have a fast and streamline workflow, we need that every time we change something on our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder automatically updates and we can see the changes right on Chrome.&lt;/p&gt;
 
-&lt;p&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --watch&lt;/code&gt;. It’ll monitor your &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; folder and update the &lt;code class=&quot;highlighter-rouge&quot;&gt;dist&lt;/code&gt;.&lt;br /&gt;
-You can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;--config&lt;/code&gt; option combine, like &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp --watch --config TEST&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --watch&lt;/code&gt;. It’ll monitor your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder and update the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt;.&lt;br /&gt;
+You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--config&lt;/code&gt; option combine, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --watch --config TEST&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
 &lt;p&gt;You can download the full source code of the plugin of this tutorial: &lt;a href=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-sample.zip&quot;&gt;chrome-extension-sample.zip&lt;a&gt;.&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;In this .zip are all files mentioned in this tutorial, you just need to set up your gulp environment and call the &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install gulp&lt;/code&gt; before starting to use it.&lt;/p&gt;
+&lt;p&gt;In this .zip are all files mentioned in this tutorial, you just need to set up your gulp environment and call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install gulp&lt;/code&gt; before starting to use it.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
@@ -311,11 +311,11 @@ You can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;--config&lt;/cod
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;A Maurer Rose is always defined by two input parameters: &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A Maurer Rose is always defined by two input parameters: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d&lt;/code&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; represents the number of petals. The rose has n petals if n is odd, and 2n petals if n is even (look to the gif above, n = 2, then 4 petals).&lt;/li&gt;
-  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt; represents the angle in degrees for each line.&lt;/li&gt;
+  &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt; represents the number of petals. The rose has n petals if n is odd, and 2n petals if n is even (look to the gif above, n = 2, then 4 petals).&lt;/li&gt;
+  &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d&lt;/code&gt; represents the angle in degrees for each line.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
@@ -326,23 +326,23 @@ You can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;--config&lt;/cod
 where d is a positive integer and the angles are in degrees, not radians.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;This definition talks about &lt;a href=&quot;https://en.wikipedia.org/wiki/Polar_coordinate_system&quot;&gt;polar coordinate system&lt;/a&gt;. The more important thing to know about it is this: &lt;code class=&quot;highlighter-rouge&quot;&gt;each point on a plane is determined by a distance from a reference point and an angle from a reference direction&lt;/code&gt;. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.&lt;/p&gt;
+&lt;p&gt;This definition talks about &lt;a href=&quot;https://en.wikipedia.org/wiki/Polar_coordinate_system&quot;&gt;polar coordinate system&lt;/a&gt;. The more important thing to know about it is this: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;each point on a plane is determined by a distance from a reference point and an angle from a reference direction&lt;/code&gt;. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-formula&quot;&gt;The formula&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/math.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The basic formula is: &lt;code class=&quot;highlighter-rouge&quot;&gt;r = sin(nθ)&lt;/code&gt; and we need to apply it to 361 points, where:&lt;/p&gt;
+&lt;p&gt;The basic formula is: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r = sin(nθ)&lt;/code&gt; and we need to apply it to 361 points, where:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;r = sin(n * (d * point))&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r = sin(n * (d * point))&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;In C# the code is something like this:&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/9dc5d4d408c00e92143827293a017936.js&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;We calculate the angle for each point, then we get the &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt; and find the &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt; for the second point on the polar coordinate system.&lt;/p&gt;
+&lt;p&gt;We calculate the angle for each point, then we get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r&lt;/code&gt; and find the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;y&lt;/code&gt; for the second point on the polar coordinate system.&lt;/p&gt;
 
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Mathf.PI / 180f&lt;/code&gt; is to convert from degrees to radians to work properly with the Mathf functions.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mathf.PI / 180f&lt;/code&gt; is to convert from degrees to radians to work properly with the Mathf functions.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;maurerroselinerenderer&quot;&gt;MaurerRoseLineRenderer&lt;/h2&gt;
@@ -360,7 +360,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
       &lt;/div&gt;
 
 &lt;h2 id=&quot;using-the-maurerroselinerenderer&quot;&gt;Using the MaurerRoseLineRenderer&lt;/h2&gt;
-&lt;p&gt;To use it, just create a new GameObject and add the &lt;code class=&quot;highlighter-rouge&quot;&gt;MaurerRoseLineRenderer&lt;/code&gt; component to it.&lt;/p&gt;
+&lt;p&gt;To use it, just create a new GameObject and add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MaurerRoseLineRenderer&lt;/code&gt; component to it.&lt;/p&gt;
 
 &lt;p&gt;If you just hit play button, you will see something like this:&lt;/p&gt;
 &lt;center&gt;
@@ -368,7 +368,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;
-Go to the LineRenderer component and change the line width to &lt;code class=&quot;highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
+Go to the LineRenderer component and change the line width to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
 &lt;center&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try.png &quot; /&gt;
       &lt;/center&gt;
@@ -376,7 +376,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 &lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
 &lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/programmer.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;If you change the values of &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt; of the component in the inspector, you will see a new Maurer Rose been drawing.&lt;/p&gt;
+&lt;p&gt;If you change the values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;N&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D&lt;/code&gt; of the component in the inspector, you will see a new Maurer Rose been drawing.&lt;/p&gt;
 
 &lt;p&gt;The image below shows the result of 6 different inputs (the same inputs used on &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Wikipedia&lt;/a&gt;):&lt;/p&gt;
 &lt;center&gt;

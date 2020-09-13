@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - sorting-layers</title>
  <link href="//tags/sorting-layers/index.xml" rel="self"/>
  <link href="/tag/sorting-layers.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/sorting-layers.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -24,7 +24,7 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a &lt;code class=&quot;highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/141742c3175476f03ca2437c7b35fd88.js?file=SortingLayerDebugger.cs&quot;&gt; &lt;/script&gt;
@@ -38,7 +38,7 @@
       &lt;/div&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-&lt;p&gt;You can open the debugger window through the menu &lt;code class=&quot;highlighter-rouge&quot;&gt;Window / Sorting Layer Debugger&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can open the debugger window through the menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Window / Sorting Layer Debugger&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;The debugger can be enabled in the edit or the play mode and it will list the Sorting Layers and the number of game objects using each layer. You can hide/show the game objects of each layer by clicking on its check box.&lt;/p&gt;
 

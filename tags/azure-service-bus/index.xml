@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - azure-service-bus</title>
  <link href="//tags/azure-service-bus/index.xml" rel="self"/>
  <link href="/tag/azure-service-bus.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/azure-service-bus.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -18,7 +18,7 @@
 &lt;p&gt;NO!&lt;/p&gt;
 
 &lt;h2 id=&quot;the-long-answer&quot;&gt;The long answer&lt;/h2&gt;
-&lt;p&gt;The Azure Service Bus maximum message size is 256 KB for &lt;code class=&quot;highlighter-rouge&quot;&gt;Standard tier&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;1 MB&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;Premium tier&lt;/code&gt; (&lt;a href=&quot;https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas&quot;&gt;https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The Azure Service Bus maximum message size is 256 KB for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Standard tier&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1 MB&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Premium tier&lt;/code&gt; (&lt;a href=&quot;https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas&quot;&gt;https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;A simple solution to overcome this limitation is split the messages in blocks lower or equal to 256 KB size.&lt;/p&gt;
 

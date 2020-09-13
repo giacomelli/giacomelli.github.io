@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - web-api</title>
  <link href="//tags/web-api/index.xml" rel="self"/>
  <link href="/tag/web-api.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/web-api.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -29,41 +29,41 @@
 &lt;p&gt;Probably the most important rule about web api is to respect the meaning of verbs, this will really make the life easer for those whom are consuming your web api.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;: to retrieve something.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;: to create something.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PUT&lt;/code&gt;: to complete update something.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;: to partially update something.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DELETE&lt;/code&gt;: to delete something&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GET&lt;/code&gt;: to retrieve something.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;POST&lt;/code&gt;: to create something.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PUT&lt;/code&gt;: to complete update something.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;: to partially update something.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DELETE&lt;/code&gt;: to delete something&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Then, combining with URLs, you get a really clear way to work:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GET&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;/resource  : returns all resources.&lt;/li&gt;
       &lt;li&gt;/resource/1: returns the resource with id 1.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;POST&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;/resource: creates a new resource.&lt;/li&gt;
       &lt;li&gt;/resource/1: Not used.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PUT&lt;/code&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PUT&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;/resource: complete updates a bunch of resources (rarelly used).&lt;/li&gt;
       &lt;li&gt;/resource/1: complete updates the resource with id 1.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;/resource: partial updates a bunch of resources (rarelly used).&lt;/li&gt;
       &lt;li&gt;/resource/1: partial updates the resource with id 1.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DELETE&lt;/code&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DELETE&lt;/code&gt;
     &lt;ul&gt;
       &lt;li&gt;/resource: deletes all resources (rarelly used, mostly never).&lt;/li&gt;
       &lt;li&gt;/resource/1: delete the resource with id 1.&lt;/li&gt;
@@ -75,20 +75,20 @@
 &lt;p&gt;I try to keep the range of returned status code small, the smallest one has only 3 status:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;200&lt;/code&gt;: succesful request.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;400&lt;/code&gt;: a client error.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;500&lt;/code&gt; : a server error.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;200&lt;/code&gt;: succesful request.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;400&lt;/code&gt;: a client error.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;500&lt;/code&gt; : a server error.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Of course, you can extend this one, like use &lt;code class=&quot;highlighter-rouge&quot;&gt;201 (created)&lt;/code&gt; to return status for POST verbs, and &lt;code class=&quot;highlighter-rouge&quot;&gt;401&lt;/code&gt; to unauthorized requests, but try to keep this list small, so it will be easy to who consume your API take decisions about what to do with different status code.&lt;/p&gt;
+&lt;p&gt;Of course, you can extend this one, like use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;201 (created)&lt;/code&gt; to return status for POST verbs, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;401&lt;/code&gt; to unauthorized requests, but try to keep this list small, so it will be easy to who consume your API take decisions about what to do with different status code.&lt;/p&gt;
 
-&lt;p&gt;Another good pratice is return an &lt;code class=&quot;highlighter-rouge&quot;&gt;error code&lt;/code&gt; and an &lt;code class=&quot;highlighter-rouge&quot;&gt;error message&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;json&lt;/code&gt; of requests that result in &lt;code class=&quot;highlighter-rouge&quot;&gt;400&lt;/code&gt; status code (client error), this way the client can react or display different informations to the end user. 
-In most cases, &lt;code class=&quot;highlighter-rouge&quot;&gt;400&lt;/code&gt; status code are about some business logic rule that need to be respect to result in a sucessful request, so provide some information to client can help it to understand what is wrong in the request.&lt;/p&gt;
+&lt;p&gt;Another good pratice is return an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error code&lt;/code&gt; and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error message&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;json&lt;/code&gt; of requests that result in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;400&lt;/code&gt; status code (client error), this way the client can react or display different informations to the end user. 
+In most cases, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;400&lt;/code&gt; status code are about some business logic rule that need to be respect to result in a sucessful request, so provide some information to client can help it to understand what is wrong in the request.&lt;/p&gt;
 
 &lt;h1 id=&quot;versioning&quot;&gt;Versioning&lt;/h1&gt;
-&lt;p&gt;I see a lot of developers using &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt; inside the code to “versioning” their web apis, I really dislike this method, I can understand it is easy to deploy a new web api version to the same virtual application using this technique, but we need to agree that we do versioning using some SCM, like Git, SVN and Mercurial with everything else that correspond to our code, why should we do versioning inside the code in the case of web api?&lt;/p&gt;
+&lt;p&gt;I see a lot of developers using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v1&lt;/code&gt; inside the code to “versioning” their web apis, I really dislike this method, I can understand it is easy to deploy a new web api version to the same virtual application using this technique, but we need to agree that we do versioning using some SCM, like Git, SVN and Mercurial with everything else that correspond to our code, why should we do versioning inside the code in the case of web api?&lt;/p&gt;
 
-&lt;p&gt;In most of case your web api will have only one version, especially when you are developing a &lt;code class=&quot;highlighter-rouge&quot;&gt;SPA&lt;/code&gt; app and it is the only client of your web api.&lt;/p&gt;
+&lt;p&gt;In most of case your web api will have only one version, especially when you are developing a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SPA&lt;/code&gt; app and it is the only client of your web api.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Versioning of APIs is a controversial topic—you will find a lot of contradictory guidance on the internet.
@@ -104,23 +104,23 @@ segment of URLs. Since there is little consensus on versioning, simply offering 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;my-web-api-really-need-versions&quot;&gt;My web api really need versions&lt;/h2&gt;
-&lt;p&gt;In this case, the approach that I use is create a new site/virtual application every time that I need to publish a major version of my web api, so, in the code of the routes there is no &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;v2&lt;/code&gt; and so on.&lt;/p&gt;
+&lt;p&gt;In this case, the approach that I use is create a new site/virtual application every time that I need to publish a major version of my web api, so, in the code of the routes there is no &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v1&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v2&lt;/code&gt; and so on.&lt;/p&gt;
 
-&lt;p&gt;Let say I have a web api publish on &lt;code class=&quot;highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v1&lt;/code&gt;, than I made some breaking changes to the public interface of the web api and need to publish another version in a separated url to avoid any impact to the users that still use the old &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt;. I will just create the new &lt;code class=&quot;highlighter-rouge&quot;&gt;v2&lt;/code&gt; virtual application, and the urls will be:&lt;/p&gt;
+&lt;p&gt;Let say I have a web api publish on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v1&lt;/code&gt;, than I made some breaking changes to the public interface of the web api and need to publish another version in a separated url to avoid any impact to the users that still use the old &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v1&lt;/code&gt;. I will just create the new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v2&lt;/code&gt; virtual application, and the urls will be:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v1&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v2&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v1&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://diegogiacomelli.com.br/sample-api/v2&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;In a moment in future you will want to remove the support to the &lt;code class=&quot;highlighter-rouge&quot;&gt;v1&lt;/code&gt; version, in that moment you could configure your virtual application to redirect (status code &lt;code class=&quot;highlighter-rouge&quot;&gt;301&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;302&lt;/code&gt;) to the next/latest version.&lt;/p&gt;
+&lt;p&gt;In a moment in future you will want to remove the support to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v1&lt;/code&gt; version, in that moment you could configure your virtual application to redirect (status code &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;301&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;302&lt;/code&gt;) to the next/latest version.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Of course, it’s a good pratice too have some public changelog about your web api versions releases to notify the clients developers.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h1 id=&quot;describing&quot;&gt;Describing&lt;/h1&gt;
-&lt;p&gt;In the field of how to describe a web api REST I can cite &lt;code class=&quot;highlighter-rouge&quot;&gt;Swagger&lt;/code&gt;. It is not a attempt to create a WSDL like to web api REST, but it is a good attempt to create an open standard for describing web apis REST.&lt;/p&gt;
+&lt;p&gt;In the field of how to describe a web api REST I can cite &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Swagger&lt;/code&gt;. It is not a attempt to create a WSDL like to web api REST, but it is a good attempt to create an open standard for describing web apis REST.&lt;/p&gt;
 
 &lt;p&gt;Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.&lt;/p&gt;
 

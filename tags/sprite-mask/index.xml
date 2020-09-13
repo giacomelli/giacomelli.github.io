@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - sprite-mask</title>
  <link href="//tags/sprite-mask/index.xml" rel="self"/>
  <link href="/tag/sprite-mask.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/sprite-mask.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -14,9 +14,9 @@
    <link href="//using-a-sprite-mask-to-create-a-flashlight-effect/"/>
    <updated>2019-06-04T00:00:00-03:00</updated>
    <id>//using-a-sprite-mask-to-create-a-flashlight-effect</id>
-   <content type="html">&lt;p&gt;When I was reading about the &lt;a href=&quot;https://docs.unity3d.com/Manual/class-SpriteMask.html&quot;&gt;Sprite Mask&lt;/a&gt; on Unity Manual, I questioned my self &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;How long does it take to create a flashlight effect using the Sprite Mask?&quot;&lt;/code&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;When I was reading about the &lt;a href=&quot;https://docs.unity3d.com/Manual/class-SpriteMask.html&quot;&gt;Sprite Mask&lt;/a&gt; on Unity Manual, I questioned my self &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;How long does it take to create a flashlight effect using the Sprite Mask?&quot;&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;The answer is: &lt;code class=&quot;highlighter-rouge&quot;&gt;less than 2 minutes&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The answer is: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;less than 2 minutes&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can check this by watching the video tutorial that I made showing how to add the a flashlight effect to the &lt;a href=&quot;https://assetstore.unity.com/packages/essentials/tutorial-projects/2d-roguelike-29825&quot;&gt;Unity 2D Roguelike sample project&lt;/a&gt;:&lt;/p&gt;
 &lt;center&gt;

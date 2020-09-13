@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - geneticsharp-in-the-wild</title>
  <link href="//tags/geneticsharp-in-the-wild/index.xml" rel="self"/>
  <link href="/tag/geneticsharp-in-the-wild.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/geneticsharp-in-the-wild.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,7 +16,7 @@
    <id>//geneticsharp-in-the-wild-design-of-a-warehouse-order-picking-policy</id>
    <content type="html">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;For this fourth post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Design of a Warehouse Order Picking Policy - Using Genetic Algorithm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For this fourth post the choose one is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Design of a Warehouse Order Picking Policy - Using Genetic Algorithm&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;The main motivation of the author about this paper was:
@@ -70,7 +70,7 @@ Düzgi supervision, wrote the paper for his master degree at Istanbul Bilgi Univ
    <id>//geneticsharp-in-the-wild-frixel</id>
    <content type="html">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;For this third post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Frixel: 2D framing / pixel structural optimization&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For this third post the choose one is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Frixel: 2D framing / pixel structural optimization&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
@@ -115,7 +115,7 @@ Düzgi supervision, wrote the paper for his master degree at Istanbul Bilgi Univ
    <id>//geneticsharp-in-the-wild-context-sensitive-code-completion</id>
    <content type="html">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;For this second post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Context-Sensitive Code
+&lt;p&gt;For this second post the choose one is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Context-Sensitive Code
 Completion: Improving Predictions with Genetic Algorithms&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
@@ -163,7 +163,7 @@ improving existing systems as well as in future research.&lt;/em&gt;&lt;/p&gt;
    <id>//geneticsharp-in-the-wild-aerovision-aircraft-trajectories-optimization-and-visualization</id>
    <content type="html">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;For this first post the choose one is the &lt;code class=&quot;highlighter-rouge&quot;&gt;AeroVision - Aircraft Trajectories Optimization and Visualization&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For this first post the choose one is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AeroVision - Aircraft Trajectories Optimization and Visualization&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;The main motivation of the authors about the AeroVision was:
@@ -178,7 +178,7 @@ minimize and visualize aircraft noise along simulated and real flight routes. Th
 &lt;p&gt;&lt;em&gt;Additionally, the user is free to define the number of chromosomes that are part of one population. The default population size is 70 chromosomes, each representing a possible trajectory in our case.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;For trajectory optimization we were able to achieve a &lt;code class=&quot;highlighter-rouge&quot;&gt;performance improvement of 84%&lt;/code&gt; by using a &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/wiki/multithreading&quot;&gt;multi-core and multi-threaded genetic algorithm&lt;/a&gt; based on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/wiki/crossovers&quot;&gt;crossover operations&lt;/a&gt;. This led to a major improvement on the workﬂow management and automation&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;For trajectory optimization we were able to achieve a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;performance improvement of 84%&lt;/code&gt; by using a &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/wiki/multithreading&quot;&gt;multi-core and multi-threaded genetic algorithm&lt;/a&gt; based on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/wiki/crossovers&quot;&gt;crossover operations&lt;/a&gt;. This led to a major improvement on the workﬂow management and automation&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;authors&quot;&gt;Authors&lt;/h1&gt;
 &lt;p&gt;Elvan Kula and Hans Schouten wrote the paper as requirements for their degree of Bachelor of Science in Computer Science. The Dr. Ir. N. Dintzner (TU Delft, supervisor), Dr. ir. S. Hartjes (Client) and Dr. ir. M. Larson (Bachelor Project Coordinator) are the thesis committee.&lt;/p&gt;

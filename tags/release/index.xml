@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - release</title>
  <link href="//tags/release/index.xml" rel="self"/>
  <link href="/tag/release.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/release.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -40,9 +40,9 @@
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp 2.6.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
 &lt;h1 id=&quot;blazor-template&quot;&gt;Blazor template&lt;/h1&gt;
-&lt;p&gt;Now we have 4 &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; templates, besides the &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpConsoleApp&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspConsoleApp&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspUnity3d&lt;/code&gt; already existent, a new template for a Blazor client app was added: &lt;code class=&quot;highlighter-rouge&quot;&gt;GeneticSharpTspBlazorApp&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Now we have 4 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; templates, besides the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpConsoleApp&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspConsoleApp&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspUnity3d&lt;/code&gt; already existent, a new template for a Blazor client app was added: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspBlazorApp&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new -i GeneticSharp.Templates
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new -i GeneticSharp.Templates
 dotnet new GeneticSharpTspBlazorApp -o TspBlazorApp
 cd TspBlazorApp
 dotnet run
@@ -108,7 +108,7 @@ dotnet run
 &lt;h1 id=&quot;tpl&quot;&gt;TPL&lt;/h1&gt;
 &lt;p&gt;Three new classes were implemented to run some key points of genetic algorithm using TPL.&lt;/p&gt;
 
-&lt;p&gt;Those new classes can be used alone, but normally you will use all them together. You can see a sample usage at unit test &lt;code class=&quot;highlighter-rouge&quot;&gt;Start_TplManyGenerations_Optimization&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Those new classes can be used alone, but normally you will use all them together. You can see a sample usage at unit test &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Start_TplManyGenerations_Optimization&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;tpltaskexecutor&quot;&gt;TplTaskExecutor:&lt;/h3&gt;
 &lt;p&gt;An ITaskExecutor’s implementation that executes the tasks in a parallel fashion using Task Parallel Library (TPL).&lt;/p&gt;
@@ -470,7 +470,7 @@ Test Run Aborted
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/amibar/SmartThreadPool/pull/17&quot;&gt;SmartThreadPool - Adding support to .NET Core 2.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/43605256/956886&quot;&gt;How to set &lt;code class=&quot;highlighter-rouge&quot;&gt;OutputPath&lt;/code&gt; attribute in Visual Studio 2017 project ( new .csproj file format ) without target framework cluttering the resolved path?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/43605256/956886&quot;&gt;How to set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OutputPath&lt;/code&gt; attribute in Visual Studio 2017 project ( new .csproj file format ) without target framework cluttering the resolved path?&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/42787747/956886&quot;&gt;How do you multi-target a .NET Core class library with csproj?&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.natemcmaster.com/blog/2017/03/09/vs2015-to-vs2017-upgrade/&quot;&gt;Old csproj to new csproj: Visual Studio 2017 upgrade guide&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://wrightfully.com/guide-to-nsubstitute-for-rhino-mocks-users&quot;&gt;A Guide to NSubstitute for Rhino.Mocks Users&lt;/a&gt;&lt;/li&gt;

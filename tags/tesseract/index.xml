@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - tesseract</title>
  <link href="//tags/tesseract/index.xml" rel="self"/>
  <link href="/tag/tesseract.html"/>
- <updated>2020-09-13T08:26:15-03:00</updated>
+ <updated>2020-09-13T10:15:13-03:00</updated>
  <id>/tag/tesseract.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -37,7 +37,7 @@
 &lt;/div&gt;
 
 &lt;h1 id=&quot;tesseractservice&quot;&gt;TesseractService&lt;/h1&gt;
-&lt;p&gt;I ended up developing the class below to call the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tesseract 4&lt;/code&gt; command-line &lt;code class=&quot;highlighter-rouge&quot;&gt;(tesseract.exe)&lt;/code&gt; directly from the C# code.&lt;/p&gt;
+&lt;p&gt;I ended up developing the class below to call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tesseract 4&lt;/code&gt; command-line &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(tesseract.exe)&lt;/code&gt; directly from the C# code.&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=TesseractService.cs&quot;&gt; &lt;/script&gt;
@@ -68,8 +68,8 @@
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image.png &quot; /&gt;
       &lt;/center&gt;
 
-&lt;p&gt;You will get this result after call the &lt;code class=&quot;highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;The (quick) [brown] {fox} jumps!
+&lt;p&gt;You will get this result after call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The (quick) [brown] {fox} jumps!
 Over the $43,456.78 &amp;lt;lazy&amp;gt; #90 dog
 &amp;amp; duck/goose, as 12.5% of E-mail
 from aspammer@website.com is spam.
