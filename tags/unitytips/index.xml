@@ -3,11 +3,50 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2020-09-13T10:27:25-03:00</updated>
+ <updated>2020-09-15T06:42:41-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Editor Coroutines</title>
+   <link href="//unitytips-editor-coroutines/"/>
+   <updated>2020-09-15T00:00:00-03:00</updated>
+   <id>//unitytips-editor-coroutines</id>
+   <content type="html">
+&lt;p&gt;Recently, I was doing a small experiment trying to run an &lt;a href=&quot;https://en.wikipedia.org/wiki/CHIP-8&quot;&gt;CHIP-8&lt;/a&gt; emulator inside the Unity Editor inspector window and for that I needed to update from times to time the inspector.&lt;/p&gt;
+
+&lt;p&gt;Initially I tried to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorApplication.update&lt;/code&gt;, but as it is only called when something changes in the inspector, it ended up not serving this purpose.&lt;/p&gt;
+
+&lt;p&gt;It was then that I discovered this official Unity package: &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.editorcoroutines@0.0/manual/index.html&quot;&gt;Editor Coroutines&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The Editor Coroutines package allows the user to start the execution of iterator methods within the Editor similar to how we handle Coroutines inside MonoBehaviour scripts during runtime.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;At this time we cannot use any of the yield classes present inside the Unity Scripting API, like WaitForSeconds and WaitForEndOfFrame, except for the CustomYieldInstruction.&lt;/p&gt;
+
+&lt;p&gt;However, there is a specific yielding class for wait seconds on Editor: &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.editorcoroutines@0.0/api/Unity.EditorCoroutines.Editor.EditorWaitForSeconds.html&quot;&gt;EditorWaitForSeconds&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In my case, I used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yield return null&lt;/code&gt; to skip a frame within the Editor and get the refresh rate that I would like.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/96086201cb5cc512ce7a15a02ebcf29a.js&quot;&gt; &lt;/script&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/15/unitytips-editor-coroutines/chip-8-inside-unity-editor.gif &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The result of using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorCoroutineUtility.StartCoroutine&lt;/code&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;More details in the official documentation: &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.editorcoroutines@0.0/api/Unity.EditorCoroutines.Editor.EditorCoroutineUtility.html&quot;&gt;Editor Coroutines&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Focused Inspector</title>

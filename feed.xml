@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-09-13T10:27:25-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">Using Gulp for Chrome Extension development workflow</title><link href="http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow/" rel="alternate" type="text/html" title="Using Gulp for Chrome Extension development workflow" /><published>2020-09-11T00:00:00-03:00</published><updated>2020-09-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow/">&lt;p&gt;In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-09-15T06:42:41-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; Editor Coroutines</title><link href="http://diegogiacomelli.com.br/unitytips-editor-coroutines/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Editor Coroutines" /><published>2020-09-15T00:00:00-03:00</published><updated>2020-09-15T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-editor-coroutines</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-editor-coroutines/">&lt;p&gt;Recently, I was doing a small experiment trying to run an &lt;a href=&quot;https://en.wikipedia.org/wiki/CHIP-8&quot;&gt;CHIP-8&lt;/a&gt; emulator inside the Unity Editor inspector window and for that I needed to update from times to time the inspector.&lt;/p&gt;
+
+&lt;p&gt;Initially I tried to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorApplication.update&lt;/code&gt;, but as it is only called when something changes in the inspector, it ended up not serving this purpose.&lt;/p&gt;
+
+&lt;p&gt;It was then that I discovered this official Unity package: &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.editorcoroutines@0.0/manual/index.html&quot;&gt;Editor Coroutines&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The Editor Coroutines package allows the user to start the execution of iterator methods within the Editor similar to how we handle Coroutines inside MonoBehaviour scripts during runtime.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;At this time we cannot use any of the yield classes present inside the Unity Scripting API, like WaitForSeconds and WaitForEndOfFrame, except for the CustomYieldInstruction.&lt;/p&gt;
+
+&lt;p&gt;However, there is a specific yielding class for wait seconds on Editor: &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.editorcoroutines@0.0/api/Unity.EditorCoroutines.Editor.EditorWaitForSeconds.html&quot;&gt;EditorWaitForSeconds&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In my case, I used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yield return null&lt;/code&gt; to skip a frame within the Editor and get the refresh rate that I would like.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/96086201cb5cc512ce7a15a02ebcf29a.js&quot;&gt; &lt;/script&gt;
+
+&lt;center&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/15/unitytips-editor-coroutines/chip-8-inside-unity-editor.gif &quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The result of using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorCoroutineUtility.StartCoroutine&lt;/code&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;More details in the official documentation: &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.editorcoroutines@0.0/api/Unity.EditorCoroutines.Editor.EditorCoroutineUtility.html&quot;&gt;Editor Coroutines&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">Recently, I was doing a small experiment trying to run an CHIP-8 emulator inside the Unity Editor inspector window and for that I needed to update from times to time the inspector.</summary></entry><entry><title type="html">Using Gulp for Chrome Extension development workflow</title><link href="http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow/" rel="alternate" type="text/html" title="Using Gulp for Chrome Extension development workflow" /><published>2020-09-11T00:00:00-03:00</published><updated>2020-09-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow/">&lt;p&gt;In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;A few months ago we built a Chrome Extension to a customer to allow users to capture Netflix captions and sent them to the customer web site to study them later.&lt;/p&gt;
@@ -794,21 +823,4 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=SampleComponent.cs&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="custom-editor" /><summary type="html">You can create a PropertyAttribute to display a help box on inspector showing a few lines of information, like EditorGUI.HelpBox, but with a docs button to the documentation page.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Social Share</title><link href="http://diegogiacomelli.com.br/unitytips-social-share/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Social Share" /><published>2020-07-07T00:00:00-03:00</published><updated>2020-07-07T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-social-share</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-social-share/">&lt;p&gt;Using &lt;a href=&quot;https://github.com/yasirkula&quot;&gt;Süleyman Yasir KULA&lt;/a&gt; &lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare&quot;&gt;Unity Native Share Plugin&lt;/a&gt; you can easily add native share to your Android/iOS games.&lt;/p&gt;
-
-&lt;p&gt;I made the gist below that uses the plugin to add a social share component to any game object.&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/07/07/unitytips-social-share/component.jpg &quot; /&gt;
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/c03ec79fa0f0def94726f4b6914b4769.js?file=SocialShare.cs&quot;&gt; &lt;/script&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
-&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
-        &lt;div class=&quot;gist-file&quot;&gt;
-          &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">Using Süleyman Yasir KULA Unity Native Share Plugin you can easily add native share to your Android/iOS games.</summary></entry></feed>
+&lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=SampleComponent.cs&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="custom-editor" /><summary type="html">You can create a PropertyAttribute to display a help box on inspector showing a few lines of information, like EditorGUI.HelpBox, but with a docs button to the documentation page.</summary></entry></feed>
