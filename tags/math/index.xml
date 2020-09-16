@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - math</title>
  <link href="//tags/math/index.xml" rel="self"/>
  <link href="/tag/math.html"/>
- <updated>2020-09-16T20:04:44-03:00</updated>
+ <updated>2020-09-16T20:35:09-03:00</updated>
  <id>/tag/math.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -31,7 +31,7 @@ You can download it from this page &lt;a href=&quot;https://developer.chrome.com
 &lt;/div&gt;
 
 &lt;h2 id=&quot;gulp&quot;&gt;Gulp&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;//assets/logos/gulp.svg &quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/gulp.svg &quot; /&gt;
 At that time we did not find any builtin or other solution to make this workflow easier and streamlined, so we decided to create our own solution using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gulp&lt;/code&gt;. This whole solution will be explaining below.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -318,7 +318,7 @@ You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&
 
 &lt;p&gt;The following gif shows the evolution of a Maurer Rose (n = 2, d = 29°) from 1 point to 361 points.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;

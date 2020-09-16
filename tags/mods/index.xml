@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - mods</title>
  <link href="//tags/mods/index.xml" rel="self"/>
  <link href="/tag/mods.html"/>
- <updated>2020-09-16T20:04:44-03:00</updated>
+ <updated>2020-09-16T20:35:09-03:00</updated>
  <id>/tag/mods.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -258,7 +258,7 @@
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
@@ -394,7 +394,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;We really appreciate your opinion about the mods support, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-introduction&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-tutorial-creating-a-mod&quot;&gt;tutorial&lt;/a&gt; and &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;. Please, get in touch at &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;

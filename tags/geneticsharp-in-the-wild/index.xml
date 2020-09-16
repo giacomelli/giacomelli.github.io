@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - geneticsharp-in-the-wild</title>
  <link href="//tags/geneticsharp-in-the-wild/index.xml" rel="self"/>
  <link href="/tag/geneticsharp-in-the-wild.html"/>
- <updated>2020-09-16T20:04:44-03:00</updated>
+ <updated>2020-09-16T20:35:09-03:00</updated>
  <id>/tag/geneticsharp-in-the-wild.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -86,7 +86,7 @@ Düzgi supervision, wrote the paper for his master degree at Istanbul Bilgi Univ
 &lt;p&gt;GeneticSharp was used to design the &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/StructuralChromosome.cs&quot;&gt;structural chromosomes&lt;/a&gt; and &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/StructuralFitness.cs&quot;&gt;fitness function&lt;/a&gt; to allow framing / pixel structural optimization through the &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/FrixelOptimizer.cs&quot;&gt;Frixel optimizer&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/04/geneticsharp-in-the-wild-frixel/geneticsharp-frixel-optimization.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/07/04/geneticsharp-in-the-wild-frixel/geneticsharp-frixel-optimization.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h1 id=&quot;functionality&quot;&gt;Functionality&lt;/h1&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - Buildron</title>
  <link href="//tags/buildron/index.xml" rel="self"/>
  <link href="/tag/Buildron.html"/>
- <updated>2020-09-16T20:04:44-03:00</updated>
+ <updated>2020-09-16T20:35:09-03:00</updated>
  <id>/tag/Buildron.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -19,7 +19,7 @@
 &lt;p&gt;For these reasons, I made a mod called &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt; that let you interact with Buildron through the Slack.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;

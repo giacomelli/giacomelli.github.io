@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - command-line</title>
  <link href="//tags/command-line/index.xml" rel="self"/>
  <link href="/tag/command-line.html"/>
- <updated>2020-09-16T20:04:44-03:00</updated>
+ <updated>2020-09-16T20:35:09-03:00</updated>
  <id>/tag/command-line.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -17,7 +17,7 @@
    <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a command-line tool to create new C# projects from prebuilt/templates.&lt;/p&gt;
