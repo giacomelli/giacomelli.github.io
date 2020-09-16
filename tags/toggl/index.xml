@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - toggl</title>
  <link href="//tags/toggl/index.xml" rel="self"/>
  <link href="/tag/toggl.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/toggl.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -64,47 +64,54 @@ curl -v -u &amp;lt;api-token&amp;gt;:api_token \
 &lt;h3 id=&quot;4-configuring-the-context&quot;&gt;4) Configuring the context&lt;/h3&gt;
 &lt;p&gt;The first thing, you must create the context, go to ControlPlane preferences:&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-22325241e.webp&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-22325241e.webp 207w&quot; width=&quot;207&quot; height=&quot;312&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;Select tab “Contexts”, and add I new context, in my case a called it “Skahal”:&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-dac56bbc1.webp&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-dac56bbc1.webp 393w&quot; width=&quot;393&quot; height=&quot;182&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h3 id=&quot;5-configuring-the-evidence-sources&quot;&gt;5) Configuring the evidence sources&lt;/h3&gt;
 &lt;p&gt;Select the tab “Evidences sources”, the option “Running Application” should be checked:&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-df877fb0a.webp&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-df877fb0a.webp 371w&quot; width=&quot;371&quot; height=&quot;51&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h3 id=&quot;6-configuring-the-rules&quot;&gt;6) Configuring the rules&lt;/h3&gt;
 &lt;p&gt;Select the tab “Rules”, add a new rule to your context, the rule must be of type “Running Application” to Unity 3D:&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-f6b304637.webp&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-f6b304637.webp 608w&quot; width=&quot;608&quot; height=&quot;161&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h3 id=&quot;7-configuring-the-actions&quot;&gt;7) Configuring the actions&lt;/h3&gt;
 &lt;p&gt;Select the tab “Actions”, we’ll create 3 new actions: the first one is a task to open Safari in the Toggl timer task page, this is an optional action, but I like to see the task running (and I can stop/start it manually sometimes). Add a action of type “Open URL” with the address “https://www.toggl.com/app/timer”, select “On Arrival” and your context:&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-3a6809412.webp&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-3a6809412.webp 716w&quot; width=&quot;716&quot; height=&quot;68&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;The second one is a action to start the task in the Toggl when the context starts. Add a action of type “Shell Script”, in the field “Parameter” type the path to your startTogglTimeEntry.sh script, select “On Arrival” and your context:&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-0f137d185.webp&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-0f137d185.webp 476w&quot; width=&quot;476&quot; height=&quot;188&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;The third one is a action to stop the task in the Toggl when the context ends. Add a action of type “Shell Script”, in the field “Parameter” type the path to your stopTogglTimeEntry.sh script, select “On Arrival” and your context:&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-a0ce52c23.webp&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-a0ce52c23.webp 467w&quot; width=&quot;467&quot; height=&quot;182&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h3 id=&quot;8-test-everything&quot;&gt;8) Test everything&lt;/h3&gt;

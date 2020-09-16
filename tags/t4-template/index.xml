@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - t4-template</title>
  <link href="//tags/t4-template/index.xml" rel="self"/>
  <link href="/tag/t4-template.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/t4-template.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -33,16 +33,18 @@
 &lt;p&gt;Let’s say that the T4 Template that we want to distribute is located inside a folder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Templates&lt;/code&gt; and the file is named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scaffold.tt&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SampleNugetProject.csproj&lt;/code&gt; in the Visual Studio and add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;T4 Template&lt;/code&gt;:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.webp 558w&quot; width=&quot;558&quot; height=&quot;412&quot; /&gt;
+
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Add new item…&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Solution Explorer&lt;/code&gt; should look like this:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.webp 339w&quot; width=&quot;339&quot; height=&quot;194&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;creating-a-targets&quot;&gt;Creating a .targets&lt;/h2&gt;

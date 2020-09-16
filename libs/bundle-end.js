@@ -1,6 +1,3 @@
-// INCLUDE: lazyload
-{% include_absolute libs/lazyload.min.js %}
-
 // INCLUDE: waypoints
 {% include_absolute libs/Waypoints/jquery.waypoints.min.js %}
 

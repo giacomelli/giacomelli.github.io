@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - property-drawer</title>
  <link href="//tags/property-drawer/index.xml" rel="self"/>
  <link href="/tag/property-drawer.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/property-drawer.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -15,7 +15,7 @@
    <updated>2020-04-21T00:00:00-03:00</updated>
    <id>//unitytips-timespan-box-drawer</id>
    <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyDrawer.html&quot;&gt;PropertyDrawer&lt;/a&gt; to display a help box on inspector showing the time information in seconds fields using &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-timespan-format-strings&quot;&gt;TimeSpan format strings&lt;/a&gt;:&lt;/p&gt;
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; /&gt;
       &lt;/center&gt;
 

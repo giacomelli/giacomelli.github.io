@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - car2d</title>
  <link href="//tags/car2d/index.xml" rel="self"/>
  <link href="/tag/car2d.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/car2d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -17,8 +17,9 @@
    <content type="html">&lt;p&gt;I made an Unity3D sample for &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; inspired by amazing &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt; where a genetic algorithm tries to design 2D cars to overcome roads challenges.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-801-6761995cb.webp 801w&quot; width=&quot;801&quot; height=&quot;388&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
@@ -77,8 +78,9 @@
 &lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
 &lt;p&gt;The fitness of each car (chromosome) to the road will be the &lt;strong&gt;sum of the max distance&lt;/strong&gt; reach by it &lt;strong&gt;plus the average velocity&lt;/strong&gt; at that moment.&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-1053-40a0bcc10.webp 1053w&quot; width=&quot;1053&quot; height=&quot;550&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
@@ -93,8 +95,9 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Besides that, the chromosomes are evaluated in parallel using the GeneticSharp’s ParallelTaskExecutor and you can see all them in 4x4 grid:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1915-277a451e7.webp 1915w&quot; width=&quot;1915&quot; height=&quot;988&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;blockquote&gt;

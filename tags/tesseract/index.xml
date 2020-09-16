@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - tesseract</title>
  <link href="//tags/tesseract/index.xml" rel="self"/>
  <link href="/tag/tesseract.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/tesseract.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -64,8 +64,9 @@
 &lt;script src=&quot;https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=usage-sample.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;If you try to read a image like this one:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-800-171750320.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-1024-171750320.webp 1024w&quot; width=&quot;1024&quot; height=&quot;800&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;You will get this result after call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:

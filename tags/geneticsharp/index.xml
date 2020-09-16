@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -79,7 +79,7 @@ cd TspBlazorApp
 dotnet run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
       &lt;/center&gt;
 
@@ -169,8 +169,9 @@ dotnet watch run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Wait for the message &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-1019-f31194f79.webp 1019w&quot; width=&quot;1019&quot; height=&quot;310&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
@@ -196,7 +197,7 @@ dotnet watch run
 &lt;p&gt;In the root folder of your Blazor project create a new subfolder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp&lt;/code&gt;. We’ll add all our C# classes inside this folder.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -255,8 +256,9 @@ dotnet watch run
 
 &lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.webp 565w&quot; width=&quot;565&quot; height=&quot;354&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.&lt;/p&gt;
@@ -278,7 +280,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now you should see something like this:&lt;/p&gt;
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
       &lt;/center&gt;
 
@@ -296,7 +298,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsyncCall.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
       &lt;/center&gt;
 
@@ -338,7 +340,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
 &lt;p&gt;GeneticSharp was used to design the &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/StructuralChromosome.cs&quot;&gt;structural chromosomes&lt;/a&gt; and &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/StructuralFitness.cs&quot;&gt;fitness function&lt;/a&gt; to allow framing / pixel structural optimization through the &lt;a href=&quot;https://github.com/EmilPoulsen/Frixel/blob/7a80a96e2793fd3f4e32bcf01ba6ca13fcc6a06a/Frixel.Optimizer/Optimization/FrixelOptimizer.cs&quot;&gt;Frixel optimizer&lt;/a&gt;.&lt;/p&gt;
 
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/04/geneticsharp-in-the-wild-frixel/geneticsharp-frixel-optimization.gif &quot; /&gt;
       &lt;/center&gt;
 
@@ -387,7 +389,7 @@ dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&g
 
 &lt;p&gt;Now you can open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpSample&lt;/code&gt; in Unity3D editor.
 Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; scene and hit the play button, you should see something like this:&lt;/p&gt;
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
       &lt;/center&gt;
 
@@ -437,8 +439,9 @@ losing generalizability. Application of the new training scheme could possibly b
 to any code completion systems that trains a predictive model, making it a candidate for
 improving existing systems as well as in future research.&lt;/em&gt;&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/21/geneticsharp-in-the-wild-context-sensitive-code-completion/gscc-vs-genecscc.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/06/21/geneticsharp-in-the-wild-context-sensitive-code-completion/gscc-vs-genecscc-652-096aa452c.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/06/21/geneticsharp-in-the-wild-context-sensitive-code-completion/gscc-vs-genecscc-652-096aa452c.webp 652w&quot; width=&quot;652&quot; height=&quot;324&quot; /&gt;
+
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;results comparison between GCC and GeneCSCC (developed using GeneticSharp)&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -501,8 +504,9 @@ minimize and visualize aircraft noise along simulated and real flight routes. Th
 
 &lt;p&gt;The GeneticSharp templates will be listed:&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output-759-b583e7472.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output-759-b583e7472.webp 759w&quot; width=&quot;759&quot; height=&quot;82&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h1 id=&quot;creating-a-new-geneticsharp-project-from-templates&quot;&gt;Creating a new GeneticSharp project from templates&lt;/h1&gt;
@@ -511,24 +515,27 @@ minimize and visualize aircraft noise along simulated and real flight routes. Th
 &lt;p&gt;Create a new console application template with GeneticSharp where you just need to implement the chromosome and fitness function.&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpConsoleApp &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-800-98f58dec8.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-1032-98f58dec8.webp 1032w&quot; width=&quot;1032&quot; height=&quot;685&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h3 id=&quot;tsp-console-application&quot;&gt;TSP Console application&lt;/h3&gt;
 &lt;p&gt;Create a new console application template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpTspConsoleApp &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-800-e178fd623.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-1024-e178fd623.webp 1024w&quot; width=&quot;1024&quot; height=&quot;893&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h3 id=&quot;tsp-unity3d&quot;&gt;TSP Unity3D&lt;/h3&gt;
 &lt;p&gt;Create an Unity3D template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-800-a9154db29.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-1218-a9154db29.webp 1218w&quot; width=&quot;1218&quot; height=&quot;902&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;Let’s evolve!&lt;/p&gt;
@@ -701,8 +708,9 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;h2 id=&quot;car2d&quot;&gt;Car2D&lt;/h2&gt;
 &lt;p&gt;Based on famous BoxCar2D, this sample uses a genetic algorithm to create car designs to overcome road challenges, like gaps, hills, and obstacles.&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-800-605d2bd7e.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-1920-605d2bd7e.webp 1920w&quot; width=&quot;1920&quot; height=&quot;1080&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
@@ -710,15 +718,17 @@ I have a case where I need to stop optimization at some time, save results to DB
 
 &lt;p&gt;This sample inspired this post &lt;a href=&quot;/tsp-with-GeneticSharp-and-Unity3d/&quot;&gt;TSP with GeneticSharp and Unity3D&lt;/a&gt;.&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-800-fcf1c65a0.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-1920-fcf1c65a0.webp 1920w&quot; width=&quot;1920&quot; height=&quot;1080&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
 &lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-800-44a0f3b6a.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-1920-44a0f3b6a.webp 1920w&quot; width=&quot;1920&quot; height=&quot;1080&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;
@@ -735,8 +745,9 @@ I have a case where I need to stop optimization at some time, save results to DB
    <content type="html">&lt;p&gt;I made an Unity3D sample for &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; inspired by amazing &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt; where a genetic algorithm tries to design 2D cars to overcome roads challenges.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/car.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-801-6761995cb.webp 801w&quot; width=&quot;801&quot; height=&quot;388&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
@@ -795,8 +806,9 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
 &lt;p&gt;The fitness of each car (chromosome) to the road will be the &lt;strong&gt;sum of the max distance&lt;/strong&gt; reach by it &lt;strong&gt;plus the average velocity&lt;/strong&gt; at that moment.&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-1053-40a0bcc10.webp 1053w&quot; width=&quot;1053&quot; height=&quot;550&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
@@ -811,8 +823,9 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/ul&gt;
 
 &lt;p&gt;Besides that, the chromosomes are evaluated in parallel using the GeneticSharp’s ParallelTaskExecutor and you can see all them in 4x4 grid:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1915-277a451e7.webp 1915w&quot; width=&quot;1915&quot; height=&quot;988&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -959,8 +972,9 @@ div.gist-meta { display:none; }
 &lt;h2 id=&quot;creating-the-unity3d-project&quot;&gt;Creating the Unity3D project&lt;/h2&gt;
 &lt;p&gt;Using Unity 2018.1+, create a new project called TspSample.&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.webp 669w&quot; width=&quot;669&quot; height=&quot;321&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
@@ -968,15 +982,16 @@ div.gist-meta { display:none; }
 
 &lt;p&gt;After restart, go back to “Player settings”, select “.NET Standard 2.0” on “Api Compability Level”.&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.webp 426w&quot; width=&quot;426&quot; height=&quot;82&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/route.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -1011,8 +1026,9 @@ div.gist-meta { display:none; }
 
 &lt;p&gt;Run the scene on editor and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.webp 488w&quot; width=&quot;488&quot; height=&quot;361&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
@@ -1045,13 +1061,15 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change3.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Now, select the GAController game object on hierarchy and set the CityPrefab property.&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.webp 595w&quot; width=&quot;595&quot; height=&quot;190&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-800-e9b99a942.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-2032-e9b99a942.webp 2032w&quot; width=&quot;2032&quot; height=&quot;1209&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
@@ -1080,8 +1098,9 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Run the scene again, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-800-4154f5d73.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-2032-4154f5d73.webp 2032w&quot; width=&quot;2032&quot; height=&quot;1209&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
@@ -1099,7 +1118,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 
 &lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
 
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
@@ -1150,7 +1169,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;I’ve already talk about these breaking changes on the post about the release candidate version, but I guess is good to point them again:&lt;/p&gt;
@@ -1188,7 +1207,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;In this version GeneticSharp starts to support .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
 
 &lt;p&gt;Porting 
-to &lt;img class=&quot;icon&quot; src=&quot;/assets/logos/netcore.svg &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+to &lt;img class=&quot;icon&quot; src=&quot;//assets/logos/netcore.svg &quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -1217,8 +1236,9 @@ to &lt;img class=&quot;icon&quot; src=&quot;/assets/logos/netcore.svg &quot; sty
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;porting&quot;&gt;Porting&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h3 id=&quot;warmup&quot;&gt;Warmup&lt;/h3&gt;
@@ -1306,7 +1326,7 @@ Test Run Aborted
 &lt;p&gt;Delete the “obj” and “bin” folders from unit test project will “fix” the problem.&lt;/p&gt;
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The GeneticSharp NuGet package was split into two packages:
@@ -1325,7 +1345,7 @@ Test Run Aborted
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;reads-during-the-porting&quot;&gt;Reads during the porting&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Some readings I did during the whole process, maybe can be useful to someone porting a library to .NET Core too.&lt;/p&gt;
 
@@ -1349,8 +1369,9 @@ Test Run Aborted
   &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/5504&quot;&gt;https://github.com/dotnet/cli/issues/5504&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-e18b9b55c.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-1992-e18b9b55c.webp 1992w&quot; width=&quot;1992&quot; height=&quot;632&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;Now I’m planning to create a GeneticSharp’s sample using Unity3d’s new beta features, like the new ECS (Entity Component System), C# Job System and the Burst compiler.&lt;/p&gt;
@@ -1405,14 +1426,16 @@ Test Run Aborted
 &lt;p&gt;As far as I know GeneticSharp has been used in a lot of different projects, since card games deck optimization, self managing distributed file system, context-sensitive code completion, even in airplanes trajectories optimization. These are pretty cool and exciting topics, but this tutorial is not about this advanced topics. Here I want to take a very simple sample and show how easy and fast you can add genetic algorithms on your project using GeneticSharp. So, let’s evolve!&lt;/p&gt;
 
 &lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/problem.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/problem-128-a3f91d933.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/problem-128-a3f91d933.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;In our sample we will optimize the input of a mathematical function, this function will be used as our fitness evaluation function. For this sample we will use a function that everyone saw in school time, the famous &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_distance&quot;&gt;Euclidean distance&lt;/a&gt; or commonly know as distance of two points function:&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction-320-d144504d3.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction-320-d144504d3.webp 320w&quot; width=&quot;320&quot; height=&quot;53&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;We will consider our chromosome fitness as the result of this function. The higher the result, the better is the chromosome fitness.&lt;/p&gt;
@@ -1420,8 +1443,9 @@ Test Run Aborted
 &lt;p&gt;Our chromosome will be the Euclidean distance function arguments, the X1, Y1, X2 and Y2.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-our-genetic-algorithm-is-looking-for&quot;&gt;What our genetic algorithm is looking for?&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/telescope.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/telescope-128-e0357d1e6.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/telescope-128-e0357d1e6.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;The goal of our genetic algortim is &lt;strong&gt;find the input values of Euclidean distance function: X1, Y1 and X2, Y2 that result in the greatest distance in a rectangular area&lt;/strong&gt;.&lt;/p&gt;
@@ -1433,8 +1457,9 @@ Test Run Aborted
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;creating-the-project&quot;&gt;Creating the project&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/project.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/project-128-4f597ed4f.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/project-128-4f597ed4f.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;Open your IDE (Visual Studio/Xamarin Studio) and create a new console project.&lt;/p&gt;
@@ -1449,8 +1474,9 @@ Test Run Aborted
 &lt;p&gt;GeneticSharp implements all the classic components of a genetic algorithm, like gene, chromosome, population, fitness, selection, crossover, mutation, reinsetion and termination. When you use it to build your genetic algorithm code you just need to implement a few things, mostly you will need to code just your solution’s chromosome and fitness.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-an-euclidean-distance-chromosome&quot;&gt;Creating an Euclidean distance chromosome&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome-128-8b4102796.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome-128-8b4102796.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;Chromosome is the representation of a possible solution in genetic algoritms.&lt;/p&gt;
@@ -1485,8 +1511,9 @@ Test Run Aborted
 &lt;p&gt;4) The number of fraction (scale or decimal) part of the number. In our case we will not use any.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-population&quot;&gt;Creating the population&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/population.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/population-128-3f5c6fbb1.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/population-128-3f5c6fbb1.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;The population represents the possible solutions to our problem, so we need to create a population of our Euclidean distance chromosome.&lt;/p&gt;
@@ -1499,8 +1526,9 @@ Test Run Aborted
 &lt;p&gt;We created a population that will have a minimum number of 50 chromosomes and a maximum number of 100 and used our chromosome template as the “Adam chromosome” (yeah, you get the reference) of our GA.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-fitness-function&quot;&gt;Creating the fitness function&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/score.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/score-128-702a2b758.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/score-128-702a2b758.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;The fitness function is where the genetic algoritm will evaluate and give a value (fitness) to each chromosome generated inside it. A good fitness function can guide your GA to a fast and optimum solution.&lt;/p&gt;
@@ -1515,8 +1543,9 @@ Test Run Aborted
 &lt;p&gt;To allow us to evaluate the chromosome we need to convert it from its genotype (FloatingPointChromosome) to its phenotype (x1, y1 and x2, y2), we do this calling the ToFloatingPoints method. This method return an array of numbers using that configuration we used when we created our Euclidean distance chromosome. Now we have our X1, Y1 and X2 and Y2 numbers we just need to pass it to the Euclidean distance function and return the value as the fitness value of the current chromosome.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-selection&quot;&gt;Creating the selection&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/podium.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/podium-128-f9f44969b.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/podium-128-f9f44969b.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;A selection is the genetic algorithm operator responsible for decing which chromosomes of current population will be selected as parent of the next population.&lt;/p&gt;
@@ -1531,8 +1560,9 @@ Test Run Aborted
 &lt;p&gt;Elite selection is a good option, because it will select the chromosomes with the best fitness (greatest distance). You can try the others selection options too and see how they change the GA speed and results.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-crossover&quot;&gt;Creating the crossover&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/cross.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/cross-128-ffae692c2.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/cross-128-ffae692c2.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing these selected chromosomes.&lt;/p&gt;
@@ -1551,8 +1581,9 @@ Test Run Aborted
 &lt;p&gt;So, in our case Uniform crossover is a very good option, because using the 0.5f mix probability it will generate new chromosomes that are combination of X1, Y1 from one parent and X2, Y2 from another parent.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-mutation&quot;&gt;Creating the mutation&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/mutation.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/mutation-128-a489f3853.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/mutation-128-a489f3853.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;The biology definition of mutations is: 
@@ -1570,8 +1601,9 @@ Test Run Aborted
 &lt;p&gt;Flip-bit mutation is a mutation specific to chromosomes that implement &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Chromosomes/IBinaryChromosome.cs&quot;&gt;IBinaryChromosome&lt;/a&gt; interface, as our FloatingPointChromosome does. It will randomly chose a gene and flip it bit, so a gene with value 0 will turn to 1 and vice-versa.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-termination&quot;&gt;Creating the termination&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/end.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/end-128-2cdd65c40.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/end-128-2cdd65c40.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;A termination decide when a GA should be stopped. GeneticSharp use the generation number termination with just one generation as default termination. This mean that the genetic algoritm will run just one generation when you call the Start method, after this you can increment the expected generation number of the termination and call the method Resume how many times you want.&lt;/p&gt;
@@ -1586,8 +1618,9 @@ Test Run Aborted
 &lt;p&gt;In our tutorial we will use the fitness stagnation termination with a expected stagnant generations number of 100, this mean that if our GA generate the same best chromsome fitness in the last 100 generations then it will be terminated.&lt;/p&gt;
 
 &lt;h2 id=&quot;running-the-ga&quot;&gt;Running the GA&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/running.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/running-128-bc0b48bec.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/running-128-bc0b48bec.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.&lt;/p&gt;
@@ -1622,15 +1655,17 @@ Generation 23: (998,680),(0,1) = 1207.08119030991
 Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;If we plot these generations the output image will be like this:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-800-d0df984ce.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-983-d0df984ce.webp 983w&quot; width=&quot;983&quot; height=&quot;677&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;We can see that in the first generations (black lines) the genetic algorithm as some intermediate results and at the end (red line) &lt;strong&gt;it found the best possible solution: a diagonal.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;complete-source-code&quot;&gt;Complete source code&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/programmer.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/programmer-128-6cef95d36.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/programmer-128-6cef95d36.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;When you finish the tutorial your source code will be this one:&lt;/p&gt;
@@ -1639,8 +1674,9 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CompleteSourceCode.cs&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion-128-875fc7bbb.webp&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion-128-875fc7bbb.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;In this tutorial we learn how genetic algoritm works and how to use GeneticSharp to solve a very simple sample. Now you can try it to solve more complex problems.&lt;/p&gt;

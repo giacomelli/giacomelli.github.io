@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - command-line</title>
  <link href="//tags/command-line/index.xml" rel="self"/>
  <link href="/tag/command-line.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/command-line.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,7 +16,7 @@
    <id>//jumpstart</id>
    <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
 
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
@@ -28,8 +28,9 @@
 
 &lt;p&gt;The idea of the tool was born a long time ago and became a little stronger every time that I had to create a new solution and all the projects by hand, but when I saw the message bellow in the &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt; page I decided to finally write the tool… and the name was very clear, almost.&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-1057-ef756f97b.webp 1057w&quot; width=&quot;1057&quot; height=&quot;74&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;blockquote&gt;

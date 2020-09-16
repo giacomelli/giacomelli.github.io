@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - custom-editor</title>
  <link href="//tags/custom-editor/index.xml" rel="self"/>
  <link href="/tag/custom-editor.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/custom-editor.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -15,8 +15,9 @@
    <updated>2020-07-21T00:00:00-03:00</updated>
    <id>//unitytips-settings-provider</id>
    <content type="html">&lt;p&gt;You can add a custom section to &lt;a href=&quot;https://docs.unity3d.com/Manual/comp-ManagerGroup.html&quot;&gt;Project Settings&lt;/a&gt; window that allows you to configure some global settings for your project using a &lt;a href=&quot;https://docs.unity3d.com/2018.3/Documentation/ScriptReference/SettingsProvider.html&quot;&gt;SettingsProvider&lt;/a&gt;&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/07/21/unitytips-settings-provider/settings-provider.jpg &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.webp 1572w&quot; width=&quot;1572&quot; height=&quot;618&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -42,8 +43,9 @@
    <updated>2020-07-14T00:00:00-03:00</updated>
    <id>//unitytips-helpbox-attribute</id>
    <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyAttribute.html&quot;&gt;PropertyAttribute&lt;/a&gt; to display a help box on inspector showing a few lines of information, like &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/EditorGUI.HelpBox.html&quot;&gt;EditorGUI.HelpBox&lt;/a&gt;, but with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docs&lt;/code&gt; button to the documentation page.&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/07/14/unitytips-helpbox-attribute/sample-component.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp 467w&quot; width=&quot;467&quot; height=&quot;413&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -93,7 +95,7 @@
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;UPDATED: I created a new Scene Preview solution, now using its own window editor: &lt;a href=&quot;/unitytips-scene-preview-window/&quot;&gt;Scene Preview Window&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
       &lt;/center&gt;
 

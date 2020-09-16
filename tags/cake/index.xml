@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - cake</title>
  <link href="//tags/cake/index.xml" rel="self"/>
  <link href="/tag/cake.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/cake.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -107,16 +107,18 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;When the build finish, you should see something like this:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-405-ec263fa2c.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-405-ec263fa2c.webp 405w&quot; width=&quot;405&quot; height=&quot;149&quot; /&gt;
+
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Cake build&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then open your project on &lt;a href=&quot;https://sonarcloud.io/projects&quot;&gt;SonarCloud&lt;/a&gt;:&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-800-a93997fec.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-983-a93997fec.webp 983w&quot; width=&quot;983&quot; height=&quot;503&quot; /&gt;
+
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;SonarCloud dashboard&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;

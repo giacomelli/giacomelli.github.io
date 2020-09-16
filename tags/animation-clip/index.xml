@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - animation-clip</title>
  <link href="//tags/animation-clip/index.xml" rel="self"/>
  <link href="/tag/animation-clip.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/animation-clip.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -46,8 +46,9 @@
 &lt;p&gt;Furthermore, we will implement the code that allows us to create Animation Clips and Animation Override Controller from sprites.&lt;/p&gt;
 
 &lt;p&gt;The idea behind DefaultAnimationsEditorWindow is that when you have a bunch o characters using the same kind of animations, they used the same structure of sprite sheets, so you can create the animations based on the sprites indexes on sprite sheet texture.&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.webp 678w&quot; width=&quot;678&quot; height=&quot;178&quot; /&gt;
+
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;similar sprites sheets from Phantasy Star IV (Alys, Chaz and Demi). Sprites ripped by Ultimecia from &lt;a href=&quot;https://www.spriters-resource.com/genesis_32x_scd/ps4&quot;&gt;The Spriters Resource&lt;/a&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -55,8 +56,9 @@
 
 &lt;p&gt;Starting with sprite to walk down and ending with the last sprite of walk horizontal, we have 9 sprites and in all sprite sheets the sprites indexes are the same:&lt;/p&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.webp 134w&quot; width=&quot;134&quot; height=&quot;31&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;ul&gt;
@@ -67,7 +69,7 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/project.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&lt;/a&gt;. To start the tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -108,8 +110,9 @@
 
 &lt;h2 id=&quot;defaultanimationseditorwindow&quot;&gt;DefaultAnimationsEditorWindow&lt;/h2&gt;
 &lt;p&gt;In the code bellow, we define the menu for the window through the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShowWindow&lt;/code&gt; and the attribute &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;.&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.webp 225w&quot; width=&quot;225&quot; height=&quot;201&quot; /&gt;
+
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Default Animations menu item&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -118,8 +121,9 @@
 &lt;p&gt;At the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnEnable&lt;/code&gt; we read the settings from our ScriptableObject DefaultAnimationsSettings.&lt;/p&gt;
 
 &lt;p&gt;The next 3 methods just draw the components to the editor window GUI.&lt;/p&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.webp 375w&quot; width=&quot;375&quot; height=&quot;186&quot; /&gt;
+
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;editor window&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - design-patterns</title>
  <link href="//tags/design-patterns/index.xml" rel="self"/>
  <link href="/tag/design-patterns.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/design-patterns.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -19,8 +19,9 @@
 &lt;p&gt;The list below is just a “check-point list”, because, to understand what each one really meaning you need to read book deeply, probably more than one time.&lt;/p&gt;
 
 &lt;h3 id=&quot;my-tip-is-read-the-book&quot;&gt;My tip is: read the book!&lt;/h3&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/05/12/ddd-by-quotes/ddd.jpg &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/05/12/ddd-by-quotes/ddd-260-c0255fe64.webp&quot; srcset=&quot;/assets/images/generated/assets/2014/05/12/ddd-by-quotes/ddd-260-c0255fe64.webp 260w&quot; width=&quot;260&quot; height=&quot;344&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h3 id=&quot;quotes&quot;&gt;Quotes&lt;/h3&gt;

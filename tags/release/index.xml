@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - release</title>
  <link href="//tags/release/index.xml" rel="self"/>
  <link href="/tag/release.html"/>
- <updated>2020-09-15T06:42:41-03:00</updated>
+ <updated>2020-09-16T20:04:44-03:00</updated>
  <id>/tag/release.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -48,7 +48,7 @@ cd TspBlazorApp
 dotnet run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
       &lt;/center&gt;
 
@@ -259,7 +259,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;I’ve already talk about these breaking changes on the post about the release candidate version, but I guess is good to point them again:&lt;/p&gt;
@@ -327,7 +327,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;p&gt;In this version GeneticSharp starts to support .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
 
 &lt;p&gt;Porting 
-to &lt;img class=&quot;icon&quot; src=&quot;/assets/logos/netcore.svg &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+to &lt;img class=&quot;icon&quot; src=&quot;//assets/logos/netcore.svg &quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -356,8 +356,9 @@ to &lt;img class=&quot;icon&quot; src=&quot;/assets/logos/netcore.svg &quot; sty
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;porting&quot;&gt;Porting&lt;/h2&gt;
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;h3 id=&quot;warmup&quot;&gt;Warmup&lt;/h3&gt;
@@ -445,7 +446,7 @@ Test Run Aborted
 &lt;p&gt;Delete the “obj” and “bin” folders from unit test project will “fix” the problem.&lt;/p&gt;
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/breaking-changes.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The GeneticSharp NuGet package was split into two packages:
@@ -464,7 +465,7 @@ Test Run Aborted
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;reads-during-the-porting&quot;&gt;Reads during the porting&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/conclusion.png &quot; style=&quot;max-height:200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Some readings I did during the whole process, maybe can be useful to someone porting a library to .NET Core too.&lt;/p&gt;
 
@@ -488,8 +489,9 @@ Test Run Aborted
   &lt;li&gt;&lt;a href=&quot;https://github.com/dotnet/cli/issues/5504&quot;&gt;https://github.com/dotnet/cli/issues/5504&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;center&gt;
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build.png &quot; /&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-e18b9b55c.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-1992-e18b9b55c.webp 1992w&quot; width=&quot;1992&quot; height=&quot;632&quot; /&gt;
+
       &lt;/center&gt;
 
 &lt;p&gt;Now I’m planning to create a GeneticSharp’s sample using Unity3d’s new beta features, like the new ECS (Entity Component System), C# Job System and the Burst compiler.&lt;/p&gt;
@@ -598,7 +600,7 @@ Test Run Aborted
   &lt;li&gt;&lt;a href=&quot;https://github.com/skahal/buildron/wiki/mods-tutorial-creating-a-mod&quot;&gt;Tutorial “Creating a mod”&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;center&gt;
+&lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
