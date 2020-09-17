@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - sorting-layers</title>
  <link href="//tags/sorting-layers/index.xml" rel="self"/>
  <link href="/tag/sorting-layers.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/sorting-layers.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -45,7 +45,11 @@
 &lt;p&gt;The name of Sorting Layer been used is showing in the top of each game object in the scene view.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.webp 1084w&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.webp 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.webp 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.webp 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.webp 1084w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.png 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.png 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.png 1084w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;

@@ -69,7 +69,11 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="container">
         <header class="masthead clearfix">
           <nav class="greedy">
-            <a href="/" class="site-avatar" title="Diego Giacomelli | programmer""><img class="" src="/assets/images/generated/assets/avatar-transparent-800-209cb8b4f.webp" srcset="/assets/images/generated/assets/avatar-transparent-1615-209cb8b4f.webp 1615w" width="1615" height="1603">
+            <a href="/" class="site-avatar" title="Diego Giacomelli | programmer""><picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/avatar-transparent-200-209cb8b4f.webp 200w, /assets/images/generated/assets/avatar-transparent-400-209cb8b4f.webp 400w, /assets/images/generated/assets/avatar-transparent-800-209cb8b4f.webp 800w, /assets/images/generated/assets/avatar-transparent-1600-209cb8b4f.webp 1600w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/avatar-transparent-200-209cb8b4f.png 200w, /assets/images/generated/assets/avatar-transparent-400-209cb8b4f.png 400w, /assets/images/generated/assets/avatar-transparent-800-209cb8b4f.png 800w, /assets/images/generated/assets/avatar-transparent-1600-209cb8b4f.png 1600w" type="image/png">
+  <img class="" src="/assets/images/generated/assets/avatar-transparent-800-209cb8b4f.png" width="1615" height="1603">
+</picture>
 </a>
             <ul class='links'>
               <li><a href="/" class="menu-item">Posts</a></li>
@@ -115,7 +119,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>21/08/2020</span></div>   
       
 
-<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>5 minutes to read</span></div>
+<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>6 minutes to read</span></div>
    
     </div>  
     <p>In this tutorial we will learn how to draw a <a href="https://en.wikipedia.org/wiki/Maurer_rose">Maurer Rose</a> with a <a href="https://docs.unity3d.com/ScriptReference/LineRenderer.html">LineRenderer</a> in Unity.</p>
@@ -137,7 +141,11 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       </center>
 
 <h2 id="definition">Definition</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/project-128-4f597ed4f.webp" srcset="/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w" width="128" height="128" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/project-128-4f597ed4f.png" width="128" height="128" />
+</picture>
 
 <p>A Maurer Rose is always defined by two input parameters: <code class="language-plaintext highlighter-rouge">n</code> and <code class="language-plaintext highlighter-rouge">d</code>.</p>
 
@@ -157,7 +165,11 @@ where d is a positive integer and the angles are in degrees, not radians.</p>
 <p>This definition talks about <a href="https://en.wikipedia.org/wiki/Polar_coordinate_system">polar coordinate system</a>. The more important thing to know about it is this: <code class="language-plaintext highlighter-rouge">each point on a plane is determined by a distance from a reference point and an angle from a reference direction</code>. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.</p>
 
 <h2 id="the-formula">The formula</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/math-128-7fe17d269.webp" srcset="/assets/images/generated/assets/logos/math-128-7fe17d269.webp 128w" width="128" height="128" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/math-128-7fe17d269.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/math-128-7fe17d269.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/math-128-7fe17d269.png" width="128" height="128" />
+</picture>
 
 <p>The basic formula is: <code class="language-plaintext highlighter-rouge">r = sin(nθ)</code> and we need to apply it to 361 points, where:</p>
 
@@ -192,30 +204,50 @@ where d is a positive integer and the angles are in degrees, not radians.</p>
 
 <p>If you just hit play button, you will see something like this:</p>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.webp" srcset="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.webp 256w" width="256" height="242" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-200-d24407ade.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.webp 256w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-200-d24407ade.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.png 256w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.png" width="256" height="242" />
+</picture>
 
       </center>
 
 <p><br />
 Go to the LineRenderer component and change the line width to <code class="language-plaintext highlighter-rouge">0.03</code>, then hit play button again.</p>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.webp" srcset="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.webp 256w" width="256" height="224" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-200-71a3f234d.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.webp 256w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-200-71a3f234d.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.png 256w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.png" width="256" height="224" />
+</picture>
 
       </center>
 
 <h2 id="testing-new-inputs">Testing new inputs</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp" srcset="/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w" width="128" height="128" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/programmer-128-6cef95d36.png" width="128" height="128" />
+</picture>
 
 <p>If you change the values of <code class="language-plaintext highlighter-rouge">N</code> and <code class="language-plaintext highlighter-rouge">D</code> of the component in the inspector, you will see a new Maurer Rose been drawing.</p>
 
 <p>The image below shows the result of 6 different inputs (the same inputs used on <a href="https://en.wikipedia.org/wiki/Maurer_rose">Wikipedia</a>):</p>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.webp" srcset="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-2400-5a8621fe1.webp 2400w" width="2400" height="400" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-200-5a8621fe1.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-400-5a8621fe1.webp 400w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.webp 800w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-1600-5a8621fe1.webp 1600w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-200-5a8621fe1.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-400-5a8621fe1.png 400w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.png 800w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-1600-5a8621fe1.png 1600w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.png" width="2400" height="400" />
+</picture>
 
       </center>
 
 <h2 id="going-beyond">Going beyond</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/beyond-128-1d53f18c1.webp" srcset="/assets/images/generated/assets/logos/beyond-128-1d53f18c1.webp 128w" width="128" height="128" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/beyond-128-1d53f18c1.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/beyond-128-1d53f18c1.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/beyond-128-1d53f18c1.png" width="128" height="128" />
+</picture>
 
 <p>Now that you understand what is a Maurer Rose and how to code it inside Unity you can try to do some crazy things with it, like animate the input values or the number of points, or still using it to build a particle system.</p>
 
@@ -320,7 +352,11 @@ This simple formula show how math can be used to explore creativity and beauty.<
      <div class="portifolio-slide">
           <a href="GeneticSharp-Car2D">
                <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp" srcset="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1915-277a451e7.webp 1915w" width="1915" height="988">
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.webp 1600w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.png 1600w" type="image/png">
+  <img class="screenshot" src="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png" width="1915" height="988">
+</picture>
 
       </center>
                GeneticSharp Car2D, an Unity3D sample for GeneticSharp where a genetic algorithm tries to design 2D cars to overcome roads challenges
@@ -328,7 +364,11 @@ This simple formula show how math can be used to explore creativity and beauty.<
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp">               
-          <img class="icon" src="/assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.webp" srcset="/assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.webp 256w" width="256" height="99">
+          <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/google-play-badge-200-f42bdeb50.webp 200w, /assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.webp 256w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/google-play-badge-200-f42bdeb50.png 200w, /assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.png 256w" type="image/png">
+  <img class="icon" src="/assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.png" width="256" height="99">
+</picture>
 
           GeneticSharp Unity3d Samples on Google Play
           </a>
@@ -379,7 +419,11 @@ This simple formula show how math can be used to explore creativity and beauty.<
      </div> -->
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals">
-               <img class="" src="/assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.webp" srcset="/assets/images/generated/games/puzzimals/images/header-1024-9a13ea94a.webp 1024w" width="1024" height="500">
+               <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/header-200-9a13ea94a.webp 200w, /assets/images/generated/games/puzzimals/images/header-400-9a13ea94a.webp 400w, /assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.webp 800w, /assets/images/generated/games/puzzimals/images/header-1024-9a13ea94a.webp 1024w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/header-200-9a13ea94a.png 200w, /assets/images/generated/games/puzzimals/images/header-400-9a13ea94a.png 400w, /assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.png 800w, /assets/images/generated/games/puzzimals/images/header-1024-9a13ea94a.png 1024w" type="image/png">
+  <img class="" src="/assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.png" width="1024" height="500">
+</picture>
     
                <h3>Puzzimals</h3>     
                <i>Play my new mobile game, a tile-matching game with cute graphics and challenging puzzles.</i> 
@@ -387,7 +431,11 @@ This simple formula show how math can be used to explore creativity and beauty.<
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals">
-               <img class="" src="/assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.webp" srcset="/assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.webp 512w" width="512" height="512">
+               <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/logo-200-07340b1ab.webp 200w, /assets/images/generated/games/puzzimals/images/logo-400-07340b1ab.webp 400w, /assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.webp 512w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/logo-200-07340b1ab.png 200w, /assets/images/generated/games/puzzimals/images/logo-400-07340b1ab.png 400w, /assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.png 512w" type="image/png">
+  <img class="" src="/assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.png" width="512" height="512">
+</picture>
    
                <h3>Puzzimals</h3>     
                <i>Play my new mobile game, a tile-matching game with cute graphics and challenging puzzles.</i> 
@@ -395,7 +443,11 @@ This simple formula show how math can be used to explore creativity and beauty.<
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals">
-               <img class="" src="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.webp" srcset="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.webp 450w" width="450" height="253">
+               <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-200-6eb6b7cc2.webp 200w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-400-6eb6b7cc2.webp 400w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.webp 450w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-200-6eb6b7cc2.jpg 200w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-400-6eb6b7cc2.jpg 400w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.jpg 450w" type="image/jpeg">
+  <img class="" src="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.jpg" width="450" height="253">
+</picture>
    
                <h3>Puzzimals</h3>     
                <i>Play my new mobile game, a tile-matching game with cute graphics and challenging puzzles.</i> 

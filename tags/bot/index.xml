@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - bot</title>
  <link href="//tags/bot/index.xml" rel="self"/>
  <link href="/tag/bot.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/bot.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -29,7 +29,11 @@
 &lt;p&gt;Your team can be notified by Buildron about builds status changed. In the mod preferences you can choose what status you want to receive notifications (running|succes|failed).&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.webp 450w&quot; width=&quot;450&quot; height=&quot;106&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-200-0e248dd25.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-400-0e248dd25.webp 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.webp 450w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-200-0e248dd25.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-400-0e248dd25.png 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.png 450w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.png&quot; width=&quot;450&quot; height=&quot;106&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -37,7 +41,11 @@
 &lt;p&gt;Filter buils by status or text.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.webp 565w&quot; width=&quot;565&quot; height=&quot;186&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-200-2de211b94.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-400-2de211b94.webp 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.webp 565w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-200-2de211b94.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-400-2de211b94.png 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.png 565w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.png&quot; width=&quot;565&quot; height=&quot;186&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -45,7 +53,11 @@
 &lt;p&gt;Reset previous builds filter (no filter).&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.webp 248w&quot; width=&quot;248&quot; height=&quot;102&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-200-220e5013f.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.webp 248w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-200-220e5013f.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.png 248w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.png&quot; width=&quot;248&quot; height=&quot;102&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -53,7 +65,11 @@
 &lt;p&gt;Sort buils by status, text or date.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.webp 218w&quot; width=&quot;218&quot; height=&quot;95&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-200-b97f5d2a2.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.webp 218w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-200-b97f5d2a2.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.png 218w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.png&quot; width=&quot;218&quot; height=&quot;95&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -61,7 +77,11 @@
 &lt;p&gt;Move the camera the amount of pixels define in the x,y,z coordinates.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.webp 256w&quot; width=&quot;256&quot; height=&quot;95&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-200-3cb740d22.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-200-3cb740d22.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.png 256w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.png&quot; width=&quot;256&quot; height=&quot;95&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -69,7 +89,11 @@
 &lt;p&gt;Reset the camera position.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.webp 213w&quot; width=&quot;213&quot; height=&quot;97&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-200-dee0bb971.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.webp 213w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-200-dee0bb971.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.png 213w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.png&quot; width=&quot;213&quot; height=&quot;97&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -77,7 +101,11 @@
 &lt;p&gt;Take a screenshot of current Buildron state.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.webp 418w&quot; width=&quot;418&quot; height=&quot;424&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-200-ddc5d66d5.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-400-ddc5d66d5.webp 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.webp 418w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-200-ddc5d66d5.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-400-ddc5d66d5.png 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.png 418w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.png&quot; width=&quot;418&quot; height=&quot;424&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -101,7 +129,11 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;p&gt;Then I decided to try a very raw solution using the Unity3d WWWForm and it worked well, very simple, but can be useful to someone. The result is the code bellow:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.webp 611w&quot; width=&quot;611&quot; height=&quot;119&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-200-c91ea3bd8.webp 200w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-400-c91ea3bd8.webp 400w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.webp 611w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-200-c91ea3bd8.png 200w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-400-c91ea3bd8.png 400w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.png 611w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.png&quot; width=&quot;611&quot; height=&quot;119&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 

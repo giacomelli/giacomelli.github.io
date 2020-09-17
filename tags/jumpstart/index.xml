@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - jumpstart</title>
  <link href="//tags/jumpstart/index.xml" rel="self"/>
  <link href="/tag/jumpstart.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/jumpstart.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -29,7 +29,11 @@
 &lt;p&gt;The idea of the tool was born a long time ago and became a little stronger every time that I had to create a new solution and all the projects by hand, but when I saw the message bellow in the &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt; page I decided to finally write the tool… and the name was very clear, almost.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-1057-ef756f97b.webp 1057w&quot; width=&quot;1057&quot; height=&quot;74&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-200-ef756f97b.webp 200w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-400-ef756f97b.webp 400w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.webp 800w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-1057-ef756f97b.webp 1057w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-200-ef756f97b.png 200w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-400-ef756f97b.png 400w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.png 800w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-1057-ef756f97b.png 1057w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.png&quot; width=&quot;1057&quot; height=&quot;74&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - car2d</title>
  <link href="//tags/car2d/index.xml" rel="self"/>
  <link href="/tag/car2d.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/car2d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -18,7 +18,11 @@
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-801-6761995cb.webp 801w&quot; width=&quot;801&quot; height=&quot;388&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-200-6761995cb.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-400-6761995cb.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-801-6761995cb.webp 801w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-200-6761995cb.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-400-6761995cb.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-801-6761995cb.png 801w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.png&quot; width=&quot;801&quot; height=&quot;388&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -79,7 +83,11 @@
 &lt;p&gt;The fitness of each car (chromosome) to the road will be the &lt;strong&gt;sum of the max distance&lt;/strong&gt; reach by it &lt;strong&gt;plus the average velocity&lt;/strong&gt; at that moment.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-1053-40a0bcc10.webp 1053w&quot; width=&quot;1053&quot; height=&quot;550&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-200-40a0bcc10.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-400-40a0bcc10.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-1053-40a0bcc10.webp 1053w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-200-40a0bcc10.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-400-40a0bcc10.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-1053-40a0bcc10.png 1053w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.png&quot; width=&quot;1053&quot; height=&quot;550&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -96,7 +104,11 @@
 
 &lt;p&gt;Besides that, the chromosomes are evaluated in parallel using the GeneticSharp’s ParallelTaskExecutor and you can see all them in 4x4 grid:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1915-277a451e7.webp 1915w&quot; width=&quot;1915&quot; height=&quot;988&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png&quot; width=&quot;1915&quot; height=&quot;988&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - debug</title>
  <link href="//tags/debug/index.xml" rel="self"/>
  <link href="/tag/debug.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/debug.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -33,7 +33,11 @@
 &lt;p&gt;You are debugging a list of Tweets, let me say 200 tweets, and all tweets in the debugger view looks like the image below:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.webp&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.webp 139w&quot; width=&quot;139&quot; height=&quot;163&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.webp 139w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png 139w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png&quot; width=&quot;139&quot; height=&quot;163&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -53,7 +57,11 @@
 
 &lt;p&gt;&lt;strong&gt;Now, that “secret” tweet list looks like:&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.webp&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.webp 840w&quot; width=&quot;840&quot; height=&quot;52&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-02058a557.webp 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-02058a557.webp 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.webp 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.webp 840w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-02058a557.png 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-02058a557.png 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.png 840w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png&quot; width=&quot;840&quot; height=&quot;52&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 

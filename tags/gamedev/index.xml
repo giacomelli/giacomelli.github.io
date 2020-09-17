@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -61,7 +61,11 @@
 &lt;p&gt;While we were developing it we needed to change some configurations on the extension to use different URLs of our API depending on what environment the Chrome Extension was using, like DEV (local), TEST, and Production.&lt;/p&gt;
 
 &lt;h2 id=&quot;chrome-extension&quot;&gt;Chrome Extension&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/chrome-extension-496-209699985.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/chrome-extension-496-209699985.webp 496w&quot; width=&quot;496&quot; height=&quot;150&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/chrome-extension-200-209699985.webp 200w, /assets/images/generated/assets/logos/chrome-extension-400-209699985.webp 400w, /assets/images/generated/assets/logos/chrome-extension-496-209699985.webp 496w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/chrome-extension-200-209699985.png 200w, /assets/images/generated/assets/logos/chrome-extension-400-209699985.png 400w, /assets/images/generated/assets/logos/chrome-extension-496-209699985.png 496w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/chrome-extension-496-209699985.png&quot; width=&quot;496&quot; height=&quot;150&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;For this tutorial, I’ll use a Chrome Extension basic sample called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt;.&lt;br /&gt; 
 You can download it from this page &lt;a href=&quot;https://developer.chrome.com/extensions/samples&quot;&gt;https://developer.chrome.com/extensions/samples&lt;/a&gt; or directly from &lt;a href=&quot;https://developer.chrome.com/extensions/examples/tutorials/hello_extensions.zip&quot;&gt;here&lt;/a&gt;.
@@ -80,11 +84,19 @@ At that time we did not find any builtin or other solution to make this workflow
 &lt;p&gt;We decided to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt;, because a Chrome Extensions is a bunch of .js, .html and .json files. Perfect to use gulp.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;If we just try to open our download &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extension&lt;/code&gt; .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.webp 113w&quot; width=&quot;113&quot; height=&quot;145&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.webp 113w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.png 113w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.png&quot; width=&quot;113&quot; height=&quot;145&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -99,7 +111,11 @@ At that time we did not find any builtin or other solution to make this workflow
 &lt;/ul&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w&quot; width=&quot;336&quot; height=&quot;167&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png 336w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png&quot; width=&quot;336&quot; height=&quot;167&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -107,7 +123,11 @@ At that time we did not find any builtin or other solution to make this workflow
 &lt;p&gt;Move the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt; files to a subfolder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt;.
 At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.webp 202w&quot; width=&quot;202&quot; height=&quot;142&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-200-484bbc2a8.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.webp 202w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-200-484bbc2a8.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.png 202w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.png&quot; width=&quot;202&quot; height=&quot;142&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -134,7 +154,11 @@ At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;p&gt;This is the full &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; file that will allow our development workflow for different environments.&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-gulpfilejs-sections&quot;&gt;The gulpfile.js sections&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;Now I will explain each section of it.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -189,7 +213,11 @@ Here we are basically defining the order of each function that will be called wh
 &lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=watch.section.js&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;packagesjson-file&quot;&gt;packages.json file&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;Change the content of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;packages.json&lt;/code&gt; file to the content below to update the dependencies.&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
@@ -200,12 +228,20 @@ Here we are basically defining the order of each function that will be called wh
 &lt;h2 id=&quot;running-the-gulp-for-the-first-time&quot;&gt;Running the gulp for the first time&lt;/h2&gt;
 &lt;p&gt;Now, if you just run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.webp 369w&quot; width=&quot;369&quot; height=&quot;148&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-200-d0dfc6cee.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.webp 369w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-200-d0dfc6cee.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.png 369w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.png&quot; width=&quot;369&quot; height=&quot;148&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
 &lt;h2 id=&quot;creating-the-configjson-files&quot;&gt;Creating the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;We need to create our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
 They are 3 files:&lt;/p&gt;
@@ -233,13 +269,21 @@ Here is the content of each one:&lt;/p&gt;
 &lt;h2 id=&quot;running-the-gulp-for-the-second-time&quot;&gt;Running the gulp for the second time&lt;/h2&gt;
 &lt;p&gt;Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.webp 379w&quot; width=&quot;379&quot; height=&quot;255&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-200-b124fa8a9.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.webp 379w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-200-b124fa8a9.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.png 379w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.png&quot; width=&quot;379&quot; height=&quot;255&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
 &lt;p&gt;There is a new subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; created. Load it on Chrome Extensions page:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.webp 423w&quot; width=&quot;423&quot; height=&quot;230&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-200-0991800ea.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-400-0991800ea.webp 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.webp 423w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-200-0991800ea.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-400-0991800ea.png 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.png 423w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.png&quot; width=&quot;423&quot; height=&quot;230&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -270,7 +314,11 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mani
 &lt;p&gt;The line &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;/scripts/config.js&quot;&lt;/code&gt; is what we need to access the configuration values.&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-manifestjson-files&quot;&gt;Creating the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;We need to create our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files, in the same way, we created our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
@@ -292,7 +340,11 @@ Here is the content of each one:&lt;/p&gt;
 
 &lt;h2 id=&quot;running-the-gulp-for-each-environment&quot;&gt;Running the gulp for each environment&lt;/h2&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w&quot; width=&quot;336&quot; height=&quot;167&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png 336w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png&quot; width=&quot;336&quot; height=&quot;167&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder.
@@ -303,14 +355,22 @@ This will use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt
 &lt;p&gt;Now, try to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --config TEST&lt;/code&gt;.
 In the Chrome Extensions page you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.webp 468w&quot; width=&quot;468&quot; height=&quot;358&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-200-439243e20.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-400-439243e20.webp 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.webp 468w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-200-439243e20.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-400-439243e20.png 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.png 468w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.png&quot; width=&quot;468&quot; height=&quot;358&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
 &lt;p&gt;Your extension is using the TEST environment values.
 When you click on the extension icon on the Chrome toolbar, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.webp 129w&quot; width=&quot;129&quot; height=&quot;177&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.webp 129w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.png 129w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.png&quot; width=&quot;129&quot; height=&quot;177&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -329,7 +389,11 @@ You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&
 &lt;p&gt;In this .zip are all files mentioned in this tutorial, you just need to set up your gulp environment and call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install gulp&lt;/code&gt; before starting to use it.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
 
@@ -423,7 +487,11 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 &lt;/blockquote&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.webp 388w&quot; width=&quot;388&quot; height=&quot;149&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-200-29e77de54.webp 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.webp 388w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-200-29e77de54.png 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.png 388w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.png&quot; width=&quot;388&quot; height=&quot;149&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -434,7 +502,11 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 
 &lt;p&gt;This can be quite useful when we need different lighting setups for different target platforms.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.webp 554w&quot; width=&quot;554&quot; height=&quot;638&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-200-198be746b.webp 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-400-198be746b.webp 400w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.webp 554w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-200-198be746b.png 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-400-198be746b.png 400w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.png 554w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.png&quot; width=&quot;554&quot; height=&quot;638&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -515,7 +587,11 @@ From the 9 stores supported, 7 are fully integrated with UDP. What this meaning?
 &lt;p&gt;Please, if you did not read the official documentation yet, go and &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.purchasing.udp@2.0/manual/index.html&quot;&gt;read it&lt;/a&gt;, then come back here. You’ll better understand this post and the whole UDP solution after educated yourself about it.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-800-51d2d476b.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-1024-51d2d476b.webp 1024w&quot; width=&quot;1024&quot; height=&quot;768&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-200-51d2d476b.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-400-51d2d476b.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-800-51d2d476b.webp 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-1024-51d2d476b.webp 1024w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-200-51d2d476b.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-400-51d2d476b.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-800-51d2d476b.png 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-1024-51d2d476b.png 1024w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-800-51d2d476b.png&quot; width=&quot;1024&quot; height=&quot;768&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -540,7 +616,11 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 
 &lt;p&gt;You’ll need this when you build to UDP and remember to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Target Google Play&lt;/code&gt; when you build to Google Play.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-800-2be9cf25c.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-1000-2be9cf25c.webp 1000w&quot; width=&quot;1000&quot; height=&quot;375&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-200-2be9cf25c.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-400-2be9cf25c.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-800-2be9cf25c.webp 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-1000-2be9cf25c.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-200-2be9cf25c.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-400-2be9cf25c.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-800-2be9cf25c.png 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-1000-2be9cf25c.png 1000w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-800-2be9cf25c.png&quot; width=&quot;1000&quot; height=&quot;375&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -560,7 +640,11 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 &lt;p&gt;Just build your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.apk&lt;/code&gt; on Unity and open it on emulator (like &lt;a href=&quot;https://www.bluestacks.com/&quot;&gt;BlueStacks&lt;/a&gt;) or directly on your Android device.
 If you setup UDP right, you should see a screen like below when the game starts.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-489-65a5a4303.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-489-65a5a4303.webp 489w&quot; width=&quot;489&quot; height=&quot;239&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-200-65a5a4303.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-400-65a5a4303.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-489-65a5a4303.webp 489w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-200-65a5a4303.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-400-65a5a4303.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-489-65a5a4303.png 489w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-489-65a5a4303.png&quot; width=&quot;489&quot; height=&quot;239&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -571,7 +655,11 @@ If you setup UDP right, you should see a screen like below when the game starts.
 
 &lt;p&gt;After this, you can refresh your game page on UDP and you should see the result below on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sandbox Testing&lt;/code&gt; section:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-346-289a63222.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-346-289a63222.webp 346w&quot; width=&quot;346&quot; height=&quot;86&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-200-289a63222.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-346-289a63222.webp 346w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-200-289a63222.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-346-289a63222.png 346w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-346-289a63222.png&quot; width=&quot;346&quot; height=&quot;86&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -592,7 +680,11 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;In my case on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;App Signature&lt;/code&gt; section of the game info, a used the recommend option &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Export and upload your own key and certificate&lt;/code&gt;. This is the same certificate used by Google Play Services and APIs.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-800-3a4a50966.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-882-3a4a50966.webp 882w&quot; width=&quot;882&quot; height=&quot;238&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-200-3a4a50966.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-400-3a4a50966.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-800-3a4a50966.webp 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-882-3a4a50966.webp 882w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-200-3a4a50966.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-400-3a4a50966.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-800-3a4a50966.png 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-882-3a4a50966.png 882w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-800-3a4a50966.png&quot; width=&quot;882&quot; height=&quot;238&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -601,7 +693,11 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;Now, go back to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section and click on the button &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Create credentials&lt;/code&gt;, then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OAuth client ID&lt;/code&gt;.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-596-ef36e16c7.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-596-ef36e16c7.webp 596w&quot; width=&quot;596&quot; height=&quot;240&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-200-ef36e16c7.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-400-ef36e16c7.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-596-ef36e16c7.webp 596w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-200-ef36e16c7.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-400-ef36e16c7.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-596-ef36e16c7.png 596w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-596-ef36e16c7.png&quot; width=&quot;596&quot; height=&quot;240&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -631,7 +727,11 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;p&gt;As you follow the UDP documentation you will reach the point will need to create your game on the UDP dashboard.
 If you already have the game published on Google Play, as was my case with &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt;, you can use the right-top button &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IMPORT FROM GOOGLE PLAY&lt;/code&gt; in the game page.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-610-0e5146f1b.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-610-0e5146f1b.webp 610w&quot; width=&quot;610&quot; height=&quot;239&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-200-0e5146f1b.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-400-0e5146f1b.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-610-0e5146f1b.webp 610w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-200-0e5146f1b.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-400-0e5146f1b.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-610-0e5146f1b.png 610w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-610-0e5146f1b.png&quot; width=&quot;610&quot; height=&quot;239&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -674,7 +774,11 @@ If you already have the game published on Google Play, as was my case with &lt;a
 
 &lt;p&gt;For each store, you will see different screens. For example, for QooApp you will see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-282-1e49178bb.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-282-1e49178bb.webp 282w&quot; width=&quot;282&quot; height=&quot;268&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-200-1e49178bb.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-282-1e49178bb.webp 282w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-200-1e49178bb.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-282-1e49178bb.png 282w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-282-1e49178bb.png&quot; width=&quot;282&quot; height=&quot;268&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -684,7 +788,11 @@ UDP will send the game to store review and you can monitor the progress on the d
 UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-800-3447a9f64.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-1000-3447a9f64.webp 1000w&quot; width=&quot;1000&quot; height=&quot;470&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-200-3447a9f64.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-400-3447a9f64.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-800-3447a9f64.webp 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-1000-3447a9f64.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-200-3447a9f64.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-400-3447a9f64.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-800-3447a9f64.png 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-1000-3447a9f64.png 1000w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-800-3447a9f64.png&quot; width=&quot;1000&quot; height=&quot;470&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -734,7 +842,11 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;A Maurer Rose is always defined by two input parameters: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d&lt;/code&gt;.&lt;/p&gt;
 
@@ -754,7 +866,11 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;p&gt;This definition talks about &lt;a href=&quot;https://en.wikipedia.org/wiki/Polar_coordinate_system&quot;&gt;polar coordinate system&lt;/a&gt;. The more important thing to know about it is this: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;each point on a plane is determined by a distance from a reference point and an angle from a reference direction&lt;/code&gt;. So, if you want to draw a line from a point, we need to take that point, an angle, and distance to calculate the second point.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-formula&quot;&gt;The formula&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;The basic formula is: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r = sin(nθ)&lt;/code&gt; and we need to apply it to 361 points, where:&lt;/p&gt;
 
@@ -789,30 +905,50 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 
 &lt;p&gt;If you just hit play button, you will see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.webp 256w&quot; width=&quot;256&quot; height=&quot;242&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-200-d24407ade.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-200-d24407ade.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.png 256w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.png&quot; width=&quot;256&quot; height=&quot;242&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Go to the LineRenderer component and change the line width to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.webp 256w&quot; width=&quot;256&quot; height=&quot;224&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-200-71a3f234d.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-200-71a3f234d.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.png 256w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.png&quot; width=&quot;256&quot; height=&quot;224&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
 &lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;If you change the values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;N&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D&lt;/code&gt; of the component in the inspector, you will see a new Maurer Rose been drawing.&lt;/p&gt;
 
 &lt;p&gt;The image below shows the result of 6 different inputs (the same inputs used on &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Wikipedia&lt;/a&gt;):&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-2400-5a8621fe1.webp 2400w&quot; width=&quot;2400&quot; height=&quot;400&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-200-5a8621fe1.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-400-5a8621fe1.webp 400w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.webp 800w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-1600-5a8621fe1.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-200-5a8621fe1.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-400-5a8621fe1.png 400w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.png 800w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-1600-5a8621fe1.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.png&quot; width=&quot;2400&quot; height=&quot;400&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
 &lt;h2 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;Now that you understand what is a Maurer Rose and how to code it inside Unity you can try to do some crazy things with it, like animate the input values or the number of points, or still using it to build a particle system.&lt;/p&gt;
 
@@ -861,7 +997,11 @@ This simple formula show how math can be used to explore creativity and beauty.&
    <id>//unitytips-settings-provider</id>
    <content type="html">&lt;p&gt;You can add a custom section to &lt;a href=&quot;https://docs.unity3d.com/Manual/comp-ManagerGroup.html&quot;&gt;Project Settings&lt;/a&gt; window that allows you to configure some global settings for your project using a &lt;a href=&quot;https://docs.unity3d.com/2018.3/Documentation/ScriptReference/SettingsProvider.html&quot;&gt;SettingsProvider&lt;/a&gt;&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.webp 1572w&quot; width=&quot;1572&quot; height=&quot;618&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-200-27b940cc8.webp 200w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-400-27b940cc8.webp 400w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.webp 800w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.webp 1572w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-200-27b940cc8.jpg 200w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-400-27b940cc8.jpg 400w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.jpg 800w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.jpg 1572w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.jpg&quot; width=&quot;1572&quot; height=&quot;618&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -889,7 +1029,11 @@ This simple formula show how math can be used to explore creativity and beauty.&
    <id>//unitytips-helpbox-attribute</id>
    <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyAttribute.html&quot;&gt;PropertyAttribute&lt;/a&gt; to display a help box on inspector showing a few lines of information, like &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/EditorGUI.HelpBox.html&quot;&gt;EditorGUI.HelpBox&lt;/a&gt;, but with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docs&lt;/code&gt; button to the documentation page.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp 467w&quot; width=&quot;467&quot; height=&quot;413&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-200-8dae754d8.webp 200w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-400-8dae754d8.webp 400w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp 467w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-200-8dae754d8.png 200w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-400-8dae754d8.png 400w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png 467w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png&quot; width=&quot;467&quot; height=&quot;413&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -924,7 +1068,11 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;I made the gist below that uses the plugin to add a social share component to any game object.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.webp 256w&quot; width=&quot;256&quot; height=&quot;382&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-200-f6e7f7555.webp 200w, /assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-200-f6e7f7555.jpg 200w, /assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.jpg 256w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.jpg&quot; width=&quot;256&quot; height=&quot;382&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1030,21 +1178,33 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;h2 id=&quot;configuring-the-game-on-google-play-console&quot;&gt;Configuring the game on Google Play Console&lt;/h2&gt;
 &lt;p&gt;First of all you need to create the game on &lt;a href=&quot;https://play.google.com/publish&quot;&gt;Google Play Console&lt;/a&gt; as any other game and make an app release (an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Internal test track&lt;/code&gt; already works).&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-800-619cc16bd.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-1912-619cc16bd.webp 1912w&quot; width=&quot;1912&quot; height=&quot;1278&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-200-619cc16bd.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-400-619cc16bd.webp 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-800-619cc16bd.webp 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-1600-619cc16bd.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-200-619cc16bd.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-400-619cc16bd.png 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-800-619cc16bd.png 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-1600-619cc16bd.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-release-800-619cc16bd.png&quot; width=&quot;1912&quot; height=&quot;1278&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Services &amp;amp; APIS&lt;/code&gt; menu, after enter on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Google Play game services&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-800-d9c94847a.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-1872-d9c94847a.webp 1872w&quot; width=&quot;1872&quot; height=&quot;212&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-200-d9c94847a.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-400-d9c94847a.webp 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-800-d9c94847a.webp 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-1600-d9c94847a.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-200-d9c94847a.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-400-d9c94847a.png 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-800-d9c94847a.png 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-1600-d9c94847a.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/services-and-apis-800-d9c94847a.png&quot; width=&quot;1872&quot; height=&quot;212&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Fill only the required information for test, then go to menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Linked apps&lt;/code&gt; and link it to your game on with the app on Google Play Console.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-800-e3ebbde48.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-1906-e3ebbde48.webp 1906w&quot; width=&quot;1906&quot; height=&quot;390&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-200-e3ebbde48.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-400-e3ebbde48.webp 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-800-e3ebbde48.webp 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-1600-e3ebbde48.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-200-e3ebbde48.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-400-e3ebbde48.png 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-800-e3ebbde48.png 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-1600-e3ebbde48.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/linked-apps-800-e3ebbde48.png&quot; width=&quot;1906&quot; height=&quot;390&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1052,7 +1212,11 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;h2 id=&quot;creating-some-achievements-for-test&quot;&gt;Creating some achievements for test&lt;/h2&gt;
 &lt;p&gt;In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Game services section&lt;/code&gt; open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Achievements&lt;/code&gt; menu and add some achievements.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-800-06befe59c.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-1916-06befe59c.webp 1916w&quot; width=&quot;1916&quot; height=&quot;404&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-200-06befe59c.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-400-06befe59c.webp 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-800-06befe59c.webp 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-1600-06befe59c.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-200-06befe59c.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-400-06befe59c.png 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-800-06befe59c.png 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-1600-06befe59c.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-800-06befe59c.png&quot; width=&quot;1916&quot; height=&quot;404&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1064,7 +1228,11 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;h2 id=&quot;installing-the-plugin&quot;&gt;Installing the plugin&lt;/h2&gt;
 &lt;p&gt;To install the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Google Play Games Plugin for Unity&lt;/code&gt;, you should follow the steps in &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity#plugin-installation&quot;&gt;Plugin Installation&lt;/a&gt; and &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity#android-setup&quot;&gt;Android Setup&lt;/a&gt; sections.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup-643-86fe283d8.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup-643-86fe283d8.webp 643w&quot; width=&quot;643&quot; height=&quot;191&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup-200-86fe283d8.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup-400-86fe283d8.webp 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup-643-86fe283d8.webp 643w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup-200-86fe283d8.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup-400-86fe283d8.png 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup-643-86fe283d8.png 643w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/android-setup-643-86fe283d8.png&quot; width=&quot;643&quot; height=&quot;191&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1074,28 +1242,44 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;Go to &lt;a href=&quot;https://play.google.com/publish&quot;&gt;Google Play Console&lt;/a&gt; on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;App Signing&lt;/code&gt;section and use the option &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;App Signing by Google Play&lt;/code&gt;&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-800-ffdbecbe0.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-1014-ffdbecbe0.webp 1014w&quot; width=&quot;1014&quot; height=&quot;264&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-200-ffdbecbe0.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-400-ffdbecbe0.webp 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-800-ffdbecbe0.webp 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-1014-ffdbecbe0.webp 1014w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-200-ffdbecbe0.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-400-ffdbecbe0.png 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-800-ffdbecbe0.png 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-1014-ffdbecbe0.png 1014w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/app-signing-800-ffdbecbe0.png&quot; width=&quot;1014&quot; height=&quot;264&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now you need to copy your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1&lt;/code&gt; fingerprint of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Upload certificate&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;App signing&lt;/code&gt; section.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-800-6193a130c.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-1932-6193a130c.webp 1932w&quot; width=&quot;1932&quot; height=&quot;566&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-200-6193a130c.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-400-6193a130c.webp 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-800-6193a130c.webp 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-1600-6193a130c.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-200-6193a130c.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-400-6193a130c.png 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-800-6193a130c.png 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-1600-6193a130c.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/upload-certificate-800-6193a130c.png&quot; width=&quot;1932&quot; height=&quot;566&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then go to your OAuth credentials on &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API console&lt;/a&gt;.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-800-4695c1fdb.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-2018-4695c1fdb.webp 2018w&quot; width=&quot;2018&quot; height=&quot;814&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-200-4695c1fdb.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-400-4695c1fdb.webp 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-800-4695c1fdb.webp 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-1600-4695c1fdb.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-200-4695c1fdb.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-400-4695c1fdb.png 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-800-4695c1fdb.png 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-1600-4695c1fdb.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-credentials-800-4695c1fdb.png&quot; width=&quot;2018&quot; height=&quot;814&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;the Google API console&lt;/code&gt;, select your game on the top dropdown, then go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; menu and edit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt;. Paste the fingertip on the field &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt; and save it.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-800-d4e86c82d.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-1608-d4e86c82d.webp 1608w&quot; width=&quot;1608&quot; height=&quot;812&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-200-d4e86c82d.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-400-d4e86c82d.webp 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-800-d4e86c82d.webp 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-1600-d4e86c82d.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-200-d4e86c82d.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-400-d4e86c82d.png 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-800-d4e86c82d.png 800w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-1600-d4e86c82d.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/google-api-console-fingertip-800-d4e86c82d.png&quot; width=&quot;1608&quot; height=&quot;812&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1114,13 +1298,21 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;If everything was done correctly, you should see a screen like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui-640-aa631ec71.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui-640-aa631ec71.webp 640w&quot; width=&quot;640&quot; height=&quot;617&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui-200-aa631ec71.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui-400-aa631ec71.webp 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui-640-aa631ec71.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui-200-aa631ec71.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui-400-aa631ec71.png 400w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui-640-aa631ec71.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/achievements-ui-640-aa631ec71.png&quot; width=&quot;640&quot; height=&quot;617&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/conclusion-128-2cdd65c40.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/conclusion-128-2cdd65c40.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/conclusion-128-2cdd65c40.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/conclusion-128-2cdd65c40.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/conclusion-128-2cdd65c40.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1141,7 +1333,11 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;h2 id=&quot;extra-tips-and-tricks&quot;&gt;Extra tips and tricks&lt;/h2&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/extra-tips-tricks-128-4f597ed4f.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/extra-tips-tricks-128-4f597ed4f.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/extra-tips-tricks-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/extra-tips-tricks-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/extra-tips-tricks-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;Below a list of tips and tricks for non-common scenarios.&lt;/p&gt;
@@ -1165,14 +1361,22 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;Go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/GooglePlayGames&lt;/code&gt; folder and create a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assembly Definition&lt;/code&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GooglePlayGames&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime-312-12caebe29.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime-312-12caebe29.webp 312w&quot; width=&quot;312&quot; height=&quot;640&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime-200-12caebe29.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime-312-12caebe29.webp 312w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime-200-12caebe29.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime-312-12caebe29.png 312w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-runtime-312-12caebe29.png&quot; width=&quot;312&quot; height=&quot;640&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/GooglePlayGames/Editor&lt;/code&gt; folder and create a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assembly Definition&lt;/code&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GooglePlayGames.Editor&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor-309-c0b33e16c.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor-309-c0b33e16c.webp 309w&quot; width=&quot;309&quot; height=&quot;640&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor-200-c0b33e16c.webp 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor-309-c0b33e16c.webp 309w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor-200-c0b33e16c.png 200w, /assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor-309-c0b33e16c.png 309w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/04/18/google-play-games-plugin-for-unity-tips-and-tricks/assembly-definition-editor-309-c0b33e16c.png&quot; width=&quot;309&quot; height=&quot;640&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -2201,7 +2405,11 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The idea behind DefaultAnimationsEditorWindow is that when you have a bunch o characters using the same kind of animations, they used the same structure of sprite sheets, so you can create the animations based on the sprites indexes on sprite sheet texture.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.webp 678w&quot; width=&quot;678&quot; height=&quot;178&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-200-7a432d7c2.webp 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-400-7a432d7c2.webp 400w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.webp 678w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-200-7a432d7c2.png 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-400-7a432d7c2.png 400w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.png 678w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.png&quot; width=&quot;678&quot; height=&quot;178&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;similar sprites sheets from Phantasy Star IV (Alys, Chaz and Demi). Sprites ripped by Ultimecia from &lt;a href=&quot;https://www.spriters-resource.com/genesis_32x_scd/ps4&quot;&gt;The Spriters Resource&lt;/a&gt;&lt;/p&gt;
@@ -2211,7 +2419,11 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Starting with sprite to walk down and ending with the last sprite of walk horizontal, we have 9 sprites and in all sprite sheets the sprites indexes are the same:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.webp 134w&quot; width=&quot;134&quot; height=&quot;31&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.webp 134w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.png 134w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.png&quot; width=&quot;134&quot; height=&quot;31&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -2223,7 +2435,11 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&lt;/a&gt;. To start the tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -2265,7 +2481,11 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;defaultanimationseditorwindow&quot;&gt;DefaultAnimationsEditorWindow&lt;/h2&gt;
 &lt;p&gt;In the code bellow, we define the menu for the window through the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShowWindow&lt;/code&gt; and the attribute &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.webp 225w&quot; width=&quot;225&quot; height=&quot;201&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-200-3ddf249e2.webp 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.webp 225w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-200-3ddf249e2.png 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.png 225w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.png&quot; width=&quot;225&quot; height=&quot;201&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Default Animations menu item&lt;/p&gt;
@@ -2276,7 +2496,11 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The next 3 methods just draw the components to the editor window GUI.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.webp 375w&quot; width=&quot;375&quot; height=&quot;186&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-200-aa3ab20da.webp 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.webp 375w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-200-aa3ab20da.png 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.png 375w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.png&quot; width=&quot;375&quot; height=&quot;186&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;editor window&lt;/p&gt;
@@ -2405,7 +2629,11 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The name of Sorting Layer been used is showing in the top of each game object in the scene view.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.webp 1084w&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.webp 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.webp 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.webp 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.webp 1084w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.png 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.png 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.png 1084w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
@@ -2465,7 +2693,11 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-213-9e758fd81.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-213-9e758fd81.webp 213w&quot; width=&quot;213&quot; height=&quot;186&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-200-9e758fd81.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-213-9e758fd81.webp 213w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-200-9e758fd81.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-213-9e758fd81.png 213w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-213-9e758fd81.png&quot; width=&quot;213&quot; height=&quot;186&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation clips available on Sci Fi Warrior PBR HP&lt;/p&gt;
@@ -2476,7 +2708,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Idle_GunMiddle&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-445-2295a48c7.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-445-2295a48c7.webp 445w&quot; width=&quot;445&quot; height=&quot;488&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-200-2295a48c7.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-400-2295a48c7.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-445-2295a48c7.webp 445w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-200-2295a48c7.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-400-2295a48c7.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-445-2295a48c7.png 445w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-445-2295a48c7.png&quot; width=&quot;445&quot; height=&quot;488&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot stands idle with the gun in the middle of his body&lt;/p&gt;
@@ -2485,7 +2721,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;WalkForward_Shoot&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-492-475cee141.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-492-475cee141.webp 492w&quot; width=&quot;492&quot; height=&quot;583&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-200-475cee141.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-400-475cee141.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-492-475cee141.webp 492w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-200-475cee141.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-400-475cee141.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-492-475cee141.png 492w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-492-475cee141.png&quot; width=&quot;492&quot; height=&quot;583&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot walk forward and shoot&lt;/p&gt;
@@ -2517,7 +2757,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;By reading those two sections is quite clear that we need to use avatar masks and animation layers together to combine our animations of different body parts. So, in the next sections, I will demonstrate how to combine three animations (Idle_GunMiddle, WalkForward_Shoot, and Shoot_single) to make the robot shoot while stands idle and walk forward with a gun in middle body. After that, I will propose you a challenge for the other animations available.&lt;/p&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&quot;&gt;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&lt;/a&gt;. To start this tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -2536,7 +2780,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; button. You should see a screen like this:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-800-383f1880a.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-837-383f1880a.webp 837w&quot; width=&quot;837&quot; height=&quot;469&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-200-383f1880a.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-400-383f1880a.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-800-383f1880a.webp 800w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-837-383f1880a.webp 837w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-200-383f1880a.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-400-383f1880a.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-800-383f1880a.png 800w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-837-383f1880a.png 837w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-800-383f1880a.png&quot; width=&quot;837&quot; height=&quot;469&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Starter project running: just HUD&lt;/p&gt;
@@ -2548,7 +2796,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Create a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Animation Controller&lt;/code&gt; (menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/Create/Animation Controller&lt;/code&gt;) and open it:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-548-eb3e09a46.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-548-eb3e09a46.webp 548w&quot; width=&quot;548&quot; height=&quot;212&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-200-eb3e09a46.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-400-eb3e09a46.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-548-eb3e09a46.webp 548w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-200-eb3e09a46.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-400-eb3e09a46.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-548-eb3e09a46.png 548w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-548-eb3e09a46.png&quot; width=&quot;548&quot; height=&quot;212&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Animator window showing the animation controller created&lt;/p&gt;
@@ -2568,7 +2820,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-323-d9aa1ab44.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-323-d9aa1ab44.webp 323w&quot; width=&quot;323&quot; height=&quot;84&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-200-d9aa1ab44.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-323-d9aa1ab44.webp 323w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-200-d9aa1ab44.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-323-d9aa1ab44.png 323w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-323-d9aa1ab44.png&quot; width=&quot;323&quot; height=&quot;84&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward parameter created&lt;/p&gt;
@@ -2577,7 +2833,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;We want to activate the transition from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; is true, so select this transition (click on the arrow connecting the state &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Any State&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt;) and in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Conditions&lt;/code&gt; list on inspector add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; equals &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-426-6d24ef63e.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-426-6d24ef63e.webp 426w&quot; width=&quot;426&quot; height=&quot;74&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-200-6d24ef63e.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-400-6d24ef63e.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-426-6d24ef63e.webp 426w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-200-6d24ef63e.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-400-6d24ef63e.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-426-6d24ef63e.png 426w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-426-6d24ef63e.png&quot; width=&quot;426&quot; height=&quot;74&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward condition defined&lt;/p&gt;
@@ -2586,7 +2846,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Click the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reset&lt;/code&gt; to auto fit the exit and transition time:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-424-b2fd78dec.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-424-b2fd78dec.webp 424w&quot; width=&quot;424&quot; height=&quot;80&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-200-b2fd78dec.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-400-b2fd78dec.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-424-b2fd78dec.webp 424w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-200-b2fd78dec.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-400-b2fd78dec.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-424-b2fd78dec.png 424w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-424-b2fd78dec.png&quot; width=&quot;424&quot; height=&quot;80&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;reseting the transition settings&lt;/p&gt;
@@ -2595,7 +2859,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Repeat the same steps as above for the transition from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;, but use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; as the value for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-566-600187dda.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-566-600187dda.webp 566w&quot; width=&quot;566&quot; height=&quot;171&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-200-600187dda.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-400-600187dda.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-566-600187dda.webp 566w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-200-600187dda.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-400-600187dda.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-566-600187dda.png 566w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-566-600187dda.png&quot; width=&quot;566&quot; height=&quot;171&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation base layer&lt;/p&gt;
@@ -2611,7 +2879,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Create a new Avatar Mask (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/Create/Avatar Mask&lt;/code&gt;) called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt;. In the inspector, uncheck all lower body parties, as the image below:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-435-461836169.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-435-461836169.webp 435w&quot; width=&quot;435&quot; height=&quot;485&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-200-461836169.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-400-461836169.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-435-461836169.webp 435w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-200-461836169.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-400-461836169.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-435-461836169.png 435w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-435-461836169.png&quot; width=&quot;435&quot; height=&quot;485&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;only upper body&lt;/p&gt;
@@ -2621,7 +2893,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;h3 id=&quot;creating-a-upper-body-animation-layer&quot;&gt;Creating a upper body animation layer&lt;/h3&gt;
 &lt;p&gt;With the UpperBody Avatar Mask created, we will need to create a new animation layer that will use the mask. Go to the animator window and create a new layer using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+ button&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-588-65fcea606.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-588-65fcea606.webp 588w&quot; width=&quot;588&quot; height=&quot;186&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-200-65fcea606.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-400-65fcea606.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-588-65fcea606.webp 588w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-200-65fcea606.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-400-65fcea606.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-588-65fcea606.png 588w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-588-65fcea606.png&quot; width=&quot;588&quot; height=&quot;186&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the new layer created with the mask&lt;/p&gt;
@@ -2633,7 +2909,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Drag the animation clip &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt; from folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SciFiWarrior/Animations&lt;/code&gt; to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt; layer.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-573-84abc2d22.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-573-84abc2d22.webp 573w&quot; width=&quot;573&quot; height=&quot;156&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-200-84abc2d22.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-400-84abc2d22.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-573-84abc2d22.webp 573w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-200-84abc2d22.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-400-84abc2d22.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-573-84abc2d22.png 573w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-573-84abc2d22.png&quot; width=&quot;573&quot; height=&quot;156&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;upper body animation layer&lt;/p&gt;
@@ -2656,7 +2936,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt;.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-350-e06f77f07.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-350-e06f77f07.webp 350w&quot; width=&quot;350&quot; height=&quot;107&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-200-e06f77f07.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-350-e06f77f07.webp 350w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-200-e06f77f07.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-350-e06f77f07.png 350w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-350-e06f77f07.png&quot; width=&quot;350&quot; height=&quot;107&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;ShootSingle parameter created&lt;/p&gt;
@@ -2677,7 +2961,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Do something is better to learn than just reading and following someone instructions because this I will challenge you to try to implement other actions:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-640-1ccb62e9c.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-640-1ccb62e9c.webp 640w&quot; width=&quot;640&quot; height=&quot;359&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-200-1ccb62e9c.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-400-1ccb62e9c.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-640-1ccb62e9c.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-200-1ccb62e9c.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-400-1ccb62e9c.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-640-1ccb62e9c.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-640-1ccb62e9c.png&quot; width=&quot;640&quot; height=&quot;359&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the remaining actions to the challenge&lt;/p&gt;
@@ -2811,7 +3099,11 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Then I decided to try a very raw solution using the Unity3d WWWForm and it worked well, very simple, but can be useful to someone. The result is the code bellow:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.webp 611w&quot; width=&quot;611&quot; height=&quot;119&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-200-c91ea3bd8.webp 200w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-400-c91ea3bd8.webp 400w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.webp 611w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-200-c91ea3bd8.png 200w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-400-c91ea3bd8.png 400w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.png 611w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.png&quot; width=&quot;611&quot; height=&quot;119&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 

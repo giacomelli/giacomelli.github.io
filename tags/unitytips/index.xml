@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -75,7 +75,11 @@ It always displays the properties of the item you opened it for, even if you sel
    <id>//unitytips-settings-provider</id>
    <content type="html">&lt;p&gt;You can add a custom section to &lt;a href=&quot;https://docs.unity3d.com/Manual/comp-ManagerGroup.html&quot;&gt;Project Settings&lt;/a&gt; window that allows you to configure some global settings for your project using a &lt;a href=&quot;https://docs.unity3d.com/2018.3/Documentation/ScriptReference/SettingsProvider.html&quot;&gt;SettingsProvider&lt;/a&gt;&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.webp 1572w&quot; width=&quot;1572&quot; height=&quot;618&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-200-27b940cc8.webp 200w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-400-27b940cc8.webp 400w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.webp 800w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.webp 1572w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-200-27b940cc8.jpg 200w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-400-27b940cc8.jpg 400w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.jpg 800w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.jpg 1572w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.jpg&quot; width=&quot;1572&quot; height=&quot;618&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -103,7 +107,11 @@ It always displays the properties of the item you opened it for, even if you sel
    <id>//unitytips-helpbox-attribute</id>
    <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyAttribute.html&quot;&gt;PropertyAttribute&lt;/a&gt; to display a help box on inspector showing a few lines of information, like &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/EditorGUI.HelpBox.html&quot;&gt;EditorGUI.HelpBox&lt;/a&gt;, but with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docs&lt;/code&gt; button to the documentation page.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp 467w&quot; width=&quot;467&quot; height=&quot;413&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-200-8dae754d8.webp 200w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-400-8dae754d8.webp 400w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp 467w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-200-8dae754d8.png 200w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-400-8dae754d8.png 400w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png 467w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png&quot; width=&quot;467&quot; height=&quot;413&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -138,7 +146,11 @@ It always displays the properties of the item you opened it for, even if you sel
 
 &lt;p&gt;I made the gist below that uses the plugin to add a social share component to any game object.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.webp 256w&quot; width=&quot;256&quot; height=&quot;382&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-200-f6e7f7555.webp 200w, /assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-200-f6e7f7555.jpg 200w, /assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.jpg 256w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.jpg&quot; width=&quot;256&quot; height=&quot;382&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -572,7 +584,11 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;p&gt;The name of Sorting Layer been used is showing in the top of each game object in the scene view.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.webp 1084w&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.webp 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.webp 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.webp 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.webp 1084w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.png 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.png 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.png 1084w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;

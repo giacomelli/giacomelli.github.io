@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - tsp</title>
  <link href="//tags/tsp/index.xml" rel="self"/>
  <link href="/tag/tsp.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/tsp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -63,7 +63,11 @@ dotnet watch run
 
 &lt;p&gt;Wait for the message &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-1019-f31194f79.webp 1019w&quot; width=&quot;1019&quot; height=&quot;310&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-200-f31194f79.webp 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-400-f31194f79.webp 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.webp 800w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-1019-f31194f79.webp 1019w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-200-f31194f79.png 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-400-f31194f79.png 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.png 800w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-1019-f31194f79.png 1019w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.png&quot; width=&quot;1019&quot; height=&quot;310&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -90,7 +94,11 @@ dotnet watch run
 &lt;p&gt;In the root folder of your Blazor project create a new subfolder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp&lt;/code&gt;. We’ll add all our C# classes inside this folder.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -150,7 +158,11 @@ dotnet watch run
 &lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button and take a look on the browser console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.webp 565w&quot; width=&quot;565&quot; height=&quot;354&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-200-938b3a100.webp 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-400-938b3a100.webp 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.webp 565w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-200-938b3a100.png 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-400-938b3a100.png 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.png 565w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.png&quot; width=&quot;565&quot; height=&quot;354&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -220,7 +232,11 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-801-6761995cb.webp 801w&quot; width=&quot;801&quot; height=&quot;388&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-200-6761995cb.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-400-6761995cb.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-801-6761995cb.webp 801w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-200-6761995cb.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-400-6761995cb.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-801-6761995cb.png 801w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.png&quot; width=&quot;801&quot; height=&quot;388&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -281,7 +297,11 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;p&gt;The fitness of each car (chromosome) to the road will be the &lt;strong&gt;sum of the max distance&lt;/strong&gt; reach by it &lt;strong&gt;plus the average velocity&lt;/strong&gt; at that moment.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-1053-40a0bcc10.webp 1053w&quot; width=&quot;1053&quot; height=&quot;550&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-200-40a0bcc10.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-400-40a0bcc10.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-1053-40a0bcc10.webp 1053w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-200-40a0bcc10.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-400-40a0bcc10.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-1053-40a0bcc10.png 1053w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.png&quot; width=&quot;1053&quot; height=&quot;550&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -298,7 +318,11 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Besides that, the chromosomes are evaluated in parallel using the GeneticSharp’s ParallelTaskExecutor and you can see all them in 4x4 grid:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1915-277a451e7.webp 1915w&quot; width=&quot;1915&quot; height=&quot;988&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png&quot; width=&quot;1915&quot; height=&quot;988&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -447,7 +471,11 @@ div.gist-meta { display:none; }
 &lt;p&gt;Using Unity 2018.1+, create a new project called TspSample.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.webp 669w&quot; width=&quot;669&quot; height=&quot;321&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-200-e53d80e12.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-400-e53d80e12.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.webp 669w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-200-e53d80e12.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-400-e53d80e12.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.png 669w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.png&quot; width=&quot;669&quot; height=&quot;321&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -457,7 +485,11 @@ div.gist-meta { display:none; }
 &lt;p&gt;After restart, go back to “Player settings”, select “.NET Standard 2.0” on “Api Compability Level”.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.webp 426w&quot; width=&quot;426&quot; height=&quot;82&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-200-444856e1a.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-400-444856e1a.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.webp 426w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-200-444856e1a.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-400-444856e1a.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.png 426w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.png&quot; width=&quot;426&quot; height=&quot;82&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -465,7 +497,11 @@ div.gist-meta { display:none; }
 &lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -501,7 +537,11 @@ div.gist-meta { display:none; }
 &lt;p&gt;Run the scene on editor and take a look on the console window, you will see the distance to reach all cities getting smaller as the generations ran.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.webp 488w&quot; width=&quot;488&quot; height=&quot;361&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-200-cb99efe0f.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-400-cb99efe0f.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.webp 488w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-200-cb99efe0f.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-400-cb99efe0f.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.png 488w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.png&quot; width=&quot;488&quot; height=&quot;361&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -536,13 +576,21 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now, select the GAController game object on hierarchy and set the CityPrefab property.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.webp 595w&quot; width=&quot;595&quot; height=&quot;190&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-200-e77776a1f.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-400-e77776a1f.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.webp 595w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-200-e77776a1f.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-400-e77776a1f.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.png 595w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.png&quot; width=&quot;595&quot; height=&quot;190&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
 &lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-800-e9b99a942.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-2032-e9b99a942.webp 2032w&quot; width=&quot;2032&quot; height=&quot;1209&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-200-e9b99a942.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-400-e9b99a942.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-800-e9b99a942.webp 800w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-1600-e9b99a942.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-200-e9b99a942.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-400-e9b99a942.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-800-e9b99a942.png 800w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-1600-e9b99a942.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-800-e9b99a942.png&quot; width=&quot;2032&quot; height=&quot;1209&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -573,7 +621,11 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Run the scene again, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-800-4154f5d73.webp&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-2032-4154f5d73.webp 2032w&quot; width=&quot;2032&quot; height=&quot;1209&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-200-4154f5d73.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-400-4154f5d73.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-800-4154f5d73.webp 800w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-1600-4154f5d73.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-200-4154f5d73.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-400-4154f5d73.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-800-4154f5d73.png 800w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-1600-4154f5d73.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-800-4154f5d73.png&quot; width=&quot;2032&quot; height=&quot;1209&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 

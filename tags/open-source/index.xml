@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - open-source</title>
  <link href="//tags/open-source/index.xml" rel="self"/>
  <link href="/tag/open-source.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/open-source.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -153,7 +153,11 @@
 
 &lt;p&gt;The idea behind DefaultAnimationsEditorWindow is that when you have a bunch o characters using the same kind of animations, they used the same structure of sprite sheets, so you can create the animations based on the sprites indexes on sprite sheet texture.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.webp 678w&quot; width=&quot;678&quot; height=&quot;178&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-200-7a432d7c2.webp 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-400-7a432d7c2.webp 400w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.webp 678w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-200-7a432d7c2.png 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-400-7a432d7c2.png 400w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.png 678w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.png&quot; width=&quot;678&quot; height=&quot;178&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;similar sprites sheets from Phantasy Star IV (Alys, Chaz and Demi). Sprites ripped by Ultimecia from &lt;a href=&quot;https://www.spriters-resource.com/genesis_32x_scd/ps4&quot;&gt;The Spriters Resource&lt;/a&gt;&lt;/p&gt;
@@ -163,7 +167,11 @@
 &lt;p&gt;Starting with sprite to walk down and ending with the last sprite of walk horizontal, we have 9 sprites and in all sprite sheets the sprites indexes are the same:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.webp 134w&quot; width=&quot;134&quot; height=&quot;31&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.webp 134w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.png 134w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.png&quot; width=&quot;134&quot; height=&quot;31&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -175,7 +183,11 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&lt;/a&gt;. To start the tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -217,7 +229,11 @@
 &lt;h2 id=&quot;defaultanimationseditorwindow&quot;&gt;DefaultAnimationsEditorWindow&lt;/h2&gt;
 &lt;p&gt;In the code bellow, we define the menu for the window through the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShowWindow&lt;/code&gt; and the attribute &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.webp 225w&quot; width=&quot;225&quot; height=&quot;201&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-200-3ddf249e2.webp 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.webp 225w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-200-3ddf249e2.png 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.png 225w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.png&quot; width=&quot;225&quot; height=&quot;201&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Default Animations menu item&lt;/p&gt;
@@ -228,7 +244,11 @@
 
 &lt;p&gt;The next 3 methods just draw the components to the editor window GUI.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.webp 375w&quot; width=&quot;375&quot; height=&quot;186&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-200-aa3ab20da.webp 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.webp 375w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-200-aa3ab20da.png 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.png 375w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.png&quot; width=&quot;375&quot; height=&quot;186&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;editor window&lt;/p&gt;
@@ -357,7 +377,11 @@
 &lt;p&gt;The name of Sorting Layer been used is showing in the top of each game object in the scene view.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.webp 1084w&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.webp 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.webp 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.webp 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.webp 1084w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.png 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.png 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.png 1084w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
@@ -378,7 +402,11 @@
 In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-213-9e758fd81.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-213-9e758fd81.webp 213w&quot; width=&quot;213&quot; height=&quot;186&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-200-9e758fd81.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-213-9e758fd81.webp 213w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-200-9e758fd81.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-213-9e758fd81.png 213w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-clips-213-9e758fd81.png&quot; width=&quot;213&quot; height=&quot;186&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation clips available on Sci Fi Warrior PBR HP&lt;/p&gt;
@@ -389,7 +417,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Idle_GunMiddle&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-445-2295a48c7.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-445-2295a48c7.webp 445w&quot; width=&quot;445&quot; height=&quot;488&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-200-2295a48c7.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-400-2295a48c7.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-445-2295a48c7.webp 445w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-200-2295a48c7.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-400-2295a48c7.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-445-2295a48c7.png 445w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/Idle_GunMiddle-445-2295a48c7.png&quot; width=&quot;445&quot; height=&quot;488&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot stands idle with the gun in the middle of his body&lt;/p&gt;
@@ -398,7 +430,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;WalkForward_Shoot&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-492-475cee141.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-492-475cee141.webp 492w&quot; width=&quot;492&quot; height=&quot;583&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-200-475cee141.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-400-475cee141.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-492-475cee141.webp 492w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-200-475cee141.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-400-475cee141.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-492-475cee141.png 492w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/WalkForward_Shoot-492-475cee141.png&quot; width=&quot;492&quot; height=&quot;583&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot walk forward and shoot&lt;/p&gt;
@@ -430,7 +466,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;By reading those two sections is quite clear that we need to use avatar masks and animation layers together to combine our animations of different body parts. So, in the next sections, I will demonstrate how to combine three animations (Idle_GunMiddle, WalkForward_Shoot, and Shoot_single) to make the robot shoot while stands idle and walk forward with a gun in middle body. After that, I will propose you a challenge for the other animations available.&lt;/p&gt;
 
 &lt;h2 id=&quot;starter-project&quot;&gt;Starter project&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&quot;&gt;https://github.com/giacomelli/unity-avatar-mask-and-animation-layers&lt;/a&gt;. To start this tutorial you need to fork, clone or download the repository.&lt;/p&gt;
 
@@ -449,7 +489,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; button. You should see a screen like this:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-800-383f1880a.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-837-383f1880a.webp 837w&quot; width=&quot;837&quot; height=&quot;469&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-200-383f1880a.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-400-383f1880a.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-800-383f1880a.webp 800w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-837-383f1880a.webp 837w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-200-383f1880a.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-400-383f1880a.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-800-383f1880a.png 800w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-837-383f1880a.png 837w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/starter-project-800-383f1880a.png&quot; width=&quot;837&quot; height=&quot;469&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Starter project running: just HUD&lt;/p&gt;
@@ -461,7 +505,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Create a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Animation Controller&lt;/code&gt; (menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/Create/Animation Controller&lt;/code&gt;) and open it:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-548-eb3e09a46.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-548-eb3e09a46.webp 548w&quot; width=&quot;548&quot; height=&quot;212&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-200-eb3e09a46.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-400-eb3e09a46.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-548-eb3e09a46.webp 548w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-200-eb3e09a46.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-400-eb3e09a46.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-548-eb3e09a46.png 548w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-window-empty-548-eb3e09a46.png&quot; width=&quot;548&quot; height=&quot;212&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Animator window showing the animation controller created&lt;/p&gt;
@@ -481,7 +529,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-323-d9aa1ab44.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-323-d9aa1ab44.webp 323w&quot; width=&quot;323&quot; height=&quot;84&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-200-d9aa1ab44.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-323-d9aa1ab44.webp 323w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-200-d9aa1ab44.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-323-d9aa1ab44.png 323w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animation-parameter-323-d9aa1ab44.png&quot; width=&quot;323&quot; height=&quot;84&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward parameter created&lt;/p&gt;
@@ -490,7 +542,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;We want to activate the transition from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Any state&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; is true, so select this transition (click on the arrow connecting the state &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Any State&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt;) and in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Conditions&lt;/code&gt; list on inspector add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt; equals &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-426-6d24ef63e.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-426-6d24ef63e.webp 426w&quot; width=&quot;426&quot; height=&quot;74&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-200-6d24ef63e.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-400-6d24ef63e.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-426-6d24ef63e.webp 426w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-200-6d24ef63e.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-400-6d24ef63e.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-426-6d24ef63e.png 426w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/walk-forward-condition-426-6d24ef63e.png&quot; width=&quot;426&quot; height=&quot;74&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward condition defined&lt;/p&gt;
@@ -499,7 +555,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Click the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reset&lt;/code&gt; to auto fit the exit and transition time:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-424-b2fd78dec.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-424-b2fd78dec.webp 424w&quot; width=&quot;424&quot; height=&quot;80&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-200-b2fd78dec.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-400-b2fd78dec.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-424-b2fd78dec.webp 424w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-200-b2fd78dec.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-400-b2fd78dec.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-424-b2fd78dec.png 424w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/reset-transition-424-b2fd78dec.png&quot; width=&quot;424&quot; height=&quot;80&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;reseting the transition settings&lt;/p&gt;
@@ -508,7 +568,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Repeat the same steps as above for the transition from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward_Shoot&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt;, but use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; as the value for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WalkForward&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-566-600187dda.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-566-600187dda.webp 566w&quot; width=&quot;566&quot; height=&quot;171&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-200-600187dda.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-400-600187dda.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-566-600187dda.webp 566w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-200-600187dda.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-400-600187dda.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-566-600187dda.png 566w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/animator-base-layer-566-600187dda.png&quot; width=&quot;566&quot; height=&quot;171&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation base layer&lt;/p&gt;
@@ -524,7 +588,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 
 &lt;p&gt;Create a new Avatar Mask (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/Create/Avatar Mask&lt;/code&gt;) called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt;. In the inspector, uncheck all lower body parties, as the image below:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-435-461836169.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-435-461836169.webp 435w&quot; width=&quot;435&quot; height=&quot;485&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-200-461836169.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-400-461836169.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-435-461836169.webp 435w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-200-461836169.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-400-461836169.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-435-461836169.png 435w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upper-body-avatar-mask-435-461836169.png&quot; width=&quot;435&quot; height=&quot;485&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;only upper body&lt;/p&gt;
@@ -534,7 +602,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;h3 id=&quot;creating-a-upper-body-animation-layer&quot;&gt;Creating a upper body animation layer&lt;/h3&gt;
 &lt;p&gt;With the UpperBody Avatar Mask created, we will need to create a new animation layer that will use the mask. Go to the animator window and create a new layer using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+ button&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-588-65fcea606.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-588-65fcea606.webp 588w&quot; width=&quot;588&quot; height=&quot;186&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-200-65fcea606.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-400-65fcea606.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-588-65fcea606.webp 588w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-200-65fcea606.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-400-65fcea606.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-588-65fcea606.png 588w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-588-65fcea606.png&quot; width=&quot;588&quot; height=&quot;186&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the new layer created with the mask&lt;/p&gt;
@@ -546,7 +618,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Drag the animation clip &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Idle_GunMiddle&lt;/code&gt; from folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SciFiWarrior/Animations&lt;/code&gt; to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UpperBody&lt;/code&gt; layer.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-573-84abc2d22.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-573-84abc2d22.webp 573w&quot; width=&quot;573&quot; height=&quot;156&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-200-84abc2d22.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-400-84abc2d22.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-573-84abc2d22.webp 573w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-200-84abc2d22.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-400-84abc2d22.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-573-84abc2d22.png 573w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/upperbody-animation-layer-fsm-573-84abc2d22.png&quot; width=&quot;573&quot; height=&quot;156&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;upper body animation layer&lt;/p&gt;
@@ -569,7 +645,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Now we need to tell to the animation controller when it should activate the two transitions, for this we will create a bool &lt;a href=&quot;https://docs.unity3d.com/Manual/AnimationParameters.html&quot;&gt;animation parameter&lt;/a&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShootSingle&lt;/code&gt;.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-350-e06f77f07.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-350-e06f77f07.webp 350w&quot; width=&quot;350&quot; height=&quot;107&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-200-e06f77f07.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-350-e06f77f07.webp 350w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-200-e06f77f07.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-350-e06f77f07.png 350w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/shoot-single-parameter-350-e06f77f07.png&quot; width=&quot;350&quot; height=&quot;107&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;ShootSingle parameter created&lt;/p&gt;
@@ -590,7 +670,11 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;p&gt;Do something is better to learn than just reading and following someone instructions because this I will challenge you to try to implement other actions:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-640-1ccb62e9c.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-640-1ccb62e9c.webp 640w&quot; width=&quot;640&quot; height=&quot;359&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-200-1ccb62e9c.webp 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-400-1ccb62e9c.webp 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-640-1ccb62e9c.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-200-1ccb62e9c.png 200w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-400-1ccb62e9c.png 400w, /assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-640-1ccb62e9c.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/21/unity-avatar-mask-and-animation-layers/challenge-640-1ccb62e9c.png&quot; width=&quot;640&quot; height=&quot;359&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the remaining actions to the challenge&lt;/p&gt;
@@ -751,7 +835,11 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Your team can be notified by Buildron about builds status changed. In the mod preferences you can choose what status you want to receive notifications (running|succes|failed).&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.webp 450w&quot; width=&quot;450&quot; height=&quot;106&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-200-0e248dd25.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-400-0e248dd25.webp 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.webp 450w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-200-0e248dd25.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-400-0e248dd25.png 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.png 450w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.png&quot; width=&quot;450&quot; height=&quot;106&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -759,7 +847,11 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Filter buils by status or text.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.webp 565w&quot; width=&quot;565&quot; height=&quot;186&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-200-2de211b94.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-400-2de211b94.webp 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.webp 565w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-200-2de211b94.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-400-2de211b94.png 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.png 565w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.png&quot; width=&quot;565&quot; height=&quot;186&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -767,7 +859,11 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Reset previous builds filter (no filter).&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.webp 248w&quot; width=&quot;248&quot; height=&quot;102&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-200-220e5013f.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.webp 248w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-200-220e5013f.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.png 248w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.png&quot; width=&quot;248&quot; height=&quot;102&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -775,7 +871,11 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Sort buils by status, text or date.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.webp 218w&quot; width=&quot;218&quot; height=&quot;95&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-200-b97f5d2a2.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.webp 218w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-200-b97f5d2a2.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.png 218w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.png&quot; width=&quot;218&quot; height=&quot;95&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -783,7 +883,11 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Move the camera the amount of pixels define in the x,y,z coordinates.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.webp 256w&quot; width=&quot;256&quot; height=&quot;95&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-200-3cb740d22.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-200-3cb740d22.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.png 256w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.png&quot; width=&quot;256&quot; height=&quot;95&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -791,7 +895,11 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Reset the camera position.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.webp 213w&quot; width=&quot;213&quot; height=&quot;97&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-200-dee0bb971.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.webp 213w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-200-dee0bb971.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.png 213w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.png&quot; width=&quot;213&quot; height=&quot;97&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -799,7 +907,11 @@ These techniques allowing us to use already existent animations and combine them
 &lt;p&gt;Take a screenshot of current Buildron state.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.webp 418w&quot; width=&quot;418&quot; height=&quot;424&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-200-ddc5d66d5.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-400-ddc5d66d5.webp 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.webp 418w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-200-ddc5d66d5.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-400-ddc5d66d5.png 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.png 418w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.png&quot; width=&quot;418&quot; height=&quot;424&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -823,7 +935,11 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;p&gt;Then I decided to try a very raw solution using the Unity3d WWWForm and it worked well, very simple, but can be useful to someone. The result is the code bellow:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.webp 611w&quot; width=&quot;611&quot; height=&quot;119&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-200-c91ea3bd8.webp 200w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-400-c91ea3bd8.webp 400w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.webp 611w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-200-c91ea3bd8.png 200w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-400-c91ea3bd8.png 400w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.png 611w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.png&quot; width=&quot;611&quot; height=&quot;119&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1035,7 +1151,11 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
 &lt;p&gt;You should see a scene like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-722-b1f078f34.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-722-b1f078f34.webp 722w&quot; width=&quot;722&quot; height=&quot;467&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-200-b1f078f34.webp 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-400-b1f078f34.webp 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-722-b1f078f34.webp 722w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-200-b1f078f34.png 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-400-b1f078f34.png 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-722-b1f078f34.png 722w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-722-b1f078f34.png&quot; width=&quot;722&quot; height=&quot;467&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1043,7 +1163,11 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
 &lt;p&gt;Click on “BuildFound”, “BuildStatusChanged” and “BuildRemoved” buttons, you should see these events been registered on ConsoledMod window.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-421-4fd87f6f7.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-421-4fd87f6f7.webp 421w&quot; width=&quot;421&quot; height=&quot;111&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-200-4fd87f6f7.webp 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-400-4fd87f6f7.webp 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-421-4fd87f6f7.webp 421w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-200-4fd87f6f7.png 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-400-4fd87f6f7.png 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-421-4fd87f6f7.png 421w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-421-4fd87f6f7.png&quot; width=&quot;421&quot; height=&quot;111&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1063,7 +1187,11 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
 &lt;p&gt;You should see the ConsoleMod window registering a lot of Buildron events.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-639-7a03018c3.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-639-7a03018c3.webp 639w&quot; width=&quot;639&quot; height=&quot;478&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-200-7a03018c3.webp 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-400-7a03018c3.webp 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-639-7a03018c3.webp 639w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-200-7a03018c3.png 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-400-7a03018c3.png 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-639-7a03018c3.png 639w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-639-7a03018c3.png&quot; width=&quot;639&quot; height=&quot;478&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1096,7 +1224,11 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;p&gt;The idea of the tool was born a long time ago and became a little stronger every time that I had to create a new solution and all the projects by hand, but when I saw the message bellow in the &lt;a href=&quot;http://xamarin.com/prebuilt&quot;&gt;http://xamarin.com/prebuilt&lt;/a&gt; page I decided to finally write the tool… and the name was very clear, almost.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-1057-ef756f97b.webp 1057w&quot; width=&quot;1057&quot; height=&quot;74&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-200-ef756f97b.webp 200w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-400-ef756f97b.webp 400w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.webp 800w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-1057-ef756f97b.webp 1057w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-200-ef756f97b.png 200w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-400-ef756f97b.png 400w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.png 800w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-1057-ef756f97b.png 1057w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.png&quot; width=&quot;1057&quot; height=&quot;74&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1217,7 +1349,11 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.webp 497w&quot; width=&quot;497&quot; height=&quot;126&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-200-5cb3e86ea.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-400-5cb3e86ea.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.webp 497w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-200-5cb3e86ea.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-400-5cb3e86ea.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.png 497w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.png&quot; width=&quot;497&quot; height=&quot;126&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1234,7 +1370,11 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.webp 261w&quot; width=&quot;261&quot; height=&quot;406&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-200-65576a7d2.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.webp 261w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-200-65576a7d2.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.png 261w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.png&quot; width=&quot;261&quot; height=&quot;406&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1244,7 +1384,11 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;Select the configuration of your platform.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.webp 334w&quot; width=&quot;334&quot; height=&quot;237&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-200-77d13f09f.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.webp 334w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-200-77d13f09f.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.png 334w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.png&quot; width=&quot;334&quot; height=&quot;237&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1257,7 +1401,11 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;Open the scene Assets/SimulatorScene and click on play button.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.webp 298w&quot; width=&quot;298&quot; height=&quot;236&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-200-f286a3e11.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.webp 298w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-200-f286a3e11.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.png 298w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.png&quot; width=&quot;298&quot; height=&quot;236&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1265,7 +1413,11 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;In the simulator click on button “BuildStatusChanged”.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.webp 640w&quot; width=&quot;640&quot; height=&quot;493&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-200-74879a55e.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-400-74879a55e.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-200-74879a55e.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-400-74879a55e.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.png&quot; width=&quot;640&quot; height=&quot;493&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1286,7 +1438,11 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;Click on “Build” button.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.webp 641w&quot; width=&quot;641&quot; height=&quot;362&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-200-ab89078f5.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-400-ab89078f5.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.webp 641w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-200-ab89078f5.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-400-ab89078f5.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.png 641w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.png&quot; width=&quot;641&quot; height=&quot;362&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1297,7 +1453,11 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;You should see the same falling down box that you see on simulator falling down inside Buildron every time a build changed status.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.webp 639w&quot; width=&quot;639&quot; height=&quot;501&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-200-34474df72.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-400-34474df72.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.webp 639w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-200-34474df72.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-400-34474df72.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.png 639w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.png&quot; width=&quot;639&quot; height=&quot;501&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -1369,7 +1529,11 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;h3 id=&quot;badgessharp&quot;&gt;BadgesSharp&lt;/h3&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-700-92805d6b2.webp&quot; srcset=&quot;/assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-700-92805d6b2.webp 700w&quot; width=&quot;700&quot; height=&quot;101&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-200-92805d6b2.webp 200w, /assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-400-92805d6b2.webp 400w, /assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-700-92805d6b2.webp 700w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-200-92805d6b2.png 200w, /assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-400-92805d6b2.png 400w, /assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-700-92805d6b2.png 700w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-700-92805d6b2.png&quot; width=&quot;700&quot; height=&quot;101&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 

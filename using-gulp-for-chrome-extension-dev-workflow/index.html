@@ -69,7 +69,11 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="container">
         <header class="masthead clearfix">
           <nav class="greedy">
-            <a href="/" class="site-avatar" title="Diego Giacomelli | programmer""><img class="" src="/assets/images/generated/assets/avatar-transparent-800-209cb8b4f.webp" srcset="/assets/images/generated/assets/avatar-transparent-1615-209cb8b4f.webp 1615w" width="1615" height="1603">
+            <a href="/" class="site-avatar" title="Diego Giacomelli | programmer""><picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/avatar-transparent-200-209cb8b4f.webp 200w, /assets/images/generated/assets/avatar-transparent-400-209cb8b4f.webp 400w, /assets/images/generated/assets/avatar-transparent-800-209cb8b4f.webp 800w, /assets/images/generated/assets/avatar-transparent-1600-209cb8b4f.webp 1600w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/avatar-transparent-200-209cb8b4f.png 200w, /assets/images/generated/assets/avatar-transparent-400-209cb8b4f.png 400w, /assets/images/generated/assets/avatar-transparent-800-209cb8b4f.png 800w, /assets/images/generated/assets/avatar-transparent-1600-209cb8b4f.png 1600w" type="image/png">
+  <img class="" src="/assets/images/generated/assets/avatar-transparent-800-209cb8b4f.png" width="1615" height="1603">
+</picture>
 </a>
             <ul class='links'>
               <li><a href="/" class="menu-item">Posts</a></li>
@@ -114,7 +118,11 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
   
     <center>
    
-     <img class="logo" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/logo-277-a6fb3209c.webp" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/logo-277-a6fb3209c.webp 277w" width="277" height="133">
+     <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/logo-200-a6fb3209c.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/logo-277-a6fb3209c.webp 277w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/logo-200-a6fb3209c.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/logo-277-a6fb3209c.png 277w" type="image/png">
+  <img class="logo" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/logo-277-a6fb3209c.png" width="277" height="133">
+</picture>
 
   
     </center>
@@ -124,7 +132,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>11/09/2020</span></div>   
       
 
-<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>12 minutes to read</span></div>
+<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>15 minutes to read</span></div>
    
     </div>  
     <p>In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.</p>
@@ -135,7 +143,11 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 <p>While we were developing it we needed to change some configurations on the extension to use different URLs of our API depending on what environment the Chrome Extension was using, like DEV (local), TEST, and Production.</p>
 
 <h2 id="chrome-extension">Chrome Extension</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/chrome-extension-496-209699985.webp" srcset="/assets/images/generated/assets/logos/chrome-extension-496-209699985.webp 496w" width="496" height="150" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/chrome-extension-200-209699985.webp 200w, /assets/images/generated/assets/logos/chrome-extension-400-209699985.webp 400w, /assets/images/generated/assets/logos/chrome-extension-496-209699985.webp 496w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/chrome-extension-200-209699985.png 200w, /assets/images/generated/assets/logos/chrome-extension-400-209699985.png 400w, /assets/images/generated/assets/logos/chrome-extension-496-209699985.png 496w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/chrome-extension-496-209699985.png" width="496" height="150" />
+</picture>
 
 <p>For this tutorial, I’ll use a Chrome Extension basic sample called <code class="language-plaintext highlighter-rouge">Hello Extensions</code>.<br /> 
 You can download it from this page <a href="https://developer.chrome.com/extensions/samples">https://developer.chrome.com/extensions/samples</a> or directly from <a href="https://developer.chrome.com/extensions/examples/tutorials/hello_extensions.zip">here</a>.
@@ -154,11 +166,19 @@ At that time we did not find any builtin or other solution to make this workflow
 <p>We decided to use <code class="language-plaintext highlighter-rouge">gulp</code>, because a Chrome Extensions is a bunch of .js, .html and .json files. Perfect to use gulp.</p>
 
 <h2 id="the-problem">The problem</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/problem-128-a3f91d933.webp" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w" width="128" height="128" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/problem-128-a3f91d933.png" width="128" height="128" />
+</picture>
 
 <p>If we just try to open our download <code class="language-plaintext highlighter-rouge">Hello Extension</code> .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.</p>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.webp" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.webp 113w" width="113" height="145" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.webp 113w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.png 113w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.png" width="113" height="145" />
+</picture>
 
       </center>
 
@@ -173,7 +193,11 @@ At that time we did not find any builtin or other solution to make this workflow
 </ul>
 
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w" width="336" height="167" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png 336w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png" width="336" height="167" />
+</picture>
 
       </center>
 
@@ -181,7 +205,11 @@ At that time we did not find any builtin or other solution to make this workflow
 <p>Move the <code class="language-plaintext highlighter-rouge">Hello Extensions</code> files to a subfolder called <code class="language-plaintext highlighter-rouge">src</code>.
 At the end of this tutorial, our files structure will look like this:</p>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.webp" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.webp 202w" width="202" height="142" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-200-484bbc2a8.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.webp 202w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-200-484bbc2a8.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.png 202w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.png" width="202" height="142" />
+</picture>
 
       </center>
 
@@ -208,7 +236,11 @@ At the end of this tutorial, our files structure will look like this:</p>
 <p>This is the full <code class="language-plaintext highlighter-rouge">gulpfile.js</code> file that will allow our development workflow for different environments.<br /></p>
 
 <h2 id="the-gulpfilejs-sections">The gulpfile.js sections</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/project-128-4f597ed4f.webp" srcset="/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w" width="128" height="128" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/project-128-4f597ed4f.png" width="128" height="128" />
+</picture>
 
 <p>Now I will explain each section of it.
 <br /><br /><br /><br /><br /><br /></p>
@@ -263,7 +295,11 @@ Here we are basically defining the order of each function that will be called wh
 <script src="https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=watch.section.js"> </script>
 
 <h2 id="packagesjson-file">packages.json file</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/package-128-f3193c47c.webp" srcset="/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w" width="128" height="128" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/package-128-f3193c47c.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/package-128-f3193c47c.png" width="128" height="128" />
+</picture>
 
 <p>Change the content of <code class="language-plaintext highlighter-rouge">packages.json</code> file to the content below to update the dependencies.</p>
 <noscript><pre>400: Invalid request</pre></noscript>
@@ -274,12 +310,20 @@ Here we are basically defining the order of each function that will be called wh
 <h2 id="running-the-gulp-for-the-first-time">Running the gulp for the first time</h2>
 <p>Now, if you just run the command <code class="language-plaintext highlighter-rouge">gulp</code> in the root folder, you should see an output like this:</p>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.webp" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.webp 369w" width="369" height="148" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-200-d0dfc6cee.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.webp 369w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-200-d0dfc6cee.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.png 369w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.png" width="369" height="148" />
+</picture>
 
       </center>
 
 <h2 id="creating-the-configjson-files">Creating the <code class="language-plaintext highlighter-rouge">config.json</code> files</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/config-128-c46695ddc.webp" srcset="/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w" width="128" height="128" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/config-128-c46695ddc.png" width="128" height="128" />
+</picture>
 
 <p>We need to create our <code class="language-plaintext highlighter-rouge">config.json</code> files.
 They are 3 files:</p>
@@ -307,13 +351,21 @@ Here is the content of each one:</p>
 <h2 id="running-the-gulp-for-the-second-time">Running the gulp for the second time</h2>
 <p>Run the command <code class="language-plaintext highlighter-rouge">gulp</code> in the root folder, you should see an output like this:</p>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.webp" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.webp 379w" width="379" height="255" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-200-b124fa8a9.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.webp 379w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-200-b124fa8a9.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.png 379w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.png" width="379" height="255" />
+</picture>
 
       </center>
 
 <p>There is a new subfolder <code class="language-plaintext highlighter-rouge">dist</code> created. Load it on Chrome Extensions page:</p>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.webp" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.webp 423w" width="423" height="230" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-200-0991800ea.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-400-0991800ea.webp 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.webp 423w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-200-0991800ea.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-400-0991800ea.png 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.png 423w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.png" width="423" height="230" />
+</picture>
 
       </center>
 
@@ -344,7 +396,11 @@ Open the <code class="language-plaintext highlighter-rouge">manifest.json</code>
 <p>The line <code class="language-plaintext highlighter-rouge">"/scripts/config.js"</code> is what we need to access the configuration values.</p>
 
 <h2 id="creating-the-manifestjson-files">Creating the <code class="language-plaintext highlighter-rouge">manifest.json</code> files</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/manifest-128-579a71043.webp" srcset="/assets/images/generated/assets/logos/manifest-128-579a71043.webp 128w" width="128" height="128" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/manifest-128-579a71043.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/manifest-128-579a71043.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/manifest-128-579a71043.png" width="128" height="128" />
+</picture>
 
 <p>We need to create our <code class="language-plaintext highlighter-rouge">manifest.json</code> files, in the same way, we created our <code class="language-plaintext highlighter-rouge">config.json</code> files.
 <br /><br /><br /><br /><br />
@@ -366,7 +422,11 @@ Here is the content of each one:</p>
 
 <h2 id="running-the-gulp-for-each-environment">Running the gulp for each environment</h2>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w" width="336" height="167" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png 336w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png" width="336" height="167" />
+</picture>
 
       </center>
 <p>Run the command <code class="language-plaintext highlighter-rouge">gulp</code> in the root folder.
@@ -377,14 +437,22 @@ This will use <code class="language-plaintext highlighter-rouge">DEV</code> conf
 <p>Now, try to run <code class="language-plaintext highlighter-rouge">gulp --config TEST</code>.
 In the Chrome Extensions page you should see something like this:</p>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.webp" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.webp 468w" width="468" height="358" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-200-439243e20.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-400-439243e20.webp 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.webp 468w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-200-439243e20.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-400-439243e20.png 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.png 468w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.png" width="468" height="358" />
+</picture>
 
       </center>
 
 <p>Your extension is using the TEST environment values.
 When you click on the extension icon on the Chrome toolbar, you should see something like this:</p>
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.webp" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.webp 129w" width="129" height="177" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.webp 129w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.png 129w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.png" width="129" height="177" />
+</picture>
 
       </center>
 
@@ -403,7 +471,11 @@ You can use the <code class="language-plaintext highlighter-rouge">--config</cod
 <p>In this .zip are all files mentioned in this tutorial, you just need to set up your gulp environment and call the <code class="language-plaintext highlighter-rouge">npm install</code> and <code class="language-plaintext highlighter-rouge">npm install gulp</code> before starting to use it.</p>
 
 <h2 id="conclusion">Conclusion</h2>
-<p><img class="icon" src="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp" srcset="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w" width="128" height="128" /></p>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png" width="128" height="128" />
+</picture>
 
 <p>In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.</p>
 
@@ -497,7 +569,11 @@ You can use the <code class="language-plaintext highlighter-rouge">--config</cod
      <div class="portifolio-slide">
           <a href="GeneticSharp-Car2D">
                <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp" srcset="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1915-277a451e7.webp 1915w" width="1915" height="988">
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.webp 1600w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.png 1600w" type="image/png">
+  <img class="screenshot" src="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png" width="1915" height="988">
+</picture>
 
       </center>
                GeneticSharp Car2D, an Unity3D sample for GeneticSharp where a genetic algorithm tries to design 2D cars to overcome roads challenges
@@ -505,7 +581,11 @@ You can use the <code class="language-plaintext highlighter-rouge">--config</cod
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp">               
-          <img class="icon" src="/assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.webp" srcset="/assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.webp 256w" width="256" height="99">
+          <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/google-play-badge-200-f42bdeb50.webp 200w, /assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.webp 256w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/google-play-badge-200-f42bdeb50.png 200w, /assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.png 256w" type="image/png">
+  <img class="icon" src="/assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.png" width="256" height="99">
+</picture>
 
           GeneticSharp Unity3d Samples on Google Play
           </a>
@@ -556,7 +636,11 @@ You can use the <code class="language-plaintext highlighter-rouge">--config</cod
      </div> -->
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals">
-               <img class="" src="/assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.webp" srcset="/assets/images/generated/games/puzzimals/images/header-1024-9a13ea94a.webp 1024w" width="1024" height="500">
+               <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/header-200-9a13ea94a.webp 200w, /assets/images/generated/games/puzzimals/images/header-400-9a13ea94a.webp 400w, /assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.webp 800w, /assets/images/generated/games/puzzimals/images/header-1024-9a13ea94a.webp 1024w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/header-200-9a13ea94a.png 200w, /assets/images/generated/games/puzzimals/images/header-400-9a13ea94a.png 400w, /assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.png 800w, /assets/images/generated/games/puzzimals/images/header-1024-9a13ea94a.png 1024w" type="image/png">
+  <img class="" src="/assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.png" width="1024" height="500">
+</picture>
     
                <h3>Puzzimals</h3>     
                <i>Play my new mobile game, a tile-matching game with cute graphics and challenging puzzles.</i> 
@@ -564,7 +648,11 @@ You can use the <code class="language-plaintext highlighter-rouge">--config</cod
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals">
-               <img class="" src="/assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.webp" srcset="/assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.webp 512w" width="512" height="512">
+               <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/logo-200-07340b1ab.webp 200w, /assets/images/generated/games/puzzimals/images/logo-400-07340b1ab.webp 400w, /assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.webp 512w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/logo-200-07340b1ab.png 200w, /assets/images/generated/games/puzzimals/images/logo-400-07340b1ab.png 400w, /assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.png 512w" type="image/png">
+  <img class="" src="/assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.png" width="512" height="512">
+</picture>
    
                <h3>Puzzimals</h3>     
                <i>Play my new mobile game, a tile-matching game with cute graphics and challenging puzzles.</i> 
@@ -572,7 +660,11 @@ You can use the <code class="language-plaintext highlighter-rouge">--config</cod
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals">
-               <img class="" src="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.webp" srcset="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.webp 450w" width="450" height="253">
+               <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-200-6eb6b7cc2.webp 200w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-400-6eb6b7cc2.webp 400w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.webp 450w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-200-6eb6b7cc2.jpg 200w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-400-6eb6b7cc2.jpg 400w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.jpg 450w" type="image/jpeg">
+  <img class="" src="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.jpg" width="450" height="253">
+</picture>
    
                <h3>Puzzimals</h3>     
                <i>Play my new mobile game, a tile-matching game with cute graphics and challenging puzzles.</i> 

@@ -69,7 +69,11 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="container">
         <header class="masthead clearfix">
           <nav class="greedy">
-            <a href="/" class="site-avatar" title="Diego Giacomelli | programmer""><img class="" src="/assets/images/generated/assets/avatar-transparent-800-209cb8b4f.webp" srcset="/assets/images/generated/assets/avatar-transparent-1615-209cb8b4f.webp 1615w" width="1615" height="1603">
+            <a href="/" class="site-avatar" title="Diego Giacomelli | programmer""><picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/avatar-transparent-200-209cb8b4f.webp 200w, /assets/images/generated/assets/avatar-transparent-400-209cb8b4f.webp 400w, /assets/images/generated/assets/avatar-transparent-800-209cb8b4f.webp 800w, /assets/images/generated/assets/avatar-transparent-1600-209cb8b4f.webp 1600w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/avatar-transparent-200-209cb8b4f.png 200w, /assets/images/generated/assets/avatar-transparent-400-209cb8b4f.png 400w, /assets/images/generated/assets/avatar-transparent-800-209cb8b4f.png 800w, /assets/images/generated/assets/avatar-transparent-1600-209cb8b4f.png 1600w" type="image/png">
+  <img class="" src="/assets/images/generated/assets/avatar-transparent-800-209cb8b4f.png" width="1615" height="1603">
+</picture>
 </a>
             <ul class='links'>
               <li><a href="/" class="menu-item">Posts</a></li>
@@ -115,7 +119,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>20/09/2015</span></div>   
       
 
-<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>4 minutes to read</span></div>
+<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>5 minutes to read</span></div>
    
     </div>  
     <p>So, do you want to track the time you spend in some tasks, but always forget to start the time tracking?</p>
@@ -169,14 +173,22 @@ curl -v -u &lt;api-token&gt;:api_token \
 <p>The first thing, you must create the context, go to ControlPlane preferences:</p>
 
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-22325241e.webp" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-22325241e.webp 207w" width="207" height="312" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-200-22325241e.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-22325241e.webp 207w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-200-22325241e.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-22325241e.png 207w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-22325241e.png" width="207" height="312" />
+</picture>
 
       </center>
 
 <p>Select tab “Contexts”, and add I new context, in my case a called it “Skahal”:</p>
 
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-dac56bbc1.webp" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-dac56bbc1.webp 393w" width="393" height="182" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-200-dac56bbc1.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-dac56bbc1.webp 393w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-200-dac56bbc1.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-dac56bbc1.png 393w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-dac56bbc1.png" width="393" height="182" />
+</picture>
 
       </center>
 
@@ -184,7 +196,11 @@ curl -v -u &lt;api-token&gt;:api_token \
 <p>Select the tab “Evidences sources”, the option “Running Application” should be checked:</p>
 
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-df877fb0a.webp" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-df877fb0a.webp 371w" width="371" height="51" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-200-df877fb0a.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-df877fb0a.webp 371w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-200-df877fb0a.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-df877fb0a.png 371w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-df877fb0a.png" width="371" height="51" />
+</picture>
 
       </center>
 
@@ -192,7 +208,11 @@ curl -v -u &lt;api-token&gt;:api_token \
 <p>Select the tab “Rules”, add a new rule to your context, the rule must be of type “Running Application” to Unity 3D:</p>
 
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-f6b304637.webp" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-f6b304637.webp 608w" width="608" height="161" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-200-f6b304637.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-400-f6b304637.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-f6b304637.webp 608w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-200-f6b304637.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-400-f6b304637.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-f6b304637.png 608w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-f6b304637.png" width="608" height="161" />
+</picture>
 
       </center>
 
@@ -200,21 +220,33 @@ curl -v -u &lt;api-token&gt;:api_token \
 <p>Select the tab “Actions”, we’ll create 3 new actions: the first one is a task to open Safari in the Toggl timer task page, this is an optional action, but I like to see the task running (and I can stop/start it manually sometimes). Add a action of type “Open URL” with the address “https://www.toggl.com/app/timer”, select “On Arrival” and your context:</p>
 
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-3a6809412.webp" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-3a6809412.webp 716w" width="716" height="68" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-200-3a6809412.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-400-3a6809412.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-3a6809412.webp 716w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-200-3a6809412.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-400-3a6809412.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-3a6809412.png 716w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-3a6809412.png" width="716" height="68" />
+</picture>
 
       </center>
 
 <p>The second one is a action to start the task in the Toggl when the context starts. Add a action of type “Shell Script”, in the field “Parameter” type the path to your startTogglTimeEntry.sh script, select “On Arrival” and your context:</p>
 
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-0f137d185.webp" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-0f137d185.webp 476w" width="476" height="188" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-200-0f137d185.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-400-0f137d185.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-0f137d185.webp 476w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-200-0f137d185.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-400-0f137d185.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-0f137d185.png 476w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-0f137d185.png" width="476" height="188" />
+</picture>
 
       </center>
 
 <p>The third one is a action to stop the task in the Toggl when the context ends. Add a action of type “Shell Script”, in the field “Parameter” type the path to your stopTogglTimeEntry.sh script, select “On Arrival” and your context:</p>
 
 <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-a0ce52c23.webp" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-a0ce52c23.webp 467w" width="467" height="182" />
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-200-a0ce52c23.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-400-a0ce52c23.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-a0ce52c23.webp 467w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-200-a0ce52c23.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-400-a0ce52c23.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-a0ce52c23.png 467w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-a0ce52c23.png" width="467" height="182" />
+</picture>
 
       </center>
 
@@ -311,7 +343,11 @@ curl -v -u &lt;api-token&gt;:api_token \
      <div class="portifolio-slide">
           <a href="GeneticSharp-Car2D">
                <center>                
-        <img class="screenshot" src="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp" srcset="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1915-277a451e7.webp 1915w" width="1915" height="988">
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.webp 1600w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.png 1600w" type="image/png">
+  <img class="screenshot" src="/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png" width="1915" height="988">
+</picture>
 
       </center>
                GeneticSharp Car2D, an Unity3D sample for GeneticSharp where a genetic algorithm tries to design 2D cars to overcome roads challenges
@@ -319,7 +355,11 @@ curl -v -u &lt;api-token&gt;:api_token \
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.geneticsharprunnersunityapp">               
-          <img class="icon" src="/assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.webp" srcset="/assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.webp 256w" width="256" height="99">
+          <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/google-play-badge-200-f42bdeb50.webp 200w, /assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.webp 256w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/google-play-badge-200-f42bdeb50.png 200w, /assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.png 256w" type="image/png">
+  <img class="icon" src="/assets/images/generated/assets/logos/google-play-badge-256-f42bdeb50.png" width="256" height="99">
+</picture>
 
           GeneticSharp Unity3d Samples on Google Play
           </a>
@@ -370,7 +410,11 @@ curl -v -u &lt;api-token&gt;:api_token \
      </div> -->
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals">
-               <img class="" src="/assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.webp" srcset="/assets/images/generated/games/puzzimals/images/header-1024-9a13ea94a.webp 1024w" width="1024" height="500">
+               <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/header-200-9a13ea94a.webp 200w, /assets/images/generated/games/puzzimals/images/header-400-9a13ea94a.webp 400w, /assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.webp 800w, /assets/images/generated/games/puzzimals/images/header-1024-9a13ea94a.webp 1024w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/header-200-9a13ea94a.png 200w, /assets/images/generated/games/puzzimals/images/header-400-9a13ea94a.png 400w, /assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.png 800w, /assets/images/generated/games/puzzimals/images/header-1024-9a13ea94a.png 1024w" type="image/png">
+  <img class="" src="/assets/images/generated/games/puzzimals/images/header-800-9a13ea94a.png" width="1024" height="500">
+</picture>
     
                <h3>Puzzimals</h3>     
                <i>Play my new mobile game, a tile-matching game with cute graphics and challenging puzzles.</i> 
@@ -378,7 +422,11 @@ curl -v -u &lt;api-token&gt;:api_token \
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals">
-               <img class="" src="/assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.webp" srcset="/assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.webp 512w" width="512" height="512">
+               <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/logo-200-07340b1ab.webp 200w, /assets/images/generated/games/puzzimals/images/logo-400-07340b1ab.webp 400w, /assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.webp 512w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/logo-200-07340b1ab.png 200w, /assets/images/generated/games/puzzimals/images/logo-400-07340b1ab.png 400w, /assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.png 512w" type="image/png">
+  <img class="" src="/assets/images/generated/games/puzzimals/images/logo-512-07340b1ab.png" width="512" height="512">
+</picture>
    
                <h3>Puzzimals</h3>     
                <i>Play my new mobile game, a tile-matching game with cute graphics and challenging puzzles.</i> 
@@ -386,7 +434,11 @@ curl -v -u &lt;api-token&gt;:api_token \
      </div>
      <div class="portifolio-slide">
           <a href="https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals">
-               <img class="" src="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.webp" srcset="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.webp 450w" width="450" height="253">
+               <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-200-6eb6b7cc2.webp 200w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-400-6eb6b7cc2.webp 400w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.webp 450w" type="image/webp">
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-200-6eb6b7cc2.jpg 200w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-400-6eb6b7cc2.jpg 400w, /assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.jpg 450w" type="image/jpeg">
+  <img class="" src="/assets/images/generated/games/puzzimals/images/horizontal-screenshot-02.png.thumb-450-6eb6b7cc2.jpg" width="450" height="253">
+</picture>
    
                <h3>Puzzimals</h3>     
                <i>Play my new mobile game, a tile-matching game with cute graphics and challenging puzzles.</i> 

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - made-with-unity</title>
  <link href="//tags/made-with-unity/index.xml" rel="self"/>
  <link href="/tag/made-with-unity.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/made-with-unity.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -41,7 +41,11 @@ I took some time thinking about what game I would like to play and develop with 
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.webp&quot; srcset=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.webp 192w&quot; width=&quot;192&quot; height=&quot;256&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.webp 192w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.png 192w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.png&quot; width=&quot;192&quot; height=&quot;256&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;

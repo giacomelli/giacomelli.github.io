@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - skahal</title>
  <link href="//tags/skahal/index.xml" rel="self"/>
  <link href="/tag/skahal.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/skahal.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -103,7 +103,11 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.webp 497w&quot; width=&quot;497&quot; height=&quot;126&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-200-5cb3e86ea.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-400-5cb3e86ea.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.webp 497w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-200-5cb3e86ea.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-400-5cb3e86ea.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.png 497w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.png&quot; width=&quot;497&quot; height=&quot;126&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -120,7 +124,11 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.webp 261w&quot; width=&quot;261&quot; height=&quot;406&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-200-65576a7d2.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.webp 261w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-200-65576a7d2.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.png 261w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.png&quot; width=&quot;261&quot; height=&quot;406&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -130,7 +138,11 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;Select the configuration of your platform.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.webp 334w&quot; width=&quot;334&quot; height=&quot;237&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-200-77d13f09f.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.webp 334w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-200-77d13f09f.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.png 334w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.png&quot; width=&quot;334&quot; height=&quot;237&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -143,7 +155,11 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;Open the scene Assets/SimulatorScene and click on play button.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.webp 298w&quot; width=&quot;298&quot; height=&quot;236&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-200-f286a3e11.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.webp 298w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-200-f286a3e11.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.png 298w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.png&quot; width=&quot;298&quot; height=&quot;236&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -151,7 +167,11 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;In the simulator click on button “BuildStatusChanged”.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.webp 640w&quot; width=&quot;640&quot; height=&quot;493&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-200-74879a55e.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-400-74879a55e.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-200-74879a55e.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-400-74879a55e.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.png&quot; width=&quot;640&quot; height=&quot;493&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -172,7 +192,11 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;p&gt;Click on “Build” button.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.webp 641w&quot; width=&quot;641&quot; height=&quot;362&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-200-ab89078f5.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-400-ab89078f5.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.webp 641w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-200-ab89078f5.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-400-ab89078f5.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.png 641w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.png&quot; width=&quot;641&quot; height=&quot;362&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
@@ -183,7 +207,11 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;You should see the same falling down box that you see on simulator falling down inside Buildron every time a build changed status.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.webp&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.webp 639w&quot; width=&quot;639&quot; height=&quot;501&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-200-34474df72.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-400-34474df72.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.webp 639w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-200-34474df72.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-400-34474df72.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.png 639w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.png&quot; width=&quot;639&quot; height=&quot;501&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 

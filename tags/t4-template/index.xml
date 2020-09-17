@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - t4-template</title>
  <link href="//tags/t4-template/index.xml" rel="self"/>
  <link href="/tag/t4-template.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/t4-template.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -34,7 +34,11 @@
 
 &lt;p&gt;Now open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SampleNugetProject.csproj&lt;/code&gt; in the Visual Studio and add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;T4 Template&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.webp 558w&quot; width=&quot;558&quot; height=&quot;412&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-200-26dab70a3.webp 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-400-26dab70a3.webp 400w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.webp 558w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-200-26dab70a3.png 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-400-26dab70a3.png 400w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.png 558w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.png&quot; width=&quot;558&quot; height=&quot;412&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Add new item…&lt;/p&gt;
@@ -43,7 +47,11 @@
 
 &lt;p&gt;Our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Solution Explorer&lt;/code&gt; should look like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.webp 339w&quot; width=&quot;339&quot; height=&quot;194&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-200-b5b822c1f.webp 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.webp 339w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-200-b5b822c1f.png 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.png 339w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.png&quot; width=&quot;339&quot; height=&quot;194&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 

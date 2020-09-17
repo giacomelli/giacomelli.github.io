@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - tesseract</title>
  <link href="//tags/tesseract/index.xml" rel="self"/>
  <link href="/tag/tesseract.html"/>
- <updated>2020-09-17T05:57:17-03:00</updated>
+ <updated>2020-09-17T12:34:30-03:00</updated>
  <id>/tag/tesseract.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -65,7 +65,11 @@
 
 &lt;p&gt;If you try to read a image like this one:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-800-171750320.webp&quot; srcset=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-1024-171750320.webp 1024w&quot; width=&quot;1024&quot; height=&quot;800&quot; /&gt;
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-200-171750320.webp 200w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-400-171750320.webp 400w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-800-171750320.webp 800w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-1024-171750320.webp 1024w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-200-171750320.png 200w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-400-171750320.png 400w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-800-171750320.png 800w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-1024-171750320.png 1024w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-800-171750320.png&quot; width=&quot;1024&quot; height=&quot;800&quot; /&gt;
+&lt;/picture&gt;
 
       &lt;/center&gt;
 
