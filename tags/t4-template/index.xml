@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - t4-template</title>
  <link href="//tags/t4-template/index.xml" rel="self"/>
  <link href="/tag/t4-template.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/t4-template.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -36,7 +36,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-200-26dab70a3.webp 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-400-26dab70a3.webp 400w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.webp 558w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-200-26dab70a3.png 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-400-26dab70a3.png 400w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.png 558w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.png&quot; width=&quot;558&quot; height=&quot;412&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.png&quot; alt=&quot;post image&quot; width=&quot;558&quot; height=&quot;412&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -49,7 +49,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-200-b5b822c1f.webp 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.webp 339w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-200-b5b822c1f.png 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.png 339w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.png&quot; width=&quot;339&quot; height=&quot;194&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.png&quot; alt=&quot;post image&quot; width=&quot;339&quot; height=&quot;194&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - games</title>
  <link href="//tags/games/index.xml" rel="self"/>
  <link href="/tag/games.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/games.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -44,7 +44,7 @@ I took some time thinking about what game I would like to play and develop with 
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.webp 192w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.png 192w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.png&quot; width=&quot;192&quot; height=&quot;256&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.png&quot; alt=&quot;post image&quot; width=&quot;192&quot; height=&quot;256&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;

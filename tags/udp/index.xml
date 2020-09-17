@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - udp</title>
  <link href="//tags/udp/index.xml" rel="self"/>
  <link href="/tag/udp.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/udp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -46,7 +46,7 @@ From the 9 stores supported, 7 are fully integrated with UDP. What this meaning?
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-200-51d2d476b.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-400-51d2d476b.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-800-51d2d476b.webp 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-1024-51d2d476b.webp 1024w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-200-51d2d476b.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-400-51d2d476b.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-800-51d2d476b.png 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-1024-51d2d476b.png 1024w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-800-51d2d476b.png&quot; width=&quot;1024&quot; height=&quot;768&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-journey-800-51d2d476b.png&quot; alt=&quot;post image&quot; width=&quot;1024&quot; height=&quot;768&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -75,7 +75,7 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-200-2be9cf25c.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-400-2be9cf25c.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-800-2be9cf25c.webp 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-1000-2be9cf25c.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-200-2be9cf25c.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-400-2be9cf25c.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-800-2be9cf25c.png 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-1000-2be9cf25c.png 1000w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-800-2be9cf25c.png&quot; width=&quot;1000&quot; height=&quot;375&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/target-udp-800-2be9cf25c.png&quot; alt=&quot;post image&quot; width=&quot;1000&quot; height=&quot;375&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -99,7 +99,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-200-65a5a4303.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-400-65a5a4303.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-489-65a5a4303.webp 489w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-200-65a5a4303.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-400-65a5a4303.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-489-65a5a4303.png 489w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-489-65a5a4303.png&quot; width=&quot;489&quot; height=&quot;239&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/udp-login-489-65a5a4303.png&quot; alt=&quot;post image&quot; width=&quot;489&quot; height=&quot;239&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -114,7 +114,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-200-289a63222.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-346-289a63222.webp 346w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-200-289a63222.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-346-289a63222.png 346w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-346-289a63222.png&quot; width=&quot;346&quot; height=&quot;86&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/sandbox-testing-346-289a63222.png&quot; alt=&quot;post image&quot; width=&quot;346&quot; height=&quot;86&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -139,7 +139,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-200-3a4a50966.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-400-3a4a50966.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-800-3a4a50966.webp 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-882-3a4a50966.webp 882w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-200-3a4a50966.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-400-3a4a50966.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-800-3a4a50966.png 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-882-3a4a50966.png 882w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-800-3a4a50966.png&quot; width=&quot;882&quot; height=&quot;238&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/app-signature-800-3a4a50966.png&quot; alt=&quot;post image&quot; width=&quot;882&quot; height=&quot;238&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -152,7 +152,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-200-ef36e16c7.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-400-ef36e16c7.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-596-ef36e16c7.webp 596w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-200-ef36e16c7.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-400-ef36e16c7.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-596-ef36e16c7.png 596w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-596-ef36e16c7.png&quot; width=&quot;596&quot; height=&quot;240&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/google-api-credentials-596-ef36e16c7.png&quot; alt=&quot;post image&quot; width=&quot;596&quot; height=&quot;240&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -186,7 +186,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-200-0e5146f1b.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-400-0e5146f1b.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-610-0e5146f1b.webp 610w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-200-0e5146f1b.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-400-0e5146f1b.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-610-0e5146f1b.png 610w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-610-0e5146f1b.png&quot; width=&quot;610&quot; height=&quot;239&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/import-from-google-610-0e5146f1b.png&quot; alt=&quot;post image&quot; width=&quot;610&quot; height=&quot;239&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -233,7 +233,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-200-1e49178bb.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-282-1e49178bb.webp 282w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-200-1e49178bb.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-282-1e49178bb.png 282w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-282-1e49178bb.png&quot; width=&quot;282&quot; height=&quot;268&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/qooapp-login-282-1e49178bb.png&quot; alt=&quot;post image&quot; width=&quot;282&quot; height=&quot;268&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -247,7 +247,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-200-3447a9f64.webp 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-400-3447a9f64.webp 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-800-3447a9f64.webp 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-1000-3447a9f64.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-200-3447a9f64.png 200w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-400-3447a9f64.png 400w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-800-3447a9f64.png 800w, /assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-1000-3447a9f64.png 1000w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-800-3447a9f64.png&quot; width=&quot;1000&quot; height=&quot;470&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/01/unity-distribution-portal-udp-journey-tips-and-tricks/publish-button-800-3447a9f64.png&quot; alt=&quot;post image&quot; width=&quot;1000&quot; height=&quot;470&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;

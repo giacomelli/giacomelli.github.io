@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - sonar</title>
  <link href="//tags/sonar/index.xml" rel="self"/>
  <link href="/tag/sonar.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/sonar.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -104,7 +104,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-200-ec263fa2c.webp 200w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-400-ec263fa2c.webp 400w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-405-ec263fa2c.webp 405w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-200-ec263fa2c.png 200w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-400-ec263fa2c.png 400w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-405-ec263fa2c.png 405w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-405-ec263fa2c.png&quot; width=&quot;405&quot; height=&quot;149&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-405-ec263fa2c.png&quot; alt=&quot;post image&quot; width=&quot;405&quot; height=&quot;149&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -117,7 +117,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-200-a93997fec.webp 200w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-400-a93997fec.webp 400w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-800-a93997fec.webp 800w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-983-a93997fec.webp 983w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-200-a93997fec.png 200w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-400-a93997fec.png 400w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-800-a93997fec.png 800w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-983-a93997fec.png 983w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-800-a93997fec.png&quot; width=&quot;983&quot; height=&quot;503&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-800-a93997fec.png&quot; alt=&quot;post image&quot; width=&quot;983&quot; height=&quot;503&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;

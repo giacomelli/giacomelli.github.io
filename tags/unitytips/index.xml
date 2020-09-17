@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -35,7 +35,7 @@
 &lt;script src=&quot;https://gist.github.com/96086201cb5cc512ce7a15a02ebcf29a.js&quot;&gt; &lt;/script&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/15/unitytips-editor-coroutines/chip-8-inside-unity-editor.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/15/unitytips-editor-coroutines/chip-8-inside-unity-editor.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The result of using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorCoroutineUtility.StartCoroutine&lt;/code&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -58,7 +58,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;p&gt;To activate a Focused Inspector, select an item &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(GameObject, Component, or Asset)&lt;/code&gt; and in the context menu hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Properties...&lt;/code&gt; menu item.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -77,7 +77,7 @@ It always displays the properties of the item you opened it for, even if you sel
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-200-27b940cc8.webp 200w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-400-27b940cc8.webp 400w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.webp 800w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.webp 1572w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-200-27b940cc8.jpg 200w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-400-27b940cc8.jpg 400w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.jpg 800w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.jpg 1572w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.jpg&quot; width=&quot;1572&quot; height=&quot;618&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.jpg&quot; alt=&quot;post image&quot; width=&quot;1572&quot; height=&quot;618&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -107,7 +107,7 @@ It always displays the properties of the item you opened it for, even if you sel
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-200-8dae754d8.webp 200w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-400-8dae754d8.webp 400w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp 467w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-200-8dae754d8.png 200w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-400-8dae754d8.png 400w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png 467w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png&quot; width=&quot;467&quot; height=&quot;413&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png&quot; alt=&quot;post image&quot; width=&quot;467&quot; height=&quot;413&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -143,7 +143,7 @@ It always displays the properties of the item you opened it for, even if you sel
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-200-f6e7f7555.webp 200w, /assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-200-f6e7f7555.jpg 200w, /assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.jpg 256w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.jpg&quot; width=&quot;256&quot; height=&quot;382&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/07/unitytips-social-share/component-256-f6e7f7555.jpg&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;382&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -204,7 +204,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <id>//unitytips-timespan-box-drawer</id>
    <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyDrawer.html&quot;&gt;PropertyDrawer&lt;/a&gt; to display a help box on inspector showing the time information in seconds fields using &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-timespan-format-strings&quot;&gt;TimeSpan format strings&lt;/a&gt;:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -233,7 +233,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <id>//unitytips-string-interpolation</id>
    <content type="html">&lt;p&gt;Since C# 6.0 you can use &lt;a href=&quot;https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/tokens/interpolated&quot;&gt;String interpolation&lt;/a&gt; to make code more readable:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The sample lines will result in the same string&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -257,7 +257,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <content type="html">&lt;p&gt;When you have a single line method, you can use &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition&quot;&gt;expression body definition&lt;/a&gt; do simplify and reduce the lines of code:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -266,7 +266,7 @@ It always displays the properties of the item you opened it for, even if you sel
 
 &lt;p&gt;So you can use the expression body definition for other members, like properties:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 </content>
@@ -568,7 +568,7 @@ It always displays the properties of the item you opened it for, even if you sel
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.webp 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.webp 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.webp 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.webp 1084w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.png 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.png 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.png 1084w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png&quot; alt=&quot;post image&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -591,7 +591,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;/div&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;

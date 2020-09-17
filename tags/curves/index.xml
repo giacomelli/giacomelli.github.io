@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - curves</title>
  <link href="//tags/curves/index.xml" rel="self"/>
  <link href="/tag/curves.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/curves.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -25,7 +25,7 @@
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/chrome-extension-200-209699985.webp 200w, /assets/images/generated/assets/logos/chrome-extension-400-209699985.webp 400w, /assets/images/generated/assets/logos/chrome-extension-496-209699985.webp 496w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/chrome-extension-200-209699985.png 200w, /assets/images/generated/assets/logos/chrome-extension-400-209699985.png 400w, /assets/images/generated/assets/logos/chrome-extension-496-209699985.png 496w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/chrome-extension-496-209699985.png&quot; width=&quot;496&quot; height=&quot;150&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/chrome-extension-496-209699985.png&quot; alt=&quot;post image&quot; width=&quot;496&quot; height=&quot;150&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;For this tutorial, I’ll use a Chrome Extension basic sample called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt;.&lt;br /&gt; 
@@ -35,7 +35,7 @@ You can download it from this page &lt;a href=&quot;https://developer.chrome.com
 &lt;/div&gt;
 
 &lt;h2 id=&quot;gulp&quot;&gt;Gulp&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/gulp.svg &quot; /&gt;
+&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/gulp.svg &quot; alt=&quot;post image&quot; /&gt;
 At that time we did not find any builtin or other solution to make this workflow easier and streamlined, so we decided to create our own solution using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gulp&lt;/code&gt;. This whole solution will be explaining below.
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -48,7 +48,7 @@ At that time we did not find any builtin or other solution to make this workflow
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;If we just try to open our download &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extension&lt;/code&gt; .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.&lt;/p&gt;
@@ -56,7 +56,7 @@ At that time we did not find any builtin or other solution to make this workflow
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.webp 113w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.png 113w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.png&quot; width=&quot;113&quot; height=&quot;145&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.png&quot; alt=&quot;post image&quot; width=&quot;113&quot; height=&quot;145&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -75,7 +75,7 @@ At that time we did not find any builtin or other solution to make this workflow
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png 336w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png&quot; width=&quot;336&quot; height=&quot;167&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png&quot; alt=&quot;post image&quot; width=&quot;336&quot; height=&quot;167&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -87,7 +87,7 @@ At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-200-484bbc2a8.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.webp 202w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-200-484bbc2a8.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.png 202w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.png&quot; width=&quot;202&quot; height=&quot;142&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.png&quot; alt=&quot;post image&quot; width=&quot;202&quot; height=&quot;142&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -117,7 +117,7 @@ At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Now I will explain each section of it.
@@ -167,7 +167,7 @@ Here we are basically defining the order of each function that will be called wh
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Change the content of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;packages.json&lt;/code&gt; file to the content below to update the dependencies.
@@ -181,7 +181,7 @@ Here we are basically defining the order of each function that will be called wh
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-200-d0dfc6cee.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.webp 369w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-200-d0dfc6cee.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.png 369w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.png&quot; width=&quot;369&quot; height=&quot;148&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.png&quot; alt=&quot;post image&quot; width=&quot;369&quot; height=&quot;148&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -190,7 +190,7 @@ Here we are basically defining the order of each function that will be called wh
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;We need to create our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
@@ -219,7 +219,7 @@ Here is the content of each one:&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-200-b124fa8a9.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.webp 379w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-200-b124fa8a9.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.png 379w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.png&quot; width=&quot;379&quot; height=&quot;255&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.png&quot; alt=&quot;post image&quot; width=&quot;379&quot; height=&quot;255&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -229,7 +229,7 @@ Here is the content of each one:&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-200-0991800ea.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-400-0991800ea.webp 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.webp 423w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-200-0991800ea.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-400-0991800ea.png 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.png 423w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.png&quot; width=&quot;423&quot; height=&quot;230&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.png&quot; alt=&quot;post image&quot; width=&quot;423&quot; height=&quot;230&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -261,7 +261,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mani
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;We need to create our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files, in the same way, we created our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
@@ -285,7 +285,7 @@ Here is the content of each one:&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png 336w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png&quot; width=&quot;336&quot; height=&quot;167&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png&quot; alt=&quot;post image&quot; width=&quot;336&quot; height=&quot;167&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -300,7 +300,7 @@ In the Chrome Extensions page you should see something like this:&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-200-439243e20.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-400-439243e20.webp 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.webp 468w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-200-439243e20.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-400-439243e20.png 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.png 468w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.png&quot; width=&quot;468&quot; height=&quot;358&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.png&quot; alt=&quot;post image&quot; width=&quot;468&quot; height=&quot;358&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -311,7 +311,7 @@ When you click on the extension icon on the Chrome toolbar, you should see somet
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.webp 129w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.png 129w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.png&quot; width=&quot;129&quot; height=&quot;177&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.png&quot; alt=&quot;post image&quot; width=&quot;129&quot; height=&quot;177&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -334,7 +334,7 @@ You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
@@ -363,14 +363,14 @@ You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&
 
 &lt;p&gt;The following gif shows the evolution of a Maurer Rose (n = 2, d = 29°) from 1 point to 361 points.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;A Maurer Rose is always defined by two input parameters: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d&lt;/code&gt;.&lt;/p&gt;
@@ -394,7 +394,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;The basic formula is: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r = sin(nθ)&lt;/code&gt; and we need to apply it to 361 points, where:&lt;/p&gt;
@@ -431,7 +431,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-200-d24407ade.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-200-d24407ade.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.png 256w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.png&quot; width=&quot;256&quot; height=&quot;242&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;242&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -442,7 +442,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-200-71a3f234d.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-200-71a3f234d.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.png 256w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.png&quot; width=&quot;256&quot; height=&quot;224&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;224&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -451,7 +451,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;If you change the values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;N&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D&lt;/code&gt; of the component in the inspector, you will see a new Maurer Rose been drawing.&lt;/p&gt;
@@ -461,7 +461,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-200-5a8621fe1.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-400-5a8621fe1.webp 400w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.webp 800w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-1600-5a8621fe1.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-200-5a8621fe1.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-400-5a8621fe1.png 400w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.png 800w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-1600-5a8621fe1.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.png&quot; width=&quot;2400&quot; height=&quot;400&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.png&quot; alt=&quot;post image&quot; width=&quot;2400&quot; height=&quot;400&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -470,7 +470,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Now that you understand what is a Maurer Rose and how to code it inside Unity you can try to do some crazy things with it, like animate the input values or the number of points, or still using it to build a particle system.&lt;/p&gt;

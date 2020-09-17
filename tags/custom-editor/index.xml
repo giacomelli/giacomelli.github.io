@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - custom-editor</title>
  <link href="//tags/custom-editor/index.xml" rel="self"/>
  <link href="/tag/custom-editor.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/custom-editor.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -19,7 +19,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-200-27b940cc8.webp 200w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-400-27b940cc8.webp 400w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.webp 800w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.webp 1572w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-200-27b940cc8.jpg 200w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-400-27b940cc8.jpg 400w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.jpg 800w, /assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-1572-27b940cc8.jpg 1572w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.jpg&quot; width=&quot;1572&quot; height=&quot;618&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/21/unitytips-settings-provider/settings-provider-800-27b940cc8.jpg&quot; alt=&quot;post image&quot; width=&quot;1572&quot; height=&quot;618&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -49,7 +49,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-200-8dae754d8.webp 200w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-400-8dae754d8.webp 400w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp 467w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-200-8dae754d8.png 200w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-400-8dae754d8.png 400w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png 467w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png&quot; width=&quot;467&quot; height=&quot;413&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png&quot; alt=&quot;post image&quot; width=&quot;467&quot; height=&quot;413&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -99,7 +99,7 @@
 &lt;/div&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;

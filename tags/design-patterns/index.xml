@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - design-patterns</title>
  <link href="//tags/design-patterns/index.xml" rel="self"/>
  <link href="/tag/design-patterns.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/design-patterns.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -23,7 +23,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/05/12/ddd-by-quotes/ddd-200-c0255fe64.webp 200w, /assets/images/generated/assets/2014/05/12/ddd-by-quotes/ddd-260-c0255fe64.webp 260w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/05/12/ddd-by-quotes/ddd-200-c0255fe64.jpg 200w, /assets/images/generated/assets/2014/05/12/ddd-by-quotes/ddd-260-c0255fe64.jpg 260w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/05/12/ddd-by-quotes/ddd-260-c0255fe64.jpg&quot; width=&quot;260&quot; height=&quot;344&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/05/12/ddd-by-quotes/ddd-260-c0255fe64.jpg&quot; alt=&quot;post image&quot; width=&quot;260&quot; height=&quot;344&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;

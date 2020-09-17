@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - debug</title>
  <link href="//tags/debug/index.xml" rel="self"/>
  <link href="/tag/debug.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/debug.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -36,7 +36,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.webp 139w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png 139w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png&quot; width=&quot;139&quot; height=&quot;163&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png&quot; alt=&quot;post image&quot; width=&quot;139&quot; height=&quot;163&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -60,7 +60,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-02058a557.webp 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-02058a557.webp 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.webp 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.webp 840w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-02058a557.png 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-02058a557.png 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.png 840w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png&quot; width=&quot;840&quot; height=&quot;52&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png&quot; alt=&quot;post image&quot; width=&quot;840&quot; height=&quot;52&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -68,7 +68,7 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;When debugging is easier than expected&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;

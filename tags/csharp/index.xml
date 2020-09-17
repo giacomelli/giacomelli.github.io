@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - csharp</title>
  <link href="//tags/csharp/index.xml" rel="self"/>
  <link href="/tag/csharp.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/csharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,7 +16,7 @@
    <id>//unitytips-string-interpolation</id>
    <content type="html">&lt;p&gt;Since C# 6.0 you can use &lt;a href=&quot;https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/tokens/interpolated&quot;&gt;String interpolation&lt;/a&gt; to make code more readable:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The sample lines will result in the same string&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -40,7 +40,7 @@
    <content type="html">&lt;p&gt;When you have a single line method, you can use &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition&quot;&gt;expression body definition&lt;/a&gt; do simplify and reduce the lines of code:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -49,7 +49,7 @@
 
 &lt;p&gt;So you can use the expression body definition for other members, like properties:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 </content>
@@ -123,7 +123,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.webp 139w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png 139w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png&quot; width=&quot;139&quot; height=&quot;163&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png&quot; alt=&quot;post image&quot; width=&quot;139&quot; height=&quot;163&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -147,7 +147,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-02058a557.webp 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-02058a557.webp 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.webp 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.webp 840w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-02058a557.png 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-02058a557.png 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.png 840w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png&quot; width=&quot;840&quot; height=&quot;52&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png&quot; alt=&quot;post image&quot; width=&quot;840&quot; height=&quot;52&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -155,7 +155,7 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;When debugging is easier than expected&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;

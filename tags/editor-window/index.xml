@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - editor-window</title>
  <link href="//tags/editor-window/index.xml" rel="self"/>
  <link href="/tag/editor-window.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/editor-window.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -193,7 +193,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-200-7a432d7c2.webp 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-400-7a432d7c2.webp 400w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.webp 678w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-200-7a432d7c2.png 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-400-7a432d7c2.png 400w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.png 678w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.png&quot; width=&quot;678&quot; height=&quot;178&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/similar-spritesheets-678-7a432d7c2.png&quot; alt=&quot;post image&quot; width=&quot;678&quot; height=&quot;178&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -207,7 +207,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.webp 134w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.png 134w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.png&quot; width=&quot;134&quot; height=&quot;31&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/alys-walking-spritesheet-134-bbec336e1.png&quot; alt=&quot;post image&quot; width=&quot;134&quot; height=&quot;31&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -223,7 +223,7 @@
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;All the source code and assets for this tutorial are available on this GitHub repository: &lt;a href=&quot;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&quot;&gt;https://github.com/giacomelli/coding-an-editorwindow-to-create-default-animations-from-sprites&lt;/a&gt;. To start the tutorial you need to fork, clone or download the repository.&lt;/p&gt;
@@ -269,7 +269,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-200-3ddf249e2.webp 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.webp 225w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-200-3ddf249e2.png 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.png 225w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.png&quot; width=&quot;225&quot; height=&quot;201&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/menu-item-225-3ddf249e2.png&quot; alt=&quot;post image&quot; width=&quot;225&quot; height=&quot;201&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -284,7 +284,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-200-aa3ab20da.webp 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.webp 375w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-200-aa3ab20da.png 200w, /assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.png 375w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.png&quot; width=&quot;375&quot; height=&quot;186&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/30/coding-an-editorwindow-to-create-default-animations-from-sprites/editor-window-empty-375-aa3ab20da.png&quot; alt=&quot;post image&quot; width=&quot;375&quot; height=&quot;186&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -416,7 +416,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.webp 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.webp 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.webp 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.webp 1084w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-200-6c947fd93.png 200w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-400-6c947fd93.png 400w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png 800w, /assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-1084-6c947fd93.png 1084w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/05/28/a-sorting-layer-debugger-for-unity/SortingLayerDebugger-800-6c947fd93.png&quot; alt=&quot;post image&quot; width=&quot;1084&quot; height=&quot;548&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;

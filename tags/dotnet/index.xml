@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2020-09-17T15:48:50-03:00</updated>
+ <updated>2020-09-17T17:19:16-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -200,7 +200,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-200-26dab70a3.webp 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-400-26dab70a3.webp 400w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.webp 558w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-200-26dab70a3.png 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-400-26dab70a3.png 400w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.png 558w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.png&quot; width=&quot;558&quot; height=&quot;412&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/add-t4-template-558-26dab70a3.png&quot; alt=&quot;post image&quot; width=&quot;558&quot; height=&quot;412&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -213,7 +213,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-200-b5b822c1f.webp 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.webp 339w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-200-b5b822c1f.png 200w, /assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.png 339w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.png&quot; width=&quot;339&quot; height=&quot;194&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/08/08/deploying-a-t4-template-with-dotnet-pack/t4-template-added-solution-explorer-339-b5b822c1f.png&quot; alt=&quot;post image&quot; width=&quot;339&quot; height=&quot;194&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -367,7 +367,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-200-ec263fa2c.webp 200w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-400-ec263fa2c.webp 400w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-405-ec263fa2c.webp 405w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-200-ec263fa2c.png 200w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-400-ec263fa2c.png 400w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-405-ec263fa2c.png 405w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-405-ec263fa2c.png&quot; width=&quot;405&quot; height=&quot;149&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/cake-terminal-405-ec263fa2c.png&quot; alt=&quot;post image&quot; width=&quot;405&quot; height=&quot;149&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -380,7 +380,7 @@
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-200-a93997fec.webp 200w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-400-a93997fec.webp 400w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-800-a93997fec.webp 800w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-983-a93997fec.webp 983w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-200-a93997fec.png 200w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-400-a93997fec.png 400w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-800-a93997fec.png 800w, /assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-983-a93997fec.png 983w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-800-a93997fec.png&quot; width=&quot;983&quot; height=&quot;503&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/25/publishing-a-dotnet-core-project-to-sonarcloud-with-cake/sonarcloud-dashboard-800-a93997fec.png&quot; alt=&quot;post image&quot; width=&quot;983&quot; height=&quot;503&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -419,7 +419,7 @@ dotnet run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
@@ -512,7 +512,7 @@ dotnet watch run
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-200-f31194f79.webp 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-400-f31194f79.webp 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.webp 800w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-1019-f31194f79.webp 1019w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-200-f31194f79.png 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-400-f31194f79.png 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.png 800w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-1019-f31194f79.png 1019w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.png&quot; width=&quot;1019&quot; height=&quot;310&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.png&quot; alt=&quot;post image&quot; width=&quot;1019&quot; height=&quot;310&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -543,7 +543,7 @@ dotnet watch run
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
@@ -605,7 +605,7 @@ dotnet watch run
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-200-938b3a100.webp 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-400-938b3a100.webp 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.webp 565w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-200-938b3a100.png 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-400-938b3a100.png 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.png 565w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.png&quot; width=&quot;565&quot; height=&quot;354&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.png&quot; alt=&quot;post image&quot; width=&quot;565&quot; height=&quot;354&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -628,7 +628,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
@@ -644,7 +644,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -690,7 +690,7 @@ dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&g
 &lt;p&gt;Now you can open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpSample&lt;/code&gt; in Unity3D editor.
 Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; scene and hit the play button, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -763,7 +763,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-200-171750320.webp 200w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-400-171750320.webp 400w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-800-171750320.webp 800w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-1024-171750320.webp 1024w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-200-171750320.png 200w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-400-171750320.png 400w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-800-171750320.png 800w, /assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-1024-171750320.png 1024w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-800-171750320.png&quot; width=&quot;1024&quot; height=&quot;800&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/06/13/using-tesseract4-with-csharp/input-sample-image-800-171750320.png&quot; alt=&quot;post image&quot; width=&quot;1024&quot; height=&quot;800&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -863,7 +863,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output-200-b583e7472.webp 200w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output-400-b583e7472.webp 400w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output-759-b583e7472.webp 759w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output-200-b583e7472.png 200w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output-400-b583e7472.png 400w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output-759-b583e7472.png 759w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output-759-b583e7472.png&quot; width=&quot;759&quot; height=&quot;82&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/dotnet-new-list-output-759-b583e7472.png&quot; alt=&quot;post image&quot; width=&quot;759&quot; height=&quot;82&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -878,7 +878,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-200-98f58dec8.webp 200w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-400-98f58dec8.webp 400w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-800-98f58dec8.webp 800w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-1032-98f58dec8.webp 1032w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-200-98f58dec8.png 200w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-400-98f58dec8.png 400w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-800-98f58dec8.png 800w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-1032-98f58dec8.png 1032w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-800-98f58dec8.png&quot; width=&quot;1032&quot; height=&quot;685&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/consoleapp-project-800-98f58dec8.png&quot; alt=&quot;post image&quot; width=&quot;1032&quot; height=&quot;685&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -891,7 +891,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-200-e178fd623.webp 200w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-400-e178fd623.webp 400w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-800-e178fd623.webp 800w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-1024-e178fd623.webp 1024w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-200-e178fd623.png 200w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-400-e178fd623.png 400w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-800-e178fd623.png 800w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-1024-e178fd623.png 1024w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-800-e178fd623.png&quot; width=&quot;1024&quot; height=&quot;893&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspconsoleapp-project-800-e178fd623.png&quot; alt=&quot;post image&quot; width=&quot;1024&quot; height=&quot;893&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -904,7 +904,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-200-a9154db29.webp 200w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-400-a9154db29.webp 400w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-800-a9154db29.webp 800w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-1218-a9154db29.webp 1218w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-200-a9154db29.png 200w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-400-a9154db29.png 400w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-800-a9154db29.png 800w, /assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-1218-a9154db29.png 1218w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-800-a9154db29.png&quot; width=&quot;1218&quot; height=&quot;902&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/02/03/dotnet-new-templates-for-GeneticSharp/tspunity3d-project-800-a9154db29.png&quot; alt=&quot;post image&quot; width=&quot;1218&quot; height=&quot;902&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1083,7 +1083,7 @@ I have a case where I need to stop optimization at some time, save results to DB
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-200-605d2bd7e.webp 200w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-400-605d2bd7e.webp 400w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-800-605d2bd7e.webp 800w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-1600-605d2bd7e.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-200-605d2bd7e.png 200w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-400-605d2bd7e.png 400w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-800-605d2bd7e.png 800w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-1600-605d2bd7e.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-800-605d2bd7e.png&quot; width=&quot;1920&quot; height=&quot;1080&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Car2d-800-605d2bd7e.png&quot; alt=&quot;post image&quot; width=&quot;1920&quot; height=&quot;1080&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1097,7 +1097,7 @@ I have a case where I need to stop optimization at some time, save results to DB
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-200-fcf1c65a0.webp 200w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-400-fcf1c65a0.webp 400w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-800-fcf1c65a0.webp 800w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-1600-fcf1c65a0.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-200-fcf1c65a0.png 200w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-400-fcf1c65a0.png 400w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-800-fcf1c65a0.png 800w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-1600-fcf1c65a0.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-800-fcf1c65a0.png&quot; width=&quot;1920&quot; height=&quot;1080&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-TSP-800-fcf1c65a0.png&quot; alt=&quot;post image&quot; width=&quot;1920&quot; height=&quot;1080&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1109,7 +1109,7 @@ I have a case where I need to stop optimization at some time, save results to DB
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-200-44a0f3b6a.webp 200w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-400-44a0f3b6a.webp 400w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-800-44a0f3b6a.webp 800w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-1600-44a0f3b6a.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-200-44a0f3b6a.png 200w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-400-44a0f3b6a.png 400w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-800-44a0f3b6a.png 800w, /assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-1600-44a0f3b6a.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-800-44a0f3b6a.png&quot; width=&quot;1920&quot; height=&quot;1080&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/09/22/GeneticSharp-Unity3d-Samples-released-on-Google-Play/GeneticSharp-Unity3d-Samples-Wall-Builder-800-44a0f3b6a.png&quot; alt=&quot;post image&quot; width=&quot;1920&quot; height=&quot;1080&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1132,7 +1132,7 @@ I have a case where I need to stop optimization at some time, save results to DB
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-200-6761995cb.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-400-6761995cb.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-801-6761995cb.webp 801w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-200-6761995cb.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-400-6761995cb.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-801-6761995cb.png 801w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.png&quot; width=&quot;801&quot; height=&quot;388&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/car-800-6761995cb.png&quot; alt=&quot;post image&quot; width=&quot;801&quot; height=&quot;388&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1197,7 +1197,7 @@ I have a case where I need to stop optimization at some time, save results to DB
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-200-40a0bcc10.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-400-40a0bcc10.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-1053-40a0bcc10.webp 1053w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-200-40a0bcc10.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-400-40a0bcc10.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-1053-40a0bcc10.png 1053w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.png&quot; width=&quot;1053&quot; height=&quot;550&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/FitnessFunction-800-40a0bcc10.png&quot; alt=&quot;post image&quot; width=&quot;1053&quot; height=&quot;550&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1218,7 +1218,7 @@ I have a case where I need to stop optimization at some time, save results to DB
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.webp 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.webp 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.webp 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-200-277a451e7.png 200w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-400-277a451e7.png 400w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png 800w, /assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-1600-277a451e7.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png&quot; width=&quot;1915&quot; height=&quot;988&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/06/01/GeneticSharp-Car2D/SimulationGrid-800-277a451e7.png&quot; alt=&quot;post image&quot; width=&quot;1915&quot; height=&quot;988&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1371,7 +1371,7 @@ div.gist-meta { display:none; }
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-200-e53d80e12.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-400-e53d80e12.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.webp 669w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-200-e53d80e12.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-400-e53d80e12.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.png 669w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.png&quot; width=&quot;669&quot; height=&quot;321&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/creating-project-669-e53d80e12.png&quot; alt=&quot;post image&quot; width=&quot;669&quot; height=&quot;321&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1385,7 +1385,7 @@ div.gist-meta { display:none; }
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-200-444856e1a.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-400-444856e1a.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.webp 426w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-200-444856e1a.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-400-444856e1a.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.png 426w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.png&quot; width=&quot;426&quot; height=&quot;82&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/player-settings-426-444856e1a.png&quot; alt=&quot;post image&quot; width=&quot;426&quot; height=&quot;82&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1397,7 +1397,7 @@ div.gist-meta { display:none; }
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
@@ -1435,7 +1435,7 @@ div.gist-meta { display:none; }
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-200-cb99efe0f.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-400-cb99efe0f.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.webp 488w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-200-cb99efe0f.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-400-cb99efe0f.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.png 488w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.png&quot; width=&quot;488&quot; height=&quot;361&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/console-window-488-cb99efe0f.png&quot; alt=&quot;post image&quot; width=&quot;488&quot; height=&quot;361&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1471,7 +1471,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-200-e77776a1f.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-400-e77776a1f.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.webp 595w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-200-e77776a1f.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-400-e77776a1f.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.png 595w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.png&quot; width=&quot;595&quot; height=&quot;190&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/setting-cityprefab-595-e77776a1f.png&quot; alt=&quot;post image&quot; width=&quot;595&quot; height=&quot;190&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1481,7 +1481,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-200-e9b99a942.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-400-e9b99a942.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-800-e9b99a942.webp 800w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-1600-e9b99a942.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-200-e9b99a942.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-400-e9b99a942.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-800-e9b99a942.png 800w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-1600-e9b99a942.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-800-e9b99a942.png&quot; width=&quot;2032&quot; height=&quot;1209&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-cities-800-e9b99a942.png&quot; alt=&quot;post image&quot; width=&quot;2032&quot; height=&quot;1209&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1513,7 +1513,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-200-4154f5d73.webp 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-400-4154f5d73.webp 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-800-4154f5d73.webp 800w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-1600-4154f5d73.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-200-4154f5d73.png 200w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-400-4154f5d73.png 400w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-800-4154f5d73.png 800w, /assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-1600-4154f5d73.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-800-4154f5d73.png&quot; width=&quot;2032&quot; height=&quot;1209&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/draw-route-800-4154f5d73.png&quot; alt=&quot;post image&quot; width=&quot;2032&quot; height=&quot;1209&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1533,7 +1533,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -1586,7 +1586,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;blockquote&gt;
@@ -1655,7 +1655,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;In this version GeneticSharp starts to support .NET Standard 2.0 and .NET Framework 4.6.2.&lt;/p&gt;
 
 &lt;p&gt;Porting 
-to &lt;img class=&quot;icon&quot; src=&quot;/assets/logos/netcore.svg &quot; /&gt;&lt;/p&gt;
+to &lt;img class=&quot;icon&quot; src=&quot;/assets/logos/netcore.svg &quot; alt=&quot;post image&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -1688,7 +1688,7 @@ to &lt;img class=&quot;icon&quot; src=&quot;/assets/logos/netcore.svg &quot; /&g
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1781,7 +1781,7 @@ Test Run Aborted
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -1804,7 +1804,7 @@ Test Run Aborted
 &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Some readings I did during the whole process, maybe can be useful to someone porting a library to .NET Core too.&lt;/p&gt;
@@ -1833,7 +1833,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-200-e18b9b55c.webp 200w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-400-e18b9b55c.webp 400w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-e18b9b55c.webp 800w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-1600-e18b9b55c.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-200-e18b9b55c.png 200w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-400-e18b9b55c.png 400w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-e18b9b55c.png 800w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-1600-e18b9b55c.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-e18b9b55c.png&quot; width=&quot;1992&quot; height=&quot;632&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-e18b9b55c.png&quot; alt=&quot;post image&quot; width=&quot;1992&quot; height=&quot;632&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1894,7 +1894,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/problem-128-a3f91d933.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1905,7 +1905,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction-200-d144504d3.webp 200w, /assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction-320-d144504d3.webp 320w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction-200-d144504d3.png 200w, /assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction-320-d144504d3.png 320w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction-320-d144504d3.png&quot; width=&quot;320&quot; height=&quot;53&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharp-EuclideanDistanceFunction-320-d144504d3.png&quot; alt=&quot;post image&quot; width=&quot;320&quot; height=&quot;53&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1919,7 +1919,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/telescope-128-e0357d1e6.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/telescope-128-e0357d1e6.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/telescope-128-e0357d1e6.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/telescope-128-e0357d1e6.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1937,7 +1937,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/project-128-4f597ed4f.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/project-128-4f597ed4f.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1958,7 +1958,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome-128-8b4102796.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome-128-8b4102796.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome-128-8b4102796.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/chromosome-128-8b4102796.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -1998,7 +1998,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/population-128-3f5c6fbb1.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/population-128-3f5c6fbb1.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/population-128-3f5c6fbb1.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/population-128-3f5c6fbb1.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2016,7 +2016,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/score-128-702a2b758.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/score-128-702a2b758.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/score-128-702a2b758.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/score-128-702a2b758.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2036,7 +2036,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/podium-128-f9f44969b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/podium-128-f9f44969b.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/podium-128-f9f44969b.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/podium-128-f9f44969b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2056,7 +2056,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/cross-128-ffae692c2.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/cross-128-ffae692c2.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/cross-128-ffae692c2.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/cross-128-ffae692c2.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2080,7 +2080,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/mutation-128-a489f3853.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/mutation-128-a489f3853.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/mutation-128-a489f3853.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/mutation-128-a489f3853.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2103,7 +2103,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/end-128-2cdd65c40.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/end-128-2cdd65c40.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/end-128-2cdd65c40.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/end-128-2cdd65c40.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2123,7 +2123,7 @@ Test Run Aborted
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/running-128-bc0b48bec.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/running-128-bc0b48bec.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/running-128-bc0b48bec.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/running-128-bc0b48bec.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2162,7 +2162,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-200-d0df984ce.webp 200w, /assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-400-d0df984ce.webp 400w, /assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-800-d0df984ce.webp 800w, /assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-983-d0df984ce.webp 983w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-200-d0df984ce.png 200w, /assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-400-d0df984ce.png 400w, /assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-800-d0df984ce.png 800w, /assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-983-d0df984ce.png 983w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-800-d0df984ce.png&quot; width=&quot;983&quot; height=&quot;677&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/GeneticSharpFunctionOptimizatonPlot-800-d0df984ce.png&quot; alt=&quot;post image&quot; width=&quot;983&quot; height=&quot;677&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2174,7 +2174,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/programmer-128-6cef95d36.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2188,7 +2188,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion-128-875fc7bbb.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2017/06/13/function-optimization-with-geneticsharp/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2276,7 +2276,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/ul&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -2295,7 +2295,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;p&gt;For these reasons, I made a mod called &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt; that let you interact with Buildron through the Slack.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
@@ -2308,7 +2308,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-200-0e248dd25.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-400-0e248dd25.webp 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.webp 450w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-200-0e248dd25.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-400-0e248dd25.png 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.png 450w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.png&quot; width=&quot;450&quot; height=&quot;106&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-build-status-change-notifications-450-0e248dd25.png&quot; alt=&quot;post image&quot; width=&quot;450&quot; height=&quot;106&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2320,7 +2320,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-200-2de211b94.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-400-2de211b94.webp 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.webp 565w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-200-2de211b94.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-400-2de211b94.png 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.png 565w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.png&quot; width=&quot;565&quot; height=&quot;186&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-filter-by-565-2de211b94.png&quot; alt=&quot;post image&quot; width=&quot;565&quot; height=&quot;186&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2332,7 +2332,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-200-220e5013f.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.webp 248w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-200-220e5013f.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.png 248w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.png&quot; width=&quot;248&quot; height=&quot;102&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-filter-248-220e5013f.png&quot; alt=&quot;post image&quot; width=&quot;248&quot; height=&quot;102&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2344,7 +2344,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-200-b97f5d2a2.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.webp 218w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-200-b97f5d2a2.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.png 218w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.png&quot; width=&quot;218&quot; height=&quot;95&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-sort-by-218-b97f5d2a2.png&quot; alt=&quot;post image&quot; width=&quot;218&quot; height=&quot;95&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2356,7 +2356,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-200-3cb740d22.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-200-3cb740d22.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.png 256w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.png&quot; width=&quot;256&quot; height=&quot;95&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-move-camera-256-3cb740d22.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;95&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2368,7 +2368,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-200-dee0bb971.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.webp 213w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-200-dee0bb971.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.png 213w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.png&quot; width=&quot;213&quot; height=&quot;97&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-reset-camera-213-dee0bb971.png&quot; alt=&quot;post image&quot; width=&quot;213&quot; height=&quot;97&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2380,7 +2380,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-200-ddc5d66d5.webp 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-400-ddc5d66d5.webp 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.webp 418w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-200-ddc5d66d5.png 200w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-400-ddc5d66d5.png 400w, /assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.png 418w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.png&quot; width=&quot;418&quot; height=&quot;424&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/22/buildron-slackbotmod/Buildron-SlackBotMod-take-screenshot-418-ddc5d66d5.png&quot; alt=&quot;post image&quot; width=&quot;418&quot; height=&quot;424&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2408,7 +2408,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-200-c91ea3bd8.webp 200w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-400-c91ea3bd8.webp 400w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.webp 611w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-200-c91ea3bd8.png 200w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-400-c91ea3bd8.png 400w, /assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.png 611w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.png&quot; width=&quot;611&quot; height=&quot;119&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/17/sending-a-slackbot-message-from-unity3d/SlackBotMessage-611-c91ea3bd8.png&quot; alt=&quot;post image&quot; width=&quot;611&quot; height=&quot;119&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2623,7 +2623,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-200-b1f078f34.webp 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-400-b1f078f34.webp 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-722-b1f078f34.webp 722w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-200-b1f078f34.png 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-400-b1f078f34.png 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-722-b1f078f34.png 722w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-722-b1f078f34.png&quot; width=&quot;722&quot; height=&quot;467&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-opened-722-b1f078f34.png&quot; alt=&quot;post image&quot; width=&quot;722&quot; height=&quot;467&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2635,7 +2635,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-200-4fd87f6f7.webp 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-400-4fd87f6f7.webp 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-421-4fd87f6f7.webp 421w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-200-4fd87f6f7.png 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-400-4fd87f6f7.png 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-421-4fd87f6f7.png 421w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-421-4fd87f6f7.png&quot; width=&quot;421&quot; height=&quot;111&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-SimulationScene-events-registered-421-4fd87f6f7.png&quot; alt=&quot;post image&quot; width=&quot;421&quot; height=&quot;111&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2659,7 +2659,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-200-7a03018c3.webp 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-400-7a03018c3.webp 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-639-7a03018c3.webp 639w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-200-7a03018c3.png 200w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-400-7a03018c3.png 400w, /assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-639-7a03018c3.png 639w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-639-7a03018c3.png&quot; width=&quot;639&quot; height=&quot;478&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/15/creating-a-consolemod-to-buildron/ConsoleMod-Buildron-639-7a03018c3.png&quot; alt=&quot;post image&quot; width=&quot;639&quot; height=&quot;478&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2681,7 +2681,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a command-line tool to create new C# projects from prebuilt/templates.&lt;/p&gt;
@@ -2696,7 +2696,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-200-ef756f97b.webp 200w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-400-ef756f97b.webp 400w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.webp 800w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-1057-ef756f97b.webp 1057w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-200-ef756f97b.png 200w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-400-ef756f97b.png 400w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.png 800w, /assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-1057-ef756f97b.png 1057w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.png&quot; width=&quot;1057&quot; height=&quot;74&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/12/jumpstart/jumpstart-Xamarin-jumpstart-message-800-ef756f97b.png&quot; alt=&quot;post image&quot; width=&quot;1057&quot; height=&quot;74&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2787,7 +2787,7 @@ My.Amazing.NewProject.sln
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
@@ -2821,7 +2821,7 @@ Unzip it in any folder.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-200-5cb3e86ea.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-400-5cb3e86ea.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.webp 497w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-200-5cb3e86ea.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-400-5cb3e86ea.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.png 497w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.png&quot; width=&quot;497&quot; height=&quot;126&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateJumpstart-497-5cb3e86ea.png&quot; alt=&quot;post image&quot; width=&quot;497&quot; height=&quot;126&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2842,7 +2842,7 @@ Unzip it in any folder.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-200-65576a7d2.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.webp 261w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-200-65576a7d2.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.png 261w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.png&quot; width=&quot;261&quot; height=&quot;406&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateFolders-261-65576a7d2.png&quot; alt=&quot;post image&quot; width=&quot;261&quot; height=&quot;406&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2856,7 +2856,7 @@ Unzip it in any folder.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-200-77d13f09f.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.webp 334w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-200-77d13f09f.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.png 334w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.png&quot; width=&quot;334&quot; height=&quot;237&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplatePlatformConfiguration-334-77d13f09f.png&quot; alt=&quot;post image&quot; width=&quot;334&quot; height=&quot;237&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2873,7 +2873,7 @@ Unzip it in any folder.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-200-f286a3e11.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.webp 298w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-200-f286a3e11.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.png 298w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.png&quot; width=&quot;298&quot; height=&quot;236&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulatorScene-298-f286a3e11.png&quot; alt=&quot;post image&quot; width=&quot;298&quot; height=&quot;236&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2885,7 +2885,7 @@ Unzip it in any folder.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-200-74879a55e.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-400-74879a55e.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-200-74879a55e.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-400-74879a55e.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.png 640w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.png&quot; width=&quot;640&quot; height=&quot;493&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulator-640-74879a55e.png&quot; alt=&quot;post image&quot; width=&quot;640&quot; height=&quot;493&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2910,7 +2910,7 @@ Unzip it in any folder.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-200-ab89078f5.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-400-ab89078f5.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.webp 641w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-200-ab89078f5.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-400-ab89078f5.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.png 641w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.png&quot; width=&quot;641&quot; height=&quot;362&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildMod-641-ab89078f5.png&quot; alt=&quot;post image&quot; width=&quot;641&quot; height=&quot;362&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2925,7 +2925,7 @@ Unzip it in any folder.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-200-34474df72.webp 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-400-34474df72.webp 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.webp 639w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-200-34474df72.png 200w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-400-34474df72.png 400w, /assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.png 639w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.png&quot; width=&quot;639&quot; height=&quot;501&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateBuildronTest-639-34474df72.png&quot; alt=&quot;post image&quot; width=&quot;639&quot; height=&quot;501&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -2951,7 +2951,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;We really appreciate your opinion about the mods support, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-introduction&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-tutorial-creating-a-mod&quot;&gt;tutorial&lt;/a&gt; and &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;. Please, get in touch at &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -3001,7 +3001,7 @@ Unzip it in any folder.&lt;/p&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-200-92805d6b2.webp 200w, /assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-400-92805d6b2.webp 400w, /assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-700-92805d6b2.webp 700w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-200-92805d6b2.png 200w, /assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-400-92805d6b2.png 400w, /assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-700-92805d6b2.png 700w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-700-92805d6b2.png&quot; width=&quot;700&quot; height=&quot;101&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/10/26/using-a-fxcop-badge-on-your-github-repository/FxCopBadge-700-92805d6b2.png&quot; alt=&quot;post image&quot; width=&quot;700&quot; height=&quot;101&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -3148,7 +3148,7 @@ Custom script:&lt;/li&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.webp 139w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png 139w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png&quot; width=&quot;139&quot; height=&quot;163&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png&quot; alt=&quot;post image&quot; width=&quot;139&quot; height=&quot;163&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -3172,7 +3172,7 @@ Custom script:&lt;/li&gt;
         &lt;picture&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-02058a557.webp 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-02058a557.webp 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.webp 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.webp 840w&quot; type=&quot;image/webp&quot; /&gt;
   &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-02058a557.png 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-02058a557.png 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.png 840w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png&quot; width=&quot;840&quot; height=&quot;52&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png&quot; alt=&quot;post image&quot; width=&quot;840&quot; height=&quot;52&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -3180,7 +3180,7 @@ Custom script:&lt;/li&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;When debugging is easier than expected&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
