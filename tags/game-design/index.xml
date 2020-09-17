@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - game-design</title>
  <link href="//tags/game-design/index.xml" rel="self"/>
  <link href="/tag/game-design.html"/>
- <updated>2020-09-17T12:34:30-03:00</updated>
+ <updated>2020-09-17T14:45:29-03:00</updated>
  <id>/tag/game-design.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -32,35 +32,75 @@
   &lt;ul id=&quot;lightSlider&quot;&gt;
     
         &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2.png&quot;&gt;
-          &lt;img src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+          &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2-200-19608643f.webp 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2-400-19608643f.webp 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2-640-19608643f.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2-200-19608643f.png 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2-400-19608643f.png 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2-640-19608643f.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/01_prototype_menu2-640-19608643f.png&quot; width=&quot;640&quot; height=&quot;361&quot; /&gt;
+&lt;/picture&gt;
+        
         &lt;/li&gt;
     
         &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2.png&quot;&gt;
-          &lt;img src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+          &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2-200-a49ddc189.webp 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2-400-a49ddc189.webp 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2-640-a49ddc189.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2-200-a49ddc189.png 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2-400-a49ddc189.png 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2-640-a49ddc189.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/02_hd_menu2-640-a49ddc189.png&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;
+&lt;/picture&gt;
+        
         &lt;/li&gt;
     
         &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy.png&quot;&gt;
-          &lt;img src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+          &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy-200-9e00142b6.webp 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy-400-9e00142b6.webp 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy-640-9e00142b6.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy-200-9e00142b6.png 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy-400-9e00142b6.png 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy-640-9e00142b6.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/03_prototype_deploy-640-9e00142b6.png&quot; width=&quot;640&quot; height=&quot;361&quot; /&gt;
+&lt;/picture&gt;
+        
         &lt;/li&gt;
     
         &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy.png&quot;&gt;
-          &lt;img src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+          &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy-200-ac049100f.webp 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy-400-ac049100f.webp 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy-640-ac049100f.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy-200-ac049100f.png 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy-400-ac049100f.png 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy-640-ac049100f.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/04_hd_deploy-640-ac049100f.png&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;
+&lt;/picture&gt;
+        
         &lt;/li&gt;
     
         &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim.png&quot;&gt;
-          &lt;img src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+          &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim-200-fb66828ba.webp 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim-400-fb66828ba.webp 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim-640-fb66828ba.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim-200-fb66828ba.png 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim-400-fb66828ba.png 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim-640-fb66828ba.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/05_prototype_aim-640-fb66828ba.png&quot; width=&quot;640&quot; height=&quot;361&quot; /&gt;
+&lt;/picture&gt;
+        
         &lt;/li&gt;
     
         &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim.png&quot;&gt;
-          &lt;img src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+          &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim-200-81c8c605b.webp 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim-400-81c8c605b.webp 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim-640-81c8c605b.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim-200-81c8c605b.png 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim-400-81c8c605b.png 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim-640-81c8c605b.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/06_hd_aim-640-81c8c605b.png&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;
+&lt;/picture&gt;
+        
         &lt;/li&gt;
     
         &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips.png&quot;&gt;
-          &lt;img src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+          &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips-200-dbd2f0ce5.webp 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips-400-dbd2f0ce5.webp 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips-640-dbd2f0ce5.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips-200-dbd2f0ce5.png 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips-400-dbd2f0ce5.png 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips-640-dbd2f0ce5.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/07_prototype_myShips-640-dbd2f0ce5.png&quot; width=&quot;640&quot; height=&quot;361&quot; /&gt;
+&lt;/picture&gt;
+        
         &lt;/li&gt;
     
         &lt;li data-thumb=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips.png&quot;&gt;
-          &lt;img src=&quot;/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips.png&quot; alt=&quot;Screenshot do post&quot; /&gt;        
+          &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips-200-65c1ea7b6.webp 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips-400-65c1ea7b6.webp 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips-640-65c1ea7b6.webp 640w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips-200-65c1ea7b6.png 200w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips-400-65c1ea7b6.png 400w, /assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips-640-65c1ea7b6.png 640w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/generated/assets/2019/06/06/evolution-or-from-prototype-to-game/08_hd_myShips-640-65c1ea7b6.png&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;
+&lt;/picture&gt;
+        
         &lt;/li&gt;
     
   &lt;/ul&gt;
