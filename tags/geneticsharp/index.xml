@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2020-09-17T14:45:29-03:00</updated>
+ <updated>2020-09-17T15:48:50-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -211,28 +211,26 @@ dotnet watch run
 
 &lt;p&gt;To represent the cities route each gene of our chromosome will represent an index of a city in the route.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspChromosome.cs&lt;/code&gt;:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspChromosome.cs&lt;/code&gt;:
+&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;representing-a-city&quot;&gt;Representing a city&lt;/h2&gt;
 &lt;p&gt;The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspCity.cs&lt;/code&gt;:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspCity.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspCity.cs&lt;/code&gt;:
+&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspCity.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
 &lt;p&gt;Now we need to evaluate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Our fitness function will evaluate the chromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspFitness.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspFitness.cs&lt;/code&gt;: &lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;configuring-the-genetic-algorithm&quot;&gt;Configuring the Genetic Algorithm&lt;/h2&gt;
 &lt;p&gt;In this step we need to configure our genetic algorithm using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspChromosome&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspFitness&lt;/code&gt; and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
 
-&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspGA.cs&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspGA.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TspGA.cs&lt;/code&gt;: &lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=TspGA.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-timer&quot;&gt;Why use Timer?&lt;/h3&gt;
 &lt;p&gt;GeneticSharp can be used as single threading or multithreading to evaluate chromosomes with the fitness function, but WebAssembly (and Blazor) can use just the UI thread, in this scenario when we call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticAlgorithm.Start&lt;/code&gt; method it freezes the UI until the GA finish.&lt;/p&gt;
@@ -246,11 +244,11 @@ dotnet watch run
 &lt;/div&gt;
 
 &lt;h2 id=&quot;creating-the-razor-page&quot;&gt;Creating the Razor page&lt;/h2&gt;
-&lt;p&gt;Inside the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pages&lt;/code&gt; create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=Tsp.v1.razor&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Inside the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pages&lt;/code&gt; create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;: &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=Tsp.v1.razor&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;As we need to interop with JavaScript to manipulate DOM, we will use some helper JS functions. Add the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;canvas-helper.js&lt;/code&gt; inside the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wwwroot/js&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=canvas-helper.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;As we need to interop with JavaScript to manipulate DOM, we will use some helper JS functions. Add the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;canvas-helper.js&lt;/code&gt; inside the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wwwroot/js&lt;/code&gt;:  &lt;script src=&quot;https://gist.github.com/9addc5182943ba25eb82201e30c76418.js?file=canvas-helper.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Open the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; and add the tag below inside the tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;head&lt;/code&gt;:  &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=index.canvas-helper.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Open the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; and add the tag below inside the tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;head&lt;/code&gt;:  &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=index.canvas-helper.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;h3 id=&quot;why-use-ijsruntime-do-access-dom&quot;&gt;Why use IJSRuntime do access DOM?&lt;/h3&gt;
 &lt;p&gt;It’s awesome we can now use C# in the browser with Blazor. But unfortunately we can’t do everything with it, yet. Currently, WebAssembly isn’t able to directly access the DOM API, which means that Blazor isn’t able to either.
@@ -282,12 +280,10 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt; add the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt;:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsync.cs&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Then call it from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clearCanvas&lt;/code&gt; call:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsyncCall.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Then call it from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clearCanvas&lt;/code&gt; call:
+&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawCitiesAsyncCall.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt;.&lt;/p&gt;
 
@@ -301,13 +297,11 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now we need to draw the solution: the route represented by the best chromosome of each generation.&lt;/p&gt;
 
-&lt;p&gt;Add the following method to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsync.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Add the following method to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tsp.razor&lt;/code&gt;:
+&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsync.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Then call it from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt; call:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsyncCall.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Then call it from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; method, after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DrawCitiesAsync&lt;/code&gt; call:
+&lt;script src=&quot;https://gist.github.com/c10fba01c090a89702818cd1c48a125f.js?file=DrawRouteAsyncCall.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;                
@@ -1065,28 +1059,26 @@ div.gist-meta { display:none; }
 
 &lt;p&gt;To represent the cities route each gene of our chromosome will represent an index of a city in the route.&lt;/p&gt;
 
-&lt;p&gt;Create a C# script called “TspChromosome.cs”:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Create a C# script called “TspChromosome.cs”:
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspChromosome.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;representing-a-city&quot;&gt;Representing a city&lt;/h2&gt;
 &lt;p&gt;The next step is define our genetic algorithm fitness function, but first we need to create a simple class to represent a city on a 2D space.&lt;/p&gt;
 
-&lt;p&gt;Create a C# script called “City.cs”:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=City.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Create a C# script called “City.cs”:
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=City.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-fitness-function&quot;&gt;The fitness function&lt;/h2&gt;
 &lt;p&gt;Now we need to evaluate the TspChromosome.&lt;/p&gt;
 
 &lt;p&gt;Our fitness function will evaluate the TspChromosome fitness based on the total distance to reach all cities in the route represented by the chromosome. The shorter the distance, the better the chromosome.&lt;/p&gt;
 
-&lt;p&gt;Create a C# script called “TspFitness.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Create a C# script called “TspFitness.cs”: &lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=TspFitness.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;running-the-genetic-algorithm&quot;&gt;Running the Genetic Algorithm&lt;/h2&gt;
 &lt;p&gt;In this step we need to configure our genetic algorithm using the TspChromosome, TspFitness and some classic GA operators already built in GeneticSharp.&lt;/p&gt;
 
-&lt;p&gt;Create a C# script called “GAController.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.v1.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Create a C# script called “GAController.cs”: &lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.v1.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Create a GameObject called “GAController” in the scene and add the GAController.cs to it.&lt;/p&gt;
 
@@ -1120,17 +1112,14 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;p&gt;Delete the CityPrefab game object from the current scene.&lt;/p&gt;
 
 &lt;h3 id=&quot;instantiating-the-cities-prefabs&quot;&gt;Instantiating the cities prefabs&lt;/h3&gt;
-&lt;p&gt;Add the following field to the GAController.cs&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change1.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Add the following field to the GAController.cs
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change1.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Then, create the method DrawCities:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change2.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Then, create the method DrawCities:
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change2.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;And then call it from Start method:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change3.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;And then call it from Start method:
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change3.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, select the GAController game object on hierarchy and set the CityPrefab property.&lt;/p&gt;
 &lt;center&gt;                
@@ -1159,17 +1148,14 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;One of the simplest ways to draw some lines in Unity3D is using the LineRenderer component.&lt;/p&gt;
 
-&lt;p&gt;Add the following code to the GAController.cs:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change4.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Add the following code to the GAController.cs:
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change4.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Create the method DrawRoute:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change5.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Create the method DrawRoute:
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change5.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Then call it from Update method:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change6.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Then call it from Update method:
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change6.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Before run the scene, we need to add a LineRenderer component to our GAController game object.&lt;/p&gt;
 
@@ -1191,14 +1177,13 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;p&gt;Our sample could be considered done, but would it be nice if we you could change the cities positions while the genetic algorithm are running and see how it manages these cities positions changes.&lt;/p&gt;
 
 &lt;h3 id=&quot;citycontroller&quot;&gt;CityController&lt;/h3&gt;
-&lt;p&gt;Create a C# script called “CityController.cs”: &lt;noscript&gt;&amp;lt;pre&amp;gt;400: Invalid request&amp;lt;/pre&amp;gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=CityController.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Create a C# script called “CityController.cs”: &lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=CityController.cs&quot;&gt; &lt;/script&gt;
 I won’t getting in details about how this is script works, but it’s allow the user to drag the cities’ pin using the mouse or the finger touch if build it to mobile.&lt;/p&gt;
 
 &lt;p&gt;Add the CityController.cs to the CityPrefab.&lt;/p&gt;
 
-&lt;p&gt;Change the GAController.cs script adding the line below to the end of the for loop of DrawCities method:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change7.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Change the GAController.cs script adding the line below to the end of the for loop of DrawCities method:
+&lt;script src=&quot;https://gist.github.com/94721a46d33c6bcb1f3ae11117b7f888.js?file=GAController.change7.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
 
@@ -1615,7 +1600,6 @@ Test Run Aborted
 
 &lt;p&gt;Open the Program.cs file and inside the Main function enter the code below:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingAnEuclideanDistanceChromsome.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;In the code above we create two variables to represent our rectangle area size: maxWidth and maxHeight, then we created a new instance of FloatingPointChromome, this will be the template to all chromsome in our solution.&lt;/p&gt;
@@ -1648,7 +1632,6 @@ Test Run Aborted
 
 &lt;p&gt;In GeneticSharp a population is represented by the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Populations/IPopulation.cs&quot;&gt;IPopulation&lt;/a&gt; interface, but in most cases you can directly use the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Populations/Population.cs&quot;&gt;Population&lt;/a&gt; class.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingThePopulation.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;We created a population that will have a minimum number of 50 chromosomes and a maximum number of 100 and used our chromosome template as the “Adam chromosome” (yeah, you get the reference) of our GA.&lt;/p&gt;
@@ -1667,7 +1650,6 @@ Test Run Aborted
 
 &lt;p&gt;In GeneticSharp we represent a fitness function through the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/IFitness.cs&quot;&gt;IFitness&lt;/a&gt; interface. Almost always you wil have to code a class that implement this interface, but for our tutorial we can use the simple and lower friction class &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Fitnesses/FuncFitness.cs&quot;&gt;FuncFitness&lt;/a&gt;. This class allow us to build our fitness evalution as its constructor argument.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheFitnessFunction.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;We receive a IChromosome in the variable “c”, then we cast it to FloatingPointChromosme.&lt;/p&gt;
@@ -1690,7 +1672,6 @@ Test Run Aborted
 
 &lt;p&gt;Besides this, you can use the already implemented classic selections: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/EliteSelection.cs&quot;&gt;Elite&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/RouletteWheelSelection.cs&quot;&gt;Roulete Wheel&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/StochasticUniversalSamplingSelection.cs&quot;&gt;Stochastic Universal Sampling&lt;/a&gt; and &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Selections/TournamentSelection.cs&quot;&gt;Tournament&lt;/a&gt;.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheSelection.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Elite selection is a good option, because it will select the chromosomes with the best fitness (greatest distance). You can try the others selection options too and see how they change the GA speed and results.&lt;/p&gt;
@@ -1713,7 +1694,6 @@ Test Run Aborted
   &lt;p&gt;Some of those classics crossovers, like OX1 and OX2, cannot be used in our tutorial because they need chromosomes with ordered genes and this is not the case of our chromosomes with 0101001100 genes. Do not worry, because GeneticSharp will warn you if you try to use an invalid chromosome in an ordered crossover&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheCrossover.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Uniform Crossover enables the parent chromosomes to contribute the gene level rather than the segment level, for example: if the mix probability is 0.5, the offspring has approximately half of the genes from first parent and the other half from second parent.&lt;/p&gt;
@@ -1739,7 +1719,6 @@ Test Run Aborted
 
 &lt;p&gt;Like the other operators, you can create your own mutation implementing the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/IMutation.cs&quot;&gt;IMutation&lt;/a&gt; interface or extending &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/MutationBase.cs&quot;&gt;MutationBase&lt;/a&gt; or use some from the GeneticSharp menu: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/FlipBitMutation.cs&quot;&gt;Flip-bit&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/ReverseSequenceMutation.cs&quot;&gt;Reverse Sequence (RSM)&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/TworsMutation.cs&quot;&gt;Twors&lt;/a&gt; and &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Mutations/src/GeneticSharp.Domain/Mutations/UniformMutation.cs&quot;&gt;Uniform&lt;/a&gt;.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheMutation.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Flip-bit mutation is a mutation specific to chromosomes that implement &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Chromosomes/IBinaryChromosome.cs&quot;&gt;IBinaryChromosome&lt;/a&gt; interface, as our FloatingPointChromosome does. It will randomly chose a gene and flip it bit, so a gene with value 0 will turn to 1 and vice-versa.&lt;/p&gt;
@@ -1760,7 +1739,6 @@ Test Run Aborted
 
 &lt;p&gt;If you have some special condition to terminate your GA you can implement the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/ITermination.cs&quot;&gt;ITermination&lt;/a&gt; interface or extend the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/TerminationBase.cs&quot;&gt;TerminationBase&lt;/a&gt; class, but for most of cases you just need to use some of the availables terminations: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/GenerationNu&quot;&gt;Generation number&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/TimeEvolvingTermination.cs&quot;&gt;Time evolving&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/FitnessStagnationTermination.cs&quot;&gt;Fitness stagnation&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/FitnessThresholdTermination.cs&quot;&gt;Fitness threshold&lt;/a&gt;, &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/AndTermination.cs&quot;&gt;And&lt;/a&gt; e &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/blob/master/src/GeneticSharp.Domain/Terminations/src/GeneticSharp.Domain/Terminations/OrTermination.cs&quot;&gt;Or&lt;/a&gt; (allows combine others terminations).&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CreatingTheTermination.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;In our tutorial we will use the fitness stagnation termination with a expected stagnant generations number of 100, this mean that if our GA generate the same best chromsome fitness in the last 100 generations then it will be terminated.&lt;/p&gt;
@@ -1777,7 +1755,6 @@ Test Run Aborted
 
 &lt;p&gt;Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=RunningtheGA1.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;So the GA ran, but where is the result? You can always get the best chromosome from the GeneticAlgorithm.BestChromosome property.&lt;/p&gt;
@@ -1787,7 +1764,6 @@ realtime how the genetic algorithm is evolving.&lt;/p&gt;
 
 &lt;p&gt;Let’s replace our last “ga.Start();” line to the code below:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=RunningtheGA2.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Now if your run the program you will see an output like that:&lt;/p&gt;
@@ -1830,7 +1806,6 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 
 &lt;p&gt;When you finish the tutorial your source code will be this one:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/b6861313762464fe62b652ef7d03b91c.js?file=CompleteSourceCode.cs&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;

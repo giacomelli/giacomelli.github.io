@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - cake</title>
  <link href="//tags/cake/index.xml" rel="self"/>
  <link href="/tag/cake.html"/>
- <updated>2020-09-17T14:45:29-03:00</updated>
+ <updated>2020-09-17T15:48:50-03:00</updated>
  <id>/tag/cake.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -32,17 +32,15 @@
 &lt;p&gt;In project root folder, create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.cake&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;adding-the-tools-and-addin-references&quot;&gt;Adding the tools and addin references&lt;/h3&gt;
-&lt;p&gt;Add the lines below to the file:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v1.cake&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Add the lines below to the file:
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v1.cake&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;We’ll use those tools and addins to create the complete .cake script.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;setting-the-variables&quot;&gt;Setting the variables&lt;/h3&gt;
-&lt;p&gt;Now we need to set some variables:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v2.cake&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Now we need to set some variables:
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v2.cake&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Where:&lt;/p&gt;
 &lt;ul&gt;
@@ -51,19 +49,16 @@
   &lt;li&gt;&lt;strong&gt;branch&lt;/strong&gt;: if you are using git, then the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GitBranchCurrent(&quot;.&quot;).FriendlyName&lt;/code&gt; will pass the right branch name to SonarCloud, otherwise you can set it manually.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;If you are using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AppVeyor&lt;/code&gt; you can use line bellow to allow discover the branch name locally and in the AppVeyor:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v3.cake&quot;&gt; &lt;/script&gt;
+&lt;p&gt;If you are using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AppVeyor&lt;/code&gt; you can use line bellow to allow discover the branch name locally and in the AppVeyor:
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v3.cake&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;build-task&quot;&gt;Build task&lt;/h3&gt;
-&lt;p&gt;The first task definitions will build our .NET Core project:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v4.cake&quot;&gt; &lt;/script&gt;
+&lt;p&gt;The first task definitions will build our .NET Core project:
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v4.cake&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;test-task&quot;&gt;Test task&lt;/h3&gt;
-&lt;p&gt;Now we will define the task to run our tests:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v5.cake&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Now we will define the task to run our tests:
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v5.cake&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;This task use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Coverlet&lt;/code&gt; to collect the code coverage. Install it on your test project using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Coverlet&lt;/code&gt; NuGet package:&lt;/p&gt;
 
@@ -71,9 +66,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;sonar-tasks&quot;&gt;Sonar tasks&lt;/h3&gt;
-&lt;p&gt;The lasts tasks to define are responsible to scan the project and send the build and tests results to SonarCloud:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v6.cake&quot;&gt; &lt;/script&gt;
+&lt;p&gt;The lasts tasks to define are responsible to scan the project and send the build and tests results to SonarCloud:
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v6.cake&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Where:&lt;/p&gt;
 
@@ -89,9 +83,8 @@
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;defining-the-tasks-order&quot;&gt;Defining the tasks order&lt;/h3&gt;
-&lt;p&gt;The last part of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.cake&lt;/code&gt; file define the order that tasks will run:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v7.cake&quot;&gt; &lt;/script&gt;
+&lt;p&gt;The last part of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.cake&lt;/code&gt; file define the order that tasks will run:
+&lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.v7.cake&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;running-the-buildcake&quot;&gt;Running the build.cake&lt;/h2&gt;
 &lt;p&gt;Now, every time you want to build, test and publish the results to SonarCloud you need to type this command on your project root folder:&lt;/p&gt;
@@ -135,7 +128,6 @@
 &lt;p&gt;That’s it, now your project is ready to using cake to publish results to SonarCloud.&lt;/p&gt;
 
 &lt;h2 id=&quot;complete-buildcake&quot;&gt;Complete build.cake&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/2ff83d13a8b970aacd4aa94b9182e7bb.js?file=build.cake&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;extras&quot;&gt;Extras&lt;/h2&gt;

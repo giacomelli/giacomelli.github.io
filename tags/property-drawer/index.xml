@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - property-drawer</title>
  <link href="//tags/property-drawer/index.xml" rel="self"/>
  <link href="/tag/property-drawer.html"/>
- <updated>2020-09-17T14:45:29-03:00</updated>
+ <updated>2020-09-17T15:48:50-03:00</updated>
  <id>/tag/property-drawer.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -20,10 +20,8 @@
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxAttribute.cs&quot;&gt; &lt;/script&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxDrawer.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -35,7 +33,6 @@
       &lt;/div&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxDrawerUsage.cs&quot;&gt; &lt;/script&gt;
 
 </content>

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2020-09-17T14:45:29-03:00</updated>
+ <updated>2020-09-17T15:48:50-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -32,7 +32,6 @@
 
 &lt;p&gt;In my case, I used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yield return null&lt;/code&gt; to skip a frame within the Editor and get the refresh rate that I would like.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/96086201cb5cc512ce7a15a02ebcf29a.js&quot;&gt; &lt;/script&gt;
 
 &lt;center&gt;                
@@ -84,10 +83,8 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/623de59997fa6f2aaeeb231a2a789933.js?file=FrameworkSettings.cs&quot;&gt; &lt;/script&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/623de59997fa6f2aaeeb231a2a789933.js?file=FrameworkSettingsRegister.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -116,10 +113,8 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=HelpBoxAttribute.cs&quot;&gt; &lt;/script&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=HelpBoxDrawer.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -131,7 +126,6 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/div&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=SampleComponent.cs&quot;&gt; &lt;/script&gt;
 
 </content>
@@ -155,7 +149,6 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c03ec79fa0f0def94726f4b6914b4769.js?file=SocialShare.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -179,7 +172,6 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bba329d772f4fb7c8e6c9a1d3047bae2.js?file=DynamicLog.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -216,10 +208,8 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxAttribute.cs&quot;&gt; &lt;/script&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxDrawer.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -231,7 +221,6 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/div&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxDrawerUsage.cs&quot;&gt; &lt;/script&gt;
 
 </content>
@@ -323,7 +312,6 @@ It always displays the properties of the item you opened it for, even if you sel
 
 &lt;p&gt;Download the full &lt;a href=&quot;https://gist.github.com/giacomelli/ad9d4dcdb702d2d1edf0663628ca9608&quot;&gt;gist&lt;/a&gt; or use the &lt;a href=&quot;/unitytips-gist-importer&quot;&gt;Gist Importer&lt;/a&gt; to import the complete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scene Preview Window&lt;/code&gt; for your project.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/ad9d4dcdb702d2d1edf0663628ca9608.js?file=ScenePreviewWindow.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -350,7 +338,6 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/a73c947508ee0b32eef7c422620ec6b6.js?file=HierarchyWindowGameObjectIcon.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -379,7 +366,6 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/096005d0d0df79b94321f950138220a3.js?file=HierarchyWindowLayerInfo.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -435,7 +421,6 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/9a248eecf5c1ffc477b59524f63264d3.js&quot;&gt; &lt;/script&gt;
 
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;All Gists are imported to folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/Gists&lt;/code&gt;&lt;/p&gt;
@@ -459,7 +444,6 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bb6a9932e5f49a072c57a7c17135bf6b.js?file=HierarchyWindowGroupHeader.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -488,7 +472,6 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/35410d682e41a504c7869a464a96c30a.js?file=HierarchyWindowGroupHeader.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -518,7 +501,6 @@ It always displays the properties of the item you opened it for, even if you sel
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/3c05b37b9af2ec6cfef0db58a2e5e3a7.js?file=TransformContextMenu.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -565,7 +547,6 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/141742c3175476f03ca2437c7b35fd88.js?file=SortingLayerDebugger.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
@@ -616,7 +597,6 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a “Editor” folder.&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/f74a23107fe862ae7501002ac856f932.js?file=ScenePreview.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;

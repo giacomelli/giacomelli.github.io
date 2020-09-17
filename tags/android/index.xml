@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - android</title>
  <link href="//tags/android/index.xml" rel="self"/>
  <link href="/tag/android.html"/>
- <updated>2020-09-17T14:45:29-03:00</updated>
+ <updated>2020-09-17T15:48:50-03:00</updated>
  <id>/tag/android.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -406,7 +406,6 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;h2 id=&quot;testing-on-android&quot;&gt;Testing on Android&lt;/h2&gt;
 &lt;p&gt;Now we have the basic setup done, we need to write some code to test it on an Android device:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/c8bff996de4473c201f010b17d42fd2b.js?file=AchievementsController.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;Add the script above to a game object in the scene, build and run the game on a Android device.&lt;/p&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - bot</title>
  <link href="//tags/bot/index.xml" rel="self"/>
  <link href="/tag/bot.html"/>
- <updated>2020-09-17T14:45:29-03:00</updated>
+ <updated>2020-09-17T15:48:50-03:00</updated>
  <id>/tag/bot.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -139,7 +139,6 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
 &lt;h1 id=&quot;botcontroller&quot;&gt;BotController&lt;/h1&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;
 
 </content>

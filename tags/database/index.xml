@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - database</title>
  <link href="//tags/database/index.xml" rel="self"/>
  <link href="/tag/database.html"/>
- <updated>2020-09-17T14:45:29-03:00</updated>
+ <updated>2020-09-17T15:48:50-03:00</updated>
  <id>/tag/database.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -23,7 +23,6 @@
   &lt;p&gt;A data-tier application (DAC) is a logical database management entity that defines all of the SQL Server objects - like tables, views, and instance objects, including logins - associated with a user’s database. A DAC is a self-contained unit of SQL Server database deployment that enables data-tier developers and database administrators to package SQL Server objects into a portable artifact called a DAC package, also known as a DACPAC&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=solution-build.yml&quot;&gt; &lt;/script&gt;
 
 &lt;blockquote&gt;
@@ -33,20 +32,16 @@
 &lt;h1 id=&quot;generating-the-sql-script&quot;&gt;Generating the .sql script&lt;/h1&gt;
 &lt;p&gt;With our .dacpac file built, now we need to generate our .sql database script. To perform this operation we need the &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15&quot;&gt;sqlpackage.exe&lt;/a&gt;, this command-line is available in some Azure Pipelines images, as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vs2017-win2016&lt;/code&gt;, so you need to use it on your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;azure-pipelines.yml&lt;/code&gt; file:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=image.yml&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;Add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task below to generate the .sql database script:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-generate.yml&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task below to generate the .sql database script:
+&lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-generate.yml&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;publishing-the-sql-script&quot;&gt;Publishing the .sql script&lt;/h1&gt;
-&lt;p&gt;Now we need to publish the .sql file to the build artifacts:&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-publish.yml&quot;&gt; &lt;/script&gt;
+&lt;p&gt;Now we need to publish the .sql file to the build artifacts:
+&lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-publish.yml&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;complete-azure-pipelinesyml&quot;&gt;Complete azure-pipelines.yml&lt;/h1&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=azure-pipelines.yml&quot;&gt; &lt;/script&gt;
 
 &lt;h1 id=&quot;extra-points&quot;&gt;Extra points&lt;/h1&gt;

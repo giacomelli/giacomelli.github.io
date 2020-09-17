@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - webjobs</title>
  <link href="//tags/webjobs/index.xml" rel="self"/>
  <link href="/tag/webjobs.html"/>
- <updated>2020-09-17T14:45:29-03:00</updated>
+ <updated>2020-09-17T15:48:50-03:00</updated>
  <id>/tag/webjobs.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -21,9 +21,8 @@
 
 &lt;p&gt;The big problem with the above behaviour is that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WebDeploy&lt;/code&gt; via VS or  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; task via Azure Pipeline will still try to deploy the webjobs to the folder inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/www/&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;My best suspects are these lines on &lt;a href=&quot;https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV3/azurermwebappdeployment.ts#L73&quot;&gt;AzureRmWebAppDeployment@3&lt;/a&gt;&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/1d47b7bf7e9a2b3806dbd0b0332743d2.js?file=AzureRmWebAppDeployment-lines.ts&quot;&gt; &lt;/script&gt;
+&lt;p&gt;My best suspects are these lines on &lt;a href=&quot;https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV3/azurermwebappdeployment.ts#L73&quot;&gt;AzureRmWebAppDeployment@3&lt;/a&gt;
+&lt;script src=&quot;https://gist.github.com/1d47b7bf7e9a2b3806dbd0b0332743d2.js?file=AzureRmWebAppDeployment-lines.ts&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; just check the physical path configured on Azure when we defined a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VirtualApplicatoin&lt;/code&gt; parameter, but in our case it is not a virtual application, but it is a different folder than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/wwwroot/&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&quot;externalref&quot;&gt;&lt;p&gt;in &lt;a href=&quot;https://github.com/projectkudu/kudu/wiki/WebJobs&quot;&gt;Kudu wiki&lt;/a&gt; there is some explanation about the webjobs folders.&lt;/p&gt;
@@ -34,7 +33,6 @@
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;you’ll need to replace the values between &amp;lt;..&amp;gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;variables&lt;/code&gt; section to specific values of your project&lt;/p&gt;
 &lt;/div&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/1d47b7bf7e9a2b3806dbd0b0332743d2.js?file=azure-pipelines.yml&quot;&gt; &lt;/script&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;I omitted some tasks from the original azure-pipelines.yml for simplicity. The original has a lot of others taks, as unit tests and web api publishing&lt;/p&gt;

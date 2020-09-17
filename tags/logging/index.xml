@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - logging</title>
  <link href="//tags/logging/index.xml" rel="self"/>
  <link href="/tag/logging.html"/>
- <updated>2020-09-17T14:45:29-03:00</updated>
+ <updated>2020-09-17T15:48:50-03:00</updated>
  <id>/tag/logging.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -20,7 +20,6 @@
       &lt;/center&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/bba329d772f4fb7c8e6c9a1d3047bae2.js?file=DynamicLog.cs&quot;&gt; &lt;/script&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
