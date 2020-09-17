@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - release</title>
  <link href="//tags/release/index.xml" rel="self"/>
  <link href="/tag/release.html"/>
- <updated>2020-09-16T20:35:09-03:00</updated>
+ <updated>2020-09-16T21:13:23-03:00</updated>
  <id>/tag/release.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -49,7 +49,7 @@ dotnet run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
@@ -601,7 +601,7 @@ Test Run Aborted
 &lt;/ul&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;

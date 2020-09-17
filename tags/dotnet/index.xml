@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2020-09-16T20:35:09-03:00</updated>
+ <updated>2020-09-16T21:13:23-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -427,7 +427,7 @@ dotnet run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
@@ -628,7 +628,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
@@ -646,7 +646,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -692,7 +692,7 @@ dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&g
 &lt;p&gt;Now you can open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpSample&lt;/code&gt; in Unity3D editor.
 Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; scene and hit the play button, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -1476,7 +1476,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -2149,7 +2149,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/ul&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -2168,7 +2168,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;p&gt;For these reasons, I made a mod called &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt; that let you interact with Buildron through the Slack.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
@@ -2511,7 +2511,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <content type="html">&lt;p&gt;I present to you my newest tool…&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a command-line tool to create new C# projects from prebuilt/templates.&lt;/p&gt;
@@ -2613,7 +2613,7 @@ My.Amazing.NewProject.sln
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
@@ -2749,7 +2749,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;We really appreciate your opinion about the mods support, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-introduction&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-tutorial-creating-a-mod&quot;&gt;tutorial&lt;/a&gt; and &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;. Please, get in touch at &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -2966,7 +2966,7 @@ Custom script:&lt;/li&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;When debugging is easier than expected&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;

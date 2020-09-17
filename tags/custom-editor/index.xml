@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - custom-editor</title>
  <link href="//tags/custom-editor/index.xml" rel="self"/>
  <link href="/tag/custom-editor.html"/>
- <updated>2020-09-16T20:35:09-03:00</updated>
+ <updated>2020-09-16T21:13:23-03:00</updated>
  <id>/tag/custom-editor.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -96,7 +96,7 @@
 &lt;/div&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;

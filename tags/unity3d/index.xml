@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-09-16T20:35:09-03:00</updated>
+ <updated>2020-09-16T21:13:23-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -36,7 +36,7 @@
 &lt;script src=&quot;https://gist.github.com/96086201cb5cc512ce7a15a02ebcf29a.js&quot;&gt; &lt;/script&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2020/09/15/unitytips-editor-coroutines/chip-8-inside-unity-editor.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/15/unitytips-editor-coroutines/chip-8-inside-unity-editor.gif &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The result of using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorCoroutineUtility.StartCoroutine&lt;/code&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -348,7 +348,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;p&gt;To activate a Focused Inspector, select an item &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(GameObject, Component, or Asset)&lt;/code&gt; and in the context menu hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Properties...&lt;/code&gt; menu item.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -393,7 +393,7 @@ To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unit
 Unity went further, allowing an editor focused on a component too.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h3 id=&quot;for-gameobjects-and-project-assets&quot;&gt;For GameObjects and Project Assets&lt;/h3&gt;
@@ -730,7 +730,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 
 &lt;p&gt;The following gif shows the evolution of a Maurer Rose (n = 2, d = 29°) from 1 point to 361 points.&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
@@ -986,7 +986,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
    <id>//unitytips-timespan-box-drawer</id>
    <content type="html">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyDrawer.html&quot;&gt;PropertyDrawer&lt;/a&gt; to display a help box on inspector showing the time information in seconds fields using &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-timespan-format-strings&quot;&gt;TimeSpan format strings&lt;/a&gt;:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -1197,7 +1197,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
    <id>//unitytips-string-interpolation</id>
    <content type="html">&lt;p&gt;Since C# 6.0 you can use &lt;a href=&quot;https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/tokens/interpolated&quot;&gt;String interpolation&lt;/a&gt; to make code more readable:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; /&gt;
       &lt;/center&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The sample lines will result in the same string&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
@@ -1221,7 +1221,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
    <content type="html">&lt;p&gt;When you have a single line method, you can use &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition&quot;&gt;expression body definition&lt;/a&gt; do simplify and reduce the lines of code:&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -1230,7 +1230,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 
 &lt;p&gt;So you can use the expression body definition for other members, like properties:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; /&gt;
       &lt;/center&gt;
 
 </content>
@@ -1687,7 +1687,7 @@ dotnet new GeneticSharpTspUnity3d &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&g
 &lt;p&gt;Now you can open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpSample&lt;/code&gt; in Unity3D editor.
 Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MainScene&lt;/code&gt; scene and hit the play button, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -3133,7 +3133,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;Finally, our sample is really done and you should be capable to change the cities positions, by dragging the pins around, and genetic algorithm will try to figure out the best route in real time.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -3166,7 +3166,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/div&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
@@ -3249,7 +3249,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/ul&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;
@@ -3268,7 +3268,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;p&gt;For these reasons, I made a mod called &lt;a href=&quot;https://github.com/giacomelli/Buildron.SlackBotMod&quot;&gt;Buildron.SlackBotMod&lt;/a&gt; that let you interact with Buildron through the Slack.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
@@ -3611,7 +3611,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <content type="html">&lt;p&gt;In this post I will show how to start building a mod to Buildron using a mod template.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
@@ -3747,7 +3747,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;p&gt;We really appreciate your opinion about the mods support, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-introduction&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-tutorial-creating-a-mod&quot;&gt;tutorial&lt;/a&gt; and &lt;a href=&quot;https://github.com/skahal/Buildron/wiki/Mods-ModSdk&quot;&gt;ModSdk&lt;/a&gt;. Please, get in touch at &lt;a href=&quot;http://twitter.com/ogiacomelli&quot;&gt;@ogiacomelli&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;blockquote&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - webassembly</title>
  <link href="//tags/webassembly/index.xml" rel="self"/>
  <link href="/tag/webassembly.html"/>
- <updated>2020-09-16T20:35:09-03:00</updated>
+ <updated>2020-09-16T21:13:23-03:00</updated>
  <id>/tag/webassembly.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -174,7 +174,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Now you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
@@ -192,7 +192,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Reload the url &lt;a href=&quot;http://localhost:5000/tsp&quot;&gt;http://localhost:5000/tsp&lt;/a&gt; again, and hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run&lt;/code&gt; button, now you should see the route been optimizing as the generations are ran:&lt;/p&gt;
 &lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; /&gt;
       &lt;/center&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
