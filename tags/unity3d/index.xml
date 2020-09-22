@@ -3,11 +3,45 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-09-17T17:31:09-03:00</updated>
+ <updated>2020-09-22T05:58:40-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; ShadowCaster2DFromCollider Component</title>
+   <link href="//unitytips-shadowcaster2-from-collider-component/"/>
+   <updated>2020-09-21T00:00:00-03:00</updated>
+   <id>//unitytips-shadowcaster2-from-collider-component</id>
+   <content type="html">&lt;p&gt;If you try to use a &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.1/manual/2DShadows.html&quot;&gt;ShadowCaster2D&lt;/a&gt; in a &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@3.0/manual/index.html&quot;&gt;SpriteShape&lt;/a&gt; the shadow produced will have a box form, no matter the form of your SpriteShape.&lt;/p&gt;
+
+&lt;p&gt;This happens because &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShadowCaster2D&lt;/code&gt; does not update its internal shape according to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SpriteShape's&lt;/code&gt; form.&lt;/p&gt;
+
+&lt;h2 id=&quot;shadowcaster2dfromcollider-component&quot;&gt;ShadowCaster2DFromCollider component&lt;/h2&gt;
+&lt;p&gt;I created this script to help to have &lt;strong&gt;SpriteShape with ShadowCaster2D casting right shadows&lt;/strong&gt;.&lt;br /&gt;
+To use it you need to add a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PolygonCollider2D.html&quot;&gt;PolygonCollider2D&lt;/a&gt; or an &lt;a href=&quot;https://docs.unity3d.com/Manual/class-EdgeCollider2D.html&quot;&gt;EdgeCollider2D&lt;/a&gt; to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SpriteShape's&lt;/code&gt; gameobject and then add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShadowCaster2DFromCollider&lt;/code&gt; component to the same gameobject.&lt;/p&gt;
+
+&lt;p&gt;Below you can see a video showing a scene with some SpriteShapes before and after applying the ShadowCaster2DFromCollider component.&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/m8nnTek5U0Y &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;source-code&quot;&gt;Source code&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/c208e20ecf75a77e0833f4c7671a0052.js&quot;&gt; &lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This solution was based on this Unity Forum post: https://forum.unity.com/threads/can-2d-shadow-caster-use-current-sprite-silhouette.861256&lt;/p&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Editor Coroutines</title>

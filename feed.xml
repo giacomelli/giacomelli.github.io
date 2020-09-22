@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-09-17T17:31:09-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; Editor Coroutines</title><link href="http://diegogiacomelli.com.br/unitytips-editor-coroutines/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Editor Coroutines" /><published>2020-09-15T00:00:00-03:00</published><updated>2020-09-15T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-editor-coroutines</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-editor-coroutines/">&lt;p&gt;Recently, I was doing a small experiment trying to run an &lt;a href=&quot;https://en.wikipedia.org/wiki/CHIP-8&quot;&gt;CHIP-8&lt;/a&gt; emulator inside the Unity Editor inspector window and for that I needed to update from times to time the inspector.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-09-22T05:58:40-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>programmer</subtitle><entry><title type="html">unitytips&amp;amp;colon; ShadowCaster2DFromCollider Component</title><link href="http://diegogiacomelli.com.br/unitytips-shadowcaster2-from-collider-component/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; ShadowCaster2DFromCollider Component" /><published>2020-09-21T00:00:00-03:00</published><updated>2020-09-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-shadowcaster2-from-collider-component</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-shadowcaster2-from-collider-component/">&lt;p&gt;If you try to use a &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.1/manual/2DShadows.html&quot;&gt;ShadowCaster2D&lt;/a&gt; in a &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@3.0/manual/index.html&quot;&gt;SpriteShape&lt;/a&gt; the shadow produced will have a box form, no matter the form of your SpriteShape.&lt;/p&gt;
+
+&lt;p&gt;This happens because &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShadowCaster2D&lt;/code&gt; does not update its internal shape according to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SpriteShape's&lt;/code&gt; form.&lt;/p&gt;
+
+&lt;h2 id=&quot;shadowcaster2dfromcollider-component&quot;&gt;ShadowCaster2DFromCollider component&lt;/h2&gt;
+&lt;p&gt;I created this script to help to have &lt;strong&gt;SpriteShape with ShadowCaster2D casting right shadows&lt;/strong&gt;.&lt;br /&gt;
+To use it you need to add a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PolygonCollider2D.html&quot;&gt;PolygonCollider2D&lt;/a&gt; or an &lt;a href=&quot;https://docs.unity3d.com/Manual/class-EdgeCollider2D.html&quot;&gt;EdgeCollider2D&lt;/a&gt; to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SpriteShape's&lt;/code&gt; gameobject and then add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShadowCaster2DFromCollider&lt;/code&gt; component to the same gameobject.&lt;/p&gt;
+
+&lt;p&gt;Below you can see a video showing a scene with some SpriteShapes before and after applying the ShadowCaster2DFromCollider component.&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/m8nnTek5U0Y &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;source-code&quot;&gt;Source code&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/c208e20ecf75a77e0833f4c7671a0052.js&quot;&gt; &lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;This solution was based on this Unity Forum post: https://forum.unity.com/threads/can-2d-shadow-caster-use-current-sprite-silhouette.861256&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">If you try to use a ShadowCaster2D in a SpriteShape the shadow produced will have a box form, no matter the form of your SpriteShape.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Editor Coroutines</title><link href="http://diegogiacomelli.com.br/unitytips-editor-coroutines/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Editor Coroutines" /><published>2020-09-15T00:00:00-03:00</published><updated>2020-09-15T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-editor-coroutines</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-editor-coroutines/">&lt;p&gt;Recently, I was doing a small experiment trying to run an &lt;a href=&quot;https://en.wikipedia.org/wiki/CHIP-8&quot;&gt;CHIP-8&lt;/a&gt; emulator inside the Unity Editor inspector window and for that I needed to update from times to time the inspector.&lt;/p&gt;
 
 &lt;p&gt;Initially I tried to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorApplication.update&lt;/code&gt;, but as it is only called when something changes in the inspector, it ended up not serving this purpose.&lt;/p&gt;
 
@@ -950,28 +975,4 @@ This simple formula show how math can be used to explore creativity and beauty.&
           &lt;div class=&quot;gist-meta&quot;&gt;
             &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
-      &lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="custom-editor" /><summary type="html">You can add a custom section to Project Settings window that allows you to configure some global settings for your project using a SettingsProvider</summary></entry><entry><title type="html">unitytips&amp;amp;colon; HelpBox Attribute (with docs button)</title><link href="http://diegogiacomelli.com.br/unitytips-helpbox-attribute/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; HelpBox Attribute (with docs button)" /><published>2020-07-14T00:00:00-03:00</published><updated>2020-07-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-helpbox-attribute</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-helpbox-attribute/">&lt;p&gt;You can create a &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/PropertyAttribute.html&quot;&gt;PropertyAttribute&lt;/a&gt; to display a help box on inspector showing a few lines of information, like &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/EditorGUI.HelpBox.html&quot;&gt;EditorGUI.HelpBox&lt;/a&gt;, but with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docs&lt;/code&gt; button to the documentation page.&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-200-8dae754d8.webp 200w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-400-8dae754d8.webp 400w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.webp 467w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-200-8dae754d8.png 200w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-400-8dae754d8.png 400w, /assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png 467w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/07/14/unitytips-helpbox-attribute/sample-component-467-8dae754d8.png&quot; alt=&quot;post image&quot; width=&quot;467&quot; height=&quot;413&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=HelpBoxAttribute.cs&quot;&gt; &lt;/script&gt;
-
-&lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=HelpBoxDrawer.cs&quot;&gt; &lt;/script&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
-&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
-        &lt;div class=&quot;gist-file&quot;&gt;
-          &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=SampleComponent.cs&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="custom-editor" /><summary type="html">You can create a PropertyAttribute to display a help box on inspector showing a few lines of information, like EditorGUI.HelpBox, but with a docs button to the documentation page.</summary></entry></feed>
+      &lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="custom-editor" /><summary type="html">You can add a custom section to Project Settings window that allows you to configure some global settings for your project using a SettingsProvider</summary></entry></feed>
