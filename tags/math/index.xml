@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - math</title>
  <link href="//tags/math/index.xml" rel="self"/>
  <link href="/tag/math.html"/>
- <updated>2020-09-24T07:47:50-03:00</updated>
+ <updated>2020-09-24T09:44:04-03:00</updated>
  <id>/tag/math.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -37,7 +37,7 @@
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Right_triangle&quot;&gt;Right&lt;/a&gt;: has one of its interior angles measuring 90°.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Oblique_triangle&quot;&gt;Oblique&lt;/a&gt;: do not have an angle measuring 90°.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Acute_triangle&quot;&gt;Acute&lt;/a&gt;: with all interior angles measuring less than 90°.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Obtuse_triangle&quot;&gt;Obtues&lt;/a&gt;: with one interior angle measuring more than 90°.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Obtuse_triangle&quot;&gt;Obtuse&lt;/a&gt;: with one interior angle measuring more than 90°.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;triangle-classifier&quot;&gt;Triangle Classifier&lt;/h2&gt;
