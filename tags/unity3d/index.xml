@@ -3,11 +3,66 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-09-22T05:58:40-03:00</updated>
+ <updated>2020-09-24T07:47:50-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Triangle Classifier Made With Unity</title>
+   <link href="//triangle-classifier-made-with-unity/"/>
+   <updated>2020-09-24T00:00:00-03:00</updated>
+   <id>//triangle-classifier-made-with-unity</id>
+   <content type="html">&lt;p&gt;These days were studying polygons and thought that would be cool build a triangle classifier to help people learn and teach about types of triangle.&lt;/p&gt;
+
+&lt;h2 id=&quot;types-of-triangle&quot;&gt;Types of triangle&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;Triangles can be classified &lt;a href=&quot;https://en.wikipedia.org/wiki/Triangle#Types_of_triangle&quot;&gt;by lengths of sides and by internal angles&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;by-lengths-of-sides&quot;&gt;By lengths of sides&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Equilateral_triangle&quot;&gt;Equilateral&lt;/a&gt;: all three sides have the same length.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Isosceles_triangle&quot;&gt;Isosceles&lt;/a&gt;: has two sides of equal length.&lt;/li&gt;
+  &lt;li&gt;Scalene: has all its sides of different lengths.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;by-internal-angles&quot;&gt;By internal angles&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Right_triangle&quot;&gt;Right&lt;/a&gt;: has one of its interior angles measuring 90°.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Oblique_triangle&quot;&gt;Oblique&lt;/a&gt;: do not have an angle measuring 90°.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Acute_triangle&quot;&gt;Acute&lt;/a&gt;: with all interior angles measuring less than 90°.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Obtuse_triangle&quot;&gt;Obtues&lt;/a&gt;: with one interior angle measuring more than 90°.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;triangle-classifier&quot;&gt;Triangle Classifier&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;Below you can use the Triangle Classifier that I made with Unity.&lt;/p&gt;
+
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;You can move any of the 3 vertices (A, B, C)&lt;/li&gt;
+  &lt;li&gt;The vertices positions can be changed too from the inputs on the top of the screen.&lt;/li&gt;
+  &lt;li&gt;Each time that any vertices are updated you can see the types of the triangle be updated in the top message.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe src=&quot;/apps/triangle-classifier/index.html&quot; style=&quot;width: 100%;min-height: 700px;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The font and the vertice sprite used are from &lt;a href=&quot;http://kenney.nl&quot;&gt;Kenney&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; ShadowCaster2DFromCollider Component</title>
@@ -966,7 +1021,6 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 
 &lt;p&gt;Below I show my realtime try on this matter:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/apps/maurer-rose/index.html&quot; target=&quot;_blank&quot;&gt;Open in a new window&lt;/a&gt;&lt;/p&gt;
 &lt;iframe src=&quot;/apps/maurer-rose/index.html&quot; style=&quot;width: 100%;min-height: 700px;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;

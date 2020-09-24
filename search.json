@@ -4,6 +4,18 @@
     
     
     {
+      "title"    : "Triangle Classifier Made With Unity",
+      "category" : "Labs",
+      "tags"     : "unity3d, gamedev, math, webgl",
+      "url"      : "/triangle-classifier-made-with-unity/",
+      "author"   : ""
+    } 
+     
+    ,
+  
+    
+    
+    {
       "title"    : "unitytips&amp;colon; ShadowCaster2DFromCollider Component",
       "category" : "Lab",
       "tags"     : "unity3d, unitytips, gamedev",
@@ -226,7 +238,7 @@
     {
       "title"    : "Drawing a Maurer Rose With Unity",
       "category" : "Tutorial",
-      "tags"     : "unity3d, gamedev, math, curves",
+      "tags"     : "unity3d, gamedev, math, curves, webgl",
       "url"      : "/drawing-a-maurer-rose-with-unity/",
       "author"   : ""
     } ,
