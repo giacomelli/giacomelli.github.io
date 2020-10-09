@@ -45,8 +45,16 @@ window.chip8Loader = {
 };
 
 window.chip8Sound = {
-    play: () => {
-        document.getElementById('sound').play();
+    play: (src) => {
+        var audio = document.getElementById('player');
+        if (audio != null) {
+            var audioSource = document.getElementById('playerSource');
+            if (audioSource != null) {
+                audioSource.src = src;
+                audio.load();
+                audio.play();
+            }
+        }
     }
 }
 
