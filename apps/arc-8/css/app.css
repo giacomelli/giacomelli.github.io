@@ -186,3 +186,12 @@ app {
         width: 100%;
     }
 }
+
+.chip-8-keyboard button {
+    padding:0;
+    width:100%;
+}
+
+.chip-8-keyboard > div > div {    
+    padding-right: 0;
+}
