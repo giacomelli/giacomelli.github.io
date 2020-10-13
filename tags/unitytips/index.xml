@@ -3,11 +3,42 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2020-10-11T09:38:50-03:00</updated>
+ <updated>2020-10-13T10:14:41-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Sprites Collection</title>
+   <link href="//unitytips-sprites-collection/"/>
+   <updated>2020-10-13T00:00:00-03:00</updated>
+   <id>//unitytips-sprites-collection</id>
+   <content type="html">&lt;p&gt;Sometimes we have related sprites that can be used in a prefab, like sprites for the environment, probs, and scenario. Would be cool if we can easily swap them directly on the prefab without need to find and set the sprite directly in the SpriteRenderer component?&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/TJ-Ou9YMFdA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;spritescollection-component&quot;&gt;SpritesCollection component&lt;/h2&gt;
+&lt;p&gt;I created this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SpritesCollection&lt;/code&gt; component that allows us to define a collection of sprites to a prefab/GameObject and then easily swap between the sprites available.&lt;/p&gt;
+
+&lt;h3 id=&quot;source-code&quot;&gt;Source code&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/d5d7c720eb910d00a5a3e217b5f95fff.js?file=SpritesCollection.cs&quot;&gt; &lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;I strongly recommend that you use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gist Importer&lt;/code&gt; to import this gist to your project, but if want to import it manually, just access &lt;a href=&quot;https://gist.github.com/giacomelli/d5d7c720eb910d00a5a3e217b5f95fff&quot;&gt;the gist&lt;/a&gt; and add all .cs files to any folder on your Unity project, except the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SpritesCollectionEditor.cs&lt;/code&gt;, this one should be added to an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder.&lt;/p&gt;
+&lt;/div&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; ShadowCaster2DFromCollider Component</title>
