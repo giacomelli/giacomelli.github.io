@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2020-10-13T10:14:41-03:00</updated>
+ <updated>2020-10-13T11:47:54-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -14,7 +14,7 @@
    <link href="//unitytips-sprites-collection/"/>
    <updated>2020-10-13T00:00:00-03:00</updated>
    <id>//unitytips-sprites-collection</id>
-   <content type="html">&lt;p&gt;Sometimes we have related sprites that can be used in a prefab, like sprites for the environment, probs, and scenario. Would be cool if we can easily swap them directly on the prefab without need to find and set the sprite directly in the SpriteRenderer component?&lt;/p&gt;
+   <content type="html">&lt;p&gt;Sometimes we have related sprites that can be used in a prefab, like sprites for the environment, props, and scenario. Would be cool if we can easily swap them directly on the prefab without need to find and set the sprite directly in the SpriteRenderer component?&lt;/p&gt;
 
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/TJ-Ou9YMFdA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
