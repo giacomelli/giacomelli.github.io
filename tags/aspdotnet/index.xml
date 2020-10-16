@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - aspdotnet</title>
  <link href="//tags/aspdotnet/index.xml" rel="self"/>
  <link href="/tag/aspdotnet.html"/>
- <updated>2020-10-15T11:50:52-03:00</updated>
+ <updated>2020-10-16T06:39:46-03:00</updated>
  <id>/tag/aspdotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -129,7 +129,7 @@
 
 &lt;p&gt;In most cases ASP .NET Web APIs/Apps are not exposed to a Path Traversal attack, but a poor user input validation in file system handling action can easily expose the whole API/APP.&lt;/p&gt;
 
-&lt;p&gt;These are the thumb of rule from OWASP ZAP docs:&lt;/p&gt;
+&lt;p&gt;These are the basic rules of OWASP ZAP documents:&lt;/p&gt;
 
 &lt;h3 id=&quot;how-to-identify-if-you-are-vulnerable&quot;&gt;How to identify if you are vulnerable&lt;/h3&gt;
 &lt;ul&gt;
