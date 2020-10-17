@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2020-10-16T06:39:46-03:00</updated>
+ <updated>2020-10-17T12:40:06-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -856,6 +856,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
    <id>//using-tesseract4-with-csharp</id>
    <content type="html">&lt;p&gt;Recently I built a small tool to read the text of thousands of images.&lt;/p&gt;
 
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;A common technique to extract text from images is know as OCR (Optical character recognition) and the best implementation, that I Know, is called &lt;a href=&quot;https://github.com/tesseract-ocr/tesseract&quot;&gt;Tesseract&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;When a I started to build the tool, I used the most famous &lt;a href=&quot;https://github.com/charlesw/tesseract&quot;&gt;Tesseract’s wrapper for .NET&lt;/a&gt;.&lt;/p&gt;
@@ -876,12 +877,12 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;The use of Tesseract 4 cut off the time to read the images in almost half&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;h1 id=&quot;tesseractservice&quot;&gt;TesseractService&lt;/h1&gt;
+&lt;h2 id=&quot;tesseractservice&quot;&gt;TesseractService&lt;/h2&gt;
 &lt;p&gt;I ended up developing the class below to call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tesseract 4&lt;/code&gt; command-line &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(tesseract.exe)&lt;/code&gt; directly from the C# code.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=TesseractService.cs&quot;&gt; &lt;/script&gt;
 
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Just download the gist above and add it to your .NET project.&lt;/li&gt;
   &lt;li&gt;Install Tesseract 4
@@ -898,7 +899,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=usage-sample.cs&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;If you try to read a image like this one:&lt;/p&gt;
@@ -925,7 +926,7 @@ marron rapido salta sobre el perro
 perezoso. A raposa marrom rapida
 salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+&lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/charlesw/tesseract&quot;&gt;A .Net wrapper for tesseract-ocr&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/tesseract-ocr/tesseract/wiki/FAQ#can-i-increase-speed-of-ocr&quot;&gt;Can I increase speed of OCR?&lt;/a&gt;&lt;/li&gt;
