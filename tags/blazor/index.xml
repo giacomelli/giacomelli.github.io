@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - blazor</title>
  <link href="//tags/blazor/index.xml" rel="self"/>
  <link href="/tag/blazor.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/blazor.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,7 +16,7 @@
    <id>//geneticsharp-2.6.0-blazor-template</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp 2.6.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
-&lt;h1 id=&quot;blazor-template&quot;&gt;Blazor template&lt;/h1&gt;
+&lt;h2 id=&quot;blazor-template&quot;&gt;Blazor template&lt;/h2&gt;
 &lt;p&gt;Now we have 4 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; templates, besides the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpConsoleApp&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspConsoleApp&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspUnity3d&lt;/code&gt; already existent, a new template for a Blazor client app was added: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspBlazorApp&lt;/code&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new -i GeneticSharp.Templates
@@ -31,7 +31,7 @@ dotnet run
 
 &lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;new-papers-and-projects-using-geneticsharp&quot;&gt;New papers and projects using GeneticSharp&lt;/h1&gt;
+&lt;h2 id=&quot;new-papers-and-projects-using-geneticsharp&quot;&gt;New papers and projects using GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Four papers and one project were added to the list:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -42,7 +42,7 @@ dotnet run
   &lt;li&gt;&lt;a href=&quot;https://trussoptimizationweb.herokuapp.com&quot;&gt;TrussOptimization (project)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;how-to-install-the-new-version&quot;&gt;How to install the new version&lt;/h1&gt;
+&lt;h2 id=&quot;how-to-install-the-new-version&quot;&gt;How to install the new version&lt;/h2&gt;
 &lt;h3 id=&quot;net-standard-20&quot;&gt;.NET Standard 2.0&lt;/h3&gt;
 &lt;p&gt;Only GeneticSharp:&lt;/p&gt;
 
@@ -53,7 +53,7 @@ dotnet run
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp.Extensions
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;unity3d&quot;&gt;Unity3D&lt;/h2&gt;
+&lt;h3 id=&quot;unity3d&quot;&gt;Unity3D&lt;/h3&gt;
 &lt;p&gt;You should use the &lt;a href=&quot;https://github.com/xoofx/UnityNuGet&quot;&gt;UnityNuGet&lt;/a&gt; to install GeneticSharp directly from NuGet.&lt;/p&gt;
 
 &lt;p&gt;Or you can use the latest GeneticSharp.unitypackage available on our &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
@@ -266,7 +266,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Let’s evolve!&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -283,7 +283,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/B9eTNZWhojI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;the-unitytips-collection&quot;&gt;The #unitytips collection&lt;/h1&gt;
+&lt;h2 id=&quot;the-unitytips-collection&quot;&gt;The #unitytips collection&lt;/h2&gt;
 &lt;p&gt;Every week all #unitytips retweeted by &lt;a href=&quot;https://twitter.com/unity3d&quot;&gt;@unity3d&lt;/a&gt; will be included to the collection.&lt;/p&gt;
 
 &lt;p&gt;If you know a really good #unitytips (at least 50 retweets) that should be added to the collection, please follow one of options above:&lt;/p&gt;
@@ -293,7 +293,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/unitytips-museum&quot;&gt;Fork it on GitHub&lt;/a&gt;, add the #unitytips to the wwwroot/data/tips.json file and create a pull-request.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;about-blazor&quot;&gt;About Blazor&lt;/h1&gt;
+&lt;h2 id=&quot;about-blazor&quot;&gt;About Blazor&lt;/h2&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Blazor can run your client-side C# code directly in the browser, using WebAssembly. Because it’s real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.&lt;/p&gt;
 &lt;/blockquote&gt;

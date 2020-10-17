@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - game-design</title>
  <link href="//tags/game-design/index.xml" rel="self"/>
  <link href="/tag/game-design.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/game-design.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -14,17 +14,17 @@
    <link href="//evolution-or-from-prototype-to-game/"/>
    <updated>2019-06-06T00:00:00-03:00</updated>
    <id>//evolution-or-from-prototype-to-game</id>
-   <content type="html">&lt;h1 id=&quot;the-importance-of-game-prototype&quot;&gt;The importance of game prototype&lt;/h1&gt;
+   <content type="html">&lt;h2 id=&quot;the-importance-of-game-prototype&quot;&gt;The importance of game prototype&lt;/h2&gt;
 &lt;p&gt;Several famous books and game designers cite how the prototyping phase of a new game project is an important time to &lt;strong&gt;lay out the foundations that will guide the whole game structure&lt;/strong&gt; during its development project and, as well, to experiment with concepts and ideas of quick and unassuming way.&lt;/p&gt;
 
 &lt;p&gt;The prototyping phase, although important, often takes a small percentage in the development time of a game project or in some cases is not part of the project itself, but rather a point prior to that, where we are seeking the idea or concept that will give birth to the new project.&lt;/p&gt;
 
-&lt;h1 id=&quot;transposing-the-fog&quot;&gt;Transposing the fog&lt;/h1&gt;
+&lt;h2 id=&quot;transposing-the-fog&quot;&gt;Transposing the fog&lt;/h2&gt;
 &lt;p&gt;I always find it interesting to &lt;strong&gt;compare when an idea is born, or has its first steps, with its final result&lt;/strong&gt;, because when we are at the beginning of any project or journey, the path may seem hazy and maybe it will become clear only when we manage to transpose the fog which separates the persevering from those who prefer to fear it.&lt;/p&gt;
 
 &lt;p&gt;For this reason I present the screenshots to &lt;strong&gt;compare Ships N ‘Battles in its prototype&lt;/strong&gt; phase, which, incidentally, at that stage did not have a name, only its project name “iBattleships”;) , &lt;strong&gt;with the final result of its HD version for iOS devices&lt;/strong&gt; with armv7 and retina display, that is, after letting the fog of this project back.&lt;/p&gt;
 
-&lt;h1 id=&quot;prototype-x-final-product&quot;&gt;Prototype x final product&lt;/h1&gt;
+&lt;h2 id=&quot;prototype-x-final-product&quot;&gt;Prototype x final product&lt;/h2&gt;
 &lt;p&gt;So we have below the screenshots of the main menu, deploy ships, aim and view the player’s ships, for the first functional prototype version running on Windows and the HD edition version running on an iPad 2:&lt;/p&gt;
 
 &lt;center&gt;

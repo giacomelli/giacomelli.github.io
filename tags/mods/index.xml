@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - mods</title>
  <link href="//tags/mods/index.xml" rel="self"/>
  <link href="/tag/mods.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/mods.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,10 +16,10 @@
    <id>//creating-a-consolemod-to-buildron</id>
    <content type="html">&lt;p&gt;In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.&lt;/p&gt;
 
-&lt;h1 id=&quot;modcontroller-class&quot;&gt;ModController class&lt;/h1&gt;
+&lt;h2 id=&quot;modcontroller-class&quot;&gt;ModController class&lt;/h2&gt;
 &lt;p&gt;ModController class will be a MonoBehaviour responsible to showing to the user a window where the Buildron events will be logged. It’s a very simple Unity3d MonoBehaviour that use some GUILayout stuffs to build its UI.&lt;/p&gt;
 
-&lt;h1 id=&quot;mod-class&quot;&gt;Mod class&lt;/h1&gt;
+&lt;h2 id=&quot;mod-class&quot;&gt;Mod class&lt;/h2&gt;
 &lt;p&gt;Mod class is the basic class for every Buildron mod and it will be responsible to creating the ModController GameObject and attach to listen a lot of the Buildron events.&lt;/p&gt;
 
 &lt;h2 id=&quot;download-buildron-mod-template&quot;&gt;Download Buildron-Mod-Template&lt;/h2&gt;

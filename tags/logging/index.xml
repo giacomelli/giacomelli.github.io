@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - logging</title>
  <link href="//tags/logging/index.xml" rel="self"/>
  <link href="/tag/logging.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/logging.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -26,7 +26,7 @@
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 </content>

@@ -129,12 +129,12 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
     </div>  
     <p>Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as <code class="language-plaintext highlighter-rouge">NVARCHAR (4000)</code>.</p>
 
+<h2 id="introduction">Introduction</h2>
 <p>This happen because Dapper cannot infer what is the exactly type and length of the table column on database.</p>
 
 <p>The downside of the <code class="language-plaintext highlighter-rouge">NVARCHAR (4000)</code> in arguments is that the database can choose a bad execution plan for the query.</p>
 
-<h1 id="solution">Solution</h1>
-
+<h2 id="solution">Solution</h2>
 <p>To avoid this you can pass the type of the argument to Dapper:</p>
 
 <script src="https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample1.cs"> </script>
@@ -143,7 +143,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
 <script src="https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample2.cs"> </script>
 
-<h1 id="extension-methods">Extension methods</h1>
+<h2 id="extension-methods">Extension methods</h2>
 <script src="https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=DapperArgumentExtensions.cs"> </script>
 
     

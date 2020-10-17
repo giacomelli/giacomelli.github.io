@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -148,7 +148,7 @@
   &lt;li&gt;If forced to use user input for file operations, normalize the input before using in file io API’s, such as normalize().&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -159,7 +159,7 @@
    <id>//azure-pipelines-generating-db-script</id>
    <content type="html">&lt;p&gt;Recently I needed to automate the generation of a database script deploy from a SQL Server Database Project on our Azure Pipelines continuous integration. Below I will describe the steps to achieve such thing.&lt;/p&gt;
 
-&lt;h1 id=&quot;building-the-solution&quot;&gt;Building the solution&lt;/h1&gt;
+&lt;h2 id=&quot;building-the-solution&quot;&gt;Building the solution&lt;/h2&gt;
 &lt;p&gt;A SQL Server Database Project has a solution (.sln) as any other kind of Visual Studio projects and we need to build it to generate our &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15&quot;&gt;DACPAC&lt;/a&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -172,7 +172,7 @@
   &lt;p&gt;The variables used in the script portions are described in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Complete azure-pipelines.yml&lt;/code&gt; in the end of this post&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h1 id=&quot;generating-the-sql-script&quot;&gt;Generating the .sql script&lt;/h1&gt;
+&lt;h2 id=&quot;generating-the-sql-script&quot;&gt;Generating the .sql script&lt;/h2&gt;
 &lt;p&gt;With our .dacpac file built, now we need to generate our .sql database script. To perform this operation we need the &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15&quot;&gt;sqlpackage.exe&lt;/a&gt;, this command-line is available in some Azure Pipelines images, as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vs2017-win2016&lt;/code&gt;, so you need to use it on your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;azure-pipelines.yml&lt;/code&gt; file:&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=image.yml&quot;&gt; &lt;/script&gt;
@@ -180,14 +180,14 @@
 &lt;p&gt;Add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task below to generate the .sql database script:
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-generate.yml&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;publishing-the-sql-script&quot;&gt;Publishing the .sql script&lt;/h1&gt;
+&lt;h2 id=&quot;publishing-the-sql-script&quot;&gt;Publishing the .sql script&lt;/h2&gt;
 &lt;p&gt;Now we need to publish the .sql file to the build artifacts:
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-publish.yml&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;complete-azure-pipelinesyml&quot;&gt;Complete azure-pipelines.yml&lt;/h1&gt;
+&lt;h2 id=&quot;complete-azure-pipelinesyml&quot;&gt;Complete azure-pipelines.yml&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=azure-pipelines.yml&quot;&gt; &lt;/script&gt;
 
-&lt;h1 id=&quot;extra-points&quot;&gt;Extra points&lt;/h1&gt;
+&lt;h2 id=&quot;extra-points&quot;&gt;Extra points&lt;/h2&gt;
 &lt;p&gt;In the approach described above the .sql files is not automatically applied to the database, so someone need to download, check and apply the file manually against the target database. If you want to apply the database script automatically you can change &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CmdLine&lt;/code&gt; task that generate the .sql file to update the target database using the &lt;a href=&quot;https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15#publish-parameters-properties-and-sqlcmd-variables&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;action:publish&lt;/code&gt; option of sqlpackage.exe&lt;/a&gt;.&lt;/p&gt;
 
 </content>
@@ -211,7 +211,7 @@
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
+&lt;h2 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h2&gt;
 &lt;p&gt;I would like to thanks to &lt;a href=&quot;https://github.com/andrecosta-tw&quot;&gt;André Costa&lt;/a&gt; and &lt;a href=&quot;https://github.com/mmoreira2000&quot;&gt;mmoreira2000&lt;/a&gt; for made pull-requests for bug fixes and &lt;a href=&quot;https://github.com/Thoorium&quot;&gt;Olivier Beaudoin&lt;/a&gt; for contributing with the &lt;a href=&quot;https://github.com/giacomelli/HarSharp/pull/9&quot;&gt;support to .NET Core / .NET Standard&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
@@ -264,7 +264,7 @@
   &lt;li&gt;If everything is right you can publish your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nupkg&lt;/code&gt; on &lt;a href=&quot;&quot;&gt;http://nuget.org&lt;/a&gt; or to your private NuGet feed: &lt;a href=&quot;https://www.nuget.org/packages/GeneticSharp.Templates/&quot;&gt;sample&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;That’s it, with just 9 steps you can create your own dotnet new template and jumpstart your next project setup.&lt;/p&gt;
 </content>
  </entry>
@@ -276,12 +276,12 @@
    <id>//dapper-and-the-nvarchar-4000-arguments</id>
    <content type="html">&lt;p&gt;Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt;.&lt;/p&gt;
 
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This happen because Dapper cannot infer what is the exactly type and length of the table column on database.&lt;/p&gt;
 
 &lt;p&gt;The downside of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt; in arguments is that the database can choose a bad execution plan for the query.&lt;/p&gt;
 
-&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
-
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
 &lt;p&gt;To avoid this you can pass the type of the argument to Dapper:&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample1.cs&quot;&gt; &lt;/script&gt;
@@ -290,7 +290,7 @@
 
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample2.cs&quot;&gt; &lt;/script&gt;
 
-&lt;h1 id=&quot;extension-methods&quot;&gt;Extension methods&lt;/h1&gt;
+&lt;h2 id=&quot;extension-methods&quot;&gt;Extension methods&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=DapperArgumentExtensions.cs&quot;&gt; &lt;/script&gt;
 
 </content>
@@ -552,7 +552,7 @@
    <id>//geneticsharp-2.6.0-blazor-template</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp 2.6.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
-&lt;h1 id=&quot;blazor-template&quot;&gt;Blazor template&lt;/h1&gt;
+&lt;h2 id=&quot;blazor-template&quot;&gt;Blazor template&lt;/h2&gt;
 &lt;p&gt;Now we have 4 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; templates, besides the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpConsoleApp&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspConsoleApp&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspUnity3d&lt;/code&gt; already existent, a new template for a Blazor client app was added: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GeneticSharpTspBlazorApp&lt;/code&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new -i GeneticSharp.Templates
@@ -567,7 +567,7 @@ dotnet run
 
 &lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;new-papers-and-projects-using-geneticsharp&quot;&gt;New papers and projects using GeneticSharp&lt;/h1&gt;
+&lt;h2 id=&quot;new-papers-and-projects-using-geneticsharp&quot;&gt;New papers and projects using GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Four papers and one project were added to the list:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -578,7 +578,7 @@ dotnet run
   &lt;li&gt;&lt;a href=&quot;https://trussoptimizationweb.herokuapp.com&quot;&gt;TrussOptimization (project)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;how-to-install-the-new-version&quot;&gt;How to install the new version&lt;/h1&gt;
+&lt;h2 id=&quot;how-to-install-the-new-version&quot;&gt;How to install the new version&lt;/h2&gt;
 &lt;h3 id=&quot;net-standard-20&quot;&gt;.NET Standard 2.0&lt;/h3&gt;
 &lt;p&gt;Only GeneticSharp:&lt;/p&gt;
 
@@ -589,7 +589,7 @@ dotnet run
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp.Extensions
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;unity3d&quot;&gt;Unity3D&lt;/h2&gt;
+&lt;h3 id=&quot;unity3d&quot;&gt;Unity3D&lt;/h3&gt;
 &lt;p&gt;You should use the &lt;a href=&quot;https://github.com/xoofx/UnityNuGet&quot;&gt;UnityNuGet&lt;/a&gt; to install GeneticSharp directly from NuGet.&lt;/p&gt;
 
 &lt;p&gt;Or you can use the latest GeneticSharp.unitypackage available on our &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
@@ -802,7 +802,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 
 &lt;p&gt;Let’s evolve!&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -945,7 +945,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
    <id>//publishing-webjobs-with-azure-pipelines</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-US/azure/app-service/webjobs-sdk-get-started&quot;&gt;Azure WebJobs&lt;/a&gt; are a great way to execute background process.&lt;/p&gt;
 
-&lt;h1 id=&quot;scenario&quot;&gt;Scenario&lt;/h1&gt;
+&lt;h2 id=&quot;scenario&quot;&gt;Scenario&lt;/h2&gt;
 &lt;p&gt;In last days I’ve created a &lt;a href=&quot;https://azure.microsoft.com/pt-br/services/devops/pipelines/&quot;&gt;Azure Pipelines&lt;/a&gt; that publish WebJobs, but in our specific case our WebJobs were not being published to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/wwwroot/App_Data/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;, because “reasons” our root web app is using ‘/site/www’ as folder. So, you should expect that the new folder to deploy WebJobs is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/www/App_Data/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;, but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NO&lt;/code&gt;, the new folder is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;The big problem with the above behaviour is that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WebDeploy&lt;/code&gt; via VS or  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AzureRmWebAppDeployment&lt;/code&gt; task via Azure Pipeline will still try to deploy the webjobs to the folder inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/www/&lt;/code&gt;&lt;/p&gt;
@@ -957,7 +957,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;externalref&quot;&gt;&lt;p&gt;in &lt;a href=&quot;https://github.com/projectkudu/kudu/wiki/WebJobs&quot;&gt;Kudu wiki&lt;/a&gt; there is some explanation about the webjobs folders.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
 &lt;p&gt;I used the FtpUpload task to publish the WebJobs binaries to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site/jobs/Continuous/&amp;lt;webjobs name&amp;gt;&lt;/code&gt; and two instances of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AzureAppServiceManage&lt;/code&gt; task to stop and start the jobs:&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;you’ll need to replace the values between &amp;lt;..&amp;gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;variables&lt;/code&gt; section to specific values of your project&lt;/p&gt;
@@ -967,14 +967,14 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;I omitted some tasks from the original azure-pipelines.yml for simplicity. The original has a lot of others taks, as unit tests and web api publishing&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;h1 id=&quot;extra-points-graceful-shutdown&quot;&gt;Extra points (graceful shutdown)&lt;/h1&gt;
+&lt;h2 id=&quot;extra-points-graceful-shutdown&quot;&gt;Extra points (graceful shutdown)&lt;/h2&gt;
 &lt;p&gt;Now that you’ve automate your WebJobs publishing, is a good idea improve your jobs to check if Azure has requested a shutdown. You can do this taks through the &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library#cancellation-tokens&quot;&gt;CancellationToken&lt;/a&gt; parameter passed to the job.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;A function can accept a CancellationToken parameter, which enables the operating system to notify your code when the function is about to be terminated. You can use this notification to make sure the function doesn’t terminate unexpectedly in a way that leaves data in an inconsistent state.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+&lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/ftp-upload?view=azure-devops&quot;&gt;FTP Upload task&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops&quot;&gt;Azure App Service Manage task&lt;/a&gt;&lt;/li&gt;
@@ -993,7 +993,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
    <id>//dotnet-new-templates-for-GeneticSharp</id>
    <content type="html">&lt;p&gt;Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the &lt;strong&gt;dotnet new&lt;/strong&gt; command.&lt;/p&gt;
 
-&lt;h1 id=&quot;installing-the-geneticsharptemplates&quot;&gt;Installing the GeneticSharp.Templates&lt;/h1&gt;
+&lt;h2 id=&quot;installing-the-geneticsharptemplates&quot;&gt;Installing the GeneticSharp.Templates&lt;/h2&gt;
 &lt;p&gt;Before you can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dotnet new&lt;/code&gt; command to create the GeneticSharp projects from templates, you need to install it on your machine:&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; GeneticSharp.Templates
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1012,9 +1012,9 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 
       &lt;/center&gt;
 
-&lt;h1 id=&quot;creating-a-new-geneticsharp-project-from-templates&quot;&gt;Creating a new GeneticSharp project from templates&lt;/h1&gt;
+&lt;h2 id=&quot;creating-a-new-geneticsharp-project-from-templates&quot;&gt;Creating a new GeneticSharp project from templates&lt;/h2&gt;
 
-&lt;h2 id=&quot;console-application&quot;&gt;Console Application&lt;/h2&gt;
+&lt;h3 id=&quot;console-application&quot;&gt;Console Application&lt;/h3&gt;
 &lt;p&gt;Create a new console application template with GeneticSharp where you just need to implement the chromosome and fitness function.&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotnet new GeneticSharpConsoleApp &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; MyNamespace &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; MyOutoputFolder
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1066,7 +1066,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;The additions of this version are the two new crossovers implementations and a new option of ITaskExecutor that use TPL.&lt;/p&gt;
 
-&lt;h1 id=&quot;crossovers&quot;&gt;Crossovers&lt;/h1&gt;
+&lt;h2 id=&quot;crossovers&quot;&gt;Crossovers&lt;/h2&gt;
 &lt;h3 id=&quot;alternating-position-ap&quot;&gt;Alternating-position (AP)&lt;/h3&gt;
 &lt;p&gt;The alternating position crossover operator (Larrañaga et al. 1996a) simply creates an offspring by selecting alternately the next element of the first parent and the next element of the second parent, omitting the elements already present in the offspring.&lt;/p&gt;
 
@@ -1077,7 +1077,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Next, for every; i E {l, 2, . . .N} the set of ith elements of all the parents is considered. If in this set an element occurs at least the threshold number of times, it is copied into the offspring.&lt;/p&gt;
 
-&lt;h1 id=&quot;tpl&quot;&gt;TPL&lt;/h1&gt;
+&lt;h2 id=&quot;tpl&quot;&gt;TPL&lt;/h2&gt;
 &lt;p&gt;Three new classes were implemented to run some key points of genetic algorithm using TPL.&lt;/p&gt;
 
 &lt;p&gt;Those new classes can be used alone, but normally you will use all them together. You can see a sample usage at unit test &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Start_TplManyGenerations_Optimization&lt;/code&gt;.&lt;/p&gt;
@@ -1093,7 +1093,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
+&lt;h2 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h2&gt;
 &lt;p&gt;I would like to thanks to &lt;a href=&quot;https://github.com/EMostafaAli&quot;&gt;EMostafaAli&lt;/a&gt; and &lt;a href=&quot;https://github.com/InRedikaWB&quot;&gt;Alexey I.&lt;/a&gt; for opened some issues and made small pull requests and &lt;a href=&quot;https://github.com/codingdna2&quot;&gt;Dan&lt;/a&gt; for contributing with the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/56&quot;&gt;TPL implementations&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Let’s evolve!&lt;/p&gt;
@@ -1111,7 +1111,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;The GeneticSharp.Extensions project receive those new features:&lt;/p&gt;
 
-&lt;h1 id=&quot;multiple&quot;&gt;Multiple&lt;/h1&gt;
+&lt;h2 id=&quot;multiple&quot;&gt;Multiple&lt;/h2&gt;
 &lt;h3 id=&quot;multiplechromosome&quot;&gt;MultipleChromosome&lt;/h3&gt;
 &lt;p&gt;Compound chromosome to artificially increase genetics diversity by evolving a list of chromosomes instead of just one.
 Sub-genes are inlined into a single compound list of genes.&lt;/p&gt;
@@ -1119,7 +1119,7 @@ Sub-genes are inlined into a single compound list of genes.&lt;/p&gt;
 &lt;h3 id=&quot;multiplefitness&quot;&gt;MultipleFitness&lt;/h3&gt;
 &lt;p&gt;Fitness class that can evaluate a compound chromosome by summing over the evaluation of its sub-chromosomes.&lt;/p&gt;
 
-&lt;h1 id=&quot;sudoku&quot;&gt;Sudoku&lt;/h1&gt;
+&lt;h2 id=&quot;sudoku&quot;&gt;Sudoku&lt;/h2&gt;
 &lt;h3 id=&quot;isudokuchromosome&quot;&gt;ISudokuChromosome:&lt;/h3&gt;
 &lt;p&gt;Represents each type of chromosome for solving a sudoku is simply required to output a list of candidate sudokus.&lt;/p&gt;
 
@@ -1142,13 +1142,13 @@ Permutations are computed once when a new Sudoku is encountered, and stored in a
 &lt;p&gt;This chromosome aims at increasing genetic diversity of SudokuPermutationsChromosome, which exhibits only 9 permutation genes.
 Here, instead, an arbitrary number of Sudokus are generated where for each row, a random gene is picked amongst an arbitrary number of corresponding permutation genes.&lt;/p&gt;
 
-&lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
+&lt;h2 id=&quot;samples&quot;&gt;Samples&lt;/h2&gt;
 &lt;p&gt;GTK# sample
 &lt;img src=&quot;https://user-images.githubusercontent.com/177389/47957137-6bff2200-df8f-11e8-8b07-a144289389a0.png&quot; alt=&quot;gtk-sudoku-sample&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
+&lt;h2 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h2&gt;
 &lt;p&gt;I would like to thanks to Jean-Sylvain Boige (@jsboige) for contributing with those great new samples and extensions and for use GeneticSharp in his &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/43#issuecomment-433662175&quot;&gt;Artificial Intelligence course in French engineering schools (course)&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Take a look on the pull-request for more details about those new features: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/pull/43&quot;&gt;New Sudoku extension and GTK# sample #43&lt;/a&gt;.&lt;/p&gt;
@@ -2542,6 +2542,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <id>//sending-a-slackbot-message-from-unity3d</id>
    <content type="html">&lt;p&gt;I was looking for a way to send a message to a Slack channel using the Slackbot API.&lt;/p&gt;
 
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is a pretty easy task to perform in C#, because there are some great client libraries implementations to the Slack API, like: &lt;a href=&quot;https://github.com/Inumedia/SlackAPI&quot;&gt;SlackApi&lt;/a&gt;, &lt;a href=&quot;https://github.com/jammerware/margiebot&quot;&gt;MargieBot&lt;/a&gt; and &lt;a href=&quot;https://github.com/noobot/SlackConnector&quot;&gt;SlackConnector&lt;/a&gt;. However, in the Unity3d world the story is a little different, because Unity3d uses an older .NET version and those mentioned client libraries are implemented using newer .NET framework versions that are incompatible with Unity3d.&lt;/p&gt;
 
 &lt;p&gt;I could have tried to compile those client libraries projects using a older .NET version, what I really tried to do, but almost all are using things like Task and async, that are really not supported by Unity3d .NET version right now.&lt;/p&gt;
@@ -2557,8 +2558,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
       &lt;/center&gt;
 
-&lt;h1 id=&quot;botcontroller&quot;&gt;BotController&lt;/h1&gt;
-
+&lt;h2 id=&quot;botcontroller&quot;&gt;BotController&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;
 
 </content>
@@ -2571,10 +2571,10 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <id>//creating-a-consolemod-to-buildron</id>
    <content type="html">&lt;p&gt;In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.&lt;/p&gt;
 
-&lt;h1 id=&quot;modcontroller-class&quot;&gt;ModController class&lt;/h1&gt;
+&lt;h2 id=&quot;modcontroller-class&quot;&gt;ModController class&lt;/h2&gt;
 &lt;p&gt;ModController class will be a MonoBehaviour responsible to showing to the user a window where the Buildron events will be logged. It’s a very simple Unity3d MonoBehaviour that use some GUILayout stuffs to build its UI.&lt;/p&gt;
 
-&lt;h1 id=&quot;mod-class&quot;&gt;Mod class&lt;/h1&gt;
+&lt;h2 id=&quot;mod-class&quot;&gt;Mod class&lt;/h2&gt;
 &lt;p&gt;Mod class is the basic class for every Buildron mod and it will be responsible to creating the ModController GameObject and attach to listen a lot of the Buildron events.&lt;/p&gt;
 
 &lt;h2 id=&quot;download-buildron-mod-template&quot;&gt;Download Buildron-Mod-Template&lt;/h2&gt;
@@ -3180,8 +3180,6 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![FxCop](https://badgessharp.apphb.com/badges/:owner/:repo/FxCop)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Sample badges: &lt;img src=&quot;https://badgessharp.apphb.com/badges/giacomelli/BadgesSharp/FxCop&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://badgessharp.apphb.com/badges/giacomelli/SampleProject/FxCop&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;how-use-it-on-your-continuous-integration&quot;&gt;How use it on your Continuous Integration?&lt;/h3&gt;
 &lt;p&gt;Probably you’re using some continuous integration service, below are some samples:&lt;/p&gt;

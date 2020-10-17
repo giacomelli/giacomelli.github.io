@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - console-log</title>
  <link href="//tags/console-log/index.xml" rel="self"/>
  <link href="/tag/console-log.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/console-log.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -19,7 +19,7 @@
         &lt;iframe src=&quot;https://www.youtube.com/embed/wwhz2wPN_wU &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just install the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ToastyNotification.package&lt;/code&gt; from the repository &lt;a href=&quot;https://github.com/giacomelli/Giacomelli.Unity.ToastyNotification/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now every time your game raise an error on Unity’s editor console log, the Toasty Notifcation will warning you 😉!&lt;/p&gt;

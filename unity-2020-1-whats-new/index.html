@@ -135,7 +135,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
    
     </div>  
     
-<h1 id="unity-20201">Unity 2020.1</h1>
+<h2 id="unity-20201">Unity 2020.1</h2>
 <p>The Unity 2020.1 was official release on <a href="https://blogs.unity3d.com/2020/07/23/unity-2020-1-is-now-available/">July 23, 2020</a> with a lot of fixes, API changes, changes, improvements and features.
 You can find the new features directly on the Unity manual accessing this search: <a href="https://docs.unity3d.com/2020.1/Documentation/Manual/30_search.html?q=newin20201">newin20201</a>.
 To read all items, access the complete <a href="https://unity3d.com/unity/whats-new/2020.1.0">release notes</a>.</p>
@@ -153,10 +153,10 @@ To read all items, access the complete <a href="https://unity3d.com/unity/whats-
         <iframe src="https://www.youtube.com/embed/yYjqJvd8lQI " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
       </center>
 
-<h1 id="my-feature-highlights">My feature highlights</h1>
+<h2 id="my-feature-highlights">My feature highlights</h2>
 <p>Below are the features that most caught my attention and that I believe can positively impact my development workflow.</p>
 
-<h2 id="focused-inspector">Focused Inspector</h2>
+<h3 id="focused-inspector">Focused Inspector</h3>
 <blockquote>
   <p>Editor: Add focused Inspector, a property editor to inspect single object.</p>
 </blockquote>
@@ -168,7 +168,7 @@ Unity went further, allowing an editor focused on a component too.</p>
         <img class="screenshot" src="/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif " alt="post image" />
       </center>
 
-<h3 id="for-gameobjects-and-project-assets">For GameObjects and Project Assets</h3>
+<h4 id="for-gameobjects-and-project-assets">For GameObjects and Project Assets</h4>
 <p>Right-click a <code class="language-plaintext highlighter-rouge">GameObject</code> in the <code class="language-plaintext highlighter-rouge">Hierarchy view</code>, or an <code class="language-plaintext highlighter-rouge">Asset</code> in the <code class="language-plaintext highlighter-rouge">Project view</code>.
 From the context menu, select <code class="language-plaintext highlighter-rouge">Properties</code>.</p>
 
@@ -176,20 +176,20 @@ From the context menu, select <code class="language-plaintext highlighter-rouge"
 From the main menu, select Assets &gt; Properties.
 Use the <code class="language-plaintext highlighter-rouge">Alt + P / Option + Shift + P</code> shortcut.</p>
 
-<h3 id="for-components">For components</h3>
+<h4 id="for-components">For components</h4>
 <p>Inspect the <code class="language-plaintext highlighter-rouge">GameObject</code> and locate the <code class="language-plaintext highlighter-rouge">component</code> you want to open a focused Inspector for.<br />
 From the component’s <code class="language-plaintext highlighter-rouge">More items (⋮) menu</code>, select Properties.</p>
 
 <p>More details in the <a href="https://docs.unity3d.com/2020.1/Documentation/Manual/InspectorFocused.html">official documentation</a>.</p>
 
-<h2 id="previewscenestage">PreviewSceneStage</h2>
+<h3 id="previewscenestage">PreviewSceneStage</h3>
 <blockquote>
   <p>Editor: Introduced PreviewSceneStage. Implement custom stages by inheriting from this class.</p>
 </blockquote>
 
 <p>I found this interesting but did not found any good documentation on how to use it.</p>
 
-<h2 id="switch-between-debug-and-release-code-optimizations">Switch between debug and release code optimizations</h2>
+<h3 id="switch-between-debug-and-release-code-optimizations">Switch between debug and release code optimizations</h3>
 <blockquote>
   <p>Editor: Support to switch between debug and release code optimizations without restarting the Unity Editor improving Unity Editor performance when compiling in release.</p>
 </blockquote>
@@ -203,7 +203,7 @@ From the component’s <code class="language-plaintext highlighter-rouge">More i
 
       </center>
 
-<h2 id="lighting-settings-as-an-asset">Lighting settings as an asset</h2>
+<h3 id="lighting-settings-as-an-asset">Lighting settings as an asset</h3>
 <blockquote>
   <p>GI: Added all lighting settings as an asset. This will allow the user to share them between scenes or switch them out in an easy way.</p>
 </blockquote>
@@ -218,12 +218,12 @@ From the component’s <code class="language-plaintext highlighter-rouge">More i
 
       </center>
 
-<h2 id="graphics-getpixeldata-api-was-added">Graphics: GetPixelData API was added</h2>
+<h3 id="graphics-getpixeldata-api-was-added">Graphics: GetPixelData API was added</h3>
 <blockquote>
   <p>Graphics: GetPixelData API was added to Texture2D, Texture3D, Texture2DArray, Cubemap and CubemapArray classes. It allows getting a pointer to the data of a particular mip level/array element in a Texture for reading/writing, and without creating any memory allocations (similar to Texture2D.GetRawTextureData).</p>
 </blockquote>
 
-<h2 id="input-system-is-now-verified">Input System is now verified</h2>
+<h3 id="input-system-is-now-verified">Input System is now verified</h3>
 <blockquote>
   <p>Input: The Input System has moved out of preview.</p>
 </blockquote>
@@ -232,21 +232,21 @@ From the component’s <code class="language-plaintext highlighter-rouge">More i
         <iframe src="https://www.youtube.com/embed/sQaF9_jd9k4 " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
       </center>
 
-<h2 id="save-and-restore-particle-system-state-data">Save and restore Particle System state data</h2>
+<h3 id="save-and-restore-particle-system-state-data">Save and restore Particle System state data</h3>
 <blockquote>
   <p>Particles: Abiltiy to save and restore Particle System state data, making it possible to save a snapshot of an entire Particle System at a point in time. A use case for this is for efficient rewind support, by saving periodic keyframes of the particle state, to avoid full resimulations.</p>
 </blockquote>
 
 <p>It seems to be possible through methods <a href="https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.GetPlaybackState.html">GetPlaybackState</a> and <a href="https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.SetPlaybackState.html">SetPlaybackState</a>, but they were already available in Unity 2019.4.</p>
 
-<h2 id="new-component-articulationbody">New component ArticulationBody</h2>
+<h3 id="new-component-articulationbody">New component ArticulationBody</h3>
 <blockquote>
   <p>Physics: Add a new component ArticulationBody that helps to create articulations. An articulation is a set of bodies, some of which have their relative motion constrained. All bodies are organized in a logical tree, where parent-child relation expresses the constrained motion. Unlike regular Rigidbodies with Joints, articulations are solved with a different solver (Featherstone) in reduced coordinates which guarantees there will never be any stretch of locked degrees of freedom. Typical examples of articulations include robotic arms, ragdolls, etc.</p>
 </blockquote>
 
 <p>This blog post talks in more details this new physics component: <a href="https://blogs.unity3d.com/2020/05/20/use-articulation-bodies-to-easily-prototype-industrial-designs-with-realistic-motion-and-behavior/">Use articulation bodies to easily prototype industrial designs with realistic motion and behavior</a>.</p>
 
-<h2 id="new-shader-preprocessor">New shader preprocessor</h2>
+<h3 id="new-shader-preprocessor">New shader preprocessor</h3>
 <blockquote>
   <ul>
     <li>Shaders: New shader preprocessor (experimental).</li>

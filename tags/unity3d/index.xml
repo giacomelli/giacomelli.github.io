@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -30,7 +30,7 @@
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -89,7 +89,7 @@
 
 &lt;iframe src=&quot;/apps/triangle-classifier/index.html&quot; style=&quot;width: 100%;min-height: 700px;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The font and the vertice sprite used are from &lt;a href=&quot;http://kenney.nl&quot;&gt;Kenney&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -120,7 +120,7 @@ To use it you need to add a &lt;a href=&quot;https://docs.unity3d.com/ScriptRefe
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -497,7 +497,7 @@ You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&
 
 &lt;p&gt;In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -527,7 +527,7 @@ It always displays the properties of the item you opened it for, even if you sel
    <updated>2020-09-04T00:00:00-03:00</updated>
    <id>//unity-2020-1-whats-new</id>
    <content type="html">
-&lt;h1 id=&quot;unity-20201&quot;&gt;Unity 2020.1&lt;/h1&gt;
+&lt;h2 id=&quot;unity-20201&quot;&gt;Unity 2020.1&lt;/h2&gt;
 &lt;p&gt;The Unity 2020.1 was official release on &lt;a href=&quot;https://blogs.unity3d.com/2020/07/23/unity-2020-1-is-now-available/&quot;&gt;July 23, 2020&lt;/a&gt; with a lot of fixes, API changes, changes, improvements and features.
 You can find the new features directly on the Unity manual accessing this search: &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/30_search.html?q=newin20201&quot;&gt;newin20201&lt;/a&gt;.
 To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unity/whats-new/2020.1.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
@@ -545,10 +545,10 @@ To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unit
         &lt;iframe src=&quot;https://www.youtube.com/embed/yYjqJvd8lQI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;my-feature-highlights&quot;&gt;My feature highlights&lt;/h1&gt;
+&lt;h2 id=&quot;my-feature-highlights&quot;&gt;My feature highlights&lt;/h2&gt;
 &lt;p&gt;Below are the features that most caught my attention and that I believe can positively impact my development workflow.&lt;/p&gt;
 
-&lt;h2 id=&quot;focused-inspector&quot;&gt;Focused Inspector&lt;/h2&gt;
+&lt;h3 id=&quot;focused-inspector&quot;&gt;Focused Inspector&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Editor: Add focused Inspector, a property editor to inspect single object.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -560,7 +560,7 @@ Unity went further, allowing an editor focused on a component too.&lt;/p&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
-&lt;h3 id=&quot;for-gameobjects-and-project-assets&quot;&gt;For GameObjects and Project Assets&lt;/h3&gt;
+&lt;h4 id=&quot;for-gameobjects-and-project-assets&quot;&gt;For GameObjects and Project Assets&lt;/h4&gt;
 &lt;p&gt;Right-click a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hierarchy view&lt;/code&gt;, or an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Asset&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Project view&lt;/code&gt;.
 From the context menu, select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Properties&lt;/code&gt;.&lt;/p&gt;
 
@@ -568,20 +568,20 @@ From the context menu, select &lt;code class=&quot;language-plaintext highlighte
 From the main menu, select Assets &amp;gt; Properties.
 Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + P / Option + Shift + P&lt;/code&gt; shortcut.&lt;/p&gt;
 
-&lt;h3 id=&quot;for-components&quot;&gt;For components&lt;/h3&gt;
+&lt;h4 id=&quot;for-components&quot;&gt;For components&lt;/h4&gt;
 &lt;p&gt;Inspect the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt; and locate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;component&lt;/code&gt; you want to open a focused Inspector for.&lt;br /&gt;
 From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;More items (⋮) menu&lt;/code&gt;, select Properties.&lt;/p&gt;
 
 &lt;p&gt;More details in the &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/InspectorFocused.html&quot;&gt;official documentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;previewscenestage&quot;&gt;PreviewSceneStage&lt;/h2&gt;
+&lt;h3 id=&quot;previewscenestage&quot;&gt;PreviewSceneStage&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Editor: Introduced PreviewSceneStage. Implement custom stages by inheriting from this class.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;I found this interesting but did not found any good documentation on how to use it.&lt;/p&gt;
 
-&lt;h2 id=&quot;switch-between-debug-and-release-code-optimizations&quot;&gt;Switch between debug and release code optimizations&lt;/h2&gt;
+&lt;h3 id=&quot;switch-between-debug-and-release-code-optimizations&quot;&gt;Switch between debug and release code optimizations&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Editor: Support to switch between debug and release code optimizations without restarting the Unity Editor improving Unity Editor performance when compiling in release.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -595,7 +595,7 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 
       &lt;/center&gt;
 
-&lt;h2 id=&quot;lighting-settings-as-an-asset&quot;&gt;Lighting settings as an asset&lt;/h2&gt;
+&lt;h3 id=&quot;lighting-settings-as-an-asset&quot;&gt;Lighting settings as an asset&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;GI: Added all lighting settings as an asset. This will allow the user to share them between scenes or switch them out in an easy way.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -610,12 +610,12 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 
       &lt;/center&gt;
 
-&lt;h2 id=&quot;graphics-getpixeldata-api-was-added&quot;&gt;Graphics: GetPixelData API was added&lt;/h2&gt;
+&lt;h3 id=&quot;graphics-getpixeldata-api-was-added&quot;&gt;Graphics: GetPixelData API was added&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Graphics: GetPixelData API was added to Texture2D, Texture3D, Texture2DArray, Cubemap and CubemapArray classes. It allows getting a pointer to the data of a particular mip level/array element in a Texture for reading/writing, and without creating any memory allocations (similar to Texture2D.GetRawTextureData).&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;input-system-is-now-verified&quot;&gt;Input System is now verified&lt;/h2&gt;
+&lt;h3 id=&quot;input-system-is-now-verified&quot;&gt;Input System is now verified&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Input: The Input System has moved out of preview.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -624,21 +624,21 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
         &lt;iframe src=&quot;https://www.youtube.com/embed/sQaF9_jd9k4 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
-&lt;h2 id=&quot;save-and-restore-particle-system-state-data&quot;&gt;Save and restore Particle System state data&lt;/h2&gt;
+&lt;h3 id=&quot;save-and-restore-particle-system-state-data&quot;&gt;Save and restore Particle System state data&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Particles: Abiltiy to save and restore Particle System state data, making it possible to save a snapshot of an entire Particle System at a point in time. A use case for this is for efficient rewind support, by saving periodic keyframes of the particle state, to avoid full resimulations.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;It seems to be possible through methods &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.GetPlaybackState.html&quot;&gt;GetPlaybackState&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.SetPlaybackState.html&quot;&gt;SetPlaybackState&lt;/a&gt;, but they were already available in Unity 2019.4.&lt;/p&gt;
 
-&lt;h2 id=&quot;new-component-articulationbody&quot;&gt;New component ArticulationBody&lt;/h2&gt;
+&lt;h3 id=&quot;new-component-articulationbody&quot;&gt;New component ArticulationBody&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Physics: Add a new component ArticulationBody that helps to create articulations. An articulation is a set of bodies, some of which have their relative motion constrained. All bodies are organized in a logical tree, where parent-child relation expresses the constrained motion. Unlike regular Rigidbodies with Joints, articulations are solved with a different solver (Featherstone) in reduced coordinates which guarantees there will never be any stretch of locked degrees of freedom. Typical examples of articulations include robotic arms, ragdolls, etc.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;This blog post talks in more details this new physics component: &lt;a href=&quot;https://blogs.unity3d.com/2020/05/20/use-articulation-bodies-to-easily-prototype-industrial-designs-with-realistic-motion-and-behavior/&quot;&gt;Use articulation bodies to easily prototype industrial designs with realistic motion and behavior&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;new-shader-preprocessor&quot;&gt;New shader preprocessor&lt;/h2&gt;
+&lt;h3 id=&quot;new-shader-preprocessor&quot;&gt;New shader preprocessor&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;ul&gt;
     &lt;li&gt;Shaders: New shader preprocessor (experimental).&lt;/li&gt;
@@ -994,7 +994,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -1058,7 +1058,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 &lt;p&gt;In this tutorial, we learned how to draw a Maurer Rose with a LineRenderer.
 This simple formula show how math can be used to explore creativity and beauty.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The font used on the WebGL sample is from &lt;a href=&quot;http://kenney.nl&quot;&gt;Kenney&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -1111,7 +1111,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 </content>
@@ -1141,7 +1141,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -1175,7 +1175,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 </content>
@@ -1198,7 +1198,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 </content>
@@ -1236,7 +1236,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -1476,7 +1476,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;h3 id=&quot;exception-class-not-found-comgoogleandroidgmsgamesgames&quot;&gt;Exception class not found com.google.android.gms.games.Games&lt;/h3&gt;
 &lt;p&gt;If you see the the log message above on the adb logcat, you need to check on Unity &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Player Settings / Publishing Settings&lt;/code&gt; if the minify settings are set up correctly as describe here: &lt;a href=&quot;https://github.com/playgameservices/play-games-plugin-for-unity/blob/master/README.md#play-games-services-proguard-configuration&quot;&gt;Play Games Services Proguard configuration&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -1600,7 +1600,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
         &lt;iframe src=&quot;https://www.youtube.com/embed/wwhz2wPN_wU &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just install the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ToastyNotification.package&lt;/code&gt; from the repository &lt;a href=&quot;https://github.com/giacomelli/Giacomelli.Unity.ToastyNotification/releases&quot;&gt;release page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now every time your game raise an error on Unity’s editor console log, the Toasty Notifcation will warning you 😉!&lt;/p&gt;
@@ -1679,7 +1679,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -1743,7 +1743,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -1820,7 +1820,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 </content>
@@ -1883,7 +1883,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
         &lt;iframe src=&quot;https://www.youtube.com/embed/B9eTNZWhojI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;the-unitytips-collection&quot;&gt;The #unitytips collection&lt;/h1&gt;
+&lt;h2 id=&quot;the-unitytips-collection&quot;&gt;The #unitytips collection&lt;/h2&gt;
 &lt;p&gt;Every week all #unitytips retweeted by &lt;a href=&quot;https://twitter.com/unity3d&quot;&gt;@unity3d&lt;/a&gt; will be included to the collection.&lt;/p&gt;
 
 &lt;p&gt;If you know a really good #unitytips (at least 50 retweets) that should be added to the collection, please follow one of options above:&lt;/p&gt;
@@ -1893,7 +1893,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
   &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/unitytips-museum&quot;&gt;Fork it on GitHub&lt;/a&gt;, add the #unitytips to the wwwroot/data/tips.json file and create a pull-request.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;about-blazor&quot;&gt;About Blazor&lt;/h1&gt;
+&lt;h2 id=&quot;about-blazor&quot;&gt;About Blazor&lt;/h2&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Blazor can run your client-side C# code directly in the browser, using WebAssembly. Because it’s real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2084,7 +2084,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -2112,7 +2112,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Any GameObject with name that starts with “—” will be considered a group header&lt;/p&gt;
@@ -2190,7 +2190,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 </content>
@@ -2266,8 +2266,8 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
    <id>//easing-2-curve-an-editor-window-to-create-animation-curve-from-easing-functions</id>
    <content type="html">&lt;p&gt;I’ve coded an &lt;a href=&quot;https://docs.unity3d.com/Manual/editor-EditorWindows.html&quot;&gt;EditorWindow&lt;/a&gt; to create an &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/AnimationCurve.html&quot;&gt;AnimationCurve&lt;/a&gt; using easing functions that define how much a value changes over time.&lt;/p&gt;
 
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;There are many classic easing functions, such as: InQuad, OutElastic, InOutSin, and InOutBounce. All of these are functions that have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;time&lt;/code&gt; input parameter and a return value between 0 and 1.&lt;/p&gt;
+&lt;p&gt;$# Introduction
+There are many classic easing functions, such as: InQuad, OutElastic, InOutSin, and InOutBounce. All of these are functions that have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;time&lt;/code&gt; input parameter and a return value between 0 and 1.&lt;/p&gt;
 
 &lt;p&gt;For example, the easing function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OutCirc&lt;/code&gt; is coded like:&lt;/p&gt;
 &lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -2294,7 +2294,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
 
 &lt;p&gt;In addition, you can add new easing functions just implementing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IEasing&lt;/code&gt; interface.&lt;/p&gt;
 
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;To setup the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/7324d63679c11529e1710a5470d9ee7f&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/7324d63679c11529e1710a5470d9ee7f.js?file=Easing2CurveEditorWindow.cs&quot;&gt; &lt;/script&gt;
@@ -2303,7 +2303,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -2409,13 +2409,13 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Another advantage of keeping assets organized in their proper folders is that you can &lt;a href=&quot;https://docs.unity3d.com/Manual/DefaultPresetsByFolder.html&quot;&gt;apply defaults presets to assets by folder&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;To setup the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/2d561e29beadab641a4f8b56954f53f7&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -2654,7 +2654,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;In this tutorial, we learned how to coding a custom editor window to create a set of default animation clips and animator override controller.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -2681,7 +2681,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -3061,7 +3061,7 @@ To implement these actions you need to do almost the same thing we did in this t
 &lt;p&gt;In this tutorial, we learn how to use Avatar Masks and Animation Layers to animate a robot with different masks and layers.
 These techniques allowing us to use already existent animations and combine them.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -3568,6 +3568,7 @@ I won’t getting in details about how this is script works, but it’s allow th
    <id>//unity3d-scenepreview-inspector</id>
    <content type="html">&lt;p&gt;I’m working in a new game prototype and in this process I was creating some experimental levels to test the mechanics, but by the name of scene I was having dificult to remember which mechanic the level was about and I had to open each level to discover that one was looking for, so I thought: it will be cool have an image preview of the scene when we select the file in hierarchy.&lt;/p&gt;
 
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I google and didn’t find any project or asset in Asset Store that already did something like this (please, let me know if you know a similar tool) and, well, I prefer code something, than google something, then I coded a little inspector, that I named as ScenePreview:&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;UPDATED: I created a new Scene Preview solution, now using its own window editor: &lt;a href=&quot;/unitytips-scene-preview-window/&quot;&gt;Scene Preview Window&lt;/a&gt;.&lt;/p&gt;
@@ -3586,7 +3587,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -3778,6 +3779,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <id>//sending-a-slackbot-message-from-unity3d</id>
    <content type="html">&lt;p&gt;I was looking for a way to send a message to a Slack channel using the Slackbot API.&lt;/p&gt;
 
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is a pretty easy task to perform in C#, because there are some great client libraries implementations to the Slack API, like: &lt;a href=&quot;https://github.com/Inumedia/SlackAPI&quot;&gt;SlackApi&lt;/a&gt;, &lt;a href=&quot;https://github.com/jammerware/margiebot&quot;&gt;MargieBot&lt;/a&gt; and &lt;a href=&quot;https://github.com/noobot/SlackConnector&quot;&gt;SlackConnector&lt;/a&gt;. However, in the Unity3d world the story is a little different, because Unity3d uses an older .NET version and those mentioned client libraries are implemented using newer .NET framework versions that are incompatible with Unity3d.&lt;/p&gt;
 
 &lt;p&gt;I could have tried to compile those client libraries projects using a older .NET version, what I really tried to do, but almost all are using things like Task and async, that are really not supported by Unity3d .NET version right now.&lt;/p&gt;
@@ -3793,8 +3795,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
       &lt;/center&gt;
 
-&lt;h1 id=&quot;botcontroller&quot;&gt;BotController&lt;/h1&gt;
-
+&lt;h2 id=&quot;botcontroller&quot;&gt;BotController&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;
 
 </content>
@@ -3807,10 +3808,10 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <id>//creating-a-consolemod-to-buildron</id>
    <content type="html">&lt;p&gt;In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.&lt;/p&gt;
 
-&lt;h1 id=&quot;modcontroller-class&quot;&gt;ModController class&lt;/h1&gt;
+&lt;h2 id=&quot;modcontroller-class&quot;&gt;ModController class&lt;/h2&gt;
 &lt;p&gt;ModController class will be a MonoBehaviour responsible to showing to the user a window where the Buildron events will be logged. It’s a very simple Unity3d MonoBehaviour that use some GUILayout stuffs to build its UI.&lt;/p&gt;
 
-&lt;h1 id=&quot;mod-class&quot;&gt;Mod class&lt;/h1&gt;
+&lt;h2 id=&quot;mod-class&quot;&gt;Mod class&lt;/h2&gt;
 &lt;p&gt;Mod class is the basic class for every Buildron mod and it will be responsible to creating the ModController GameObject and attach to listen a lot of the Buildron events.&lt;/p&gt;
 
 &lt;h2 id=&quot;download-buildron-mod-template&quot;&gt;Download Buildron-Mod-Template&lt;/h2&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - harsharp</title>
  <link href="//tags/harsharp/index.xml" rel="self"/>
  <link href="/tag/harsharp.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/harsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -27,7 +27,7 @@
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h1&gt;
+&lt;h2 id=&quot;thanks-to&quot;&gt;Thanks to&lt;/h2&gt;
 &lt;p&gt;I would like to thanks to &lt;a href=&quot;https://github.com/andrecosta-tw&quot;&gt;André Costa&lt;/a&gt; and &lt;a href=&quot;https://github.com/mmoreira2000&quot;&gt;mmoreira2000&lt;/a&gt; for made pull-requests for bug fixes and &lt;a href=&quot;https://github.com/Thoorium&quot;&gt;Olivier Beaudoin&lt;/a&gt; for contributing with the &lt;a href=&quot;https://github.com/giacomelli/HarSharp/pull/9&quot;&gt;support to .NET Core / .NET Standard&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-10-17T12:40:06-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">OWASP ZAP Path Traversal and ASP .NET&amp;amp;colon; Notes</title><link href="http://diegogiacomelli.com.br/owasp-zap-path-traversal-and-asp-dotnet-notes/" rel="alternate" type="text/html" title="OWASP ZAP Path Traversal and ASP .NET&amp;amp;colon; Notes" /><published>2020-10-15T00:00:00-03:00</published><updated>2020-10-15T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/owasp-zap-path-traversal-and-asp-dotnet-notes</id><content type="html" xml:base="http://diegogiacomelli.com.br/owasp-zap-path-traversal-and-asp-dotnet-notes/">&lt;p&gt;In this post, I wrote some notes of my experience trying to understand the alerts about the &lt;a href=&quot;https://owasp.org/www-community/attacks/Path_Traversal&quot;&gt;Path Traversal&lt;/a&gt; attack while running &lt;a href=&quot;https://www.zaproxy.org/&quot;&gt;OWASP ZAP&lt;/a&gt; against an ASP .NET project.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-10-17T14:43:31-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">OWASP ZAP Path Traversal and ASP .NET&amp;amp;colon; Notes</title><link href="http://diegogiacomelli.com.br/owasp-zap-path-traversal-and-asp-dotnet-notes/" rel="alternate" type="text/html" title="OWASP ZAP Path Traversal and ASP .NET&amp;amp;colon; Notes" /><published>2020-10-15T00:00:00-03:00</published><updated>2020-10-15T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/owasp-zap-path-traversal-and-asp-dotnet-notes</id><content type="html" xml:base="http://diegogiacomelli.com.br/owasp-zap-path-traversal-and-asp-dotnet-notes/">&lt;p&gt;In this post, I wrote some notes of my experience trying to understand the alerts about the &lt;a href=&quot;https://owasp.org/www-community/attacks/Path_Traversal&quot;&gt;Path Traversal&lt;/a&gt; attack while running &lt;a href=&quot;https://www.zaproxy.org/&quot;&gt;OWASP ZAP&lt;/a&gt; against an ASP .NET project.&lt;/p&gt;
 
 &lt;h2 id=&quot;owasp-zap&quot;&gt;OWASP ZAP&lt;/h2&gt;
 &lt;p&gt;OWASP ZAP (short for Zed Attack Proxy) is an open-source web application security scanner. It is intended to be used by both those new to application security as well as professional penetration testers.&lt;/p&gt;
@@ -132,7 +132,7 @@
   &lt;li&gt;If forced to use user input for file operations, normalize the input before using in file io API’s, such as normalize().&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Tutorial" /><category term="aspdotnet" /><category term="dotnet" /><category term="security" /><category term="owasp" /><summary type="html">In this post, I wrote some notes of my experience trying to understand the alerts about the Path Traversal attack while running OWASP ZAP against an ASP .NET project.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Sprites Collection</title><link href="http://diegogiacomelli.com.br/unitytips-sprites-collection/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Sprites Collection" /><published>2020-10-13T00:00:00-03:00</published><updated>2020-10-13T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-sprites-collection</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-sprites-collection/">&lt;p&gt;Sometimes we have related sprites that can be used in a prefab, like sprites for the environment, props, and scenario. Would be cool if we can easily swap them directly on the prefab without need to find and set the sprite directly in the SpriteRenderer component?&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Tutorial" /><category term="aspdotnet" /><category term="dotnet" /><category term="security" /><category term="owasp" /><summary type="html">In this post, I wrote some notes of my experience trying to understand the alerts about the Path Traversal attack while running OWASP ZAP against an ASP .NET project.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Sprites Collection</title><link href="http://diegogiacomelli.com.br/unitytips-sprites-collection/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Sprites Collection" /><published>2020-10-13T00:00:00-03:00</published><updated>2020-10-13T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-sprites-collection</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-sprites-collection/">&lt;p&gt;Sometimes we have related sprites that can be used in a prefab, like sprites for the environment, props, and scenario. Would be cool if we can easily swap them directly on the prefab without need to find and set the sprite directly in the SpriteRenderer component?&lt;/p&gt;
 
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/TJ-Ou9YMFdA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -148,7 +148,7 @@
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -197,9 +197,9 @@
 
 &lt;iframe src=&quot;/apps/triangle-classifier/index.html&quot; style=&quot;width: 100%;min-height: 700px;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The font and the vertice sprite used are from &lt;a href=&quot;http://kenney.nl&quot;&gt;Kenney&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="Labs" /><category term="unity3d" /><category term="gamedev" /><category term="math" /><category term="webgl" /><summary type="html">These days were studying polygons and thought that would be cool build a triangle classifier to help people learn and teach about types of triangle.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; ShadowCaster2DFromCollider Component</title><link href="http://diegogiacomelli.com.br/unitytips-shadowcaster2-from-collider-component/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; ShadowCaster2DFromCollider Component" /><published>2020-09-21T00:00:00-03:00</published><updated>2020-09-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-shadowcaster2-from-collider-component</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-shadowcaster2-from-collider-component/">&lt;p&gt;If you try to use a &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.1/manual/2DShadows.html&quot;&gt;ShadowCaster2D&lt;/a&gt; in a &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@3.0/manual/index.html&quot;&gt;SpriteShape&lt;/a&gt; the shadow produced will have a box form, no matter the form of your SpriteShape.&lt;/p&gt;
+&lt;p&gt;The font and the vertice sprite used are from &lt;a href=&quot;http://kenney.nl&quot;&gt;Kenney&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="gamedev" /><category term="math" /><category term="webgl" /><summary type="html">These days were studying polygons and thought that would be cool build a triangle classifier to help people learn and teach about types of triangle.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; ShadowCaster2DFromCollider Component</title><link href="http://diegogiacomelli.com.br/unitytips-shadowcaster2-from-collider-component/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; ShadowCaster2DFromCollider Component" /><published>2020-09-21T00:00:00-03:00</published><updated>2020-09-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-shadowcaster2-from-collider-component</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-shadowcaster2-from-collider-component/">&lt;p&gt;If you try to use a &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.1/manual/2DShadows.html&quot;&gt;ShadowCaster2D&lt;/a&gt; in a &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@3.0/manual/index.html&quot;&gt;SpriteShape&lt;/a&gt; the shadow produced will have a box form, no matter the form of your SpriteShape.&lt;/p&gt;
 
 &lt;p&gt;This happens because &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ShadowCaster2D&lt;/code&gt; does not update its internal shape according to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SpriteShape's&lt;/code&gt; form.&lt;/p&gt;
 
@@ -219,7 +219,7 @@ To use it you need to add a &lt;a href=&quot;https://docs.unity3d.com/ScriptRefe
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -577,7 +577,7 @@ You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&
 
 &lt;p&gt;In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Tutorial" /><category term="unity3d" /><category term="gamedev" /><category term="math" /><category term="curves" /><summary type="html">In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Focused Inspector</title><link href="http://diegogiacomelli.com.br/unitytips-focused-inspector/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Focused Inspector" /><published>2020-09-08T00:00:00-03:00</published><updated>2020-09-08T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-focused-inspector</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-focused-inspector/">&lt;p&gt;Starting in Unity 2020.1, you can add a dedicated inspector window for a specific GameObject, Component, or Asset. 
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Tutorial" /><category term="unity3d" /><category term="gamedev" /><category term="math" /><category term="curves" /><summary type="html">In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Focused Inspector</title><link href="http://diegogiacomelli.com.br/unitytips-focused-inspector/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Focused Inspector" /><published>2020-09-08T00:00:00-03:00</published><updated>2020-09-08T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-focused-inspector</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-focused-inspector/">&lt;p&gt;Starting in Unity 2020.1, you can add a dedicated inspector window for a specific GameObject, Component, or Asset. 
 It always displays the properties of the item you opened it for, even if you select something else in the editor.&lt;/p&gt;
 
 &lt;p&gt;To activate a Focused Inspector, select an item &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(GameObject, Component, or Asset)&lt;/code&gt; and in the context menu hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Properties...&lt;/code&gt; menu item.&lt;/p&gt;
@@ -588,7 +588,7 @@ It always displays the properties of the item you opened it for, even if you sel
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;More details in the official documentation: &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/InspectorFocused.html&quot;&gt;Focused Inspectors&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">Starting in Unity 2020.1, you can add a dedicated inspector window for a specific GameObject, Component, or Asset. It always displays the properties of the item you opened it for, even if you select something else in the editor.</summary></entry><entry><title type="html">Unity 2020.1&amp;amp;colon; What’s new</title><link href="http://diegogiacomelli.com.br/unity-2020-1-whats-new/" rel="alternate" type="text/html" title="Unity 2020.1&amp;amp;colon; What’s new" /><published>2020-09-04T00:00:00-03:00</published><updated>2020-09-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-2020-1-whats-new</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-2020-1-whats-new/">&lt;h1 id=&quot;unity-20201&quot;&gt;Unity 2020.1&lt;/h1&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">Starting in Unity 2020.1, you can add a dedicated inspector window for a specific GameObject, Component, or Asset. It always displays the properties of the item you opened it for, even if you select something else in the editor.</summary></entry><entry><title type="html">Unity 2020.1&amp;amp;colon; What’s new</title><link href="http://diegogiacomelli.com.br/unity-2020-1-whats-new/" rel="alternate" type="text/html" title="Unity 2020.1&amp;amp;colon; What’s new" /><published>2020-09-04T00:00:00-03:00</published><updated>2020-09-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-2020-1-whats-new</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-2020-1-whats-new/">&lt;h2 id=&quot;unity-20201&quot;&gt;Unity 2020.1&lt;/h2&gt;
 &lt;p&gt;The Unity 2020.1 was official release on &lt;a href=&quot;https://blogs.unity3d.com/2020/07/23/unity-2020-1-is-now-available/&quot;&gt;July 23, 2020&lt;/a&gt; with a lot of fixes, API changes, changes, improvements and features.
 You can find the new features directly on the Unity manual accessing this search: &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/30_search.html?q=newin20201&quot;&gt;newin20201&lt;/a&gt;.
 To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unity/whats-new/2020.1.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
@@ -606,10 +606,10 @@ To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unit
         &lt;iframe src=&quot;https://www.youtube.com/embed/yYjqJvd8lQI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
-&lt;h1 id=&quot;my-feature-highlights&quot;&gt;My feature highlights&lt;/h1&gt;
+&lt;h2 id=&quot;my-feature-highlights&quot;&gt;My feature highlights&lt;/h2&gt;
 &lt;p&gt;Below are the features that most caught my attention and that I believe can positively impact my development workflow.&lt;/p&gt;
 
-&lt;h2 id=&quot;focused-inspector&quot;&gt;Focused Inspector&lt;/h2&gt;
+&lt;h3 id=&quot;focused-inspector&quot;&gt;Focused Inspector&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Editor: Add focused Inspector, a property editor to inspect single object.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -621,7 +621,7 @@ Unity went further, allowing an editor focused on a component too.&lt;/p&gt;
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
 
-&lt;h3 id=&quot;for-gameobjects-and-project-assets&quot;&gt;For GameObjects and Project Assets&lt;/h3&gt;
+&lt;h4 id=&quot;for-gameobjects-and-project-assets&quot;&gt;For GameObjects and Project Assets&lt;/h4&gt;
 &lt;p&gt;Right-click a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hierarchy view&lt;/code&gt;, or an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Asset&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Project view&lt;/code&gt;.
 From the context menu, select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Properties&lt;/code&gt;.&lt;/p&gt;
 
@@ -629,20 +629,20 @@ From the context menu, select &lt;code class=&quot;language-plaintext highlighte
 From the main menu, select Assets &amp;gt; Properties.
 Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + P / Option + Shift + P&lt;/code&gt; shortcut.&lt;/p&gt;
 
-&lt;h3 id=&quot;for-components&quot;&gt;For components&lt;/h3&gt;
+&lt;h4 id=&quot;for-components&quot;&gt;For components&lt;/h4&gt;
 &lt;p&gt;Inspect the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt; and locate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;component&lt;/code&gt; you want to open a focused Inspector for.&lt;br /&gt;
 From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;More items (⋮) menu&lt;/code&gt;, select Properties.&lt;/p&gt;
 
 &lt;p&gt;More details in the &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/InspectorFocused.html&quot;&gt;official documentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;previewscenestage&quot;&gt;PreviewSceneStage&lt;/h2&gt;
+&lt;h3 id=&quot;previewscenestage&quot;&gt;PreviewSceneStage&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Editor: Introduced PreviewSceneStage. Implement custom stages by inheriting from this class.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;I found this interesting but did not found any good documentation on how to use it.&lt;/p&gt;
 
-&lt;h2 id=&quot;switch-between-debug-and-release-code-optimizations&quot;&gt;Switch between debug and release code optimizations&lt;/h2&gt;
+&lt;h3 id=&quot;switch-between-debug-and-release-code-optimizations&quot;&gt;Switch between debug and release code optimizations&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Editor: Support to switch between debug and release code optimizations without restarting the Unity Editor improving Unity Editor performance when compiling in release.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -656,7 +656,7 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 
       &lt;/center&gt;
 
-&lt;h2 id=&quot;lighting-settings-as-an-asset&quot;&gt;Lighting settings as an asset&lt;/h2&gt;
+&lt;h3 id=&quot;lighting-settings-as-an-asset&quot;&gt;Lighting settings as an asset&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;GI: Added all lighting settings as an asset. This will allow the user to share them between scenes or switch them out in an easy way.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -671,12 +671,12 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 
       &lt;/center&gt;
 
-&lt;h2 id=&quot;graphics-getpixeldata-api-was-added&quot;&gt;Graphics: GetPixelData API was added&lt;/h2&gt;
+&lt;h3 id=&quot;graphics-getpixeldata-api-was-added&quot;&gt;Graphics: GetPixelData API was added&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Graphics: GetPixelData API was added to Texture2D, Texture3D, Texture2DArray, Cubemap and CubemapArray classes. It allows getting a pointer to the data of a particular mip level/array element in a Texture for reading/writing, and without creating any memory allocations (similar to Texture2D.GetRawTextureData).&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;input-system-is-now-verified&quot;&gt;Input System is now verified&lt;/h2&gt;
+&lt;h3 id=&quot;input-system-is-now-verified&quot;&gt;Input System is now verified&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Input: The Input System has moved out of preview.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -685,21 +685,21 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
         &lt;iframe src=&quot;https://www.youtube.com/embed/sQaF9_jd9k4 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 
-&lt;h2 id=&quot;save-and-restore-particle-system-state-data&quot;&gt;Save and restore Particle System state data&lt;/h2&gt;
+&lt;h3 id=&quot;save-and-restore-particle-system-state-data&quot;&gt;Save and restore Particle System state data&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Particles: Abiltiy to save and restore Particle System state data, making it possible to save a snapshot of an entire Particle System at a point in time. A use case for this is for efficient rewind support, by saving periodic keyframes of the particle state, to avoid full resimulations.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;It seems to be possible through methods &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.GetPlaybackState.html&quot;&gt;GetPlaybackState&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.SetPlaybackState.html&quot;&gt;SetPlaybackState&lt;/a&gt;, but they were already available in Unity 2019.4.&lt;/p&gt;
 
-&lt;h2 id=&quot;new-component-articulationbody&quot;&gt;New component ArticulationBody&lt;/h2&gt;
+&lt;h3 id=&quot;new-component-articulationbody&quot;&gt;New component ArticulationBody&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Physics: Add a new component ArticulationBody that helps to create articulations. An articulation is a set of bodies, some of which have their relative motion constrained. All bodies are organized in a logical tree, where parent-child relation expresses the constrained motion. Unlike regular Rigidbodies with Joints, articulations are solved with a different solver (Featherstone) in reduced coordinates which guarantees there will never be any stretch of locked degrees of freedom. Typical examples of articulations include robotic arms, ragdolls, etc.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;This blog post talks in more details this new physics component: &lt;a href=&quot;https://blogs.unity3d.com/2020/05/20/use-articulation-bodies-to-easily-prototype-industrial-designs-with-realistic-motion-and-behavior/&quot;&gt;Use articulation bodies to easily prototype industrial designs with realistic motion and behavior&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;new-shader-preprocessor&quot;&gt;New shader preprocessor&lt;/h2&gt;
+&lt;h3 id=&quot;new-shader-preprocessor&quot;&gt;New shader preprocessor&lt;/h3&gt;
 &lt;blockquote&gt;
   &lt;ul&gt;
     &lt;li&gt;Shaders: New shader preprocessor (experimental).&lt;/li&gt;

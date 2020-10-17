@@ -136,7 +136,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
     </div>  
     <p>Recently I needed to automate the generation of a database script deploy from a SQL Server Database Project on our Azure Pipelines continuous integration. Below I will describe the steps to achieve such thing.</p>
 
-<h1 id="building-the-solution">Building the solution</h1>
+<h2 id="building-the-solution">Building the solution</h2>
 <p>A SQL Server Database Project has a solution (.sln) as any other kind of Visual Studio projects and we need to build it to generate our <a href="https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15">DACPAC</a>.</p>
 
 <blockquote>
@@ -149,7 +149,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
   <p>The variables used in the script portions are described in the <code class="language-plaintext highlighter-rouge">Complete azure-pipelines.yml</code> in the end of this post</p>
 </blockquote>
 
-<h1 id="generating-the-sql-script">Generating the .sql script</h1>
+<h2 id="generating-the-sql-script">Generating the .sql script</h2>
 <p>With our .dacpac file built, now we need to generate our .sql database script. To perform this operation we need the <a href="https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15">sqlpackage.exe</a>, this command-line is available in some Azure Pipelines images, as <code class="language-plaintext highlighter-rouge">vs2017-win2016</code>, so you need to use it on your <code class="language-plaintext highlighter-rouge">azure-pipelines.yml</code> file:</p>
 
 <script src="https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=image.yml"> </script>
@@ -157,14 +157,14 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 <p>Add the <code class="language-plaintext highlighter-rouge">CmdLine</code> task below to generate the .sql database script:
 <script src="https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-generate.yml"> </script></p>
 
-<h1 id="publishing-the-sql-script">Publishing the .sql script</h1>
+<h2 id="publishing-the-sql-script">Publishing the .sql script</h2>
 <p>Now we need to publish the .sql file to the build artifacts:
 <script src="https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=db-script-publish.yml"> </script></p>
 
-<h1 id="complete-azure-pipelinesyml">Complete azure-pipelines.yml</h1>
+<h2 id="complete-azure-pipelinesyml">Complete azure-pipelines.yml</h2>
 <script src="https://gist.github.com/30d0b7c0a3e803cb71ce4b1680d2a584.js?file=azure-pipelines.yml"> </script>
 
-<h1 id="extra-points">Extra points</h1>
+<h2 id="extra-points">Extra points</h2>
 <p>In the approach described above the .sql files is not automatically applied to the database, so someone need to download, check and apply the file manually against the target database. If you want to apply the database script automatically you can change <code class="language-plaintext highlighter-rouge">CmdLine</code> task that generate the .sql file to update the target database using the <a href="https://docs.microsoft.com/en-us/sql/tools/sqlpackage?view=sql-server-ver15#publish-parameters-properties-and-sqlcmd-variables"><code class="language-plaintext highlighter-rouge">action:publish</code> option of sqlpackage.exe</a>.</p>
 
     

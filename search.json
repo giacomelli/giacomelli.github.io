@@ -200,6 +200,14 @@
     } ,
     
     {
+      "title"    : "Triangle Classifier Made With Unity",
+      "category" : "Lab",
+      "tags"     : "unity3d, gamedev, math, webgl",
+      "url"      : "/triangle-classifier-made-with-unity/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "unitytips&amp;colon; ShadowCaster2DFromCollider Component",
       "category" : "Lab",
       "tags"     : "unity3d, unitytips, gamedev",
@@ -396,18 +404,6 @@
       "category" : "Lab",
       "tags"     : "dosbox, javascript",
       "url"      : "/testing-js-dos/",
-      "author"   : ""
-    } 
-     
-    ,
-  
-    
-    
-    {
-      "title"    : "Triangle Classifier Made With Unity",
-      "category" : "Labs",
-      "tags"     : "unity3d, gamedev, math, webgl",
-      "url"      : "/triangle-classifier-made-with-unity/",
       "author"   : ""
     } 
      

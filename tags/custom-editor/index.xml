@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - custom-editor</title>
  <link href="//tags/custom-editor/index.xml" rel="self"/>
  <link href="/tag/custom-editor.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/custom-editor.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -33,7 +33,7 @@
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 </content>
@@ -63,7 +63,7 @@
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -93,6 +93,7 @@
    <id>//unity3d-scenepreview-inspector</id>
    <content type="html">&lt;p&gt;I’m working in a new game prototype and in this process I was creating some experimental levels to test the mechanics, but by the name of scene I was having dificult to remember which mechanic the level was about and I had to open each level to discover that one was looking for, so I thought: it will be cool have an image preview of the scene when we select the file in hierarchy.&lt;/p&gt;
 
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I google and didn’t find any project or asset in Asset Store that already did something like this (please, let me know if you know a similar tool) and, well, I prefer code something, than google something, then I coded a little inspector, that I named as ScenePreview:&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;UPDATED: I created a new Scene Preview solution, now using its own window editor: &lt;a href=&quot;/unitytips-scene-preview-window/&quot;&gt;Scene Preview Window&lt;/a&gt;.&lt;/p&gt;
@@ -111,7 +112,7 @@
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 

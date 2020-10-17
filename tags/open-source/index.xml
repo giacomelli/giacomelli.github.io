@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - open-source</title>
  <link href="//tags/open-source/index.xml" rel="self"/>
  <link href="/tag/open-source.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/open-source.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,8 +16,8 @@
    <id>//easing-2-curve-an-editor-window-to-create-animation-curve-from-easing-functions</id>
    <content type="html">&lt;p&gt;I’ve coded an &lt;a href=&quot;https://docs.unity3d.com/Manual/editor-EditorWindows.html&quot;&gt;EditorWindow&lt;/a&gt; to create an &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/AnimationCurve.html&quot;&gt;AnimationCurve&lt;/a&gt; using easing functions that define how much a value changes over time.&lt;/p&gt;
 
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;There are many classic easing functions, such as: InQuad, OutElastic, InOutSin, and InOutBounce. All of these are functions that have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;time&lt;/code&gt; input parameter and a return value between 0 and 1.&lt;/p&gt;
+&lt;p&gt;$# Introduction
+There are many classic easing functions, such as: InQuad, OutElastic, InOutSin, and InOutBounce. All of these are functions that have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;time&lt;/code&gt; input parameter and a return value between 0 and 1.&lt;/p&gt;
 
 &lt;p&gt;For example, the easing function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OutCirc&lt;/code&gt; is coded like:&lt;/p&gt;
 &lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -44,7 +44,7 @@
 
 &lt;p&gt;In addition, you can add new easing functions just implementing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IEasing&lt;/code&gt; interface.&lt;/p&gt;
 
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;To setup the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Easing2Curve&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/7324d63679c11529e1710a5470d9ee7f&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/7324d63679c11529e1710a5470d9ee7f.js?file=Easing2CurveEditorWindow.cs&quot;&gt; &lt;/script&gt;
@@ -53,7 +53,7 @@
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -91,13 +91,13 @@
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Another advantage of keeping assets organized in their proper folders is that you can &lt;a href=&quot;https://docs.unity3d.com/Manual/DefaultPresetsByFolder.html&quot;&gt;apply defaults presets to assets by folder&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;To setup the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Folder organizer&lt;/code&gt; just download this &lt;a href=&quot;https://gist.github.com/giacomelli/2d561e29beadab641a4f8b56954f53f7&quot;&gt;gist&lt;/a&gt; and unzip it on an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder inside your Unity project.&lt;/p&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -336,7 +336,7 @@
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;In this tutorial, we learned how to coding a custom editor window to create a set of default animation clips and animator override controller.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -363,7 +363,7 @@
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -704,7 +704,7 @@ To implement these actions you need to do almost the same thing we did in this t
 &lt;p&gt;In this tutorial, we learn how to use Avatar Masks and Animation Layers to animate a robot with different masks and layers.
 These techniques allowing us to use already existent animations and combine them.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -715,6 +715,7 @@ These techniques allowing us to use already existent animations and combine them
    <id>//unity3d-scenepreview-inspector</id>
    <content type="html">&lt;p&gt;I’m working in a new game prototype and in this process I was creating some experimental levels to test the mechanics, but by the name of scene I was having dificult to remember which mechanic the level was about and I had to open each level to discover that one was looking for, so I thought: it will be cool have an image preview of the scene when we select the file in hierarchy.&lt;/p&gt;
 
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I google and didn’t find any project or asset in Asset Store that already did something like this (please, let me know if you know a similar tool) and, well, I prefer code something, than google something, then I coded a little inspector, that I named as ScenePreview:&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;UPDATED: I created a new Scene Preview solution, now using its own window editor: &lt;a href=&quot;/unitytips-scene-preview-window/&quot;&gt;Scene Preview Window&lt;/a&gt;.&lt;/p&gt;
@@ -733,7 +734,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
         &lt;div class=&quot;gist-file&quot;&gt;
           &lt;div class=&quot;gist-meta&quot;&gt;
-            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
@@ -925,6 +926,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <id>//sending-a-slackbot-message-from-unity3d</id>
    <content type="html">&lt;p&gt;I was looking for a way to send a message to a Slack channel using the Slackbot API.&lt;/p&gt;
 
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is a pretty easy task to perform in C#, because there are some great client libraries implementations to the Slack API, like: &lt;a href=&quot;https://github.com/Inumedia/SlackAPI&quot;&gt;SlackApi&lt;/a&gt;, &lt;a href=&quot;https://github.com/jammerware/margiebot&quot;&gt;MargieBot&lt;/a&gt; and &lt;a href=&quot;https://github.com/noobot/SlackConnector&quot;&gt;SlackConnector&lt;/a&gt;. However, in the Unity3d world the story is a little different, because Unity3d uses an older .NET version and those mentioned client libraries are implemented using newer .NET framework versions that are incompatible with Unity3d.&lt;/p&gt;
 
 &lt;p&gt;I could have tried to compile those client libraries projects using a older .NET version, what I really tried to do, but almost all are using things like Task and async, that are really not supported by Unity3d .NET version right now.&lt;/p&gt;
@@ -940,8 +942,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 
       &lt;/center&gt;
 
-&lt;h1 id=&quot;botcontroller&quot;&gt;BotController&lt;/h1&gt;
-
+&lt;h2 id=&quot;botcontroller&quot;&gt;BotController&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;
 
 </content>
@@ -954,10 +955,10 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
    <id>//creating-a-consolemod-to-buildron</id>
    <content type="html">&lt;p&gt;In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.&lt;/p&gt;
 
-&lt;h1 id=&quot;modcontroller-class&quot;&gt;ModController class&lt;/h1&gt;
+&lt;h2 id=&quot;modcontroller-class&quot;&gt;ModController class&lt;/h2&gt;
 &lt;p&gt;ModController class will be a MonoBehaviour responsible to showing to the user a window where the Buildron events will be logged. It’s a very simple Unity3d MonoBehaviour that use some GUILayout stuffs to build its UI.&lt;/p&gt;
 
-&lt;h1 id=&quot;mod-class&quot;&gt;Mod class&lt;/h1&gt;
+&lt;h2 id=&quot;mod-class&quot;&gt;Mod class&lt;/h2&gt;
 &lt;p&gt;Mod class is the basic class for every Buildron mod and it will be responsible to creating the ModController GameObject and attach to listen a lot of the Buildron events.&lt;/p&gt;
 
 &lt;h2 id=&quot;download-buildron-mod-template&quot;&gt;Download Buildron-Mod-Template&lt;/h2&gt;
@@ -1563,8 +1564,6 @@ Unzip it in any folder.&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![FxCop](https://badgessharp.apphb.com/badges/:owner/:repo/FxCop)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Sample badges: &lt;img src=&quot;https://badgessharp.apphb.com/badges/giacomelli/BadgesSharp/FxCop&quot; alt=&quot;&quot; /&gt; &lt;img src=&quot;https://badgessharp.apphb.com/badges/giacomelli/SampleProject/FxCop&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;how-use-it-on-your-continuous-integration&quot;&gt;How use it on your Continuous Integration?&lt;/h3&gt;
 &lt;p&gt;Probably you’re using some continuous integration service, below are some samples:&lt;/p&gt;

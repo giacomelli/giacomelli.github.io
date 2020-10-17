@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - sql</title>
  <link href="//tags/sql/index.xml" rel="self"/>
  <link href="/tag/sql.html"/>
- <updated>2020-10-17T12:40:06-03:00</updated>
+ <updated>2020-10-17T14:43:31-03:00</updated>
  <id>/tag/sql.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,12 +16,12 @@
    <id>//dapper-and-the-nvarchar-4000-arguments</id>
    <content type="html">&lt;p&gt;Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt;.&lt;/p&gt;
 
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This happen because Dapper cannot infer what is the exactly type and length of the table column on database.&lt;/p&gt;
 
 &lt;p&gt;The downside of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NVARCHAR (4000)&lt;/code&gt; in arguments is that the database can choose a bad execution plan for the query.&lt;/p&gt;
 
-&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
-
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
 &lt;p&gt;To avoid this you can pass the type of the argument to Dapper:&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample1.cs&quot;&gt; &lt;/script&gt;
@@ -30,7 +30,7 @@
 
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=dapper.sample2.cs&quot;&gt; &lt;/script&gt;
 
-&lt;h1 id=&quot;extension-methods&quot;&gt;Extension methods&lt;/h1&gt;
+&lt;h2 id=&quot;extension-methods&quot;&gt;Extension methods&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/57f1f930ddd894eb8ab54fffed453842.js?file=DapperArgumentExtensions.cs&quot;&gt; &lt;/script&gt;
 
 </content>
