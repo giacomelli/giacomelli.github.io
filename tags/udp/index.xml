@@ -3,11 +3,223 @@
  <title>Diego Giacomelli - udp</title>
  <link href="//tags/udp/index.xml" rel="self"/>
  <link href="/tag/udp.html"/>
- <updated>2020-10-19T15:56:51-03:00</updated>
+ <updated>2020-10-20T05:42:27-03:00</updated>
  <id>/tag/udp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Unity Game Growth Program&colon; Tips & Tricks</title>
+   <link href="//unity-game-growth-program-tips-and-tricks/"/>
+   <updated>2020-10-20T00:00:00-03:00</updated>
+   <id>//unity-game-growth-program-tips-and-tricks</id>
+   <content type="html">&lt;p&gt;In this post, I will list some tips and tricks that I learned while applying my game &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt; to the &lt;a href=&quot;https://unity.com/solutions/mobile/game-growth-program&quot;&gt;Unity Game Growth Program&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Unity has recently &lt;a href=&quot;https://blogs.unity3d.com/2020/10/13/introducing-the-game-growth-program/&quot;&gt;launch the Unity Game Growth Program&lt;/a&gt; an accelerator program for free-to-play indie iOS/Android games made with Unity.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Game Growth is a new game accelerator for mobile indie developers. We partner with indie game devs so they can quickly and effectively scale their games while remaining 100% independent. Becoming a partner gives you access to user acquisition funding alongside industry-leading tools and experts in game operations. The best part? You keep full ownership of your studio and intellectual property.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you meet the criteria and we accept you into the program, Unity will fund user acquisition for your game and provide the technology and Unity experts to help manage player engagement and monetization. We take care of the process that helps grow your game while you concentrate on development.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Game Growth is a revenue-sharing program – Unity and the developer team split the revenue from advertising and in-app purchases 50/50 after the user acquisition spend has been recouped. Put simply, Unity covers the cost of bringing in new players while we both share in the reward.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can read more about the program here:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blogs.unity3d.com/2020/10/13/introducing-the-game-growth-program/&quot;&gt;Introducing the Game Growth program&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://unity.com/solutions/mobile/game-growth-program&quot;&gt;Game Growth Program&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;According to documentation, the Unity Game Growth Program works through 4 steps:&lt;/p&gt;
+
+&lt;h3 id=&quot;submit-game--integrate-package&quot;&gt;Submit Game &amp;amp; Integrate Package&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Getting started is easy. All you need is a published free-to-play mobile game made with Unity. Begin your application by submitting your project, advertising assets, and installing the Game Growth package.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;evaluation&quot;&gt;Evaluation&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This stage determines if your game is a good candidate for the program. We take a look at your core game performance, project details and overall program fit. If everything looks good, Unity covers the cost of a full user acquisition test.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;optimize-game-operations&quot;&gt;Optimize Game Operations&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;If you become a partner, we work with you to design features, integrate business services, and optimize player engagement and monetization. You will also have access to a dedicated game ops team that works with you every step of the way.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;accelerate-your-game&quot;&gt;Accelerate your Game&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Game Growth gives you access to the user acquisition funding and resources to take your game to the next level - with a 50/50 revenue sharing model. We acquire the right players then effectively manage those lifecycles and provide guidance for monetization.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;There are 7 requirements that your game must meet to apply to the program:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Made with Unity&lt;/code&gt;: game must be made with Unity 2018.4 or later.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mobile Free-to Play&lt;/code&gt;: game must be free-to-play on iOS or Android.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Published Games&lt;/code&gt;: game must be currently live and published on the Google Play or Apple App Store.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Connected to Unity Dashboard&lt;/code&gt;: game must be connected to the Unity Dashboard and have a valid project ID.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Age Restrictions&lt;/code&gt;: not accepting games aimed at audiences under 13 years of age.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Advertising Assets&lt;/code&gt;: submit images and videos for use in Unity ads.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Language&lt;/code&gt;: game must support English.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;More details at: &lt;a href=&quot;https://dashboard.unity3d.com/&quot;&gt;Unity Dashboard / Game Growth&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting started&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/start-128-ea031347f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/start-128-ea031347f.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/start-128-ea031347f.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;Is not the intent of this post cover everything about how to get through the Unity Game Growth Program, I guess this quite well documented on &lt;a href=&quot;https://unity.com/solutions/mobile/game-growth-program&quot;&gt;Unity Game Growth Program page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The idea of this post is focused on the first of the four-step: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submit Game &amp;amp; Integrate Package&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;read-the-docs&quot;&gt;Read the docs&lt;/h3&gt;
+&lt;p&gt;Please, if you did not read the official documentation yet, go to &lt;a href=&quot;https://unity.com/solutions/mobile/game-growth-program&quot;&gt;Game Growth Program page&lt;/a&gt;, click in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Apply&lt;/code&gt; button and follow the instructions&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-apply-200-ee7227d70.webp 200w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-apply-400-ee7227d70.webp 400w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-apply-800-ee7227d70.webp 800w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-apply-805-ee7227d70.webp 805w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-apply-200-ee7227d70.png 200w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-apply-400-ee7227d70.png 400w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-apply-800-ee7227d70.png 800w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-apply-805-ee7227d70.png 805w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-apply-800-ee7227d70.png&quot; alt=&quot;post image&quot; width=&quot;805&quot; height=&quot;170&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;p&gt;After you finish the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6 - Confirm&lt;/code&gt; come back here. You’ll better understand this post and tips &amp;amp; tricks after that.&lt;/p&gt;
+
+&lt;h2 id=&quot;submit-game--integrate-package-1&quot;&gt;Submit Game &amp;amp; Integrate Package&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submit Game &amp;amp; Integrate Package&lt;/code&gt; step is divided into 3 sub-steps:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Download and Install Package&lt;/li&gt;
+  &lt;li&gt;Run &amp;amp; Validate Integration&lt;/li&gt;
+  &lt;li&gt;Publish &amp;amp; Validate Integration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;download-and-install-package&quot;&gt;Download and Install Package&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Download the Game Growth package and integrate it into your project. Once installed, refer to the package documentation for next steps.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You need to download the package through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Download Package&lt;/code&gt;, then in Unity, open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Package Manager&lt;/code&gt; window install it from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tarball&lt;/code&gt; option.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-package-manager-tarball-200-35c02476c.webp 200w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-package-manager-tarball-200-35c02476c.png 200w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-package-manager-tarball-200-35c02476c.png&quot; alt=&quot;post image&quot; width=&quot;200&quot; height=&quot;102&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;if you are using Unity version previous 2019.4, you need to use the option &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Add package from disk&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;tip--trick&quot;&gt;Tip &amp;amp; Trick&lt;/h3&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/tip-128-d93c80d98.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/tip-128-d93c80d98.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/tip-128-d93c80d98.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;After installing the package, if your using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UnityEngine.Purchasing&lt;/code&gt; in your project and you use &lt;a href=&quot;https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html&quot;&gt;Assembly Definitions&lt;/a&gt; too you can see a lot of errors in the console about it, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error CS0246: The type or namespace name 'IStoreController' could not be found (are you missing a using directive or an assembly reference?)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To fix it, just reference again the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UnityEngine.Purchasing&lt;/code&gt; on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assembly Definition references&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-assembly-definition-references-200-dcdbf7a02.webp 200w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-assembly-definition-references-369-dcdbf7a02.webp 369w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-assembly-definition-references-200-dcdbf7a02.png 200w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-assembly-definition-references-369-dcdbf7a02.png 369w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-assembly-definition-references-369-dcdbf7a02.png&quot; alt=&quot;post image&quot; width=&quot;369&quot; height=&quot;76&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;easy-on-boarding&quot;&gt;Easy On-Boarding&lt;/h3&gt;
+&lt;p&gt;Now, open the menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Game Growth / Easy onboarding&lt;/code&gt; and follow the steps.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-eash-on-boarding-200-57c9a0919.webp 200w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-eash-on-boarding-400-57c9a0919.webp 400w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-eash-on-boarding-770-57c9a0919.webp 770w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-eash-on-boarding-200-57c9a0919.png 200w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-eash-on-boarding-400-57c9a0919.png 400w, /assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-eash-on-boarding-770-57c9a0919.png 770w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/20/unity-game-growth-program-tips-and-tricks/unity-game-growth-eash-on-boarding-770-57c9a0919.png&quot; alt=&quot;post image&quot; width=&quot;770&quot; height=&quot;530&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;run--validate-integration&quot;&gt;Run &amp;amp; Validate Integration&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;After the package has been installed and configured for sandbox, run your game on the devices . To confirm integration, make sure you remove the game from your device, reinstall, and then launch the game.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Build, install, and run the game on your target device (iOS / Android).
+Then go to Unity Dashboard and try to confirm the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Run &amp;amp; Validate integration&lt;/code&gt;, this can take minutes or even hours to allow you to confirm successfully.&lt;/p&gt;
+
+&lt;h3 id=&quot;tip--trick-1&quot;&gt;Tip &amp;amp; Trick&lt;/h3&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/tip-128-d93c80d98.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/tip-128-d93c80d98.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/tip-128-d93c80d98.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;Running the shell &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./adb logcat -s Unity PackageManager dalvikvm DEBUG&lt;/code&gt; while running the game on an Android device I saw errors like this on the game log:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UriFormatException: Invalid URI: The hostname could not be parsed
+at DeltaDNA.Network+&amp;lt;SendRequest&amp;gt;
+[DDSDK] [WARNING] Event upload failed - try again later&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I found out that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;collect_url&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;engagement_url&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/Assets/DeltaDNA/Resources/ddna_configuration.xml&lt;/code&gt; file were empty and this was an error cause.&lt;/p&gt;
+
+&lt;p&gt;To fix it, I had to go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Game Growth / Configuration&lt;/code&gt; menu, then click on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Configure SDKs&lt;/code&gt; button, so &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;collect_url&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;engagement_url&lt;/code&gt; were correctly configured in the file.&lt;/p&gt;
+
+&lt;h2 id=&quot;publish--validate-integration&quot;&gt;Publish &amp;amp; Validate Integration&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The final step is to publish your project on the Apple App Store and Google Play Store. Don’t forget to switch the package environment dropdown from Sandbox to Store in GGLauncher prefab. Run your game on the devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Build and publish the game to the store (App Store or Google Play), download/update the game and run it on your device.
+Then go to Unity Dashboard again and try to confirm the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Publish &amp;amp; Validate integration&lt;/code&gt;, this can take minutes or even hours to allow you to confirm successfully.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;I hope that these tips and tricks that I learned while applying my game &lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.diegogiacomelli.puzzimals&quot;&gt;Puzzimals&lt;/a&gt; to the &lt;a href=&quot;https://unity.com/solutions/mobile/game-growth-program&quot;&gt;Unity Game Growth Program&lt;/a&gt; can be useful to you too.&lt;/p&gt;
+
+&lt;p&gt;If you have any other tips &amp;amp; tricks you use on the Unity Game Growth Program process and you like to share it, please let me know in the comments section below.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Unity Distribution Portal (UDP) Journey&colon; Tips & Tricks</title>
