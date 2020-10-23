@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - gamedev-utility-belt</title>
+ <link href="//tags/gamedev-utility-belt/index.xml" rel="self"/>
+ <link href="/tag/gamedev-utility-belt.html"/>
+ <updated>2020-10-23T14:28:35-03:00</updated>
+ <id>/tag/gamedev-utility-belt.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Gamedev Utility Belt&colon; Unity Native Share Plugin</title>
+   <link href="//gamedev-utility-belt-unity-native-share-plugin/"/>
+   <updated>2020-10-23T00:00:00-03:00</updated>
+   <id>//gamedev-utility-belt-unity-native-share-plugin</id>
+   <content type="html">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/gamedev-utility-belt/&quot;&gt;series of posts&lt;/a&gt; about some game development resources that are part of my gamedev utility belt and that helps me on my game projects.&lt;/p&gt;
+
+&lt;p&gt;For this first post the choose one is the &lt;strong&gt;&lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare&quot;&gt;Unity Native Share Plugin&lt;/a&gt;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/yasirkula&quot;&gt;Süleyman Yasir KULA&lt;/a&gt; that I used on my latest mobile game &lt;a href=&quot;http://diegogiacomelli.com.br/games/puzzimals&quot;&gt;Puzzimals&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Unity Native Share Plugin is:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;A Unity plugin to natively share files (images, videos, documents, etc.) and/or plain text on Android &amp;amp; iOS.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When you use this plugin on the Android and iOS project you will be able to invoke the native share of the target operating system.
+For example, here is the result when I used it on Android:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/23/gamedev-utility-belt-unity-native-share-plugin/unity-native-share-plugin-puzzimals-sample-200-f02b99f71.webp 200w, /assets/images/generated/assets/2020/10/23/gamedev-utility-belt-unity-native-share-plugin/unity-native-share-plugin-puzzimals-sample-360-f02b99f71.webp 360w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/23/gamedev-utility-belt-unity-native-share-plugin/unity-native-share-plugin-puzzimals-sample-200-f02b99f71.jpg 200w, /assets/images/generated/assets/2020/10/23/gamedev-utility-belt-unity-native-share-plugin/unity-native-share-plugin-puzzimals-sample-360-f02b99f71.jpg 360w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/23/gamedev-utility-belt-unity-native-share-plugin/unity-native-share-plugin-puzzimals-sample-360-f02b99f71.jpg&quot; alt=&quot;post image&quot; width=&quot;360&quot; height=&quot;640&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;You can follow the instructions on the plugin GitHub repository: &lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare#installation&quot;&gt;https://github.com/yasirkula/UnityNativeShare&lt;/a&gt; to install it:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using .unitypackage&lt;/li&gt;
+  &lt;li&gt;Cloning the repository&lt;/li&gt;
+  &lt;li&gt;Via Asset Store&lt;/li&gt;
+  &lt;li&gt;Via Package Manager&lt;/li&gt;
+  &lt;li&gt;Using the OpenUPM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;The plugin is quite simple to be used, there is an &lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare#example-code&quot;&gt;example code on its repository&lt;/a&gt; that show how you can use it with few lines of code.&lt;/p&gt;
+
+&lt;p&gt;Some time ago I made the gist below that uses the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Unity Native Share Plugin&lt;/code&gt; to add a social share component to any game object:
+&lt;script src=&quot;https://gist.github.com/c03ec79fa0f0def94726f4b6914b4769.js?file=SocialShare.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+</content>
+ </entry>
+ 
+</feed>
