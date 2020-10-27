@@ -3,11 +3,88 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2020-10-24T13:41:42-03:00</updated>
+ <updated>2020-10-27T05:23:28-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Overview of .NET in Unity</title>
+   <link href="//unitytips-overview-of-donet-in-unity/"/>
+   <updated>2020-10-27T00:00:00-03:00</updated>
+   <id>//unitytips-overview-of-donet-in-unity</id>
+   <content type="html">&lt;p&gt;Unity Official documentation has an amazing page called &lt;a href=&quot;https://docs.unity3d.com/Manual/overview-of-dot-net-in-unity.html&quot;&gt;Overview of .NET in Unity&lt;/a&gt; that highlight 8 points about the usage o .NET in Unity.&lt;/p&gt;
+
+&lt;p&gt;I think it’s important to any pro programmer in Unity quite understand those points, because of this I list them below, in a brief way. &lt;strong&gt;You can (and should) read the full documentation to understand all the 8 points listed in more depth&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the end of this page, you can &lt;strong&gt;download an infographic&lt;/strong&gt; with these points in case you want to share or print them.&lt;/p&gt;
+
+&lt;h2 id=&quot;overview-of-net-in-unity&quot;&gt;Overview of .NET in Unity&lt;/h2&gt;
+&lt;p&gt;Read the full documentation: &lt;a href=&quot;https://docs.unity3d.com/Manual/overview-of-dot-net-in-unity.html&quot;&gt;https://docs.unity3d.com/Manual/overview-of-dot-net-in-unity.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;scripting-backends&quot;&gt;Scripting backends&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mono uses just-in-time (JIT) compilation and compiles code on demand at runtime.&lt;/li&gt;
+  &lt;li&gt;IL2CPP uses ahead-of-time (AOT) compilation and compiles your entire application before it is run.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;managed-code-stripping&quot;&gt;Managed code stripping&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;When you build your application, Unity scans the compiled assemblies (.DLLs) to detect and remove unused code.&lt;/li&gt;
+  &lt;li&gt;This process reduces the final binary size of your build, but increases build time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;garbage-collection-gc&quot;&gt;Garbage collection (GC)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Garbage collector only runs for a limited period of time and does not necessarily collect all objects in one pass. This spreads the time it takes to collect objects over a number of frames and reduces the amount of stuttering and CPU spikes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;net-system-libraries&quot;&gt;.NET system libraries&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Unity tries its best to support as much of the .NET ecosystem as possible, there are some exceptions to parts of the .NET system libraries that Unity explicitly does not support.&lt;/li&gt;
+  &lt;li&gt;You should use the .NET Standard 2.0 API Compatibility Level for all new projects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;third-party-net-libraries&quot;&gt;Third-party .NET libraries&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;You should only use third-party .NET libraries that have been extensively tested on a wide range of Unity configurations and platforms.&lt;/li&gt;
+  &lt;li&gt;You should profile the usage of your .NET system libraries on all target platforms.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;c-reflection-overhead&quot;&gt;C# reflection overhead&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;GC continuously scans the cached C# reflection objects, which causes unnecessary overhead.&lt;/li&gt;
+  &lt;li&gt;To minimize the overhead, avoid methods such as Assembly.GetTypes and Type.GetMethods().&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;unityengineobject-special-behavior&quot;&gt;UnityEngine.Object special behavior&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;UnityEngine.Object is a special type of C# object in Unity, because it is linked to a native C++ counterpart object.&lt;/li&gt;
+  &lt;li&gt;MonoBehaviour/ScriptableObject override the equality (==) and inequality (!=) operators.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;avoid-using-async-and-await&quot;&gt;Avoid using async and await&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;The Unity API is not thread safe and therefore, you should not use async and await tasks.&lt;/li&gt;
+  &lt;li&gt;Async tasks often allocate objects when invoked, which might cause performance issues if you overuse them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;infographic&quot;&gt;Infographic&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Download &lt;a href=&quot;/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic.png&quot;&gt;overview-of-donet-in-unity-infographic.png&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Download &lt;a href=&quot;/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic.pdf&quot;&gt;overview-of-donet-in-unity-infographic.pdf&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-200-76d1c217b.webp 200w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-400-76d1c217b.webp 400w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-800-76d1c217b.webp 800w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-200-76d1c217b.png 200w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-400-76d1c217b.png 400w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-800-76d1c217b.png 800w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-800-76d1c217b.png&quot; alt=&quot;post image&quot; width=&quot;800&quot; height=&quot;2000&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Sprites Collection</title>
