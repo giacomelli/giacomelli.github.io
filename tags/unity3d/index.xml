@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-10-27T05:23:28-03:00</updated>
+ <updated>2020-10-27T05:34:53-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -18,10 +18,22 @@
 
 &lt;p&gt;I think it’s important to any pro programmer in Unity quite understand those points, because of this I list them below, in a brief way. &lt;strong&gt;You can (and should) read the full documentation to understand all the 8 points listed in more depth&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;At the end of this page, you can &lt;strong&gt;download an infographic&lt;/strong&gt; with these points in case you want to share or print them.&lt;/p&gt;
-
 &lt;h2 id=&quot;overview-of-net-in-unity&quot;&gt;Overview of .NET in Unity&lt;/h2&gt;
 &lt;p&gt;Read the full documentation: &lt;a href=&quot;https://docs.unity3d.com/Manual/overview-of-dot-net-in-unity.html&quot;&gt;https://docs.unity3d.com/Manual/overview-of-dot-net-in-unity.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;infographic&quot;&gt;Infographic&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Download &lt;a href=&quot;/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic.png&quot;&gt;overview-of-donet-in-unity-infographic.png&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Download &lt;a href=&quot;/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic.pdf&quot;&gt;overview-of-donet-in-unity-infographic.pdf&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-200-76d1c217b.webp 200w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-400-76d1c217b.webp 400w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-800-76d1c217b.webp 800w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-200-76d1c217b.png 200w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-400-76d1c217b.png 400w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-800-76d1c217b.png 800w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-800-76d1c217b.png&quot; alt=&quot;post image&quot; width=&quot;800&quot; height=&quot;2000&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
 
 &lt;h3 id=&quot;scripting-backends&quot;&gt;Scripting backends&lt;/h3&gt;
 &lt;ul&gt;
@@ -69,20 +81,6 @@
   &lt;li&gt;The Unity API is not thread safe and therefore, you should not use async and await tasks.&lt;/li&gt;
   &lt;li&gt;Async tasks often allocate objects when invoked, which might cause performance issues if you overuse them.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&quot;infographic&quot;&gt;Infographic&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Download &lt;a href=&quot;/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic.png&quot;&gt;overview-of-donet-in-unity-infographic.png&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Download &lt;a href=&quot;/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic.pdf&quot;&gt;overview-of-donet-in-unity-infographic.pdf&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-200-76d1c217b.webp 200w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-400-76d1c217b.webp 400w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-800-76d1c217b.webp 800w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-200-76d1c217b.png 200w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-400-76d1c217b.png 400w, /assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-800-76d1c217b.png 800w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/27/unitytips-overview-of-donet-in-unity/overview-of-donet-in-unity-infographic-800-76d1c217b.png&quot; alt=&quot;post image&quot; width=&quot;800&quot; height=&quot;2000&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
 </content>
  </entry>
  
