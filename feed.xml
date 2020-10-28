@@ -1,4 +1,172 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-10-28T08:43:11-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">unitytips&amp;amp;colon; Overview of .NET in Unity</title><link href="http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Overview of .NET in Unity" /><published>2020-10-27T00:00:00-03:00</published><updated>2020-10-27T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity/">&lt;p&gt;Unity Official documentation has an amazing page called &lt;a href=&quot;https://docs.unity3d.com/Manual/overview-of-dot-net-in-unity.html&quot;&gt;Overview of .NET in Unity&lt;/a&gt; that highlight 8 points about the usage o .NET in Unity.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-10-28T08:57:59-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;1</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-1/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;1" /><published>2020-10-28T00:00:00-03:00</published><updated>2020-10-28T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-1</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-1/">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
+
+&lt;p&gt;In this post, I will talk about my premises for the ARC-8’s code design that guided me during its development.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The source code is not yet published on GitHub, I will notify in this series of posts about ARC-8 devlog and on my &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt; too when this happens.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I always wanted to develop a video game emulator. Anybody that tried or even google about it quickly realizes that it is not an easy or simple task.
+If you search a little further you will see developers talking about CHIP-8 as the best thing to emulate as your first emulator project. Why? Well, the CHIP-8 is quite a simple virtual machine that has only 35 opcodes, simple graphic, sound, and input systems too.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip-8&quot;&gt;CHIP-8&lt;/h2&gt;
+&lt;p&gt;According to Wikipedia:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;CHIP-8 is an interpreted programming language, developed by Joseph Weisbecker. It was initially used on the COSMAC VIP and Telmac 1800 8-bit microcomputers in the mid-1970s. CHIP-8 programs are run on a CHIP-8 virtual machine. It was made to allow video games to be more easily programmed for these computers.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;According to &lt;a href=&quot;http://mattmik.com/files/chip8/mastering/chip8.html&quot;&gt;Mastering CHIP-8 by Matthew Mikolay&lt;/a&gt; (one of the best technical information source about CHIP-8):&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;CHIP-8 is an interpreted minimalist programming language that was designed by Joseph Weisbecker in the 1970s for use on the RCA COSMAC VIP computer. Due to its hexadecimal format, it was best suited to machines with a scarcity of memory, as minimal text processing had to be performed by the interpreter before a program could be executed. This property inevitably led to its implementation on a variety of hobbyist computers aside from the VIP, such as the COSMAC ELF, Telmac 1800, and ETI 660.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;arc-8&quot;&gt;ARC-8&lt;/h2&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-200-42589059c.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-400-42589059c.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-42589059c.webp 600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-200-42589059c.png 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-400-42589059c.png 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-42589059c.png 600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-42589059c.png&quot; alt=&quot;post image&quot; width=&quot;600&quot; height=&quot;200&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;I won’t get into details about how to implement each of CHIP-8’s 35 opcodes, because there are plenty of tutorials and resources talking about this on the internet (look in the section ‘Further reading’ in the of this post). My focus here is to explain my code design decisions to allow built a CHIP-8 emulator core in .NET Standard that will allow us to develop a graphic, sound, and input systems for Blazor and Unity3D (and any other platform where C# / .NET is supported).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Why the name ARC-8? well, the choice of the name was quite chaotic as any of the name ideas brainstorm that I have had with my friend &lt;a href=&quot;http://twitter.com/giusepe&quot;&gt;Giusepe Casagrande&lt;/a&gt;. The name’s meaning and the way of speaking are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Arcade&lt;/code&gt; because we want to remember that old day when we are kids playing some classic games in an arcade or fliperama as we call it in Brazil.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;premises&quot;&gt;Premises&lt;/h2&gt;
+&lt;p&gt;First of all, before started do develop the code, I needed to sit down and defined some premises of the ARC-8’s code design, they are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Premise 1 - Cross-platform&lt;/strong&gt;: the ARC-8 core solution should be cross-platform.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Premise 2 - Testable&lt;/strong&gt;: code must be testable.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Premise 3 - 100% code coverage&lt;/strong&gt;: Unit test code coverage for the core should be 100%.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Premise 4 - Benchmark&lt;/strong&gt;: benchmark the code to verify and compare solutions performance.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;premise-1---cross-platform&quot;&gt;Premise 1 - Cross-platform&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/cross-platform-128-90fb5f56b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/cross-platform-128-90fb5f56b.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/cross-platform-128-90fb5f56b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;To make the ARC-8 core solution cross-platform, the first decision is to implement it as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.NET Standard class library&lt;/code&gt;. The second one is to define the graphic, sound, input, and logging systems of the emulator as interfaces that will only be implemented on specific platforms, like Blazor and Unity3d.&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-200-39c2d19ce.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-39c2d19ce.webp 280w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-200-39c2d19ce.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-39c2d19ce.jpg 280w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-39c2d19ce.jpg&quot; alt=&quot;post image&quot; width=&quot;280&quot; height=&quot;562&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;systems-interfaces&quot;&gt;Systems interfaces&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=system-interfaces.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;premise-2---testable&quot;&gt;Premise 2 - Testable&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;The main part of a CHIP-8 emulation development is on the opcodes.&lt;/p&gt;
+
+&lt;p&gt;The common solution for many emulators is to put all opcodes inside a giant &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt; statement (some use nested switch to group some opcodes).&lt;/p&gt;
+
+&lt;p&gt;There is no problem in this kind of solution, but besides the code readability that can easily suffer from too many cases in the switch statement, there is a problem with the idea of unit testing, because we cannot test each opcode isolated.&lt;/p&gt;
+
+&lt;p&gt;Sure, you can still unit testing an emulator with opcodes in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt; statement, but I decided to define an interface that an opcode needs to implement to be used on the emulator.&lt;/p&gt;
+
+&lt;h3 id=&quot;iopcode-interface&quot;&gt;IOpcode interface&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=IOpcode.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;an-iopcodes-implementation&quot;&gt;An IOpcode’s implementation&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=AnnnOpcode.cs&quot;&gt; &lt;/script&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-200-17d4a8cba.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-17d4a8cba.webp 296w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-200-17d4a8cba.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-17d4a8cba.jpg 296w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-17d4a8cba.jpg&quot; alt=&quot;post image&quot; width=&quot;296&quot; height=&quot;552&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;premise-3---100-code-coverage&quot;&gt;Premise 3 - 100% code coverage&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/score-128-702a2b758.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/score-128-702a2b758.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/score-128-702a2b758.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;With the decision of implement each opcode in a separate classes and the decision of use interfaces for each system, we can easly unit test them and achieve the 100% code coverage:
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=AnnnOpcodeTest.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;To validate the code coverage I used the &lt;a href=&quot;https://github.com/coverlet-coverage/coverlet&quot;&gt;coverlet.msbuild&lt;/a&gt; and &lt;a href=&quot;https://github.com/danielpalme/ReportGenerator&quot;&gt;ReportGenerator&lt;/a&gt; Nuget packages combined with Cake’s recipe to generate a code coverage report:
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=unit-test.cake&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-200-43462216e.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-400-43462216e.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-43462216e.webp 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-1600-43462216e.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-200-43462216e.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-400-43462216e.jpg 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-43462216e.jpg 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-1600-43462216e.jpg 1600w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-43462216e.jpg&quot; alt=&quot;post image&quot; width=&quot;1600&quot; height=&quot;527&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;premise-4---benchmark&quot;&gt;Premise 4 - Benchmark&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;I like to benchmark the code to compare some solutions in a fast and precise way. To create a benchmark in the .NET system the &lt;a href=&quot;https://benchmarkdotnet.org/&quot;&gt;BenchmarkDotNet&lt;/a&gt; is the right choice. BenchmarkDotNet is quite easy to use and you can set up a project with it in less than 5 minutes.&lt;/p&gt;
+
+&lt;p&gt;When I used it on ARC-8 implementation I discover that I could improve the performance in 18x just removing a Linq code and using a cached solution to locate the opcodes.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-200-c0dab76d0.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-400-c0dab76d0.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-c0dab76d0.webp 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-1331-c0dab76d0.webp 1331w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-200-c0dab76d0.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-400-c0dab76d0.jpg 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-c0dab76d0.jpg 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-1331-c0dab76d0.jpg 1331w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-c0dab76d0.jpg&quot; alt=&quot;post image&quot; width=&quot;1331&quot; height=&quot;239&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;In the next &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog&lt;/a&gt; I will talk about the ARC-8’s implementation on Blazor.&lt;/p&gt;
+
+&lt;p&gt;If you have any doubts about what I talk about above or any tip about the CHIP-8 emulator and you like to share it, please let me know in the comments section below.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mattmik.com/files/chip8/mastering/chip8.html&quot;&gt;Mastering CHIP-8 by Matthew Mikolay&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JohnEarnest/Octo&quot;&gt;Octo: a high-level assembler for the CHIP-8&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mwales/chip8&quot;&gt;CHIP-8 Emulation and Disassembler&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/corax89/chip8-test-rom&quot;&gt;CHIP-8 test rom&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://johnearnest.github.io/chip8Archive/&quot;&gt;CHIP-8 Archive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dmatlack/chip8/tree/master/roms/games&quot;&gt;CHIP-8 roms&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/coverlet-coverage/coverlet#Quick-Start&quot;&gt;Coverlet quick-start&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://benchmarkdotnet.org/articles/guides/getting-started.html&quot;&gt;BenchmarkDotNet getting started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cakebuild.net/docs/getting-started&quot;&gt;Cake getting started&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Labs" /><category term="devlog" /><category term="dotnet" /><category term="blazor" /><category term="chip8" /><category term="emulator" /><category term="arc8" /><category term="arc8-devlog" /><summary type="html">Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Overview of .NET in Unity</title><link href="http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Overview of .NET in Unity" /><published>2020-10-27T00:00:00-03:00</published><updated>2020-10-27T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity/">&lt;p&gt;Unity Official documentation has an amazing page called &lt;a href=&quot;https://docs.unity3d.com/Manual/overview-of-dot-net-in-unity.html&quot;&gt;Overview of .NET in Unity&lt;/a&gt; that highlight 8 points about the usage o .NET in Unity.&lt;/p&gt;
 
 &lt;p&gt;I think it’s important to any pro programmer in Unity quite understand those points, because of this I list them below, in a brief way. &lt;strong&gt;You can (and should) read the full documentation to understand all the 8 points listed in more depth&lt;/strong&gt;.&lt;/p&gt;
 
@@ -889,15 +1057,4 @@ You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&
 
 &lt;p&gt;In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Tutorial" /><category term="unity3d" /><category term="gamedev" /><category term="math" /><category term="curves" /><summary type="html">In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Focused Inspector</title><link href="http://diegogiacomelli.com.br/unitytips-focused-inspector/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Focused Inspector" /><published>2020-09-08T00:00:00-03:00</published><updated>2020-09-08T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-focused-inspector</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-focused-inspector/">&lt;p&gt;Starting in Unity 2020.1, you can add a dedicated inspector window for a specific GameObject, Component, or Asset. 
-It always displays the properties of the item you opened it for, even if you select something else in the editor.&lt;/p&gt;
-
-&lt;p&gt;To activate a Focused Inspector, select an item &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(GameObject, Component, or Asset)&lt;/code&gt; and in the context menu hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Properties...&lt;/code&gt; menu item.&lt;/p&gt;
-
-&lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
-      &lt;/center&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;More details in the official documentation: &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/InspectorFocused.html&quot;&gt;Focused Inspectors&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">Starting in Unity 2020.1, you can add a dedicated inspector window for a specific GameObject, Component, or Asset. It always displays the properties of the item you opened it for, even if you select something else in the editor.</summary></entry></feed>
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Tutorial" /><category term="unity3d" /><category term="gamedev" /><category term="math" /><category term="curves" /><summary type="html">In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.</summary></entry></feed>

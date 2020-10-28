@@ -4,6 +4,18 @@
     
     
     {
+      "title"    : "ARC-8&amp;colon; devlog &amp;num;1",
+      "category" : "Labs",
+      "tags"     : "devlog, dotnet, blazor, chip8, emulator, arc8, arc8 devlog",
+      "url"      : "/arc-8-devlog-1/",
+      "author"   : ""
+    } 
+     
+    ,
+  
+    
+    
+    {
       "title"    : "unitytips&amp;colon; Overview of .NET in Unity",
       "category" : "Lab",
       "tags"     : "unity3d, unitytips, gamedev, dotnet, infographic",
