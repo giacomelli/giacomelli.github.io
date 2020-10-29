@@ -4,9 +4,17 @@
     
     
     {
-      "title"    : "ARC-8&amp;colon; devlog &amp;num;1",
+      "title"    : "ARC-8&amp;colon; devlog &amp;num;2 - Blazor",
       "category" : "Labs",
-      "tags"     : "devlog, dotnet, blazor, chip8, emulator, arc8, arc8 devlog",
+      "tags"     : "devlog, dotnet, blazor, unity3d, gamedev, emulator, arc8, arc8 devlog",
+      "url"      : "/arc-8-devlog-2/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "ARC-8&amp;colon; devlog &amp;num;1 - Core and code design",
+      "category" : "Labs",
+      "tags"     : "devlog, dotnet, blazor, unity, chip8, emulator, arc8, arc8 devlog",
       "url"      : "/arc-8-devlog-1/",
       "author"   : ""
     } 

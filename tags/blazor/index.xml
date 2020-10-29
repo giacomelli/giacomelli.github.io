@@ -3,20 +3,240 @@
  <title>Diego Giacomelli - blazor</title>
  <link href="//tags/blazor/index.xml" rel="self"/>
  <link href="/tag/blazor.html"/>
- <updated>2020-10-28T09:16:22-03:00</updated>
+ <updated>2020-10-29T11:49:59-03:00</updated>
  <id>/tag/blazor.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
  
  <entry>
-   <title>ARC-8&colon; devlog &num;1</title>
+   <title>ARC-8&colon; devlog &num;2 - Blazor</title>
+   <link href="//arc-8-devlog-2/"/>
+   <updated>2020-10-29T00:00:00-03:00</updated>
+   <id>//arc-8-devlog-2</id>
+   <content type="html">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
+
+&lt;p&gt;In this post, I will talk about &lt;strong&gt;how I implemented the graphics, sound, input, and log systems for Blazor&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can read the others &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8’s devlog posts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The source code is not yet published on GitHub, I will notify in this series of posts about ARC-8 devlog and on my &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt; too when this happens.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor&quot;&gt;Blazor&lt;/a&gt; is a feature of ASP.NET that extends the .NET developer platform with tools and libraries for building web apps.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Blazor can run your client-side C# code directly in the browser, using WebAssembly. Because it’s real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is why we can use our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ARC-8 Core&lt;/code&gt;, mentioned in the previous &lt;a href=&quot;/arc-8-devlog-1&quot;&gt;devlog&lt;/a&gt;, because it is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.NET Standard class library&lt;/code&gt; and can run directly on Blazor web assembly.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;For some components, like menu, inputs, and buttons I use the &lt;a href=&quot;https://blazorise.com/&quot;&gt;Blazorise library&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;online-demo&quot;&gt;Online demo&lt;/h2&gt;
+&lt;p&gt;You can test and play the CHIP-8’s games directly on your browser with our online demo: &lt;a href=&quot;/apps/arc-8&quot;&gt;ARC-8 Blazor Online Demo&lt;/a&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/9eHBdCTipZs &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;systems-interfaces-implementations&quot;&gt;Systems interfaces implementations&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;The system interfaces &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; will be implemented as &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/components/?view=aspnetcore-3.1#:~:text=Blazor%20apps%20are%20built%20using,Components%20are%20flexible%20and%20lightweight.&quot;&gt;Blazor components&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A component is a self-contained chunk of user interface (UI), such as a page, dialog, or form. A component includes HTML markup and the processing logic required to inject data or respond to UI events. Components are flexible and lightweight. They can be nested, reused, and shared among projects.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-200-4b7f14cbd.webp 200w, /assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-4b7f14cbd.webp 320w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-200-4b7f14cbd.jpg 200w, /assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-4b7f14cbd.jpg 320w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-4b7f14cbd.jpg&quot; alt=&quot;post image&quot; width=&quot;320&quot; height=&quot;246&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;chip8graphicrazor-component-igraphic&quot;&gt;Chip8Graphic.razor component (IGraphic)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This a simplified version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; implementation (without of color selector that you can see in the demo).&lt;/p&gt;
+
+&lt;h3 id=&quot;c-side&quot;&gt;C# side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=Chip8Graphic.razor&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;js-side&quot;&gt;JS side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=chip8-helper-graphic.js&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;onafterrenderasync-method&quot;&gt;OnAfterRenderAsync method&lt;/h4&gt;
+&lt;p&gt;In the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; we verify if it’s the component’s first render, then we call a JS method that will initialize a JS helper for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8Graphic.razor&lt;/code&gt; that will return the size of the canvas to C# code, then we use this information to scale our 64 x 32 CHIP-8’s display.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;OnAfterRenderAsync and OnAfterRender are called after a component has finished rendering. Element and component references are populated at this point. Use this stage to perform additional initialization steps using the rendered content, such as activating third-party JavaScript libraries that operate on the rendered DOM elements.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;draw-method&quot;&gt;Draw method&lt;/h4&gt;
+&lt;p&gt;This is one of the two methods needed to be implemented of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; interface. We received the array (64x32) of bytes representing the current state of CHIP-8 graphics and just update our local array variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_gfx&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;renderasync-method&quot;&gt;RenderAsync method&lt;/h4&gt;
+&lt;p&gt;The method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RenderAsync&lt;/code&gt; will be called by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8Loader&lt;/code&gt; component during the &lt;a href=&quot;https://gameprogrammingpatterns.com/game-loop.html&quot;&gt;Game Loop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This method is used to draw the state of CHIP-8 graphics (_gfx array) to the HTML page. 
+We use a second array called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_buffer&lt;/code&gt; to implement a &lt;a href=&quot;https://gameprogrammingpatterns.com/double-buffer.html&quot;&gt;Double Buffer&lt;/a&gt; and reduce the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen flickering&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;A byte with value 1 should be drawn (foreground color) and a byte with value 0 should not be drawn (background color).&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;invalidate-method&quot;&gt;Invalidate method&lt;/h4&gt;
+&lt;p&gt;This is the second of the two methods needed to be implemented of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; interface, but as we implemented a Double Buffer, this method does not need to perform any operation.&lt;/p&gt;
+
+&lt;h4 id=&quot;resize-method&quot;&gt;Resize method&lt;/h4&gt;
+&lt;p&gt;Called by the JS side every time that the user resizes the browser window.&lt;/p&gt;
+
+&lt;h4 id=&quot;clearcanvasasync-method&quot;&gt;ClearCanvasAsync method&lt;/h4&gt;
+&lt;p&gt;We use this one to invalidate our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_buffer&lt;/code&gt; and reset the canvas to the background color.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8soundrazor-component-isound&quot;&gt;Chip8Sound.razor component (ISound)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This a simplified version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt; implementation.&lt;/p&gt;
+
+&lt;h3 id=&quot;c-side-1&quot;&gt;C# side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=Chip8Sound.razor&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;js-side-1&quot;&gt;JS side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=chip8-helper-sound.js&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;oninitialized-method&quot;&gt;OnInitialized method&lt;/h4&gt;
+&lt;p&gt;We just use the information from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NavigationManager&lt;/code&gt; to set the audio file we want to play.&lt;/p&gt;
+
+&lt;h4 id=&quot;play-method&quot;&gt;Play method&lt;/h4&gt;
+&lt;p&gt;This is the only method we need to implement of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt; interface and it just calls a JS method that will get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio&lt;/code&gt; tag on the component, set the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AudioSource&lt;/code&gt;, then load, and play it.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8inputrazor-component-iinput&quot;&gt;Chip8Input.razor component (IInput)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt; implementation.&lt;/p&gt;
+
+&lt;h3 id=&quot;c-side-2&quot;&gt;C# side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=Chip8Input.razor&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;js-side-2&quot;&gt;JS side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=chip8-helper-input.js&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;key-mapping&quot;&gt;Key mapping&lt;/h4&gt;
+&lt;p&gt;First we create the dictionary &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_map&lt;/code&gt; to map the real keyboard keys to CHIP-8 keypad keys.
+The second dictionary we create is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_keyDown&lt;/code&gt;. It will be used to map what keys the player is pressing.&lt;/p&gt;
+
+&lt;h4 id=&quot;onafterrenderasync-method-1&quot;&gt;OnAfterRenderAsync method&lt;/h4&gt;
+&lt;p&gt;We call the JS method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chip8Input.init&lt;/code&gt; that will add two event listeners, one for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keydown&lt;/code&gt; and the other for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keyup&lt;/code&gt; that will call the C# methods &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HandleKeyDown&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HandleKeyUp&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;updatekeys-method&quot;&gt;UpdateKeys method&lt;/h4&gt;
+&lt;p&gt;The only method we need to implement for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt; interface. 
+In this method, we set to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; the CHIP-8’s keypad keys that were pressed by the player.&lt;/p&gt;
+
+&lt;h4 id=&quot;handlekeydown-and-handlekeyup-methods&quot;&gt;HandleKeyDown and HandleKeyUp methods&lt;/h4&gt;
+&lt;p&gt;This method is responsible to set the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_keyDown&lt;/code&gt; dictionary by the keyboard keys that the player pressed.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8lograzor-component-ilog&quot;&gt;Chip8Log.razor component (ILog)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is a simplified version of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; implementation.&lt;/p&gt;
+
+&lt;h3 id=&quot;c-side-3&quot;&gt;C# side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=Chip8Log.razor&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;debug-and-error-methods&quot;&gt;Debug and Error methods&lt;/h4&gt;
+&lt;p&gt;The two methods implemented for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; interface use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Microsoft.Extensions.Logging.ILogger&amp;lt;T&amp;gt;&lt;/code&gt; to send log messages to the browser console.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8loaderrazor&quot;&gt;Chip8Loader.razor&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is a simplified version of the component responsible to load all systems (IGraphic, ISound, IInput, and ILog), initialize the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8&lt;/code&gt; class emulator,  load the ROM and perform the game loop.&lt;/p&gt;
+
+&lt;h3 id=&quot;c-side-4&quot;&gt;C# side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=Chip8Loader.razor&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;js-side-3&quot;&gt;JS side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=chip8-helper-loader.js&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;onafterrenderasync-method-2&quot;&gt;OnAfterRenderAsync method&lt;/h4&gt;
+&lt;p&gt;Initializes the emulator with the systems, then calls the JS &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chip8Loader.init&lt;/code&gt; function that will use the browser &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame&quot;&gt;window.requestAnimationFrame&lt;/a&gt; to call the C# method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RunCycle&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;runcycle-method&quot;&gt;RunCycle method&lt;/h4&gt;
+&lt;p&gt;This method is called by the JS  (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;window.requestAnimationFrame&lt;/code&gt;).
+We implement a &lt;a href=&quot;https://gameprogrammingpatterns.com/game-loop.html&quot;&gt;Game Loop&lt;/a&gt; and in the end, call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8Graphic.RenderAsync&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;In the next &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog&lt;/a&gt; I will talk about the ARC-8’s implementation on Unity3D.&lt;/p&gt;
+
+&lt;p&gt;If you have any doubts about what I talk about above or any tip about the CHIP-8 emulator (or Blazor) and you like to share it, please let me know in the comments section below.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro&quot;&gt;Blazor Tutorial - Build your first Blazor app&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blazorise.com/docs/start/&quot;&gt;Blazorise quick-start&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/components/?view=aspnetcore-3.1#:~:text=Blazor%20apps%20are%20built%20using,Components%20are%20flexible%20and%20lightweight.&quot;&gt;Create and use ASP.NET Core Razor components&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-3.1&quot;&gt;ASP.NET Core Blazor lifecycle&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/call-javascript-from-dotnet?view=aspnetcore-3.1&quot;&gt;Call JavaScript functions from .NET methods in ASP.NET Core Blazor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/fundamentals/logging?view=aspnetcore-3.1&quot;&gt;ASP.NET Core Blazor logging&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gameprogrammingpatterns.com/double-buffer.html&quot;&gt;Double Buffer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gameprogrammingpatterns.com/game-loop.html&quot;&gt;Game Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame&quot;&gt;RequestAnimationFrame&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ARC-8&colon; devlog &num;1 - Core and code design</title>
    <link href="//arc-8-devlog-1/"/>
    <updated>2020-10-28T00:00:00-03:00</updated>
    <id>//arc-8-devlog-1</id>
    <content type="html">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
 
-&lt;p&gt;In this post, I will talk about my premises for the ARC-8’s code design that guided me during its development.&lt;/p&gt;
+&lt;p&gt;In this post, I will talk about &lt;strong&gt;my premises for the ARC-8’s code design that guided me during its development&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;The source code is not yet published on GitHub, I will notify in this series of posts about ARC-8 devlog and on my &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt; too when this happens.&lt;/p&gt;
 &lt;/div&gt;

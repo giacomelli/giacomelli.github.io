@@ -1,6 +1,217 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-10-28T09:16:22-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;1</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-1/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;1" /><published>2020-10-28T00:00:00-03:00</published><updated>2020-10-28T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-1</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-1/">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-10-29T11:49:59-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;2 - Blazor</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-2/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;2 - Blazor" /><published>2020-10-29T00:00:00-03:00</published><updated>2020-10-29T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-2</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-2/">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
 
-&lt;p&gt;In this post, I will talk about my premises for the ARC-8’s code design that guided me during its development.&lt;/p&gt;
+&lt;p&gt;In this post, I will talk about &lt;strong&gt;how I implemented the graphics, sound, input, and log systems for Blazor&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can read the others &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8’s devlog posts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The source code is not yet published on GitHub, I will notify in this series of posts about ARC-8 devlog and on my &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt; too when this happens.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor&quot;&gt;Blazor&lt;/a&gt; is a feature of ASP.NET that extends the .NET developer platform with tools and libraries for building web apps.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Blazor can run your client-side C# code directly in the browser, using WebAssembly. Because it’s real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is why we can use our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ARC-8 Core&lt;/code&gt;, mentioned in the previous &lt;a href=&quot;/arc-8-devlog-1&quot;&gt;devlog&lt;/a&gt;, because it is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.NET Standard class library&lt;/code&gt; and can run directly on Blazor web assembly.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;For some components, like menu, inputs, and buttons I use the &lt;a href=&quot;https://blazorise.com/&quot;&gt;Blazorise library&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;online-demo&quot;&gt;Online demo&lt;/h2&gt;
+&lt;p&gt;You can test and play the CHIP-8’s games directly on your browser with our online demo: &lt;a href=&quot;/apps/arc-8&quot;&gt;ARC-8 Blazor Online Demo&lt;/a&gt;.&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/9eHBdCTipZs &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;systems-interfaces-implementations&quot;&gt;Systems interfaces implementations&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;The system interfaces &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; will be implemented as &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/components/?view=aspnetcore-3.1#:~:text=Blazor%20apps%20are%20built%20using,Components%20are%20flexible%20and%20lightweight.&quot;&gt;Blazor components&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A component is a self-contained chunk of user interface (UI), such as a page, dialog, or form. A component includes HTML markup and the processing logic required to inject data or respond to UI events. Components are flexible and lightweight. They can be nested, reused, and shared among projects.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-200-4b7f14cbd.webp 200w, /assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-4b7f14cbd.webp 320w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-200-4b7f14cbd.jpg 200w, /assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-4b7f14cbd.jpg 320w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-4b7f14cbd.jpg&quot; alt=&quot;post image&quot; width=&quot;320&quot; height=&quot;246&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;chip8graphicrazor-component-igraphic&quot;&gt;Chip8Graphic.razor component (IGraphic)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This a simplified version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; implementation (without of color selector that you can see in the demo).&lt;/p&gt;
+
+&lt;h3 id=&quot;c-side&quot;&gt;C# side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=Chip8Graphic.razor&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;js-side&quot;&gt;JS side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=chip8-helper-graphic.js&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;onafterrenderasync-method&quot;&gt;OnAfterRenderAsync method&lt;/h4&gt;
+&lt;p&gt;In the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnAfterRenderAsync&lt;/code&gt; we verify if it’s the component’s first render, then we call a JS method that will initialize a JS helper for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8Graphic.razor&lt;/code&gt; that will return the size of the canvas to C# code, then we use this information to scale our 64 x 32 CHIP-8’s display.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;OnAfterRenderAsync and OnAfterRender are called after a component has finished rendering. Element and component references are populated at this point. Use this stage to perform additional initialization steps using the rendered content, such as activating third-party JavaScript libraries that operate on the rendered DOM elements.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;draw-method&quot;&gt;Draw method&lt;/h4&gt;
+&lt;p&gt;This is one of the two methods needed to be implemented of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; interface. We received the array (64x32) of bytes representing the current state of CHIP-8 graphics and just update our local array variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_gfx&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;renderasync-method&quot;&gt;RenderAsync method&lt;/h4&gt;
+&lt;p&gt;The method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RenderAsync&lt;/code&gt; will be called by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8Loader&lt;/code&gt; component during the &lt;a href=&quot;https://gameprogrammingpatterns.com/game-loop.html&quot;&gt;Game Loop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This method is used to draw the state of CHIP-8 graphics (_gfx array) to the HTML page. 
+We use a second array called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_buffer&lt;/code&gt; to implement a &lt;a href=&quot;https://gameprogrammingpatterns.com/double-buffer.html&quot;&gt;Double Buffer&lt;/a&gt; and reduce the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen flickering&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;A byte with value 1 should be drawn (foreground color) and a byte with value 0 should not be drawn (background color).&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;invalidate-method&quot;&gt;Invalidate method&lt;/h4&gt;
+&lt;p&gt;This is the second of the two methods needed to be implemented of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; interface, but as we implemented a Double Buffer, this method does not need to perform any operation.&lt;/p&gt;
+
+&lt;h4 id=&quot;resize-method&quot;&gt;Resize method&lt;/h4&gt;
+&lt;p&gt;Called by the JS side every time that the user resizes the browser window.&lt;/p&gt;
+
+&lt;h4 id=&quot;clearcanvasasync-method&quot;&gt;ClearCanvasAsync method&lt;/h4&gt;
+&lt;p&gt;We use this one to invalidate our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_buffer&lt;/code&gt; and reset the canvas to the background color.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8soundrazor-component-isound&quot;&gt;Chip8Sound.razor component (ISound)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This a simplified version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt; implementation.&lt;/p&gt;
+
+&lt;h3 id=&quot;c-side-1&quot;&gt;C# side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=Chip8Sound.razor&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;js-side-1&quot;&gt;JS side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=chip8-helper-sound.js&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;oninitialized-method&quot;&gt;OnInitialized method&lt;/h4&gt;
+&lt;p&gt;We just use the information from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NavigationManager&lt;/code&gt; to set the audio file we want to play.&lt;/p&gt;
+
+&lt;h4 id=&quot;play-method&quot;&gt;Play method&lt;/h4&gt;
+&lt;p&gt;This is the only method we need to implement of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt; interface and it just calls a JS method that will get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio&lt;/code&gt; tag on the component, set the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AudioSource&lt;/code&gt;, then load, and play it.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8inputrazor-component-iinput&quot;&gt;Chip8Input.razor component (IInput)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt; implementation.&lt;/p&gt;
+
+&lt;h3 id=&quot;c-side-2&quot;&gt;C# side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=Chip8Input.razor&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;js-side-2&quot;&gt;JS side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=chip8-helper-input.js&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;key-mapping&quot;&gt;Key mapping&lt;/h4&gt;
+&lt;p&gt;First we create the dictionary &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_map&lt;/code&gt; to map the real keyboard keys to CHIP-8 keypad keys.
+The second dictionary we create is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_keyDown&lt;/code&gt;. It will be used to map what keys the player is pressing.&lt;/p&gt;
+
+&lt;h4 id=&quot;onafterrenderasync-method-1&quot;&gt;OnAfterRenderAsync method&lt;/h4&gt;
+&lt;p&gt;We call the JS method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chip8Input.init&lt;/code&gt; that will add two event listeners, one for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keydown&lt;/code&gt; and the other for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keyup&lt;/code&gt; that will call the C# methods &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HandleKeyDown&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HandleKeyUp&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;updatekeys-method&quot;&gt;UpdateKeys method&lt;/h4&gt;
+&lt;p&gt;The only method we need to implement for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt; interface. 
+In this method, we set to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; the CHIP-8’s keypad keys that were pressed by the player.&lt;/p&gt;
+
+&lt;h4 id=&quot;handlekeydown-and-handlekeyup-methods&quot;&gt;HandleKeyDown and HandleKeyUp methods&lt;/h4&gt;
+&lt;p&gt;This method is responsible to set the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_keyDown&lt;/code&gt; dictionary by the keyboard keys that the player pressed.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8lograzor-component-ilog&quot;&gt;Chip8Log.razor component (ILog)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is a simplified version of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; implementation.&lt;/p&gt;
+
+&lt;h3 id=&quot;c-side-3&quot;&gt;C# side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=Chip8Log.razor&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;debug-and-error-methods&quot;&gt;Debug and Error methods&lt;/h4&gt;
+&lt;p&gt;The two methods implemented for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; interface use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Microsoft.Extensions.Logging.ILogger&amp;lt;T&amp;gt;&lt;/code&gt; to send log messages to the browser console.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8loaderrazor&quot;&gt;Chip8Loader.razor&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is a simplified version of the component responsible to load all systems (IGraphic, ISound, IInput, and ILog), initialize the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8&lt;/code&gt; class emulator,  load the ROM and perform the game loop.&lt;/p&gt;
+
+&lt;h3 id=&quot;c-side-4&quot;&gt;C# side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=Chip8Loader.razor&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;js-side-3&quot;&gt;JS side&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=chip8-helper-loader.js&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;onafterrenderasync-method-2&quot;&gt;OnAfterRenderAsync method&lt;/h4&gt;
+&lt;p&gt;Initializes the emulator with the systems, then calls the JS &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chip8Loader.init&lt;/code&gt; function that will use the browser &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame&quot;&gt;window.requestAnimationFrame&lt;/a&gt; to call the C# method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RunCycle&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;runcycle-method&quot;&gt;RunCycle method&lt;/h4&gt;
+&lt;p&gt;This method is called by the JS  (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;window.requestAnimationFrame&lt;/code&gt;).
+We implement a &lt;a href=&quot;https://gameprogrammingpatterns.com/game-loop.html&quot;&gt;Game Loop&lt;/a&gt; and in the end, call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8Graphic.RenderAsync&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;In the next &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog&lt;/a&gt; I will talk about the ARC-8’s implementation on Unity3D.&lt;/p&gt;
+
+&lt;p&gt;If you have any doubts about what I talk about above or any tip about the CHIP-8 emulator (or Blazor) and you like to share it, please let me know in the comments section below.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro&quot;&gt;Blazor Tutorial - Build your first Blazor app&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blazorise.com/docs/start/&quot;&gt;Blazorise quick-start&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/components/?view=aspnetcore-3.1#:~:text=Blazor%20apps%20are%20built%20using,Components%20are%20flexible%20and%20lightweight.&quot;&gt;Create and use ASP.NET Core Razor components&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/components/lifecycle?view=aspnetcore-3.1&quot;&gt;ASP.NET Core Blazor lifecycle&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/call-javascript-from-dotnet?view=aspnetcore-3.1&quot;&gt;Call JavaScript functions from .NET methods in ASP.NET Core Blazor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/fundamentals/logging?view=aspnetcore-3.1&quot;&gt;ASP.NET Core Blazor logging&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gameprogrammingpatterns.com/double-buffer.html&quot;&gt;Double Buffer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gameprogrammingpatterns.com/game-loop.html&quot;&gt;Game Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame&quot;&gt;RequestAnimationFrame&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Labs" /><category term="devlog" /><category term="dotnet" /><category term="blazor" /><category term="unity3d" /><category term="gamedev" /><category term="emulator" /><category term="arc8" /><category term="arc8-devlog" /><summary type="html">Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.</summary></entry><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;1 - Core and code design</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-1/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;1 - Core and code design" /><published>2020-10-28T00:00:00-03:00</published><updated>2020-10-28T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-1</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-1/">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
+
+&lt;p&gt;In this post, I will talk about &lt;strong&gt;my premises for the ARC-8’s code design that guided me during its development&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;The source code is not yet published on GitHub, I will notify in this series of posts about ARC-8 devlog and on my &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt; too when this happens.&lt;/p&gt;
 &lt;/div&gt;
@@ -166,7 +377,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
   &lt;li&gt;&lt;a href=&quot;https://cakebuild.net/docs/getting-started&quot;&gt;Cake getting started&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Labs" /><category term="devlog" /><category term="dotnet" /><category term="blazor" /><category term="chip8" /><category term="emulator" /><category term="arc8" /><category term="arc8-devlog" /><summary type="html">Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Overview of .NET in Unity</title><link href="http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Overview of .NET in Unity" /><published>2020-10-27T00:00:00-03:00</published><updated>2020-10-27T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity/">&lt;p&gt;Unity Official documentation has an amazing page called &lt;a href=&quot;https://docs.unity3d.com/Manual/overview-of-dot-net-in-unity.html&quot;&gt;Overview of .NET in Unity&lt;/a&gt; that highlight 8 points about the usage o .NET in Unity.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Labs" /><category term="devlog" /><category term="dotnet" /><category term="blazor" /><category term="unity" /><category term="chip8" /><category term="emulator" /><category term="arc8" /><category term="arc8-devlog" /><summary type="html">Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Overview of .NET in Unity</title><link href="http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Overview of .NET in Unity" /><published>2020-10-27T00:00:00-03:00</published><updated>2020-10-27T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-overview-of-donet-in-unity/">&lt;p&gt;Unity Official documentation has an amazing page called &lt;a href=&quot;https://docs.unity3d.com/Manual/overview-of-dot-net-in-unity.html&quot;&gt;Overview of .NET in Unity&lt;/a&gt; that highlight 8 points about the usage o .NET in Unity.&lt;/p&gt;
 
 &lt;p&gt;I think it’s important to any pro programmer in Unity quite understand those points, because of this I list them below, in a brief way. &lt;strong&gt;You can (and should) read the full documentation to understand all the 8 points listed in more depth&lt;/strong&gt;.&lt;/p&gt;
 
@@ -732,329 +943,4 @@ To use it you need to add a &lt;a href=&quot;https://docs.unity3d.com/ScriptRefe
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;More details in the official documentation: &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.editorcoroutines@0.0/api/Unity.EditorCoroutines.Editor.EditorCoroutineUtility.html&quot;&gt;Editor Coroutines&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">Recently, I was doing a small experiment trying to run an CHIP-8 emulator inside the Unity Editor inspector window and for that I needed to update from times to time the inspector.</summary></entry><entry><title type="html">Using Gulp for Chrome Extension development workflow</title><link href="http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow/" rel="alternate" type="text/html" title="Using Gulp for Chrome Extension development workflow" /><published>2020-09-11T00:00:00-03:00</published><updated>2020-09-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-gulp-for-chrome-extension-dev-workflow/">&lt;p&gt;In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;A few months ago we built a Chrome Extension to a customer to allow users to capture Netflix captions and sent them to the customer web site to study them later.&lt;/p&gt;
-
-&lt;p&gt;While we were developing it we needed to change some configurations on the extension to use different URLs of our API depending on what environment the Chrome Extension was using, like DEV (local), TEST, and Production.&lt;/p&gt;
-
-&lt;h2 id=&quot;chrome-extension&quot;&gt;Chrome Extension&lt;/h2&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/chrome-extension-200-209699985.webp 200w, /assets/images/generated/assets/logos/chrome-extension-400-209699985.webp 400w, /assets/images/generated/assets/logos/chrome-extension-496-209699985.webp 496w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/chrome-extension-200-209699985.png 200w, /assets/images/generated/assets/logos/chrome-extension-400-209699985.png 400w, /assets/images/generated/assets/logos/chrome-extension-496-209699985.png 496w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/chrome-extension-496-209699985.png&quot; alt=&quot;post image&quot; width=&quot;496&quot; height=&quot;150&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;For this tutorial, I’ll use a Chrome Extension basic sample called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt;.&lt;br /&gt; 
-You can download it from this page &lt;a href=&quot;https://developer.chrome.com/extensions/samples&quot;&gt;https://developer.chrome.com/extensions/samples&lt;/a&gt; or directly from &lt;a href=&quot;https://developer.chrome.com/extensions/examples/tutorials/hello_extensions.zip&quot;&gt;here&lt;/a&gt;.
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Is not the intent of this tutorial explains how to create a Chrome Extension from scratch, for this you can use the official documentation: &lt;a href=&quot;https://developer.chrome.com/extensions/getstarted&quot;&gt;Getting Started Tutorial&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;gulp&quot;&gt;Gulp&lt;/h2&gt;
-&lt;p&gt;&lt;img class=&quot;icon&quot; src=&quot;/assets/logos/gulp.svg &quot; alt=&quot;post image&quot; /&gt;
-At that time we did not find any builtin or other solution to make this workflow easier and streamlined, so we decided to create our own solution using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gulp&lt;/code&gt;. This whole solution will be explaining below.
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;gulp is an open-source JavaScript toolkit created by Eric Schoffstall used as a streaming build system in front-end web development.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We decided to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt;, because a Chrome Extensions is a bunch of .js, .html and .json files. Perfect to use gulp.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;If we just try to open our download &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extension&lt;/code&gt; .zip file or the opened folder directly on the Chrome extensions page, it will work and you see the extension’s icon in the toolbar.&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.webp 113w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.png 113w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/basic-sample-chrome-extension-113-f70b16101.png&quot; alt=&quot;post image&quot; width=&quot;113&quot; height=&quot;145&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-
-&lt;p&gt;This is not a problem if you have only one environment or if you don’t need different configurations for different environments, but as I’ve already explained, we needed different configs for different environments.&lt;/p&gt;
-
-&lt;p&gt;To the purpose of this tutorial we will work with 3 environments: DEV, TEST, and PROD and will use our configuration file just to change our plugin &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.html&lt;/code&gt; text:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;DEV: Hello, World! (DEV)&lt;/li&gt;
-  &lt;li&gt;TEST: Hello, World! (TEST)&lt;/li&gt;
-  &lt;li&gt;PROD: Hello, World!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png 336w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png&quot; alt=&quot;post image&quot; width=&quot;336&quot; height=&quot;167&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;files-structure&quot;&gt;Files structure&lt;/h2&gt;
-&lt;p&gt;Move the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt; files to a subfolder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt;.
-At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-200-484bbc2a8.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.webp 202w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-200-484bbc2a8.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.png 202w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/files-structure-202-484bbc2a8.png&quot; alt=&quot;post image&quot; width=&quot;202&quot; height=&quot;142&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;If have any doubt about the files structure during this tutorial, you can download the full solution in section &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Download&lt;/code&gt; at the end of the tutorial&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;installing-gulp&quot;&gt;Installing gulp&lt;/h2&gt;
-&lt;p&gt;To allow us to build our workflow, first, we need to install gulp.&lt;/p&gt;
-
-&lt;p&gt;Follow the instructions described in &lt;a href=&quot;https://gulpjs.com/docs/en/getting-started/quick-start/&quot;&gt;Quick Start&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;In the section &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Create a project directory and navigate into it&lt;/code&gt; you just need to open the root folder of our file structure described in the previous section&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;In the section &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Create a package.json file in your project directory&lt;/code&gt; you can use the default values for all the questions of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm init&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You don’t need to perform the section &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Create a gulpfile&lt;/code&gt;, because we will perform it in the next section.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;the-gulpfilejs-file&quot;&gt;The gulpfile.js file&lt;/h2&gt;
-&lt;p&gt;Create a file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; in the root folder.&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=gulpfile.js&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;This is the full &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; file that will allow our development workflow for different environments.&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;the-gulpfilejs-sections&quot;&gt;The gulpfile.js sections&lt;/h2&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;Now I will explain each section of it.
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;requires-section&quot;&gt;Requires section&lt;/h3&gt;
-&lt;p&gt;This section define the NPM packages need for our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt;.
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=requires.section.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;The first one is &lt;a href=&quot;https://www.npmjs.com/package/gulp&quot;&gt;gulp&lt;/a&gt;, then we need the package &lt;a href=&quot;&quot;&gt;del&lt;/a&gt; that will allow us to clean our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder, 
-after &lt;a href=&quot;https://www.npmjs.com/package/gulp-merge-json&quot;&gt;gulp-merge-json&lt;/a&gt; to allow us to merge our environment config files. The last one is &lt;a href=&quot;https://www.npmjs.com/package/fs&quot;&gt;fs&lt;/a&gt; to allow read and write files.&lt;/p&gt;
-
-&lt;h3 id=&quot;consts-section&quot;&gt;Consts section&lt;/h3&gt;
-&lt;p&gt;This is quite simple, we are just reading the command-line argument called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config&lt;/code&gt;. If it is not present, the default value is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DEV&lt;/code&gt;. 
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=consts.section.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;exports-section&quot;&gt;Exports section&lt;/h3&gt;
-&lt;p&gt;Now we jump to the last line of the file to explain the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exports.default&lt;/code&gt;. 
-Here we are basically defining the order of each function that will be called when we run our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulpfile.js&lt;/code&gt; file:
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=exports.section.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;clean-section&quot;&gt;Clean section&lt;/h3&gt;
-&lt;p&gt;Cleans our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder.
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=clean.section.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;copyallfiles-section&quot;&gt;CopyAllFiles section&lt;/h3&gt;
-&lt;p&gt;Copies all files from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=copyAllFiles.section.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;transformconfig-section&quot;&gt;TransformConfig section&lt;/h3&gt;
-&lt;p&gt;Transforms our config.json files, merging the source one with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment&lt;/code&gt; one.
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=transformConfig.section.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;writeconfigjsfile-section&quot;&gt;WriteConfigJsFile section&lt;/h3&gt;
-&lt;p&gt;Writes our transformed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; file to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scripts&lt;/code&gt; folder to allow our Chrome Extension’s .js files access the config values.
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=writeConfigJsFile.section.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;transformmanifest-section&quot;&gt;TransformManifest section&lt;/h3&gt;
-&lt;p&gt;Transforms our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; file too.
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=transformManifest.section.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;watch-section&quot;&gt;Watch section&lt;/h3&gt;
-&lt;p&gt;Watches for any change in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder and automatically repeat the previous steps.
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=watch.section.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;packagesjson-file&quot;&gt;packages.json file&lt;/h2&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;Change the content of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;packages.json&lt;/code&gt; file to the content below to update the dependencies.
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=packages.json&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Then run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install&lt;/code&gt; in the root folder, after that run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install gulp&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;running-the-gulp-for-the-first-time&quot;&gt;Running the gulp for the first time&lt;/h2&gt;
-&lt;p&gt;Now, if you just run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-200-d0dfc6cee.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.webp 369w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-200-d0dfc6cee.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.png 369w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-failed-config-369-d0dfc6cee.png&quot; alt=&quot;post image&quot; width=&quot;369&quot; height=&quot;148&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-
-&lt;h2 id=&quot;creating-the-configjson-files&quot;&gt;Creating the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files&lt;/h2&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;We need to create our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
-They are 3 files:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt;: the baseline file, our common configuration should be defined here and will be used for the DEV environment.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.TEST.json&lt;/code&gt;: the file that the define specific configuration values for the TEST environment&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.PROD.json&lt;/code&gt;: the file that the define specific configuration values for the PROD environment
-&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you’re familiar with &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations&quot;&gt;Web.config File Transformations&lt;/a&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;appsettings.json&lt;/code&gt; files transformation, the philosophy used here is the same: the baseline file (config.json) contains all the common configuration values, and the specific environment files, like config.TEST.json and config.PROD.json, need to define only the values that are different for that environment&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Create the 3 files inside the subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt;.
-Here is the content of each one:&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=config.json&quot;&gt; &lt;/script&gt;
-
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=config.TEST.json&quot;&gt; &lt;/script&gt;
-
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=config.PROD.json&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;running-the-gulp-for-the-second-time&quot;&gt;Running the gulp for the second time&lt;/h2&gt;
-&lt;p&gt;Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder, you should see an output like this:&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-200-b124fa8a9.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.webp 379w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-200-b124fa8a9.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.png 379w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/gulp-ok-no-manifest-379-b124fa8a9.png&quot; alt=&quot;post image&quot; width=&quot;379&quot; height=&quot;255&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-
-&lt;p&gt;There is a new subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; created. Load it on Chrome Extensions page:&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-200-0991800ea.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-400-0991800ea.webp 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.webp 423w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-200-0991800ea.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-400-0991800ea.png 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.png 423w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-page-423-0991800ea.png&quot; alt=&quot;post image&quot; width=&quot;423&quot; height=&quot;230&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-
-&lt;p&gt;The plugin should work ok.&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember to remove the plugin previously loaded on Chrome and add it again from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;creating-the-hellojs&quot;&gt;Creating the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.js&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Create a new file called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.js&lt;/code&gt; inside the subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scripts&lt;/code&gt;.
-We will use this file to change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;H1&lt;/code&gt; tag inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.html&lt;/code&gt;
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=hello.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;loading-scripts-on-hellohtml&quot;&gt;Loading scripts on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.html&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Change the content of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello.html&lt;/code&gt; file to the content bellow:
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=hello.html&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;This will load the .js and add an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id&lt;/code&gt; attribute to our  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;H1&lt;/code&gt; tag.&lt;/p&gt;
-
-&lt;h2 id=&quot;reading-the-configuration-inside-the-scripts&quot;&gt;Reading the configuration inside the scripts&lt;/h2&gt;
-&lt;p&gt;The first thing we need to do is change our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; file to allow the content of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scripts/config.js&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scripts/hello.js&lt;/code&gt; been read by the extension .js.
-Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; and change it to the content below:
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=manifest.json&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;The line &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;/scripts/config.js&quot;&lt;/code&gt; is what we need to access the configuration values.&lt;/p&gt;
-
-&lt;h2 id=&quot;creating-the-manifestjson-files&quot;&gt;Creating the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files&lt;/h2&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;We need to create our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt; files, in the same way, we created our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files.
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-They are 3 files:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt;: the baseline file, our common manifest definition, and used by DEV environment (already created).&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.TEST.json&lt;/code&gt;: the file that the define specific manifest configuration values for the TEST environment&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.PROD.json&lt;/code&gt;: the file that the define specific manifest configuration values for the PROD environment&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Create the 2 files inside the subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt;.
-Here is the content of each one:&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=manifest.TEST.json&quot;&gt; &lt;/script&gt;
-
-&lt;script src=&quot;https://gist.github.com/4f9d7289273222713933d8a95a077311.js?file=manifest.PROD.json&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;running-the-gulp-for-each-environment&quot;&gt;Running the gulp for each environment&lt;/h2&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.webp 336w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-200-3afbb65ab.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png 336w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/all-extension-environments-336-3afbb65ab.png&quot; alt=&quot;post image&quot; width=&quot;336&quot; height=&quot;167&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-&lt;p&gt;Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder.
-This will use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DEV&lt;/code&gt; configuration from config.js and manifest.json&lt;/p&gt;
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Is the same if you run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --config DEV&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Now, try to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --config TEST&lt;/code&gt;.
-In the Chrome Extensions page you should see something like this:&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-200-439243e20.webp 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-400-439243e20.webp 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.webp 468w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-200-439243e20.png 200w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-400-439243e20.png 400w, /assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.png 468w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-extension-test-chrome-468-439243e20.png&quot; alt=&quot;post image&quot; width=&quot;468&quot; height=&quot;358&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-
-&lt;p&gt;Your extension is using the TEST environment values.
-When you click on the extension icon on the Chrome toolbar, you should see something like this:&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.webp 129w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.png 129w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/hello-world-test-129-24527d511.png&quot; alt=&quot;post image&quot; width=&quot;129&quot; height=&quot;177&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can try to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --config PROD&lt;/code&gt;. To see the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PROD&lt;/code&gt; environment values on the extension.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;running-gulp---watch&quot;&gt;Running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --watch&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;To have a fast and streamline workflow, we need that every time we change something on our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; folder automatically updates and we can see the changes right on Chrome.&lt;/p&gt;
-
-&lt;p&gt;Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --watch&lt;/code&gt;. It’ll monitor your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder and update the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt;.&lt;br /&gt;
-You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--config&lt;/code&gt; option combine, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --watch --config TEST&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
-&lt;p&gt;You can download the full source code of the plugin of this tutorial: &lt;a href=&quot;/assets/2020/09/11/using-gulp-for-chrome-extension-dev-workflow/chrome-extension-sample.zip&quot;&gt;chrome-extension-sample.zip&lt;a&gt;.&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In this .zip are all files mentioned in this tutorial, you just need to set up your gulp environment and call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install gulp&lt;/code&gt; before starting to use it.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;In this tutorial, we learned how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Tutorial" /><category term="unity3d" /><category term="gamedev" /><category term="math" /><category term="curves" /><summary type="html">In this tutorial, we will learn how to create a development workflow for a Chrome extension, with different configurations and manifest.json for each environment, like DEV, TEST, and PROD.</summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><summary type="html">Recently, I was doing a small experiment trying to run an CHIP-8 emulator inside the Unity Editor inspector window and for that I needed to update from times to time the inspector.</summary></entry></feed>

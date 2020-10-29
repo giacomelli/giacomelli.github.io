@@ -3,20 +3,20 @@
  <title>Diego Giacomelli - chip8</title>
  <link href="//tags/chip8/index.xml" rel="self"/>
  <link href="/tag/chip8.html"/>
- <updated>2020-10-28T09:16:22-03:00</updated>
+ <updated>2020-10-29T11:49:59-03:00</updated>
  <id>/tag/chip8.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
  
  <entry>
-   <title>ARC-8&colon; devlog &num;1</title>
+   <title>ARC-8&colon; devlog &num;1 - Core and code design</title>
    <link href="//arc-8-devlog-1/"/>
    <updated>2020-10-28T00:00:00-03:00</updated>
    <id>//arc-8-devlog-1</id>
    <content type="html">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
 
-&lt;p&gt;In this post, I will talk about my premises for the ARC-8’s code design that guided me during its development.&lt;/p&gt;
+&lt;p&gt;In this post, I will talk about &lt;strong&gt;my premises for the ARC-8’s code design that guided me during its development&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;The source code is not yet published on GitHub, I will notify in this series of posts about ARC-8 devlog and on my &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt; too when this happens.&lt;/p&gt;
 &lt;/div&gt;
