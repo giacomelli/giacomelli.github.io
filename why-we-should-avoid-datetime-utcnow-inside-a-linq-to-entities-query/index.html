@@ -11,11 +11,11 @@
 	<meta name="twitter:site" content="@ogiacomelli" />
 
     
-    <meta name="description" content="Because we can get unexpected results! (after read this tip, will be expected results ;))
+    <meta name="description" content="Why we should avoid DateTime.UtcNow inside a Linq to Entities query?
 " />
-    <meta property="og:description" content="Because we can get unexpected results! (after read this tip, will be expected results ;))
+    <meta property="og:description" content="Why we should avoid DateTime.UtcNow inside a Linq to Entities query?
 " />
-    <meta name="twitter:description" content="Because we can get unexpected results! (after read this tip, will be expected results ;))
+    <meta name="twitter:description" content="Why we should avoid DateTime.UtcNow inside a Linq to Entities query?
 " />
     
 
@@ -123,39 +123,56 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 <div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>1 minutes to read</span></div>
    
     </div>  
-    <p><strong>Because we can get unexpected results! (after read this tip, will be expected results ;))</strong></p>
+    <p>Why we should avoid <code class="language-plaintext highlighter-rouge">DateTime.UtcNow</code> inside a <code class="language-plaintext highlighter-rouge">Linq to Entities</code> query?</p>
 
-<h3 id="what-is-the-diference-between-these-two-linq-queries">What is the diference between these two Linq queries?</h3>
-<p><strong>Query 1</strong></p>
+<p>Because we can get unexpected results!<br />
+After read this tip, will be expected results 😉</p>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">filterDate</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">;</span>
-<span class="n">ctx</span><span class="p">.</span><span class="n">Set</span><span class="p">.</span><span class="nf">Where</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="n">m</span><span class="p">.</span><span class="n">DateTime</span> <span class="p">&gt;</span> <span class="n">filterDate</span><span class="p">);</span>
-</code></pre></div></div>
+<h2 id="what-is-the-diference-between-these-two-linq-queries">What is the diference between these two Linq queries?</h2>
 
-<p><strong>Query 2</strong></p>
+<h4 id="query-1">Query 1</h4>
+<script src="https://gist.github.com/9a3a88fac354f3af8294381b30552ade.js?file=sample1.cs"> </script>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ctx</span><span class="p">.</span><span class="n">Set</span><span class="p">.</span><span class="nf">Where</span><span class="p">(</span><span class="n">m</span> <span class="p">=&gt;</span> <span class="n">m</span><span class="p">.</span><span class="n">DateTime</span> <span class="p">&gt;</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">UtcNow</span><span class="p">);</span>
-</code></pre></div></div>
-<p>The first one will generate a SQL with WHERE clause like this:</p>
+<h4 id="query-2">Query 2</h4>
+<script src="https://gist.github.com/9a3a88fac354f3af8294381b30552ade.js?file=sample2.cs"> </script>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">DateTime</span> <span class="o">&gt;</span> <span class="o">@</span><span class="n">p__linq__1</span>
-</code></pre></div></div>
-<p>Where @p__linq__1 is the value of our filterDate variable.</p>
+<h4 id="sql-generated">SQL generated</h4>
+<p>The first one will generate a SQL with WHERE clause like this:
+<script src="https://gist.github.com/9a3a88fac354f3af8294381b30552ade.js?file=sample3.cs"> </script>
+Where <code class="language-plaintext highlighter-rouge">@p__linq__1</code> is the value of our filterDate variable.</p>
 
-<p>The second one will generate this WHERE clause:</p>
+<p>The second one will generate this <code class="language-plaintext highlighter-rouge">WHERE</code> clause:
+<script src="https://gist.github.com/9a3a88fac354f3af8294381b30552ade.js?file=sample4.cs"> </script></p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">DateTime</span> <span class="o">&gt;</span> <span class="n">SysUtcDateTime</span><span class="p">()</span>
-</code></pre></div></div>
+<h2 id="what-is-the-problem">What is the problem?</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/problem-128-a3f91d933.png" alt="post image" width="128" height="128" />
+</picture>
 
-<h3 id="what-is-the-problem">What is the problem?</h3>
 <p>Imagine that we’re using the second query inside some sync algorithm in our C# code, this algorithm is very sensitive about time, now imagine that the server where our C# code is running has a difference about seconds or minutes with the database server?</p>
 
 <p><strong>YES, UNEXPECTED RESULTS!</strong></p>
 
-<h3 id="conclusion">Conclusion</h3>
-<p>Linq to Entities is very smart and it is able to translate our DateTime.Now or DateTime.UtcNow to a matching command on database side.</p>
+<h2 id="conclusion">Conclusion</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png" alt="post image" width="128" height="128" />
+</picture>
 
-<p><strong>The important here is: we should remember that it can do this and we should use features like these with parsimony.</strong></p>
+<p>Linq to Entities is very smart and it is able to translate our <code class="language-plaintext highlighter-rouge">DateTime.Now</code> or <code class="language-plaintext highlighter-rouge">DateTime.UtcNow</code> to a matching command on database side.</p>
+
+<div class="note"><p>The important here is: we should remember that it can do this and we should use features like these with parsimony.</p>
+</div>
+
+<script>
+        $(document).ready(function() {
+          $('.gist-meta').remove();
+        });
+      </script>
+
     
   </div>
   <span>

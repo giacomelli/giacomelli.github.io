@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - csharp</title>
  <link href="//tags/csharp/index.xml" rel="self"/>
  <link href="/tag/csharp.html"/>
- <updated>2020-10-29T11:49:59-03:00</updated>
+ <updated>2020-10-30T16:56:13-03:00</updated>
  <id>/tag/csharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -170,39 +170,56 @@
    <link href="//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query/"/>
    <updated>2014-05-12T00:00:00-03:00</updated>
    <id>//why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query</id>
-   <content type="html">&lt;p&gt;&lt;strong&gt;Because we can get unexpected results! (after read this tip, will be expected results ;))&lt;/strong&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;Why we should avoid &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DateTime.UtcNow&lt;/code&gt; inside a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Linq to Entities&lt;/code&gt; query?&lt;/p&gt;
 
-&lt;h3 id=&quot;what-is-the-diference-between-these-two-linq-queries&quot;&gt;What is the diference between these two Linq queries?&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Query 1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Because we can get unexpected results!&lt;br /&gt;
+After read this tip, will be expected results 😉&lt;/p&gt;
 
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filterDate&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UtcNow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filterDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;what-is-the-diference-between-these-two-linq-queries&quot;&gt;What is the diference between these two Linq queries?&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Query 2&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;query-1&quot;&gt;Query 1&lt;/h4&gt;
+&lt;script src=&quot;https://gist.github.com/9a3a88fac354f3af8294381b30552ade.js?file=sample1.cs&quot;&gt; &lt;/script&gt;
 
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UtcNow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;The first one will generate a SQL with WHERE clause like this:&lt;/p&gt;
+&lt;h4 id=&quot;query-2&quot;&gt;Query 2&lt;/h4&gt;
+&lt;script src=&quot;https://gist.github.com/9a3a88fac354f3af8294381b30552ade.js?file=sample2.cs&quot;&gt; &lt;/script&gt;
 
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;DateTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p__linq__1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Where @p__linq__1 is the value of our filterDate variable.&lt;/p&gt;
+&lt;h4 id=&quot;sql-generated&quot;&gt;SQL generated&lt;/h4&gt;
+&lt;p&gt;The first one will generate a SQL with WHERE clause like this:
+&lt;script src=&quot;https://gist.github.com/9a3a88fac354f3af8294381b30552ade.js?file=sample3.cs&quot;&gt; &lt;/script&gt;
+Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@p__linq__1&lt;/code&gt; is the value of our filterDate variable.&lt;/p&gt;
 
-&lt;p&gt;The second one will generate this WHERE clause:&lt;/p&gt;
+&lt;p&gt;The second one will generate this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WHERE&lt;/code&gt; clause:
+&lt;script src=&quot;https://gist.github.com/9a3a88fac354f3af8294381b30552ade.js?file=sample4.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;DateTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SysUtcDateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;what-is-the-problem&quot;&gt;What is the problem?&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
-&lt;h3 id=&quot;what-is-the-problem&quot;&gt;What is the problem?&lt;/h3&gt;
 &lt;p&gt;Imagine that we’re using the second query inside some sync algorithm in our C# code, this algorithm is very sensitive about time, now imagine that the server where our C# code is running has a difference about seconds or minutes with the database server?&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;YES, UNEXPECTED RESULTS!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;Linq to Entities is very smart and it is able to translate our DateTime.Now or DateTime.UtcNow to a matching command on database side.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
 
-&lt;p&gt;&lt;strong&gt;The important here is: we should remember that it can do this and we should use features like these with parsimony.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Linq to Entities is very smart and it is able to translate our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DateTime.Now&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DateTime.UtcNow&lt;/code&gt; to a matching command on database side.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The important here is: we should remember that it can do this and we should use features like these with parsimony.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+        $(document).ready(function() {
+          $('.gist-meta').remove();
+        });
+      &lt;/script&gt;
+
 </content>
  </entry>
  
