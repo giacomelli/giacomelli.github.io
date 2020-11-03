@@ -3,11 +3,49 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2020-11-01T10:03:23-03:00</updated>
+ <updated>2020-11-03T06:03:02-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Scene Selection Toolbar</title>
+   <link href="//unitytips-scene-selection-toolbar/"/>
+   <updated>2020-11-03T00:00:00-03:00</updated>
+   <id>//unitytips-scene-selection-toolbar</id>
+   <content type="html">&lt;p&gt;Using &lt;a href=&quot;https://github.com/marijnz/unity-toolbar-extender&quot;&gt;Unity Toolbar Extender&lt;/a&gt; by &lt;a href=&quot;https://github.com/marijnz&quot;&gt;Marijn Zwemmer’s&lt;/a&gt; and &lt;a href=&quot;https://github.com/OndrejPetrzilka&quot;&gt;Ondrej Petrzilka’s&lt;/a&gt; you can easily add buttons side by side of play/pause/step buttons on the Unity editor toolbar.&lt;/p&gt;
+
+&lt;h2 id=&quot;scene-selection-toolbar&quot;&gt;Scene Selection Toolbar&lt;/h2&gt;
+&lt;p&gt;I created a gist, called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scene Selection Toolbar&lt;/code&gt;, that uses the &lt;a href=&quot;https://github.com/marijnz/unity-toolbar-extender&quot;&gt;Unity Toolbar Extender&lt;/a&gt; and allows us to have a dropdown with the most used scenes right on the side of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; button.&lt;/p&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/9NfVyDsj1rQ &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Import the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Unity Toolbar Extender&lt;/code&gt; as described in the &lt;a href=&quot;https://github.com/marijnz/unity-toolbar-extender#importing&quot;&gt;Import section&lt;/a&gt; on GitHub.&lt;/li&gt;
+  &lt;li&gt;Then, just add it the gist below to any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder of your project or use the &lt;a href=&quot;http://localhost:4000/unitytips-gist-importer/&quot;&gt;Gist Importer&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script src=&quot;https://gist.github.com/4122c117c927d5c370dd562e619129e6.js?file=SceneSelectionToolbar.cs&quot;&gt; &lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css&quot; /&gt;
+&lt;div class=&quot;gist&quot; style=&quot;margin-top:-17px&quot;&gt;
+        &lt;div class=&quot;gist-file&quot;&gt;
+          &lt;div class=&quot;gist-meta&quot;&gt;
+            &lt;a href=&quot;/unitytips-gist-importer/&quot;&gt;You can easily import this gist directly into your Unity 3D project using the &lt;b&gt;Gist Importer&lt;/b&gt;&lt;img style=&quot;float:right;width:48px;&quot; src=&quot;/assets/logos/Unity3d.png&quot; alt=&quot;Gist Importer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+&lt;h4 id=&quot;adding-removing-and-opening-scenes&quot;&gt;Adding, removing, and opening scenes&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Add the current scene to the list&lt;/strong&gt;: with any scene opened, you can click on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; button to add it to the scenes dropdown.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Remove the current scene from the list&lt;/strong&gt;: just click the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; button to remove the current scene from the list.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open a scene from the list&lt;/strong&gt;: select any scene in the dropdown to open that scene on the editor.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Overview of .NET in Unity</title>
