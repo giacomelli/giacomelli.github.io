@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2020-11-04T14:51:20-03:00</updated>
+ <updated>2020-11-04T15:19:57-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -36,6 +36,9 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/jSR-pu0WqHY &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The 3D models of the arcade cabinet and arcade room were created by my talented friend &lt;a href=&quot;https://twitter.com/giusepe/status/1324050160779956227&quot;&gt;Giusepe Casagrande&lt;/a&gt;.&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;systems-interfaces-implementations&quot;&gt;Systems interfaces implementations&lt;/h2&gt;
 &lt;picture&gt;
