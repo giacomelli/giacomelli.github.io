@@ -1,4 +1,242 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-11-03T06:03:02-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">unitytips&amp;amp;colon; Scene Selection Toolbar</title><link href="http://diegogiacomelli.com.br/unitytips-scene-selection-toolbar/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Scene Selection Toolbar" /><published>2020-11-03T00:00:00-03:00</published><updated>2020-11-03T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-scene-selection-toolbar</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-scene-selection-toolbar/">&lt;p&gt;Using &lt;a href=&quot;https://github.com/marijnz/unity-toolbar-extender&quot;&gt;Unity Toolbar Extender&lt;/a&gt; by &lt;a href=&quot;https://github.com/marijnz&quot;&gt;Marijn Zwemmer’s&lt;/a&gt; and &lt;a href=&quot;https://github.com/OndrejPetrzilka&quot;&gt;Ondrej Petrzilka’s&lt;/a&gt; you can easily add buttons side by side of play/pause/step buttons on the Unity editor toolbar.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-11-04T14:51:20-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;3 - Unity</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-3/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;3 - Unity" /><published>2020-11-04T00:00:00-03:00</published><updated>2020-11-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-3</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-3/">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
+
+&lt;p&gt;In this post, I will talk about &lt;strong&gt;how I implemented the graphics, sound, input, and log systems for Unity 3D&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can read the other &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8’s devlog posts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;The source code is not yet published on GitHub, I will notify in this series of posts about ARC-8 devlog and on my &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt; too when this happens.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;If you were out of the planet in the last decade, maybe you don’t know what is &lt;a href=&quot;https://unity.com&quot;&gt;Unity&lt;/a&gt;: Unity is a cross-platform game engine developed in C++, but the games made on it are developed using .NET and C#.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Inc.’s Worldwide Developers Conference as a Mac OS X-exclusive game engine. As of 2018, the engine had been extended to support more than 25 platforms. The engine can be used to create three-dimensional, two-dimensional, virtual reality, and augmented reality games, as well as simulations and other experiences. The engine has been adopted by industries outside video gaming, such as film, automotive, architecture, engineering and construction.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In older versions, Unity only supported a subset of .NET Framework (4.x), but nowadays it’s supporting .NET Standard 2.0.
+This is why we can use our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ARC-8 Core&lt;/code&gt;, mentioned in the &lt;a href=&quot;/arc-8-devlog-1&quot;&gt;first devlog&lt;/a&gt;, because it is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.NET Standard class library&lt;/code&gt; and can run directly on Unity.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/jSR-pu0WqHY &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;systems-interfaces-implementations&quot;&gt;Systems interfaces implementations&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;The system interfaces &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; will be implemented as &lt;a href=&quot;https://docs.unity3d.com/Manual/class-MonoBehaviour.html&quot;&gt;MonoBehaviour&lt;/a&gt;.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/arc-8-unity-components-186-6eee669de.webp 186w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/arc-8-unity-components-186-6eee669de.jpg 186w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/arc-8-unity-components-186-6eee669de.jpg&quot; alt=&quot;post image&quot; width=&quot;186&quot; height=&quot;320&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The MonoBehaviour class is the base class from which every Unity script derives, by default. TPovides the framework which allows you to attach your script to a GameObject in the editor, as well as providing hooks into useful Events such as Start and Update.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;chip8graphiccs-monobehaviour-igraphic&quot;&gt;Chip8Graphic.cs MonoBehaviour (IGraphic)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; implementation.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-200-12d224ad6.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-400-12d224ad6.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-518-12d224ad6.webp 518w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-200-12d224ad6.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-400-12d224ad6.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-518-12d224ad6.png 518w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-518-12d224ad6.png&quot; alt=&quot;post image&quot; width=&quot;518&quot; height=&quot;130&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;intialize-method&quot;&gt;Intialize method&lt;/h4&gt;
+&lt;p&gt;In the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Initialize&lt;/code&gt; we verify if will render to the main camera or to a specific target camera, then we set some camera configuration, create the material we will use to render the CHIP-8 graphic, get the screen size, then we initialize our &lt;a href=&quot;https://gameprogrammingpatterns.com/double-buffer.html&quot;&gt;Double Buffer&lt;/a&gt; array.&lt;/p&gt;
+
+&lt;p&gt;In most cases, we don’t use the main camera, but instead, use a target camera that uses a &lt;a href=&quot;https://docs.unity3d.com/Manual/class-RenderTexture.html&quot;&gt;RenderTexture&lt;/a&gt;, and then we can use that texture on any surface on our game, like a TV screen or an arcade cabinet.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Render Textures are special types of Textures that are created and updated at run time. To use them, you first create a new Render Texture and designate one of your Cameras to render into it. Then you can use the Render Texture in a Material just like a regular Texture.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;draw-method&quot;&gt;Draw method&lt;/h4&gt;
+&lt;p&gt;This is one of the two methods that needed to be implemented of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; interface. We received the array (64x32) of bytes representing the current state of CHIP-8 graphics and just update our local array variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_gfx&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;onrenderobject&quot;&gt;OnRenderObject&lt;/h4&gt;
+&lt;p&gt;The method &lt;a href=&quot;https://docs.unity3d.com/2017.3/Documentation/ScriptReference/Camera.OnRenderObject.html&quot;&gt;OnRenderObject&lt;/a&gt; is called after the camera has rendered the scene.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;OnRenderObject can be used to render your own objects using Graphics.DrawMeshNow or other functions. This function is similar to OnPostRender, except OnRenderObject is called on any object that has a script with the function; no matter if it’s attached to a Camera or not.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;render-method&quot;&gt;Render method&lt;/h4&gt;
+&lt;p&gt;The method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Render&lt;/code&gt; will be called by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnRenderObject&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;p&gt;This method is used to draw the state of CHIP-8 graphics (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_gfx&lt;/code&gt; array) to the current camera using the &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/GL.html&quot;&gt;GL (Low-level graphics library)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Use GL class to manipulate active transformation matrices, issue rendering commands similar to OpenGL’s immediate mode and do other low-level graphics tasks. GL immediate drawing functions use whatever is the “current material” set up right now (see Material.SetPass). The material controls how the rendering is done (blending, textures, etc.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We use a second array called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_buffer&lt;/code&gt; to implement a &lt;a href=&quot;https://gameprogrammingpatterns.com/double-buffer.html&quot;&gt;Double Buffer&lt;/a&gt; and reduce the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen flickering&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;A byte with value 1 should be drawn (foreground color) and a byte with value 0 should not be drawn (background color).&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;invalidate-method&quot;&gt;Invalidate method&lt;/h4&gt;
+&lt;p&gt;This is the second of the two methods needed to be implemented of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; interface, but as we implemented a Double Buffer, this method does not need to perform any operation.&lt;/p&gt;
+
+&lt;h4 id=&quot;setrendertexture-method&quot;&gt;SetRenderTexture method&lt;/h4&gt;
+&lt;p&gt;It just set the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RenderTexture&lt;/code&gt; of the current target camera.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8soundcs-monobehaviour-isound&quot;&gt;Chip8Sound.cs MonoBehaviour (ISound)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt; implementation.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-200-7b130dbfe.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-400-7b130dbfe.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-529-7b130dbfe.webp 529w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-200-7b130dbfe.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-400-7b130dbfe.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-529-7b130dbfe.png 529w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-529-7b130dbfe.png&quot; alt=&quot;post image&quot; width=&quot;529&quot; height=&quot;70&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;awake-method&quot;&gt;Awake method&lt;/h4&gt;
+&lt;p&gt;We just try to locate our &lt;a href=&quot;https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html&quot;&gt;AudioSource&lt;/a&gt; component that will be used to play the sound.&lt;/p&gt;
+
+&lt;h4 id=&quot;play-method&quot;&gt;Play method&lt;/h4&gt;
+&lt;p&gt;This is the only method we need to implement of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt; interface and it just calls the AudioSource’s &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/AudioSource.PlayOneShot.html&quot;&gt;PlayOneShot&lt;/a&gt; using the &lt;a href=&quot;https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioClip.html&quot;&gt;AudioClip&lt;/a&gt; defined on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_beep&lt;/code&gt; field.&lt;/p&gt;
+
+&lt;h2 id=&quot;keyboardchip8inputcs-monobehaviour-iinput&quot;&gt;KeyboardChip8Input.cs MonoBehaviour (IInput)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt; implementation for the keyboard.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-200-5789d9288.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-400-5789d9288.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-527-5789d9288.webp 527w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-200-5789d9288.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-400-5789d9288.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-527-5789d9288.png 527w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-527-5789d9288.png&quot; alt=&quot;post image&quot; width=&quot;527&quot; height=&quot;53&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;key-mapping&quot;&gt;Key mapping&lt;/h4&gt;
+&lt;p&gt;First, we create the dictionary &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_map&lt;/code&gt; to map the real keyboard keys to CHIP-8 keypad keys.&lt;/p&gt;
+
+&lt;h4 id=&quot;updatekeys-method&quot;&gt;UpdateKeys method&lt;/h4&gt;
+&lt;p&gt;The only method we need to implement for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt; interface. 
+In this method, we set to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; the CHIP-8’s keypad keys that were pressed by the player using the &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Input.GetKey.html&quot;&gt;Input.GetKey&lt;/a&gt; method.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8logcs-monobehaviour-ilog&quot;&gt;Chip8Log.cs MonoBehaviour (ILog)&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; implementation.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-200-9c411a016.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-400-9c411a016.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-521-9c411a016.webp 521w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-200-9c411a016.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-400-9c411a016.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-521-9c411a016.png 521w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-521-9c411a016.png&quot; alt=&quot;post image&quot; width=&quot;521&quot; height=&quot;62&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;debug-and-error-methods&quot;&gt;Debug and Error methods&lt;/h4&gt;
+&lt;p&gt;The two methods implemented for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; interface use methods available on Unity &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Debug.html&quot;&gt;Debug&lt;/a&gt; class to send log messages to the &lt;a href=&quot;https://docs.unity3d.com/Manual/Console.html&quot;&gt;console window&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;chip8loadercs&quot;&gt;Chip8Loader.cs&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;This is a simplified version of the component responsible to load all systems (IGraphic, ISound, IInput, and ILog), initialize the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8&lt;/code&gt; class emulator, and load the ROM.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-200-a9c0f3f99.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-400-a9c0f3f99.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-529-a9c0f3f99.webp 529w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-200-a9c0f3f99.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-400-a9c0f3f99.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-529-a9c0f3f99.png 529w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-529-a9c0f3f99.png&quot; alt=&quot;post image&quot; width=&quot;529&quot; height=&quot;191&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h4 id=&quot;start-method&quot;&gt;Start method&lt;/h4&gt;
+&lt;p&gt;Verifies if all the systems needed to run the emulator were configured in the editor, then &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html&quot;&gt;sets the desired FPS&lt;/a&gt; and starts to run the emulator.&lt;/p&gt;
+
+&lt;h4 id=&quot;run-and-restart-methods&quot;&gt;Run and Restart methods&lt;/h4&gt;
+&lt;p&gt;These two methods have some overloads, but in the end, they will create a new instance of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Arc8.Chip8&lt;/code&gt; class using the systems defined and will load the ROM.&lt;/p&gt;
+
+&lt;h4 id=&quot;lateupdate-method&quot;&gt;LateUpdate method&lt;/h4&gt;
+&lt;p&gt;We use the &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/MonoBehaviour.LateUpdate.html&quot;&gt;LateUpdate&lt;/a&gt; method from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MonoBehaviour&lt;/code&gt; to run the emulator &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EmulateCycle&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;LateUpdate is called every frame after all Update functions have been called.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;In the next &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog&lt;/a&gt; I will talk about how I put a &lt;a href=&quot;https://www.reddit.com/r/Unity3D/comments/ip507l/space_invaders_inside_the_unity_inspector_window/&quot;&gt;CHIP-8 emulator to run inside the Unity editor inspector window&lt;/a&gt;.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/04/arc-8-devlog-3/arc-8-running-chip-8-emulator-inside-unity-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;p&gt;If you have any doubts about what I talk about above or any tip about the CHIP-8 emulator (or Unity) and you like to share it, please let me know in the comments section below.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://unity.com/learn/get-started&quot;&gt;Get started with Unity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/Manual/index.html&quot;&gt;Unity User Manual&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/Manual/class-MonoBehaviour.html&quot;&gt;MonoBehaviour&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gameprogrammingpatterns.com/double-buffer.html&quot;&gt;Double Buffer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/Manual/class-RenderTexture.html&quot;&gt;RenderTexture&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/2017.3/Documentation/ScriptReference/Camera.OnRenderObject.html&quot;&gt;OnRenderObject&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/ScriptReference/GL.html&quot;&gt;GL (Low-level graphics library)&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html&quot;&gt;AudioSource&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioClip.html&quot;&gt;AudioClip&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/Manual/class-InputManager.html&quot;&gt;Input Manager&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Debug.html&quot;&gt;Debug&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/Manual/Console.html&quot;&gt;Console Window&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html&quot;&gt;TargetFrameRate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Labs" /><category term="devlog" /><category term="dotnet" /><category term="blazor" /><category term="unity3d" /><category term="gamedev" /><category term="emulator" /><category term="arc8" /><category term="arc8-devlog" /><summary type="html">Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.</summary></entry><entry><title type="html">unitytips&amp;amp;colon; Scene Selection Toolbar</title><link href="http://diegogiacomelli.com.br/unitytips-scene-selection-toolbar/" rel="alternate" type="text/html" title="unitytips&amp;amp;colon; Scene Selection Toolbar" /><published>2020-11-03T00:00:00-03:00</published><updated>2020-11-03T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unitytips-scene-selection-toolbar</id><content type="html" xml:base="http://diegogiacomelli.com.br/unitytips-scene-selection-toolbar/">&lt;p&gt;Using &lt;a href=&quot;https://github.com/marijnz/unity-toolbar-extender&quot;&gt;Unity Toolbar Extender&lt;/a&gt; by &lt;a href=&quot;https://github.com/marijnz&quot;&gt;Marijn Zwemmer’s&lt;/a&gt; and &lt;a href=&quot;https://github.com/OndrejPetrzilka&quot;&gt;Ondrej Petrzilka’s&lt;/a&gt; you can easily add buttons side by side of play/pause/step buttons on the Unity editor toolbar.&lt;/p&gt;
 
 &lt;h2 id=&quot;scene-selection-toolbar&quot;&gt;Scene Selection Toolbar&lt;/h2&gt;
 &lt;p&gt;I created a gist, called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scene Selection Toolbar&lt;/code&gt;, that uses the &lt;a href=&quot;https://github.com/marijnz/unity-toolbar-extender&quot;&gt;Unity Toolbar Extender&lt;/a&gt; and allows us to have a dropdown with the most used scenes right on the side of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; button.&lt;/p&gt;
@@ -31,7 +269,7 @@
 
 &lt;p&gt;In this post, I will talk about &lt;strong&gt;how I implemented the graphics, sound, input, and log systems for Blazor&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;You can read the others &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8’s devlog posts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can read the other &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8’s devlog posts&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;The source code is not yet published on GitHub, I will notify in this series of posts about ARC-8 devlog and on my &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt; too when this happens.&lt;/p&gt;
 &lt;/div&gt;
@@ -241,6 +479,8 @@ We implement a &lt;a href=&quot;https://gameprogrammingpatterns.com/game-loop.ht
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="Labs" /><category term="devlog" /><category term="dotnet" /><category term="blazor" /><category term="unity3d" /><category term="gamedev" /><category term="emulator" /><category term="arc8" /><category term="arc8-devlog" /><summary type="html">Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.</summary></entry><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;1 - Core and code design</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-1/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;1 - Core and code design" /><published>2020-10-28T00:00:00-03:00</published><updated>2020-10-28T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-1</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-1/">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
 
 &lt;p&gt;In this post, I will talk about &lt;strong&gt;my premises for the ARC-8’s code design that guided me during its development&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can read the other &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8’s devlog posts&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;The source code is not yet published on GitHub, I will notify in this series of posts about ARC-8 devlog and on my &lt;a href=&quot;https://twitter.com/ogiacomelli&quot;&gt;Twitter&lt;/a&gt; too when this happens.&lt;/p&gt;
 &lt;/div&gt;
