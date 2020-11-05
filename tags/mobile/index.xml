@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - mobile</title>
  <link href="//tags/mobile/index.xml" rel="self"/>
  <link href="/tag/mobile.html"/>
- <updated>2020-11-04T15:19:57-03:00</updated>
+ <updated>2020-11-05T10:36:00-03:00</updated>
  <id>/tag/mobile.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,7 +16,7 @@
    <id>//gamedev-utility-belt-unity-native-share-plugin</id>
    <content type="html">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/gamedev-utility-belt/&quot;&gt;series of posts&lt;/a&gt; about some game development resources that are part of my gamedev utility belt and that helps me on my game projects.&lt;/p&gt;
 
-&lt;p&gt;For this first post the choose one is the &lt;strong&gt;&lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare&quot;&gt;Unity Native Share Plugin&lt;/a&gt;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/yasirkula&quot;&gt;Süleyman Yasir KULA&lt;/a&gt; that I used on my latest mobile game &lt;a href=&quot;http://diegogiacomelli.com.br/games/puzzimals&quot;&gt;Puzzimals&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For this first post, the chosen one is the &lt;strong&gt;&lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare&quot;&gt;Unity Native Share Plugin&lt;/a&gt;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/yasirkula&quot;&gt;Süleyman Yasir KULA&lt;/a&gt; that I used on my latest mobile game &lt;a href=&quot;http://diegogiacomelli.com.br/games/puzzimals&quot;&gt;Puzzimals&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Unity Native Share Plugin is:&lt;/p&gt;

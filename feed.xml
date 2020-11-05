@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-11-04T15:19:57-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;3 - Unity</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-3/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;3 - Unity" /><published>2020-11-04T00:00:00-03:00</published><updated>2020-11-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-3</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-3/">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2020-11-05T10:36:00-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Gamedev Utility Belt&amp;amp;colon; Graphy</title><link href="http://diegogiacomelli.com.br/gamedev-utility-belt-graphy/" rel="alternate" type="text/html" title="Gamedev Utility Belt&amp;amp;colon; Graphy" /><published>2020-11-05T00:00:00-03:00</published><updated>2020-11-05T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/gamedev-utility-belt-graphy</id><content type="html" xml:base="http://diegogiacomelli.com.br/gamedev-utility-belt-graphy/">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/gamedev-utility-belt/&quot;&gt;series of posts&lt;/a&gt; about some game development resources that are part of my gamedev utility belt and that helps me on my game projects.&lt;/p&gt;
+
+&lt;p&gt;For this second post, the chosen one is the &lt;strong&gt;&lt;a href=&quot;https://github.com/Tayx94/graphy&quot;&gt;Graphy&lt;/a&gt;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/martinTayx&quot;&gt;Martín Pane&lt;/a&gt; that I used in a lot of my Unity projects.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Graphy is:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;a feature packed FPS Counter, stats monitor and debugger&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;My main use for it was to monitor the FPS of my mobile games, but Graphy has many other features:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;With this tool you will be able to visualize and catch when your game has some unexpected hiccup or stutter, and act accordingly!&lt;/p&gt;
+
+  &lt;p&gt;The debugger allows you to set one or more conditions, that if met will have the consequences you desire, such as taking a screenshot, pausing the editor, printing a message to the console and more! Even call a method from your own code if you want!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;You can follow the instructions on the plugin GitHub repository: &lt;a href=&quot;https://github.com/Tayx94/graphy#installation&quot;&gt;https://github.com/Tayx94/graphy&lt;/a&gt; to install it:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using the OpenUPM&lt;/li&gt;
+  &lt;li&gt;Via Package Manager&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Just drag the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[Graphy]&lt;/code&gt; prefab from folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/Taxy/Graphy - Ultimate Stats Monitor&lt;/code&gt; to your scene and Play the scene to see it in action.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/05/gamedev-utility-belt-graphy/graphy-puzzimals-sample.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;</content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="open-source" /><category term="gamedev" /><category term="performance" /><category term="gamedev-utility-belt" /><summary type="html">I decided to start a series of posts about some game development resources that are part of my gamedev utility belt and that helps me on my game projects.</summary></entry><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;3 - Unity</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-3/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;3 - Unity" /><published>2020-11-04T00:00:00-03:00</published><updated>2020-11-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-3</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-3/">&lt;p&gt;Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.&lt;/p&gt;
 
 &lt;p&gt;In this post, I will talk about &lt;strong&gt;how I implemented the graphics, sound, input, and log systems for Unity 3D&lt;/strong&gt;.&lt;/p&gt;
 
@@ -717,7 +747,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
   &lt;li&gt;Async tasks often allocate objects when invoked, which might cause performance issues if you overuse them.&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="gamedev" /><category term="dotnet" /><category term="infographic" /><summary type="html">Unity Official documentation has an amazing page called Overview of .NET in Unity that highlight 8 points about the usage o .NET in Unity.</summary></entry><entry><title type="html">Gamedev Utility Belt&amp;amp;colon; Unity Native Share Plugin</title><link href="http://diegogiacomelli.com.br/gamedev-utility-belt-unity-native-share-plugin/" rel="alternate" type="text/html" title="Gamedev Utility Belt&amp;amp;colon; Unity Native Share Plugin" /><published>2020-10-23T00:00:00-03:00</published><updated>2020-10-23T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/gamedev-utility-belt-unity-native-share-plugin</id><content type="html" xml:base="http://diegogiacomelli.com.br/gamedev-utility-belt-unity-native-share-plugin/">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/gamedev-utility-belt/&quot;&gt;series of posts&lt;/a&gt; about some game development resources that are part of my gamedev utility belt and that helps me on my game projects.&lt;/p&gt;
 
-&lt;p&gt;For this first post the choose one is the &lt;strong&gt;&lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare&quot;&gt;Unity Native Share Plugin&lt;/a&gt;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/yasirkula&quot;&gt;Süleyman Yasir KULA&lt;/a&gt; that I used on my latest mobile game &lt;a href=&quot;http://diegogiacomelli.com.br/games/puzzimals&quot;&gt;Puzzimals&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For this first post, the chosen one is the &lt;strong&gt;&lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare&quot;&gt;Unity Native Share Plugin&lt;/a&gt;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/yasirkula&quot;&gt;Süleyman Yasir KULA&lt;/a&gt; that I used on my latest mobile game &lt;a href=&quot;http://diegogiacomelli.com.br/games/puzzimals&quot;&gt;Puzzimals&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Unity Native Share Plugin is:&lt;/p&gt;

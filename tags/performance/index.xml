@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - performance</title>
+ <link href="//tags/performance/index.xml" rel="self"/>
+ <link href="/tag/performance.html"/>
+ <updated>2020-11-05T10:36:00-03:00</updated>
+ <id>/tag/performance.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Gamedev Utility Belt&colon; Graphy</title>
+   <link href="//gamedev-utility-belt-graphy/"/>
+   <updated>2020-11-05T00:00:00-03:00</updated>
+   <id>//gamedev-utility-belt-graphy</id>
+   <content type="html">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/gamedev-utility-belt/&quot;&gt;series of posts&lt;/a&gt; about some game development resources that are part of my gamedev utility belt and that helps me on my game projects.&lt;/p&gt;
+
+&lt;p&gt;For this second post, the chosen one is the &lt;strong&gt;&lt;a href=&quot;https://github.com/Tayx94/graphy&quot;&gt;Graphy&lt;/a&gt;&lt;/strong&gt; by &lt;a href=&quot;https://twitter.com/martinTayx&quot;&gt;Martín Pane&lt;/a&gt; that I used in a lot of my Unity projects.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Graphy is:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;a feature packed FPS Counter, stats monitor and debugger&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;My main use for it was to monitor the FPS of my mobile games, but Graphy has many other features:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;With this tool you will be able to visualize and catch when your game has some unexpected hiccup or stutter, and act accordingly!&lt;/p&gt;
+
+  &lt;p&gt;The debugger allows you to set one or more conditions, that if met will have the consequences you desire, such as taking a screenshot, pausing the editor, printing a message to the console and more! Even call a method from your own code if you want!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;You can follow the instructions on the plugin GitHub repository: &lt;a href=&quot;https://github.com/Tayx94/graphy#installation&quot;&gt;https://github.com/Tayx94/graphy&lt;/a&gt; to install it:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using the OpenUPM&lt;/li&gt;
+  &lt;li&gt;Via Package Manager&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Just drag the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[Graphy]&lt;/code&gt; prefab from folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/Taxy/Graphy - Ultimate Stats Monitor&lt;/code&gt; to your scene and Play the scene to see it in action.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/05/gamedev-utility-belt-graphy/graphy-puzzimals-sample.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+</content>
+ </entry>
+ 
+</feed>
