@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2020-11-11T08:02:56-03:00</updated>
+ <updated>2020-11-11T08:17:53-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -28,7 +28,7 @@
 &lt;/div&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Just for fun, I wanted to run the graphics of the emulator inside the Unity Editor Inspector Window. Maybe, you can ask “why?”, well there is an inside joke among Unity developers where we try to play not expected things inside the inspector window, as you can see in the links below:&lt;/p&gt;
+&lt;p&gt;I wanted to run the graphics of the emulator inside the Unity Editor Inspector Window. Maybe, you can ask “why?”, well there is an inside joke among Unity developers where we try to play not expected things inside the inspector window, as you can see in the links below:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://twitter.com/DJ_Link/status/1134489432130818048&quot;&gt;https://twitter.com/DJ_Link/status/1134489432130818048&lt;/a&gt;&lt;/li&gt;
