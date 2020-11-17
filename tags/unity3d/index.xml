@@ -3,11 +3,56 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-11-11T10:02:06-03:00</updated>
+ <updated>2020-11-17T06:10:52-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Switch Expressions</title>
+   <link href="//unitytips-switch-expressions/"/>
+   <updated>2020-11-17T00:00:00-03:00</updated>
+   <id>//unitytips-switch-expressions</id>
+   <content type="html">&lt;p&gt;Unity started to supporting C# 8.0 with version &lt;a href=&quot;https://unity3d.com/beta/2020.2b&quot;&gt;2020.2 beta&lt;/a&gt; and now we can start to use some new features like the &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression&quot;&gt;Switch Expression&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-200-2b7005bc2.webp 200w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-400-2b7005bc2.webp 400w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-800-2b7005bc2.webp 800w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-1205-2b7005bc2.webp 1205w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-200-2b7005bc2.png 200w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-400-2b7005bc2.png 400w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-800-2b7005bc2.png 800w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-1205-2b7005bc2.png 1205w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-800-2b7005bc2.png&quot; alt=&quot;post image&quot; width=&quot;1205&quot; height=&quot;302&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Switch Expressions&lt;/code&gt; can dramatically simplify and reduce the &lt;a href=&quot;https://en.wikipedia.org/wiki/Source_lines_of_code&quot;&gt;LOC (Lines Of Code)&lt;/a&gt; to make a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The switch expression provides for switch-like semantics in an expression context. It provides a concise syntax when the switch arms produce a value.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Often, a switch statement produces a value in each of its case blocks. Switch expressions enable you to use more concise expression syntax. There are fewer repetitive case and break keywords, and fewer curly braces.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;sample&quot;&gt;Sample&lt;/h2&gt;
+&lt;h3 id=&quot;classic-switch&quot;&gt;Classic switch&lt;/h3&gt;
+&lt;p&gt;In the code below we have a classic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt; statement:
+&lt;script src=&quot;https://gist.github.com/da466c32c17301008cafc8a1bb65f13c.js?file=classic.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;switch-expression&quot;&gt;Switch expression&lt;/h3&gt;
+&lt;p&gt;And we can &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reduce 7 lines of code&lt;/code&gt; of this simple switch statement using a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch expression&lt;/code&gt;:
+&lt;script src=&quot;https://gist.github.com/da466c32c17301008cafc8a1bb65f13c.js?file=switch-expression.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;visual-studio-tip&quot;&gt;Visual Studio tip&lt;/h2&gt;
+&lt;p&gt;If you are using Visual Studio, there is a  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Quick action&lt;/code&gt; (CTRL + .) to convert from a classic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt; to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch expression&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>ARC-8&colon; devlog &num;4 - CHIP-8 inside Unity Inspector</title>
