@@ -3,18 +3,42 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-11-17T06:10:52-03:00</updated>
+ <updated>2020-11-24T05:31:20-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
  
  <entry>
+   <title>unitytips&colon; Property Patterns</title>
+   <link href="//unitytips-property-patterns/"/>
+   <updated>2020-11-24T00:00:00-03:00</updated>
+   <id>//unitytips-property-patterns</id>
+   <content type="html">&lt;p&gt;Unity started to supporting C# 8.0 with version &lt;a href=&quot;https://unity3d.com/beta/2020.2b&quot;&gt;2020.2 beta&lt;/a&gt; and now we can start to use some &lt;a href=&quot;/tags/csharp-8-new-features&quot;&gt;new features&lt;/a&gt; like the &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#property-patterns&quot;&gt;Property Pattern&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/24/unitytips-property-patterns/unitytips-property-patterns.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Property Patterns&lt;/code&gt; enables you to match on properties of the object examined in a &lt;a href=&quot;/unitytips-switch-expressions&quot;&gt;Switch Expressions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The switch expression provides for switch-like semantics in an expression context. It provides a concise syntax when the switch arms produce a value.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;sample&quot;&gt;Sample&lt;/h2&gt;
+&lt;p&gt;In this sample, we will calculate the damage that an NPC can cause taking into account if it is an enemy, and if it is armed.
+&lt;script src=&quot;https://gist.github.com/44acd57a97fdef861787037b96167a74.js?file=property-pattern.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>unitytips&colon; Switch Expressions</title>
    <link href="//unitytips-switch-expressions/"/>
    <updated>2020-11-17T00:00:00-03:00</updated>
    <id>//unitytips-switch-expressions</id>
-   <content type="html">&lt;p&gt;Unity started to supporting C# 8.0 with version &lt;a href=&quot;https://unity3d.com/beta/2020.2b&quot;&gt;2020.2 beta&lt;/a&gt; and now we can start to use some new features like the &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression&quot;&gt;Switch Expression&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Unity started to supporting C# 8.0 with version &lt;a href=&quot;https://unity3d.com/beta/2020.2b&quot;&gt;2020.2 beta&lt;/a&gt; and now we can start to use some &lt;a href=&quot;/tags/csharp-8-new-features&quot;&gt;new features&lt;/a&gt; like the &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression&quot;&gt;Switch Expression&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;                
         &lt;picture&gt;
