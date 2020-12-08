@@ -3,11 +3,54 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-12-01T05:56:14-03:00</updated>
+ <updated>2020-12-08T07:02:03-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>unitytips&colon; Editor internal menus</title>
+   <link href="//unitytips-editor-internal-menus/"/>
+   <updated>2020-12-08T00:00:00-03:00</updated>
+   <id>//unitytips-editor-internal-menus</id>
+   <content type="html">&lt;p&gt;Unity Editor has a kind of an easter-egg where you can enable internal menus, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Project / Save As Template&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Screenshots&lt;/code&gt;, etc.&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/12/08/unitytips-editor-internal-menus/unity-editor-internal-menu.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Unity Editor internal menus&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;enabling-internal-menus&quot;&gt;Enabling internal menus&lt;/h1&gt;
+&lt;p&gt;To enable those menus, go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Help / About Unity&lt;/code&gt;, then type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt;, after that, you will see some new menus available on Unity Editor:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Project / Save As Template&lt;/li&gt;
+  &lt;li&gt;Packages / Reset Package Database&lt;/li&gt;
+  &lt;li&gt;Window / Internal
+    &lt;ul&gt;
+      &lt;li&gt;Undo&lt;/li&gt;
+      &lt;li&gt;Screenshot
+        &lt;ul&gt;
+          &lt;li&gt;Set Window Size&lt;/li&gt;
+          &lt;li&gt;Set Window Size Small&lt;/li&gt;
+          &lt;li&gt;Snap View&lt;/li&gt;
+          &lt;li&gt;Snap View Toolbar&lt;/li&gt;
+          &lt;li&gt;Snap View Extended Right&lt;/li&gt;
+          &lt;li&gt;Snap Component&lt;/li&gt;
+          &lt;li&gt;Snap Game View Component&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;disabling-internal-menus&quot;&gt;Disabling internal menus&lt;/h1&gt;
+&lt;p&gt;To disable the menus, go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Help / About Unity&lt;/code&gt;, then type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt; again.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>unitytips&colon; Tuple Patterns</title>
