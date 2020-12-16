@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2020-12-16T07:45:37-03:00</updated>
+ <updated>2020-12-16T07:55:14-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -14,8 +14,7 @@
    <link href="//unity-2020-2-whats/"/>
    <updated>2020-12-16T00:00:00-03:00</updated>
    <id>//unity-2020-2-whats</id>
-   <content type="html">
-&lt;h2 id=&quot;unity-20202&quot;&gt;Unity 2020.2&lt;/h2&gt;
+   <content type="html">&lt;h2 id=&quot;unity-20202&quot;&gt;Unity 2020.2&lt;/h2&gt;
 &lt;p&gt;The Unity 2020.2 was official release on &lt;a href=&quot;https://blogs.unity3d.com/2020/12/15/unity-2020-2-tech-stream-is-now-available-for-download/&quot;&gt;December 15, 2020&lt;/a&gt; with a lot of fixes, API changes, changes, improvements and features.
 You can find the new features directly on the Unity manual accessing this search: &lt;a href=&quot;https://docs.unity3d.com/2020.2/Documentation/Manual/30_search.html?q=newin20202&quot;&gt;newin20202&lt;/a&gt;.
 To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unity/whats-new/2020.2.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
