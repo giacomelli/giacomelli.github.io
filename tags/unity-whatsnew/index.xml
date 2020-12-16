@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - unity-whatsnew</title>
+ <link href="//tags/unity-whatsnew/index.xml" rel="self"/>
+ <link href="/tag/unity-whatsnew.html"/>
+ <updated>2020-12-16T07:45:37-03:00</updated>
+ <id>/tag/unity-whatsnew.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Unity 2020.2&colon; What's new</title>
+   <link href="//unity-2020-2-whats/"/>
+   <updated>2020-12-16T00:00:00-03:00</updated>
+   <id>//unity-2020-2-whats</id>
+   <content type="html">
+&lt;h2 id=&quot;unity-20202&quot;&gt;Unity 2020.2&lt;/h2&gt;
+&lt;p&gt;The Unity 2020.2 was official release on &lt;a href=&quot;https://blogs.unity3d.com/2020/12/15/unity-2020-2-tech-stream-is-now-available-for-download/&quot;&gt;December 15, 2020&lt;/a&gt; with a lot of fixes, API changes, changes, improvements and features.
+You can find the new features directly on the Unity manual accessing this search: &lt;a href=&quot;https://docs.unity3d.com/2020.2/Documentation/Manual/30_search.html?q=newin20202&quot;&gt;newin20202&lt;/a&gt;.
+To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unity/whats-new/2020.2.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;stats&quot;&gt;Stats&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixes: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;828&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;API Changes: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;128&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Changes: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;86&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Improvements: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;261&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Features: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;66&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/4r2thboZ_xY &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;my-feature-highlights&quot;&gt;My feature highlights&lt;/h2&gt;
+&lt;p&gt;Below are the features that most caught my attention and that I believe can positively impact my development workflow.&lt;/p&gt;
+
+&lt;h3 id=&quot;reorder-arrays-and-lists-in-the-inspector&quot;&gt;Reorder Arrays and Lists in the Inspector&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Arrays and Lists are now reorderable in the Inspector, and you can use the attribute [NonReorderable] to disable this function if you prefer&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/wYc1uevu73Q &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;root-namespace-in-asmdef-inspector&quot;&gt;Root namespace in asmdef inspector&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Root Namespace is now available as a new field in the asmdef inspector.
+The Root Namespace will be used to add the namespace when creating scripts in Unity and in Visual Studio and Rider.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/XTsy45o1OnE &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;c-80-support&quot;&gt;C# 8.0 support&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Supports all the newest C# 8 features and enhancements, except for default interface methods.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/12/16/unity-2020-2-whats/unitytips-tuple-patterns.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;You can learn more about C# 8 features in &lt;a href=&quot;/tags/csharp-8-new-features&quot;&gt;this posts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;roslyn-analyzers-support&quot;&gt;Roslyn analyzers support&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The compilation pipeline now supports Roslyn analyzers. This enables you to run C# code analyzers asynchronously in the background inside the Unity Editor without interrupting your iteration workflow. You can also run them synchronously from the command line.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Roslyn analyzers and ruleset files in Unity projects are powerful tools to help inspect your code for style, quality, and other issues. You can use existing analyzer libraries to inspect your code and write your own analyzers to promote the best practices or conventions within your organization.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/hbHyArijG3M &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;quick-search-20&quot;&gt;Quick Search 2.0&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Unity Quick Search is a handy package that enables you to search for anything in Unity. Quick Search 2.0 is now available and comes with more search tokens and the ability to provide contextual completion when typing queries. Scene searching is no longer limited to just the open Scene, but instead, it’s now possible to search through all the Scenes and Prefabs of your project at once.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/5xGLXxsm7QM &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;roslyn-reference-assemblies&quot;&gt;Roslyn Reference Assemblies&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Enables the Roslyn Reference Assemblies option by default when compiling C# scripts in the Editor, avoiding unnecessary recompiling of asmdef references. If you make changes that don’t involve code – for example, to materials, shaders or prefabs – the IL2CPP conversion from .NET assemblies to C++ will now be skipped entirely when building a player.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;These were the features that brought my attention to Unity 2020.2.&lt;br /&gt;
+What were the features that caught your attention?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Unity 2020.1&colon; What's new</title>
+   <link href="//unity-2020-1-whats-new/"/>
+   <updated>2020-09-04T00:00:00-03:00</updated>
+   <id>//unity-2020-1-whats-new</id>
+   <content type="html">
+&lt;h2 id=&quot;unity-20201&quot;&gt;Unity 2020.1&lt;/h2&gt;
+&lt;p&gt;The Unity 2020.1 was official release on &lt;a href=&quot;https://blogs.unity3d.com/2020/07/23/unity-2020-1-is-now-available/&quot;&gt;July 23, 2020&lt;/a&gt; with a lot of fixes, API changes, changes, improvements and features.
+You can find the new features directly on the Unity manual accessing this search: &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/30_search.html?q=newin20201&quot;&gt;newin20201&lt;/a&gt;.
+To read all items, access the complete &lt;a href=&quot;https://unity3d.com/unity/whats-new/2020.1.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;stats&quot;&gt;Stats&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixes: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;805&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;API Changes: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;79&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Changes: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;70&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Improvements: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;215&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Features: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;74&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/yYjqJvd8lQI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;my-feature-highlights&quot;&gt;My feature highlights&lt;/h2&gt;
+&lt;p&gt;Below are the features that most caught my attention and that I believe can positively impact my development workflow.&lt;/p&gt;
+
+&lt;h3 id=&quot;focused-inspector&quot;&gt;Focused Inspector&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Editor: Add focused Inspector, a property editor to inspect single object.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is something I have been looking for for a while, an inspector editor for a specific item in the hierarchy.
+Unity went further, allowing an editor focused on a component too.&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h4 id=&quot;for-gameobjects-and-project-assets&quot;&gt;For GameObjects and Project Assets&lt;/h4&gt;
+&lt;p&gt;Right-click a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hierarchy view&lt;/code&gt;, or an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Asset&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Project view&lt;/code&gt;.
+From the context menu, select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Properties&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, select the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Asset&lt;/code&gt; and do one of the following:&lt;br /&gt;
+From the main menu, select Assets &amp;gt; Properties.
+Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + P / Option + Shift + P&lt;/code&gt; shortcut.&lt;/p&gt;
+
+&lt;h4 id=&quot;for-components&quot;&gt;For components&lt;/h4&gt;
+&lt;p&gt;Inspect the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt; and locate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;component&lt;/code&gt; you want to open a focused Inspector for.&lt;br /&gt;
+From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;More items (⋮) menu&lt;/code&gt;, select Properties.&lt;/p&gt;
+
+&lt;p&gt;More details in the &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/InspectorFocused.html&quot;&gt;official documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;previewscenestage&quot;&gt;PreviewSceneStage&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Editor: Introduced PreviewSceneStage. Implement custom stages by inheriting from this class.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I found this interesting but did not found any good documentation on how to use it.&lt;/p&gt;
+
+&lt;h3 id=&quot;switch-between-debug-and-release-code-optimizations&quot;&gt;Switch between debug and release code optimizations&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Editor: Support to switch between debug and release code optimizations without restarting the Unity Editor improving Unity Editor performance when compiling in release.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-200-29e77de54.webp 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.webp 388w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-200-29e77de54.png 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.png 388w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.png&quot; alt=&quot;post image&quot; width=&quot;388&quot; height=&quot;149&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;lighting-settings-as-an-asset&quot;&gt;Lighting settings as an asset&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;GI: Added all lighting settings as an asset. This will allow the user to share them between scenes or switch them out in an easy way.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This can be quite useful when we need different lighting setups for different target platforms.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-200-198be746b.webp 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-400-198be746b.webp 400w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.webp 554w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-200-198be746b.png 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-400-198be746b.png 400w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.png 554w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.png&quot; alt=&quot;post image&quot; width=&quot;554&quot; height=&quot;638&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;graphics-getpixeldata-api-was-added&quot;&gt;Graphics: GetPixelData API was added&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Graphics: GetPixelData API was added to Texture2D, Texture3D, Texture2DArray, Cubemap and CubemapArray classes. It allows getting a pointer to the data of a particular mip level/array element in a Texture for reading/writing, and without creating any memory allocations (similar to Texture2D.GetRawTextureData).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;input-system-is-now-verified&quot;&gt;Input System is now verified&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Input: The Input System has moved out of preview.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/sQaF9_jd9k4 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h3 id=&quot;save-and-restore-particle-system-state-data&quot;&gt;Save and restore Particle System state data&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Particles: Abiltiy to save and restore Particle System state data, making it possible to save a snapshot of an entire Particle System at a point in time. A use case for this is for efficient rewind support, by saving periodic keyframes of the particle state, to avoid full resimulations.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It seems to be possible through methods &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.GetPlaybackState.html&quot;&gt;GetPlaybackState&lt;/a&gt; and &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/ScriptReference/ParticleSystem.SetPlaybackState.html&quot;&gt;SetPlaybackState&lt;/a&gt;, but they were already available in Unity 2019.4.&lt;/p&gt;
+
+&lt;h3 id=&quot;new-component-articulationbody&quot;&gt;New component ArticulationBody&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Physics: Add a new component ArticulationBody that helps to create articulations. An articulation is a set of bodies, some of which have their relative motion constrained. All bodies are organized in a logical tree, where parent-child relation expresses the constrained motion. Unlike regular Rigidbodies with Joints, articulations are solved with a different solver (Featherstone) in reduced coordinates which guarantees there will never be any stretch of locked degrees of freedom. Typical examples of articulations include robotic arms, ragdolls, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This blog post talks in more details this new physics component: &lt;a href=&quot;https://blogs.unity3d.com/2020/05/20/use-articulation-bodies-to-easily-prototype-industrial-designs-with-realistic-motion-and-behavior/&quot;&gt;Use articulation bodies to easily prototype industrial designs with realistic motion and behavior&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;new-shader-preprocessor&quot;&gt;New shader preprocessor&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Shaders: New shader preprocessor (experimental).&lt;/li&gt;
+    &lt;li&gt;Faster shader compilation.&lt;/li&gt;
+    &lt;li&gt;Accurate include dependency tracking.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;These were the features that brought my attention to Unity 2020.1.&lt;br /&gt;
+What were the features that caught your attention?&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>
