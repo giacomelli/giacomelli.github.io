@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: diegogiacomelli.com.br
+Token: 359f6573b77722a90c58f9493385076d58cfcb1ab5517ad3fd1a4efbd7000405
