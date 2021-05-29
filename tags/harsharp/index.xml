@@ -3,11 +3,39 @@
  <title>Diego Giacomelli - harsharp</title>
  <link href="//tags/harsharp/index.xml" rel="self"/>
  <link href="/tag/harsharp.html"/>
- <updated>2021-04-14T10:58:07-03:00</updated>
+ <updated>2021-05-29T10:18:27-03:00</updated>
  <id>/tag/harsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>WinForms sample for HarSharp</title>
+   <link href="//winforms-sample-for-harsharp/"/>
+   <updated>2019-10-29T00:00:00-03:00</updated>
+   <id>//winforms-sample-for-harsharp</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/AJ1000&quot;&gt;Ajay Tandon&lt;/a&gt; sent me a WinForms sample that he made using HarSharp.&lt;/p&gt;
+
+&lt;p&gt;The HTTP Archive (HAR) format as defined in the W3C Specification is an archival format for HTTP transactions that can be used by a web browser to export detailed performance data about web pages it loads.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/harsharp&quot;&gt;HarSharp&lt;/a&gt; is a small and easy-to-use library to parse HAR files to .NET objects that I created some years ago for .NET Framework, today I released the version 2.0.0 with support to .NET Core / .NET Standard.&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/10/29/winforms-sample-for-harsharp/har-file-analyzer-200-6befe6eac.webp 200w, /assets/images/generated/assets/2019/10/29/winforms-sample-for-harsharp/har-file-analyzer-400-6befe6eac.webp 400w, /assets/images/generated/assets/2019/10/29/winforms-sample-for-harsharp/har-file-analyzer-800-6befe6eac.webp 800w, /assets/images/generated/assets/2019/10/29/winforms-sample-for-harsharp/har-file-analyzer-1385-6befe6eac.webp 1385w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/10/29/winforms-sample-for-harsharp/har-file-analyzer-200-6befe6eac.png 200w, /assets/images/generated/assets/2019/10/29/winforms-sample-for-harsharp/har-file-analyzer-400-6befe6eac.png 400w, /assets/images/generated/assets/2019/10/29/winforms-sample-for-harsharp/har-file-analyzer-800-6befe6eac.png 800w, /assets/images/generated/assets/2019/10/29/winforms-sample-for-harsharp/har-file-analyzer-1385-6befe6eac.png 1385w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/10/29/winforms-sample-for-harsharp/har-file-analyzer-800-6befe6eac.png&quot; alt=&quot;post image&quot; width=&quot;1385&quot; height=&quot;788&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Har File Analyzer with a HAR file loaded&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;files&quot;&gt;Files&lt;/h1&gt;
+&lt;p&gt;If you want to use the the Har File Analyzer or want to know how to create a Win Forms app with HarSharp, you can download to full solution here: &lt;a href=&quot;/assets/2019/10/29/winforms-sample-for-harsharp/HarSharp_wingui.zip&quot;&gt;HarSharp_wingui.zip&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>HarSharp 2.0.0. - .NET Core</title>

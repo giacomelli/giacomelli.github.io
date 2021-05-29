@@ -28,6 +28,14 @@
     } ,
     
     {
+      "title"    : "WinForms sample for HarSharp",
+      "category" : "News",
+      "tags"     : "harsharp, dotnet, winforms",
+      "url"      : "/winforms-sample-for-harsharp/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "HarSharp 2.0.0. - .NET Core",
       "category" : "News",
       "tags"     : "harsharp, dotnet, release",
