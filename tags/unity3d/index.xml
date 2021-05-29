@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2021-05-29T10:18:27-03:00</updated>
+ <updated>2021-05-29T11:36:45-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -92,6 +92,29 @@ The Root Namespace will be used to add the namespace when creating scripts in Un
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;These were the features that brought my attention to Unity 2020.2.&lt;br /&gt;
 What were the features that caught your attention?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>unitytips&colon; Indices</title>
+   <link href="//unitytips-indices/"/>
+   <updated>2020-12-08T00:00:00-03:00</updated>
+   <id>//unitytips-indices</id>
+   <content type="html">&lt;p&gt;Unity started to supporting C# 8.0 with version &lt;a href=&quot;https://unity3d.com/beta/2020.2b&quot;&gt;2020.2 beta&lt;/a&gt; and now we can start to use some &lt;a href=&quot;/tags/csharp-8-new-features&quot;&gt;new features&lt;/a&gt; like the &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#indices-and-ranges&quot;&gt;Indices&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Indices provide a succinct syntax for accessing single elements in array/collection.&lt;/p&gt;
+
+&lt;p&gt;Consider the array below: 
+ &lt;script src=&quot;https://gist.github.com/ce61f91a53e1f1524905d93c5cac3301.js?file=Indices.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The 0 index is the same as sequence[0].&lt;/li&gt;
+  &lt;li&gt;The ^0 index is the same as sequence[sequence.Length].&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note that sequence[^0] does throw an exception, just as sequence[sequence.Length] does. For any number n, the index ^n is the same as sequence.Length - n.&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  
