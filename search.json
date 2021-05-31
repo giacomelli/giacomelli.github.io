@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "SqlAsFile",
+      "category" : "News",
+      "tags"     : "dotnet, database, sql, code generator, ado, dapper",
+      "url"      : "/sqlasfile/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "Unity 2020.2&amp;colon; What&#39;s new",
       "category" : "News",
       "tags"     : "unity3d, gamedev, unity whatsnew",

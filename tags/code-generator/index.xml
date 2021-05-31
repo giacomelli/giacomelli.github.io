@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - code-generator</title>
+ <link href="//tags/code-generator/index.xml" rel="self"/>
+ <link href="/tag/code-generator.html"/>
+ <updated>2021-05-31T08:30:15-03:00</updated>
+ <id>/tag/code-generator.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>SqlAsFile</title>
+   <link href="//sqlasfile/"/>
+   <updated>2021-05-31T00:00:00-03:00</updated>
+   <id>//sqlasfile</id>
+   <content type="html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;If you already worked in a project where the data access solution wore SQL commands, instead of some ORM solution, you probably saw some SQL commands inserted directly inside the C# code. I worked in projects with that approach too, but I saw a great &lt;strong&gt;problem with that: We were treating a complete language (SQL) as just a string inside our C# code. No intellisense, code completation, syntax validation, format, etc.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sometime ago, with that problem in mind, I created a small library to help us to use SQL commands in our project at that time. As we were using &lt;a href=&quot;https://github.com/DapperLib/Dapper&quot;&gt;Dapper&lt;/a&gt; as our facilitator to access the SQL Server database, we needed write SQL commands as our daily base activities.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;That library, called SqlAsFile, helped us to write SQL commands in separated .sql files and use them inside the C# as typed string property of a static class (using T4 generator). This allowed us to write SQL with the whole help of IDE and with no chance to reference a invalid SQL file path.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Install the SqlAsFile on your Data project (where your .sql files will be created) using the Nuget package or using the source code from GitHub: &lt;a href=&quot;https://github.com/giacomelli/sqlasfile&quot;&gt;https://github.com/giacomelli/sqlasfile&lt;/a&gt;.
+&lt;script src=&quot;https://gist.github.com/4dda230a09941b6300468a71ee3812ab.js?file=install-package.sh&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Copy the &lt;a href=&quot;https://github.com/giacomelli/SqlAsFile/blob/master/src/Sample.Data/SqlInfoGenerator.tt&quot;&gt;SqlInfoGenerator.tt&lt;/a&gt; to your Data project.&lt;/li&gt;
+  &lt;li&gt;Change the namespace of line bellow to the namespace of your Data project.
+&lt;script src=&quot;https://gist.github.com/4dda230a09941b6300468a71ee3812ab.js?file=change-template.cs&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Add your .sql files inside any folder or subfolder of your Data project.&lt;/li&gt;
+  &lt;li&gt;The Build Action property of the .sql files should be changed to Embedded Resource.&lt;/li&gt;
+  &lt;li&gt;Run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SqlInfoGenerator.tt&lt;/code&gt; (right click, Run Custom Tool)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Now you can access the content of your .sql files in a strongly typed way directly from your C# code:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/4dda230a09941b6300468a71ee3812ab.js?file=usage.cs&quot;&gt; &lt;/script&gt;
+
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2021/05/31/sqlasfile/SqlAsFile-sample.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;tags&quot;&gt;Tags&lt;/h2&gt;
+&lt;p&gt;You can use some tags to tell to SqlAsFile’s parser how to treat a portion of the file:&lt;/p&gt;
+
+&lt;h3 id=&quot;test-args&quot;&gt;test-args&lt;/h3&gt;
+&lt;p&gt;Anything inside of these tags will be strip off of the SQL that you can access on C#.&lt;/p&gt;
+
+&lt;p&gt;This tag is useful when you want to test the .sql directly against the DB without need to define the arguments every time.
+&lt;script src=&quot;https://gist.github.com/4dda230a09941b6300468a71ee3812ab.js?file=test-args.sql&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;cte&quot;&gt;cte&lt;/h3&gt;
+&lt;p&gt;Use this tag if you want to read the CTE of your file in the Cte property on C#.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/4dda230a09941b6300468a71ee3812ab.js?file=cte.sql&quot;&gt; &lt;/script&gt;
+
+&lt;script&gt;
+        $(document).ready(function() {
+          $('.gist-meta').remove();
+        });
+      &lt;/script&gt;
+
+</content>
+ </entry>
+ 
+</feed>
