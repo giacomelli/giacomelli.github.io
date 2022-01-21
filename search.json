@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "Puzzimals on itch.io",
+      "category" : "News",
+      "tags"     : "puzzimals, unity3d, gamedev, games, itchio, webgl",
+      "url"      : "/puzzimals-on-itch-io/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "SqlAsFile",
       "category" : "News",
       "tags"     : "dotnet, database, sql, code generator, ado, dapper",
@@ -30,7 +38,7 @@
     {
       "title"    : "Puzzimals&amp;colon; Open beta",
       "category" : "News",
-      "tags"     : "unity3d, gamedev, games",
+      "tags"     : "puzzimals, unity3d, gamedev, games",
       "url"      : "/puzzimals-open-beta/",
       "author"   : ""
     } ,
@@ -338,7 +346,7 @@
     {
       "title"    : "Gamedev Utility Belt&amp;colon; Unity Native Share Plugin",
       "category" : "Article",
-      "tags"     : "unity3d, open source, gamedev, mobile, android, gamedev utility belt",
+      "tags"     : "puzzimals, unity3d, open source, gamedev, mobile, android, gamedev utility belt",
       "url"      : "/gamedev-utility-belt-unity-native-share-plugin/",
       "author"   : ""
     } ,
@@ -750,7 +758,7 @@
     {
       "title"    : "Unity Game Growth Program&amp;colon; Tips &amp; Tricks",
       "category" : "Tutorial",
-      "tags"     : "unity3d, gamedev, android, self publishing, unity game growth program",
+      "tags"     : "puzzimals, unity3d, gamedev, android, self publishing, unity game growth program",
       "url"      : "/unity-game-growth-program-tips-and-tricks/",
       "author"   : ""
     } ,
@@ -774,7 +782,7 @@
     {
       "title"    : "Unity Distribution Portal (UDP) Journey&amp;colon; Tips &amp; Tricks",
       "category" : "Tutorial",
-      "tags"     : "unity3d, gamedev, android, self publishing, udp",
+      "tags"     : "puzzimals, unity3d, gamedev, android, self publishing, udp",
       "url"      : "/unity-distribution-portal-udp-journey-tips-and-tricks/",
       "author"   : ""
     } ,

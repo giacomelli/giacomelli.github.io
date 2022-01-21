@@ -3,11 +3,34 @@
  <title>Diego Giacomelli - webgl</title>
  <link href="//tags/webgl/index.xml" rel="self"/>
  <link href="/tag/webgl.html"/>
- <updated>2021-10-02T11:26:16-03:00</updated>
+ <updated>2022-01-20T21:12:26-03:00</updated>
  <id>/tag/webgl.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Puzzimals on itch.io</title>
+   <link href="//puzzimals-on-itch-io/"/>
+   <updated>2022-01-20T00:00:00-03:00</updated>
+   <id>//puzzimals-on-itch-io</id>
+   <content type="html">&lt;p&gt;Now you can play my game &lt;a href=&quot;/games/puzzimals&quot;&gt;Puzzimals&lt;/a&gt; directly in the browser through itch.io: &lt;a href=&quot;https://giacomelli.itch.io/puzzimals&quot;&gt;https://giacomelli.itch.io/puzzimals&lt;/a&gt;&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/AKhcDVZgUAA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;what-is-puzzimals&quot;&gt;What is Puzzimals?&lt;/h2&gt;
+
+&lt;p&gt;Don’t let the cute look or super fun animations fool you, Puzzimals is a cube-matching game challenging you to match identical tiles in 100 levels of thought-provoking puzzles in a world map.&lt;/p&gt;
+
+&lt;p&gt;Packed with features and creative puzzles you can combine cubes of ice, wild cards, bombs and so much more!&lt;/p&gt;
+
+&lt;p&gt;Each level unlocks and increases in difficulty and offers an almost infinite number of combos.&lt;/p&gt;
+
+&lt;p&gt;Fans of casual puzzle games will enjoy the crisp, colorful graphics featuring cute animals and the compelling music offers great relaxation.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Triangle Classifier Made With Unity</title>
