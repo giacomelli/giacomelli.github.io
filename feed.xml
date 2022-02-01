@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-01-25T10:18:23-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Puzzimals on itch.io</title><link href="http://diegogiacomelli.com.br/puzzimals-on-itch-io/" rel="alternate" type="text/html" title="Puzzimals on itch.io" /><published>2022-01-20T00:00:00-03:00</published><updated>2022-01-20T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/puzzimals-on-itch-io</id><content type="html" xml:base="http://diegogiacomelli.com.br/puzzimals-on-itch-io/"><![CDATA[<p>Now you can play my game <a href="/games/puzzimals">Puzzimals</a> directly in the browser through itch.io: <a href="https://giacomelli.itch.io/puzzimals">https://giacomelli.itch.io/puzzimals</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-02-01T07:57:24-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Trijam 154 entry&amp;amp;colon; Who Kills Who?</title><link href="http://diegogiacomelli.com.br/trijam-154-entry-who-kills-who/" rel="alternate" type="text/html" title="Trijam 154 entry&amp;amp;colon; Who Kills Who?" /><published>2022-02-01T00:00:00-03:00</published><updated>2022-02-01T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/trijam-154-entry-who-kills-who</id><content type="html" xml:base="http://diegogiacomelli.com.br/trijam-154-entry-who-kills-who/"><![CDATA[<p>Last weekend I participated in <strong><a href="https://itch.io/jam/trijam-154">Trijam #154</a></strong>.</p>
+
+<blockquote>
+  <p>Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.</p>
+</blockquote>
+
+<h2 id="the-theme">The theme</h2>
+<p>The theme for this game jam was <strong>“There is a twist…!”</strong>.</p>
+
+<p>When you have just 3 hours to make a game, even a simple one, you will need to thinking about the idea and plan a lot before start.
+Besides, the theme “There is a twist…!” was a challenge one, at least to me. I took some time to realize a idea to develop.</p>
+
+<p>The final result is <strong>an Atari 2600 kind of game</strong>: <strong>Who Kills Who?</strong></p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-200-c5a45b8a1.webp 200w, /assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.webp 320w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-200-c5a45b8a1.png 200w, /assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.png 320w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.png" alt="post image" width="320" height="254" />
+</picture>
+
+      </center>
+<ul>
+  <li>There are 3 different elements in the screen: Red, Green and Blue.</li>
+  <li>In the start Red kills Green, Green kills Blue and Blue kills Red.</li>
+  <li>The player can make a twist (here came the theme) and change Who Kills Who, making Blue kills Green, Green Kills Red and Red kills Blue.</li>
+</ul>
+
+<h2 id="how-to-play">How to play</h2>
+<p>The game can be played directly on the browser here: <a href="https://giacomelli.itch.io/who-kills-who">https://giacomelli.itch.io/who-kills-who</a>.</p>
+
+<ul>
+  <li><strong>ENTER</strong>: to make a twist in Who Kills Who.</li>
+  <li><strong>SPACE</strong>: in the end screen to try again.</li>
+</ul>
+
+<center>
+        <iframe src="https://www.youtube.com/embed/dpIJgO2fWDc " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </center>
+
+<h2 id="how-to-vote">How to vote</h2>
+<p>If you liked the game, <strong>you can cast a vote</strong> for the game jam here: <a href="https://itch.io/jam/trijam-154/rate/1376314">https://itch.io/jam/trijam-154/rate/1376314</a>.</p>]]></content><author><name></name></author><category term="Article" /><category term="game-jam" /><category term="games" /><category term="made-with-unity" /><summary type="html"><![CDATA[Last weekend I participated in Trijam #154.]]></summary></entry><entry><title type="html">Puzzimals on itch.io</title><link href="http://diegogiacomelli.com.br/puzzimals-on-itch-io/" rel="alternate" type="text/html" title="Puzzimals on itch.io" /><published>2022-01-20T00:00:00-03:00</published><updated>2022-01-20T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/puzzimals-on-itch-io</id><content type="html" xml:base="http://diegogiacomelli.com.br/puzzimals-on-itch-io/"><![CDATA[<p>Now you can play my game <a href="/games/puzzimals">Puzzimals</a> directly in the browser through itch.io: <a href="https://giacomelli.itch.io/puzzimals">https://giacomelli.itch.io/puzzimals</a></p>
 
 <center>
         <iframe src="https://www.youtube.com/embed/AKhcDVZgUAA " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>

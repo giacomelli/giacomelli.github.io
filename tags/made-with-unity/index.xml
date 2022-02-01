@@ -3,11 +3,60 @@
  <title>Diego Giacomelli - made-with-unity</title>
  <link href="//tags/made-with-unity/index.xml" rel="self"/>
  <link href="/tag/made-with-unity.html"/>
- <updated>2022-01-25T10:18:23-03:00</updated>
+ <updated>2022-02-01T07:57:24-03:00</updated>
  <id>/tag/made-with-unity.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Trijam 154 entry&colon; Who Kills Who?</title>
+   <link href="//trijam-154-entry-who-kills-who/"/>
+   <updated>2022-02-01T00:00:00-03:00</updated>
+   <id>//trijam-154-entry-who-kills-who</id>
+   <content type="html">&lt;p&gt;Last weekend I participated in &lt;strong&gt;&lt;a href=&quot;https://itch.io/jam/trijam-154&quot;&gt;Trijam #154&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;the-theme&quot;&gt;The theme&lt;/h2&gt;
+&lt;p&gt;The theme for this game jam was &lt;strong&gt;“There is a twist…!”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;When you have just 3 hours to make a game, even a simple one, you will need to thinking about the idea and plan a lot before start.
+Besides, the theme “There is a twist…!” was a challenge one, at least to me. I took some time to realize a idea to develop.&lt;/p&gt;
+
+&lt;p&gt;The final result is &lt;strong&gt;an Atari 2600 kind of game&lt;/strong&gt;: &lt;strong&gt;Who Kills Who?&lt;/strong&gt;&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-200-c5a45b8a1.webp 200w, /assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.webp 320w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-200-c5a45b8a1.png 200w, /assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.png 320w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.png&quot; alt=&quot;post image&quot; width=&quot;320&quot; height=&quot;254&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;ul&gt;
+  &lt;li&gt;There are 3 different elements in the screen: Red, Green and Blue.&lt;/li&gt;
+  &lt;li&gt;In the start Red kills Green, Green kills Blue and Blue kills Red.&lt;/li&gt;
+  &lt;li&gt;The player can make a twist (here came the theme) and change Who Kills Who, making Blue kills Green, Green Kills Red and Red kills Blue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-play&quot;&gt;How to play&lt;/h2&gt;
+&lt;p&gt;The game can be played directly on the browser here: &lt;a href=&quot;https://giacomelli.itch.io/who-kills-who&quot;&gt;https://giacomelli.itch.io/who-kills-who&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ENTER&lt;/strong&gt;: to make a twist in Who Kills Who.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SPACE&lt;/strong&gt;: in the end screen to try again.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/dpIJgO2fWDc &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;how-to-vote&quot;&gt;How to vote&lt;/h2&gt;
+&lt;p&gt;If you liked the game, &lt;strong&gt;you can cast a vote&lt;/strong&gt; for the game jam here: &lt;a href=&quot;https://itch.io/jam/trijam-154/rate/1376314&quot;&gt;https://itch.io/jam/trijam-154/rate/1376314&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Kenney Jam 2020 entry&colon; Curseings</title>
