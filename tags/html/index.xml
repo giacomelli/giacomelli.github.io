@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - html</title>
  <link href="//tags/html/index.xml" rel="self"/>
  <link href="/tag/html.html"/>
- <updated>2022-04-19T14:57:00-03:00</updated>
+ <updated>2022-04-19T15:03:50-03:00</updated>
  <id>/tag/html.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -15,7 +15,7 @@
    <updated>2022-04-19T00:00:00-03:00</updated>
    <id>//html5-audio-tag-large-files-and-asp-dotnet</id>
    <content type="html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;If you tried to change the current playback position (currentTime) of large audio files using the HTML5 audio tag, even using the preload attribute, you probably struggled with the fact that the audios would never play at that position but would start playing again from the beginning of the audio.&lt;/p&gt;
+&lt;p&gt;If you have tried to change the current playback position (currentTime) of large audio files using the HTML5 audio tag, even using the preload attribute, you probably struggled with the fact that the audios would never play at that position but would start playing again from the beginning of the audio.&lt;/p&gt;
 
 &lt;p&gt;This happens because most browsers, Chrome included, request that the headers &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;accept-ranges&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;content-range&lt;/code&gt; should be in the audio file response.&lt;/p&gt;
 
