@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - asp-net</title>
+ <link href="//tags/asp-net/index.xml" rel="self"/>
+ <link href="/tag/asp-net.html"/>
+ <updated>2022-04-19T14:50:03-03:00</updated>
+ <id>/tag/asp-net.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>HTML5 audio tag, large files and ASP .NET</title>
+   <link href="//html5-audio-tag-large-files-and-asp-dotnet/"/>
+   <updated>2022-04-19T00:00:00-03:00</updated>
+   <id>//html5-audio-tag-large-files-and-asp-dotnet</id>
+   <content type="html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;If you tried to change the current playback position (currentTime) of large audio files using the HTML5 audio tag, even using the preload attribute, you probably struggled with the fact that the audios would never play at that position but would start playing again from the beginning of the audio.&lt;/p&gt;
+
+&lt;p&gt;This happens because most browsers, Chrome included, request that the headers &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;accept-ranges&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;content-range&lt;/code&gt; should be in the audio file response.&lt;/p&gt;
+
+&lt;h2 id=&quot;asp-net-solution&quot;&gt;ASP .NET solution&lt;/h2&gt;
+&lt;p&gt;If you are using ASP .NET, the easiest way to include those headers in the response is to use the third parameter of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Controller's File&lt;/code&gt; method:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/2e0a4ba574e8864d9e30fd6e641f628d.js?file=audio.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Then, the result response will have the needed headers that make browsers happy and allow you to change the audio’s playback position.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-200-c5c52e492.webp 200w, /assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-299-c5c52e492.webp 299w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-200-c5c52e492.png 200w, /assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-299-c5c52e492.png 299w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-299-c5c52e492.png&quot; alt=&quot;post image&quot; width=&quot;299&quot; height=&quot;111&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+</content>
+ </entry>
+ 
+</feed>
