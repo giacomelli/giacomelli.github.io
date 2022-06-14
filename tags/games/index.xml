@@ -3,11 +3,61 @@
  <title>Diego Giacomelli - games</title>
  <link href="//tags/games/index.xml" rel="self"/>
  <link href="/tag/games.html"/>
- <updated>2022-05-04T16:10:57-03:00</updated>
+ <updated>2022-06-14T10:02:40-03:00</updated>
  <id>/tag/games.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>NO MORE ROOM IN HELL released</title>
+   <link href="//no-more-room-in-hell-released/"/>
+   <updated>2022-06-14T00:00:00-03:00</updated>
+   <id>//no-more-room-in-hell-released</id>
+   <content type="html">&lt;p&gt;On June 14th I released my newest solo game called “NO MORE ROOM IN HELL”.&lt;/p&gt;
+
+&lt;p&gt;You can download it for Windows and macOS directly from its itch.io page: &lt;a href=&quot;https://giacomelli.itch.io/no - plus-room-in-hell&quot;&gt;https://giacomelli.itch.io/no-more-room-in-hell&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;A 2D top-down survival shooter game where you will be a rookie soldier in a secret government lab when a zombie apocalypse starts out of blue and now you need to find your way to the docks for a chance to be with your wife and son again.&lt;/p&gt;
+
+&lt;center&gt;&lt;video width=&quot;640&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;
+          &lt;source src=&quot;/assets/2022/06/14/no-more-room-in-hell-released/digging-your-way-out.mp4 &quot; type=&quot;video/mp4&quot; /&gt;
+          Your browser does not support the video tag.
+       &lt;/video&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;game-development&quot;&gt;Game development&lt;/h2&gt;
+&lt;p&gt;I started this side project game development in early 2021, but stopped and restarted again now and then while doing other things.
+The whole programming and Unity game development was made only by me.&lt;/p&gt;
+
+&lt;p&gt;I took a lot of features I wanted in this type of game and implemented them, like inventory management, lots of weapons, missions, and a backstory that you can try to discover as you play the game.&lt;/p&gt;
+
+&lt;p&gt;There are 7 weapons available: gun, double gun, shotgun, grenade launcher, mine launcher, ice caster and mine. Well, you can also drive a car and kill a lot of zombies while driving, so maybe there are 8 weapons available.&lt;/p&gt;
+
+&lt;p&gt;Another cool thing I developed for the game is that a lot of the environment can be blown up and destroyed, I used &lt;a href=&quot;https://www.youtube.com/watch?v=oKX5uiaXG0s&amp;amp;list= PLxgDXMPVF8JrqhM6v01wtUwPpMBDqdZn_&quot;&gt;my destructible sprite library&lt;/a&gt; for that.&lt;/p&gt;
+
+&lt;p&gt;I organized the game as a series, so the first 4 levels available are like the 4 episodes of season 1.&lt;/p&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;h4 id=&quot;sprites&quot;&gt;Sprites&lt;/h4&gt;
+&lt;p&gt;Almost all sprites used in the game are from &lt;a href=&quot;https://kenney.nl/&quot;&gt;Kenney&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;soundtrack&quot;&gt;Soundtrack&lt;/h4&gt;
+&lt;p&gt;The incredible soundtracks used in the game were created by Daniel HDR, a comic book artist, working on projects for DC Comics (Green Lantern Corps, Superman, Nightwing, Legion of Super-Heroes), Marvel Comics (Avengers, X-Men Forever, Falcon and Winter Soldier) and Dynamite Entertainment (The Shadow, Red Sonja, Kiss) Winner of the Dragon Awards as 2020’s “BEST GRAPHIC NOVEL” with Battlestar Galactica: Counterstrike.&lt;/p&gt;
+
+&lt;p&gt;Daniel HDR also has a sound side project called &lt;a href=&quot;https://open.spotify.com/artist/4i6kwo29VbAMwFIlkMOwSL&quot;&gt;D3FCON1&lt;/a&gt;. I had discovered D3FCON1 during the game’s development and thought that some of their music matched the mood of the game perfectly.&lt;/p&gt;
+
+&lt;p&gt;Daniel was very kind to give me permission to use the music in the game, as well as providing an art to be used as the cover of the game (as you can see at the top of this post)&lt;/p&gt;
+
+&lt;h4 id=&quot;sound-fx&quot;&gt;Sound FX&lt;/h4&gt;
+&lt;p&gt;The sound fx are from &lt;a href=&quot;https://www.gamemasteraudio.com&quot;&gt;Peter Wayne&lt;/a&gt; and his amazing sound effects packages on Unity Asset Store, called &lt;a href=&quot;https://assetstore.unity.com/publishers/16891&quot;&gt;Pro Sound Collection&lt;/a&gt;&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/QKbeli5Jn0I &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Trijam 154 entry&colon; Who Kills Who?</title>

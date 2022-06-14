@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-05-04T16:10:57-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">HTML5 audio tag, large files and ASP .NET</title><link href="http://diegogiacomelli.com.br/html5-audio-tag-large-files-and-asp-dotnet/" rel="alternate" type="text/html" title="HTML5 audio tag, large files and ASP .NET" /><published>2022-04-19T00:00:00-03:00</published><updated>2022-04-19T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/html5-audio-tag-large-files-and-asp-dotnet</id><content type="html" xml:base="http://diegogiacomelli.com.br/html5-audio-tag-large-files-and-asp-dotnet/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-06-14T10:02:40-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">NO MORE ROOM IN HELL released</title><link href="http://diegogiacomelli.com.br/no-more-room-in-hell-released/" rel="alternate" type="text/html" title="NO MORE ROOM IN HELL released" /><published>2022-06-14T00:00:00-03:00</published><updated>2022-06-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/no-more-room-in-hell-released</id><content type="html" xml:base="http://diegogiacomelli.com.br/no-more-room-in-hell-released/"><![CDATA[<p>On June 14th I released my newest solo game called “NO MORE ROOM IN HELL”.</p>
+
+<p>You can download it for Windows and macOS directly from its itch.io page: <a href="https://giacomelli.itch.io/no - plus-room-in-hell">https://giacomelli.itch.io/no-more-room-in-hell</a></p>
+
+<h2 id="what-is-it">What is it?</h2>
+<p>A 2D top-down survival shooter game where you will be a rookie soldier in a secret government lab when a zombie apocalypse starts out of blue and now you need to find your way to the docks for a chance to be with your wife and son again.</p>
+
+<center><video width="640" autoplay="" muted="" loop="">
+          <source src="/assets/2022/06/14/no-more-room-in-hell-released/digging-your-way-out.mp4 " type="video/mp4" />
+          Your browser does not support the video tag.
+       </video></center>
+
+<h2 id="game-development">Game development</h2>
+<p>I started this side project game development in early 2021, but stopped and restarted again now and then while doing other things.
+The whole programming and Unity game development was made only by me.</p>
+
+<p>I took a lot of features I wanted in this type of game and implemented them, like inventory management, lots of weapons, missions, and a backstory that you can try to discover as you play the game.</p>
+
+<p>There are 7 weapons available: gun, double gun, shotgun, grenade launcher, mine launcher, ice caster and mine. Well, you can also drive a car and kill a lot of zombies while driving, so maybe there are 8 weapons available.</p>
+
+<p>Another cool thing I developed for the game is that a lot of the environment can be blown up and destroyed, I used <a href="https://www.youtube.com/watch?v=oKX5uiaXG0s&amp;list= PLxgDXMPVF8JrqhM6v01wtUwPpMBDqdZn_">my destructible sprite library</a> for that.</p>
+
+<p>I organized the game as a series, so the first 4 levels available are like the 4 episodes of season 1.</p>
+
+<h2 id="credits">Credits</h2>
+
+<h4 id="sprites">Sprites</h4>
+<p>Almost all sprites used in the game are from <a href="https://kenney.nl/">Kenney</a>.</p>
+
+<h4 id="soundtrack">Soundtrack</h4>
+<p>The incredible soundtracks used in the game were created by Daniel HDR, a comic book artist, working on projects for DC Comics (Green Lantern Corps, Superman, Nightwing, Legion of Super-Heroes), Marvel Comics (Avengers, X-Men Forever, Falcon and Winter Soldier) and Dynamite Entertainment (The Shadow, Red Sonja, Kiss) Winner of the Dragon Awards as 2020’s “BEST GRAPHIC NOVEL” with Battlestar Galactica: Counterstrike.</p>
+
+<p>Daniel HDR also has a sound side project called <a href="https://open.spotify.com/artist/4i6kwo29VbAMwFIlkMOwSL">D3FCON1</a>. I had discovered D3FCON1 during the game’s development and thought that some of their music matched the mood of the game perfectly.</p>
+
+<p>Daniel was very kind to give me permission to use the music in the game, as well as providing an art to be used as the cover of the game (as you can see at the top of this post)</p>
+
+<h4 id="sound-fx">Sound FX</h4>
+<p>The sound fx are from <a href="https://www.gamemasteraudio.com">Peter Wayne</a> and his amazing sound effects packages on Unity Asset Store, called <a href="https://assetstore.unity.com/publishers/16891">Pro Sound Collection</a></p>
+
+<center>
+        <iframe src="https://www.youtube.com/embed/QKbeli5Jn0I " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </center>]]></content><author><name></name></author><category term="News" /><category term="nmrh" /><category term="unity3d" /><category term="gamedev" /><category term="games" /><category term="itchio" /><category term="mac" /><category term="win" /><summary type="html"><![CDATA[On June 14th I released my newest solo game called “NO MORE ROOM IN HELL”.]]></summary></entry><entry><title type="html">HTML5 audio tag, large files and ASP .NET</title><link href="http://diegogiacomelli.com.br/html5-audio-tag-large-files-and-asp-dotnet/" rel="alternate" type="text/html" title="HTML5 audio tag, large files and ASP .NET" /><published>2022-04-19T00:00:00-03:00</published><updated>2022-04-19T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/html5-audio-tag-large-files-and-asp-dotnet</id><content type="html" xml:base="http://diegogiacomelli.com.br/html5-audio-tag-large-files-and-asp-dotnet/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>If you have tried to change the current playback position (currentTime) of large audio files using the HTML5 audio tag, even using the preload attribute, you probably struggled with the fact that the audios would never play at that position but would start playing again from the beginning of the audio.</p>
 
 <p>This happens because most browsers, Chrome included, request that the headers <code class="language-plaintext highlighter-rouge">accept-ranges</code> and <code class="language-plaintext highlighter-rouge">content-range</code> should be in the audio file response.</p>
