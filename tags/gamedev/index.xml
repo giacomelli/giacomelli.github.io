@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2022-06-28T08:21:52-03:00</updated>
+ <updated>2022-07-01T22:23:20-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -562,7 +562,7 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Import the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Unity Toolbar Extender&lt;/code&gt; as described in the &lt;a href=&quot;https://github.com/marijnz/unity-toolbar-extender#importing&quot;&gt;Import section&lt;/a&gt; on GitHub.&lt;/li&gt;
-  &lt;li&gt;Then, just add it the gist below to any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder of your project or use the &lt;a href=&quot;http://localhost:4000/unitytips-gist-importer/&quot;&gt;Gist Importer&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Then, just add it the gist below to any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Editor&lt;/code&gt; folder of your project or use the &lt;a href=&quot;/unitytips-gist-importer&quot;&gt;Gist Importer&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script src=&quot;https://gist.github.com/4122c117c927d5c370dd562e619129e6.js?file=SceneSelectionToolbar.cs&quot;&gt; &lt;/script&gt;
