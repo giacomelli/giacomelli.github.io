@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - puzzimals</title>
  <link href="//tags/puzzimals/index.xml" rel="self"/>
  <link href="/tag/puzzimals.html"/>
- <updated>2022-07-01T22:23:20-03:00</updated>
+ <updated>2022-07-09T08:18:42-03:00</updated>
  <id>/tag/puzzimals.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -15,6 +15,11 @@
    <updated>2022-01-20T00:00:00-03:00</updated>
    <id>//puzzimals-on-itch-io</id>
    <content type="html">&lt;p&gt;Now you can play my game &lt;a href=&quot;/games/puzzimals&quot;&gt;Puzzimals&lt;/a&gt; directly in the browser through itch.io: &lt;a href=&quot;https://giacomelli.itch.io/puzzimals&quot;&gt;https://giacomelli.itch.io/puzzimals&lt;/a&gt;&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe class=&quot;itchio-iframe&quot; frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/1361011 &quot;&gt;         
+        &lt;/iframe&gt;
+       &lt;/center&gt;
 
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/AKhcDVZgUAA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;

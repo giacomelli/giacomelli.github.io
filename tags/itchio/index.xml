@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - itchio</title>
  <link href="//tags/itchio/index.xml" rel="self"/>
  <link href="/tag/itchio.html"/>
- <updated>2022-07-01T22:23:20-03:00</updated>
+ <updated>2022-07-09T08:18:42-03:00</updated>
  <id>/tag/itchio.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,7 +16,12 @@
    <id>//no-more-room-in-hell-released</id>
    <content type="html">&lt;p&gt;On June 14th I released my newest solo game called “NO MORE ROOM IN HELL”.&lt;/p&gt;
 
-&lt;p&gt;You can download it for Windows and macOS directly from its itch.io page: &lt;a href=&quot;https://giacomelli.itch.io/no-more-room-in-hell&quot;&gt;https://giacomelli.itch.io/no-more-room-in-hell&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can download it for Windows, MacOS, Linux or play directly on browser from its itch.io page: &lt;a href=&quot;https://giacomelli.itch.io/no-more-room-in-hell&quot;&gt;https://giacomelli.itch.io/no-more-room-in-hell&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe class=&quot;itchio-iframe&quot; frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/1573240 &quot;&gt;         
+        &lt;/iframe&gt;
+       &lt;/center&gt;
 
 &lt;h2 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h2&gt;
 &lt;p&gt;A 2D top-down survival shooter game where you will be a rookie soldier in a secret government lab when a zombie apocalypse starts out of blue and now you need to find your way to the docks for a chance to be with your wife and son again.&lt;/p&gt;
@@ -54,6 +59,10 @@ The whole programming and Unity game development was made only by me.&lt;/p&gt;
 &lt;p&gt;The sound fx are from &lt;a href=&quot;https://www.gamemasteraudio.com&quot;&gt;Peter Wayne&lt;/a&gt; and his amazing sound effects packages on Unity Asset Store, called &lt;a href=&quot;https://assetstore.unity.com/publishers/16891&quot;&gt;Pro Sound Collection&lt;/a&gt;&lt;/p&gt;
 
 &lt;center&gt;
+        &lt;iframe class=&quot;itchio-iframe&quot; frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/1573240 &quot;&gt;         
+        &lt;/iframe&gt;
+       &lt;/center&gt;
+&lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/QKbeli5Jn0I &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
       &lt;/center&gt;
 </content>
@@ -65,6 +74,11 @@ The whole programming and Unity game development was made only by me.&lt;/p&gt;
    <updated>2022-01-20T00:00:00-03:00</updated>
    <id>//puzzimals-on-itch-io</id>
    <content type="html">&lt;p&gt;Now you can play my game &lt;a href=&quot;/games/puzzimals&quot;&gt;Puzzimals&lt;/a&gt; directly in the browser through itch.io: &lt;a href=&quot;https://giacomelli.itch.io/puzzimals&quot;&gt;https://giacomelli.itch.io/puzzimals&lt;/a&gt;&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe class=&quot;itchio-iframe&quot; frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/1361011 &quot;&gt;         
+        &lt;/iframe&gt;
+       &lt;/center&gt;
 
 &lt;center&gt;
         &lt;iframe src=&quot;https://www.youtube.com/embed/AKhcDVZgUAA &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;

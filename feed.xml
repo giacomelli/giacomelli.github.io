@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-07-01T22:23:20-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">NO MORE ROOM IN HELL released</title><link href="http://diegogiacomelli.com.br/no-more-room-in-hell-released/" rel="alternate" type="text/html" title="NO MORE ROOM IN HELL released" /><published>2022-06-14T00:00:00-03:00</published><updated>2022-06-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/no-more-room-in-hell-released</id><content type="html" xml:base="http://diegogiacomelli.com.br/no-more-room-in-hell-released/"><![CDATA[<p>On June 14th I released my newest solo game called “NO MORE ROOM IN HELL”.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-07-09T08:18:42-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">NO MORE ROOM IN HELL released</title><link href="http://diegogiacomelli.com.br/no-more-room-in-hell-released/" rel="alternate" type="text/html" title="NO MORE ROOM IN HELL released" /><published>2022-06-14T00:00:00-03:00</published><updated>2022-06-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/no-more-room-in-hell-released</id><content type="html" xml:base="http://diegogiacomelli.com.br/no-more-room-in-hell-released/"><![CDATA[<p>On June 14th I released my newest solo game called “NO MORE ROOM IN HELL”.</p>
 
-<p>You can download it for Windows and macOS directly from its itch.io page: <a href="https://giacomelli.itch.io/no-more-room-in-hell">https://giacomelli.itch.io/no-more-room-in-hell</a></p>
+<p>You can download it for Windows, MacOS, Linux or play directly on browser from its itch.io page: <a href="https://giacomelli.itch.io/no-more-room-in-hell">https://giacomelli.itch.io/no-more-room-in-hell</a>.</p>
+
+<center>
+        <iframe class="itchio-iframe" frameborder="0" src="https://itch.io/embed/1573240 ">         
+        </iframe>
+       </center>
 
 <h2 id="what-is-it">What is it?</h2>
 <p>A 2D top-down survival shooter game where you will be a rookie soldier in a secret government lab when a zombie apocalypse starts out of blue and now you need to find your way to the docks for a chance to be with your wife and son again.</p>
@@ -38,6 +43,10 @@ The whole programming and Unity game development was made only by me.</p>
 <p>The sound fx are from <a href="https://www.gamemasteraudio.com">Peter Wayne</a> and his amazing sound effects packages on Unity Asset Store, called <a href="https://assetstore.unity.com/publishers/16891">Pro Sound Collection</a></p>
 
 <center>
+        <iframe class="itchio-iframe" frameborder="0" src="https://itch.io/embed/1573240 ">         
+        </iframe>
+       </center>
+<center>
         <iframe src="https://www.youtube.com/embed/QKbeli5Jn0I " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
       </center>]]></content><author><name></name></author><category term="News" /><category term="nmrh" /><category term="unity3d" /><category term="gamedev" /><category term="games" /><category term="itchio" /><category term="mac" /><category term="win" /><summary type="html"><![CDATA[On June 14th I released my newest solo game called “NO MORE ROOM IN HELL”.]]></summary></entry><entry><title type="html">HTML5 audio tag, large files and ASP .NET</title><link href="http://diegogiacomelli.com.br/html5-audio-tag-large-files-and-asp-dotnet/" rel="alternate" type="text/html" title="HTML5 audio tag, large files and ASP .NET" /><published>2022-04-19T00:00:00-03:00</published><updated>2022-04-19T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/html5-audio-tag-large-files-and-asp-dotnet</id><content type="html" xml:base="http://diegogiacomelli.com.br/html5-audio-tag-large-files-and-asp-dotnet/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>If you have tried to change the current playback position (currentTime) of large audio files using the HTML5 audio tag, even using the preload attribute, you probably struggled with the fact that the audios would never play at that position but would start playing again from the beginning of the audio.</p>
@@ -62,6 +71,11 @@ The whole programming and Unity game development was made only by me.</p>
 <blockquote>
   <p>Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.</p>
 </blockquote>
+
+<center>
+        <iframe class="itchio-iframe" frameborder="0" src="https://itch.io/embed/1376314 ">         
+        </iframe>
+       </center>
 
 <h2 id="the-theme">The theme</h2>
 <p>The theme for this game jam was <strong>“There is a twist…!”</strong>.</p>
@@ -98,6 +112,11 @@ Besides, the theme “There is a twist…!” was a challenge one, at least to m
 
 <h2 id="how-to-vote">How to vote</h2>
 <p>If you liked the game, <strong>you can cast a vote</strong> for the game jam here: <a href="https://itch.io/jam/trijam-154/rate/1376314">https://itch.io/jam/trijam-154/rate/1376314</a>.</p>]]></content><author><name></name></author><category term="Article" /><category term="game-jam" /><category term="games" /><category term="made-with-unity" /><summary type="html"><![CDATA[Last weekend I participated in Trijam #154.]]></summary></entry><entry><title type="html">Puzzimals on itch.io</title><link href="http://diegogiacomelli.com.br/puzzimals-on-itch-io/" rel="alternate" type="text/html" title="Puzzimals on itch.io" /><published>2022-01-20T00:00:00-03:00</published><updated>2022-01-20T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/puzzimals-on-itch-io</id><content type="html" xml:base="http://diegogiacomelli.com.br/puzzimals-on-itch-io/"><![CDATA[<p>Now you can play my game <a href="/games/puzzimals">Puzzimals</a> directly in the browser through itch.io: <a href="https://giacomelli.itch.io/puzzimals">https://giacomelli.itch.io/puzzimals</a></p>
+
+<center>
+        <iframe class="itchio-iframe" frameborder="0" src="https://itch.io/embed/1361011 ">         
+        </iframe>
+       </center>
 
 <center>
         <iframe src="https://www.youtube.com/embed/AKhcDVZgUAA " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
@@ -2390,6 +2409,11 @@ UDP will send to you an e-mail when the game is approved.</p>
   <li>Track game performance</li>
 </ul>]]></content><author><name></name></author><category term="Tutorial" /><category term="puzzimals" /><category term="unity3d" /><category term="gamedev" /><category term="android" /><category term="self-publishing" /><category term="udp" /><summary type="html"><![CDATA[In this post, I will list some tips and tricks that I learned in my journey using the Unity Distribution Portal (UDP) to publish my game Puzzimals to 4 new stores, reaching millions of new users, with a single build.]]></summary></entry><entry><title type="html">Kenney Jam 2020 entry&amp;amp;colon; Curseings</title><link href="http://diegogiacomelli.com.br/keeney-jam-2020-entry-curseings/" rel="alternate" type="text/html" title="Kenney Jam 2020 entry&amp;amp;colon; Curseings" /><published>2020-08-26T00:00:00-03:00</published><updated>2020-08-26T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/keeney-jam-2020-entry-curseings</id><content type="html" xml:base="http://diegogiacomelli.com.br/keeney-jam-2020-entry-curseings/"><![CDATA[<p>Last weekend I participated in <strong>Kenney Jam 2020</strong> (my first game jam).
 The experience was really good, when you have so strong boundaries to make a game, in this case, <strong>48 hours and just use assets from <a href="http://Kenney.nl/assets">Kenney</a></strong>, you need to turn your way of think and expectations to a very specific and clear objective: release a fun and playable game the target just the core mechanics.</p>
+
+<center>
+        <iframe class="itchio-iframe" frameborder="0" src="https://itch.io/embed/737655 ">         
+        </iframe>
+       </center>
 
 <h2 id="the-theme">The theme</h2>
 <p>The theme for this game jam was <strong>“Cursed”</strong>.
