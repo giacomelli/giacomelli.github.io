@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - geneticsharp-in-the-wild</title>
  <link href="//tags/geneticsharp-in-the-wild/index.xml" rel="self"/>
  <link href="/tag/geneticsharp-in-the-wild.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/geneticsharp-in-the-wild.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -88,6 +88,7 @@ Düzgi supervision, wrote the paper for his master degree at Istanbul Bilgi Univ
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/04/geneticsharp-in-the-wild-frixel/geneticsharp-frixel-optimization.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;functionality&quot;&gt;Functionality&lt;/h2&gt;
 &lt;p&gt;According to the developers, these are the features of Frixel:&lt;/p&gt;
@@ -149,6 +150,7 @@ improving existing systems as well as in future research.&lt;/em&gt;&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;results comparison between GCC and GeneCSCC (developed using GeneticSharp)&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;

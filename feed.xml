@@ -1,4 +1,530 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-07-09T11:55:02-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">NO MORE ROOM IN HELL released</title><link href="http://diegogiacomelli.com.br/no-more-room-in-hell-released/" rel="alternate" type="text/html" title="NO MORE ROOM IN HELL released" /><published>2022-06-14T00:00:00-03:00</published><updated>2022-06-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/no-more-room-in-hell-released</id><content type="html" xml:base="http://diegogiacomelli.com.br/no-more-room-in-hell-released/"><![CDATA[<p>On June 14th I released my newest solo game called “NO MORE ROOM IN HELL”.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-07-22T14:57:00-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">The Fundamentals of Unity 2D colliders</title><link href="http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders/" rel="alternate" type="text/html" title="The Fundamentals of Unity 2D colliders" /><published>2022-07-22T00:00:00-03:00</published><updated>2022-07-22T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders</id><content type="html" xml:base="http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders/"><![CDATA[<p>In the first years of Unity, there wasn’t solid support for 2D game development inside the engine — for years, the right way to refer to it was “Unity 3D”. Though it was possible to develop 2D games with Unity, without official engine support, it wasn’t a smooth process like it is nowadays.</p>
+
+<p>Around 2013, Unity started to support 2D game development with built-in components, like a 2D physics engine, Collider2D, Rigidbody2D, Vector2, Sprite, Tilemap, etc.</p>
+
+<p>In this post, we’ll cover the common properties and behaviors of 2D colliders, which messages are sent to their GameObjects, how we can use them in our scripts, and how each collider setup interacts with others.</p>
+
+<div class="note"><p>I originally wrote this post as a guest writer for <a href="https://blog.logrocket.com/fundamentals-unity-2d-colliders/">LogRocket’s blog</a></p>
+</div>
+
+<h2 id="tuorial-sections">Tuorial sections</h2>
+<ul>
+  <li>Setting up our Unity project</li>
+  <li>What are colliders?</li>
+  <li>Common properties and behaviors of colliders</li>
+  <li>Adding a 2D collider to a GameObject</li>
+  <li>What is a Rigidbody2D component?</li>
+  <li>Using PhysicsMaterial2D to add effects</li>
+  <li>Collision callbacks</li>
+  <li>Using collision callbacks on scripts
+    <ul>
+      <li>Without a trigger</li>
+      <li>With a trigger</li>
+    </ul>
+  </li>
+  <li>Collider interactions
+    <ul>
+      <li>How do these setups affect collider interactions?</li>
+    </ul>
+  </li>
+  <li>Physics2D settings</li>
+  <li>Source code and samples</li>
+</ul>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The following prerequisites are required to follow along with this tutorial:</p>
+
+<ul>
+  <li>Basic knowledge of Unity</li>
+  <li>Previous experience writing C# scripts in Unity</li>
+</ul>
+
+<h2 id="setting-up-our-unity-project">Setting up our Unity project</h2>
+<p>First, we need to create our Unity project. For this tutorial, we’ll use the version 2021.3.4f1, which, at the moment I’m writing, is the newest LTS Unity version.</p>
+
+<p>On the project templates list, choose 2D(core), give it a name, and click the Create project button. We’ll call ours <code class="language-plaintext highlighter-rouge">SampleScene</code>.</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-200-1cab31008.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-400-1cab31008.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-1cab31008.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-1224-1cab31008.webp 1224w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-200-1cab31008.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-400-1cab31008.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-1cab31008.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-1224-1cab31008.png 1224w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-1cab31008.png" alt="post image" width="1224" height="712" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p><br />
+With the project started, create two folders called <code class="language-plaintext highlighter-rouge">Scripts</code> and <code class="language-plaintext highlighter-rouge">Physic Materials</code> inside the <code class="language-plaintext highlighter-rouge">Assets</code> folder. We’ll use them to keep our project organized during the tutorial.</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-200-d4f7ca06e.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-400-d4f7ca06e.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-d4f7ca06e.webp 528w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-200-d4f7ca06e.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-400-d4f7ca06e.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-d4f7ca06e.png 528w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-d4f7ca06e.png" alt="post image" width="528" height="192" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<h2 id="what-are-colliders">What are colliders?</h2>
+<p>Before we start using our Unity project, we need to take a little dive into the basic concepts of colliders.</p>
+
+<p>Colliders are the way that Unity (and most of the available game engines, if not all) manages collisions between GameObjects. For the sake of this tutorial, we are only using the 2D colliders, but a lot of the rules mentioned below are applicable to 3D colliders, too.</p>
+
+<p>In Unity, a 2D collider is a component that allows us to define a shape, where we want to receive notifications in our GameObject’s script whenever another GameObject (with another collider) collides with the first collider.</p>
+
+<blockquote>
+  <p><a href="https://docs.unity3d.com/Manual/Collider2D.html">Unity doc tip</a>: A collider is invisible, and does not need to be the exact same shape as the GameObject’s mesh. A rough approximation of the mesh is often more efficient and indistinguishable in gameplay.</p>
+</blockquote>
+
+<p>Right now, Unity has eight built-in kinds of 2D colliders:</p>
+
+<ul>
+  <li>BoxCollider2D</li>
+  <li>CapsuleCollider2D</li>
+  <li>CircleCollider2D</li>
+  <li>CompositeCollider2D</li>
+  <li>CustomCollider2D</li>
+  <li>EdgeCollider2D</li>
+  <li>PolygonCollider2D</li>
+  <li>TilemapCollider2D</li>
+</ul>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-200-c2a46322b.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-c2a46322b.webp 250w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-200-c2a46322b.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-c2a46322b.png 250w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-c2a46322b.png" alt="post image" width="250" height="355" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<h2 id="common-properties-and-behaviors-of-colliders">Common properties and behaviors of colliders</h2>
+<p>Every 2D collider in Unity inherits from a common class called Collider2D. As a result, they share common properties. Below is a list of the most notable and widely-used ones:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-200-5deeeeb3e.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-400-5deeeeb3e.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-5deeeeb3e.webp 448w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-200-5deeeeb3e.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-400-5deeeeb3e.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-5deeeeb3e.png 448w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-5deeeeb3e.png" alt="post image" width="448" height="120" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<ul>
+  <li>Shape (Edit collider) — Each kind of 2D collider has a different shape, but most of them allow us to change some properties of their shapes, like the scale and distance of vertices</li>
+  <li>Material — Defines the <code class="language-plaintext highlighter-rouge">PhysicsMaterial2D</code> that can be used by the collider to define things like friction and bounciness</li>
+  <li>isTrigger — If it’s checked, the collider will behave as a trigger. When a collider is not marked as a trigger, the physics engine will generate a collision; when the collider hits another collider, it produces the expected behaviors based on the colliders’ setups, like moving them to opposite directions or stopping them. However, when a collider is marked as a trigger, the physics engine will simply detect when it enters the space of another and no collision will be created</li>
+  <li>Used by Effector — Determines whether the collider will be used by an <code class="language-plaintext highlighter-rouge">Effector2D</code> attached to the GameObject.</li>
+</ul>
+
+<blockquote>
+  <p><a href="https://docs.unity3d.com/Manual/Effectors2D.html">Unity doc tip</a>: Effector2D components are used to direct the forces when colliders come into contact with each other</p>
+</blockquote>
+
+<ul>
+  <li>Offset — As the collider will be attached to a GameObject, we can use this property to define an offset position relative to the GameObject</li>
+</ul>
+
+<h2 id="adding-a-2d-collider-to-a-gameobject">Adding a 2D collider to a GameObject</h2>
+<p>In our Unity project, add a <code class="language-plaintext highlighter-rouge">Sprite (Square)</code> to the opened scene (<code class="language-plaintext highlighter-rouge">SampleScene</code>):</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-200-d7e90927c.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-400-d7e90927c.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-d7e90927c.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-819-d7e90927c.webp 819w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-200-d7e90927c.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-400-d7e90927c.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-d7e90927c.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-819-d7e90927c.png 819w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-d7e90927c.png" alt="post image" width="819" height="713" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Select the <code class="language-plaintext highlighter-rouge">Sprite (Square)</code> GameObject and add a component called <code class="language-plaintext highlighter-rouge">BoxCollider2D</code>:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-200-5afeb90e2.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-400-5afeb90e2.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-5afeb90e2.webp 455w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-200-5afeb90e2.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-400-5afeb90e2.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-5afeb90e2.png 455w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-5afeb90e2.png" alt="post image" width="455" height="708" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Now repeat the process, but add a <code class="language-plaintext highlighter-rouge">Sprite (Circle)</code> to the scene and add a <code class="language-plaintext highlighter-rouge">CircleCollider2D</code> component to it.</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-200-f11e563fd.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-400-f11e563fd.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-f11e563fd.webp 461w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-200-f11e563fd.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-400-f11e563fd.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-f11e563fd.png 461w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-f11e563fd.png" alt="post image" width="461" height="643" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Move the <code class="language-plaintext highlighter-rouge">Circle GameObject</code> a little on top of the <code class="language-plaintext highlighter-rouge">Square GameObject</code>:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-200-2e37f4265.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-400-2e37f4265.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-2e37f4265.webp 708w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-200-2e37f4265.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-400-2e37f4265.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-2e37f4265.png 708w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-2e37f4265.png" alt="post image" width="708" height="556" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>If we hit the Play button now, nothing will happen, even if we move the GameObjects inside the editor. No collision will happen.</p>
+<center>                
+        <img class="screenshot" src="/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/moving-circle.gif " alt="post image" />
+      </center>
+<p><br /></p>
+
+<p>Why does nothing happen? Well, we need to talk about the <code class="language-plaintext highlighter-rouge">Rigidbody2D</code> component.</p>
+
+<h2 id="what-is-a-rigidbody2d-component">What is a Rigidbody2D component?</h2>
+<p>A Rigidbody2D is a component used to tell Unity that it should put the GameObject under the control of the physics engine. In other words, GameObjects without a rigidbody do not exist for the physics engine.</p>
+
+<p>If we just add a 2D collider to our GameObject, nothing will happen because the physics engine is not aware of it. If we want the physics engine to control our GameObject, we need to add a <code class="language-plaintext highlighter-rouge">Rigidbody2D</code> component to it.</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-200-0007b5a10.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-400-0007b5a10.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-0007b5a10.webp 454w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-200-0007b5a10.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-400-0007b5a10.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-0007b5a10.png 454w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-0007b5a10.png" alt="post image" width="454" height="312" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>This means that now our GameObject is affected by gravity via the <code class="language-plaintext highlighter-rouge">Gravity Scale</code> property, and can be controlled from scripts using forces.</p>
+
+<p>We Just need to add a <code class="language-plaintext highlighter-rouge">Rigidbody2D</code> to each of the GameObjects that we’ve already created and hit the Play button:</p>
+<center>                
+        <img class="screenshot" src="/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-gravity.gif " alt="post image" />
+      </center>
+<p><br /></p>
+
+<p>With the <code class="language-plaintext highlighter-rouge">Rigidbody2D</code> components added to our GameObjects, the physics engine is aware of them and has started making the gravity act.</p>
+
+<h2 id="using-physicsmaterial2d-to-add-effects">Using PhysicsMaterial2D to add effects</h2>
+<p>In our sample, the two GameObjects are just falling, but what if we would like to have the <code class="language-plaintext highlighter-rouge">Square GameObject</code> stay in its position and the <code class="language-plaintext highlighter-rouge">Circle GameObject</code> hit it, before bouncing like a ball?</p>
+
+<p>An easy way to achieve this is using <code class="language-plaintext highlighter-rouge">PhysicsMaterial2D</code>.</p>
+
+<p>Let’s add that ball effect to our sample scene. First, on the Square GameObject, change the property <code class="language-plaintext highlighter-rouge">Body Type</code> of its <code class="language-plaintext highlighter-rouge">Rigidbody2D</code> to <code class="language-plaintext highlighter-rouge">Static</code>:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-200-afa8cf714.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-afa8cf714.webp 381w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-200-afa8cf714.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-afa8cf714.png 381w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-afa8cf714.png" alt="post image" width="381" height="93" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Create a new <code class="language-plaintext highlighter-rouge">PhysicsMaterial2D</code>, name it <code class="language-plaintext highlighter-rouge">Ball physics material</code>, and place it inside our <code class="language-plaintext highlighter-rouge">Physics Materials</code> folder:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-200-2fdd777ce.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-400-2fdd777ce.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-2fdd777ce.webp 746w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-200-2fdd777ce.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-400-2fdd777ce.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-2fdd777ce.png 746w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-2fdd777ce.png" alt="post image" width="746" height="450" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Change its <code class="language-plaintext highlighter-rouge">Bounciness</code> property to 1:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-200-1d09b8bdc.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-1d09b8bdc.webp 381w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-200-1d09b8bdc.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-1d09b8bdc.png 381w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-1d09b8bdc.png" alt="post image" width="381" height="121" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>On the <code class="language-plaintext highlighter-rouge">Circle GameObject's Rigidbody2D</code>, change the <code class="language-plaintext highlighter-rouge">Material</code> property to use the <code class="language-plaintext highlighter-rouge">Ball physics material</code> that we’ve just created:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-200-5d0ca6424.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-5d0ca6424.webp 382w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-200-5d0ca6424.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-5d0ca6424.png 382w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-5d0ca6424.png" alt="post image" width="382" height="69" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Hit the <code class="language-plaintext highlighter-rouge">Play</code> button again. Now we should see this happen:</p>
+<center>                
+        <img class="screenshot" src="/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-boucing.gif " alt="post image" />
+      </center>
+<p><br /></p>
+
+<h2 id="collision-callbacks">Collision callbacks</h2>
+<p>When one collider interacts with another collider, Unity sends some messages (e.g., call a method on any <code class="language-plaintext highlighter-rouge">MonoBehavior</code> attached to the <code class="language-plaintext highlighter-rouge">GameObject</code>). In the case of a 2D collider, there are six available messages:</p>
+
+<h3 id="when-istrigger-is-not-checked">When IsTrigger is not checked:</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">OnCollisionEnter2D</code>: called in the first frame when the collision starts</li>
+  <li><code class="language-plaintext highlighter-rouge">OnCollisionStay2D</code>: called in each frame while the collision is happening</li>
+  <li><code class="language-plaintext highlighter-rouge">OnCollsionExit2D</code>: called in the first frame when the collision ends</li>
+</ul>
+
+<h3 id="when-istrigger-is-checked">When IsTrigger is checked:</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">OnTriggerEnter2D</code>: called in the first frame when the collision starts</li>
+  <li><code class="language-plaintext highlighter-rouge">OnTriggerStay2D</code>: called in each frame while the collision is happening</li>
+  <li><code class="language-plaintext highlighter-rouge">OnTriggerExit2D</code>: called in the first frame when the collision ends</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">OnCollisionStay2D</code> and <code class="language-plaintext highlighter-rouge">OnTriggerStay2D</code> are called each frame until they reach Time To Sleep (if the GameObject is not moving anymore).</p>
+
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-200-10aa7dae6.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-10aa7dae6.webp 355w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-200-10aa7dae6.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-10aa7dae6.png 355w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-10aa7dae6.png" alt="post image" width="355" height="111" />
+</picture>
+
+      </center>
+<p><br /></p>
+<center><span style="font-style:italic; font-size:small"><p>We can change this setting on Project Settings / Physics 2D</p>
+</span></center>
+<p><br /></p>
+
+<h2 id="using-collision-callbacks-on-scripts">Using collision callbacks on scripts</h2>
+<p>It’s time to write some code. Let’s create a script to log every time that our <code class="language-plaintext highlighter-rouge">Circle GameObject</code> hits the <code class="language-plaintext highlighter-rouge">Square GameObject</code> (<code class="language-plaintext highlighter-rouge">OnCollisionEnter2D</code>) to the console window. We’ll record how many frames they stay in contact (<code class="language-plaintext highlighter-rouge">OnCollisionStay2D</code>), and when they stop hitting each other (<code class="language-plaintext highlighter-rouge">OnCollsionExit2D</code>). We’ll also show what happens with and without a trigger</p>
+
+<h3 id="without-a-trigger">Without a trigger</h3>
+<p>Inside our <code class="language-plaintext highlighter-rouge">Scripts</code> folder, create a script called <code class="language-plaintext highlighter-rouge">CollisionLogger</code> and add it to the <code class="language-plaintext highlighter-rouge">Circle GameObject</code>:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-200-b2b349465.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-400-b2b349465.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-b2b349465.webp 442w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-200-b2b349465.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-400-b2b349465.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-b2b349465.png 442w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-b2b349465.png" alt="post image" width="442" height="348" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Open the <code class="language-plaintext highlighter-rouge">CollisionLogger</code> script on editor and type these methods:
+<script src="https://gist.github.com/94b530c223d99f34d4fd6a0ab0702f51.js?file=CollisionLogger.cs"> </script></p>
+
+<p>Hit the <code class="language-plaintext highlighter-rouge">Play</code> button, and we should see something like this in the Console window:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-200-bf27113d6.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-400-bf27113d6.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-bf27113d6.webp 488w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-200-bf27113d6.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-400-bf27113d6.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-bf27113d6.png 488w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-bf27113d6.png" alt="post image" width="488" height="197" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>As we can see, <code class="language-plaintext highlighter-rouge">OnCollisionEnter2D</code> is called when the <code class="language-plaintext highlighter-rouge">Circle GameObject</code> hits the <code class="language-plaintext highlighter-rouge">Square GameObject</code>. <code class="language-plaintext highlighter-rouge">OnCollsionExit2D</code> is called when they aren’t hitting each other anymore, and <code class="language-plaintext highlighter-rouge">OnCollisionStay2D</code> has not been called because the two GameObjects are not keeping contact. To see <code class="language-plaintext highlighter-rouge">OnCollisionStay2D</code> being sent, just remove the <code class="language-plaintext highlighter-rouge">Ball physics material</code> from the <code class="language-plaintext highlighter-rouge">Circle GameObject's Rigidbody2D</code>:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-200-d43e21e16.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-400-d43e21e16.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-d43e21e16.webp 451w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-200-d43e21e16.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-400-d43e21e16.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-d43e21e16.png 451w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-d43e21e16.png" alt="post image" width="451" height="80" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Hit the <code class="language-plaintext highlighter-rouge">Play</code> button again and the output in our Console window should be:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-200-45253a06e.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-400-45253a06e.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-45253a06e.webp 483w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-200-45253a06e.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-400-45253a06e.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-45253a06e.png 483w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-45253a06e.png" alt="post image" width="483" height="198" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Now we have one <code class="language-plaintext highlighter-rouge">OnCollisionEnter2D</code> and a lot of <code class="language-plaintext highlighter-rouge">OnCollisionStay2D</code> that will be called until the two GameObjects keep the contact or until Time To Sleep is reached.</p>
+
+<p>Now, re-enable the <code class="language-plaintext highlighter-rouge">Ball physics material</code> on the <code class="language-plaintext highlighter-rouge">Circle GameObject's Rigidbody2D</code> and add the <code class="language-plaintext highlighter-rouge">CollisionLogger</code> to the <code class="language-plaintext highlighter-rouge">Square GameObject</code> too.</p>
+
+<p>Hit <code class="language-plaintext highlighter-rouge">Play</code>, and the Console window should look like this:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-200-4d533a29a.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-400-4d533a29a.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-4d533a29a.webp 478w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-200-4d533a29a.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-400-4d533a29a.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-4d533a29a.png 478w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-4d533a29a.png" alt="post image" width="478" height="196" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>As expected, the messages are called in all GameObjects involved in the collision.</p>
+
+<h3 id="with-a-trigger">With a trigger</h3>
+<p>What about the <code class="language-plaintext highlighter-rouge">OnTrigger</code> method? Right now, none of our colliders are marked as a trigger (<code class="language-plaintext highlighter-rouge">IsTrigger</code>), which is why only <code class="language-plaintext highlighter-rouge">OnCollision</code> has been called.</p>
+
+<p>Triggers are useful when we need to detect that a given GameObject has reached a point or another GameObject. Let’s say we want to be notified on <code class="language-plaintext highlighter-rouge">Square GameObject</code> every time that the <code class="language-plaintext highlighter-rouge">Circle GameObject</code> passes through it. We can add a collider with <code class="language-plaintext highlighter-rouge">IsTrigger</code> checked on it and we will receive the notification when the physics engine calls the <code class="language-plaintext highlighter-rouge">OnTriggerEnter2D</code> method.</p>
+
+<p>To see a trigger in action, mark the <code class="language-plaintext highlighter-rouge">Square GameObject's collider</code> as a trigger:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-200-8ff18a7fc.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-400-8ff18a7fc.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-8ff18a7fc.webp 451w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-200-8ff18a7fc.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-400-8ff18a7fc.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-8ff18a7fc.png 451w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-8ff18a7fc.png" alt="post image" width="451" height="98" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Play the scene, and we’ll see that <code class="language-plaintext highlighter-rouge">Circle GameObject</code> is passing through the <code class="language-plaintext highlighter-rouge">Square GameObject</code>:</p>
+<center>                
+        <img class="screenshot" src="/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/passing-through.gif " alt="post image" />
+      </center>
+<p><br /></p>
+
+<p>This happens because the <code class="language-plaintext highlighter-rouge">Square GameObject</code> is a trigger now. The physics engine won’t generate the expected behavior when two objects collide, but will instead send the <code class="language-plaintext highlighter-rouge">OnTrigger</code> methods to the involved GameObjects.</p>
+
+<p>If we look at the Console window, you’ll notice that it is empty because no <code class="language-plaintext highlighter-rouge">OnCollision</code> methods are called. To log the <code class="language-plaintext highlighter-rouge">OnTrigger</code> methods, open our <code class="language-plaintext highlighter-rouge">CollisionLogger</code> script and add these new methods:
+<script src="https://gist.github.com/94b530c223d99f34d4fd6a0ab0702f51.js?file=trigger-methods.cs"> </script></p>
+
+<p>Run the scene and we can see this log in the Console window:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-200-a7970a28a.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-400-a7970a28a.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-a7970a28a.webp 475w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-200-a7970a28a.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-400-a7970a28a.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-a7970a28a.png 475w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-a7970a28a.png" alt="post image" width="475" height="196" />
+</picture>
+
+      </center>
+<p><br /></p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-200-764f811c6.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-400-764f811c6.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-764f811c6.webp 474w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-200-764f811c6.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-400-764f811c6.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-764f811c6.png 474w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-764f811c6.png" alt="post image" width="474" height="77" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Now only <code class="language-plaintext highlighter-rouge">OnTrigger</code> methods are called because there is a trigger involved in the collision.</p>
+
+<p>An important thing to note is that all <code class="language-plaintext highlighter-rouge">OnCollision</code> and <code class="language-plaintext highlighter-rouge">OnTrigger</code> methods receive the parameter <code class="language-plaintext highlighter-rouge">Collision2D/Collider2D</code>. This parameter can hold information about the collision itself, such as:</p>
+
+<ul>
+  <li>Which other GameObject collides with the current GameObject</li>
+  <li>Which contact points are involved in the collision</li>
+  <li>The relative linear velocity of the two colliding objects</li>
+</ul>
+
+<p>If we don’t need to use this information in our script, we can declare the <code class="language-plaintext highlighter-rouge">OnCollision/OnTrigger</code> methods without the logging parameter.</p>
+
+<h2 id="collider-interactions">Collider interactions</h2>
+<p>You probably noticed in the last section that there is parity between the <code class="language-plaintext highlighter-rouge">OnCollision</code> and <code class="language-plaintext highlighter-rouge">OnTrigger</code> methods the physics engine calls on the GameObjects involved in the collision. Knowing when each kind of interaction raises each kind of message/method in the involved GameObjects can be a little tricky; despite this apparent similarity, there are some rules for interaction possibilities between different collider setups.</p>
+
+<p>There are six different setups a collider can have that will differently affect how it interacts with other colliders. These setups can be done by a combination of the properties <code class="language-plaintext highlighter-rouge">IsTrigger</code> of the <code class="language-plaintext highlighter-rouge">Collider2D</code> and the property <code class="language-plaintext highlighter-rouge">Body Type</code> of the <code class="language-plaintext highlighter-rouge">Rigidbody2D</code> attached to the same GameObject. Below is a list of similar setups:</p>
+
+<ul>
+  <li>Static Collider
+    <ul>
+      <li>IsTrigger: false</li>
+      <li>Body Type: Static</li>
+    </ul>
+  </li>
+  <li>Rigidbody Collider
+    <ul>
+      <li>IsTrigger: false</li>
+      <li>Body Type: Dynamic</li>
+    </ul>
+  </li>
+  <li>Kinematic Rigidbody Collider
+    <ul>
+      <li>IsTrigger: false</li>
+      <li>Body Type: Kinematic</li>
+    </ul>
+  </li>
+  <li>Static Trigger Collider
+    <ul>
+      <li>IsTrigger: true</li>
+      <li>Body Type: Static</li>
+    </ul>
+  </li>
+  <li>Rigidbody Trigger Collider
+    <ul>
+      <li>IsTrigger: true</li>
+      <li>Body Type: Dynamic</li>
+    </ul>
+  </li>
+  <li>Kinematic Rigidbody Trigger Collider
+    <ul>
+      <li>IsTrigger: true</li>
+      <li>Body Type: Kinematic</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="how-do-these-setups-affect-collider-interactions">How do these setups affect collider interactions?</h3>
+<p>The answer to this question is in the table below, which I took from the <a href="https://docs.unity3d.com/Manual/CollidersOverview.html">Unity documentation site</a>. It shows us where the collisions happen and when the collision callbacks (the <code class="language-plaintext highlighter-rouge">OnCollision</code> and <code class="language-plaintext highlighter-rouge">OnTrigger</code> methods) are called.</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-200-0aaec8d8b.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-400-0aaec8d8b.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-0aaec8d8b.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-1517-0aaec8d8b.webp 1517w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-200-0aaec8d8b.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-400-0aaec8d8b.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-0aaec8d8b.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-1517-0aaec8d8b.png 1517w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-0aaec8d8b.png" alt="post image" width="1517" height="558" />
+</picture>
+
+      </center>
+<p><br /></p>
+<center><span style="font-style:italic; font-size:small"><p>Source: <a href="https://docs.unity3d.com/Manual/CollidersOverview.html">Unity docs</a></p>
+</span></center>
+<p><br /></p>
+
+<p>Looking at the table, we can figure out things like:</p>
+
+<ul>
+  <li>A Static collider only interacts with a Rigidbody collider</li>
+  <li>A Rigidbody collider can interact with a Static collider, Rigidbody Collider, and Kinematic Rigidbody Collider
+These tables can be very useful during game development, when we get stuck with some sort of collider interaction that we expected to happen but it doesn’t.</li>
+</ul>
+
+<p>To help us to better understand the colliders’ interactions, now and when we face the kind of problem mentioned above, I created a sample where we can move the GameObjects through each of the six possible interaction setups, see how they interact with each other, and what callbacks messages are sent.</p>
+
+<center>                
+        <img class="screenshot" src="/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions.gif " alt="post image" />
+      </center>
+<p><br /></p>
+<center><span style="font-style:italic; font-size:small"><p><a href="https://diegogiacomelli.com.br/apps/collider-interactions">https://diegogiacomelli.com.br/apps/collider-interactions</a></p>
+</span></center>
+<p><br /></p>
+
+<p><a href="https://diegogiacomelli.com.br/apps/collider-interactions">Try the online sample here</a> and move each collider setup to better understand what messages are sent for each interaction</p>
+
+<h2 id="physics2d-settings">Physics2D settings</h2>
+<p>For the last part of this tutorial, I would like to mention the Physics2D settings.</p>
+
+<p>These settings are not within the scope of this tutorial — talking about some of them could fill another whole tutorial — but I think it’s important to know that they exist, what their default values are, and that we can adjust them to the needs of our project.</p>
+
+<p>You can access these settings via Project Settings &gt; Physics 2D.</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-200-d4eb4d789.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-400-d4eb4d789.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-d4eb4d789.webp 756w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-200-d4eb4d789.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-400-d4eb4d789.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-d4eb4d789.png 756w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-d4eb4d789.png" alt="post image" width="756" height="938" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Settings like <code class="language-plaintext highlighter-rouge">Gravity</code> are pretty straightforward, but things like <code class="language-plaintext highlighter-rouge">Velocity Iterations</code> and <code class="language-plaintext highlighter-rouge">Position Iterations</code> can be a little obscure and can affect game behaviors a lot.</p>
+
+<p>Most of these settings are changed when we need to achieve some kind of non-conventional physics behavior or performance improvement, but you should be aware that you’ll need to retest gameplay after each change you make to these settings to ensure that you haven’t broken anything.</p>
+
+<p>The bottom line is: make sure to only change these settings after studying and understanding their impact.</p>
+
+<h2 id="source-code-and-samples">Source code and samples</h2>
+<ul>
+  <li><a href="https://github.com/giacomelli/the-fundamentals-of-unity-2d-collider-tutorial">Tutorial source code</a></li>
+  <li><a href="https://diegogiacomelli.com.br/apps/collider-interactions">Online Collision Interactions sample</a></li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>In this tutorial, we’ve explained the fundamentals of Unity 2D Colliders: what they are, what their common properties and behaviors are, how to add a <code class="language-plaintext highlighter-rouge">BoxCollider2D</code> and <code class="language-plaintext highlighter-rouge">CircleCollider2D</code> to a GameObject, what a <code class="language-plaintext highlighter-rouge">Rigidbody2D</code> is and how to use <code class="language-plaintext highlighter-rouge">PhysicsMaterial2D</code>, what the collision callbacks are and how to use them on our scripts, and, finally, the kinds of collider setups and how they interact.</p>]]></content><author><name></name></author><category term="Tutorial" /><category term="unity3d" /><category term="gamedev" /><category term="logrocket" /><summary type="html"><![CDATA[In the first years of Unity, there wasn’t solid support for 2D game development inside the engine — for years, the right way to refer to it was “Unity 3D”. Though it was possible to develop 2D games with Unity, without official engine support, it wasn’t a smooth process like it is nowadays.]]></summary></entry><entry><title type="html">NO MORE ROOM IN HELL released</title><link href="http://diegogiacomelli.com.br/no-more-room-in-hell-released/" rel="alternate" type="text/html" title="NO MORE ROOM IN HELL released" /><published>2022-06-14T00:00:00-03:00</published><updated>2022-06-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/no-more-room-in-hell-released</id><content type="html" xml:base="http://diegogiacomelli.com.br/no-more-room-in-hell-released/"><![CDATA[<p>On June 14th I released my newest solo game called “NO MORE ROOM IN HELL”.</p>
 
 <p>You can download it for Windows, MacOS, Linux or play directly on browser from its itch.io page: <a href="https://giacomelli.itch.io/no-more-room-in-hell">https://giacomelli.itch.io/no-more-room-in-hell</a>.</p>
 
@@ -66,7 +592,8 @@ The whole programming and Unity game development was made only by me.</p>
   <img class="screenshot" src="/assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-299-c5c52e492.png" alt="post image" width="299" height="111" />
 </picture>
 
-      </center>]]></content><author><name></name></author><category term="Lab" /><category term="dotnet" /><category term="audio" /><category term="html" /><category term="aspdotnet" /><category term="csharp" /><summary type="html"><![CDATA[Introduction If you have tried to change the current playback position (currentTime) of large audio files using the HTML5 audio tag, even using the preload attribute, you probably struggled with the fact that the audios would never play at that position but would start playing again from the beginning of the audio.]]></summary></entry><entry><title type="html">Trijam 154 entry&amp;amp;colon; Who Kills Who?</title><link href="http://diegogiacomelli.com.br/trijam-154-entry-who-kills-who/" rel="alternate" type="text/html" title="Trijam 154 entry&amp;amp;colon; Who Kills Who?" /><published>2022-02-01T00:00:00-03:00</published><updated>2022-02-01T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/trijam-154-entry-who-kills-who</id><content type="html" xml:base="http://diegogiacomelli.com.br/trijam-154-entry-who-kills-who/"><![CDATA[<p>Last weekend I participated in <strong><a href="https://itch.io/jam/trijam-154">Trijam #154</a></strong>.</p>
+      </center>
+<p><br /></p>]]></content><author><name></name></author><category term="Lab" /><category term="dotnet" /><category term="audio" /><category term="html" /><category term="aspdotnet" /><category term="csharp" /><summary type="html"><![CDATA[Introduction If you have tried to change the current playback position (currentTime) of large audio files using the HTML5 audio tag, even using the preload attribute, you probably struggled with the fact that the audios would never play at that position but would start playing again from the beginning of the audio.]]></summary></entry><entry><title type="html">Trijam 154 entry&amp;amp;colon; Who Kills Who?</title><link href="http://diegogiacomelli.com.br/trijam-154-entry-who-kills-who/" rel="alternate" type="text/html" title="Trijam 154 entry&amp;amp;colon; Who Kills Who?" /><published>2022-02-01T00:00:00-03:00</published><updated>2022-02-01T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/trijam-154-entry-who-kills-who</id><content type="html" xml:base="http://diegogiacomelli.com.br/trijam-154-entry-who-kills-who/"><![CDATA[<p>Last weekend I participated in <strong><a href="https://itch.io/jam/trijam-154">Trijam #154</a></strong>.</p>
 
 <blockquote>
   <p>Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.</p>
@@ -92,6 +619,7 @@ Besides, the theme “There is a twist…!” was a challenge one, at least to m
 </picture>
 
       </center>
+<p><br /></p>
 <ul>
   <li>There are 3 different elements in the screen: Red, Green and Blue.</li>
   <li>In the start Red kills Green, Green kills Blue and Blue kills Red.</li>
@@ -157,6 +685,7 @@ Besides, the theme “There is a twist…!” was a challenge one, at least to m
 <center>                
         <img class="screenshot" src="/assets/2021/05/31/sqlasfile/SqlAsFile-sample.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="tags">Tags</h2>
 <p>You can use some tags to tell to SqlAsFile’s parser how to treat a portion of the file:</p>
@@ -222,7 +751,8 @@ The Root Namespace will be used to add the namespace when creating scripts in Un
 <center>                
         <img class="screenshot" src="/assets/2020/12/16/unity-2020-2-whats/unitytips-tuple-patterns.gif " alt="post image" />
       </center>
-<p>You can learn more about C# 8 features in <a href="/tags/csharp-8-new-features">this posts</a>.</p>
+<p><br />
+You can learn more about C# 8 features in <a href="/tags/csharp-8-new-features">this posts</a>.</p>
 
 <h3 id="roslyn-analyzers-support">Roslyn analyzers support</h3>
 <blockquote>
@@ -258,6 +788,7 @@ What were the features that caught your attention?</p>]]></content><author><name
 <center>                
         <img class="screenshot" src="/assets/2020/12/08/unitytips-editor-internal-menus/unity-editor-internal-menu.gif " alt="post image" />
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>Unity Editor internal menus</p>
 </span></center>
 <p><br /></p>
@@ -306,6 +837,7 @@ What were the features that caught your attention?</p>]]></content><author><name
 <center>                
         <img class="screenshot" src="/assets/2020/12/01/unitytips-tuple-patterns/unitytips-tuple-patterns.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="introduction">Introduction</h2>
 <p>Some algorithms depend on multiple inputs. Tuple patterns allow you to switch based on multiple values expressed as a <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples">tuple</a>.</p>
@@ -321,6 +853,7 @@ What were the features that caught your attention?</p>]]></content><author><name
 <center>                
         <img class="screenshot" src="/assets/2020/11/24/unitytips-property-patterns/unitytips-property-patterns.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="introduction">Introduction</h2>
 <p><code class="language-plaintext highlighter-rouge">Property Patterns</code> enables you to match on properties of the object examined in a <a href="/unitytips-switch-expressions">Switch Expressions</a>.</p>
@@ -341,6 +874,7 @@ What were the features that caught your attention?</p>]]></content><author><name
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="introduction">Introduction</h2>
 <p><code class="language-plaintext highlighter-rouge">Switch Expressions</code> can dramatically simplify and reduce the <a href="https://en.wikipedia.org/wiki/Source_lines_of_code">LOC (Lines Of Code)</a> to make a <code class="language-plaintext highlighter-rouge">switch</code>.</p>
@@ -366,13 +900,15 @@ What were the features that caught your attention?</p>]]></content><author><name
 <p>If you are using Visual Studio, there is a  <code class="language-plaintext highlighter-rouge">Quick action</code> (CTRL + .) to convert from a classic <code class="language-plaintext highlighter-rouge">switch</code> to a <code class="language-plaintext highlighter-rouge">switch expression</code>:</p>
 <center>                
         <img class="screenshot" src="/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions.gif " alt="post image" />
-      </center>]]></content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="unitytips" /><category term="csharp" /><category term="csharp-8-new-features" /><summary type="html"><![CDATA[Unity started to supporting C# 8.0 with version 2020.2 beta and now we can start to use some new features like the Switch Expression.]]></summary></entry><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;4 - CHIP-8 inside Unity Inspector</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-4/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;4 - CHIP-8 inside Unity Inspector" /><published>2020-11-11T00:00:00-03:00</published><updated>2020-11-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-4</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-4/"><![CDATA[<p>Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.</p>
+      </center>
+<p><br /></p>]]></content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="unitytips" /><category term="csharp" /><category term="csharp-8-new-features" /><summary type="html"><![CDATA[Unity started to supporting C# 8.0 with version 2020.2 beta and now we can start to use some new features like the Switch Expression.]]></summary></entry><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;4 - CHIP-8 inside Unity Inspector</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-4/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;4 - CHIP-8 inside Unity Inspector" /><published>2020-11-11T00:00:00-03:00</published><updated>2020-11-11T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-4</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-4/"><![CDATA[<p>Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.</p>
 
 <p>In this post, I will talk about how I put a <strong>CHIP-8 emulator to run inside the Unity Editor Inspector Window</strong>.</p>
 
 <center>                
         <img class="screenshot" src="/assets/2020/11/11/arc-8-devlog-4/arc-8-running-chip-8-emulator-inside-unity-inspector.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <p>To help to understand everything in this post I recommend you read the previous <a href="/tags/arc8-devlog">ARC-8 devlog posts</a>, in special the <a href="/arc-8-devlog-3">last one</a>.</p>
 
@@ -476,7 +1012,8 @@ We use the <code class="language-plaintext highlighter-rouge">EditorCoroutineUti
 <p>Just drag the <code class="language-plaintext highlighter-rouge">[Graphy]</code> prefab from folder <code class="language-plaintext highlighter-rouge">Assets/Taxy/Graphy - Ultimate Stats Monitor</code> to your scene and Play the scene to see it in action.</p>
 <center>                
         <img class="screenshot" src="/assets/2020/11/05/gamedev-utility-belt-graphy/graphy-puzzimals-sample.gif " alt="post image" />
-      </center>]]></content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="open-source" /><category term="gamedev" /><category term="performance" /><category term="gamedev-utility-belt" /><summary type="html"><![CDATA[I decided to start a series of posts about some game development resources that are part of my gamedev utility belt and that helps me on my game projects.]]></summary></entry><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;3 - Unity</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-3/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;3 - Unity" /><published>2020-11-04T00:00:00-03:00</published><updated>2020-11-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-3</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-3/"><![CDATA[<p>Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.</p>
+      </center>
+<p><br /></p>]]></content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="open-source" /><category term="gamedev" /><category term="performance" /><category term="gamedev-utility-belt" /><summary type="html"><![CDATA[I decided to start a series of posts about some game development resources that are part of my gamedev utility belt and that helps me on my game projects.]]></summary></entry><entry><title type="html">ARC-8&amp;amp;colon; devlog &amp;amp;num;3 - Unity</title><link href="http://diegogiacomelli.com.br/arc-8-devlog-3/" rel="alternate" type="text/html" title="ARC-8&amp;amp;colon; devlog &amp;amp;num;3 - Unity" /><published>2020-11-04T00:00:00-03:00</published><updated>2020-11-04T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/arc-8-devlog-3</id><content type="html" xml:base="http://diegogiacomelli.com.br/arc-8-devlog-3/"><![CDATA[<p>Some years ago I coded a CHIP-8 emulator in C# just for fun, that emulator was hibernating in a private repository that I never released. Some days ago I started to working on it again with the idea to release it running on Blazor and as a Unity asset where any game developer could drag its prefabs as easter eggs directly to their games.</p>
 
 <p>In this post, I will talk about <strong>how I implemented the graphics, sound, input, and log systems for Unity 3D</strong>.</p>
 
@@ -518,6 +1055,7 @@ This is why we can use our <code class="language-plaintext highlighter-rouge">AR
 </picture>
 
       </center>
+<p><br /></p>
 
 <blockquote>
   <p>The MonoBehaviour class is the base class from which every Unity script derives, by default. TPovides the framework which allows you to attach your script to a GameObject in the editor, as well as providing hooks into useful Events such as Start and Update.</p>
@@ -539,7 +1077,8 @@ This is why we can use our <code class="language-plaintext highlighter-rouge">AR
 </picture>
 
       </center>
-<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs"> </script>
+<p><br />
+<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs"> </script></p>
 
 <h4 id="intialize-method">Intialize method</h4>
 <p>In the method <code class="language-plaintext highlighter-rouge">Initialize</code> we verify if will render to the main camera or to a specific target camera, then we set some camera configuration, create the material we will use to render the CHIP-8 graphic, get the screen size, then we initialize our <a href="https://gameprogrammingpatterns.com/double-buffer.html">Double Buffer</a> array.</p>
@@ -595,7 +1134,8 @@ This is why we can use our <code class="language-plaintext highlighter-rouge">AR
 </picture>
 
       </center>
-<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs"> </script>
+<p><br />
+<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs"> </script></p>
 
 <h4 id="awake-method">Awake method</h4>
 <p>We just try to locate our <a href="https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html">AudioSource</a> component that will be used to play the sound.</p>
@@ -619,7 +1159,8 @@ This is why we can use our <code class="language-plaintext highlighter-rouge">AR
 </picture>
 
       </center>
-<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs"> </script>
+<p><br />
+<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs"> </script></p>
 
 <h4 id="key-mapping">Key mapping</h4>
 <p>First, we create the dictionary <code class="language-plaintext highlighter-rouge">_map</code> to map the real keyboard keys to CHIP-8 keypad keys.</p>
@@ -644,7 +1185,8 @@ In this method, we set to <code class="language-plaintext highlighter-rouge">1</
 </picture>
 
       </center>
-<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs"> </script>
+<p><br />
+<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs"> </script></p>
 
 <h4 id="debug-and-error-methods">Debug and Error methods</h4>
 <p>The two methods implemented for <code class="language-plaintext highlighter-rouge">ILog</code> interface use methods available on Unity <a href="https://docs.unity3d.com/ScriptReference/Debug.html">Debug</a> class to send log messages to the <a href="https://docs.unity3d.com/Manual/Console.html">console window</a>.</p>
@@ -665,7 +1207,8 @@ In this method, we set to <code class="language-plaintext highlighter-rouge">1</
 </picture>
 
       </center>
-<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs"> </script>
+<p><br />
+<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs"> </script></p>
 
 <h4 id="start-method">Start method</h4>
 <p>Verifies if all the systems needed to run the emulator were configured in the editor, then <a href="https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html">sets the desired FPS</a> and starts to run the emulator.</p>
@@ -691,6 +1234,7 @@ In this method, we set to <code class="language-plaintext highlighter-rouge">1</
 <center>                
         <img class="screenshot" src="/assets/2020/11/04/arc-8-devlog-3/arc-8-running-chip-8-emulator-inside-unity-inspector.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <p>If you have any doubts about what I talk about above or any tip about the CHIP-8 emulator (or Unity) and you like to share it, please let me know in the comments section below.</p>
 
@@ -793,6 +1337,7 @@ In this method, we set to <code class="language-plaintext highlighter-rouge">1</
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="chip8graphicrazor-component-igraphic">Chip8Graphic.razor component (IGraphic)</h2>
 <picture>
@@ -990,7 +1535,8 @@ If you search a little further you will see developers talking about CHIP-8 as t
 </picture>
 
       </center>
-<p>I won’t get into details about how to implement each of CHIP-8’s 35 opcodes, because there are plenty of tutorials and resources talking about this on the internet (look in the section ‘Further reading’ in the of this post). My focus here is to explain my code design decisions to allow built a CHIP-8 emulator core in .NET Standard that will allow us to develop a graphic, sound, and input systems for Blazor and Unity3D (and any other platform where C# / .NET is supported).</p>
+<p><br />
+I won’t get into details about how to implement each of CHIP-8’s 35 opcodes, because there are plenty of tutorials and resources talking about this on the internet (look in the section ‘Further reading’ in the of this post). My focus here is to explain my code design decisions to allow built a CHIP-8 emulator core in .NET Standard that will allow us to develop a graphic, sound, and input systems for Blazor and Unity3D (and any other platform where C# / .NET is supported).</p>
 
 <blockquote>
   <p>Why the name ARC-8? well, the choice of the name was quite chaotic as any of the name ideas brainstorm that I have had with my friend <a href="http://twitter.com/giusepe">Giusepe Casagrande</a>. The name’s meaning and the way of speaking are <code class="language-plaintext highlighter-rouge">Arcade</code> because we want to remember that old day when we are kids playing some classic games in an arcade or fliperama as we call it in Brazil.</p>
@@ -1023,6 +1569,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="systems-interfaces">Systems interfaces</h3>
 <script src="https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=system-interfaces.cs"> </script>
@@ -1056,6 +1603,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="premise-3---100-code-coverage">Premise 3 - 100% code coverage</h2>
 <picture>
@@ -1077,6 +1625,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="premise-4---benchmark">Premise 4 - Benchmark</h2>
 <picture>
@@ -1096,6 +1645,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="next-step">Next step</h2>
 <picture>
@@ -1147,6 +1697,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="scripting-backends">Scripting backends</h3>
 <ul>
@@ -1213,6 +1764,7 @@ For example, here is the result when I used it on Android:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="installation">Installation</h2>
 <p>You can follow the instructions on the plugin GitHub repository: <a href="https://github.com/yasirkula/UnityNativeShare#installation">https://github.com/yasirkula/UnityNativeShare</a> to install it:</p>
@@ -1332,6 +1884,7 @@ For example, here is the result when I used it on Android:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>After you finish the <code class="language-plaintext highlighter-rouge">6 - Confirm</code> come back here. You’ll better understand this post and tips &amp; tricks after that.</p>
 
@@ -1363,6 +1916,7 @@ For example, here is the result when I used it on Android:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <div class="note"><p>if you are using Unity version previous 2019.4, you need to use the option <code class="language-plaintext highlighter-rouge">Add package from disk</code></p>
 </div>
@@ -1385,6 +1939,7 @@ For example, here is the result when I used it on Android:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="easy-on-boarding">Easy On-Boarding</h3>
 <p>Now, open the menu <code class="language-plaintext highlighter-rouge">Game Growth / Easy onboarding</code> and follow the steps.</p>
@@ -1396,6 +1951,7 @@ For example, here is the result when I used it on Android:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="run--validate-integration">Run &amp; Validate Integration</h2>
 <blockquote>
@@ -1451,6 +2007,7 @@ Then go to Unity Dashboard again and try to confirm the <code class="language-pl
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>More at <a href="https://owasp.org/www-project-zap/">https://owasp.org/www-project-zap/</a></p>
 </span></center>
 <p><br /></p>
@@ -1464,6 +2021,7 @@ Then go to Unity Dashboard again and try to confirm the <code class="language-pl
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>As the <a href="https://owasp.org/www-community/attacks/Path_Traversal">Path Traversal alert documentation</a> explains:</p>
 <blockquote>
@@ -1541,6 +2099,7 @@ Then go to Unity Dashboard again and try to confirm the <code class="language-pl
 </picture>
 
       </center>
+<p><br /></p>
 
 <div class="note"><p>Remember: only mark an alert as false positive after had to validate that URL action code and you are certain that is a false positive</p>
 </div>
@@ -1687,6 +2246,7 @@ To use it you need to add a <a href="https://docs.unity3d.com/ScriptReference/Po
 <center>                
         <img class="screenshot" src="/assets/2020/09/15/unitytips-editor-coroutines/chip-8-inside-unity-editor.gif " alt="post image" />
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>The result of using the <code class="language-plaintext highlighter-rouge">EditorCoroutineUtility.StartCoroutine</code></p>
 </span></center>
 <p><br /></p>
@@ -1739,6 +2299,7 @@ At that time we did not find any builtin or other solution to make this workflow
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>This is not a problem if you have only one environment or if you don’t need different configurations for different environments, but as I’ve already explained, we needed different configs for different environments.</p>
 
@@ -1758,6 +2319,7 @@ At that time we did not find any builtin or other solution to make this workflow
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="files-structure">Files structure</h2>
 <p>Move the <code class="language-plaintext highlighter-rouge">Hello Extensions</code> files to a subfolder called <code class="language-plaintext highlighter-rouge">src</code>.
@@ -1770,6 +2332,7 @@ At the end of this tutorial, our files structure will look like this:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <div class="note"><p>If have any doubt about the files structure during this tutorial, you can download the full solution in section <code class="language-plaintext highlighter-rouge">Download</code> at the end of the tutorial</p>
 </div>
@@ -1864,6 +2427,7 @@ Here we are basically defining the order of each function that will be called wh
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="creating-the-configjson-files">Creating the <code class="language-plaintext highlighter-rouge">config.json</code> files</h2>
 <picture>
@@ -1902,6 +2466,7 @@ Here is the content of each one:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>There is a new subfolder <code class="language-plaintext highlighter-rouge">dist</code> created. Load it on Chrome Extensions page:</p>
 <center>                
@@ -1912,6 +2477,7 @@ Here is the content of each one:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The plugin should work ok.</p>
 
@@ -1968,7 +2534,8 @@ Here is the content of each one:</p>
 </picture>
 
       </center>
-<p>Run the command <code class="language-plaintext highlighter-rouge">gulp</code> in the root folder.
+<p><br />
+Run the command <code class="language-plaintext highlighter-rouge">gulp</code> in the root folder.
 This will use <code class="language-plaintext highlighter-rouge">DEV</code> configuration from config.js and manifest.json</p>
 <div class="note"><p>Is the same if you run <code class="language-plaintext highlighter-rouge">gulp --config DEV</code></p>
 </div>
@@ -1983,6 +2550,7 @@ In the Chrome Extensions page you should see something like this:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Your extension is using the TEST environment values.
 When you click on the extension icon on the Chrome toolbar, you should see something like this:</p>
@@ -1994,6 +2562,7 @@ When you click on the extension icon on the Chrome toolbar, you should see somet
 </picture>
 
       </center>
+<p><br /></p>
 
 <div class="note"><p>You can try to run <code class="language-plaintext highlighter-rouge">gulp --config PROD</code>. To see the <code class="language-plaintext highlighter-rouge">PROD</code> environment values on the extension.</p>
 </div>
@@ -2026,6 +2595,7 @@ It always displays the properties of the item you opened it for, even if you sel
 <center>                
         <img class="screenshot" src="/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <p><br /></p>
 <div class="note"><p>More details in the official documentation: <a href="https://docs.unity3d.com/2020.1/Documentation/Manual/InspectorFocused.html">Focused Inspectors</a></p>
@@ -2061,6 +2631,7 @@ Unity went further, allowing an editor focused on a component too.</p>
 <center>                
         <img class="screenshot" src="/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h4 id="for-gameobjects-and-project-assets">For GameObjects and Project Assets</h4>
 <p>Right-click a <code class="language-plaintext highlighter-rouge">GameObject</code> in the <code class="language-plaintext highlighter-rouge">Hierarchy view</code>, or an <code class="language-plaintext highlighter-rouge">Asset</code> in the <code class="language-plaintext highlighter-rouge">Project view</code>.
@@ -2096,6 +2667,7 @@ From the component’s <code class="language-plaintext highlighter-rouge">More i
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="lighting-settings-as-an-asset">Lighting settings as an asset</h3>
 <blockquote>
@@ -2111,6 +2683,7 @@ From the component’s <code class="language-plaintext highlighter-rouge">More i
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="graphics-getpixeldata-api-was-added">Graphics: GetPixelData API was added</h3>
 <blockquote>
@@ -2187,6 +2760,7 @@ From the 9 stores supported, 7 are fully integrated with UDP. What this meaning?
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="1-implement">1. Implement</h2>
 <blockquote>
@@ -2216,6 +2790,7 @@ In my case, I was using IAP already in the project.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <hr />
 
@@ -2240,6 +2815,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 </picture>
 
       </center>
+<p><br /></p>
 
 <div class="note"><p>To login in this screen, use the accounts in the setup on <code class="language-plaintext highlighter-rouge">Sandbox Test Account</code>. Remember those e-mails don’t need to exist, they are just test accounts to validate UDP setup</p>
 </div>
@@ -2255,6 +2831,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 </picture>
 
       </center>
+<p><br /></p>
 
 <div class="note"><p>If you did not setup the UDP on your project, you should see a message like this on UDP dashboard notifications <code class="language-plaintext highlighter-rouge">apk analytics failed, caused by: analyse apk failed, caused by:Failed to find GameSettings.prop, please import udp sdk and generate GameSettings.</code></p>
 </div>
@@ -2280,6 +2857,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Go to <a href="https://console.developers.google.com/apis">Google API Console</a>, select your game project on the dropdown, then go to <code class="language-plaintext highlighter-rouge">Credentials</code> section, then on the <code class="language-plaintext highlighter-rouge">OAuth 2.0 Client IDs</code> section select the item with the name of your game, then copy the value of the field <code class="language-plaintext highlighter-rouge">SHA-1 certificate fingertip</code>.</p>
 
@@ -2293,6 +2871,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>In the new page, select <code class="language-plaintext highlighter-rouge">Android</code> on the <code class="language-plaintext highlighter-rouge">Application type</code> dropdown.</p>
 
@@ -2327,6 +2906,7 @@ If you already have the game published on Google Play, as was my case with <a hr
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>After the import, you can edit the information as well.</p>
 
@@ -2374,6 +2954,7 @@ If you already have the game published on Google Play, as was my case with <a hr
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="53-send-it-to-review">5.3 Send it to review</h3>
 <p>Now you can select <code class="language-plaintext highlighter-rouge">Submit to Store</code> in the dropdown, then select the checkbox store on <code class="language-plaintext highlighter-rouge">Publish</code> page and click on the <code class="language-plaintext highlighter-rouge">Publish</code> button.
@@ -2388,6 +2969,7 @@ UDP will send to you an e-mail when the game is approved.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <hr />
 
@@ -2446,7 +3028,8 @@ I took some time thinking about what game I would like to play and develop with 
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <h2 id="how-to-vote">How to vote</h2>
 <p>If you liked the game, <strong>you can cast a vote</strong> for the game jam here: <a href="https://itch.io/jam/kenney-jam-2020/rate/737655">https://itch.io/jam/kenney-jam-2020/rate/737655</a>.</p>]]></content><author><name></name></author><category term="Article" /><category term="game-jam" /><category term="games" /><category term="made-with-unity" /><summary type="html"><![CDATA[Last weekend I participated in Kenney Jam 2020 (my first game jam). The experience was really good, when you have so strong boundaries to make a game, in this case, 48 hours and just use assets from Kenney, you need to turn your way of think and expectations to a very specific and clear objective: release a fun and playable game the target just the core mechanics.]]></summary></entry><entry><title type="html">Drawing a Maurer Rose With Unity</title><link href="http://diegogiacomelli.com.br/drawing-a-maurer-rose-with-unity/" rel="alternate" type="text/html" title="Drawing a Maurer Rose With Unity" /><published>2020-08-21T00:00:00-03:00</published><updated>2020-08-21T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/drawing-a-maurer-rose-with-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/drawing-a-maurer-rose-with-unity/"><![CDATA[<p>In this tutorial we will learn how to draw a <a href="https://en.wikipedia.org/wiki/Maurer_rose">Maurer Rose</a> with a <a href="https://docs.unity3d.com/ScriptReference/LineRenderer.html">LineRenderer</a> in Unity.</p>
@@ -2466,6 +3049,7 @@ I took some time thinking about what game I would like to play and develop with 
 <center>                
         <img class="screenshot" src="/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="definition">Definition</h2>
 <picture>
@@ -2536,6 +3120,7 @@ where d is a positive integer and the angles are in degrees, not radians.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p><br />
 Go to the LineRenderer component and change the line width to <code class="language-plaintext highlighter-rouge">0.03</code>, then hit play button again.</p>
@@ -2547,6 +3132,7 @@ Go to the LineRenderer component and change the line width to <code class="langu
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="testing-new-inputs">Testing new inputs</h2>
 <picture>
@@ -2566,6 +3152,7 @@ Go to the LineRenderer component and change the line width to <code class="langu
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="going-beyond">Going beyond</h2>
 <picture>
@@ -2609,6 +3196,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="setup">Setup</h2>
 <script src="https://gist.github.com/623de59997fa6f2aaeeb231a2a789933.js?file=FrameworkSettings.cs"> </script>
@@ -2630,6 +3218,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="setup">Setup</h2>
 <script src="https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=HelpBoxAttribute.cs"> </script>
@@ -2656,6 +3245,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="code">Code</h2>
 <script src="https://gist.github.com/c03ec79fa0f0def94726f4b6914b4769.js?file=SocialShare.cs"> </script>
@@ -2688,6 +3278,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 <center>                
         <img class="screenshot" src="/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="setup">Setup</h2>
 <script src="https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxAttribute.cs"> </script>
@@ -2724,7 +3315,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Then go to the <code class="language-plaintext highlighter-rouge">Services &amp; APIS</code> menu, after enter on the <code class="language-plaintext highlighter-rouge">Google Play game services</code>.</p>
 <center>                
@@ -2735,7 +3327,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Fill only the required information for test, then go to menu <code class="language-plaintext highlighter-rouge">Linked apps</code> and link it to your game on with the app on Google Play Console.</p>
 <center>                
@@ -2746,7 +3339,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <h2 id="creating-some-achievements-for-test">Creating some achievements for test</h2>
 <p>In the <code class="language-plaintext highlighter-rouge">Game services section</code> open the <code class="language-plaintext highlighter-rouge">Achievements</code> menu and add some achievements.</p>
@@ -2758,7 +3352,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <blockquote>
   <p>I found empirically that test achievements that did not have an icon set on the Google Play Console did not show the standard Google Play Games UI when unlocked and were automatically locked again about 1 hour after they were unlocked.</p>
@@ -2774,7 +3369,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <h2 id="oauth-and-upload-certificate">OAuth and Upload Certificate</h2>
 <p>One thing can be a little confusing is about the certificate fingerprints.</p>
@@ -2788,7 +3384,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Now you need to copy your <code class="language-plaintext highlighter-rouge">SHA-1</code> fingerprint of your <code class="language-plaintext highlighter-rouge">Upload certificate</code> from <code class="language-plaintext highlighter-rouge">App signing</code> section.</p>
 <center>                
@@ -2799,7 +3396,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Then go to your OAuth credentials on <a href="https://console.developers.google.com/apis">Google API console</a>.</p>
 <center>                
@@ -2810,7 +3408,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>In <code class="language-plaintext highlighter-rouge">the Google API console</code>, select your game on the top dropdown, then go to <code class="language-plaintext highlighter-rouge">Credentials</code> menu and edit the <code class="language-plaintext highlighter-rouge">OAuth 2.0 Client IDs</code>. Paste the fingertip on the field <code class="language-plaintext highlighter-rouge">SHA-1 certificate fingertip</code> and save it.</p>
 <center>                
@@ -2821,7 +3420,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <blockquote>
   <p>remember to remove the <code class="language-plaintext highlighter-rouge">SHA-1</code> prefix, if you copied it together.</p>
@@ -2843,6 +3443,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 <center>                
@@ -2853,6 +3454,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>With this basic setup you can start to use the other features from Google Play Games Plugin for Unity plugin, as:</p>
 <ul>
@@ -2878,7 +3480,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p>Below a list of tips and tricks for non-common scenarios.</p>
+<p><br />
+Below a list of tips and tricks for non-common scenarios.</p>
 
 <h3 id="log-on-device">Log on device</h3>
 <p>If anything goes wrong on Android device you will need to see it logs, to do so, you can use adb logcat:</p>
@@ -2906,7 +3509,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Go to the <code class="language-plaintext highlighter-rouge">Assets/GooglePlayGames/Editor</code> folder and create a new <code class="language-plaintext highlighter-rouge">Assembly Definition</code> called <code class="language-plaintext highlighter-rouge">GooglePlayGames.Editor</code>.</p>
 <center>                
@@ -2917,7 +3521,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Now, go to your game assembly definition and add a reference to the <code class="language-plaintext highlighter-rouge">GooglePlayGames</code>.</p>
 
@@ -2973,6 +3578,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>Har File Analyzer with a HAR file loaded</p>
 </span></center>
 <p><br /></p>
@@ -3040,6 +3646,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 <center>                
         <img class="screenshot" src="/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif " alt="post image" />
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>The sample lines will result in the same string</p>
 </span></center>
 <p><br /></p>
@@ -3055,6 +3662,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 <center>                
         <img class="screenshot" src="/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <blockquote>
   <p>Expression body definitions for methods and read-only properties are supported starting with C# 6. Expression body definitions for constructors, finalizers, property accessors, and indexers are supported starting with C# 7.0.</p>
@@ -3063,7 +3671,8 @@ This simple formula show how math can be used to explore creativity and beauty.<
 <p>So you can use the expression body definition for other members, like properties:</p>
 <center>                
         <img class="screenshot" src="/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif " alt="post image" />
-      </center>]]></content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="unitytips" /><category term="csharp" /><summary type="html"><![CDATA[When you have a single line method, you can use expression body definition do simplify and reduce the lines of code:]]></summary></entry><entry><title type="html">Dapper and the NVARCHAR(4000) arguments</title><link href="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/" rel="alternate" type="text/html" title="Dapper and the NVARCHAR(4000) arguments" /><published>2019-08-14T00:00:00-03:00</published><updated>2019-08-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments</id><content type="html" xml:base="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/"><![CDATA[<p>Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as <code class="language-plaintext highlighter-rouge">NVARCHAR (4000)</code>.</p>
+      </center>
+<p><br /></p>]]></content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="unitytips" /><category term="csharp" /><summary type="html"><![CDATA[When you have a single line method, you can use expression body definition do simplify and reduce the lines of code:]]></summary></entry><entry><title type="html">Dapper and the NVARCHAR(4000) arguments</title><link href="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/" rel="alternate" type="text/html" title="Dapper and the NVARCHAR(4000) arguments" /><published>2019-08-14T00:00:00-03:00</published><updated>2019-08-14T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments</id><content type="html" xml:base="http://diegogiacomelli.com.br/dapper-and-the-nvarchar-4000-arguments/"><![CDATA[<p>Performing a profiler in the queries sended to the database you can see that in some cases Dapper is sending the string arguments as <code class="language-plaintext highlighter-rouge">NVARCHAR (4000)</code>.</p>
 
 <h2 id="introduction">Introduction</h2>
 <p>This happen because Dapper cannot infer what is the exactly type and length of the table column on database.</p>
@@ -3116,6 +3725,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>Add new item…</p>
 </span></center>
 <p><br /></p>
@@ -3129,6 +3739,7 @@ This simple formula show how math can be used to explore creativity and beauty.<
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="creating-a-targets">Creating a .targets</h2>
 <p>We need to create a <code class="language-plaintext highlighter-rouge">.targets</code> file, it will be used to copy the T4 Template from the NuGet package folder to the target project in the build process:</p>
@@ -3515,6 +4126,7 @@ up to speed and start enjoying success using your API.</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>Cake build</p>
 </span></center>
 <p><br /></p>
@@ -3528,6 +4140,7 @@ up to speed and start enjoying success using your API.</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>SonarCloud dashboard</p>
 </span></center>
 <p><br /></p>
@@ -3716,6 +4329,7 @@ dotnet run
 <center>                
         <img class="screenshot" src="/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <p>If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial <a href="http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/">TSP with GeneticSharp and Blazor</a>.</p>
 
@@ -3802,6 +4416,7 @@ dotnet watch run
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="installing-geneticsharp">Installing GeneticSharp</h2>
 <p>Open a new terminal in the same folder and type:</p>
@@ -3895,6 +4510,7 @@ dotnet watch run
 </picture>
 
       </center>
+<p><br /></p>
 
 <div class="note"><p>This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.</p>
 </div>
@@ -3916,6 +4532,7 @@ We need to create a visual representation to the cities.</p>
 <center>                
         <img class="screenshot" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="drawing-the-route">Drawing the route</h2>
 <p>In the previous step we drawn the cities and we have the visual of the problem: the cities.</p>
@@ -3932,6 +4549,7 @@ We need to create a visual representation to the cities.</p>
 <center>                
         <img class="screenshot" src="/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 <p>With only 4 C# classes, 1 JS file and 1 Blazor page we built a pretty nice sample of genetic algorithms using Blazor with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):</p>
@@ -4013,6 +4631,7 @@ We need to create a visual representation to the cities.</p>
 <center>                
         <img class="screenshot" src="/assets/2019/07/04/geneticsharp-in-the-wild-frixel/geneticsharp-frixel-optimization.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="functionality">Functionality</h2>
 <p>According to the developers, these are the features of Frixel:</p>
@@ -4111,6 +4730,7 @@ Open the <code class="language-plaintext highlighter-rouge">MainScene</code> sce
 <center>                
         <img class="screenshot" src="/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 <p>Thats it, now you can use this sample to understand how to use GeneticSharp in your game.</p>
@@ -4211,6 +4831,7 @@ improving existing systems as well as in future research.</em></p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>results comparison between GCC and GeneCSCC (developed using GeneticSharp)</p>
 </span></center>
 <p><br /></p>
@@ -4367,6 +4988,7 @@ improving existing systems as well as in future research.</em></p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>You will get this result after call the <code class="language-plaintext highlighter-rouge">TesseractService.GetText</code> method:
 <code class="language-plaintext highlighter-rouge">The (quick) [brown] {fox} jumps!
@@ -4786,6 +5408,7 @@ In Unity</a>.</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>similar sprites sheets from Phantasy Star IV (Alys, Chaz and Demi). Sprites ripped by Ultimecia from <a href="https://www.spriters-resource.com/genesis_32x_scd/ps4">The Spriters Resource</a></p>
 </span></center>
 <p><br /></p>
@@ -4800,6 +5423,7 @@ In Unity</a>.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <ul>
   <li>Idle: index 1</li>
@@ -4862,6 +5486,7 @@ In Unity</a>.</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>Default Animations menu item</p>
 </span></center>
 <p><br /></p>
@@ -4877,6 +5502,7 @@ In Unity</a>.</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>editor window</p>
 </span></center>
 <p><br /></p>
@@ -5038,6 +5664,7 @@ In Unity</a>.</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>Scene view with Sorting Layer Debugger enabled</p>
 </span></center>
 <p><br /></p>]]></content><author><name></name></author><category term="Lab" /><category term="unity3d" /><category term="unitytips" /><category term="sorting-layers" /><category term="2D" /><category term="editor-window" /><category term="gamedev" /><category term="open-source" /><summary type="html"><![CDATA[While I was reading about 2D Sorting and Sorting Layers on Unity Manual I came up with the idea of creating a custom editor window to see which sorting layer the sprites on the scene are using.]]></summary></entry><entry><title type="html">Unity and Game Development links (May 24th 2019)</title><link href="http://diegogiacomelli.com.br/unity-and-gamedev-links-may-24th-2019/" rel="alternate" type="text/html" title="Unity and Game Development links (May 24th 2019)" /><published>2019-05-24T00:00:00-03:00</published><updated>2019-05-24T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/unity-and-gamedev-links-may-24th-2019</id><content type="html" xml:base="http://diegogiacomelli.com.br/unity-and-gamedev-links-may-24th-2019/"><![CDATA[<ul>
@@ -5084,6 +5711,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>animation clips available on Sci Fi Warrior PBR HP</p>
 </span></center>
 <p><br /></p>
@@ -5099,6 +5727,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>the robot stands idle with the gun in the middle of his body</p>
 </span></center>
 <p><br /></p>
@@ -5112,6 +5741,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>the robot walk forward and shoot</p>
 </span></center>
 <p><br /></p>
@@ -5171,6 +5801,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>Starter project running: just HUD</p>
 </span></center>
 <p><br /></p>
@@ -5187,6 +5818,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>Animator window showing the animation controller created</p>
 </span></center>
 <p><br /></p>
@@ -5211,6 +5843,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>WalkForward parameter created</p>
 </span></center>
 <p><br /></p>
@@ -5224,6 +5857,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>WalkForward condition defined</p>
 </span></center>
 <p><br /></p>
@@ -5237,6 +5871,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>reseting the transition settings</p>
 </span></center>
 <p><br /></p>
@@ -5250,6 +5885,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>animation base layer</p>
 </span></center>
 <p><br /></p>
@@ -5270,6 +5906,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>only upper body</p>
 </span></center>
 <p><br /></p>
@@ -5284,6 +5921,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>the new layer created with the mask</p>
 </span></center>
 <p><br /></p>
@@ -5300,6 +5938,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>upper body animation layer</p>
 </span></center>
 <p><br /></p>
@@ -5327,6 +5966,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>ShootSingle parameter created</p>
 </span></center>
 <p><br /></p>
@@ -5352,6 +5992,7 @@ In this package, there are 10 animation clips:</p>
 </picture>
 
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>the remaining actions to the challenge</p>
 </span></center>
 <p><br /> 	 	 
@@ -5401,6 +6042,7 @@ These techniques allowing us to use already existent animations and combine them
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="creating-a-new-geneticsharp-project-from-templates">Creating a new GeneticSharp project from templates</h2>
 
@@ -5416,6 +6058,7 @@ These techniques allowing us to use already existent animations and combine them
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="tsp-console-application">TSP Console application</h3>
 <p>Create a new console application template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).</p>
@@ -5429,6 +6072,7 @@ These techniques allowing us to use already existent animations and combine them
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="tsp-unity3d">TSP Unity3D</h3>
 <p>Create an Unity3D template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).</p>
@@ -5442,6 +6086,7 @@ These techniques allowing us to use already existent animations and combine them
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Let’s evolve!</p>]]></content><author><name></name></author><category term="News" /><category term="geneticsharp" /><category term="dotnet" /><summary type="html"><![CDATA[Now GeneticSharp has a NuGet package called GeneticSharp.Templates, this package allows you to install GeneticSharp templates using the dotnet new command.]]></summary></entry><entry><title type="html">GeneticSharp v2.4.0 - New crossovers and TPL implementations</title><link href="http://diegogiacomelli.com.br/GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations/" rel="alternate" type="text/html" title="GeneticSharp v2.4.0 - New crossovers and TPL implementations" /><published>2019-01-19T00:00:00-02:00</published><updated>2019-01-19T00:00:00-02:00</updated><id>http://diegogiacomelli.com.br/GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations</id><content type="html" xml:base="http://diegogiacomelli.com.br/GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations/"><![CDATA[<p>The <strong><a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp v2.4.0</a></strong> is out.</p>
 
@@ -5488,6 +6133,7 @@ These techniques allowing us to use already existent animations and combine them
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Em 2005, junto com mais 3 amigos, foi fundado o site jogosdaqui, que era um site especializado em falar sobre os games desenvolvidos por empresas brasileiras.</p>
 
@@ -5508,6 +6154,7 @@ These techniques allowing us to use already existent animations and combine them
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="blog-no-uol-jogos">Blog no UOL Jogos</h2>
 <center>                
@@ -5518,6 +6165,7 @@ These techniques allowing us to use already existent animations and combine them
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Tempos depois fui convidado pelo Théo Azevedo do UOL Jogos para criar um blog do jogosdaqui no UOL.</p>
 
@@ -5533,6 +6181,7 @@ These techniques allowing us to use already existent animations and combine them
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="site-wordpress">Site WordPress</h2>
 <center>                
@@ -5543,6 +6192,7 @@ These techniques allowing us to use already existent animations and combine them
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>No final de 2014, comecei a migrar o jogosdaqui para um site próprio em WordPress e durante todo ano de 2015 foram produzidos diversas matérias, mas devido a demandas pessoais o site ficou no ar apenas até 2016.</p>
 
@@ -5555,6 +6205,7 @@ These techniques allowing us to use already existent animations and combine them
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>E essa história nos leva a esse momento, pois acredito que o material que o jogosdaqui produziu sobre os games nacionais, alguns deles que podem ser encontrados somente no jogosdaqui, não devem ser esquecidos ou perdidos.</p>
 
@@ -5568,7 +6219,8 @@ These techniques allowing us to use already existent animations and combine them
   <img class="screenshot" src="/assets/images/generated/assets/2018/11/21/jogosdaqui-um-pouco-de-historia-open-source-e-colaboracao/150-jogosdaqui-800-93f318e9f.jpg" alt="post image" width="1500" height="500" />
 </picture>
 
-      </center>]]></content><author><name></name></author><category term="Article" /><category term="jogosdaqui" /><category term="pt-br" /><category term="brasil" /><summary type="html"><![CDATA[Muitos não sabem, mas além de programar, sempre gostei de ajudar a divulgar a indústria brasileira de desenvolvimento de jogos.]]></summary></entry><entry><title type="html">GeneticSharp v2.2.0 - Sudoku sample</title><link href="http://diegogiacomelli.com.br/GeneticSharp-v2.2.0-Sudoku-sample/" rel="alternate" type="text/html" title="GeneticSharp v2.2.0 - Sudoku sample" /><published>2018-11-03T00:00:00-03:00</published><updated>2018-11-03T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/GeneticSharp-v2.2.0-Sudoku%20sample</id><content type="html" xml:base="http://diegogiacomelli.com.br/GeneticSharp-v2.2.0-Sudoku-sample/"><![CDATA[<p>The <strong><a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp v2.2.0</a></strong> is out.</p>
+      </center>
+<p><br /></p>]]></content><author><name></name></author><category term="Article" /><category term="jogosdaqui" /><category term="pt-br" /><category term="brasil" /><summary type="html"><![CDATA[Muitos não sabem, mas além de programar, sempre gostei de ajudar a divulgar a indústria brasileira de desenvolvimento de jogos.]]></summary></entry><entry><title type="html">GeneticSharp v2.2.0 - Sudoku sample</title><link href="http://diegogiacomelli.com.br/GeneticSharp-v2.2.0-Sudoku-sample/" rel="alternate" type="text/html" title="GeneticSharp v2.2.0 - Sudoku sample" /><published>2018-11-03T00:00:00-03:00</published><updated>2018-11-03T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/GeneticSharp-v2.2.0-Sudoku%20sample</id><content type="html" xml:base="http://diegogiacomelli.com.br/GeneticSharp-v2.2.0-Sudoku-sample/"><![CDATA[<p>The <strong><a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp v2.2.0</a></strong> is out.</p>
 
 <p>The additions of this version are the new whole sample and extensions showing how to use GeneticSharp to solve a Sudoku.</p>
 
@@ -5676,6 +6328,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="tsp">TSP</h2>
 <p>The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.</p>
@@ -5690,6 +6343,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="wall-builder">Wall builder</h2>
 <p>This sample tries to build a higher wall using random initial bricks positions.</p>
@@ -5702,6 +6356,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>You can get the full source code here: <a href="https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp">https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp</a></p>
 
@@ -5716,6 +6371,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>I was always amazed by the 2D cars designed by <a href="http://boxcar2d.com/about.html">BoxCar2D</a>  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.</p>
 
@@ -5781,6 +6437,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="genetic-algorithm-and-the-simulation">Genetic algorithm and the simulation</h2>
 <p>The genetic algorithm to evaluate the simulation is configured with this operators:</p>
@@ -5802,6 +6459,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 </picture>
 
       </center>
+<p><br /></p>
 
 <blockquote>
   <p>If you are running the sample inside Unity3D editor you can change the size of the simulation grid in the SampleController game object from CarScene.</p>
@@ -5936,6 +6594,7 @@ div.gist-meta { display:none; }
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="using-net-standard-20">Using .NET Standard 2.0</h2>
 <p>Go to “Player settings” / “Other settings” / “Configuration”, select “.NET 4.x Equivalent” on “Scripting Runtime Version”. Unity will ask to restart, you can confirm.</p>
@@ -5950,6 +6609,7 @@ div.gist-meta { display:none; }
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="installing-geneticsharp">Installing GeneticSharp</h2>
 <p>Install GeneticSharp using the .unitypackage available on <a href="https://github.com/giacomelli/GeneticSharp/releases">GeneticSharp release page</a>.</p>
@@ -6000,6 +6660,7 @@ div.gist-meta { display:none; }
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="drawing-the-cities">Drawing the cities</h2>
 <p>Now our GA is running inside Unity3D, but it need to display the cities route better.
@@ -6036,6 +6697,7 @@ We need to create a visual representation to the cities.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Try to run the scene, you should see something like this:</p>
 <center>                
@@ -6046,6 +6708,7 @@ We need to create a visual representation to the cities.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="drawing-the-route">Drawing the route</h2>
 <p>In the previous step we drawn the cities and we have the visual of the problem: the cities.</p>
@@ -6078,6 +6741,7 @@ We need to create a visual representation to the cities.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="changing-the-cities-positions">Changing the cities positions</h2>
 <p>Our sample could be considered done, but would it be nice if we you could change the cities positions while the genetic algorithm are running and see how it manages these cities positions changes.</p>
@@ -6096,6 +6760,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 <center>                
         <img class="screenshot" src="/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 <p>With only 5 C# scripts and 1 prefab we built a pretty nice sample of genetic algorithms using in Unity3D with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):</p>
@@ -6226,6 +6891,7 @@ to <img class="icon" src="/assets/logos/netcore.svg " alt="post image" /></p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="warmup">Warmup</h3>
 
@@ -6371,6 +7037,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Now I’m planning to create a GeneticSharp’s sample using Unity3d’s new beta features, like the new ECS (Entity Component System), C# Job System and the Burst compiler.</p>
 
@@ -6403,6 +7070,7 @@ Test Run Aborted
 <center>                
         <img class="screenshot" src="/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="setup">Setup</h2>
 <p>Just download the gist bellow to your Unity3D project and add it inside a “Editor” folder.</p>
@@ -6455,6 +7123,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>In our sample we will optimize the input of a mathematical function, this function will be used as our fitness evaluation function. For this sample we will use a function that everyone saw in school time, the famous <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a> or commonly know as distance of two points function:</p>
 
@@ -6466,6 +7135,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>We will consider our chromosome fitness as the result of this function. The higher the result, the better is the chromosome fitness.</p>
 
@@ -6480,6 +7150,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The goal of our genetic algortim is <strong>find the input values of Euclidean distance function: X1, Y1 and X2, Y2 that result in the greatest distance in a rectangular area</strong>.</p>
 
@@ -6498,6 +7169,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Open your IDE (Visual Studio/Xamarin Studio) and create a new console project.</p>
 
@@ -6519,6 +7191,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Chromosome is the representation of a possible solution in genetic algoritms.</p>
 
@@ -6559,6 +7232,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The population represents the possible solutions to our problem, so we need to create a population of our Euclidean distance chromosome.</p>
 
@@ -6577,6 +7251,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The fitness function is where the genetic algoritm will evaluate and give a value (fitness) to each chromosome generated inside it. A good fitness function can guide your GA to a fast and optimum solution.</p>
 
@@ -6597,6 +7272,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>A selection is the genetic algorithm operator responsible for decing which chromosomes of current population will be selected as parent of the next population.</p>
 
@@ -6617,6 +7293,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing these selected chromosomes.</p>
 
@@ -6641,6 +7318,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The biology definition of mutations is: 
 <em>“In genetics, mutation may be small scale (affecting a gene) or large scale (involving a change in the chromosome). It may arise from faulty deletions, insertions, or exchanges of the genetic material. Such a change may result in the creation of a new character or trait.”</em></p>
@@ -6664,6 +7342,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>A termination decide when a GA should be stopped. GeneticSharp use the generation number termination with just one generation as default termination. This mean that the genetic algoritm will run just one generation when you call the Start method, after this you can increment the expected generation number of the termination and call the method Resume how many times you want.</p>
 
@@ -6684,6 +7363,7 @@ Test Run Aborted
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.</p>
 
@@ -6723,6 +7403,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>We can see that in the first generations (black lines) the genetic algorithm as some intermediate results and at the end (red line) <strong>it found the best possible solution: a diagonal.</strong></p>
 
@@ -6735,6 +7416,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>When you finish the tutorial your source code will be this one:</p>
 
@@ -6749,6 +7431,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>In this tutorial we learn how genetic algoritm works and how to use GeneticSharp to solve a very simple sample. Now you can try it to solve more complex problems.</p>
 
@@ -6817,6 +7500,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 <center>                
         <img class="screenshot" src="/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <blockquote>
   <p>BuildMod running inside Buildron.ModSdk simulator</p>
@@ -6827,6 +7511,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 <center>                
         <img class="screenshot" src="/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="features">Features</h2>
 <p>Currently Buildron SlackBotMod has the follow features:</p>
@@ -6842,6 +7527,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="filter-builds">Filter builds</h3>
 <p>Filter buils by status or text.</p>
@@ -6854,6 +7540,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="reset-filter">Reset filter</h3>
 <p>Reset previous builds filter (no filter).</p>
@@ -6866,6 +7553,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="sort-builds">Sort builds</h3>
 <p>Sort buils by status, text or date.</p>
@@ -6878,6 +7566,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="move-camera">Move camera</h3>
 <p>Move the camera the amount of pixels define in the x,y,z coordinates.</p>
@@ -6890,6 +7579,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="reset-camera">Reset camera</h3>
 <p>Reset the camera position.</p>
@@ -6902,6 +7592,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="take-a-screenshot">Take a screenshot</h3>
 <p>Take a screenshot of current Buildron state.</p>
@@ -6914,6 +7605,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 <p>If you are not using Buildron yet, <a href="https://github.com/skahal/buildron">give it a try</a>.
@@ -6934,6 +7626,7 @@ If you are already using Buildron and Slack, try my <a href="https://github.com/
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="botcontroller">BotController</h2>
 <script src="https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js"> </script>]]></content><author><name></name></author><category term="Tutorial" /><category term="slack" /><category term="unity3d" /><category term="gamedev" /><category term="open-source" /><category term="gist" /><category term="dotnet" /><category term="bot" /><summary type="html"><![CDATA[I was looking for a way to send a message to a Slack channel using the Slackbot API.]]></summary></entry><entry><title type="html">Creating a ConsoleMod to Buildron</title><link href="http://diegogiacomelli.com.br/creating-a-consolemod-to-buildron/" rel="alternate" type="text/html" title="Creating a ConsoleMod to Buildron" /><published>2016-09-15T00:00:00-03:00</published><updated>2016-09-15T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/creating-a-consolemod-to-buildron</id><content type="html" xml:base="http://diegogiacomelli.com.br/creating-a-consolemod-to-buildron/"><![CDATA[<p>In this post we’ll create a mod that adds a console window to Buildron and let you monitor its events. Our ConsoleMod will have 2 classes: ModController and Mod.</p>
@@ -7138,6 +7831,7 @@ If you are already using Buildron and Slack, try my <a href="https://github.com/
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>In the menu “Buildron”, click on “Show Simulator”.</p>
 
@@ -7150,6 +7844,7 @@ If you are already using Buildron and Slack, try my <a href="https://github.com/
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Hit the “Play” button again to stop playing the scene.</p>
 
@@ -7174,6 +7869,7 @@ If you are already using Buildron and Slack, try my <a href="https://github.com/
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 <p>That’s it! We created a Buildron mod that can help to debug what is happening in Buildron and mods in runtime.</p>
@@ -7185,6 +7881,7 @@ If you are already using Buildron and Slack, try my <a href="https://github.com/
 <center>                
         <img class="screenshot" src="/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <p><a href="https://github.com/giacomelli/jumpstart">jumpstart</a> is a command-line tool to create new C# projects from prebuilt/templates.</p>
 
@@ -7202,6 +7899,7 @@ If you are already using Buildron and Slack, try my <a href="https://github.com/
 </picture>
 
       </center>
+<p><br /></p>
 
 <blockquote>
   <p>The first name that I thought to the tool was prebuilt, but later, my friend <a href="https://twitter.com/giusepe">Giusepe Casagrande</a> convinced me that jumpstart was really better name… and he was right!</p>
@@ -7282,6 +7980,7 @@ My.Amazing.NewProject.sln
 <center>                
         <img class="screenshot" src="/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <h2 id="download">Download</h2>
 <p>Download the Buildron-Mod-Template.zip from <a href="https://github.com/skahal/Buildron/releases">releases page</a>.
@@ -7318,6 +8017,7 @@ Unzip it in any folder.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:</p>
 
@@ -7339,6 +8039,7 @@ Unzip it in any folder.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="the-c-project">The C# project</h2>
 <p>Open the MyAmazingMod/src/Code/MyAmazingMod.sln.</p>
@@ -7353,6 +8054,7 @@ Unzip it in any folder.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Inside of it you can see the Mod.cs and ModController.cs.</p>
 
@@ -7370,6 +8072,7 @@ Unzip it in any folder.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Click on the menu “Buildron/Show Simulator”.</p>
 
@@ -7382,6 +8085,7 @@ Unzip it in any folder.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>You will see a box falling down every time you hit the button. This behavior is made by Mod.cs and ModController.cs on C# project. If you are curious about it, take a look on the classes implementations.</p>
 
@@ -7407,6 +8111,7 @@ Unzip it in any folder.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Go to folder MyAmazingMod/build and open the Buildron of your platform.</p>
 
@@ -7422,6 +8127,7 @@ Unzip it in any folder.</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 <p>With this post you learned how you can starting to create your own mod from mod template.</p>
@@ -7437,6 +8143,7 @@ Unzip it in any folder.</p>
 <center>                
         <img class="screenshot" src="/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <blockquote>
   <p>BuildMod running inside Buildron.ModSdk simulator</p>
@@ -7505,6 +8212,7 @@ js-dos provides javascript API to easily run DOS programs and games in browser. 
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>To fill this gap I created the BadgesSharp service: <a href="http://badgessharp.apphb.com">http://badgessharp.apphb.com</a>. BadgesSharp is a free service to generate badges that need some kind of input and processing before you can display them on GitHub repositories.</p>
 
@@ -7632,6 +8340,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Select tab “Contexts”, and add I new context, in my case a called it “Skahal”:</p>
 
@@ -7643,6 +8352,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="5-configuring-the-evidence-sources">5) Configuring the evidence sources</h3>
 <p>Select the tab “Evidences sources”, the option “Running Application” should be checked:</p>
@@ -7655,6 +8365,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="6-configuring-the-rules">6) Configuring the rules</h3>
 <p>Select the tab “Rules”, add a new rule to your context, the rule must be of type “Running Application” to Unity 3D:</p>
@@ -7667,6 +8378,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="7-configuring-the-actions">7) Configuring the actions</h3>
 <p>Select the tab “Actions”, we’ll create 3 new actions: the first one is a task to open Safari in the Toggl timer task page, this is an optional action, but I like to see the task running (and I can stop/start it manually sometimes). Add a action of type “Open URL” with the address “https://www.toggl.com/app/timer”, select “On Arrival” and your context:</p>
@@ -7679,6 +8391,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The second one is a action to start the task in the Toggl when the context starts. Add a action of type “Shell Script”, in the field “Parameter” type the path to your startTogglTimeEntry.sh script, select “On Arrival” and your context:</p>
 
@@ -7690,6 +8403,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The third one is a action to stop the task in the Toggl when the context ends. Add a action of type “Shell Script”, in the field “Parameter” type the path to your stopTogglTimeEntry.sh script, select “On Arrival” and your context:</p>
 
@@ -7701,6 +8415,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="8-test-everything">8) Test everything</h3>
 <p>Open Unity3D editor, in the almost same time your context must be activated and the Safari must open the Toggl url with “Programming” task started.</p>
@@ -7765,6 +8480,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>It’s clear that is not easy to know what tweets are inside that list. Of course you can use breakpoint conditions, trace, logs and many others resources to help the debug process, but DebuggerDisplay is an easier and very cheap solution.</p>
 
@@ -7789,12 +8505,14 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <p><br /></p>
 
 <center>                
         <img class="screenshot" src="/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif " alt="post image" />
       </center>
+<p><br /></p>
 <center><span style="font-style:italic; font-size:small"><p>When debugging is easier than expected</p>
 </span></center>
 <p><br /></p>
@@ -7857,6 +8575,7 @@ $ export GDataPassword=[secure]
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="quotes">Quotes</h3>
 <blockquote>

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - slack</title>
  <link href="//tags/slack/index.xml" rel="self"/>
  <link href="/tag/slack.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/slack.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -21,6 +21,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 &lt;p&gt;Currently Buildron SlackBotMod has the follow features:&lt;/p&gt;
@@ -36,6 +37,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;filter-builds&quot;&gt;Filter builds&lt;/h3&gt;
 &lt;p&gt;Filter buils by status or text.&lt;/p&gt;
@@ -48,6 +50,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;reset-filter&quot;&gt;Reset filter&lt;/h3&gt;
 &lt;p&gt;Reset previous builds filter (no filter).&lt;/p&gt;
@@ -60,6 +63,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;sort-builds&quot;&gt;Sort builds&lt;/h3&gt;
 &lt;p&gt;Sort buils by status, text or date.&lt;/p&gt;
@@ -72,6 +76,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;move-camera&quot;&gt;Move camera&lt;/h3&gt;
 &lt;p&gt;Move the camera the amount of pixels define in the x,y,z coordinates.&lt;/p&gt;
@@ -84,6 +89,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;reset-camera&quot;&gt;Reset camera&lt;/h3&gt;
 &lt;p&gt;Reset the camera position.&lt;/p&gt;
@@ -96,6 +102,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;take-a-screenshot&quot;&gt;Take a screenshot&lt;/h3&gt;
 &lt;p&gt;Take a screenshot of current Buildron state.&lt;/p&gt;
@@ -108,6 +115,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;If you are not using Buildron yet, &lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;give it a try&lt;/a&gt;.
@@ -137,6 +145,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;botcontroller&quot;&gt;BotController&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;

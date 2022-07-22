@@ -140,7 +140,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Then go to the <code class="language-plaintext highlighter-rouge">Services &amp; APIS</code> menu, after enter on the <code class="language-plaintext highlighter-rouge">Google Play game services</code>.</p>
 <center>                
@@ -151,7 +152,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Fill only the required information for test, then go to menu <code class="language-plaintext highlighter-rouge">Linked apps</code> and link it to your game on with the app on Google Play Console.</p>
 <center>                
@@ -162,7 +164,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <h2 id="creating-some-achievements-for-test">Creating some achievements for test</h2>
 <p>In the <code class="language-plaintext highlighter-rouge">Game services section</code> open the <code class="language-plaintext highlighter-rouge">Achievements</code> menu and add some achievements.</p>
@@ -174,7 +177,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <blockquote>
   <p>I found empirically that test achievements that did not have an icon set on the Google Play Console did not show the standard Google Play Games UI when unlocked and were automatically locked again about 1 hour after they were unlocked.</p>
@@ -190,7 +194,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <h2 id="oauth-and-upload-certificate">OAuth and Upload Certificate</h2>
 <p>One thing can be a little confusing is about the certificate fingerprints.</p>
@@ -204,7 +209,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Now you need to copy your <code class="language-plaintext highlighter-rouge">SHA-1</code> fingerprint of your <code class="language-plaintext highlighter-rouge">Upload certificate</code> from <code class="language-plaintext highlighter-rouge">App signing</code> section.</p>
 <center>                
@@ -215,7 +221,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Then go to your OAuth credentials on <a href="https://console.developers.google.com/apis">Google API console</a>.</p>
 <center>                
@@ -226,7 +233,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>In <code class="language-plaintext highlighter-rouge">the Google API console</code>, select your game on the top dropdown, then go to <code class="language-plaintext highlighter-rouge">Credentials</code> menu and edit the <code class="language-plaintext highlighter-rouge">OAuth 2.0 Client IDs</code>. Paste the fingertip on the field <code class="language-plaintext highlighter-rouge">SHA-1 certificate fingertip</code> and save it.</p>
 <center>                
@@ -237,7 +245,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <blockquote>
   <p>remember to remove the <code class="language-plaintext highlighter-rouge">SHA-1</code> prefix, if you copied it together.</p>
@@ -259,6 +268,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 <center>                
@@ -269,6 +279,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>With this basic setup you can start to use the other features from Google Play Games Plugin for Unity plugin, as:</p>
 <ul>
@@ -294,7 +305,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p>Below a list of tips and tricks for non-common scenarios.</p>
+<p><br />
+Below a list of tips and tricks for non-common scenarios.</p>
 
 <h3 id="log-on-device">Log on device</h3>
 <p>If anything goes wrong on Android device you will need to see it logs, to do so, you can use adb logcat:</p>
@@ -322,7 +334,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Go to the <code class="language-plaintext highlighter-rouge">Assets/GooglePlayGames/Editor</code> folder and create a new <code class="language-plaintext highlighter-rouge">Assembly Definition</code> called <code class="language-plaintext highlighter-rouge">GooglePlayGames.Editor</code>.</p>
 <center>                
@@ -333,7 +346,8 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
-<p><br /></p>
+<p><br />
+<br /></p>
 
 <p>Now, go to your game assembly definition and add a reference to the <code class="language-plaintext highlighter-rouge">GooglePlayGames</code>.</p>
 

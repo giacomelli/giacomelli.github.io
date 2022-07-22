@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - avatar-mask</title>
  <link href="//tags/avatar-mask/index.xml" rel="self"/>
  <link href="/tag/avatar-mask.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/avatar-mask.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -28,6 +28,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation clips available on Sci Fi Warrior PBR HP&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -43,6 +44,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot stands idle with the gun in the middle of his body&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -56,6 +58,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot walk forward and shoot&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -115,6 +118,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Starter project running: just HUD&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -131,6 +135,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Animator window showing the animation controller created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -155,6 +160,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward parameter created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -168,6 +174,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward condition defined&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -181,6 +188,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;reseting the transition settings&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -194,6 +202,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation base layer&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -214,6 +223,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;only upper body&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -228,6 +238,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the new layer created with the mask&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -244,6 +255,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;upper body animation layer&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -271,6 +283,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;ShootSingle parameter created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -296,6 +309,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the remaining actions to the challenge&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt; 	 	 

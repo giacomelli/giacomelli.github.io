@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -33,6 +33,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -68,6 +69,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2021/05/31/sqlasfile/SqlAsFile-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tags&quot;&gt;Tags&lt;/h2&gt;
 &lt;p&gt;You can use some tags to tell to SqlAsFile’s parser how to treat a portion of the file:&lt;/p&gt;
@@ -104,6 +106,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/11/arc-8-devlog-4/arc-8-running-chip-8-emulator-inside-unity-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;To help to understand everything in this post I recommend you read the previous &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog posts&lt;/a&gt;, in special the &lt;a href=&quot;/arc-8-devlog-3&quot;&gt;last one&lt;/a&gt;.&lt;/p&gt;
 
@@ -228,6 +231,7 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;The MonoBehaviour class is the base class from which every Unity script derives, by default. TPovides the framework which allows you to attach your script to a GameObject in the editor, as well as providing hooks into useful Events such as Start and Update.&lt;/p&gt;
@@ -249,7 +253,8 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;intialize-method&quot;&gt;Intialize method&lt;/h4&gt;
 &lt;p&gt;In the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Initialize&lt;/code&gt; we verify if will render to the main camera or to a specific target camera, then we set some camera configuration, create the material we will use to render the CHIP-8 graphic, get the screen size, then we initialize our &lt;a href=&quot;https://gameprogrammingpatterns.com/double-buffer.html&quot;&gt;Double Buffer&lt;/a&gt; array.&lt;/p&gt;
@@ -305,7 +310,8 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;awake-method&quot;&gt;Awake method&lt;/h4&gt;
 &lt;p&gt;We just try to locate our &lt;a href=&quot;https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html&quot;&gt;AudioSource&lt;/a&gt; component that will be used to play the sound.&lt;/p&gt;
@@ -329,7 +335,8 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;key-mapping&quot;&gt;Key mapping&lt;/h4&gt;
 &lt;p&gt;First, we create the dictionary &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_map&lt;/code&gt; to map the real keyboard keys to CHIP-8 keypad keys.&lt;/p&gt;
@@ -354,7 +361,8 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;debug-and-error-methods&quot;&gt;Debug and Error methods&lt;/h4&gt;
 &lt;p&gt;The two methods implemented for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; interface use methods available on Unity &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Debug.html&quot;&gt;Debug&lt;/a&gt; class to send log messages to the &lt;a href=&quot;https://docs.unity3d.com/Manual/Console.html&quot;&gt;console window&lt;/a&gt;.&lt;/p&gt;
@@ -375,7 +383,8 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;start-method&quot;&gt;Start method&lt;/h4&gt;
 &lt;p&gt;Verifies if all the systems needed to run the emulator were configured in the editor, then &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html&quot;&gt;sets the desired FPS&lt;/a&gt; and starts to run the emulator.&lt;/p&gt;
@@ -401,6 +410,7 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/04/arc-8-devlog-3/arc-8-running-chip-8-emulator-inside-unity-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you have any doubts about what I talk about above or any tip about the CHIP-8 emulator (or Unity) and you like to share it, please let me know in the comments section below.&lt;/p&gt;
 
@@ -483,6 +493,7 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;chip8graphicrazor-component-igraphic&quot;&gt;Chip8Graphic.razor component (IGraphic)&lt;/h2&gt;
 &lt;picture&gt;
@@ -689,7 +700,8 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;I won’t get into details about how to implement each of CHIP-8’s 35 opcodes, because there are plenty of tutorials and resources talking about this on the internet (look in the section ‘Further reading’ in the of this post). My focus here is to explain my code design decisions to allow built a CHIP-8 emulator core in .NET Standard that will allow us to develop a graphic, sound, and input systems for Blazor and Unity3D (and any other platform where C# / .NET is supported).&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+I won’t get into details about how to implement each of CHIP-8’s 35 opcodes, because there are plenty of tutorials and resources talking about this on the internet (look in the section ‘Further reading’ in the of this post). My focus here is to explain my code design decisions to allow built a CHIP-8 emulator core in .NET Standard that will allow us to develop a graphic, sound, and input systems for Blazor and Unity3D (and any other platform where C# / .NET is supported).&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Why the name ARC-8? well, the choice of the name was quite chaotic as any of the name ideas brainstorm that I have had with my friend &lt;a href=&quot;http://twitter.com/giusepe&quot;&gt;Giusepe Casagrande&lt;/a&gt;. The name’s meaning and the way of speaking are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Arcade&lt;/code&gt; because we want to remember that old day when we are kids playing some classic games in an arcade or fliperama as we call it in Brazil.&lt;/p&gt;
@@ -722,6 +734,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;systems-interfaces&quot;&gt;Systems interfaces&lt;/h3&gt;
 &lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=system-interfaces.cs&quot;&gt; &lt;/script&gt;
@@ -755,6 +768,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;premise-3---100-code-coverage&quot;&gt;Premise 3 - 100% code coverage&lt;/h2&gt;
 &lt;picture&gt;
@@ -776,6 +790,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;premise-4---benchmark&quot;&gt;Premise 4 - Benchmark&lt;/h2&gt;
 &lt;picture&gt;
@@ -795,6 +810,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
 &lt;picture&gt;
@@ -855,6 +871,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;scripting-backends&quot;&gt;Scripting backends&lt;/h3&gt;
 &lt;ul&gt;
@@ -922,6 +939,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;More at &lt;a href=&quot;https://owasp.org/www-project-zap/&quot;&gt;https://owasp.org/www-project-zap/&lt;/a&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -935,6 +953,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;As the &lt;a href=&quot;https://owasp.org/www-community/attacks/Path_Traversal&quot;&gt;Path Traversal alert documentation&lt;/a&gt; explains:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1012,6 +1031,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember: only mark an alert as false positive after had to validate that URL action code and you are certain that is a false positive&lt;/p&gt;
 &lt;/div&gt;
@@ -1108,6 +1128,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Har File Analyzer with a HAR file loaded&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1271,6 +1292,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Add new item…&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1284,6 +1306,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-a-targets&quot;&gt;Creating a .targets&lt;/h2&gt;
 &lt;p&gt;We need to create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.targets&lt;/code&gt; file, it will be used to copy the T4 Template from the NuGet package folder to the target project in the build process:&lt;/p&gt;
@@ -1438,6 +1461,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Cake build&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1451,6 +1475,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;SonarCloud dashboard&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1488,6 +1513,7 @@ dotnet run
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
 
@@ -1583,6 +1609,7 @@ dotnet watch run
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Open a new terminal in the same folder and type:&lt;/p&gt;
@@ -1676,6 +1703,7 @@ dotnet watch run
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.&lt;/p&gt;
 &lt;/div&gt;
@@ -1697,6 +1725,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
 &lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
@@ -1713,6 +1742,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With only 4 C# classes, 1 JS file and 1 Blazor page we built a pretty nice sample of genetic algorithms using Blazor with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
@@ -1759,6 +1789,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Thats it, now you can use this sample to understand how to use GeneticSharp in your game.&lt;/p&gt;
@@ -1844,6 +1875,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;You will get this result after call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The (quick) [brown] {fox} jumps!
@@ -1944,6 +1976,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-a-new-geneticsharp-project-from-templates&quot;&gt;Creating a new GeneticSharp project from templates&lt;/h2&gt;
 
@@ -1959,6 +1992,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;tsp-console-application&quot;&gt;TSP Console application&lt;/h3&gt;
 &lt;p&gt;Create a new console application template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).&lt;/p&gt;
@@ -1972,6 +2006,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;tsp-unity3d&quot;&gt;TSP Unity3D&lt;/h3&gt;
 &lt;p&gt;Create an Unity3D template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).&lt;/p&gt;
@@ -1985,6 +2020,7 @@ salta sobre o céo preguicoso.&lt;/code&gt;&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Let’s evolve!&lt;/p&gt;
 </content>
@@ -2164,6 +2200,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
 &lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
@@ -2178,6 +2215,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
 &lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
@@ -2190,6 +2228,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;
 
@@ -2213,6 +2252,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
 
@@ -2278,6 +2318,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
 &lt;p&gt;The genetic algorithm to evaluate the simulation is configured with this operators:&lt;/p&gt;
@@ -2299,6 +2340,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;If you are running the sample inside Unity3D editor you can change the size of the simulation grid in the SampleController game object from CarScene.&lt;/p&gt;
@@ -2452,6 +2494,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
 &lt;p&gt;Go to “Player settings” / “Other settings” / “Configuration”, select “.NET 4.x Equivalent” on “Scripting Runtime Version”. Unity will ask to restart, you can confirm.&lt;/p&gt;
@@ -2466,6 +2509,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
@@ -2516,6 +2560,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
 &lt;p&gt;Now our GA is running inside Unity3D, but it need to display the cities route better.
@@ -2552,6 +2597,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
@@ -2562,6 +2608,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
 &lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
@@ -2594,6 +2641,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
 &lt;p&gt;Our sample could be considered done, but would it be nice if we you could change the cities positions while the genetic algorithm are running and see how it manages these cities positions changes.&lt;/p&gt;
@@ -2612,6 +2660,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With only 5 C# scripts and 1 prefab we built a pretty nice sample of genetic algorithms using in Unity3D with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
@@ -2769,6 +2818,7 @@ to &lt;img class=&quot;icon&quot; src=&quot;/assets/logos/netcore.svg &quot; alt
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;warmup&quot;&gt;Warmup&lt;/h3&gt;
 
@@ -2914,6 +2964,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now I’m planning to create a GeneticSharp’s sample using Unity3d’s new beta features, like the new ECS (Entity Component System), C# Job System and the Burst compiler.&lt;/p&gt;
 
@@ -2975,6 +3026,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In our sample we will optimize the input of a mathematical function, this function will be used as our fitness evaluation function. For this sample we will use a function that everyone saw in school time, the famous &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_distance&quot;&gt;Euclidean distance&lt;/a&gt; or commonly know as distance of two points function:&lt;/p&gt;
 
@@ -2986,6 +3038,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;We will consider our chromosome fitness as the result of this function. The higher the result, the better is the chromosome fitness.&lt;/p&gt;
 
@@ -3000,6 +3053,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The goal of our genetic algortim is &lt;strong&gt;find the input values of Euclidean distance function: X1, Y1 and X2, Y2 that result in the greatest distance in a rectangular area&lt;/strong&gt;.&lt;/p&gt;
 
@@ -3018,6 +3072,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Open your IDE (Visual Studio/Xamarin Studio) and create a new console project.&lt;/p&gt;
 
@@ -3039,6 +3094,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Chromosome is the representation of a possible solution in genetic algoritms.&lt;/p&gt;
 
@@ -3079,6 +3135,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The population represents the possible solutions to our problem, so we need to create a population of our Euclidean distance chromosome.&lt;/p&gt;
 
@@ -3097,6 +3154,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The fitness function is where the genetic algoritm will evaluate and give a value (fitness) to each chromosome generated inside it. A good fitness function can guide your GA to a fast and optimum solution.&lt;/p&gt;
 
@@ -3117,6 +3175,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;A selection is the genetic algorithm operator responsible for decing which chromosomes of current population will be selected as parent of the next population.&lt;/p&gt;
 
@@ -3137,6 +3196,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing these selected chromosomes.&lt;/p&gt;
 
@@ -3161,6 +3221,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The biology definition of mutations is: 
 &lt;em&gt;“In genetics, mutation may be small scale (affecting a gene) or large scale (involving a change in the chromosome). It may arise from faulty deletions, insertions, or exchanges of the genetic material. Such a change may result in the creation of a new character or trait.”&lt;/em&gt;&lt;/p&gt;
@@ -3184,6 +3245,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;A termination decide when a GA should be stopped. GeneticSharp use the generation number termination with just one generation as default termination. This mean that the genetic algoritm will run just one generation when you call the Start method, after this you can increment the expected generation number of the termination and call the method Resume how many times you want.&lt;/p&gt;
 
@@ -3204,6 +3266,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.&lt;/p&gt;
 
@@ -3243,6 +3306,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;We can see that in the first generations (black lines) the genetic algorithm as some intermediate results and at the end (red line) &lt;strong&gt;it found the best possible solution: a diagonal.&lt;/strong&gt;&lt;/p&gt;
 
@@ -3255,6 +3319,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;When you finish the tutorial your source code will be this one:&lt;/p&gt;
 
@@ -3269,6 +3334,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this tutorial we learn how genetic algoritm works and how to use GeneticSharp to solve a very simple sample. Now you can try it to solve more complex problems.&lt;/p&gt;
 
@@ -3355,6 +3421,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
@@ -3374,6 +3441,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 &lt;p&gt;Currently Buildron SlackBotMod has the follow features:&lt;/p&gt;
@@ -3389,6 +3457,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;filter-builds&quot;&gt;Filter builds&lt;/h3&gt;
 &lt;p&gt;Filter buils by status or text.&lt;/p&gt;
@@ -3401,6 +3470,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;reset-filter&quot;&gt;Reset filter&lt;/h3&gt;
 &lt;p&gt;Reset previous builds filter (no filter).&lt;/p&gt;
@@ -3413,6 +3483,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;sort-builds&quot;&gt;Sort builds&lt;/h3&gt;
 &lt;p&gt;Sort buils by status, text or date.&lt;/p&gt;
@@ -3425,6 +3496,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;move-camera&quot;&gt;Move camera&lt;/h3&gt;
 &lt;p&gt;Move the camera the amount of pixels define in the x,y,z coordinates.&lt;/p&gt;
@@ -3437,6 +3509,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;reset-camera&quot;&gt;Reset camera&lt;/h3&gt;
 &lt;p&gt;Reset the camera position.&lt;/p&gt;
@@ -3449,6 +3522,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;take-a-screenshot&quot;&gt;Take a screenshot&lt;/h3&gt;
 &lt;p&gt;Take a screenshot of current Buildron state.&lt;/p&gt;
@@ -3461,6 +3535,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;If you are not using Buildron yet, &lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;give it a try&lt;/a&gt;.
@@ -3490,6 +3565,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;botcontroller&quot;&gt;BotController&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;
@@ -3704,6 +3780,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In the menu “Buildron”, click on “Show Simulator”.&lt;/p&gt;
 
@@ -3716,6 +3793,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hit the “Play” button again to stop playing the scene.&lt;/p&gt;
 
@@ -3740,6 +3818,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;That’s it! We created a Buildron mod that can help to debug what is happening in Buildron and mods in runtime.&lt;/p&gt;
@@ -3760,6 +3839,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/12/jumpstart/jumpstart-convention-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/giacomelli/jumpstart&quot;&gt;jumpstart&lt;/a&gt; is a command-line tool to create new C# projects from prebuilt/templates.&lt;/p&gt;
 
@@ -3777,6 +3857,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;The first name that I thought to the tool was prebuilt, but later, my friend &lt;a href=&quot;https://twitter.com/giusepe&quot;&gt;Giusepe Casagrande&lt;/a&gt; convinced me that jumpstart was really better name… and he was right!&lt;/p&gt;
@@ -3866,6 +3947,7 @@ My.Amazing.NewProject.sln
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
 &lt;p&gt;Download the Buildron-Mod-Template.zip from &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;releases page&lt;/a&gt;.
@@ -3902,6 +3984,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:&lt;/p&gt;
 
@@ -3923,6 +4006,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-c-project&quot;&gt;The C# project&lt;/h2&gt;
 &lt;p&gt;Open the MyAmazingMod/src/Code/MyAmazingMod.sln.&lt;/p&gt;
@@ -3937,6 +4021,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Inside of it you can see the Mod.cs and ModController.cs.&lt;/p&gt;
 
@@ -3954,6 +4039,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Click on the menu “Buildron/Show Simulator”.&lt;/p&gt;
 
@@ -3966,6 +4052,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;You will see a box falling down every time you hit the button. This behavior is made by Mod.cs and ModController.cs on C# project. If you are curious about it, take a look on the classes implementations.&lt;/p&gt;
 
@@ -3991,6 +4078,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go to folder MyAmazingMod/build and open the Buildron of your platform.&lt;/p&gt;
 
@@ -4006,6 +4094,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With this post you learned how you can starting to create your own mod from mod template.&lt;/p&gt;
@@ -4030,6 +4119,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
@@ -4082,6 +4172,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;To fill this gap I created the BadgesSharp service: &lt;a href=&quot;http://badgessharp.apphb.com&quot;&gt;http://badgessharp.apphb.com&lt;/a&gt;. BadgesSharp is a free service to generate badges that need some kind of input and processing before you can display them on GitHub repositories.&lt;/p&gt;
 
@@ -4227,6 +4318,7 @@ Custom script:&lt;/li&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s clear that is not easy to know what tweets are inside that list. Of course you can use breakpoint conditions, trace, logs and many others resources to help the debug process, but DebuggerDisplay is an easier and very cheap solution.&lt;/p&gt;
 
@@ -4251,12 +4343,14 @@ Custom script:&lt;/li&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;When debugging is easier than expected&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - chip8</title>
  <link href="//tags/chip8/index.xml" rel="self"/>
  <link href="/tag/chip8.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/chip8.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -47,7 +47,8 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;I won’t get into details about how to implement each of CHIP-8’s 35 opcodes, because there are plenty of tutorials and resources talking about this on the internet (look in the section ‘Further reading’ in the of this post). My focus here is to explain my code design decisions to allow built a CHIP-8 emulator core in .NET Standard that will allow us to develop a graphic, sound, and input systems for Blazor and Unity3D (and any other platform where C# / .NET is supported).&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+I won’t get into details about how to implement each of CHIP-8’s 35 opcodes, because there are plenty of tutorials and resources talking about this on the internet (look in the section ‘Further reading’ in the of this post). My focus here is to explain my code design decisions to allow built a CHIP-8 emulator core in .NET Standard that will allow us to develop a graphic, sound, and input systems for Blazor and Unity3D (and any other platform where C# / .NET is supported).&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Why the name ARC-8? well, the choice of the name was quite chaotic as any of the name ideas brainstorm that I have had with my friend &lt;a href=&quot;http://twitter.com/giusepe&quot;&gt;Giusepe Casagrande&lt;/a&gt;. The name’s meaning and the way of speaking are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Arcade&lt;/code&gt; because we want to remember that old day when we are kids playing some classic games in an arcade or fliperama as we call it in Brazil.&lt;/p&gt;
@@ -80,6 +81,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;systems-interfaces&quot;&gt;Systems interfaces&lt;/h3&gt;
 &lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=system-interfaces.cs&quot;&gt; &lt;/script&gt;
@@ -113,6 +115,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;premise-3---100-code-coverage&quot;&gt;Premise 3 - 100% code coverage&lt;/h2&gt;
 &lt;picture&gt;
@@ -134,6 +137,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;premise-4---benchmark&quot;&gt;Premise 4 - Benchmark&lt;/h2&gt;
 &lt;picture&gt;
@@ -153,6 +157,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
 &lt;picture&gt;

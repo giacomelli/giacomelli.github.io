@@ -3,11 +3,546 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>The Fundamentals of Unity 2D colliders</title>
+   <link href="//the-fundamentals-of-unity-2d-colliders/"/>
+   <updated>2022-07-22T00:00:00-03:00</updated>
+   <id>//the-fundamentals-of-unity-2d-colliders</id>
+   <content type="html">&lt;p&gt;In the first years of Unity, there wasn’t solid support for 2D game development inside the engine — for years, the right way to refer to it was “Unity 3D”. Though it was possible to develop 2D games with Unity, without official engine support, it wasn’t a smooth process like it is nowadays.&lt;/p&gt;
+
+&lt;p&gt;Around 2013, Unity started to support 2D game development with built-in components, like a 2D physics engine, Collider2D, Rigidbody2D, Vector2, Sprite, Tilemap, etc.&lt;/p&gt;
+
+&lt;p&gt;In this post, we’ll cover the common properties and behaviors of 2D colliders, which messages are sent to their GameObjects, how we can use them in our scripts, and how each collider setup interacts with others.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;I originally wrote this post as a guest writer for &lt;a href=&quot;https://blog.logrocket.com/fundamentals-unity-2d-colliders/&quot;&gt;LogRocket’s blog&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;tuorial-sections&quot;&gt;Tuorial sections&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Setting up our Unity project&lt;/li&gt;
+  &lt;li&gt;What are colliders?&lt;/li&gt;
+  &lt;li&gt;Common properties and behaviors of colliders&lt;/li&gt;
+  &lt;li&gt;Adding a 2D collider to a GameObject&lt;/li&gt;
+  &lt;li&gt;What is a Rigidbody2D component?&lt;/li&gt;
+  &lt;li&gt;Using PhysicsMaterial2D to add effects&lt;/li&gt;
+  &lt;li&gt;Collision callbacks&lt;/li&gt;
+  &lt;li&gt;Using collision callbacks on scripts
+    &lt;ul&gt;
+      &lt;li&gt;Without a trigger&lt;/li&gt;
+      &lt;li&gt;With a trigger&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Collider interactions
+    &lt;ul&gt;
+      &lt;li&gt;How do these setups affect collider interactions?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Physics2D settings&lt;/li&gt;
+  &lt;li&gt;Source code and samples&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;The following prerequisites are required to follow along with this tutorial:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Basic knowledge of Unity&lt;/li&gt;
+  &lt;li&gt;Previous experience writing C# scripts in Unity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setting-up-our-unity-project&quot;&gt;Setting up our Unity project&lt;/h2&gt;
+&lt;p&gt;First, we need to create our Unity project. For this tutorial, we’ll use the version 2021.3.4f1, which, at the moment I’m writing, is the newest LTS Unity version.&lt;/p&gt;
+
+&lt;p&gt;On the project templates list, choose 2D(core), give it a name, and click the Create project button. We’ll call ours &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SampleScene&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-200-1cab31008.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-400-1cab31008.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-1cab31008.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-1224-1cab31008.webp 1224w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-200-1cab31008.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-400-1cab31008.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-1cab31008.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-1224-1cab31008.png 1224w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-1cab31008.png&quot; alt=&quot;post image&quot; width=&quot;1224&quot; height=&quot;712&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+With the project started, create two folders called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scripts&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Physic Materials&lt;/code&gt; inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets&lt;/code&gt; folder. We’ll use them to keep our project organized during the tutorial.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-200-d4f7ca06e.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-400-d4f7ca06e.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-d4f7ca06e.webp 528w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-200-d4f7ca06e.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-400-d4f7ca06e.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-d4f7ca06e.png 528w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-d4f7ca06e.png&quot; alt=&quot;post image&quot; width=&quot;528&quot; height=&quot;192&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-colliders&quot;&gt;What are colliders?&lt;/h2&gt;
+&lt;p&gt;Before we start using our Unity project, we need to take a little dive into the basic concepts of colliders.&lt;/p&gt;
+
+&lt;p&gt;Colliders are the way that Unity (and most of the available game engines, if not all) manages collisions between GameObjects. For the sake of this tutorial, we are only using the 2D colliders, but a lot of the rules mentioned below are applicable to 3D colliders, too.&lt;/p&gt;
+
+&lt;p&gt;In Unity, a 2D collider is a component that allows us to define a shape, where we want to receive notifications in our GameObject’s script whenever another GameObject (with another collider) collides with the first collider.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://docs.unity3d.com/Manual/Collider2D.html&quot;&gt;Unity doc tip&lt;/a&gt;: A collider is invisible, and does not need to be the exact same shape as the GameObject’s mesh. A rough approximation of the mesh is often more efficient and indistinguishable in gameplay.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Right now, Unity has eight built-in kinds of 2D colliders:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;BoxCollider2D&lt;/li&gt;
+  &lt;li&gt;CapsuleCollider2D&lt;/li&gt;
+  &lt;li&gt;CircleCollider2D&lt;/li&gt;
+  &lt;li&gt;CompositeCollider2D&lt;/li&gt;
+  &lt;li&gt;CustomCollider2D&lt;/li&gt;
+  &lt;li&gt;EdgeCollider2D&lt;/li&gt;
+  &lt;li&gt;PolygonCollider2D&lt;/li&gt;
+  &lt;li&gt;TilemapCollider2D&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-200-c2a46322b.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-c2a46322b.webp 250w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-200-c2a46322b.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-c2a46322b.png 250w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-c2a46322b.png&quot; alt=&quot;post image&quot; width=&quot;250&quot; height=&quot;355&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;common-properties-and-behaviors-of-colliders&quot;&gt;Common properties and behaviors of colliders&lt;/h2&gt;
+&lt;p&gt;Every 2D collider in Unity inherits from a common class called Collider2D. As a result, they share common properties. Below is a list of the most notable and widely-used ones:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-200-5deeeeb3e.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-400-5deeeeb3e.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-5deeeeb3e.webp 448w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-200-5deeeeb3e.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-400-5deeeeb3e.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-5deeeeb3e.png 448w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-5deeeeb3e.png&quot; alt=&quot;post image&quot; width=&quot;448&quot; height=&quot;120&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Shape (Edit collider) — Each kind of 2D collider has a different shape, but most of them allow us to change some properties of their shapes, like the scale and distance of vertices&lt;/li&gt;
+  &lt;li&gt;Material — Defines the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PhysicsMaterial2D&lt;/code&gt; that can be used by the collider to define things like friction and bounciness&lt;/li&gt;
+  &lt;li&gt;isTrigger — If it’s checked, the collider will behave as a trigger. When a collider is not marked as a trigger, the physics engine will generate a collision; when the collider hits another collider, it produces the expected behaviors based on the colliders’ setups, like moving them to opposite directions or stopping them. However, when a collider is marked as a trigger, the physics engine will simply detect when it enters the space of another and no collision will be created&lt;/li&gt;
+  &lt;li&gt;Used by Effector — Determines whether the collider will be used by an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effector2D&lt;/code&gt; attached to the GameObject.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://docs.unity3d.com/Manual/Effectors2D.html&quot;&gt;Unity doc tip&lt;/a&gt;: Effector2D components are used to direct the forces when colliders come into contact with each other&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Offset — As the collider will be attached to a GameObject, we can use this property to define an offset position relative to the GameObject&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;adding-a-2d-collider-to-a-gameobject&quot;&gt;Adding a 2D collider to a GameObject&lt;/h2&gt;
+&lt;p&gt;In our Unity project, add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sprite (Square)&lt;/code&gt; to the opened scene (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SampleScene&lt;/code&gt;):&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-200-d7e90927c.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-400-d7e90927c.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-d7e90927c.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-819-d7e90927c.webp 819w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-200-d7e90927c.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-400-d7e90927c.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-d7e90927c.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-819-d7e90927c.png 819w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-d7e90927c.png&quot; alt=&quot;post image&quot; width=&quot;819&quot; height=&quot;713&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sprite (Square)&lt;/code&gt; GameObject and add a component called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BoxCollider2D&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-200-5afeb90e2.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-400-5afeb90e2.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-5afeb90e2.webp 455w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-200-5afeb90e2.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-400-5afeb90e2.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-5afeb90e2.png 455w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-5afeb90e2.png&quot; alt=&quot;post image&quot; width=&quot;455&quot; height=&quot;708&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now repeat the process, but add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sprite (Circle)&lt;/code&gt; to the scene and add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CircleCollider2D&lt;/code&gt; component to it.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-200-f11e563fd.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-400-f11e563fd.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-f11e563fd.webp 461w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-200-f11e563fd.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-400-f11e563fd.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-f11e563fd.png 461w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-f11e563fd.png&quot; alt=&quot;post image&quot; width=&quot;461&quot; height=&quot;643&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Move the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject&lt;/code&gt; a little on top of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-200-2e37f4265.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-400-2e37f4265.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-2e37f4265.webp 708w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-200-2e37f4265.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-400-2e37f4265.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-2e37f4265.png 708w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-2e37f4265.png&quot; alt=&quot;post image&quot; width=&quot;708&quot; height=&quot;556&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;If we hit the Play button now, nothing will happen, even if we move the GameObjects inside the editor. No collision will happen.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/moving-circle.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Why does nothing happen? Well, we need to talk about the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; component.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-a-rigidbody2d-component&quot;&gt;What is a Rigidbody2D component?&lt;/h2&gt;
+&lt;p&gt;A Rigidbody2D is a component used to tell Unity that it should put the GameObject under the control of the physics engine. In other words, GameObjects without a rigidbody do not exist for the physics engine.&lt;/p&gt;
+
+&lt;p&gt;If we just add a 2D collider to our GameObject, nothing will happen because the physics engine is not aware of it. If we want the physics engine to control our GameObject, we need to add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; component to it.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-200-0007b5a10.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-400-0007b5a10.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-0007b5a10.webp 454w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-200-0007b5a10.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-400-0007b5a10.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-0007b5a10.png 454w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-0007b5a10.png&quot; alt=&quot;post image&quot; width=&quot;454&quot; height=&quot;312&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This means that now our GameObject is affected by gravity via the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gravity Scale&lt;/code&gt; property, and can be controlled from scripts using forces.&lt;/p&gt;
+
+&lt;p&gt;We Just need to add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; to each of the GameObjects that we’ve already created and hit the Play button:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-gravity.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;With the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; components added to our GameObjects, the physics engine is aware of them and has started making the gravity act.&lt;/p&gt;
+
+&lt;h2 id=&quot;using-physicsmaterial2d-to-add-effects&quot;&gt;Using PhysicsMaterial2D to add effects&lt;/h2&gt;
+&lt;p&gt;In our sample, the two GameObjects are just falling, but what if we would like to have the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject&lt;/code&gt; stay in its position and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject&lt;/code&gt; hit it, before bouncing like a ball?&lt;/p&gt;
+
+&lt;p&gt;An easy way to achieve this is using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PhysicsMaterial2D&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s add that ball effect to our sample scene. First, on the Square GameObject, change the property &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Body Type&lt;/code&gt; of its &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Static&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-200-afa8cf714.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-afa8cf714.webp 381w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-200-afa8cf714.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-afa8cf714.png 381w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-afa8cf714.png&quot; alt=&quot;post image&quot; width=&quot;381&quot; height=&quot;93&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PhysicsMaterial2D&lt;/code&gt;, name it &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ball physics material&lt;/code&gt;, and place it inside our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Physics Materials&lt;/code&gt; folder:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-200-2fdd777ce.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-400-2fdd777ce.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-2fdd777ce.webp 746w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-200-2fdd777ce.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-400-2fdd777ce.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-2fdd777ce.png 746w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-2fdd777ce.png&quot; alt=&quot;post image&quot; width=&quot;746&quot; height=&quot;450&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Change its &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bounciness&lt;/code&gt; property to 1:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-200-1d09b8bdc.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-1d09b8bdc.webp 381w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-200-1d09b8bdc.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-1d09b8bdc.png 381w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-1d09b8bdc.png&quot; alt=&quot;post image&quot; width=&quot;381&quot; height=&quot;121&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject's Rigidbody2D&lt;/code&gt;, change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Material&lt;/code&gt; property to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ball physics material&lt;/code&gt; that we’ve just created:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-200-5d0ca6424.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-5d0ca6424.webp 382w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-200-5d0ca6424.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-5d0ca6424.png 382w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-5d0ca6424.png&quot; alt=&quot;post image&quot; width=&quot;382&quot; height=&quot;69&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; button again. Now we should see this happen:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-boucing.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;collision-callbacks&quot;&gt;Collision callbacks&lt;/h2&gt;
+&lt;p&gt;When one collider interacts with another collider, Unity sends some messages (e.g., call a method on any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MonoBehavior&lt;/code&gt; attached to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt;). In the case of a 2D collider, there are six available messages:&lt;/p&gt;
+
+&lt;h3 id=&quot;when-istrigger-is-not-checked&quot;&gt;When IsTrigger is not checked:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionEnter2D&lt;/code&gt;: called in the first frame when the collision starts&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionStay2D&lt;/code&gt;: called in each frame while the collision is happening&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollsionExit2D&lt;/code&gt;: called in the first frame when the collision ends&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;when-istrigger-is-checked&quot;&gt;When IsTrigger is checked:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTriggerEnter2D&lt;/code&gt;: called in the first frame when the collision starts&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTriggerStay2D&lt;/code&gt;: called in each frame while the collision is happening&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTriggerExit2D&lt;/code&gt;: called in the first frame when the collision ends&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionStay2D&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTriggerStay2D&lt;/code&gt; are called each frame until they reach Time To Sleep (if the GameObject is not moving anymore).&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-200-10aa7dae6.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-10aa7dae6.webp 355w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-200-10aa7dae6.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-10aa7dae6.png 355w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-10aa7dae6.png&quot; alt=&quot;post image&quot; width=&quot;355&quot; height=&quot;111&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;We can change this setting on Project Settings / Physics 2D&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;using-collision-callbacks-on-scripts&quot;&gt;Using collision callbacks on scripts&lt;/h2&gt;
+&lt;p&gt;It’s time to write some code. Let’s create a script to log every time that our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject&lt;/code&gt; hits the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionEnter2D&lt;/code&gt;) to the console window. We’ll record how many frames they stay in contact (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionStay2D&lt;/code&gt;), and when they stop hitting each other (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollsionExit2D&lt;/code&gt;). We’ll also show what happens with and without a trigger&lt;/p&gt;
+
+&lt;h3 id=&quot;without-a-trigger&quot;&gt;Without a trigger&lt;/h3&gt;
+&lt;p&gt;Inside our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scripts&lt;/code&gt; folder, create a script called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CollisionLogger&lt;/code&gt; and add it to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-200-b2b349465.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-400-b2b349465.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-b2b349465.webp 442w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-200-b2b349465.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-400-b2b349465.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-b2b349465.png 442w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-b2b349465.png&quot; alt=&quot;post image&quot; width=&quot;442&quot; height=&quot;348&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CollisionLogger&lt;/code&gt; script on editor and type these methods:
+&lt;script src=&quot;https://gist.github.com/94b530c223d99f34d4fd6a0ab0702f51.js?file=CollisionLogger.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; button, and we should see something like this in the Console window:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-200-bf27113d6.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-400-bf27113d6.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-bf27113d6.webp 488w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-200-bf27113d6.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-400-bf27113d6.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-bf27113d6.png 488w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-bf27113d6.png&quot; alt=&quot;post image&quot; width=&quot;488&quot; height=&quot;197&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;As we can see, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionEnter2D&lt;/code&gt; is called when the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject&lt;/code&gt; hits the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollsionExit2D&lt;/code&gt; is called when they aren’t hitting each other anymore, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionStay2D&lt;/code&gt; has not been called because the two GameObjects are not keeping contact. To see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionStay2D&lt;/code&gt; being sent, just remove the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ball physics material&lt;/code&gt; from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject's Rigidbody2D&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-200-d43e21e16.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-400-d43e21e16.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-d43e21e16.webp 451w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-200-d43e21e16.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-400-d43e21e16.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-d43e21e16.png 451w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-d43e21e16.png&quot; alt=&quot;post image&quot; width=&quot;451&quot; height=&quot;80&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; button again and the output in our Console window should be:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-200-45253a06e.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-400-45253a06e.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-45253a06e.webp 483w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-200-45253a06e.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-400-45253a06e.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-45253a06e.png 483w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-45253a06e.png&quot; alt=&quot;post image&quot; width=&quot;483&quot; height=&quot;198&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we have one &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionEnter2D&lt;/code&gt; and a lot of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionStay2D&lt;/code&gt; that will be called until the two GameObjects keep the contact or until Time To Sleep is reached.&lt;/p&gt;
+
+&lt;p&gt;Now, re-enable the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ball physics material&lt;/code&gt; on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject's Rigidbody2D&lt;/code&gt; and add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CollisionLogger&lt;/code&gt; to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject&lt;/code&gt; too.&lt;/p&gt;
+
+&lt;p&gt;Hit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt;, and the Console window should look like this:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-200-4d533a29a.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-400-4d533a29a.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-4d533a29a.webp 478w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-200-4d533a29a.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-400-4d533a29a.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-4d533a29a.png 478w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-4d533a29a.png&quot; alt=&quot;post image&quot; width=&quot;478&quot; height=&quot;196&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;As expected, the messages are called in all GameObjects involved in the collision.&lt;/p&gt;
+
+&lt;h3 id=&quot;with-a-trigger&quot;&gt;With a trigger&lt;/h3&gt;
+&lt;p&gt;What about the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTrigger&lt;/code&gt; method? Right now, none of our colliders are marked as a trigger (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IsTrigger&lt;/code&gt;), which is why only &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollision&lt;/code&gt; has been called.&lt;/p&gt;
+
+&lt;p&gt;Triggers are useful when we need to detect that a given GameObject has reached a point or another GameObject. Let’s say we want to be notified on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject&lt;/code&gt; every time that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject&lt;/code&gt; passes through it. We can add a collider with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IsTrigger&lt;/code&gt; checked on it and we will receive the notification when the physics engine calls the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTriggerEnter2D&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;p&gt;To see a trigger in action, mark the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject's collider&lt;/code&gt; as a trigger:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-200-8ff18a7fc.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-400-8ff18a7fc.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-8ff18a7fc.webp 451w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-200-8ff18a7fc.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-400-8ff18a7fc.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-8ff18a7fc.png 451w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-8ff18a7fc.png&quot; alt=&quot;post image&quot; width=&quot;451&quot; height=&quot;98&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Play the scene, and we’ll see that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject&lt;/code&gt; is passing through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject&lt;/code&gt;:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/passing-through.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This happens because the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject&lt;/code&gt; is a trigger now. The physics engine won’t generate the expected behavior when two objects collide, but will instead send the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTrigger&lt;/code&gt; methods to the involved GameObjects.&lt;/p&gt;
+
+&lt;p&gt;If we look at the Console window, you’ll notice that it is empty because no &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollision&lt;/code&gt; methods are called. To log the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTrigger&lt;/code&gt; methods, open our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CollisionLogger&lt;/code&gt; script and add these new methods:
+&lt;script src=&quot;https://gist.github.com/94b530c223d99f34d4fd6a0ab0702f51.js?file=trigger-methods.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Run the scene and we can see this log in the Console window:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-200-a7970a28a.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-400-a7970a28a.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-a7970a28a.webp 475w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-200-a7970a28a.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-400-a7970a28a.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-a7970a28a.png 475w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-a7970a28a.png&quot; alt=&quot;post image&quot; width=&quot;475&quot; height=&quot;196&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-200-764f811c6.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-400-764f811c6.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-764f811c6.webp 474w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-200-764f811c6.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-400-764f811c6.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-764f811c6.png 474w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-764f811c6.png&quot; alt=&quot;post image&quot; width=&quot;474&quot; height=&quot;77&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now only &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTrigger&lt;/code&gt; methods are called because there is a trigger involved in the collision.&lt;/p&gt;
+
+&lt;p&gt;An important thing to note is that all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollision&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTrigger&lt;/code&gt; methods receive the parameter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Collision2D/Collider2D&lt;/code&gt;. This parameter can hold information about the collision itself, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Which other GameObject collides with the current GameObject&lt;/li&gt;
+  &lt;li&gt;Which contact points are involved in the collision&lt;/li&gt;
+  &lt;li&gt;The relative linear velocity of the two colliding objects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If we don’t need to use this information in our script, we can declare the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollision/OnTrigger&lt;/code&gt; methods without the logging parameter.&lt;/p&gt;
+
+&lt;h2 id=&quot;collider-interactions&quot;&gt;Collider interactions&lt;/h2&gt;
+&lt;p&gt;You probably noticed in the last section that there is parity between the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollision&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTrigger&lt;/code&gt; methods the physics engine calls on the GameObjects involved in the collision. Knowing when each kind of interaction raises each kind of message/method in the involved GameObjects can be a little tricky; despite this apparent similarity, there are some rules for interaction possibilities between different collider setups.&lt;/p&gt;
+
+&lt;p&gt;There are six different setups a collider can have that will differently affect how it interacts with other colliders. These setups can be done by a combination of the properties &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IsTrigger&lt;/code&gt; of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Collider2D&lt;/code&gt; and the property &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Body Type&lt;/code&gt; of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; attached to the same GameObject. Below is a list of similar setups:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Static Collider
+    &lt;ul&gt;
+      &lt;li&gt;IsTrigger: false&lt;/li&gt;
+      &lt;li&gt;Body Type: Static&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Rigidbody Collider
+    &lt;ul&gt;
+      &lt;li&gt;IsTrigger: false&lt;/li&gt;
+      &lt;li&gt;Body Type: Dynamic&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Kinematic Rigidbody Collider
+    &lt;ul&gt;
+      &lt;li&gt;IsTrigger: false&lt;/li&gt;
+      &lt;li&gt;Body Type: Kinematic&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Static Trigger Collider
+    &lt;ul&gt;
+      &lt;li&gt;IsTrigger: true&lt;/li&gt;
+      &lt;li&gt;Body Type: Static&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Rigidbody Trigger Collider
+    &lt;ul&gt;
+      &lt;li&gt;IsTrigger: true&lt;/li&gt;
+      &lt;li&gt;Body Type: Dynamic&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Kinematic Rigidbody Trigger Collider
+    &lt;ul&gt;
+      &lt;li&gt;IsTrigger: true&lt;/li&gt;
+      &lt;li&gt;Body Type: Kinematic&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-do-these-setups-affect-collider-interactions&quot;&gt;How do these setups affect collider interactions?&lt;/h3&gt;
+&lt;p&gt;The answer to this question is in the table below, which I took from the &lt;a href=&quot;https://docs.unity3d.com/Manual/CollidersOverview.html&quot;&gt;Unity documentation site&lt;/a&gt;. It shows us where the collisions happen and when the collision callbacks (the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollision&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTrigger&lt;/code&gt; methods) are called.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-200-0aaec8d8b.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-400-0aaec8d8b.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-0aaec8d8b.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-1517-0aaec8d8b.webp 1517w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-200-0aaec8d8b.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-400-0aaec8d8b.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-0aaec8d8b.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-1517-0aaec8d8b.png 1517w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-0aaec8d8b.png&quot; alt=&quot;post image&quot; width=&quot;1517&quot; height=&quot;558&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Source: &lt;a href=&quot;https://docs.unity3d.com/Manual/CollidersOverview.html&quot;&gt;Unity docs&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking at the table, we can figure out things like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A Static collider only interacts with a Rigidbody collider&lt;/li&gt;
+  &lt;li&gt;A Rigidbody collider can interact with a Static collider, Rigidbody Collider, and Kinematic Rigidbody Collider
+These tables can be very useful during game development, when we get stuck with some sort of collider interaction that we expected to happen but it doesn’t.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To help us to better understand the colliders’ interactions, now and when we face the kind of problem mentioned above, I created a sample where we can move the GameObjects through each of the six possible interaction setups, see how they interact with each other, and what callbacks messages are sent.&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://diegogiacomelli.com.br/apps/collider-interactions&quot;&gt;https://diegogiacomelli.com.br/apps/collider-interactions&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://diegogiacomelli.com.br/apps/collider-interactions&quot;&gt;Try the online sample here&lt;/a&gt; and move each collider setup to better understand what messages are sent for each interaction&lt;/p&gt;
+
+&lt;h2 id=&quot;physics2d-settings&quot;&gt;Physics2D settings&lt;/h2&gt;
+&lt;p&gt;For the last part of this tutorial, I would like to mention the Physics2D settings.&lt;/p&gt;
+
+&lt;p&gt;These settings are not within the scope of this tutorial — talking about some of them could fill another whole tutorial — but I think it’s important to know that they exist, what their default values are, and that we can adjust them to the needs of our project.&lt;/p&gt;
+
+&lt;p&gt;You can access these settings via Project Settings &amp;gt; Physics 2D.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-200-d4eb4d789.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-400-d4eb4d789.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-d4eb4d789.webp 756w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-200-d4eb4d789.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-400-d4eb4d789.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-d4eb4d789.png 756w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-d4eb4d789.png&quot; alt=&quot;post image&quot; width=&quot;756&quot; height=&quot;938&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Settings like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gravity&lt;/code&gt; are pretty straightforward, but things like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Velocity Iterations&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Position Iterations&lt;/code&gt; can be a little obscure and can affect game behaviors a lot.&lt;/p&gt;
+
+&lt;p&gt;Most of these settings are changed when we need to achieve some kind of non-conventional physics behavior or performance improvement, but you should be aware that you’ll need to retest gameplay after each change you make to these settings to ensure that you haven’t broken anything.&lt;/p&gt;
+
+&lt;p&gt;The bottom line is: make sure to only change these settings after studying and understanding their impact.&lt;/p&gt;
+
+&lt;h2 id=&quot;source-code-and-samples&quot;&gt;Source code and samples&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/giacomelli/the-fundamentals-of-unity-2d-collider-tutorial&quot;&gt;Tutorial source code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://diegogiacomelli.com.br/apps/collider-interactions&quot;&gt;Online Collision Interactions sample&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this tutorial, we’ve explained the fundamentals of Unity 2D Colliders: what they are, what their common properties and behaviors are, how to add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BoxCollider2D&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CircleCollider2D&lt;/code&gt; to a GameObject, what a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; is and how to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PhysicsMaterial2D&lt;/code&gt;, what the collision callbacks are and how to use them on our scripts, and, finally, the kinds of collider setups and how they interact.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>NO MORE ROOM IN HELL released</title>
@@ -147,7 +682,8 @@ The Root Namespace will be used to add the namespace when creating scripts in Un
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/12/16/unity-2020-2-whats/unitytips-tuple-patterns.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
-&lt;p&gt;You can learn more about C# 8 features in &lt;a href=&quot;/tags/csharp-8-new-features&quot;&gt;this posts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+You can learn more about C# 8 features in &lt;a href=&quot;/tags/csharp-8-new-features&quot;&gt;this posts&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;roslyn-analyzers-support&quot;&gt;Roslyn analyzers support&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -215,6 +751,7 @@ What were the features that caught your attention?&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/12/08/unitytips-editor-internal-menus/unity-editor-internal-menu.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Unity Editor internal menus&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -258,6 +795,7 @@ What were the features that caught your attention?&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/12/01/unitytips-tuple-patterns/unitytips-tuple-patterns.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Some algorithms depend on multiple inputs. Tuple patterns allow you to switch based on multiple values expressed as a &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples&quot;&gt;tuple&lt;/a&gt;.&lt;/p&gt;
@@ -282,6 +820,7 @@ What were the features that caught your attention?&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/24/unitytips-property-patterns/unitytips-property-patterns.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Property Patterns&lt;/code&gt; enables you to match on properties of the object examined in a &lt;a href=&quot;/unitytips-switch-expressions&quot;&gt;Switch Expressions&lt;/a&gt;.&lt;/p&gt;
@@ -311,6 +850,7 @@ What were the features that caught your attention?&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Switch Expressions&lt;/code&gt; can dramatically simplify and reduce the &lt;a href=&quot;https://en.wikipedia.org/wiki/Source_lines_of_code&quot;&gt;LOC (Lines Of Code)&lt;/a&gt; to make a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;.&lt;/p&gt;
@@ -337,6 +877,7 @@ What were the features that caught your attention?&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 </content>
  </entry>
@@ -353,6 +894,7 @@ What were the features that caught your attention?&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/11/arc-8-devlog-4/arc-8-running-chip-8-emulator-inside-unity-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;To help to understand everything in this post I recommend you read the previous &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog posts&lt;/a&gt;, in special the &lt;a href=&quot;/arc-8-devlog-3&quot;&gt;last one&lt;/a&gt;.&lt;/p&gt;
 
@@ -466,6 +1008,7 @@ We use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ed
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/05/gamedev-utility-belt-graphy/graphy-puzzimals-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -516,6 +1059,7 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;The MonoBehaviour class is the base class from which every Unity script derives, by default. TPovides the framework which allows you to attach your script to a GameObject in the editor, as well as providing hooks into useful Events such as Start and Update.&lt;/p&gt;
@@ -537,7 +1081,8 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;intialize-method&quot;&gt;Intialize method&lt;/h4&gt;
 &lt;p&gt;In the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Initialize&lt;/code&gt; we verify if will render to the main camera or to a specific target camera, then we set some camera configuration, create the material we will use to render the CHIP-8 graphic, get the screen size, then we initialize our &lt;a href=&quot;https://gameprogrammingpatterns.com/double-buffer.html&quot;&gt;Double Buffer&lt;/a&gt; array.&lt;/p&gt;
@@ -593,7 +1138,8 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;awake-method&quot;&gt;Awake method&lt;/h4&gt;
 &lt;p&gt;We just try to locate our &lt;a href=&quot;https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html&quot;&gt;AudioSource&lt;/a&gt; component that will be used to play the sound.&lt;/p&gt;
@@ -617,7 +1163,8 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;key-mapping&quot;&gt;Key mapping&lt;/h4&gt;
 &lt;p&gt;First, we create the dictionary &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_map&lt;/code&gt; to map the real keyboard keys to CHIP-8 keypad keys.&lt;/p&gt;
@@ -642,7 +1189,8 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;debug-and-error-methods&quot;&gt;Debug and Error methods&lt;/h4&gt;
 &lt;p&gt;The two methods implemented for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; interface use methods available on Unity &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Debug.html&quot;&gt;Debug&lt;/a&gt; class to send log messages to the &lt;a href=&quot;https://docs.unity3d.com/Manual/Console.html&quot;&gt;console window&lt;/a&gt;.&lt;/p&gt;
@@ -663,7 +1211,8 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;start-method&quot;&gt;Start method&lt;/h4&gt;
 &lt;p&gt;Verifies if all the systems needed to run the emulator were configured in the editor, then &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html&quot;&gt;sets the desired FPS&lt;/a&gt; and starts to run the emulator.&lt;/p&gt;
@@ -689,6 +1238,7 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/04/arc-8-devlog-3/arc-8-running-chip-8-emulator-inside-unity-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you have any doubts about what I talk about above or any tip about the CHIP-8 emulator (or Unity) and you like to share it, please let me know in the comments section below.&lt;/p&gt;
 
@@ -809,6 +1359,7 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;chip8graphicrazor-component-igraphic&quot;&gt;Chip8Graphic.razor component (IGraphic)&lt;/h2&gt;
 &lt;picture&gt;
@@ -1002,6 +1553,7 @@ We implement a &lt;a href=&quot;https://gameprogrammingpatterns.com/game-loop.ht
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;scripting-backends&quot;&gt;Scripting backends&lt;/h3&gt;
 &lt;ul&gt;
@@ -1077,6 +1629,7 @@ For example, here is the result when I used it on Android:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 &lt;p&gt;You can follow the instructions on the plugin GitHub repository: &lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare#installation&quot;&gt;https://github.com/yasirkula/UnityNativeShare&lt;/a&gt; to install it:&lt;/p&gt;
@@ -1205,6 +1758,7 @@ For example, here is the result when I used it on Android:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;After you finish the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6 - Confirm&lt;/code&gt; come back here. You’ll better understand this post and tips &amp;amp; tricks after that.&lt;/p&gt;
 
@@ -1236,6 +1790,7 @@ For example, here is the result when I used it on Android:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;if you are using Unity version previous 2019.4, you need to use the option &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Add package from disk&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -1258,6 +1813,7 @@ For example, here is the result when I used it on Android:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;easy-on-boarding&quot;&gt;Easy On-Boarding&lt;/h3&gt;
 &lt;p&gt;Now, open the menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Game Growth / Easy onboarding&lt;/code&gt; and follow the steps.&lt;/p&gt;
@@ -1269,6 +1825,7 @@ For example, here is the result when I used it on Android:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;run--validate-integration&quot;&gt;Run &amp;amp; Validate Integration&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -1464,6 +2021,7 @@ To use it you need to add a &lt;a href=&quot;https://docs.unity3d.com/ScriptRefe
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/15/unitytips-editor-coroutines/chip-8-inside-unity-editor.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The result of using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorCoroutineUtility.StartCoroutine&lt;/code&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1525,6 +2083,7 @@ At that time we did not find any builtin or other solution to make this workflow
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is not a problem if you have only one environment or if you don’t need different configurations for different environments, but as I’ve already explained, we needed different configs for different environments.&lt;/p&gt;
 
@@ -1544,6 +2103,7 @@ At that time we did not find any builtin or other solution to make this workflow
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;files-structure&quot;&gt;Files structure&lt;/h2&gt;
 &lt;p&gt;Move the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello Extensions&lt;/code&gt; files to a subfolder called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt;.
@@ -1556,6 +2116,7 @@ At the end of this tutorial, our files structure will look like this:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If have any doubt about the files structure during this tutorial, you can download the full solution in section &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Download&lt;/code&gt; at the end of the tutorial&lt;/p&gt;
 &lt;/div&gt;
@@ -1650,6 +2211,7 @@ Here we are basically defining the order of each function that will be called wh
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-the-configjson-files&quot;&gt;Creating the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.json&lt;/code&gt; files&lt;/h2&gt;
 &lt;picture&gt;
@@ -1688,6 +2250,7 @@ Here is the content of each one:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;There is a new subfolder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dist&lt;/code&gt; created. Load it on Chrome Extensions page:&lt;/p&gt;
 &lt;center&gt;                
@@ -1698,6 +2261,7 @@ Here is the content of each one:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The plugin should work ok.&lt;/p&gt;
 
@@ -1754,7 +2318,8 @@ Here is the content of each one:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder.
+&lt;p&gt;&lt;br /&gt;
+Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp&lt;/code&gt; in the root folder.
 This will use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DEV&lt;/code&gt; configuration from config.js and manifest.json&lt;/p&gt;
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Is the same if you run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --config DEV&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -1769,6 +2334,7 @@ In the Chrome Extensions page you should see something like this:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Your extension is using the TEST environment values.
 When you click on the extension icon on the Chrome toolbar, you should see something like this:&lt;/p&gt;
@@ -1780,6 +2346,7 @@ When you click on the extension icon on the Chrome toolbar, you should see somet
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;You can try to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp --config PROD&lt;/code&gt;. To see the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PROD&lt;/code&gt; environment values on the extension.&lt;/p&gt;
 &lt;/div&gt;
@@ -1821,6 +2388,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;More details in the official documentation: &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/InspectorFocused.html&quot;&gt;Focused Inspectors&lt;/a&gt;&lt;/p&gt;
@@ -1866,6 +2434,7 @@ Unity went further, allowing an editor focused on a component too.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;for-gameobjects-and-project-assets&quot;&gt;For GameObjects and Project Assets&lt;/h4&gt;
 &lt;p&gt;Right-click a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hierarchy view&lt;/code&gt;, or an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Asset&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Project view&lt;/code&gt;.
@@ -1901,6 +2470,7 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;lighting-settings-as-an-asset&quot;&gt;Lighting settings as an asset&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -1916,6 +2486,7 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;graphics-getpixeldata-api-was-added&quot;&gt;Graphics: GetPixelData API was added&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -2001,6 +2572,7 @@ From the 9 stores supported, 7 are fully integrated with UDP. What this meaning?
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-implement&quot;&gt;1. Implement&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -2030,6 +2602,7 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -2054,6 +2627,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;To login in this screen, use the accounts in the setup on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sandbox Test Account&lt;/code&gt;. Remember those e-mails don’t need to exist, they are just test accounts to validate UDP setup&lt;/p&gt;
 &lt;/div&gt;
@@ -2069,6 +2643,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you did not setup the UDP on your project, you should see a message like this on UDP dashboard notifications &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apk analytics failed, caused by: analyse apk failed, caused by:Failed to find GameSettings.prop, please import udp sdk and generate GameSettings.&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -2094,6 +2669,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go to &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API Console&lt;/a&gt;, select your game project on the dropdown, then go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section, then on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt; section select the item with the name of your game, then copy the value of the field &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt;.&lt;/p&gt;
 
@@ -2107,6 +2683,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In the new page, select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Android&lt;/code&gt; on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Application type&lt;/code&gt; dropdown.&lt;/p&gt;
 
@@ -2141,6 +2718,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;After the import, you can edit the information as well.&lt;/p&gt;
 
@@ -2188,6 +2766,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;53-send-it-to-review&quot;&gt;5.3 Send it to review&lt;/h3&gt;
 &lt;p&gt;Now you can select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submit to Store&lt;/code&gt; in the dropdown, then select the checkbox store on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Publish&lt;/code&gt; page and click on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Publish&lt;/code&gt; button.
@@ -2202,6 +2781,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -2247,6 +2827,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
 &lt;picture&gt;
@@ -2317,6 +2898,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Go to the LineRenderer component and change the line width to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
@@ -2328,6 +2910,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
 &lt;picture&gt;
@@ -2347,6 +2930,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h2&gt;
 &lt;picture&gt;
@@ -2408,6 +2992,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/623de59997fa6f2aaeeb231a2a789933.js?file=FrameworkSettings.cs&quot;&gt; &lt;/script&gt;
@@ -2438,6 +3023,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=HelpBoxAttribute.cs&quot;&gt; &lt;/script&gt;
@@ -2474,6 +3060,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/c03ec79fa0f0def94726f4b6914b4769.js?file=SocialShare.cs&quot;&gt; &lt;/script&gt;
@@ -2533,6 +3120,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxAttribute.cs&quot;&gt; &lt;/script&gt;
@@ -2579,7 +3167,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Services &amp;amp; APIS&lt;/code&gt; menu, after enter on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Google Play game services&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
@@ -2590,7 +3179,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Fill only the required information for test, then go to menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Linked apps&lt;/code&gt; and link it to your game on with the app on Google Play Console.&lt;/p&gt;
 &lt;center&gt;                
@@ -2601,7 +3191,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-some-achievements-for-test&quot;&gt;Creating some achievements for test&lt;/h2&gt;
 &lt;p&gt;In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Game services section&lt;/code&gt; open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Achievements&lt;/code&gt; menu and add some achievements.&lt;/p&gt;
@@ -2613,7 +3204,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;I found empirically that test achievements that did not have an icon set on the Google Play Console did not show the standard Google Play Games UI when unlocked and were automatically locked again about 1 hour after they were unlocked.&lt;/p&gt;
@@ -2629,7 +3221,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;oauth-and-upload-certificate&quot;&gt;OAuth and Upload Certificate&lt;/h2&gt;
 &lt;p&gt;One thing can be a little confusing is about the certificate fingerprints.&lt;/p&gt;
@@ -2643,7 +3236,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now you need to copy your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1&lt;/code&gt; fingerprint of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Upload certificate&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;App signing&lt;/code&gt; section.&lt;/p&gt;
 &lt;center&gt;                
@@ -2654,7 +3248,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then go to your OAuth credentials on &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API console&lt;/a&gt;.&lt;/p&gt;
 &lt;center&gt;                
@@ -2665,7 +3260,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;the Google API console&lt;/code&gt;, select your game on the top dropdown, then go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; menu and edit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt;. Paste the fingertip on the field &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt; and save it.&lt;/p&gt;
 &lt;center&gt;                
@@ -2676,7 +3272,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;remember to remove the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1&lt;/code&gt; prefix, if you copied it together.&lt;/p&gt;
@@ -2698,6 +3295,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;center&gt;                
@@ -2708,6 +3306,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;With this basic setup you can start to use the other features from Google Play Games Plugin for Unity plugin, as:&lt;/p&gt;
 &lt;ul&gt;
@@ -2733,7 +3332,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;Below a list of tips and tricks for non-common scenarios.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+Below a list of tips and tricks for non-common scenarios.&lt;/p&gt;
 
 &lt;h3 id=&quot;log-on-device&quot;&gt;Log on device&lt;/h3&gt;
 &lt;p&gt;If anything goes wrong on Android device you will need to see it logs, to do so, you can use adb logcat:&lt;/p&gt;
@@ -2761,7 +3361,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/GooglePlayGames/Editor&lt;/code&gt; folder and create a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assembly Definition&lt;/code&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GooglePlayGames.Editor&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
@@ -2772,7 +3373,8 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, go to your game assembly definition and add a reference to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GooglePlayGames&lt;/code&gt;.&lt;/p&gt;
 
@@ -2796,6 +3398,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The sample lines will result in the same string&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -2820,6 +3423,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Expression body definitions for methods and read-only properties are supported starting with C# 6. Expression body definitions for constructors, finalizers, property accessors, and indexers are supported starting with C# 7.0.&lt;/p&gt;
@@ -2829,6 +3433,7 @@ This simple formula show how math can be used to explore creativity and beauty.&
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 </content>
  </entry>
@@ -3283,6 +3888,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Thats it, now you can use this sample to understand how to use GeneticSharp in your game.&lt;/p&gt;
@@ -3784,6 +4390,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;similar sprites sheets from Phantasy Star IV (Alys, Chaz and Demi). Sprites ripped by Ultimecia from &lt;a href=&quot;https://www.spriters-resource.com/genesis_32x_scd/ps4&quot;&gt;The Spriters Resource&lt;/a&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -3798,6 +4405,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Idle: index 1&lt;/li&gt;
@@ -3860,6 +4468,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Default Animations menu item&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -3875,6 +4484,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;editor window&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4007,6 +4617,7 @@ In Unity&lt;/a&gt;.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4071,6 +4682,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation clips available on Sci Fi Warrior PBR HP&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4086,6 +4698,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot stands idle with the gun in the middle of his body&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4099,6 +4712,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the robot walk forward and shoot&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4158,6 +4772,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Starter project running: just HUD&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4174,6 +4789,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Animator window showing the animation controller created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4198,6 +4814,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward parameter created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4211,6 +4828,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;WalkForward condition defined&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4224,6 +4842,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;reseting the transition settings&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4237,6 +4856,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;animation base layer&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4257,6 +4877,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;only upper body&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4271,6 +4892,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the new layer created with the mask&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4287,6 +4909,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;upper body animation layer&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4314,6 +4937,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;ShootSingle parameter created&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -4339,6 +4963,7 @@ In this package, there are 10 animation clips:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;the remaining actions to the challenge&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt; 	 	 
@@ -4402,6 +5027,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
 &lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
@@ -4416,6 +5042,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
 &lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
@@ -4428,6 +5055,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;
 
@@ -4451,6 +5079,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
 
@@ -4516,6 +5145,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
 &lt;p&gt;The genetic algorithm to evaluate the simulation is configured with this operators:&lt;/p&gt;
@@ -4537,6 +5167,7 @@ These techniques allowing us to use already existent animations and combine them
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;If you are running the sample inside Unity3D editor you can change the size of the simulation grid in the SampleController game object from CarScene.&lt;/p&gt;
@@ -4690,6 +5321,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
 &lt;p&gt;Go to “Player settings” / “Other settings” / “Configuration”, select “.NET 4.x Equivalent” on “Scripting Runtime Version”. Unity will ask to restart, you can confirm.&lt;/p&gt;
@@ -4704,6 +5336,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
@@ -4754,6 +5387,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
 &lt;p&gt;Now our GA is running inside Unity3D, but it need to display the cities route better.
@@ -4790,6 +5424,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
@@ -4800,6 +5435,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
 &lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
@@ -4832,6 +5468,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
 &lt;p&gt;Our sample could be considered done, but would it be nice if we you could change the cities positions while the genetic algorithm are running and see how it manages these cities positions changes.&lt;/p&gt;
@@ -4850,6 +5487,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With only 5 C# scripts and 1 prefab we built a pretty nice sample of genetic algorithms using in Unity3D with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
@@ -4884,6 +5522,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a “Editor” folder.&lt;/p&gt;
@@ -4966,6 +5605,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
@@ -4985,6 +5625,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/22/buildron-slackbotmod/Buildron.SlackBotMod-2016-09-18.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 &lt;p&gt;Currently Buildron SlackBotMod has the follow features:&lt;/p&gt;
@@ -5000,6 +5641,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;filter-builds&quot;&gt;Filter builds&lt;/h3&gt;
 &lt;p&gt;Filter buils by status or text.&lt;/p&gt;
@@ -5012,6 +5654,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;reset-filter&quot;&gt;Reset filter&lt;/h3&gt;
 &lt;p&gt;Reset previous builds filter (no filter).&lt;/p&gt;
@@ -5024,6 +5667,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;sort-builds&quot;&gt;Sort builds&lt;/h3&gt;
 &lt;p&gt;Sort buils by status, text or date.&lt;/p&gt;
@@ -5036,6 +5680,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;move-camera&quot;&gt;Move camera&lt;/h3&gt;
 &lt;p&gt;Move the camera the amount of pixels define in the x,y,z coordinates.&lt;/p&gt;
@@ -5048,6 +5693,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;reset-camera&quot;&gt;Reset camera&lt;/h3&gt;
 &lt;p&gt;Reset the camera position.&lt;/p&gt;
@@ -5060,6 +5706,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;take-a-screenshot&quot;&gt;Take a screenshot&lt;/h3&gt;
 &lt;p&gt;Take a screenshot of current Buildron state.&lt;/p&gt;
@@ -5072,6 +5719,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;If you are not using Buildron yet, &lt;a href=&quot;https://github.com/skahal/buildron&quot;&gt;give it a try&lt;/a&gt;.
@@ -5101,6 +5749,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;botcontroller&quot;&gt;BotController&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;
@@ -5315,6 +5964,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In the menu “Buildron”, click on “Show Simulator”.&lt;/p&gt;
 
@@ -5327,6 +5977,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hit the “Play” button again to stop playing the scene.&lt;/p&gt;
 
@@ -5351,6 +6002,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;That’s it! We created a Buildron mod that can help to debug what is happening in Buildron and mods in runtime.&lt;/p&gt;
@@ -5371,6 +6023,7 @@ If you are already using Buildron and Slack, try my &lt;a href=&quot;https://git
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
 &lt;p&gt;Download the Buildron-Mod-Template.zip from &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;releases page&lt;/a&gt;.
@@ -5407,6 +6060,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:&lt;/p&gt;
 
@@ -5428,6 +6082,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-c-project&quot;&gt;The C# project&lt;/h2&gt;
 &lt;p&gt;Open the MyAmazingMod/src/Code/MyAmazingMod.sln.&lt;/p&gt;
@@ -5442,6 +6097,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Inside of it you can see the Mod.cs and ModController.cs.&lt;/p&gt;
 
@@ -5459,6 +6115,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Click on the menu “Buildron/Show Simulator”.&lt;/p&gt;
 
@@ -5471,6 +6128,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;You will see a box falling down every time you hit the button. This behavior is made by Mod.cs and ModController.cs on C# project. If you are curious about it, take a look on the classes implementations.&lt;/p&gt;
 
@@ -5496,6 +6154,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go to folder MyAmazingMod/build and open the Buildron of your platform.&lt;/p&gt;
 
@@ -5511,6 +6170,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With this post you learned how you can starting to create your own mod from mod template.&lt;/p&gt;
@@ -5535,6 +6195,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;

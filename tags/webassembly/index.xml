@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - webassembly</title>
  <link href="//tags/webassembly/index.xml" rel="self"/>
  <link href="/tag/webassembly.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/webassembly.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -70,6 +70,7 @@ dotnet watch run
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Open a new terminal in the same folder and type:&lt;/p&gt;
@@ -163,6 +164,7 @@ dotnet watch run
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.&lt;/p&gt;
 &lt;/div&gt;
@@ -184,6 +186,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
 &lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
@@ -200,6 +203,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With only 4 C# classes, 1 JS file and 1 Blazor page we built a pretty nice sample of genetic algorithms using Blazor with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - nuget</title>
  <link href="//tags/nuget/index.xml" rel="self"/>
  <link href="/tag/nuget.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/nuget.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -40,6 +40,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Add new item…&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -53,6 +54,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-a-targets&quot;&gt;Creating a .targets&lt;/h2&gt;
 &lt;p&gt;We need to create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.targets&lt;/code&gt; file, it will be used to copy the T4 Template from the NuGet package folder to the target project in the build process:&lt;/p&gt;

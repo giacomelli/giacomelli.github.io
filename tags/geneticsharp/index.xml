@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -82,6 +82,7 @@ dotnet run
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/11/geneticsharp-2.6.0-blazor-template/geneticsharp-blazor-template.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to know more about how to use GeneticSharp with Blazor, take a look in this tutorial &lt;a href=&quot;http://diegogiacomelli.com.br/tsp-with-geneticsharp-and-blazor/&quot;&gt;TSP with GeneticSharp and Blazor&lt;/a&gt;.&lt;/p&gt;
 
@@ -177,6 +178,7 @@ dotnet watch run
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Open a new terminal in the same folder and type:&lt;/p&gt;
@@ -270,6 +272,7 @@ dotnet watch run
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.&lt;/p&gt;
 &lt;/div&gt;
@@ -291,6 +294,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
 &lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
@@ -307,6 +311,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With only 4 C# classes, 1 JS file and 1 Blazor page we built a pretty nice sample of genetic algorithms using Blazor with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
@@ -349,6 +354,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/04/geneticsharp-in-the-wild-frixel/geneticsharp-frixel-optimization.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;functionality&quot;&gt;Functionality&lt;/h2&gt;
 &lt;p&gt;According to the developers, these are the features of Frixel:&lt;/p&gt;
@@ -398,6 +404,7 @@ Open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/06/27/starting-an-unity3d-project-with-geneticsharp-using-dotnet-new/geneticsharp-ts-template.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Thats it, now you can use this sample to understand how to use GeneticSharp in your game.&lt;/p&gt;
@@ -453,6 +460,7 @@ improving existing systems as well as in future research.&lt;/em&gt;&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;results comparison between GCC and GeneCSCC (developed using GeneticSharp)&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -522,6 +530,7 @@ minimize and visualize aircraft noise along simulated and real flight routes. Th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-a-new-geneticsharp-project-from-templates&quot;&gt;Creating a new GeneticSharp project from templates&lt;/h2&gt;
 
@@ -537,6 +546,7 @@ minimize and visualize aircraft noise along simulated and real flight routes. Th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;tsp-console-application&quot;&gt;TSP Console application&lt;/h3&gt;
 &lt;p&gt;Create a new console application template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).&lt;/p&gt;
@@ -550,6 +560,7 @@ minimize and visualize aircraft noise along simulated and real flight routes. Th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;tsp-unity3d&quot;&gt;TSP Unity3D&lt;/h3&gt;
 &lt;p&gt;Create an Unity3D template with GeneticSharp ready to run a Travelling Salesman Problem (TSP).&lt;/p&gt;
@@ -563,6 +574,7 @@ minimize and visualize aircraft noise along simulated and real flight routes. Th
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Let’s evolve!&lt;/p&gt;
 </content>
@@ -742,6 +754,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
 &lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
@@ -756,6 +769,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
 &lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
@@ -768,6 +782,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;
 
@@ -791,6 +806,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
 
@@ -856,6 +872,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
 &lt;p&gt;The genetic algorithm to evaluate the simulation is configured with this operators:&lt;/p&gt;
@@ -877,6 +894,7 @@ I have a case where I need to stop optimization at some time, save results to DB
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;If you are running the sample inside Unity3D editor you can change the size of the simulation grid in the SampleController game object from CarScene.&lt;/p&gt;
@@ -1030,6 +1048,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
 &lt;p&gt;Go to “Player settings” / “Other settings” / “Configuration”, select “.NET 4.x Equivalent” on “Scripting Runtime Version”. Unity will ask to restart, you can confirm.&lt;/p&gt;
@@ -1044,6 +1063,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
@@ -1094,6 +1114,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
 &lt;p&gt;Now our GA is running inside Unity3D, but it need to display the cities route better.
@@ -1130,6 +1151,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
@@ -1140,6 +1162,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
 &lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
@@ -1172,6 +1195,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
 &lt;p&gt;Our sample could be considered done, but would it be nice if we you could change the cities positions while the genetic algorithm are running and see how it manages these cities positions changes.&lt;/p&gt;
@@ -1190,6 +1214,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With only 5 C# scripts and 1 prefab we built a pretty nice sample of genetic algorithms using in Unity3D with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
@@ -1317,6 +1342,7 @@ to &lt;img class=&quot;icon&quot; src=&quot;/assets/logos/netcore.svg &quot; alt
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;warmup&quot;&gt;Warmup&lt;/h3&gt;
 
@@ -1462,6 +1488,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now I’m planning to create a GeneticSharp’s sample using Unity3d’s new beta features, like the new ECS (Entity Component System), C# Job System and the Burst compiler.&lt;/p&gt;
 
@@ -1523,6 +1550,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In our sample we will optimize the input of a mathematical function, this function will be used as our fitness evaluation function. For this sample we will use a function that everyone saw in school time, the famous &lt;a href=&quot;https://en.wikipedia.org/wiki/Euclidean_distance&quot;&gt;Euclidean distance&lt;/a&gt; or commonly know as distance of two points function:&lt;/p&gt;
 
@@ -1534,6 +1562,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;We will consider our chromosome fitness as the result of this function. The higher the result, the better is the chromosome fitness.&lt;/p&gt;
 
@@ -1548,6 +1577,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The goal of our genetic algortim is &lt;strong&gt;find the input values of Euclidean distance function: X1, Y1 and X2, Y2 that result in the greatest distance in a rectangular area&lt;/strong&gt;.&lt;/p&gt;
 
@@ -1566,6 +1596,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Open your IDE (Visual Studio/Xamarin Studio) and create a new console project.&lt;/p&gt;
 
@@ -1587,6 +1618,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Chromosome is the representation of a possible solution in genetic algoritms.&lt;/p&gt;
 
@@ -1627,6 +1659,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The population represents the possible solutions to our problem, so we need to create a population of our Euclidean distance chromosome.&lt;/p&gt;
 
@@ -1645,6 +1678,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The fitness function is where the genetic algoritm will evaluate and give a value (fitness) to each chromosome generated inside it. A good fitness function can guide your GA to a fast and optimum solution.&lt;/p&gt;
 
@@ -1665,6 +1699,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;A selection is the genetic algorithm operator responsible for decing which chromosomes of current population will be selected as parent of the next population.&lt;/p&gt;
 
@@ -1685,6 +1720,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing these selected chromosomes.&lt;/p&gt;
 
@@ -1709,6 +1745,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The biology definition of mutations is: 
 &lt;em&gt;“In genetics, mutation may be small scale (affecting a gene) or large scale (involving a change in the chromosome). It may arise from faulty deletions, insertions, or exchanges of the genetic material. Such a change may result in the creation of a new character or trait.”&lt;/em&gt;&lt;/p&gt;
@@ -1732,6 +1769,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;A termination decide when a GA should be stopped. GeneticSharp use the generation number termination with just one generation as default termination. This mean that the genetic algoritm will run just one generation when you call the Start method, after this you can increment the expected generation number of the termination and call the method Resume how many times you want.&lt;/p&gt;
 
@@ -1752,6 +1790,7 @@ Test Run Aborted
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.&lt;/p&gt;
 
@@ -1791,6 +1830,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;We can see that in the first generations (black lines) the genetic algorithm as some intermediate results and at the end (red line) &lt;strong&gt;it found the best possible solution: a diagonal.&lt;/strong&gt;&lt;/p&gt;
 
@@ -1803,6 +1843,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;When you finish the tutorial your source code will be this one:&lt;/p&gt;
 
@@ -1817,6 +1858,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this tutorial we learn how genetic algoritm works and how to use GeneticSharp to solve a very simple sample. Now you can try it to solve more complex problems.&lt;/p&gt;
 

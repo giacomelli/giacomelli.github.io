@@ -116,7 +116,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>13/06/2017</span></div>   
       
 
-<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>17 minutes to read</span></div>
+<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>18 minutes to read</span></div>
    
     </div>  
     <p>In this tutorial we will learn how to use GeneticSharp to optimize the inputs of math function and more about genetic algorithms meanwhile.</p>
@@ -141,6 +141,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>In our sample we will optimize the input of a mathematical function, this function will be used as our fitness evaluation function. For this sample we will use a function that everyone saw in school time, the famous <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a> or commonly know as distance of two points function:</p>
 
@@ -152,6 +153,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>We will consider our chromosome fitness as the result of this function. The higher the result, the better is the chromosome fitness.</p>
 
@@ -166,6 +168,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The goal of our genetic algortim is <strong>find the input values of Euclidean distance function: X1, Y1 and X2, Y2 that result in the greatest distance in a rectangular area</strong>.</p>
 
@@ -184,6 +187,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Open your IDE (Visual Studio/Xamarin Studio) and create a new console project.</p>
 
@@ -205,6 +209,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Chromosome is the representation of a possible solution in genetic algoritms.</p>
 
@@ -245,6 +250,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The population represents the possible solutions to our problem, so we need to create a population of our Euclidean distance chromosome.</p>
 
@@ -263,6 +269,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The fitness function is where the genetic algoritm will evaluate and give a value (fitness) to each chromosome generated inside it. A good fitness function can guide your GA to a fast and optimum solution.</p>
 
@@ -283,6 +290,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>A selection is the genetic algorithm operator responsible for decing which chromosomes of current population will be selected as parent of the next population.</p>
 
@@ -303,6 +311,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The chromosomes selected by the selection need to cross to generate new possible solutions of the next generation of the GA. The crossover operator is responsible for crossing these selected chromosomes.</p>
 
@@ -327,6 +336,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The biology definition of mutations is: 
 <em>“In genetics, mutation may be small scale (affecting a gene) or large scale (involving a change in the chromosome). It may arise from faulty deletions, insertions, or exchanges of the genetic material. Such a change may result in the creation of a new character or trait.”</em></p>
@@ -350,6 +360,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>A termination decide when a GA should be stopped. GeneticSharp use the generation number termination with just one generation as default termination. This mean that the genetic algoritm will run just one generation when you call the Start method, after this you can increment the expected generation number of the termination and call the method Resume how many times you want.</p>
 
@@ -370,6 +381,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Now that everything is set up, we just need to instantiate and start our genetic algorithm and watch it run.</p>
 
@@ -409,6 +421,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>We can see that in the first generations (black lines) the genetic algorithm as some intermediate results and at the end (red line) <strong>it found the best possible solution: a diagonal.</strong></p>
 
@@ -421,6 +434,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>When you finish the tutorial your source code will be this one:</p>
 
@@ -435,6 +449,7 @@ Generation 32: (998,680),(0,0) = 1207.6439872744
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>In this tutorial we learn how genetic algoritm works and how to use GeneticSharp to solve a very simple sample. Now you can try it to solve more complex problems.</p>
 

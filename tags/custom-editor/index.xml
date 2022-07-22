@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - custom-editor</title>
  <link href="//tags/custom-editor/index.xml" rel="self"/>
  <link href="/tag/custom-editor.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/custom-editor.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -23,6 +23,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/623de59997fa6f2aaeeb231a2a789933.js?file=FrameworkSettings.cs&quot;&gt; &lt;/script&gt;
@@ -53,6 +54,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=HelpBoxAttribute.cs&quot;&gt; &lt;/script&gt;
@@ -102,6 +104,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a “Editor” folder.&lt;/p&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - security</title>
  <link href="//tags/security/index.xml" rel="self"/>
  <link href="/tag/security.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/security.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -26,6 +26,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;More at &lt;a href=&quot;https://owasp.org/www-project-zap/&quot;&gt;https://owasp.org/www-project-zap/&lt;/a&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -39,6 +40,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;As the &lt;a href=&quot;https://owasp.org/www-community/attacks/Path_Traversal&quot;&gt;Path Traversal alert documentation&lt;/a&gt; explains:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -116,6 +118,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Remember: only mark an alert as false positive after had to validate that URL action code and you are certain that is a false positive&lt;/p&gt;
 &lt;/div&gt;

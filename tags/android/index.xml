@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - android</title>
  <link href="//tags/android/index.xml" rel="self"/>
  <link href="/tag/android.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/android.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -34,6 +34,7 @@ For example, here is the result when I used it on Android:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 &lt;p&gt;You can follow the instructions on the plugin GitHub repository: &lt;a href=&quot;https://github.com/yasirkula/UnityNativeShare#installation&quot;&gt;https://github.com/yasirkula/UnityNativeShare&lt;/a&gt; to install it:&lt;/p&gt;
@@ -162,6 +163,7 @@ For example, here is the result when I used it on Android:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;After you finish the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6 - Confirm&lt;/code&gt; come back here. You’ll better understand this post and tips &amp;amp; tricks after that.&lt;/p&gt;
 
@@ -193,6 +195,7 @@ For example, here is the result when I used it on Android:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;if you are using Unity version previous 2019.4, you need to use the option &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Add package from disk&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -215,6 +218,7 @@ For example, here is the result when I used it on Android:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;easy-on-boarding&quot;&gt;Easy On-Boarding&lt;/h3&gt;
 &lt;p&gt;Now, open the menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Game Growth / Easy onboarding&lt;/code&gt; and follow the steps.&lt;/p&gt;
@@ -226,6 +230,7 @@ For example, here is the result when I used it on Android:&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;run--validate-integration&quot;&gt;Run &amp;amp; Validate Integration&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -314,6 +319,7 @@ From the 9 stores supported, 7 are fully integrated with UDP. What this meaning?
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-implement&quot;&gt;1. Implement&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -343,6 +349,7 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -367,6 +374,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;To login in this screen, use the accounts in the setup on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sandbox Test Account&lt;/code&gt;. Remember those e-mails don’t need to exist, they are just test accounts to validate UDP setup&lt;/p&gt;
 &lt;/div&gt;
@@ -382,6 +390,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you did not setup the UDP on your project, you should see a message like this on UDP dashboard notifications &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apk analytics failed, caused by: analyse apk failed, caused by:Failed to find GameSettings.prop, please import udp sdk and generate GameSettings.&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -407,6 +416,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go to &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API Console&lt;/a&gt;, select your game project on the dropdown, then go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section, then on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt; section select the item with the name of your game, then copy the value of the field &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt;.&lt;/p&gt;
 
@@ -420,6 +430,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In the new page, select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Android&lt;/code&gt; on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Application type&lt;/code&gt; dropdown.&lt;/p&gt;
 
@@ -454,6 +465,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;After the import, you can edit the information as well.&lt;/p&gt;
 
@@ -501,6 +513,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;53-send-it-to-review&quot;&gt;5.3 Send it to review&lt;/h3&gt;
 &lt;p&gt;Now you can select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submit to Store&lt;/code&gt; in the dropdown, then select the checkbox store on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Publish&lt;/code&gt; page and click on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Publish&lt;/code&gt; button.
@@ -515,6 +528,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -564,7 +578,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Services &amp;amp; APIS&lt;/code&gt; menu, after enter on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Google Play game services&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
@@ -575,7 +590,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Fill only the required information for test, then go to menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Linked apps&lt;/code&gt; and link it to your game on with the app on Google Play Console.&lt;/p&gt;
 &lt;center&gt;                
@@ -586,7 +602,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;creating-some-achievements-for-test&quot;&gt;Creating some achievements for test&lt;/h2&gt;
 &lt;p&gt;In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Game services section&lt;/code&gt; open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Achievements&lt;/code&gt; menu and add some achievements.&lt;/p&gt;
@@ -598,7 +615,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;I found empirically that test achievements that did not have an icon set on the Google Play Console did not show the standard Google Play Games UI when unlocked and were automatically locked again about 1 hour after they were unlocked.&lt;/p&gt;
@@ -614,7 +632,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;oauth-and-upload-certificate&quot;&gt;OAuth and Upload Certificate&lt;/h2&gt;
 &lt;p&gt;One thing can be a little confusing is about the certificate fingerprints.&lt;/p&gt;
@@ -628,7 +647,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now you need to copy your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1&lt;/code&gt; fingerprint of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Upload certificate&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;App signing&lt;/code&gt; section.&lt;/p&gt;
 &lt;center&gt;                
@@ -639,7 +659,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then go to your OAuth credentials on &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API console&lt;/a&gt;.&lt;/p&gt;
 &lt;center&gt;                
@@ -650,7 +671,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;the Google API console&lt;/code&gt;, select your game on the top dropdown, then go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; menu and edit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt;. Paste the fingertip on the field &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt; and save it.&lt;/p&gt;
 &lt;center&gt;                
@@ -661,7 +683,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;remember to remove the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1&lt;/code&gt; prefix, if you copied it together.&lt;/p&gt;
@@ -683,6 +706,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;center&gt;                
@@ -693,6 +717,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;With this basic setup you can start to use the other features from Google Play Games Plugin for Unity plugin, as:&lt;/p&gt;
 &lt;ul&gt;
@@ -718,7 +743,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;Below a list of tips and tricks for non-common scenarios.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+Below a list of tips and tricks for non-common scenarios.&lt;/p&gt;
 
 &lt;h3 id=&quot;log-on-device&quot;&gt;Log on device&lt;/h3&gt;
 &lt;p&gt;If anything goes wrong on Android device you will need to see it logs, to do so, you can use adb logcat:&lt;/p&gt;
@@ -746,7 +772,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets/GooglePlayGames/Editor&lt;/code&gt; folder and create a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assembly Definition&lt;/code&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GooglePlayGames.Editor&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
@@ -757,7 +784,8 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, go to your game assembly definition and add a reference to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GooglePlayGames&lt;/code&gt;.&lt;/p&gt;
 
@@ -802,6 +830,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
 &lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
@@ -816,6 +845,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
 &lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
@@ -828,6 +858,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;
 

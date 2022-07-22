@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unitytips</title>
  <link href="//tags/unitytips/index.xml" rel="self"/>
  <link href="/tag/unitytips.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/unitytips.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -42,6 +42,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/12/08/unitytips-editor-internal-menus/unity-editor-internal-menu.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Unity Editor internal menus&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -85,6 +86,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/12/01/unitytips-tuple-patterns/unitytips-tuple-patterns.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Some algorithms depend on multiple inputs. Tuple patterns allow you to switch based on multiple values expressed as a &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples&quot;&gt;tuple&lt;/a&gt;.&lt;/p&gt;
@@ -109,6 +111,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/24/unitytips-property-patterns/unitytips-property-patterns.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Property Patterns&lt;/code&gt; enables you to match on properties of the object examined in a &lt;a href=&quot;/unitytips-switch-expressions&quot;&gt;Switch Expressions&lt;/a&gt;.&lt;/p&gt;
@@ -138,6 +141,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Switch Expressions&lt;/code&gt; can dramatically simplify and reduce the &lt;a href=&quot;https://en.wikipedia.org/wiki/Source_lines_of_code&quot;&gt;LOC (Lines Of Code)&lt;/a&gt; to make a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;.&lt;/p&gt;
@@ -164,6 +168,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 </content>
  </entry>
@@ -231,6 +236,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;scripting-backends&quot;&gt;Scripting backends&lt;/h3&gt;
 &lt;ul&gt;
@@ -374,6 +380,7 @@ To use it you need to add a &lt;a href=&quot;https://docs.unity3d.com/ScriptRefe
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/15/unitytips-editor-coroutines/chip-8-inside-unity-editor.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The result of using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EditorCoroutineUtility.StartCoroutine&lt;/code&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -397,6 +404,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/08/unitytips-focused-inspector/focused-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;More details in the official documentation: &lt;a href=&quot;https://docs.unity3d.com/2020.1/Documentation/Manual/InspectorFocused.html&quot;&gt;Focused Inspectors&lt;/a&gt;&lt;/p&gt;
@@ -418,6 +426,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/623de59997fa6f2aaeeb231a2a789933.js?file=FrameworkSettings.cs&quot;&gt; &lt;/script&gt;
@@ -448,6 +457,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/be4850e86a0aacd3de4266830566b139.js?file=HelpBoxAttribute.cs&quot;&gt; &lt;/script&gt;
@@ -484,6 +494,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/c03ec79fa0f0def94726f4b6914b4769.js?file=SocialShare.cs&quot;&gt; &lt;/script&gt;
@@ -543,6 +554,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/04/21/unitytips-timespan-box-drawer/TimeSpanBox.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/bb3b4bf52e560c3d673cd3d50f563cfb.js?file=TimeSpanBoxAttribute.cs&quot;&gt; &lt;/script&gt;
@@ -572,6 +584,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/09/03/unitytips-string-interpolation/string-interpolation.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The sample lines will result in the same string&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -596,6 +609,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-methods.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Expression body definitions for methods and read-only properties are supported starting with C# 6. Expression body definitions for constructors, finalizers, property accessors, and indexers are supported starting with C# 7.0.&lt;/p&gt;
@@ -605,6 +619,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/08/27/unitytips-expression-body-definition/expression-body-definition-properties.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 </content>
  </entry>
@@ -909,6 +924,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Scene view with Sorting Layer Debugger enabled&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -931,6 +947,7 @@ It always displays the properties of the item you opened it for, even if you sel
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2017/11/26/unity3d-scenepreview-inspector/ScenePreview.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Just download the gist bellow to your Unity3D project and add it inside a “Editor” folder.&lt;/p&gt;

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - csharp-8-new-features</title>
  <link href="//tags/csharp-8-new-features/index.xml" rel="self"/>
  <link href="/tag/csharp-8-new-features.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/csharp-8-new-features.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -42,6 +42,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/12/01/unitytips-tuple-patterns/unitytips-tuple-patterns.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Some algorithms depend on multiple inputs. Tuple patterns allow you to switch based on multiple values expressed as a &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples&quot;&gt;tuple&lt;/a&gt;.&lt;/p&gt;
@@ -66,6 +67,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/24/unitytips-property-patterns/unitytips-property-patterns.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Property Patterns&lt;/code&gt; enables you to match on properties of the object examined in a &lt;a href=&quot;/unitytips-switch-expressions&quot;&gt;Switch Expressions&lt;/a&gt;.&lt;/p&gt;
@@ -95,6 +97,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Switch Expressions&lt;/code&gt; can dramatically simplify and reduce the &lt;a href=&quot;https://en.wikipedia.org/wiki/Source_lines_of_code&quot;&gt;LOC (Lines Of Code)&lt;/a&gt; to make a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;.&lt;/p&gt;
@@ -121,6 +124,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 </content>
  </entry>

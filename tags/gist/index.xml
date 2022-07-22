@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - gist</title>
  <link href="//tags/gist/index.xml" rel="self"/>
  <link href="/tag/gist.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/gist.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -90,6 +90,7 @@ There are many classic easing functions, such as: InQuad, OutElastic, InOutSin, 
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;botcontroller&quot;&gt;BotController&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/1c8e405116e1b48a7d25dec9b36edbea.js&quot;&gt; &lt;/script&gt;

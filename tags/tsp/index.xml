@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - tsp</title>
  <link href="//tags/tsp/index.xml" rel="self"/>
  <link href="/tag/tsp.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/tsp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -70,6 +70,7 @@ dotnet watch run
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Open a new terminal in the same folder and type:&lt;/p&gt;
@@ -163,6 +164,7 @@ dotnet watch run
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;This is not a tutorial about Blazor good pratices, so everything here is done in the simplest possible way to introduce how to use GenticSharp with Blazor.  I do not talk about things you should use when working with Blazor, such as separate logic from UI and use Blazor components.&lt;/p&gt;
 &lt;/div&gt;
@@ -184,6 +186,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-cities.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
 &lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
@@ -200,6 +203,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/draw-route.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With only 4 C# classes, 1 JS file and 1 Blazor page we built a pretty nice sample of genetic algorithms using Blazor with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;
@@ -233,6 +237,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;I was always amazed by the 2D cars designed by &lt;a href=&quot;http://boxcar2d.com/about.html&quot;&gt;BoxCar2D&lt;/a&gt;  and see how genetic algorithm make new and (probably) better cars each new generation and I always wanted make a sample inspired by it using GeneticSharp.&lt;/p&gt;
 
@@ -298,6 +303,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;genetic-algorithm-and-the-simulation&quot;&gt;Genetic algorithm and the simulation&lt;/h2&gt;
 &lt;p&gt;The genetic algorithm to evaluate the simulation is configured with this operators:&lt;/p&gt;
@@ -319,6 +325,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;If you are running the sample inside Unity3D editor you can change the size of the simulation grid in the SampleController game object from CarScene.&lt;/p&gt;
@@ -472,6 +479,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;using-net-standard-20&quot;&gt;Using .NET Standard 2.0&lt;/h2&gt;
 &lt;p&gt;Go to “Player settings” / “Other settings” / “Configuration”, select “.NET 4.x Equivalent” on “Scripting Runtime Version”. Unity will ask to restart, you can confirm.&lt;/p&gt;
@@ -486,6 +494,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installing-geneticsharp&quot;&gt;Installing GeneticSharp&lt;/h2&gt;
 &lt;p&gt;Install GeneticSharp using the .unitypackage available on &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases&quot;&gt;GeneticSharp release page&lt;/a&gt;.&lt;/p&gt;
@@ -536,6 +545,7 @@ div.gist-meta { display:none; }
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-cities&quot;&gt;Drawing the cities&lt;/h2&gt;
 &lt;p&gt;Now our GA is running inside Unity3D, but it need to display the cities route better.
@@ -572,6 +582,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Try to run the scene, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
@@ -582,6 +593,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;drawing-the-route&quot;&gt;Drawing the route&lt;/h2&gt;
 &lt;p&gt;In the previous step we drawn the cities and we have the visual of the problem: the cities.&lt;/p&gt;
@@ -614,6 +626,7 @@ We need to create a visual representation to the cities.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;changing-the-cities-positions&quot;&gt;Changing the cities positions&lt;/h2&gt;
 &lt;p&gt;Our sample could be considered done, but would it be nice if we you could change the cities positions while the genetic algorithm are running and see how it manages these cities positions changes.&lt;/p&gt;
@@ -632,6 +645,7 @@ I won’t getting in details about how this is script works, but it’s allow th
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2018/05/16/tsp-with-GeneticSharp-and-Unity3d/tsp-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With only 5 C# scripts and 1 prefab we built a pretty nice sample of genetic algorithms using in Unity3D with GeneticSharp. Now you can improve it with your own ideas or use some of mine ;):&lt;/p&gt;

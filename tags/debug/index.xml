@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - debug</title>
  <link href="//tags/debug/index.xml" rel="self"/>
  <link href="/tag/debug.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/debug.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -40,6 +40,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s clear that is not easy to know what tweets are inside that list. Of course you can use breakpoint conditions, trace, logs and many others resources to help the debug process, but DebuggerDisplay is an easier and very cheap solution.&lt;/p&gt;
 
@@ -64,12 +65,14 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/whenDebugIsEasyThanExpected.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;When debugging is easier than expected&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;

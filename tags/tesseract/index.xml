@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - tesseract</title>
  <link href="//tags/tesseract/index.xml" rel="self"/>
  <link href="/tag/tesseract.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/tesseract.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -80,6 +80,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;You will get this result after call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesseractService.GetText&lt;/code&gt; method:
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The (quick) [brown] {fox} jumps!

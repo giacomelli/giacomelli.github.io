@@ -161,6 +161,7 @@ This is why we can use our <code class="language-plaintext highlighter-rouge">AR
 </picture>
 
       </center>
+<p><br /></p>
 
 <blockquote>
   <p>The MonoBehaviour class is the base class from which every Unity script derives, by default. TPovides the framework which allows you to attach your script to a GameObject in the editor, as well as providing hooks into useful Events such as Start and Update.</p>
@@ -182,7 +183,8 @@ This is why we can use our <code class="language-plaintext highlighter-rouge">AR
 </picture>
 
       </center>
-<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs"> </script>
+<p><br />
+<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs"> </script></p>
 
 <h4 id="intialize-method">Intialize method</h4>
 <p>In the method <code class="language-plaintext highlighter-rouge">Initialize</code> we verify if will render to the main camera or to a specific target camera, then we set some camera configuration, create the material we will use to render the CHIP-8 graphic, get the screen size, then we initialize our <a href="https://gameprogrammingpatterns.com/double-buffer.html">Double Buffer</a> array.</p>
@@ -238,7 +240,8 @@ This is why we can use our <code class="language-plaintext highlighter-rouge">AR
 </picture>
 
       </center>
-<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs"> </script>
+<p><br />
+<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs"> </script></p>
 
 <h4 id="awake-method">Awake method</h4>
 <p>We just try to locate our <a href="https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html">AudioSource</a> component that will be used to play the sound.</p>
@@ -262,7 +265,8 @@ This is why we can use our <code class="language-plaintext highlighter-rouge">AR
 </picture>
 
       </center>
-<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs"> </script>
+<p><br />
+<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs"> </script></p>
 
 <h4 id="key-mapping">Key mapping</h4>
 <p>First, we create the dictionary <code class="language-plaintext highlighter-rouge">_map</code> to map the real keyboard keys to CHIP-8 keypad keys.</p>
@@ -287,7 +291,8 @@ In this method, we set to <code class="language-plaintext highlighter-rouge">1</
 </picture>
 
       </center>
-<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs"> </script>
+<p><br />
+<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs"> </script></p>
 
 <h4 id="debug-and-error-methods">Debug and Error methods</h4>
 <p>The two methods implemented for <code class="language-plaintext highlighter-rouge">ILog</code> interface use methods available on Unity <a href="https://docs.unity3d.com/ScriptReference/Debug.html">Debug</a> class to send log messages to the <a href="https://docs.unity3d.com/Manual/Console.html">console window</a>.</p>
@@ -308,7 +313,8 @@ In this method, we set to <code class="language-plaintext highlighter-rouge">1</
 </picture>
 
       </center>
-<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs"> </script>
+<p><br />
+<script src="https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs"> </script></p>
 
 <h4 id="start-method">Start method</h4>
 <p>Verifies if all the systems needed to run the emulator were configured in the editor, then <a href="https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html">sets the desired FPS</a> and starts to run the emulator.</p>
@@ -334,6 +340,7 @@ In this method, we set to <code class="language-plaintext highlighter-rouge">1</
 <center>                
         <img class="screenshot" src="/assets/2020/11/04/arc-8-devlog-3/arc-8-running-chip-8-emulator-inside-unity-inspector.gif " alt="post image" />
       </center>
+<p><br /></p>
 
 <p>If you have any doubts about what I talk about above or any tip about the CHIP-8 emulator (or Unity) and you like to share it, please let me know in the comments section below.</p>
 

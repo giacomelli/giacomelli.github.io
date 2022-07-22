@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity-whatsnew</title>
  <link href="//tags/unity-whatsnew/index.xml" rel="self"/>
  <link href="/tag/unity-whatsnew.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/unity-whatsnew.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -60,7 +60,8 @@ The Root Namespace will be used to add the namespace when creating scripts in Un
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/12/16/unity-2020-2-whats/unitytips-tuple-patterns.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
-&lt;p&gt;You can learn more about C# 8 features in &lt;a href=&quot;/tags/csharp-8-new-features&quot;&gt;this posts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+You can learn more about C# 8 features in &lt;a href=&quot;/tags/csharp-8-new-features&quot;&gt;this posts&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;roslyn-analyzers-support&quot;&gt;Roslyn analyzers support&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -133,6 +134,7 @@ Unity went further, allowing an editor focused on a component too.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/09/04/unity-2020-1-whats-new/focused-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;for-gameobjects-and-project-assets&quot;&gt;For GameObjects and Project Assets&lt;/h4&gt;
 &lt;p&gt;Right-click a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hierarchy view&lt;/code&gt;, or an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Asset&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Project view&lt;/code&gt;.
@@ -168,6 +170,7 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;lighting-settings-as-an-asset&quot;&gt;Lighting settings as an asset&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -183,6 +186,7 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;graphics-getpixeldata-api-was-added&quot;&gt;Graphics: GetPixelData API was added&lt;/h3&gt;
 &lt;blockquote&gt;

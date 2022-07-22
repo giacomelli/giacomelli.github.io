@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - continuous-integration</title>
  <link href="//tags/continuous-integration/index.xml" rel="self"/>
  <link href="/tag/continuous-integration.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/continuous-integration.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -146,6 +146,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;
@@ -163,6 +164,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/09/04/starting-a-buildron-mod-with-a-mod-template/BuildronModTemplateSimulation.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
 &lt;p&gt;Download the Buildron-Mod-Template.zip from &lt;a href=&quot;https://github.com/skahal/Buildron/releases&quot;&gt;releases page&lt;/a&gt;.
@@ -199,6 +201,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;After jumpstart is done you will see a new folder called MyAmazingMod, inside of it there are the following folders:&lt;/p&gt;
 
@@ -220,6 +223,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-c-project&quot;&gt;The C# project&lt;/h2&gt;
 &lt;p&gt;Open the MyAmazingMod/src/Code/MyAmazingMod.sln.&lt;/p&gt;
@@ -234,6 +238,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Inside of it you can see the Mod.cs and ModController.cs.&lt;/p&gt;
 
@@ -251,6 +256,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Click on the menu “Buildron/Show Simulator”.&lt;/p&gt;
 
@@ -263,6 +269,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;You will see a box falling down every time you hit the button. This behavior is made by Mod.cs and ModController.cs on C# project. If you are curious about it, take a look on the classes implementations.&lt;/p&gt;
 
@@ -288,6 +295,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go to folder MyAmazingMod/build and open the Buildron of your platform.&lt;/p&gt;
 
@@ -303,6 +311,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;With this post you learned how you can starting to create your own mod from mod template.&lt;/p&gt;
@@ -327,6 +336,7 @@ Unzip it in any folder.&lt;/p&gt;
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2016/08/28/buildron.2.0.0-rc1-mods-support/BuildronBuildMod.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;BuildMod running inside Buildron.ModSdk simulator&lt;/p&gt;

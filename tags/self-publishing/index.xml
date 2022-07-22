@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - self-publishing</title>
  <link href="//tags/self-publishing/index.xml" rel="self"/>
  <link href="/tag/self-publishing.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/self-publishing.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -110,6 +110,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;After you finish the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6 - Confirm&lt;/code&gt; come back here. You’ll better understand this post and tips &amp;amp; tricks after that.&lt;/p&gt;
 
@@ -141,6 +142,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;if you are using Unity version previous 2019.4, you need to use the option &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Add package from disk&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -163,6 +165,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;easy-on-boarding&quot;&gt;Easy On-Boarding&lt;/h3&gt;
 &lt;p&gt;Now, open the menu &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Game Growth / Easy onboarding&lt;/code&gt; and follow the steps.&lt;/p&gt;
@@ -174,6 +177,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;run--validate-integration&quot;&gt;Run &amp;amp; Validate Integration&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -262,6 +266,7 @@ From the 9 stores supported, 7 are fully integrated with UDP. What this meaning?
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-implement&quot;&gt;1. Implement&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -291,6 +296,7 @@ In my case, I was using IAP already in the project.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -315,6 +321,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;To login in this screen, use the accounts in the setup on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sandbox Test Account&lt;/code&gt;. Remember those e-mails don’t need to exist, they are just test accounts to validate UDP setup&lt;/p&gt;
 &lt;/div&gt;
@@ -330,6 +337,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;note&quot;&gt;&lt;p&gt;If you did not setup the UDP on your project, you should see a message like this on UDP dashboard notifications &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apk analytics failed, caused by: analyse apk failed, caused by:Failed to find GameSettings.prop, please import udp sdk and generate GameSettings.&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -355,6 +363,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go to &lt;a href=&quot;https://console.developers.google.com/apis&quot;&gt;Google API Console&lt;/a&gt;, select your game project on the dropdown, then go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Credentials&lt;/code&gt; section, then on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OAuth 2.0 Client IDs&lt;/code&gt; section select the item with the name of your game, then copy the value of the field &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SHA-1 certificate fingertip&lt;/code&gt;.&lt;/p&gt;
 
@@ -368,6 +377,7 @@ If you setup UDP right, you should see a screen like below when the game starts.
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;In the new page, select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Android&lt;/code&gt; on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Application type&lt;/code&gt; dropdown.&lt;/p&gt;
 
@@ -402,6 +412,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;After the import, you can edit the information as well.&lt;/p&gt;
 
@@ -449,6 +460,7 @@ If you already have the game published on Google Play, as was my case with &lt;a
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;53-send-it-to-review&quot;&gt;5.3 Send it to review&lt;/h3&gt;
 &lt;p&gt;Now you can select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submit to Store&lt;/code&gt; in the dropdown, then select the checkbox store on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Publish&lt;/code&gt; page and click on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Publish&lt;/code&gt; button.
@@ -463,6 +475,7 @@ UDP will send to you an e-mail when the game is approved.&lt;/p&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 

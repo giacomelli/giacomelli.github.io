@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - made-with-unity</title>
  <link href="//tags/made-with-unity/index.xml" rel="self"/>
  <link href="/tag/made-with-unity.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/made-with-unity.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -40,6 +40,7 @@ Besides, the theme “There is a twist…!” was a challenge one, at least to m
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;There are 3 different elements in the screen: Red, Green and Blue.&lt;/li&gt;
   &lt;li&gt;In the start Red kills Green, Green kills Blue and Blue kills Red.&lt;/li&gt;
@@ -107,7 +108,8 @@ I took some time thinking about what game I would like to play and develop with 
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;how-to-vote&quot;&gt;How to vote&lt;/h2&gt;
 &lt;p&gt;If you liked the game, &lt;strong&gt;you can cast a vote&lt;/strong&gt; for the game jam here: &lt;a href=&quot;https://itch.io/jam/kenney-jam-2020/rate/737655&quot;&gt;https://itch.io/jam/kenney-jam-2020/rate/737655&lt;/a&gt;.&lt;/p&gt;

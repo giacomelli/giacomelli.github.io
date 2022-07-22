@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - arc8-devlog</title>
  <link href="//tags/arc8-devlog/index.xml" rel="self"/>
  <link href="/tag/arc8-devlog.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/arc8-devlog.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -21,6 +21,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/11/arc-8-devlog-4/arc-8-running-chip-8-emulator-inside-unity-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;To help to understand everything in this post I recommend you read the previous &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog posts&lt;/a&gt;, in special the &lt;a href=&quot;/arc-8-devlog-3&quot;&gt;last one&lt;/a&gt;.&lt;/p&gt;
 
@@ -145,6 +146,7 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;The MonoBehaviour class is the base class from which every Unity script derives, by default. TPovides the framework which allows you to attach your script to a GameObject in the editor, as well as providing hooks into useful Events such as Start and Update.&lt;/p&gt;
@@ -166,7 +168,8 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Graphic.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;intialize-method&quot;&gt;Intialize method&lt;/h4&gt;
 &lt;p&gt;In the method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Initialize&lt;/code&gt; we verify if will render to the main camera or to a specific target camera, then we set some camera configuration, create the material we will use to render the CHIP-8 graphic, get the screen size, then we initialize our &lt;a href=&quot;https://gameprogrammingpatterns.com/double-buffer.html&quot;&gt;Double Buffer&lt;/a&gt; array.&lt;/p&gt;
@@ -222,7 +225,8 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Sound.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;awake-method&quot;&gt;Awake method&lt;/h4&gt;
 &lt;p&gt;We just try to locate our &lt;a href=&quot;https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html&quot;&gt;AudioSource&lt;/a&gt; component that will be used to play the sound.&lt;/p&gt;
@@ -246,7 +250,8 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=KeyboardChip8Input.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;key-mapping&quot;&gt;Key mapping&lt;/h4&gt;
 &lt;p&gt;First, we create the dictionary &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_map&lt;/code&gt; to map the real keyboard keys to CHIP-8 keypad keys.&lt;/p&gt;
@@ -271,7 +276,8 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Log.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;debug-and-error-methods&quot;&gt;Debug and Error methods&lt;/h4&gt;
 &lt;p&gt;The two methods implemented for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; interface use methods available on Unity &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Debug.html&quot;&gt;Debug&lt;/a&gt; class to send log messages to the &lt;a href=&quot;https://docs.unity3d.com/Manual/Console.html&quot;&gt;console window&lt;/a&gt;.&lt;/p&gt;
@@ -292,7 +298,8 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs&quot;&gt; &lt;/script&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/560a0d0eda7762fc73ad0aa84f3d3ebb.js?file=Chip8Loader.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;start-method&quot;&gt;Start method&lt;/h4&gt;
 &lt;p&gt;Verifies if all the systems needed to run the emulator were configured in the editor, then &lt;a href=&quot;https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html&quot;&gt;sets the desired FPS&lt;/a&gt; and starts to run the emulator.&lt;/p&gt;
@@ -318,6 +325,7 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/11/04/arc-8-devlog-3/arc-8-running-chip-8-emulator-inside-unity-inspector.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you have any doubts about what I talk about above or any tip about the CHIP-8 emulator (or Unity) and you like to share it, please let me know in the comments section below.&lt;/p&gt;
 
@@ -400,6 +408,7 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;chip8graphicrazor-component-igraphic&quot;&gt;Chip8Graphic.razor component (IGraphic)&lt;/h2&gt;
 &lt;picture&gt;
@@ -606,7 +615,8 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
-&lt;p&gt;I won’t get into details about how to implement each of CHIP-8’s 35 opcodes, because there are plenty of tutorials and resources talking about this on the internet (look in the section ‘Further reading’ in the of this post). My focus here is to explain my code design decisions to allow built a CHIP-8 emulator core in .NET Standard that will allow us to develop a graphic, sound, and input systems for Blazor and Unity3D (and any other platform where C# / .NET is supported).&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+I won’t get into details about how to implement each of CHIP-8’s 35 opcodes, because there are plenty of tutorials and resources talking about this on the internet (look in the section ‘Further reading’ in the of this post). My focus here is to explain my code design decisions to allow built a CHIP-8 emulator core in .NET Standard that will allow us to develop a graphic, sound, and input systems for Blazor and Unity3D (and any other platform where C# / .NET is supported).&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Why the name ARC-8? well, the choice of the name was quite chaotic as any of the name ideas brainstorm that I have had with my friend &lt;a href=&quot;http://twitter.com/giusepe&quot;&gt;Giusepe Casagrande&lt;/a&gt;. The name’s meaning and the way of speaking are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Arcade&lt;/code&gt; because we want to remember that old day when we are kids playing some classic games in an arcade or fliperama as we call it in Brazil.&lt;/p&gt;
@@ -639,6 +649,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;systems-interfaces&quot;&gt;Systems interfaces&lt;/h3&gt;
 &lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=system-interfaces.cs&quot;&gt; &lt;/script&gt;
@@ -672,6 +683,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;premise-3---100-code-coverage&quot;&gt;Premise 3 - 100% code coverage&lt;/h2&gt;
 &lt;picture&gt;
@@ -693,6 +705,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;premise-4---benchmark&quot;&gt;Premise 4 - Benchmark&lt;/h2&gt;
 &lt;picture&gt;
@@ -712,6 +725,7 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
 &lt;picture&gt;

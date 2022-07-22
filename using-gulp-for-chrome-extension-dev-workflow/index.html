@@ -165,6 +165,7 @@ At that time we did not find any builtin or other solution to make this workflow
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>This is not a problem if you have only one environment or if you don’t need different configurations for different environments, but as I’ve already explained, we needed different configs for different environments.</p>
 
@@ -184,6 +185,7 @@ At that time we did not find any builtin or other solution to make this workflow
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="files-structure">Files structure</h2>
 <p>Move the <code class="language-plaintext highlighter-rouge">Hello Extensions</code> files to a subfolder called <code class="language-plaintext highlighter-rouge">src</code>.
@@ -196,6 +198,7 @@ At the end of this tutorial, our files structure will look like this:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <div class="note"><p>If have any doubt about the files structure during this tutorial, you can download the full solution in section <code class="language-plaintext highlighter-rouge">Download</code> at the end of the tutorial</p>
 </div>
@@ -290,6 +293,7 @@ Here we are basically defining the order of each function that will be called wh
 </picture>
 
       </center>
+<p><br /></p>
 
 <h2 id="creating-the-configjson-files">Creating the <code class="language-plaintext highlighter-rouge">config.json</code> files</h2>
 <picture>
@@ -328,6 +332,7 @@ Here is the content of each one:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>There is a new subfolder <code class="language-plaintext highlighter-rouge">dist</code> created. Load it on Chrome Extensions page:</p>
 <center>                
@@ -338,6 +343,7 @@ Here is the content of each one:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The plugin should work ok.</p>
 
@@ -394,7 +400,8 @@ Here is the content of each one:</p>
 </picture>
 
       </center>
-<p>Run the command <code class="language-plaintext highlighter-rouge">gulp</code> in the root folder.
+<p><br />
+Run the command <code class="language-plaintext highlighter-rouge">gulp</code> in the root folder.
 This will use <code class="language-plaintext highlighter-rouge">DEV</code> configuration from config.js and manifest.json</p>
 <div class="note"><p>Is the same if you run <code class="language-plaintext highlighter-rouge">gulp --config DEV</code></p>
 </div>
@@ -409,6 +416,7 @@ In the Chrome Extensions page you should see something like this:</p>
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Your extension is using the TEST environment values.
 When you click on the extension icon on the Chrome toolbar, you should see something like this:</p>
@@ -420,6 +428,7 @@ When you click on the extension icon on the Chrome toolbar, you should see somet
 </picture>
 
       </center>
+<p><br /></p>
 
 <div class="note"><p>You can try to run <code class="language-plaintext highlighter-rouge">gulp --config PROD</code>. To see the <code class="language-plaintext highlighter-rouge">PROD</code> environment values on the extension.</p>
 </div>

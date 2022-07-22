@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - dapper</title>
  <link href="//tags/dapper/index.xml" rel="self"/>
  <link href="/tag/dapper.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/dapper.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -41,6 +41,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2021/05/31/sqlasfile/SqlAsFile-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tags&quot;&gt;Tags&lt;/h2&gt;
 &lt;p&gt;You can use some tags to tell to SqlAsFile’s parser how to treat a portion of the file:&lt;/p&gt;

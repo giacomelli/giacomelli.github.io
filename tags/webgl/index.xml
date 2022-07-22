@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - webgl</title>
  <link href="//tags/webgl/index.xml" rel="self"/>
  <link href="/tag/webgl.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/webgl.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -114,6 +114,7 @@
 &lt;center&gt;                
         &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-sample.gif &quot; alt=&quot;post image&quot; /&gt;
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
 &lt;picture&gt;
@@ -184,6 +185,7 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Go to the LineRenderer component and change the line width to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
@@ -195,6 +197,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
 &lt;picture&gt;
@@ -214,6 +217,7 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h2&gt;
 &lt;picture&gt;

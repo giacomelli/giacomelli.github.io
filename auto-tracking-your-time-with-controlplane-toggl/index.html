@@ -103,7 +103,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>20/09/2015</span></div>   
       
 
-<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>5 minutes to read</span></div>
+<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>6 minutes to read</span></div>
    
     </div>  
     <p>So, do you want to track the time you spend in some tasks, but always forget to start the time tracking?</p>
@@ -164,6 +164,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>Select tab “Contexts”, and add I new context, in my case a called it “Skahal”:</p>
 
@@ -175,6 +176,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="5-configuring-the-evidence-sources">5) Configuring the evidence sources</h3>
 <p>Select the tab “Evidences sources”, the option “Running Application” should be checked:</p>
@@ -187,6 +189,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="6-configuring-the-rules">6) Configuring the rules</h3>
 <p>Select the tab “Rules”, add a new rule to your context, the rule must be of type “Running Application” to Unity 3D:</p>
@@ -199,6 +202,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="7-configuring-the-actions">7) Configuring the actions</h3>
 <p>Select the tab “Actions”, we’ll create 3 new actions: the first one is a task to open Safari in the Toggl timer task page, this is an optional action, but I like to see the task running (and I can stop/start it manually sometimes). Add a action of type “Open URL” with the address “https://www.toggl.com/app/timer”, select “On Arrival” and your context:</p>
@@ -211,6 +215,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The second one is a action to start the task in the Toggl when the context starts. Add a action of type “Shell Script”, in the field “Parameter” type the path to your startTogglTimeEntry.sh script, select “On Arrival” and your context:</p>
 
@@ -222,6 +227,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <p>The third one is a action to stop the task in the Toggl when the context ends. Add a action of type “Shell Script”, in the field “Parameter” type the path to your stopTogglTimeEntry.sh script, select “On Arrival” and your context:</p>
 
@@ -233,6 +239,7 @@ curl -v -u &lt;api-token&gt;:api_token \
 </picture>
 
       </center>
+<p><br /></p>
 
 <h3 id="8-test-everything">8) Test everything</h3>
 <p>Open Unity3D editor, in the almost same time your context must be activated and the Safari must open the Toggl url with “Programming” task started.</p>

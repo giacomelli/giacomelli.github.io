@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - google-play</title>
  <link href="//tags/google-play/index.xml" rel="self"/>
  <link href="/tag/google-play.html"/>
- <updated>2022-07-09T11:55:02-03:00</updated>
+ <updated>2022-07-22T14:57:00-03:00</updated>
  <id>/tag/google-play.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -39,6 +39,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tsp&quot;&gt;TSP&lt;/h2&gt;
 &lt;p&gt;The classic TSP sample, but in this, we can change the cities positions while the genetic algorithm is running and see how it finds the best route.&lt;/p&gt;
@@ -53,6 +54,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;wall-builder&quot;&gt;Wall builder&lt;/h2&gt;
 &lt;p&gt;This sample tries to build a higher wall using random initial bricks positions.&lt;/p&gt;
@@ -65,6 +67,7 @@
 &lt;/picture&gt;
 
       &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can get the full source code here: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&quot;&gt;https://github.com/giacomelli/GeneticSharp/tree/master/src/GeneticSharp.Runner.UnityApp&lt;/a&gt;&lt;/p&gt;
 
