@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - logrocket</title>
  <link href="//tags/logrocket/index.xml" rel="self"/>
  <link href="/tag/logrocket.html"/>
- <updated>2022-07-22T15:52:12-03:00</updated>
+ <updated>2022-07-23T07:01:50-03:00</updated>
  <id>/tag/logrocket.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -24,6 +24,12 @@
 &lt;/div&gt;
 
 &lt;h2 id=&quot;tutorial-sections&quot;&gt;Tutorial sections&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
 &lt;ul&gt;
   &lt;li&gt;Setting up our Unity project&lt;/li&gt;
   &lt;li&gt;What are colliders?&lt;/li&gt;
@@ -56,6 +62,12 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;setting-up-our-unity-project&quot;&gt;Setting up our Unity project&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
 &lt;p&gt;First, we need to create our Unity project. For this tutorial, we’ll use the version 2021.3.4f1, which, at the moment I’m writing, is the newest LTS Unity version.&lt;/p&gt;
 
 &lt;p&gt;On the project templates list, choose 2D(core), give it a name, and click the Create project button. We’ll call ours &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SampleScene&lt;/code&gt;.&lt;/p&gt;
@@ -82,6 +94,12 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;what-are-colliders&quot;&gt;What are colliders?&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
 &lt;p&gt;Before we start using our Unity project, we need to take a little dive into the basic concepts of colliders.&lt;/p&gt;
 
 &lt;p&gt;Colliders are the way that Unity (and most of the available game engines, if not all) manages collisions between GameObjects. For the sake of this tutorial, we are only using the 2D colliders, but a lot of the rules mentioned below are applicable to 3D colliders, too.&lt;/p&gt;
@@ -274,6 +292,12 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;collision-callbacks&quot;&gt;Collision callbacks&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
 &lt;p&gt;When one collider interacts with another collider, Unity sends some messages (e.g., call a method on any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MonoBehavior&lt;/code&gt; attached to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt;). In the case of a 2D collider, there are six available messages:&lt;/p&gt;
 
 &lt;h3 id=&quot;when-istrigger-is-not-checked&quot;&gt;When IsTrigger is not checked:&lt;/h3&gt;
@@ -433,6 +457,12 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;If we don’t need to use this information in our script, we can declare the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollision/OnTrigger&lt;/code&gt; methods without the logging parameter.&lt;/p&gt;
 
 &lt;h2 id=&quot;collider-interactions&quot;&gt;Collider interactions&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
 &lt;p&gt;You probably noticed in the last section that there is parity between the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollision&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTrigger&lt;/code&gt; methods the physics engine calls on the GameObjects involved in the collision. Knowing when each kind of interaction raises each kind of message/method in the involved GameObjects can be a little tricky; despite this apparent similarity, there are some rules for interaction possibilities between different collider setups.&lt;/p&gt;
 
 &lt;p&gt;There are six different setups a collider can have that will differently affect how it interacts with other colliders. These setups can be done by a combination of the properties &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IsTrigger&lt;/code&gt; of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Collider2D&lt;/code&gt; and the property &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Body Type&lt;/code&gt; of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; attached to the same GameObject. Below is a list of similar setups:&lt;/p&gt;
@@ -501,15 +531,14 @@ These tables can be very useful during game development, when we get stuck with 
 
 &lt;p&gt;To help us to better understand the colliders’ interactions, now and when we face the kind of problem mentioned above, I created a sample where we can move the GameObjects through each of the six possible interaction setups, see how they interact with each other, and what callbacks messages are sent.&lt;/p&gt;
 
-&lt;center&gt;                
-        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions.gif &quot; alt=&quot;post image&quot; /&gt;
-      &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Try it and move each collider setup to better understand what messages are sent for each interaction&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;iframe src=&quot;/apps/collider-interactions/index.html&quot; style=&quot;width: 100%;min-height: 700px;&quot;&gt;&lt;/iframe&gt;
 &lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://diegogiacomelli.com.br/apps/collider-interactions&quot;&gt;https://diegogiacomelli.com.br/apps/collider-interactions&lt;/a&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://diegogiacomelli.com.br/apps/collider-interactions&quot;&gt;Try the online sample here&lt;/a&gt; and move each collider setup to better understand what messages are sent for each interaction&lt;/p&gt;
 
 &lt;h2 id=&quot;physics2d-settings&quot;&gt;Physics2D settings&lt;/h2&gt;
 &lt;p&gt;For the last part of this tutorial, I would like to mention the Physics2D settings.&lt;/p&gt;
@@ -540,7 +569,17 @@ These tables can be very useful during game development, when we get stuck with 
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
 &lt;p&gt;In this tutorial, we’ve explained the fundamentals of Unity 2D Colliders: what they are, what their common properties and behaviors are, how to add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BoxCollider2D&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CircleCollider2D&lt;/code&gt; to a GameObject, what a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; is and how to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PhysicsMaterial2D&lt;/code&gt;, what the collision callbacks are and how to use them on our scripts, and, finally, the kinds of collider setups and how they interact.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The sprites used on the WebGL sample are from &lt;a href=&quot;http://kenney.nl&quot;&gt;Kenney&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  

@@ -116,7 +116,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>22/07/2022</span></div>   
       
 
-<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>24 minutes to read</span></div>
+<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>26 minutes to read</span></div>
    
     </div>  
     <p>In the first years of Unity, there wasn’t solid support for 2D game development inside the engine — for years, the right way to refer to it was “Unity 3D”. Though it was possible to develop 2D games with Unity, without official engine support, it wasn’t a smooth process like it is nowadays.</p>
@@ -129,6 +129,12 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </div>
 
 <h2 id="tutorial-sections">Tutorial sections</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/manifest-128-579a71043.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/manifest-128-579a71043.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/manifest-128-579a71043.png" alt="post image" width="128" height="128" />
+</picture>
+
 <ul>
   <li>Setting up our Unity project</li>
   <li>What are colliders?</li>
@@ -161,6 +167,12 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 </ul>
 
 <h2 id="setting-up-our-unity-project">Setting up our Unity project</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/config-128-c46695ddc.png" alt="post image" width="128" height="128" />
+</picture>
+
 <p>First, we need to create our Unity project. For this tutorial, we’ll use the version 2021.3.4f1, which, at the moment I’m writing, is the newest LTS Unity version.</p>
 
 <p>On the project templates list, choose 2D(core), give it a name, and click the Create project button. We’ll call ours <code class="language-plaintext highlighter-rouge">SampleScene</code>.</p>
@@ -187,6 +199,12 @@ With the project started, create two folders called <code class="language-plaint
 <p><br /></p>
 
 <h2 id="what-are-colliders">What are colliders?</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/problem-128-a3f91d933.png" alt="post image" width="128" height="128" />
+</picture>
+
 <p>Before we start using our Unity project, we need to take a little dive into the basic concepts of colliders.</p>
 
 <p>Colliders are the way that Unity (and most of the available game engines, if not all) manages collisions between GameObjects. For the sake of this tutorial, we are only using the 2D colliders, but a lot of the rules mentioned below are applicable to 3D colliders, too.</p>
@@ -379,6 +397,12 @@ With the project started, create two folders called <code class="language-plaint
 <p><br /></p>
 
 <h2 id="collision-callbacks">Collision callbacks</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/programmer-128-6cef95d36.png" alt="post image" width="128" height="128" />
+</picture>
+
 <p>When one collider interacts with another collider, Unity sends some messages (e.g., call a method on any <code class="language-plaintext highlighter-rouge">MonoBehavior</code> attached to the <code class="language-plaintext highlighter-rouge">GameObject</code>). In the case of a 2D collider, there are six available messages:</p>
 
 <h3 id="when-istrigger-is-not-checked">When IsTrigger is not checked:</h3>
@@ -538,6 +562,12 @@ With the project started, create two folders called <code class="language-plaint
 <p>If we don’t need to use this information in our script, we can declare the <code class="language-plaintext highlighter-rouge">OnCollision/OnTrigger</code> methods without the logging parameter.</p>
 
 <h2 id="collider-interactions">Collider interactions</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/component-128-1eb69a9dc.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/component-128-1eb69a9dc.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/component-128-1eb69a9dc.png" alt="post image" width="128" height="128" />
+</picture>
+
 <p>You probably noticed in the last section that there is parity between the <code class="language-plaintext highlighter-rouge">OnCollision</code> and <code class="language-plaintext highlighter-rouge">OnTrigger</code> methods the physics engine calls on the GameObjects involved in the collision. Knowing when each kind of interaction raises each kind of message/method in the involved GameObjects can be a little tricky; despite this apparent similarity, there are some rules for interaction possibilities between different collider setups.</p>
 
 <p>There are six different setups a collider can have that will differently affect how it interacts with other colliders. These setups can be done by a combination of the properties <code class="language-plaintext highlighter-rouge">IsTrigger</code> of the <code class="language-plaintext highlighter-rouge">Collider2D</code> and the property <code class="language-plaintext highlighter-rouge">Body Type</code> of the <code class="language-plaintext highlighter-rouge">Rigidbody2D</code> attached to the same GameObject. Below is a list of similar setups:</p>
@@ -606,15 +636,14 @@ These tables can be very useful during game development, when we get stuck with 
 
 <p>To help us to better understand the colliders’ interactions, now and when we face the kind of problem mentioned above, I created a sample where we can move the GameObjects through each of the six possible interaction setups, see how they interact with each other, and what callbacks messages are sent.</p>
 
-<center>                
-        <img class="screenshot" src="/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions.gif " alt="post image" />
-      </center>
-<p><br /></p>
+<blockquote>
+  <p>Try it and move each collider setup to better understand what messages are sent for each interaction</p>
+</blockquote>
+
+<iframe src="/apps/collider-interactions/index.html" style="width: 100%;min-height: 700px;"></iframe>
 <center><span style="font-style:italic; font-size:small"><p><a href="https://diegogiacomelli.com.br/apps/collider-interactions">https://diegogiacomelli.com.br/apps/collider-interactions</a></p>
 </span></center>
 <p><br /></p>
-
-<p><a href="https://diegogiacomelli.com.br/apps/collider-interactions">Try the online sample here</a> and move each collider setup to better understand what messages are sent for each interaction</p>
 
 <h2 id="physics2d-settings">Physics2D settings</h2>
 <p>For the last part of this tutorial, I would like to mention the Physics2D settings.</p>
@@ -645,7 +674,17 @@ These tables can be very useful during game development, when we get stuck with 
 </ul>
 
 <h2 id="conclusion">Conclusion</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png" alt="post image" width="128" height="128" />
+</picture>
+
 <p>In this tutorial, we’ve explained the fundamentals of Unity 2D Colliders: what they are, what their common properties and behaviors are, how to add a <code class="language-plaintext highlighter-rouge">BoxCollider2D</code> and <code class="language-plaintext highlighter-rouge">CircleCollider2D</code> to a GameObject, what a <code class="language-plaintext highlighter-rouge">Rigidbody2D</code> is and how to use <code class="language-plaintext highlighter-rouge">PhysicsMaterial2D</code>, what the collision callbacks are and how to use them on our scripts, and, finally, the kinds of collider setups and how they interact.</p>
+
+<p><br /><br /><br />Icons made by <a href="http://www.freepik.com">Freepik</a>, <a href="http://www.flaticon.com/authors/vignesh-oviyan">Vignesh Oviyan</a> and <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="http://www.flaticon.com">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons BY 3.0</a></p>
+
+<p>The sprites used on the WebGL sample are from <a href="http://kenney.nl">Kenney</a>.</p>
     
   </div>
   <span>
