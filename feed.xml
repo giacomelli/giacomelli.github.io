@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-08-04T11:50:42-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">The Fundamentals of Unity 2D colliders</title><link href="http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders/" rel="alternate" type="text/html" title="The Fundamentals of Unity 2D colliders" /><published>2022-07-22T00:00:00-03:00</published><updated>2022-07-22T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders</id><content type="html" xml:base="http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders/"><![CDATA[<p>In the first years of Unity, there wasn’t solid support for 2D game development inside the engine — for years, the right way to refer to it was “Unity 3D”. Though it was possible to develop 2D games with Unity, without official engine support, it wasn’t a smooth process like it is nowadays.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-08-09T12:12:39-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Free eBooks by Unity</title><link href="http://diegogiacomelli.com.br/free-ebooks-by-unity/" rel="alternate" type="text/html" title="Free eBooks by Unity" /><published>2022-08-09T00:00:00-03:00</published><updated>2022-08-09T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/free-ebooks-by-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/free-ebooks-by-unity/"><![CDATA[<p>Throughout all these years using Unity I’ve collected a lot of eBooks that Unity’s team has created. These ebooks are an incredible source of knowledge, but for some reason, I haven’t found any place on the Unity site or blog where all these eBooks are listed.</p>
+
+<p>For this reason, I created this post to list those eBooks. If you know any other of these free eBooks created by Unity’s team let me know in the comments and I’ll update the post.</p>
+
+<h3 id="art">Art</h3>
+<ul>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDYwMzg1JnY9MSZpc3N1ZU5hbWU9MkQgZ2FtZSBhcnQsIGFuaW1hdGlvbiwgYW5kIGxpZ2h0aW5nIGZvciBhcnRpc3RzIGVCb29rJmNtZD1kJnNpZz05NTM2NDg4NjI3YjNhNTkyMGU1YTBjMjFjNjg0YmRhMg%253D%253D">2D game art, animation, and lighting for artists</a></li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDY3OTc3JnY9MSZpc3N1ZU5hbWU9dGhlLWRlZmluaXRpdmUtZ3VpZGUtdG8tbGlnaHRpbmctaW4tdGhlLWhpZ2gtZGVmaW5pdGlvbi1yZW5kZXItcGlwZWxpbmUtdW5pdHktMjAyMS1sdHMtZWRpdGlvbiZjbWQ9ZCZzaWc9MGM5YTE4M2IyZmE3ZDYzMjcxMTljZDQ4YTQyYjYxZjM%253D">The definitive guide to lighting in the High Definition Render Pipeline (HDRP)</a></li>
+</ul>
+
+<h3 id="devops">DevOps</h3>
+<ul>
+  <li><a href="https://images.response.unity3d.com/Web/Unity/%7Ba58bfd8b-fc4d-4a60-a340-328a4a994c90%7D_2022-01-DG-Essential-Dev-Ops-Practices-e-book.pdf">Four essential DevOps practices to make all your games stand out</a></li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDUzNTMwJnY9MSZpc3N1ZU5hbWU9VmVyc2lvbiBjb250cm9sIGFuZCBwcm9qZWN0IG9yZ2FuaXphdGlvbiBiZXN0IHByYWN0aWNlIGd1aWRlJmNtZD1kJnNpZz00NzZiN2VjYzNlOGY3ZTNhNThhYzdjYzFiNTg4NTBiMA%253D%253D">Version control and project organization best practices for game developers</a></li>
+</ul>
+
+<h3 id="education">Education</h3>
+<ul>
+  <li><a href="https://images.response.unity3d.com/Web/Unity/%7B118ba1e1-7999-4731-aecb-222c8f648ba1%7D_Unity-CurricularFramework-052820_FINAL.pdf">Curricular Framework</a></li>
+</ul>
+
+<h3 id="game-design">Game design</h3>
+<ul>
+  <li><a href="https://cdn.unity3d.com/media/TheGameDesignerPlaybook_EBook.pdf">The Unity Game Designer Playbooy</a></li>
+</ul>
+
+<h3 id="misc">Misc</h3>
+<ul>
+  <li><a href="https://images.response.unity3d.com/Web/Unity/%7B1f2fcf3b-d60d-44e1-b646-818d32bfa030%7D_Unity-Mac-Development-Ebook-v4.2.pdf">Myths vs reality: What you need to know about developing for the Mac</a></li>
+  <li><a href="https://images.response.unity3d.com/Web/Unity/%7B47e54d3b-d51f-4e09-b3c1-1ab84453779e%7D_Unity-HiddenProductivityCosts-Ebook.pdf">The hidden productivity costs disrupting your release timelines</a></li>
+  <li><a href="https://images.response.unity3d.com/Web/Unity/%7B954cce4a-4166-45e7-b270-df28300bc67f%7D_UNITY-The_True_Costs_of_Creating__Launching_and_Operating_a_Game.pdf">The true costs of creating, Launching, and Operating a Game</a></li>
+</ul>
+
+<h3 id="mobile">Mobile</h3>
+<ul>
+  <li><a href="https://images.response.unity3d.com/Web/Unity/%7B53677c96-8761-4852-9699-67fb3702e97c%7D_Unity-MobileTrends2022-Ebook.pdf">Mobile Game Trends - What you need to know for 2022</a></li>
+</ul>
+
+<h3 id="monetization">Monetization</h3>
+<ul>
+  <li><a href="https://images.response.unity3d.com/Web/Unity/%7B75240e36-672c-474b-a72e-b2415403bad4%7D_Unity_IAP_Playbook-v4.pdf">The IAP Playbook</a></li>
+</ul>
+
+<h3 id="performance">Performance</h3>
+<ul>
+  <li><a href="https://images.response.unity3d.com/Web/Unity/%7B5dc4de9b-9e59-4860-b933-eb6daae82ecd%7D_Unity_Games_Optimization_Best_Practices-v5.pdf">9 ways to optimize your game development: Unity expert tips to help you ship</a></li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDI0NjkzJnY9MSZpc3N1ZU5hbWU9b3B0aW1pemUteW91ci1jb25zb2xlLWFuZC1wYy1nYW1lLXBlcmZvcm1hbmNlJmNtZD1kJnNpZz1hYjFkYjE2OTRhZWZhNzI4OTFkM2FiZjIyNTIyNTkyMQ%253D%253D">Optimize your console and PC game performance</a></li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDY3MDM1JnY9MyZpc3N1ZU5hbWU9dWx0aW1hdGUtZ3VpZGUtdG8tcHJvZmlsaW5nLXVuaXR5LWdhbWVzJmNtZD1kJnNpZz1kZGY3OThlNTBlYjA3YzljODU1MDA2NWFlNjlhM2NmNw%253D%253D">Ultimate guide to profiling Unity games</a></li>
+</ul>
+
+<h3 id="testing">Testing</h3>
+<ul>
+  <li><a href="https://images.response.unity3d.com/Web/Unity/%7B4233ae60-18e9-498e-bf6d-226e47a75932%7D_Unity_Bugs_Automation_EBook.pdf">Bugs &amp; automation: The next generation of QA</a></li>
+</ul>]]></content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="gamedev" /><category term="ebook" /><summary type="html"><![CDATA[Throughout all these years using Unity I’ve collected a lot of eBooks that Unity’s team has created. These ebooks are an incredible source of knowledge, but for some reason, I haven’t found any place on the Unity site or blog where all these eBooks are listed.]]></summary></entry><entry><title type="html">The Fundamentals of Unity 2D colliders</title><link href="http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders/" rel="alternate" type="text/html" title="The Fundamentals of Unity 2D colliders" /><published>2022-07-22T00:00:00-03:00</published><updated>2022-07-22T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders</id><content type="html" xml:base="http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders/"><![CDATA[<p>In the first years of Unity, there wasn’t solid support for 2D game development inside the engine — for years, the right way to refer to it was “Unity 3D”. Though it was possible to develop 2D games with Unity, without official engine support, it wasn’t a smooth process like it is nowadays.</p>
 
 <p>Around 2013, Unity started to support 2D game development with built-in components, like a 2D physics engine, Collider2D, Rigidbody2D, Vector2, Sprite, Tilemap, etc.</p>
 
