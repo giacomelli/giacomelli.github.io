@@ -3,11 +3,61 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2022-08-16T11:46:52-03:00</updated>
+ <updated>2022-08-16T13:05:26-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>GeneticSharp in the Wild&colon; Procedural Music Generation</title>
+   <link href="//geneticsharp-in-the-wild-procedural-music-generation/"/>
+   <updated>2022-08-16T00:00:00-03:00</updated>
+   <id>//geneticsharp-in-the-wild-procedural-music-generation</id>
+   <content type="html">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For this fifth post the choose one is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;State of the Art in Procedural Music Generation using Genetic Algorithms and Rule Based GA Implementation with Attractor Waves&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;The act of composing a piece of music in regarded as a creative process which encompasses objective and subjective rules. Objective rules can be pointed as the minimum necessary ones so that a given composition is considered structurally valid –
+music theory. Subjective rules depend on the composer ability to make a creation that is pleasant to the majority of the human listeners – or at least an intended specific audience.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Given that the creation process uses the human composer’s experience and sensibility – which in some form is an unknown rule set – it is assumed by some authors that, by analyzing the characteristics of the produced pieces of music spanning from
+several composers, underlying rules can be inferred.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Genetic algorithms will make the evolution of data encoded in a structure analogous to the chromosome. Traditionally, this piece of information is represented as a binary base, but it is not restricted to 2 symbols, as long as the needed processes for  the evolution can be applied.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;For the fitness function, we will use music theory as done in many previous papers, penalizing notes that are outside the chosen scale and giving bonus to those that match.&lt;/em&gt;&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-200-e4697bf8b.webp 200w, /assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-400-e4697bf8b.webp 400w, /assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-580-e4697bf8b.webp 580w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-200-e4697bf8b.png 200w, /assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-400-e4697bf8b.png 400w, /assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-580-e4697bf8b.png 580w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-580-e4697bf8b.png&quot; alt=&quot;post image&quot; width=&quot;580&quot; height=&quot;740&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;To understand in a first approach, what rating values were most fitting, a first tryout was made by translating the start of some classical pieces into the chromosome output structure. This ideal output was then rated by the fitness algorithm. By obtaining each individual rating component for each tested sample, it was possible to predefine a start set of values to be used. The exception was the attractor wave, which was set subjectively.
+Using two attraction waves, it is possible to visualize intended effect. In proximity  with the wave, the notes fall into its attraction basin. When two waves are near, the  effect either oscillates between the two or compromises during their proximity.
+Overall, many of the generated compositions have a subjective pleasant tone to  them.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sample-generated-music&quot;&gt;Sample generated music&lt;/h2&gt;
+&lt;p&gt;You can listen a sample music generated by the genetic algorithm:&lt;/p&gt;
+&lt;audio controls=&quot;&quot;&gt;
+        &lt;source src=&quot;/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-generated.mp3 &quot; type=&quot;audio/mp3&quot; /&gt;
+      &lt;/audio&gt;
+
+&lt;h2 id=&quot;author&quot;&gt;Author&lt;/h2&gt;
+&lt;p&gt;Rui Luz and Rafael Silva wrote the paper for Instituto Politécnico do Cávado e do Ave, Barcelos, Braga, Portugal.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
+&lt;p&gt;You can access the full paper directly on &lt;a href=&quot;https://github.com/tinocolight/MusicGeneratiorWithIAGenetic&quot;&gt;project’s Github repository&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>GeneticSharp in the Wild&colon; Design of a Warehouse Order Picking Policy</title>

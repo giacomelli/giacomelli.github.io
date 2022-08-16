@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-08-16T11:46:52-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Free eBooks by Unity</title><link href="http://diegogiacomelli.com.br/free-ebooks-by-unity/" rel="alternate" type="text/html" title="Free eBooks by Unity" /><published>2022-08-09T00:00:00-03:00</published><updated>2022-08-09T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/free-ebooks-by-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/free-ebooks-by-unity/"><![CDATA[<p>Throughout all these years using Unity I’ve collected a lot of eBooks that Unity’s team has created. These ebooks are an incredible source of knowledge, but for some reason, I haven’t found any place on the Unity site or blog where all these eBooks are listed.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-08-16T13:05:26-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Procedural Music Generation</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-procedural-music-generation/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;amp;colon; Procedural Music Generation" /><published>2022-08-16T00:00:00-03:00</published><updated>2022-08-16T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-procedural-music-generation</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-procedural-music-generation/"><![CDATA[<p>I started a <a href="/tags/geneticsharp-in-the-wild/">series of posts</a> about some outstanding scientific papers and projects using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
+
+<p>For this fifth post the choose one is the <code class="language-plaintext highlighter-rouge">State of the Art in Procedural Music Generation using Genetic Algorithms and Rule Based GA Implementation with Attractor Waves</code>.</p>
+
+<h2 id="introduction">Introduction</h2>
+<p><em>The act of composing a piece of music in regarded as a creative process which encompasses objective and subjective rules. Objective rules can be pointed as the minimum necessary ones so that a given composition is considered structurally valid –
+music theory. Subjective rules depend on the composer ability to make a creation that is pleasant to the majority of the human listeners – or at least an intended specific audience.</em></p>
+
+<h2 id="usage">Usage</h2>
+<p><em>Given that the creation process uses the human composer’s experience and sensibility – which in some form is an unknown rule set – it is assumed by some authors that, by analyzing the characteristics of the produced pieces of music spanning from
+several composers, underlying rules can be inferred.</em></p>
+
+<p><em>Genetic algorithms will make the evolution of data encoded in a structure analogous to the chromosome. Traditionally, this piece of information is represented as a binary base, but it is not restricted to 2 symbols, as long as the needed processes for  the evolution can be applied.</em></p>
+
+<p><em>For the fitness function, we will use music theory as done in many previous papers, penalizing notes that are outside the chosen scale and giving bonus to those that match.</em></p>
+
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-200-e4697bf8b.webp 200w, /assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-400-e4697bf8b.webp 400w, /assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-580-e4697bf8b.webp 580w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-200-e4697bf8b.png 200w, /assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-400-e4697bf8b.png 400w, /assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-580-e4697bf8b.png 580w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-creator-580-e4697bf8b.png" alt="post image" width="580" height="740" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<h2 id="results">Results</h2>
+<p><em>To understand in a first approach, what rating values were most fitting, a first tryout was made by translating the start of some classical pieces into the chromosome output structure. This ideal output was then rated by the fitness algorithm. By obtaining each individual rating component for each tested sample, it was possible to predefine a start set of values to be used. The exception was the attractor wave, which was set subjectively.
+Using two attraction waves, it is possible to visualize intended effect. In proximity  with the wave, the notes fall into its attraction basin. When two waves are near, the  effect either oscillates between the two or compromises during their proximity.
+Overall, many of the generated compositions have a subjective pleasant tone to  them.</em></p>
+
+<h2 id="sample-generated-music">Sample generated music</h2>
+<p>You can listen a sample music generated by the genetic algorithm:</p>
+<audio controls="">
+        <source src="/assets/2022/08/16/geneticsharp-in-the-wild-procedural-music-generation/genetic-algorithm-music-generated.mp3 " type="audio/mp3" />
+      </audio>
+
+<h2 id="author">Author</h2>
+<p>Rui Luz and Rafael Silva wrote the paper for Instituto Politécnico do Cávado e do Ave, Barcelos, Braga, Portugal.</p>
+
+<h2 id="further-reading">Further reading</h2>
+<p>You can access the full paper directly on <a href="https://github.com/tinocolight/MusicGeneratiorWithIAGenetic">project’s Github repository</a>.</p>]]></content><author><name></name></author><category term="Article" /><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><category term="audio" /><summary type="html"><![CDATA[I started a series of posts about some outstanding scientific papers and projects using GeneticSharp.]]></summary></entry><entry><title type="html">Free eBooks by Unity</title><link href="http://diegogiacomelli.com.br/free-ebooks-by-unity/" rel="alternate" type="text/html" title="Free eBooks by Unity" /><published>2022-08-09T00:00:00-03:00</published><updated>2022-08-09T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/free-ebooks-by-unity</id><content type="html" xml:base="http://diegogiacomelli.com.br/free-ebooks-by-unity/"><![CDATA[<p>Throughout all these years using Unity I’ve collected a lot of eBooks that Unity’s team has created. These ebooks are an incredible source of knowledge, but for some reason, I haven’t found any place on the Unity site or blog where all these eBooks are listed.</p>
 
 <p>Thereupon, I created this post to list those eBooks. If you know any other of them created by Unity’s team let me know in the comments and I’ll update the post.</p>
 
