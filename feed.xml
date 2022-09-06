@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-08-31T07:00:16-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Procedural Music Generation</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-procedural-music-generation/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;amp;colon; Procedural Music Generation" /><published>2022-08-16T00:00:00-03:00</published><updated>2022-08-16T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-procedural-music-generation</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-procedural-music-generation/"><![CDATA[<p>I started a <a href="/tags/geneticsharp-in-the-wild/">series of posts</a> about some outstanding scientific papers and projects using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-09-06T15:49:12-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">GeneticSharp v3.0.0 - .NET 6</title><link href="http://diegogiacomelli.com.br/geneticsharp-version-3-net6/" rel="alternate" type="text/html" title="GeneticSharp v3.0.0 - .NET 6" /><published>2022-09-06T00:00:00-03:00</published><updated>2022-09-06T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-version-3-net6</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-version-3-net6/"><![CDATA[<p>I’ve just released the <a href="https://github.com/giacomelli/GeneticSharp/releases/tag/3.0.0">GeneticSharp version 3.0.0</a>.</p>
+
+<h1 id="net-6">.NET 6</h1>
+<p>With version 3.0.0, GeneticSharp now supports .NET 6.</p>
+
+<h1 id="performance-improvements">Performance improvements</h1>
+<p>The performance of many operations has been improved just for use .NET 6:</p>
+<h3 id="chromosomes">Chromosomes</h3>
+<p><img src="https://user-images.githubusercontent.com/177389/188523382-2d21529d-a6ee-4823-843a-1964795124eb.png" alt="image" /></p>
+
+<h3 id="crossovers">Crossovers</h3>
+<p><img src="https://user-images.githubusercontent.com/177389/188523420-c7d93a6b-658c-46fd-a4f6-e8da2bd533fe.png" alt="image" /></p>
+
+<h3 id="task-executors">Task executors</h3>
+<p><img src="https://user-images.githubusercontent.com/177389/188523543-b233bb3b-7b97-4ffc-9871-e3120d634607.png" alt="image" /></p>
+
+<h3 id="mutations">Mutations</h3>
+<p><img src="https://user-images.githubusercontent.com/177389/188523591-943ca265-2880-4a0c-ac25-0b4e93f38bd8.png" alt="image" /></p>
+
+<h3 id="randomizations">Randomizations</h3>
+<p><img src="https://user-images.githubusercontent.com/177389/188523654-593c9b6f-d50c-4cd1-b2bd-588307a10efa.png" alt="image" /></p>
+
+<h3 id="reinsertions">Reinsertions</h3>
+<p><img src="https://user-images.githubusercontent.com/177389/188523733-b7b955d5-502d-4ed3-ba2a-28bb161bbea5.png" alt="image" /></p>
+
+<h3 id="selections">Selections</h3>
+<p><img src="https://user-images.githubusercontent.com/177389/188523701-c920686d-a1fa-42f6-8d21-73ae3deb55c1.png" alt="image" /></p>
+
+<h3 id="terminations">Terminations</h3>
+<p><img src="https://user-images.githubusercontent.com/177389/188523717-a2c648c4-cfc8-4b2e-9074-7b18eb92ef32.png" alt="image" /></p>
+
+<p>More about performance: <a href="https://github.com/giacomelli/GeneticSharp/wiki/Performance">https://github.com/giacomelli/GeneticSharp/wiki/Performance</a>.</p>
+
+<h1 id="streamlining-namespaces">Streamlining namespaces</h1>
+<p>To avoid the necessity to write many <code class="language-plaintext highlighter-rouge">using</code> statements to write a basic genetic algorithm with GeneticSharp:</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">GeneticSharp.Domain</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">GeneticSharp.Domain.Crossovers</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">GeneticSharp.Domain.Mutations</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">GeneticSharp.Domain.Populations</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">GeneticSharp.Domain.Selections</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">GeneticSharp.Domain.Terminations</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">GeneticSharp.Infrastructure.Framework.Threading</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>The namespaces needed to use GeneticSharp have been simplified to just two:</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">GeneticSharp</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>and this one if you want to use the extensions:</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">GeneticSharp.Extensions</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h1 id="installing">Installing</h1>
+
+<h3 id="net-6-1">.NET 6</h3>
+<p>Only GeneticSharp:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>install-package GeneticSharp
+</code></pre></div></div>
+<p>GeneticSharp and extensions (TSP, AutoConfig, Bitmap equality, Equality equation, Equation solver, Function builder, etc):</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>install-package GeneticSharp.Extensions
+</code></pre></div></div>
+<h3 id="unity3d">Unity3D</h3>
+<blockquote>
+  <p>For Unity you should used the version 2.6.0, because Unity, at moment I’m writing, only support .NET Standard 2.1: <a href="https://docs.unity3d.com/Manual/dotnetProfileSupport.html">https://docs.unity3d.com/Manual/dotnetProfileSupport.html</a>.</p>
+</blockquote>
+
+<p>You should use the <a href="https://github.com/xoofx/UnityNuGet">UnityNuGet</a> to install GeneticSharp directly from NuGet.</p>
+
+<p>Or you can use the latest GeneticSharp.unitypackage available in the <code class="language-plaintext highlighter-rouge">Assets</code> section of this release.</p>
+
+<h3 id="net-standard-20-and-net-framework-462">.NET Standard 2.0 and .NET Framework 4.6.2</h3>
+<p>To install previous version that support .NET Standard 2.0 and .NET Framework 4.6.2:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>install-package GeneticSharp <span class="nt">-Version</span> 2.6.0
+</code></pre></div></div>
+
+<h3 id="mono-and-net-framework-35">Mono and .NET Framework 3.5</h3>
+<p>To install previous version that support .NET Framework 3.5:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>install-package GeneticSharp <span class="nt">-Version</span> 1.2.0
+</code></pre></div></div>
+
+<p>More about installing/setup: <a href="https://github.com/giacomelli/GeneticSharp/wiki/Setup">https://github.com/giacomelli/GeneticSharp/wiki/Setup</a>.</p>]]></content><author><name></name></author><category term="News" /><category term="geneticsharp" /><summary type="html"><![CDATA[I’ve just released the GeneticSharp version 3.0.0.]]></summary></entry><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Procedural Music Generation</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-procedural-music-generation/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;amp;colon; Procedural Music Generation" /><published>2022-08-16T00:00:00-03:00</published><updated>2022-08-16T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-procedural-music-generation</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-procedural-music-generation/"><![CDATA[<p>I started a <a href="/tags/geneticsharp-in-the-wild/">series of posts</a> about some outstanding scientific papers and projects using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
 
 <p>For this fifth post the choose one is the <code class="language-plaintext highlighter-rouge">State of the Art in Procedural Music Generation using Genetic Algorithms and Rule Based GA Implementation with Attractor Waves</code>.</p>
 
