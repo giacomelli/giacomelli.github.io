@@ -3,11 +3,104 @@
  <title>Diego Giacomelli - release</title>
  <link href="//tags/release/index.xml" rel="self"/>
  <link href="/tag/release.html"/>
- <updated>2022-09-06T15:49:12-03:00</updated>
+ <updated>2022-09-07T07:37:33-03:00</updated>
  <id>/tag/release.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>GeneticSharp v3.0.0 - .NET 6</title>
+   <link href="//geneticsharp-version-3-net6/"/>
+   <updated>2022-09-06T00:00:00-03:00</updated>
+   <id>//geneticsharp-version-3-net6</id>
+   <content type="html">&lt;p&gt;I’ve just released the &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/releases/tag/3.0.0&quot;&gt;GeneticSharp version 3.0.0&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;net-6&quot;&gt;.NET 6&lt;/h1&gt;
+&lt;p&gt;With version 3.0.0, GeneticSharp now supports .NET 6.&lt;/p&gt;
+
+&lt;h1 id=&quot;performance-improvements&quot;&gt;Performance improvements&lt;/h1&gt;
+&lt;p&gt;The performance of many operations has been improved just for use .NET 6:&lt;/p&gt;
+&lt;h3 id=&quot;chromosomes&quot;&gt;Chromosomes&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/177389/188523382-2d21529d-a6ee-4823-843a-1964795124eb.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;crossovers&quot;&gt;Crossovers&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/177389/188523420-c7d93a6b-658c-46fd-a4f6-e8da2bd533fe.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;task-executors&quot;&gt;Task executors&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/177389/188523543-b233bb3b-7b97-4ffc-9871-e3120d634607.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;mutations&quot;&gt;Mutations&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/177389/188523591-943ca265-2880-4a0c-ac25-0b4e93f38bd8.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;randomizations&quot;&gt;Randomizations&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/177389/188523654-593c9b6f-d50c-4cd1-b2bd-588307a10efa.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;reinsertions&quot;&gt;Reinsertions&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/177389/188523733-b7b955d5-502d-4ed3-ba2a-28bb161bbea5.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;selections&quot;&gt;Selections&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/177389/188523701-c920686d-a1fa-42f6-8d21-73ae3deb55c1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;terminations&quot;&gt;Terminations&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/177389/188523717-a2c648c4-cfc8-4b2e-9074-7b18eb92ef32.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;More about performance: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/wiki/Performance&quot;&gt;https://github.com/giacomelli/GeneticSharp/wiki/Performance&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;streamlining-namespaces&quot;&gt;Streamlining namespaces&lt;/h1&gt;
+&lt;p&gt;To avoid the necessity to write many &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;using&lt;/code&gt; statements to write a basic genetic algorithm with GeneticSharp:&lt;/p&gt;
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GeneticSharp.Domain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GeneticSharp.Domain.Crossovers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GeneticSharp.Domain.Mutations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GeneticSharp.Domain.Populations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GeneticSharp.Domain.Selections&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GeneticSharp.Domain.Terminations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GeneticSharp.Infrastructure.Framework.Threading&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The namespaces needed to use GeneticSharp have been simplified to just two:&lt;/p&gt;
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GeneticSharp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and this one if you want to use the extensions:&lt;/p&gt;
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GeneticSharp.Extensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;installing&quot;&gt;Installing&lt;/h1&gt;
+
+&lt;h3 id=&quot;net-6-1&quot;&gt;.NET 6&lt;/h3&gt;
+&lt;p&gt;Only GeneticSharp:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;GeneticSharp and extensions (TSP, AutoConfig, Bitmap equality, Equality equation, Equation solver, Function builder, etc):&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp.Extensions
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;unity3d&quot;&gt;Unity3D&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;For Unity you should used the version 2.6.0, because Unity, at moment I’m writing, only support .NET Standard 2.1: &lt;a href=&quot;https://docs.unity3d.com/Manual/dotnetProfileSupport.html&quot;&gt;https://docs.unity3d.com/Manual/dotnetProfileSupport.html&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You should use the &lt;a href=&quot;https://github.com/xoofx/UnityNuGet&quot;&gt;UnityNuGet&lt;/a&gt; to install GeneticSharp directly from NuGet.&lt;/p&gt;
+
+&lt;p&gt;Or you can use the latest GeneticSharp.unitypackage available in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets&lt;/code&gt; section of this release.&lt;/p&gt;
+
+&lt;h3 id=&quot;net-standard-20-and-net-framework-462&quot;&gt;.NET Standard 2.0 and .NET Framework 4.6.2&lt;/h3&gt;
+&lt;p&gt;To install previous version that support .NET Standard 2.0 and .NET Framework 4.6.2:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 2.6.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;mono-and-net-framework-35&quot;&gt;Mono and .NET Framework 3.5&lt;/h3&gt;
+&lt;p&gt;To install previous version that support .NET Framework 3.5:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;install-package GeneticSharp &lt;span class=&quot;nt&quot;&gt;-Version&lt;/span&gt; 1.2.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;More about installing/setup: &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp/wiki/Setup&quot;&gt;https://github.com/giacomelli/GeneticSharp/wiki/Setup&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>HarSharp 2.0.0. - .NET Core</title>
