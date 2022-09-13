@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - ebook</title>
  <link href="//tags/ebook/index.xml" rel="self"/>
  <link href="/tag/ebook.html"/>
- <updated>2022-09-07T07:37:33-03:00</updated>
+ <updated>2022-09-13T14:04:53-03:00</updated>
  <id>/tag/ebook.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -17,6 +17,11 @@
    <content type="html">&lt;p&gt;Throughout all these years using Unity I’ve collected a lot of eBooks that Unity’s team has created. These ebooks are an incredible source of knowledge, but for some reason, I haven’t found any place on the Unity site or blog where all these eBooks are listed.&lt;/p&gt;
 
 &lt;p&gt;Thereupon, I created this post to list those eBooks. If you know any other of them created by Unity’s team let me know in the comments and I’ll update the post.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Last updated at 13/09/2022&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Currently listing 43 eBooks&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;2d&quot;&gt;2D&lt;/h3&gt;
 &lt;ul&gt;
@@ -76,6 +81,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDc2NDkxJnY9MSZpc3N1ZU5hbWU9dW5pdHktNW11bHRpcGxhdGZvcm1lYm9vay1maW5hbDgxMSZjbWQ9ZCZzaWc9M2FmMGFkYTRhZThiNDg2Yjg1MmY3ZWMxOWM1YzljZDI%253D&quot;&gt;Five foundations for successful multiplatform games&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDI0Njg0JnY9MSZpc3N1ZU5hbWU9Y3JlYXRpbmctdGhlLXVuZGVyc2VhLXdvcmxkLW9mLXN1Ym5hdXRpY2EmY21kPWQmc2lnPTVlNmYyZDRlOTI3NWQwNDc0OWViOGNjZDcyYWViMTBh&quot;&gt;Five platforms, 6M+ copies: Creating the undersea world of Subnautica&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7Bc0e25058-e259-4146-a977-1fc57d3b6278%7D_OriWillofTheWispsCaseStudy_Multiplatform.pdf&quot;&gt;How Ori and the Will of the Wisps achieved exceptional performance on multiple platforms&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDI2NDE4JnY9MSZpc3N1ZU5hbWU9dGhlLWZhbGNvbmVlci1jYXNlLXN0dWR5JmNtZD1kJnNpZz01MTM3MzgyZTBlYTFkYTkwNWE0YWM5NmEzMzA2NThkYg%253D%253D&quot;&gt;How The Falconeer took flight on six platforms&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -101,8 +107,13 @@
 &lt;h3 id=&quot;performance&quot;&gt;Performance&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B5dc4de9b-9e59-4860-b933-eb6daae82ecd%7D_Unity_Games_Optimization_Best_Practices-v5.pdf&quot;&gt;9 ways to optimize your game development: Unity expert tips to help you ship&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDI0NjkzJnY9MSZpc3N1ZU5hbWU9b3B0aW1pemUteW91ci1jb25zb2xlLWFuZC1wYy1nYW1lLXBlcmZvcm1hbmNlJmNtZD1kJnNpZz1hYjFkYjE2OTRhZWZhNzI4OTFkM2FiZjIyNTIyNTkyMQ%253D%253D&quot;&gt;Optimize your console and PC game performance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDI0NjkzJnY9MSZpc3N1ZU5hbWU9b3B0aW1pemUteW91ci1jb25zb2xlLWFuZC1wYy1nYW1lLXBlcmZvcm1hbmNlJmNtZD1kJnNpZz1hYjFkYjE2OTRhZWZhNzI4OTFkM2FiZjIyNTIyNTkyMQ%253D%253D&quot;&gt;Optimize your game performance for consoles and PC&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDY3MDM1JnY9MyZpc3N1ZU5hbWU9dWx0aW1hdGUtZ3VpZGUtdG8tcHJvZmlsaW5nLXVuaXR5LWdhbWVzJmNtZD1kJnNpZz1kZGY3OThlNTBlYjA3YzljODU1MDA2NWFlNjlhM2NmNw%253D%253D&quot;&gt;Ultimate guide to profiling Unity games&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;porting&quot;&gt;Porting&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B2472c6b0-ed28-46c3-bd7a-12eed8ce3805%7D_Five-mistakes-to-avoid-when-porting-your-game-to-switch.pdf&quot;&gt;Five mistakes to avoid when porting your game to Nintendo Switch&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;testing&quot;&gt;Testing&lt;/h3&gt;
