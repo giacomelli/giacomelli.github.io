@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-09-13T14:04:53-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">GeneticSharp v3.0.0 - .NET 6</title><link href="http://diegogiacomelli.com.br/geneticsharp-version-3-net6/" rel="alternate" type="text/html" title="GeneticSharp v3.0.0 - .NET 6" /><published>2022-09-06T00:00:00-03:00</published><updated>2022-09-06T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-version-3-net6</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-version-3-net6/"><![CDATA[<p>I’ve just released the <a href="https://github.com/giacomelli/GeneticSharp/releases/tag/3.0.0">GeneticSharp version 3.0.0</a>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-09-16T14:53:37-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">GeneticSharp v3.0.0 - .NET 6</title><link href="http://diegogiacomelli.com.br/geneticsharp-version-3-net6/" rel="alternate" type="text/html" title="GeneticSharp v3.0.0 - .NET 6" /><published>2022-09-06T00:00:00-03:00</published><updated>2022-09-06T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-version-3-net6</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-version-3-net6/"><![CDATA[<p>I’ve just released the <a href="https://github.com/giacomelli/GeneticSharp/releases/tag/3.0.0">GeneticSharp version 3.0.0</a>.</p>
 
 <h1 id="net-6">.NET 6</h1>
 <p>With version 3.0.0, GeneticSharp now supports .NET 6.</p>
@@ -128,7 +128,7 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 <p>Thereupon, I created this post to list those eBooks. If you know any other of them created by Unity’s team let me know in the comments and I’ll update the post.</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">Last updated at 13/09/2022</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Last updated on 13/09/2022</code></li>
   <li><code class="language-plaintext highlighter-rouge">Currently listing 43 eBooks</code></li>
 </ul>
 
@@ -176,7 +176,7 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 
 <h3 id="game-design">Game design</h3>
 <ul>
-  <li><a href="https://cdn.unity3d.com/media/TheGameDesignerPlaybook_EBook.pdf">The Unity Game Designer Playbooy</a></li>
+  <li><a href="https://cdn.unity3d.com/media/TheGameDesignerPlaybook_EBook.pdf">The Unity Game Designer Playbook</a></li>
 </ul>
 
 <h3 id="misc">Misc</h3>
