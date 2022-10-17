@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - papers</title>
+ <link href="//tags/papers/index.xml" rel="self"/>
+ <link href="/tag/papers.html"/>
+ <updated>2022-10-17T15:15:41-03:00</updated>
+ <id>/tag/papers.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Scientific papers using GeneticSharp (september 2022)</title>
+   <link href="//scientific-papers-using-geneticharp-september-2022/"/>
+   <updated>2022-10-17T00:00:00-03:00</updated>
+   <id>//scientific-papers-using-geneticharp-september-2022</id>
+   <content type="html">&lt;p&gt;In September 2022 I discovered (TBH, Google Scholar notified me) that five new scientific papers using GeneticSharp have been developed.&lt;/p&gt;
+
+&lt;p&gt;Below you can appreciate them:&lt;/p&gt;
+
+&lt;h1 id=&quot;an-application-oriented-cyber-physical-production-optimisation-system-architecture-for-the-steel-industry&quot;&gt;An Application-Oriented Cyber-Physical Production Optimisation System Architecture for the Steel Industry&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_1-200-30e2b376f.webp 200w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_1-400-30e2b376f.webp 400w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_1-407-30e2b376f.webp 407w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_1-200-30e2b376f.png 200w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_1-400-30e2b376f.png 400w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_1-407-30e2b376f.png 407w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_1-407-30e2b376f.png&quot; alt=&quot;post image&quot; width=&quot;407&quot; height=&quot;295&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: The new generation of steelworks shaped by Industry 4.0 are digitized, networked, flexible and adaptable. Production processes use distributed information and communication structures, are more autonomous and capable to react to dynamic evolutions of the environment. Cyber-physical systems are a fundamental component of Industry 4.0 and enable new generation of smart processes. This paper presents a modular architecture approach for the design of cyber-physical steel production processes. The approach is tested within a production facility for long products such as rails or tubes taking into account the main peculiarities of the sector. The use of an industrial-agent-based solution for enabling intelligent capabilities and interactions among cyber-physical modules is investigated and adopted. Experimental results highlight the industrial applicability of the adopted implementation scheme combining agent-based technology with the proper connection between models, communication and optimisation methods.&lt;/em&gt; (&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S2405896322001719&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;optimisation-of-part-orientation-and-design-of-support-structures-in-laser-powder-bed-fusion&quot;&gt;Optimisation of part orientation and design of support structures in laser powder bed fusion&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_2-200-cc6fc8d81.webp 200w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_2-329-cc6fc8d81.webp 329w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_2-200-cc6fc8d81.png 200w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_2-329-cc6fc8d81.png 329w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_2-329-cc6fc8d81.png&quot; alt=&quot;post image&quot; width=&quot;329&quot; height=&quot;104&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: Part orientation and support structures are crucial to the quality of metal parts by laser powder bed fusion. Computer-aided solutions for part orientation can be used to support users during the process preparation. In this study, an original computer-aided approach to prepare parts for laser powder bed fusion was formulated and implemented. The proposed method consists of multi-objective optimisation of part orientation and a novel strategy for the simultaneous design of support structures. The automated part orientation optimisation considers both global and local objectives defined by the user. For this purpose, penalty functions measuring the building time, support volume, part distortion, surface roughness and supports contact points are adopted. Unlike in existing methods, the user has the opportunity to define the importance of these aspects in different regions of the part. Such functions are then optimised through a genetic algorithm. The proposed approach was applied to a real product imposing three different sets of objectives. The tested case studies were solved in less than 10 min, providing solutions that satisfied the imposed aims and constraints. Specifically, the results demonstrated that the orientation optimisation can reduce the building time by 68.1% or the material consumption by 66.8%, depending on user requirements. It was also shown how the proposed method can be used to minimise the surface and dimensional error of manufactured parts. The proposed approach allows to manually define the specific design requirements and translate them in terms of manufacturing decisions. This contributes to establishing a fruitful interaction between the user and the developed software during the process design.&lt;/em&gt; (&lt;a href=&quot;https://link.springer.com/article/10.1007/s12008-022-00856-7&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;an-approach-for-the-global-search-for-top-quality-six-bar-dwell-linkages&quot;&gt;An approach for the global search for top-quality six-bar dwell linkages&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_3-200-7b2469ff3.webp 200w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_3-400-7b2469ff3.webp 400w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_3-660-7b2469ff3.webp 660w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_3-200-7b2469ff3.png 200w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_3-400-7b2469ff3.png 400w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_3-660-7b2469ff3.png 660w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_3-660-7b2469ff3.png&quot; alt=&quot;post image&quot; width=&quot;660&quot; height=&quot;462&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: A complete approach for the search of top-quality six-bar linkages based on four-bar linkages generating coupler curves with circular regions has been developed. The approach includes a robust algorithm to search for high-accuracy circular regions in coupler curves and a fitness function able to evaluate the quality of the resulting linkage. The approach is used to explore the design space in order to search for optimal dwell linkages and to identify the types of linkages that provide the best dwells according to the established criteria. Then, the global optimum is searched by means of an evolutionary algorithm. The results demonstrate the efficiency and versatility of the approach, that can be customized for specific applications, and the existence of a high number of six-bar linkages with long output dwells. A highly probable global optimum is identified.&lt;/em&gt; (&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0094114X22002282&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;genetic-wfc-extending-wave-function-collapse-with-genetic-search&quot;&gt;Genetic-WFC: Extending Wave Function Collapse With Genetic Search&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Abstract: This paper presents Genetic-WFC, a procedural level generation algorithm that mixes genetic optimization with Wave Function Collapse, a local adjacency constraints propagation algorithm. We use a synthetic player to evaluate the novelty, safety and complexity of the generated levels. Novelty is maximized when the synthetic player goes on tiles not visited for a long time, safety is related to how far it can see, and complexity evaluates the variability of the surrounding tiles. WFC extracts constraints from example levels, and allows us to perform the genetic search on levels with few local asset placement errors, while using as little level design rules as possible. We show that we are able to rely on WFC while optimizing the results, first by influencing WFC asset selection and then by re-encoding the chosen modules back to our genotype, in order to optimize crossover. We compare the fitness curves and best maps of our method with other approaches. We then visually explore the kind of levels we are able to generate by sampling different values of safety and complexity, giving a glimpse of the variability that our approach is able to reach.&lt;/em&gt; (&lt;a href=&quot;https://ieeexplore.ieee.org/document/9836972&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;human-robot-collaborative-workflow-for-remote-decommissioning-and-demolition&quot;&gt;Human-Robot Collaborative Workflow for Remote Decommissioning and Demolition&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_5-200-1386af9b9.webp 200w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_5-366-1386af9b9.webp 366w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_5-200-1386af9b9.png 200w, /assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_5-366-1386af9b9.png 366w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/10/17/scientific-papers-using-geneticharp-september-2022/paper_5-366-1386af9b9.png&quot; alt=&quot;post image&quot; width=&quot;366&quot; height=&quot;284&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: The demand for new deconstruction and demolition approaches is escalating as structures built in 20th century development booms approach their end of life. Rehabilitation and careful deconstruction approaches are increasingly economically and environmentally motivating. For example, in Ontario, Canada multi-decade efforts to decommission nuclear power plants are challenging teams of engineers, researchers, venders, and laborers. In these hazardous scenarios, classical heavy demolition approaches are not an option, and the asset owners find that the costly development of novel workflows and technologies to plan and undergo these deconstruction operations is the only option. These trends present construction researchers with an opportunity to develop technologies and processes to achieve
+deconstruction project goals with improved efficiency, certainty, and safety. This paper presents a modular framework for remote human-robot collaboration for waste management in decommissioning and demolition. The proposed framework includes robotic platform reality data capture, scan processing (e.g., segmentation, surface estimation, and recognition), gamified waste packing in virtual reality (VR), and packing plan execution. A comprehensive review of state-of-the-art technologies of each module is explored from the standpoint of applicability to deconstruction and demolition. Then, an autonomous robotic platform for reality data capture is presented. A reconfigurable semi-automated VR platform for waste packing optimization is presented as an example of this process workflow in the context of remote deconstruction and demolition. Finally, the ideas of robotic packing plan execution are discussed as future work.&lt;/em&gt; (&lt;a href=&quot;https://conferences.lib.unb.ca/index.php/tcrc/article/view/616&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>
