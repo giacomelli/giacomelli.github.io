@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - gamedev</title>
  <link href="//tags/gamedev/index.xml" rel="self"/>
  <link href="/tag/gamedev.html"/>
- <updated>2022-10-17T15:15:41-03:00</updated>
+ <updated>2022-10-18T07:46:24-03:00</updated>
  <id>/tag/gamedev.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -19,8 +19,8 @@
 &lt;p&gt;Thereupon, I created this post to list those eBooks. If you know any other of them created by Unity’s team let me know in the comments and I’ll update the post.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Last updated on 13/09/2022&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Currently listing 43 eBooks&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Last updated on 18/10/2022&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Currently listing 45 eBooks&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;2d&quot;&gt;2D&lt;/h3&gt;
@@ -108,12 +108,18 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B5dc4de9b-9e59-4860-b933-eb6daae82ecd%7D_Unity_Games_Optimization_Best_Practices-v5.pdf&quot;&gt;9 ways to optimize your game development: Unity expert tips to help you ship&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDI0NjkzJnY9MSZpc3N1ZU5hbWU9b3B0aW1pemUteW91ci1jb25zb2xlLWFuZC1wYy1nYW1lLXBlcmZvcm1hbmNlJmNtZD1kJnNpZz1hYjFkYjE2OTRhZWZhNzI4OTFkM2FiZjIyNTIyNTkyMQ%253D%253D&quot;&gt;Optimize your game performance for consoles and PC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xMzg4ODYxJnY9MSZpc3N1ZU5hbWU9dW5pdHktZS1ib29rLW9wdGltaXplLXlvdXItbW9iaWxlLWdhbWUtcGVyZm9ybWFuY2UmY21kPWQmc2lnPWU3NWYzMDQxZjdkNTk4ZDc4NjVhMjZiZTVmM2E1ODQ4&quot;&gt;Optimize your mobile game performance&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDY3MDM1JnY9MyZpc3N1ZU5hbWU9dWx0aW1hdGUtZ3VpZGUtdG8tcHJvZmlsaW5nLXVuaXR5LWdhbWVzJmNtZD1kJnNpZz1kZGY3OThlNTBlYjA3YzljODU1MDA2NWFlNjlhM2NmNw%253D%253D&quot;&gt;Ultimate guide to profiling Unity games&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;porting&quot;&gt;Porting&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B2472c6b0-ed28-46c3-bd7a-12eed8ce3805%7D_Five-mistakes-to-avoid-when-porting-your-game-to-switch.pdf&quot;&gt;Five mistakes to avoid when porting your game to Nintendo Switch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;programming&quot;&gt;Programming&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDc4MTU1JnY9MSZpc3N1ZU5hbWU9Y3JlYXRlLWEtYy1zdHlsZS1ndWlkZS13cml0ZS1jbGVhbmVyLWNvZGUtdGhhdC1zY2FsZXMmY21kPWQmc2lnPTU5NjljY2NjZmUwYWM3YjUzNTlmNjAyMGVmOGY5MmQ3&quot;&gt;Create C# Style Guide: Write cleaner code that scales&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;testing&quot;&gt;Testing&lt;/h3&gt;

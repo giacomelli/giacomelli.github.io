@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-10-17T15:15:41-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Scientific papers using GeneticSharp (september 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (september 2022)" /><published>2022-10-17T00:00:00-03:00</published><updated>2022-10-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/"><![CDATA[<p>In September 2022 I discovered (TBH, Google Scholar notified me) that five new scientific papers using GeneticSharp have been developed.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-10-18T07:46:24-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Scientific papers using GeneticSharp (september 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (september 2022)" /><published>2022-10-17T00:00:00-03:00</published><updated>2022-10-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/"><![CDATA[<p>In September 2022 I discovered (TBH, Google Scholar notified me) that five new scientific papers using GeneticSharp have been developed.</p>
 
 <p>Below you can appreciate them:</p>
 
@@ -182,8 +182,8 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 <p>Thereupon, I created this post to list those eBooks. If you know any other of them created by Unity’s team let me know in the comments and I’ll update the post.</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">Last updated on 13/09/2022</code></li>
-  <li><code class="language-plaintext highlighter-rouge">Currently listing 43 eBooks</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Last updated on 18/10/2022</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Currently listing 45 eBooks</code></li>
 </ul>
 
 <h3 id="2d">2D</h3>
@@ -271,12 +271,18 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 <ul>
   <li><a href="https://images.response.unity3d.com/Web/Unity/%7B5dc4de9b-9e59-4860-b933-eb6daae82ecd%7D_Unity_Games_Optimization_Best_Practices-v5.pdf">9 ways to optimize your game development: Unity expert tips to help you ship</a></li>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDI0NjkzJnY9MSZpc3N1ZU5hbWU9b3B0aW1pemUteW91ci1jb25zb2xlLWFuZC1wYy1nYW1lLXBlcmZvcm1hbmNlJmNtZD1kJnNpZz1hYjFkYjE2OTRhZWZhNzI4OTFkM2FiZjIyNTIyNTkyMQ%253D%253D">Optimize your game performance for consoles and PC</a></li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xMzg4ODYxJnY9MSZpc3N1ZU5hbWU9dW5pdHktZS1ib29rLW9wdGltaXplLXlvdXItbW9iaWxlLWdhbWUtcGVyZm9ybWFuY2UmY21kPWQmc2lnPWU3NWYzMDQxZjdkNTk4ZDc4NjVhMjZiZTVmM2E1ODQ4">Optimize your mobile game performance</a></li>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDY3MDM1JnY9MyZpc3N1ZU5hbWU9dWx0aW1hdGUtZ3VpZGUtdG8tcHJvZmlsaW5nLXVuaXR5LWdhbWVzJmNtZD1kJnNpZz1kZGY3OThlNTBlYjA3YzljODU1MDA2NWFlNjlhM2NmNw%253D%253D">Ultimate guide to profiling Unity games</a></li>
 </ul>
 
 <h3 id="porting">Porting</h3>
 <ul>
   <li><a href="https://images.response.unity3d.com/Web/Unity/%7B2472c6b0-ed28-46c3-bd7a-12eed8ce3805%7D_Five-mistakes-to-avoid-when-porting-your-game-to-switch.pdf">Five mistakes to avoid when porting your game to Nintendo Switch</a></li>
+</ul>
+
+<h3 id="programming">Programming</h3>
+<ul>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDc4MTU1JnY9MSZpc3N1ZU5hbWU9Y3JlYXRlLWEtYy1zdHlsZS1ndWlkZS13cml0ZS1jbGVhbmVyLWNvZGUtdGhhdC1zY2FsZXMmY21kPWQmc2lnPTU5NjljY2NjZmUwYWM3YjUzNTlmNjAyMGVmOGY5MmQ3">Create C# Style Guide: Write cleaner code that scales</a></li>
 </ul>
 
 <h3 id="testing">Testing</h3>
