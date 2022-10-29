@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - database</title>
  <link href="//tags/database/index.xml" rel="self"/>
  <link href="/tag/database.html"/>
- <updated>2022-10-22T06:41:18-03:00</updated>
+ <updated>2022-10-29T08:51:44-03:00</updated>
  <id>/tag/database.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -15,11 +15,12 @@
    <updated>2021-05-31T00:00:00-03:00</updated>
    <id>//sqlasfile</id>
    <content type="html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;If you already worked in a project where the data access solution wore SQL commands, instead of some ORM solution, you probably saw some SQL commands inserted directly inside the C# code. I worked in projects with that approach too, but I saw a great &lt;strong&gt;problem with that: We were treating a complete language (SQL) as just a string inside our C# code. No intellisense, code completation, syntax validation, format, etc.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you already worked on a project where the data access solution has used SQL commands, instead of some ORM solution, you probably saw some SQL commands inserted directly inside the C# code. I worked on projects with that approach too, but I saw a great &lt;strong&gt;problem with that: We were treating a complete language (SQL) as just a string inside our C# code. No IntelliSense, code completion, syntax validation, format, etc.&lt;/strong&gt;
+If&lt;/p&gt;
 
-&lt;p&gt;Sometime ago, with that problem in mind, I created a small library to help us to use SQL commands in our project at that time. As we were using &lt;a href=&quot;https://github.com/DapperLib/Dapper&quot;&gt;Dapper&lt;/a&gt; as our facilitator to access the SQL Server database, we needed write SQL commands as our daily base activities.&lt;/p&gt;
+&lt;p&gt;Some time ago, with that problem in mind, I created a small library to help us to use SQL commands in our project at that time. As we were using &lt;a href=&quot;https://github.com/DapperLib/Dapper&quot;&gt;Dapper&lt;/a&gt; as our facilitator to access the SQL Server database, we needed to write SQL commands as our daily base activities.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;That library, called SqlAsFile, helped us to write SQL commands in separated .sql files and use them inside the C# as typed string property of a static class (using T4 generator). This allowed us to write SQL with the whole help of IDE and with no chance to reference a invalid SQL file path.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;That library, called SqlAsFile, helped us to write SQL commands in separated .sql files and use them inside the C# as typed string property of a static class (using T4 generator). This allowed us to write SQL with the whole help of IDE and with no chance to reference an invalid SQL file path.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 &lt;ul&gt;
@@ -30,7 +31,7 @@
 &lt;script src=&quot;https://gist.github.com/4dda230a09941b6300468a71ee3812ab.js?file=change-template.cs&quot;&gt; &lt;/script&gt;&lt;/li&gt;
   &lt;li&gt;Add your .sql files inside any folder or subfolder of your Data project.&lt;/li&gt;
   &lt;li&gt;The Build Action property of the .sql files should be changed to Embedded Resource.&lt;/li&gt;
-  &lt;li&gt;Run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SqlInfoGenerator.tt&lt;/code&gt; (right click, Run Custom Tool)&lt;/li&gt;
+  &lt;li&gt;Run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SqlInfoGenerator.tt&lt;/code&gt; every time you add or remove .sql file from the project. You don’t need to that when you just change the content of already existing .sql file. (right click, Run Custom Tool)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
