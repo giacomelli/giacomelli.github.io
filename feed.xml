@@ -1,4 +1,221 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-11-06T06:07:36-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Scientific papers using GeneticSharp (september 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (september 2022)" /><published>2022-10-17T00:00:00-03:00</published><updated>2022-10-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/"><![CDATA[<p>In September 2022 I discovered (TBH, Google Scholar notified me) that five new scientific papers using GeneticSharp have been developed.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2022-11-15T06:38:13-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">6 modern C# features for cleaner Unity code</title><link href="http://diegogiacomelli.com.br/6-modern-csharp-features-for-cleaner-unity-code/" rel="alternate" type="text/html" title="6 modern C# features for cleaner Unity code" /><published>2022-11-15T00:00:00-03:00</published><updated>2022-11-15T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/6-modern-csharp-features-for-cleaner-unity-code</id><content type="html" xml:base="http://diegogiacomelli.com.br/6-modern-csharp-features-for-cleaner-unity-code/"><![CDATA[<p>Since C# 7.0, many code improvements that help us write less code have been added to the language.</p>
+
+<p>This tutorial will focus on six new features that can help us write more concise and readable code and how we can use these features on our C# for Unity.</p>
+
+<div class="note"><p>I originally wrote this post as a guest writer for <a href="https://blog.logrocket.com/6-modern-c-sharp-features-cleaner-unity-code/">LogRocket’s blog</a></p>
+</div>
+
+<h2 id="tutorial-sections">Tutorial sections</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png" alt="post image" width="128" height="128" />
+</picture>
+
+<ul>
+  <li>Prerequisites</li>
+  <li>Setting up our Unity project</li>
+  <li>Tutorial structure</li>
+  <li>C# features support in Unity</li>
+  <li>Switch expression</li>
+  <li>Property pattern</li>
+  <li>Type pattern</li>
+  <li>Constant pattern</li>
+  <li>Relational pattern</li>
+  <li>Logical pattern</li>
+  <li>Conclusion</li>
+</ul>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The following prerequisites are required to follow along with this tutorial:</p>
+
+<ul>
+  <li>Basic knowledge of Unity</li>
+  <li>Previous experience writing C# scripts in Unity</li>
+</ul>
+
+<h2 id="setting-up-our-unity-project">Setting up our Unity project</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/config-128-c46695ddc.png" alt="post image" width="128" height="128" />
+</picture>
+
+<p>First, we need to create our Unity project. For this tutorial, we’ll use the version 2021.3.4f1, which, at the moment I’m writing, is the newest LTS Unity version.</p>
+
+<p>On the project templates list, choose 2D(core), give it a name, and click the Create project button.</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-1cab31008.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-1cab31008.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.webp 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-1cab31008.webp 1224w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-1cab31008.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-1cab31008.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.png 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-1cab31008.png 1224w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.png" alt="post image" width="1224" height="712" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p><br />
+With the project started, create two folders called <code class="language-plaintext highlighter-rouge">Scripts</code> inside the <code class="language-plaintext highlighter-rouge">Assets</code> folder. We’ll use them to keep our project organized during the tutorial.</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-d4f7ca06e.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-d4f7ca06e.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.webp 528w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-d4f7ca06e.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-d4f7ca06e.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.png 528w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.png" alt="post image" width="528" height="192" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<h2 id="tutorial-structure">Tutorial structure</h2>
+<p>For each sample of how to use the new C# feature, we will first look at how it was done before and then how we could write less and more readable code with the new feature.</p>
+
+<p>The classes below are just stubs that are used on all samples throughout the tutorial. You can add them to a script inside the `Scripts folder:
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=base.cs"> </script></p>
+
+<h2 id="c-features-support-in-unity">C# features support in Unity</h2>
+<p>In C# versions 8 and 9, a lot of new features were added to the language. You can read the full features list for each version in the links below:</p>
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8">What’s new in C# 8.0</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9">What’s new in C# 9.0</a></li>
+</ul>
+
+<h3 id="c-8-and-9-features-in-unity-whats-missing">C# 8 and 9 features in Unity: What’s missing?</h3>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/problem-128-a3f91d933.png" alt="post image" width="128" height="128" />
+</picture>
+
+<p>Unity support for C# 8 has started on version <a href="https://docs.unity3d.com/2020.2/Documentation/Manual/CSharpCompiler.html">2020.2</a> and C# 9 has started on version <a href="https://docs.unity3d.com/2021.2/Documentation/Manual/CSharpCompiler.html">2021.2</a>.</p>
+
+<ul>
+  <li>Be aware that not every C# 8 and 9 feature is supported by Unity, like:</li>
+  <li>default interface methods</li>
+  <li>indices and ranges</li>
+  <li>asynchronous streams</li>
+  <li>asynchronous disposable</li>
+  <li>suppress emitting locals init flag</li>
+  <li>covariant return types</li>
+  <li>module initializers</li>
+  <li>extensible calling conventions for unmanaged function pointers</li>
+  <li>init only setters</li>
+</ul>
+
+<p>Most of these unsupported features are used in very specific scenarios, like <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/function-pointers">extensible calling conventions for unmanaged function pointers</a>, and some aren’t, like <a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#indices-and-ranges">indices and ranges</a>.</p>
+
+<p>Because of this, features like indices and ranges and init only setters will likely be supported in future versions of Unity. However, the chance of an unsupported feature for a very specific scenario gaining Unity support in the future is smaller than a feature like <a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#indices-and-ranges">indices and ranges</a></p>
+
+<p>Maybe you can find some workarounds to use these unsupported features in Unity, but I discourage you from doing this because Unity is a cross-platform game engine. A workaround in a new feature could lead you to problems quite hard to understand, debug, and resolve.</p>
+
+<p>Fortunately, Unity supports some of the more common patterns and expressions from C# 8 and 9. Let’s review some of the most helpful ones below and see how they can enable us to write cleaner code.</p>
+
+<h2 id="switch-expression">Switch expression</h2>
+<p>The switch expression can dramatically simplify and reduce the LOC (Lines Of Code) to make a <code class="language-plaintext highlighter-rouge">switch</code>, because we can avoid a bunch of boilerplate code, like the case and return statements.</p>
+
+<blockquote>
+  <p><a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#switch-expressions">Doc tip</a>: the switch expression provides for switch-like semantics in an expression context. It provides a concise syntax when the switch arms produce a value.</p>
+
+  <p>Often, a switch statement produces a value in each of its case blocks. Switch expressions enable you to use more concise expression syntax. There are fewer repetitive case and break keywords and fewer curly braces.</p>
+</blockquote>
+
+<h3 id="before">Before</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=switch-expression-before.cs"> </script>
+
+<h3 id="after">After</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=switch-expression-after.cs"> </script>
+
+<h2 id="property-pattern">Property pattern</h2>
+<p>The property pattern enables you to match on properties of the object examined in a <code class="language-plaintext highlighter-rouge">switch</code> expression.</p>
+
+<p>As you can see in the sample below, using a property pattern, we can transform a series of <code class="language-plaintext highlighter-rouge">if</code> statements into a simple list of properties that the object on the <code class="language-plaintext highlighter-rouge">switch</code> statement should match.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">_ =&gt;</code> has the same meaning as the <code class="language-plaintext highlighter-rouge">default</code> on a classic <code class="language-plaintext highlighter-rouge">switch</code>.</p>
+
+<blockquote>
+  <p><a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#property-patterns">Doc tip</a>: a property pattern matches an expression when an expression result is non-null and every nested pattern matches the corresponding property or field of the expression result.</p>
+</blockquote>
+
+<h3 id="before-1">Before</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=property-pattern-before.cs"> </script>
+
+<h3 id="after-1">After</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=property-pattern-after.cs"> </script>
+
+<h2 id="type-pattern">Type pattern</h2>
+<p>We can use type patterns to check if the runtime type of an expression is compatible with a given type.</p>
+
+<p>The type pattern is almost the same logic as a property pattern but is now used in a context of an object type. We can transform a series of <code class="language-plaintext highlighter-rouge">if</code> statements that check an object type into a list of types that the object on the <code class="language-plaintext highlighter-rouge">switch</code> statement should match.</p>
+
+<h3 id="before-2">Before</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=type-pattern-before.cs"> </script>
+
+<h3 id="after-2">After</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=type-pattern-after.cs"> </script>
+
+<p>Using the type pattern, we go from 16 lines of code to only 8 that have the same result and are quite clear to read and understand.</p>
+
+<h2 id="constant-pattern">Constant pattern</h2>
+<p>A constant pattern can be used to test if an expression result equals a specified constant.</p>
+
+<p>Probably the simplest pattern match, it just matches a constant value (for instance, a string) and then returns the result.</p>
+
+<h3 id="before-3">Before</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=constant-pattern-before.cs"> </script>
+
+<h3 id="after-3">After</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=constant-pattern-after.cs"> </script>
+
+<p>A constant pattern can be used with any constant expression, like <code class="language-plaintext highlighter-rouge">int, float, char, string, bool, and enum</code>.</p>
+
+<h2 id="relational-pattern">Relational pattern</h2>
+<p>A relational pattern will compare an expression result with a constant.</p>
+
+<p>This one could seem the most complex pattern match, but at its core it’s not that complicated. What we can do with a Relational Pattern is directly use logical operators as <code class="language-plaintext highlighter-rouge">&lt;, &gt;, &lt;=, or &gt;=</code> to evaluate the object and then provide a result for the <code class="language-plaintext highlighter-rouge">switch</code>.</p>
+
+<blockquote>
+  <p><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#relational-patterns">Doc tip</a>: the right-hand part of a relational pattern must be a constant expression.</p>
+</blockquote>
+
+<h3 id="before-4">Before</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=relational-pattern-before.cs"> </script>
+
+<h3 id="after-4">After</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=relational-pattern-after.cs"> </script>
+
+<p>Any of the relational operators <code class="language-plaintext highlighter-rouge">&lt;, &gt;, &lt;=, or &gt;=</code> can be used on a relational pattern.</p>
+
+<h2 id="logical-pattern">Logical pattern</h2>
+<p>We can use the <code class="language-plaintext highlighter-rouge">not</code>, <code class="language-plaintext highlighter-rouge">and</code>, and <code class="language-plaintext highlighter-rouge">or</code> pattern combinators to create logical expressions.</p>
+
+<p>This is like an extension of the relational pattern where you can combine the logical operators not, and, and or to create a more complex and elaborate pattern match.</p>
+
+<blockquote>
+  <p><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#logical-patterns">Doc tip</a>: you use the not, and, and or pattern combinators to create the following logical patterns:</p>
+  <ul>
+    <li>Negation not pattern that matches an expression when the negated pattern doesn’t match the expression</li>
+    <li>Conjunctive and pattern that matches an expression when both patterns match the expression</li>
+    <li>Disjunctive or pattern that matches an expression when either pattern matches the expression</li>
+  </ul>
+</blockquote>
+
+<h3 id="before-5">Before</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=logical-pattern-before.cs"> </script>
+
+<h3 id="after-5">After</h3>
+<script src="https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=logical-pattern-after.cs"> </script>
+
+<h2 id="conclusion">Conclusion</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/challenge-128-2cdd65c40.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png" alt="post image" width="128" height="128" />
+</picture>
+
+<p>In this tutorial, we’ve learned how to use the switch expression, property pattern, type pattern, constant pattern, relational pattern, and logical pattern to write less and more modern C# code on Unity.</p>
+
+<p>Hopefully, you can use some of these in your next project to spare yourself time while writing cleaner code.</p>
+
+<p><br /><br /><br />Icons made by <a href="http://www.freepik.com">Freepik</a>, <a href="http://www.flaticon.com/authors/vignesh-oviyan">Vignesh Oviyan</a> and <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="http://www.flaticon.com">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons BY 3.0</a></p>]]></content><author><name></name></author><category term="Tutorial" /><category term="unity3d" /><category term="gamedev" /><category term="logrocket" /><summary type="html"><![CDATA[Since C# 7.0, many code improvements that help us write less code have been added to the language.]]></summary></entry><entry><title type="html">Scientific papers using GeneticSharp (september 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (september 2022)" /><published>2022-10-17T00:00:00-03:00</published><updated>2022-10-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/"><![CDATA[<p>In September 2022 I discovered (TBH, Google Scholar notified me) that five new scientific papers using GeneticSharp have been developed.</p>
 
 <p>Below you can appreciate them:</p>
 
