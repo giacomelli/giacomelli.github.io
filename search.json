@@ -4,6 +4,26 @@
     
     
     {
+      "title"    : "Scientific papers using GeneticSharp (october 2022)",
+      "category" : "news",
+      "tags"     : "geneticsharp, papers",
+      "url"      : "/scientific-papers-using-geneticharp-october-2022/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Scientific papers using GeneticSharp (september 2022)",
+      "category" : "news",
+      "tags"     : "geneticsharp, papers",
+      "url"      : "/scientific-papers-using-geneticharp-september-2022/",
+      "author"   : ""
+    } 
+     
+    ,
+  
+    
+    
+    {
       "title"    : "6 modern C# features for cleaner Unity code",
       "category" : "Tutorial",
       "tags"     : "unity3d, gamedev, logrocket",
@@ -208,18 +228,6 @@
       "category" : "Tutorial",
       "tags"     : "continuous integration, travis ci, functional tests",
       "url"      : "/using-sensitive-data-on-your-travis-ci-build/",
-      "author"   : ""
-    } 
-     
-    ,
-  
-    
-    
-    {
-      "title"    : "Scientific papers using GeneticSharp (september 2022)",
-      "category" : "news",
-      "tags"     : "geneticsharp, papers",
-      "url"      : "/scientific-papers-using-geneticharp-september-2022/",
       "author"   : ""
     } 
      

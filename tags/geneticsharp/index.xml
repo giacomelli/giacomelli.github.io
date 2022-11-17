@@ -3,18 +3,68 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2022-11-15T06:38:13-03:00</updated>
+ <updated>2022-11-17T12:02:00-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
  
  <entry>
+   <title>Scientific papers using GeneticSharp (october 2022)</title>
+   <link href="//scientific-papers-using-geneticharp-october-2022/"/>
+   <updated>2022-11-17T00:00:00-03:00</updated>
+   <id>//scientific-papers-using-geneticharp-october-2022</id>
+   <content type="html">&lt;p&gt;In October 2022 I discovered (TBH, Google Scholar notified me) that three new scientific papers using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; have been developed.&lt;/p&gt;
+
+&lt;p&gt;Below you can appreciate them:&lt;/p&gt;
+
+&lt;h1 id=&quot;framework-for-graphical-user-interface-testing&quot;&gt;Framework for graphical user interface testing&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_2-200-f445d42b2.webp 200w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_2-400-f445d42b2.webp 400w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_2-602-f445d42b2.webp 602w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_2-200-f445d42b2.png 200w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_2-400-f445d42b2.png 400w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_2-602-f445d42b2.png 602w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_2-602-f445d42b2.png&quot; alt=&quot;post image&quot; width=&quot;602&quot; height=&quot;374&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: This thesis is describing the development of a framework for graphic user interface testing with usage of Soft Computing algorithms. Development is divided into four phases. The first phase is acquaintance with existing GUI testing frameworks and their analysis. The second phase is about choosing appropriate technologies for development, appropriate algorithms and implementation design. Then there is the framework implementation phase itself and last phase with the testing, result evaluation and improvements proposal.&lt;/em&gt; (&lt;a href=&quot;https://theses.cz/id/fn6jrd/24813.pdf&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;automated-linear-design-integrated-microwave-amplifier-with-distributed-gain&quot;&gt;Automated linear design integrated microwave amplifier with distributed gain&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_1-200-f195a4bfe.webp 200w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_1-400-f195a4bfe.webp 400w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_1-473-f195a4bfe.webp 473w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_1-200-f195a4bfe.png 200w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_1-400-f195a4bfe.png 400w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_1-473-f195a4bfe.png 473w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_1-473-f195a4bfe.png&quot; alt=&quot;post image&quot; width=&quot;473&quot; height=&quot;415&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: Increasing the efficiency and reducing the cost of developing microwave integrated circuits (ICs) determines the trend in the development of software modules for automated synthesis of circuit and topological solutions. The article presents the results of the development of a methodology and algorithm that allow for automated synthesis of circuit solutions for integrated microwave amplifiers with distributed amplification (MW URA) based on
+set of requirements for its linear characteristics. A feature of the proposed technique is the use of models of active and passive elements for the selected manufacturing technology of microwave ICs. it allows directly in the process of synthesis to obtain circuit solutions of microwave URU suitable for implementation
+in a given technological process. The work of the presented CAD technique integrated microwave URU is demonstrated on the example of the development of a pre-amplification cascade for buffer amplifier for the frequency range from 20 to 30 GHz based on 0.25 μm GaAs pHEMT of the technological process of the domestic foundry.&lt;/em&gt; (&lt;a href=&quot;https://scholar.archive.org/work/qp6k4sgorbanjer34zqfbjl7nq/access/wayback/https://vre.instel.ru/jour/article/download/1371/1102&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;optimization-of-customer-assignment-problem&quot;&gt;Optimization of customer assignment problem&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_3-200-25849a92c.webp 200w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_3-400-25849a92c.webp 400w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_3-430-25849a92c.webp 430w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_3-200-25849a92c.png 200w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_3-400-25849a92c.png 400w, /assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_3-430-25849a92c.png 430w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/17/scientific-papers-using-geneticharp-october-2022/paper_3-430-25849a92c.png&quot; alt=&quot;post image&quot; width=&quot;430&quot; height=&quot;386&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; &lt;em&gt;Abstract: One of the biggest problems of call center employees is fair customer distribution. Every
+employee wants to deal equally with customers with similar characteristics and to distribute premiums equally. Because of the large number of parameter and input data for this problem, the search space is large. Therefore, the problem is a complex, in other words NP – hard problem. Genetic Algorithm, which is an heuristical search method, is preferred in order to provide an effective solution to such problems where the solution space is very large. Within
+the scope of the study, an application was developed with the help of GeneticSharp library in C# programming language, which can assign fair customers to call center employees by using the Genetic Algorithm method, and the most appropriate solution was sought. It has been determined that the genetic algorithm can provide an effective solution to the assignment problems.&lt;/em&gt; (&lt;a href=&quot;https://motto.tc/gorseller/files/kitaplar/icada2021.pdf&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Scientific papers using GeneticSharp (september 2022)</title>
    <link href="//scientific-papers-using-geneticharp-september-2022/"/>
    <updated>2022-10-17T00:00:00-03:00</updated>
    <id>//scientific-papers-using-geneticharp-september-2022</id>
-   <content type="html">&lt;p&gt;In September 2022 I discovered (TBH, Google Scholar notified me) that five new scientific papers using GeneticSharp have been developed.&lt;/p&gt;
+   <content type="html">&lt;p&gt;In September 2022 I discovered (TBH, Google Scholar notified me) that five new scientific papers using  &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt; have been developed.&lt;/p&gt;
 
 &lt;p&gt;Below you can appreciate them:&lt;/p&gt;
 
