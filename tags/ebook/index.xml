@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - ebook</title>
  <link href="//tags/ebook/index.xml" rel="self"/>
  <link href="/tag/ebook.html"/>
- <updated>2022-11-25T21:05:22-03:00</updated>
+ <updated>2023-01-02T14:17:19-03:00</updated>
  <id>/tag/ebook.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -19,8 +19,8 @@
 &lt;p&gt;Thereupon, I created this post to list those eBooks. If you know any other of them created by Unity’s team let me know in the comments and I’ll update the post.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Last updated on 25/11/2022&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Currently listing 48 eBooks&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Last updated on 02/01/2023&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Currently listing 49 eBooks&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;2d&quot;&gt;2D&lt;/h3&gt;
@@ -128,6 +128,11 @@
 &lt;h3 id=&quot;testing&quot;&gt;Testing&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B4233ae60-18e9-498e-bf6d-226e47a75932%7D_Unity_Bugs_Automation_EBook.pdf&quot;&gt;Bugs &amp;amp; automation: The next generation of QA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ui&quot;&gt;UI&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDg4Mjk0JnY9MSZpc3N1ZU5hbWU9dXNlci1pbnRlcmZhY2UtZGVzaWduLWFuZC1pbXBsZW1lbnRhdGlvbi1pbi11bml0eSZjbWQ9ZCZzaWc9NjBkOTNkNmVlNzdmMTIwYWM5Y2YxNDhkMDhjNjUzMWE%253D&quot;&gt;User interface design and implementation in Unity&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;universal-render-pipeline-urp&quot;&gt;Universal Render Pipeline (URP)&lt;/h3&gt;
