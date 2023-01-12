@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-01-02T14:17:19-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Scientific papers using GeneticSharp (october 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (october 2022)" /><published>2022-11-17T00:00:00-03:00</published><updated>2022-11-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/"><![CDATA[<p>In October 2022 I discovered (TBH, Google Scholar notified me) that three new scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a> have been developed.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-01-12T15:11:36-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Scientific papers using GeneticSharp (october 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (october 2022)" /><published>2022-11-17T00:00:00-03:00</published><updated>2022-11-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/"><![CDATA[<p>In October 2022 I discovered (TBH, Google Scholar notified me) that three new scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a> have been developed.</p>
 
 <p>Below you can appreciate them:</p>
 
@@ -440,8 +440,8 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 <p>Thereupon, I created this post to list those eBooks. If you know any other of them created by Unity’s team let me know in the comments and I’ll update the post.</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">Last updated on 02/01/2023</code></li>
-  <li><code class="language-plaintext highlighter-rouge">Currently listing 49 eBooks</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Last updated on 12/01/2023</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Currently listing 52 eBooks</code></li>
 </ul>
 
 <h3 id="2d">2D</h3>
@@ -497,6 +497,7 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
   <li><a href="https://images.response.unity3d.com/Web/Unity/%7B1f2fcf3b-d60d-44e1-b646-818d32bfa030%7D_Unity-Mac-Development-Ebook-v4.2.pdf">Myths vs reality: What you need to know about developing for the Mac</a></li>
   <li><a href="https://images.response.unity3d.com/Web/Unity/%7B47e54d3b-d51f-4e09-b3c1-1ab84453779e%7D_Unity-HiddenProductivityCosts-Ebook.pdf">The hidden productivity costs disrupting your release timelines</a></li>
   <li><a href="https://images.response.unity3d.com/Web/Unity/%7B954cce4a-4166-45e7-b270-df28300bc67f%7D_UNITY-The_True_Costs_of_Creating__Launching_and_Operating_a_Game.pdf">The true costs of creating, Launching, and Operating a Game</a></li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDMwNzIwJnY9MSZpc3N1ZU5hbWU9dW5pdHktZ2FtZS1kZXYtZmllbGQtZ3VpZGUmY21kPWQmc2lnPTJmNGI2NGQzMzEyNDU4ODA1ODA0MWFiOTAwOTU3M2Qz">Unity Game Dev Field Guide</a> 🆕</li>
 </ul>
 
 <h3 id="multiplatform">Multiplatform</h3>
@@ -559,6 +560,16 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 <h3 id="universal-render-pipeline-urp">Universal Render Pipeline (URP)</h3>
 <ul>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDc2NTcwJnY9MSZpc3N1ZU5hbWU9aW50cm9kdWN0aW9uLXRvLXRoZS11bml2ZXJzYWwtcmVuZGVyLXBpcGVsaW5lLWZvci1hZHZhbmNlZC11bml0eS1jcmVhdG9ycy0yMDIxLWx0cy1lZGl0aW9uJmNtZD1kJnNpZz1kMjZkZmQ1Njg1NWUyZjZhMDc5OGJmY2M0OTllZWQ3YQ%253D%253D">Introduction to the Universal Render Pipeline for advanced Unity creators</a></li>
+</ul>
+
+<h3 id="vfx">VFX</h3>
+<ul>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDg1OTkyJnY9MiZpc3N1ZU5hbWU9dGhlLWRlZmluaXRpdmUtZ3VpZGUtdG8tY3JlYXRpbmctYWR2YW5jZWQtdmlzdWFsLWVmZmVjdHMtaW4tdW5pdHkmY21kPWQmc2lnPTcxYTU3NGI5ZDZhZmI5MmU0MzIxOThjNDRjZWM2MmMy">The definitive guide to creating advanced visual effects in Unity</a> 🆕</li>
+</ul>
+
+<h3 id="workflow">Workflow</h3>
+<ul>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDA1MzY3JnY9MSZpc3N1ZU5hbWU9dG9wLXRpcHMtZm9yLWltcHJvdmluZy15b3VyLXdvcmtmbG93cy1hbmQtcHJvZHVjdGl2aXR5LXdpdGgtdW5pdHktMjAyMC1sdHMmY21kPWQmc2lnPTdlMzQxNTEyOTY2ZWVhZTg3YmYyZjc5OTI4ZTRjNzE0">Top tips for improving your workflows and productivity with Unity 2020 LTS</a> 🆕</li>
 </ul>]]></content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="gamedev" /><category term="ebook" /><summary type="html"><![CDATA[Throughout all these years using Unity I’ve collected a lot of eBooks that Unity’s team has created. These ebooks are an incredible source of knowledge, but for some reason, I haven’t found any place on the Unity site or blog where all these eBooks are listed.]]></summary></entry><entry><title type="html">The Fundamentals of Unity 2D colliders</title><link href="http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders/" rel="alternate" type="text/html" title="The Fundamentals of Unity 2D colliders" /><published>2022-07-22T00:00:00-03:00</published><updated>2022-07-22T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders</id><content type="html" xml:base="http://diegogiacomelli.com.br/the-fundamentals-of-unity-2d-colliders/"><![CDATA[<p>In the first years of Unity, there wasn’t solid support for 2D game development inside the engine — for years, the right way to refer to it was “Unity 3D”. Though it was possible to develop 2D games with Unity, without official engine support, it wasn’t a smooth process like it is nowadays.</p>
 
 <p>Around 2013, Unity started to support 2D game development with built-in components, like a 2D physics engine, Collider2D, Rigidbody2D, Vector2, Sprite, Tilemap, etc.</p>

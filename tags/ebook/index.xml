@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - ebook</title>
  <link href="//tags/ebook/index.xml" rel="self"/>
  <link href="/tag/ebook.html"/>
- <updated>2023-01-02T14:17:19-03:00</updated>
+ <updated>2023-01-12T15:11:36-03:00</updated>
  <id>/tag/ebook.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -19,8 +19,8 @@
 &lt;p&gt;Thereupon, I created this post to list those eBooks. If you know any other of them created by Unity’s team let me know in the comments and I’ll update the post.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Last updated on 02/01/2023&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Currently listing 49 eBooks&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Last updated on 12/01/2023&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Currently listing 52 eBooks&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;2d&quot;&gt;2D&lt;/h3&gt;
@@ -76,6 +76,7 @@
   &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B1f2fcf3b-d60d-44e1-b646-818d32bfa030%7D_Unity-Mac-Development-Ebook-v4.2.pdf&quot;&gt;Myths vs reality: What you need to know about developing for the Mac&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B47e54d3b-d51f-4e09-b3c1-1ab84453779e%7D_Unity-HiddenProductivityCosts-Ebook.pdf&quot;&gt;The hidden productivity costs disrupting your release timelines&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B954cce4a-4166-45e7-b270-df28300bc67f%7D_UNITY-The_True_Costs_of_Creating__Launching_and_Operating_a_Game.pdf&quot;&gt;The true costs of creating, Launching, and Operating a Game&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDMwNzIwJnY9MSZpc3N1ZU5hbWU9dW5pdHktZ2FtZS1kZXYtZmllbGQtZ3VpZGUmY21kPWQmc2lnPTJmNGI2NGQzMzEyNDU4ODA1ODA0MWFiOTAwOTU3M2Qz&quot;&gt;Unity Game Dev Field Guide&lt;/a&gt; 🆕&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;multiplatform&quot;&gt;Multiplatform&lt;/h3&gt;
@@ -138,6 +139,16 @@
 &lt;h3 id=&quot;universal-render-pipeline-urp&quot;&gt;Universal Render Pipeline (URP)&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDc2NTcwJnY9MSZpc3N1ZU5hbWU9aW50cm9kdWN0aW9uLXRvLXRoZS11bml2ZXJzYWwtcmVuZGVyLXBpcGVsaW5lLWZvci1hZHZhbmNlZC11bml0eS1jcmVhdG9ycy0yMDIxLWx0cy1lZGl0aW9uJmNtZD1kJnNpZz1kMjZkZmQ1Njg1NWUyZjZhMDc5OGJmY2M0OTllZWQ3YQ%253D%253D&quot;&gt;Introduction to the Universal Render Pipeline for advanced Unity creators&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;vfx&quot;&gt;VFX&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDg1OTkyJnY9MiZpc3N1ZU5hbWU9dGhlLWRlZmluaXRpdmUtZ3VpZGUtdG8tY3JlYXRpbmctYWR2YW5jZWQtdmlzdWFsLWVmZmVjdHMtaW4tdW5pdHkmY21kPWQmc2lnPTcxYTU3NGI5ZDZhZmI5MmU0MzIxOThjNDRjZWM2MmMy&quot;&gt;The definitive guide to creating advanced visual effects in Unity&lt;/a&gt; 🆕&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;workflow&quot;&gt;Workflow&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDA1MzY3JnY9MSZpc3N1ZU5hbWU9dG9wLXRpcHMtZm9yLWltcHJvdmluZy15b3VyLXdvcmtmbG93cy1hbmQtcHJvZHVjdGl2aXR5LXdpdGgtdW5pdHktMjAyMC1sdHMmY21kPWQmc2lnPTdlMzQxNTEyOTY2ZWVhZTg3YmYyZjc5OTI4ZTRjNzE0&quot;&gt;Top tips for improving your workflows and productivity with Unity 2020 LTS&lt;/a&gt; 🆕&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>
