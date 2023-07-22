@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-06-08T15:39:54-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Scientific papers using GeneticSharp (october 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (october 2022)" /><published>2022-11-17T00:00:00-03:00</published><updated>2022-11-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/"><![CDATA[<p>In October 2022 I discovered (TBH, Google Scholar notified me) that three new scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a> have been developed.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-07-22T12:01:53-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Giacomelli</title><subtitle>C# programmer and Unity 3D gamedev</subtitle><entry><title type="html">Scientific papers using GeneticSharp (october 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (october 2022)" /><published>2022-11-17T00:00:00-03:00</published><updated>2022-11-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/"><![CDATA[<p>In October 2022 I discovered (TBH, Google Scholar notified me) that three new scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a> have been developed.</p>
 
 <p>Below you can appreciate them:</p>
 
@@ -5568,7 +5568,7 @@ improving existing systems as well as in future research.</em></p>
 
 <h2 id="tesseractservice">TesseractService</h2>
 <p>I ended up developing the class below to call the <code class="language-plaintext highlighter-rouge">Tesseract 4</code> command-line <code class="language-plaintext highlighter-rouge">(tesseract.exe)</code> directly from the C# code. 
-<br /></p>
+&lt;!– <br /></p>
 
 <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
@@ -5577,7 +5577,7 @@ improving existing systems as well as in future research.</em></p>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script></p>
 
-<p><br />
+<p><br /> –&gt;
 <script src="https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=TesseractService.cs"> </script></p>
 
 <h2 id="setup">Setup</h2>
