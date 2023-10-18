@@ -3,11 +3,74 @@
  <title>Diego Giacomelli - papers</title>
  <link href="//tags/papers/index.xml" rel="self"/>
  <link href="/tag/papers.html"/>
- <updated>2023-10-13T10:00:40-03:00</updated>
+ <updated>2023-10-18T19:16:17-03:00</updated>
  <id>/tag/papers.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Scientific papers using GeneticSharp (october 2023)</title>
+   <link href="//scientific-papers-using-geneticharp-october-2023/"/>
+   <updated>2023-10-18T00:00:00-03:00</updated>
+   <id>//scientific-papers-using-geneticharp-october-2023</id>
+   <content type="html">&lt;p&gt;Another round with the newest scientific papers using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;visualization-of-the-process-of-solving-selected-optimization-problems-using-genetic-algorithms&quot;&gt;Visualization of the process of solving selected optimization problems using genetic algorithms&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_1-200-b2249dd3c.webp 200w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_1-400-b2249dd3c.webp 400w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_1-454-b2249dd3c.webp 454w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_1-200-b2249dd3c.jpg 200w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_1-400-b2249dd3c.jpg 400w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_1-454-b2249dd3c.jpg 454w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_1-454-b2249dd3c.jpg&quot; alt=&quot;post image&quot; width=&quot;454&quot; height=&quot;300&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: This thesis describes the process of developing an interactive tool for visualization of the process of solving selected optimization problems using genetic algorithms. The theoretical part provides an introduction to the evolutionary algorithms, more specifically then focuses on genetic algorithms. This part also lists typical optimization problems that are commonly solved using genetic algorithms. The practical part describes all the important steps in creating new functional software. This includes the comparison of existing solutions, analysis of possibly suitable technologies and libraries, and software documentation. The implementation of the application, using the Blazor WebAssembly framework, is also described in this part. The interactive tool provides the visualizations of three typical optimization problems and the problem of 2D bitmap image generation. At the end, the thesis lists the techniques used for testing and documentation of the application. The final result of this thesis is a functional interactive web application.&lt;/em&gt; (&lt;a href=&quot;https://dspace.cvut.cz/handle/10467/109406&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;study-of-methods-of-application-of-genetic-algorithms-for-determining-the-viability-of-moving-objects-and-their-systems&quot;&gt;Study of methods of application of genetic algorithms for determining the viability of moving objects and their systems&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_4-200-e77b59b8a.webp 200w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_4-400-e77b59b8a.webp 400w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_4-438-e77b59b8a.webp 438w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_4-200-e77b59b8a.jpg 200w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_4-400-e77b59b8a.jpg 400w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_4-438-e77b59b8a.jpg 438w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_4-438-e77b59b8a.jpg&quot; alt=&quot;post image&quot; width=&quot;438&quot; height=&quot;322&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: The purpose of the research is to identify effective methods of using genetic algorithms to determine the viability of moving objects and their systems, formalize and generalize the problem of optimizing their configuration and behavior using a genetic algorithm; development of a software system that would allow setting the conditions of a problem of this type in a formal and at the same time visual form, solving this problem and visualizing intermediate and final results. Development methods are based on Unity engine and GeneticSharp library.&lt;/em&gt; (&lt;a href=&quot;https://openarchive.nure.ua/server/api/core/bitstreams/5efde1f2-e6f8-47d1-8e03-54b4fa70b60b/content&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;optimization-of-self-supporting-steel-towers-for-transmission-lines-with-genetic-algorithms&quot;&gt;Optimization of self-supporting steel towers for transmission lines with genetic algorithms&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_2-200-4d0e94e35.webp 200w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_2-366-4d0e94e35.webp 366w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_2-200-4d0e94e35.jpg 200w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_2-366-4d0e94e35.jpg 366w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_2-366-4d0e94e35.jpg&quot; alt=&quot;post image&quot; width=&quot;366&quot; height=&quot;666&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: Steel latticed towers are widely used as supports to conductors on transmission lines. On such projects, it is usual to use the same structural solution repeatedly along the line, what allows to achieve significant cost reduction due to structure’s design optimization. This work proposes the development of an optimization methodology based on the Genetic Algorithms concept to reduce self-supporting tower’s self-weight through the variation of its body base and top dimensions. To execute the algorithm, it was necessary to implement a system composed of modules for geometric parameterization, determination of loads, structural analysis, and sizing accordingly to ASCE 10-15. A 25-bar truss benchmark was optimized, and the results showed that the proposed methodology is effective. Besides, the performance of the methodology to optimize a self-supporting 525 kV cat-face tower was evaluated. The comparison of the results with the project of an equivalent tower which is in operation in Brazil proved the effectiveness of the proposed methodology for self-supporting towers optimization.&lt;/em&gt; (&lt;a href=&quot;https://repositorio.ufmg.br/handle/1843/47381&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;artificial-intelligence-for-the-unstable-unicorns-game&quot;&gt;Artificial Intelligence for the Unstable Unicorns Game&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_3-200-9aabeaa18.webp 200w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_3-400-9aabeaa18.webp 400w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_3-464-9aabeaa18.webp 464w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_3-200-9aabeaa18.jpg 200w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_3-400-9aabeaa18.jpg 400w, /assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_3-464-9aabeaa18.jpg 464w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/10/18/scientific-papers-using-geneticharp-october-2023/paper_3-464-9aabeaa18.jpg&quot; alt=&quot;post image&quot; width=&quot;464&quot; height=&quot;304&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: This work explores artificial intelligence for the game Unstable Unicorns. This game started on Kickstarter and over the years, the game creators released several expansions. This work aims to implement a game simulator for this game, analyze the game, and design the artificial intelligence for this game. First, we will analyze the game rules, game mechanics, and artificial intelligence in similar games. We implemented the game simulator as close as possible to the original rules. Afterward, we developed three different artificial intelligence algorithms. These are rule-based agents, Monte Carlo agents and evolutionary agents. Finally, we ran the experiments and comparison tests with the implemented agents. The best-performing agent is the evolutionary agent. It is quick with the best win rate.&lt;/em&gt; (&lt;a href=&quot;https://dspace.cuni.cz/bitstream/handle/20.500.11956/183069/130360435.pdf&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;about-the-possibilities-of-implementing-genetic-algorithms-in-the-c-programming-language&quot;&gt;About the possibilities of implementing genetic algorithms in the C# programming language&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Abstract: The article discusses the possibility of creating genetic algorithms in the C# programming language, in particular using the GeneticSharp library. The application of a genetic algorithm to find the two most distant points on a rectangular area is shown.&lt;/em&gt; (&lt;a href=&quot;https://elibrary.ru/item.asp?id=36794042&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;honorable-mention&quot;&gt;Honorable mention&lt;/h1&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/KarmaKamikaze/GeneticDFA&quot;&gt;GeneticDFA&lt;/a&gt; is not a scientific paper, but a very neat project available on GitHub that uses genetic programming to reverse engineer blackbox systems modeled in DFA form.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Scientific papers using GeneticSharp (october 2022)</title>

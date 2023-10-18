@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - trijam</title>
+ <link href="//tags/trijam/index.xml" rel="self"/>
+ <link href="/tag/trijam.html"/>
+ <updated>2023-10-18T19:16:17-03:00</updated>
+ <id>/tag/trijam.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Trijam 240 entry&colon; Heat or Freeze</title>
+   <link href="//trijam-240-entry-heat-or-freeze/"/>
+   <updated>2023-10-09T00:00:00-03:00</updated>
+   <id>//trijam-240-entry-heat-or-freeze</id>
+   <content type="html">&lt;p&gt;Last weekend I participated in &lt;strong&gt;&lt;a href=&quot;https://itch.io/jam/trijam-240&quot;&gt;Trijam #240&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;iframe class=&quot;itchio-iframe&quot; frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/2305047 &quot;&gt;         
+        &lt;/iframe&gt;
+       &lt;/center&gt;
+
+&lt;h2 id=&quot;the-theme&quot;&gt;The theme&lt;/h2&gt;
+&lt;p&gt;The theme for this game jam was &lt;strong&gt;“Hot and cold”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This was the second Trijam that I participated with purpose to test my small game engine: &lt;a href=&quot;/tags/blazorame&quot;&gt;Blazorame&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This time I kinda like the game jam theme and I ended up created I simple shooter where you need to use the right gun against each kind of enemy.&lt;/p&gt;
+
+&lt;p&gt;The final result is: &lt;strong&gt;Heat or Freeze&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You are the ship’s pilot and must survive waves of enemies as much as possible. 
+You have two types of enemies:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hot enemies: can be killed by the Cold Cannon (right)&lt;/li&gt;
+  &lt;li&gt;Cold enemies: can be killed by the Hot Cannon (left)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you hit the enemy with the wrong cannon, the enemy will become stronger, greater, and faster.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-play&quot;&gt;How to play&lt;/h2&gt;
+&lt;p&gt;The game can be played directly on the browser here: &lt;a href=&quot;https://giacomelli.itch.io/heat-or-freeze&quot;&gt;https://giacomelli.itch.io/heat-or-freeze&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;A&lt;/strong&gt;: move the ship to left&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;D&lt;/strong&gt;: move the ship to right&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;LEFT ARROW&lt;/strong&gt;: fire the Hot Cannon&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;RIGHT ARROW&lt;/strong&gt;: fire the Cold Cannon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/0QcrXYPqy-M &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;how-to-vote&quot;&gt;How to vote&lt;/h2&gt;
+&lt;p&gt;If you liked the game, &lt;strong&gt;you can cast a vote&lt;/strong&gt; for the game jam here: &lt;a href=&quot;https://itch.io/jam/trijam-240/rate/2305047&quot;&gt;https://itch.io/jam/trijam-240/rate/2305047&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Trijam 239 entry&colon; I need a medic - crossword</title>
+   <link href="//trijam-239-entry-i-need-a-medic-crossword/"/>
+   <updated>2023-10-02T00:00:00-03:00</updated>
+   <id>//trijam-239-entry-i-need-a-medic-crossword</id>
+   <content type="html">&lt;p&gt;Last weekend I participated in &lt;strong&gt;&lt;a href=&quot;https://itch.io/jam/trijam-239&quot;&gt;Trijam #239&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;iframe class=&quot;itchio-iframe&quot; frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/2291731 &quot;&gt;         
+        &lt;/iframe&gt;
+       &lt;/center&gt;
+
+&lt;h2 id=&quot;the-theme&quot;&gt;The theme&lt;/h2&gt;
+&lt;p&gt;The theme for this game jam was &lt;strong&gt;“I need a medic!”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This was the second Trijam that I participated and it had a different purpose for me, because I wanted to test a small game engine that I I’ve been building from scratch, the idea of this game engine is to develop browser-playable games that look like games from Atari 2600 or Gameboy, for instance: it has a limited palette with just 4 colors like the classic Gameboy had. This game engine is entirely built in C# using Blazor. The games built with it are Blazor WebAssembly apps.&lt;/p&gt;
+
+&lt;p&gt;The name of this small game engine is Blazorame.&lt;/p&gt;
+
+&lt;p&gt;As I didn’t like much this Trijam theme, I ended up just creating a kinda of crossword game, even so This helped to understand the next steps needed to improve the Blazorame.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-play&quot;&gt;How to play&lt;/h2&gt;
+&lt;p&gt;The game can be played directly on the browser here: &lt;a href=&quot;https://giacomelli.itch.io/i-need-a-medic-crossword&quot;&gt;https://giacomelli.itch.io/i-need-a-medic-crossword&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;SPACE&lt;/strong&gt;: to use the current selected letter.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/ndOU3bpwpk4 &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;how-to-vote&quot;&gt;How to vote&lt;/h2&gt;
+&lt;p&gt;If you liked the game, &lt;strong&gt;you can cast a vote&lt;/strong&gt; for the game jam here: &lt;a href=&quot;https://itch.io/jam/trijam-239/rate/2291731&quot;&gt;https://itch.io/jam/trijam-239/rate/2291731&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Trijam 154 entry&colon; Who Kills Who?</title>
+   <link href="//trijam-154-entry-who-kills-who/"/>
+   <updated>2022-02-01T00:00:00-03:00</updated>
+   <id>//trijam-154-entry-who-kills-who</id>
+   <content type="html">&lt;p&gt;Last weekend I participated in &lt;strong&gt;&lt;a href=&quot;https://itch.io/jam/trijam-154&quot;&gt;Trijam #154&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;iframe class=&quot;itchio-iframe&quot; frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/1376314 &quot;&gt;         
+        &lt;/iframe&gt;
+       &lt;/center&gt;
+
+&lt;h2 id=&quot;the-theme&quot;&gt;The theme&lt;/h2&gt;
+&lt;p&gt;The theme for this game jam was &lt;strong&gt;“There is a twist…!”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;When you have just 3 hours to make a game, even a simple one, you will need to thinking about the idea and plan a lot before start.
+Besides, the theme “There is a twist…!” was a challenge one, at least to me. I took some time to realize a idea to develop.&lt;/p&gt;
+
+&lt;p&gt;The final result is &lt;strong&gt;an Atari 2600 kind of game&lt;/strong&gt;: &lt;strong&gt;Who Kills Who?&lt;/strong&gt;&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-200-c5a45b8a1.webp 200w, /assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.webp 320w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-200-c5a45b8a1.png 200w, /assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.png 320w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.png&quot; alt=&quot;post image&quot; width=&quot;320&quot; height=&quot;254&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;There are 3 different elements in the screen: Red, Green and Blue.&lt;/li&gt;
+  &lt;li&gt;In the start Red kills Green, Green kills Blue and Blue kills Red.&lt;/li&gt;
+  &lt;li&gt;The player can make a twist (here came the theme) and change Who Kills Who, making Blue kills Green, Green Kills Red and Red kills Blue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-play&quot;&gt;How to play&lt;/h2&gt;
+&lt;p&gt;The game can be played directly on the browser here: &lt;a href=&quot;https://giacomelli.itch.io/who-kills-who&quot;&gt;https://giacomelli.itch.io/who-kills-who&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ENTER&lt;/strong&gt;: to make a twist in Who Kills Who.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SPACE&lt;/strong&gt;: in the end screen to try again.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/dpIJgO2fWDc &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;how-to-vote&quot;&gt;How to vote&lt;/h2&gt;
+&lt;p&gt;If you liked the game, &lt;strong&gt;you can cast a vote&lt;/strong&gt; for the game jam here: &lt;a href=&quot;https://itch.io/jam/trijam-154/rate/1376314&quot;&gt;https://itch.io/jam/trijam-154/rate/1376314&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>
