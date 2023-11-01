@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-10-31T14:11:02-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Web API | Framework | Azure | Unity 3D</subtitle><entry><title type="html">Scientific papers using GeneticSharp (october 2023)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (october 2023)" /><published>2023-10-18T00:00:00-03:00</published><updated>2023-10-18T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023/"><![CDATA[<p>Another round with the newest scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-11-01T16:40:49-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Web API | Framework | Azure | Unity 3D</subtitle><entry><title type="html">Scientific papers using GeneticSharp (october 2023)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (october 2023)" /><published>2023-10-18T00:00:00-03:00</published><updated>2023-10-18T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023/"><![CDATA[<p>Another round with the newest scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
 
 <h1 id="visualization-of-the-process-of-solving-selected-optimization-problems-using-genetic-algorithms">Visualization of the process of solving selected optimization problems using genetic algorithms</h1>
 <center>                
@@ -5700,18 +5700,9 @@ improving existing systems as well as in future research.</em></p>
 </div>
 
 <h2 id="tesseractservice">TesseractService</h2>
-<p>I ended up developing the class below to call the <code class="language-plaintext highlighter-rouge">Tesseract 4</code> command-line <code class="language-plaintext highlighter-rouge">(tesseract.exe)</code> directly from the C# code. 
-&lt;!– <br /></p>
+<p>I ended up developing the class below to call the <code class="language-plaintext highlighter-rouge">Tesseract 4</code> command-line <code class="language-plaintext highlighter-rouge">(tesseract.exe)</code> directly from the C# code.</p>
 
-<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4531139417583317" data-ad-slot="3308598273"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></p>
-
-<p><br /> –&gt;
-<script src="https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=TesseractService.cs"> </script></p>
+<script src="https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=TesseractService.cs"> </script>
 
 <h2 id="setup">Setup</h2>
 <ul>
