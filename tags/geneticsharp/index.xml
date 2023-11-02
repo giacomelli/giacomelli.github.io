@@ -3,11 +3,72 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2023-11-01T16:40:49-03:00</updated>
+ <updated>2023-11-02T12:52:55-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>GeneticSharp in the Wild&colon; Simulation-based layout optimization for multi-station assembly lines</title>
+   <link href="//geneticsharp-in-the-wild-simulation-based-layout-optimization/"/>
+   <updated>2023-11-02T00:00:00-03:00</updated>
+   <id>//geneticsharp-in-the-wild-simulation-based-layout-optimization</id>
+   <content type="html">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For this sixth post the choose one is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Simulation-based layout optimization for multi-station assembly lines&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Presents a novel approach for the automated 3D-layout planning of multi-station assembly lines. The planning method is based on a comprehensive model of the used production resources, including their geometry, kinematic properties, and general characteristics. Different resource types can be included in the planning system. A genetic algorithm generates and optimizes possible layouts for a line.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;The optimization aims to minimize the line’s area and the costs for assembling the
+line while simultaneously optimizing the resources’ positioning to perform their tasks. The line’s cycle time is considered as
+a boundary condition. For the evaluation of different layout alternatives, a multi-body simulation is performed. A parameter
+study is used to set the algorithm’s parameters. Afterward, the algorithm is applied to three increasingly complex examples
+to validate and evaluate its functionality. The approach is promising for industrial applications as it allows the integration of
+various resource types and individualization of the optimization function.&lt;/em&gt;&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-200-abc657e23.webp 200w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-400-abc657e23.webp 400w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-575-abc657e23.webp 575w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-200-abc657e23.png 200w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-400-abc657e23.png 400w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-575-abc657e23.png 575w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-575-abc657e23.png&quot; alt=&quot;post image&quot; width=&quot;575&quot; height=&quot;213&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;Examples for the evaluation of positions in the workspace of an LBR iiwa 7 robot&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;The presented system is highly flexible and supports the positioning of multiple resource types.
+It is also open to integrating more resource variants or customizing the fitness function to reflect the individual user’s
+preferences accurately. The integration of more resource models and the modeling of more resource types would be the logical next step
+to improve the system further.&lt;/em&gt;&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-200-527f083b6.webp 200w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-400-527f083b6.webp 400w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-663-527f083b6.webp 663w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-200-527f083b6.png 200w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-400-527f083b6.png 400w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-663-527f083b6.png 663w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-663-527f083b6.png&quot; alt=&quot;post image&quot; width=&quot;663&quot; height=&quot;155&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;span style=&quot;font-style:italic; font-size:small&quot;&gt;&lt;p&gt;The final layout of the first three runs of the first example&lt;/p&gt;
+&lt;/span&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;/h2&gt;
+&lt;p&gt;Daria Leiber, David Eickholt, Anh-Tu Vuong, and Gunther Reinhart wrote the paper for Department of Mechanical Engineering, Institute for Machine
+Tools and Industrial Management, Technical University of Munich, Germany.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
+&lt;p&gt;You can access the full paper directly at &lt;a href=&quot;https://link.springer.com/content/pdf/10.1007/s10845-021-01853-5.pdf&quot;&gt;Journal of Intelligent Manufacturing&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Scientific papers using GeneticSharp (october 2023)</title>

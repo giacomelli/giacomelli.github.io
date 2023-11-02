@@ -4,37 +4,25 @@
     
     
     {
-      "title"    : "Scientific papers using GeneticSharp (october 2023)",
-      "category" : "news",
-      "tags"     : "geneticsharp, papers",
-      "url"      : "/scientific-papers-using-geneticharp-october-2023/",
+      "title"    : "GeneticSharp in the Wild&amp;colon; Simulation-based layout optimization for multi-station assembly lines",
+      "category" : "Article",
+      "tags"     : "geneticsharp, geneticsharp in the wild",
+      "url"      : "/geneticsharp-in-the-wild-simulation-based-layout-optimization/",
       "author"   : ""
     } ,
     
     {
-      "title"    : "Scientific papers using GeneticSharp (october 2022)",
-      "category" : "news",
-      "tags"     : "geneticsharp, papers",
-      "url"      : "/scientific-papers-using-geneticharp-october-2022/",
+      "title"    : "Trijam 243 entry&amp;colon; The Cursed Idol",
+      "category" : "Article",
+      "tags"     : "game jam, games, trijam, blazorame",
+      "url"      : "/trijam-243-entry-the-cursed-idol/",
       "author"   : ""
     } ,
-    
-    {
-      "title"    : "Scientific papers using GeneticSharp (september 2022)",
-      "category" : "news",
-      "tags"     : "geneticsharp, papers",
-      "url"      : "/scientific-papers-using-geneticharp-september-2022/",
-      "author"   : ""
-    } 
-     
-    ,
-  
-    
     
     {
       "title"    : "Trijam 240 entry&amp;colon; Heat or Freeze",
       "category" : "Article",
-      "tags"     : "game jam, games, made with unity, trijam, blazorame",
+      "tags"     : "game jam, games, trijam, blazorame",
       "url"      : "/trijam-240-entry-heat-or-freeze/",
       "author"   : ""
     } ,
@@ -42,7 +30,7 @@
     {
       "title"    : "Trijam 239 entry&amp;colon; I need a medic - crossword",
       "category" : "Article",
-      "tags"     : "game jam, games, made with unity, trijam, blazorame",
+      "tags"     : "game jam, games, trijam, blazorame",
       "url"      : "/trijam-239-entry-i-need-a-medic-crossword/",
       "author"   : ""
     } ,
@@ -252,6 +240,34 @@
       "category" : "Article",
       "tags"     : "dotnet, csharp, linq to entities, sql",
       "url"      : "/why-we-should-avoid-datetime-utcnow-inside-a-linq-to-entities-query/",
+      "author"   : ""
+    } 
+     
+    ,
+  
+    
+    
+    {
+      "title"    : "Scientific papers using GeneticSharp (october 2023)",
+      "category" : "news",
+      "tags"     : "geneticsharp, papers",
+      "url"      : "/scientific-papers-using-geneticharp-october-2023/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Scientific papers using GeneticSharp (october 2022)",
+      "category" : "news",
+      "tags"     : "geneticsharp, papers",
+      "url"      : "/scientific-papers-using-geneticharp-october-2022/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Scientific papers using GeneticSharp (september 2022)",
+      "category" : "news",
+      "tags"     : "geneticsharp, papers",
+      "url"      : "/scientific-papers-using-geneticharp-september-2022/",
       "author"   : ""
     } 
      

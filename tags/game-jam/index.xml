@@ -3,11 +3,54 @@
  <title>Diego Giacomelli - game-jam</title>
  <link href="//tags/game-jam/index.xml" rel="self"/>
  <link href="/tag/game-jam.html"/>
- <updated>2023-11-01T16:40:49-03:00</updated>
+ <updated>2023-11-02T12:52:55-03:00</updated>
  <id>/tag/game-jam.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Trijam 243 entry&colon; The Cursed Idol</title>
+   <link href="//trijam-243-entry-the-cursed-idol/"/>
+   <updated>2023-10-29T00:00:00-03:00</updated>
+   <id>//trijam-243-entry-the-cursed-idol</id>
+   <content type="html">&lt;p&gt;Last weekend I participated in &lt;strong&gt;&lt;a href=&quot;https://itch.io/jam/trijam-243&quot;&gt;Trijam #243&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;iframe class=&quot;itchio-iframe&quot; frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/2337551 &quot;&gt;         
+        &lt;/iframe&gt;
+       &lt;/center&gt;
+
+&lt;h2 id=&quot;the-theme&quot;&gt;The theme&lt;/h2&gt;
+&lt;p&gt;The theme for this game jam was &lt;strong&gt;“Cursed Relics”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This was the third Trijam that I participated with purpose to test my small game engine: &lt;a href=&quot;/tags/blazorame&quot;&gt;Blazorame&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This quick-time event game is based on the famous Indiana Jones - Raiders of the Lost Ark scene where Indy needs to swap a bag with the Golden Idol to try not to activate the temple traps (we all know how it turns out).&lt;/p&gt;
+
+&lt;p&gt;The game’s objective is to hit any key at the exact moment that Indy should swap the items.&lt;/p&gt;
+
+&lt;p&gt;You can try to collect as many Cursed Idols as you want, but if you miss the right moment you will lose them all and will be cursed.&lt;/p&gt;
+
+&lt;p&gt;The final result is: &lt;strong&gt;The Cursed Idol&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-play&quot;&gt;How to play&lt;/h2&gt;
+&lt;p&gt;The game can be played directly on the browser here: &lt;a href=&quot;https://giacomelli.itch.io/the-cursed-idol&quot;&gt;https://giacomelli.itch.io/the-cursed-idol&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed//PUb9wU3zwko &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;how-to-vote&quot;&gt;How to vote&lt;/h2&gt;
+&lt;p&gt;If you liked the game, &lt;strong&gt;you can cast a vote&lt;/strong&gt; for the game jam here: &lt;a href=&quot;https://itch.io/jam/trijam-243/rate/2337551&quot;&gt;https://itch.io/jam/trijam-243/rate/2305047&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Trijam 240 entry&colon; Heat or Freeze</title>

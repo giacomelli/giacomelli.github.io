@@ -1,4 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-11-01T16:40:49-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Web API | Framework | Azure | Unity 3D</subtitle><entry><title type="html">Scientific papers using GeneticSharp (october 2023)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (october 2023)" /><published>2023-10-18T00:00:00-03:00</published><updated>2023-10-18T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023/"><![CDATA[<p>Another round with the newest scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-11-02T12:52:55-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Web API | Framework | Azure | Unity 3D</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Simulation-based layout optimization for multi-station assembly lines</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-simulation-based-layout-optimization/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;amp;colon; Simulation-based layout optimization for multi-station assembly lines" /><published>2023-11-02T00:00:00-03:00</published><updated>2023-11-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-simulation-based-layout-optimization</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-simulation-based-layout-optimization/"><![CDATA[<p>I started a <a href="/tags/geneticsharp-in-the-wild/">series of posts</a> about some outstanding scientific papers and projects using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
+
+<p>For this sixth post the choose one is the <code class="language-plaintext highlighter-rouge">Simulation-based layout optimization for multi-station assembly lines</code>.</p>
+
+<h2 id="introduction">Introduction</h2>
+<p><em>Presents a novel approach for the automated 3D-layout planning of multi-station assembly lines. The planning method is based on a comprehensive model of the used production resources, including their geometry, kinematic properties, and general characteristics. Different resource types can be included in the planning system. A genetic algorithm generates and optimizes possible layouts for a line.</em></p>
+
+<h2 id="usage">Usage</h2>
+<p><em>The optimization aims to minimize the line’s area and the costs for assembling the
+line while simultaneously optimizing the resources’ positioning to perform their tasks. The line’s cycle time is considered as
+a boundary condition. For the evaluation of different layout alternatives, a multi-body simulation is performed. A parameter
+study is used to set the algorithm’s parameters. Afterward, the algorithm is applied to three increasingly complex examples
+to validate and evaluate its functionality. The approach is promising for industrial applications as it allows the integration of
+various resource types and individualization of the optimization function.</em></p>
+
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-200-abc657e23.webp 200w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-400-abc657e23.webp 400w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-575-abc657e23.webp 575w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-200-abc657e23.png 200w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-400-abc657e23.png 400w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-575-abc657e23.png 575w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/examples-eval-positions-575-abc657e23.png" alt="post image" width="575" height="213" />
+</picture>
+
+      </center>
+<p><br /></p>
+<center><span style="font-style:italic; font-size:small"><p>Examples for the evaluation of positions in the workspace of an LBR iiwa 7 robot</p>
+</span></center>
+<p><br /></p>
+
+<h2 id="results">Results</h2>
+<p><em>The presented system is highly flexible and supports the positioning of multiple resource types.
+It is also open to integrating more resource variants or customizing the fitness function to reflect the individual user’s
+preferences accurately. The integration of more resource models and the modeling of more resource types would be the logical next step
+to improve the system further.</em></p>
+
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-200-527f083b6.webp 200w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-400-527f083b6.webp 400w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-663-527f083b6.webp 663w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-200-527f083b6.png 200w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-400-527f083b6.png 400w, /assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-663-527f083b6.png 663w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2023/11/02/geneticsharp-in-the-wild-simulation-based-layout-optimization/multi-station-assembly-lines-663-527f083b6.png" alt="post image" width="663" height="155" />
+</picture>
+
+      </center>
+<p><br /></p>
+<center><span style="font-style:italic; font-size:small"><p>The final layout of the first three runs of the first example</p>
+</span></center>
+<p><br /></p>
+
+<h2 id="authors">Authors</h2>
+<p>Daria Leiber, David Eickholt, Anh-Tu Vuong, and Gunther Reinhart wrote the paper for Department of Mechanical Engineering, Institute for Machine
+Tools and Industrial Management, Technical University of Munich, Germany.</p>
+
+<h2 id="further-reading">Further reading</h2>
+<p>You can access the full paper directly at <a href="https://link.springer.com/content/pdf/10.1007/s10845-021-01853-5.pdf">Journal of Intelligent Manufacturing</a>.</p>]]></content><author><name></name></author><category term="Article" /><category term="geneticsharp" /><category term="geneticsharp-in-the-wild" /><summary type="html"><![CDATA[I started a series of posts about some outstanding scientific papers and projects using GeneticSharp.]]></summary></entry><entry><title type="html">Trijam 243 entry&amp;amp;colon; The Cursed Idol</title><link href="http://diegogiacomelli.com.br/trijam-243-entry-the-cursed-idol/" rel="alternate" type="text/html" title="Trijam 243 entry&amp;amp;colon; The Cursed Idol" /><published>2023-10-29T00:00:00-03:00</published><updated>2023-10-29T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/trijam-243-entry-the-cursed-idol</id><content type="html" xml:base="http://diegogiacomelli.com.br/trijam-243-entry-the-cursed-idol/"><![CDATA[<p>Last weekend I participated in <strong><a href="https://itch.io/jam/trijam-243">Trijam #243</a></strong>.</p>
+
+<blockquote>
+  <p>Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.</p>
+</blockquote>
+
+<center>
+        <iframe class="itchio-iframe" frameborder="0" src="https://itch.io/embed/2337551 ">         
+        </iframe>
+       </center>
+
+<h2 id="the-theme">The theme</h2>
+<p>The theme for this game jam was <strong>“Cursed Relics”</strong>.</p>
+
+<blockquote>
+  <p>This was the third Trijam that I participated with purpose to test my small game engine: <a href="/tags/blazorame">Blazorame</a>.</p>
+</blockquote>
+
+<p>This quick-time event game is based on the famous Indiana Jones - Raiders of the Lost Ark scene where Indy needs to swap a bag with the Golden Idol to try not to activate the temple traps (we all know how it turns out).</p>
+
+<p>The game’s objective is to hit any key at the exact moment that Indy should swap the items.</p>
+
+<p>You can try to collect as many Cursed Idols as you want, but if you miss the right moment you will lose them all and will be cursed.</p>
+
+<p>The final result is: <strong>The Cursed Idol</strong>.</p>
+
+<h2 id="how-to-play">How to play</h2>
+<p>The game can be played directly on the browser here: <a href="https://giacomelli.itch.io/the-cursed-idol">https://giacomelli.itch.io/the-cursed-idol</a>.</p>
+
+<center>
+        <iframe src="https://www.youtube.com/embed//PUb9wU3zwko " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </center>
+
+<h2 id="how-to-vote">How to vote</h2>
+<p>If you liked the game, <strong>you can cast a vote</strong> for the game jam here: <a href="https://itch.io/jam/trijam-243/rate/2337551">https://itch.io/jam/trijam-243/rate/2305047</a>.</p>]]></content><author><name></name></author><category term="Article" /><category term="game-jam" /><category term="games" /><category term="trijam" /><category term="blazorame" /><summary type="html"><![CDATA[Last weekend I participated in Trijam #243.]]></summary></entry><entry><title type="html">Scientific papers using GeneticSharp (october 2023)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (october 2023)" /><published>2023-10-18T00:00:00-03:00</published><updated>2023-10-18T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2023/"><![CDATA[<p>Another round with the newest scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
 
 <h1 id="visualization-of-the-process-of-solving-selected-optimization-problems-using-genetic-algorithms">Visualization of the process of solving selected optimization problems using genetic algorithms</h1>
 <center>                
@@ -99,7 +185,7 @@ You have two types of enemies:</p>
       </center>
 
 <h2 id="how-to-vote">How to vote</h2>
-<p>If you liked the game, <strong>you can cast a vote</strong> for the game jam here: <a href="https://itch.io/jam/trijam-240/rate/2305047">https://itch.io/jam/trijam-240/rate/2305047</a>.</p>]]></content><author><name></name></author><category term="Article" /><category term="game-jam" /><category term="games" /><category term="made-with-unity" /><category term="trijam" /><category term="blazorame" /><summary type="html"><![CDATA[Last weekend I participated in Trijam #240.]]></summary></entry><entry><title type="html">Trijam 239 entry&amp;amp;colon; I need a medic - crossword</title><link href="http://diegogiacomelli.com.br/trijam-239-entry-i-need-a-medic-crossword/" rel="alternate" type="text/html" title="Trijam 239 entry&amp;amp;colon; I need a medic - crossword" /><published>2023-10-02T00:00:00-03:00</published><updated>2023-10-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/trijam-239-entry-i-need-a-medic-crossword</id><content type="html" xml:base="http://diegogiacomelli.com.br/trijam-239-entry-i-need-a-medic-crossword/"><![CDATA[<p>Last weekend I participated in <strong><a href="https://itch.io/jam/trijam-239">Trijam #239</a></strong>.</p>
+<p>If you liked the game, <strong>you can cast a vote</strong> for the game jam here: <a href="https://itch.io/jam/trijam-240/rate/2305047">https://itch.io/jam/trijam-240/rate/2305047</a>.</p>]]></content><author><name></name></author><category term="Article" /><category term="game-jam" /><category term="games" /><category term="trijam" /><category term="blazorame" /><summary type="html"><![CDATA[Last weekend I participated in Trijam #240.]]></summary></entry><entry><title type="html">Trijam 239 entry&amp;amp;colon; I need a medic - crossword</title><link href="http://diegogiacomelli.com.br/trijam-239-entry-i-need-a-medic-crossword/" rel="alternate" type="text/html" title="Trijam 239 entry&amp;amp;colon; I need a medic - crossword" /><published>2023-10-02T00:00:00-03:00</published><updated>2023-10-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/trijam-239-entry-i-need-a-medic-crossword</id><content type="html" xml:base="http://diegogiacomelli.com.br/trijam-239-entry-i-need-a-medic-crossword/"><![CDATA[<p>Last weekend I participated in <strong><a href="https://itch.io/jam/trijam-239">Trijam #239</a></strong>.</p>
 
 <blockquote>
   <p>Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.</p>
@@ -131,7 +217,7 @@ You have two types of enemies:</p>
       </center>
 
 <h2 id="how-to-vote">How to vote</h2>
-<p>If you liked the game, <strong>you can cast a vote</strong> for the game jam here: <a href="https://itch.io/jam/trijam-239/rate/2291731">https://itch.io/jam/trijam-239/rate/2291731</a>.</p>]]></content><author><name></name></author><category term="Article" /><category term="game-jam" /><category term="games" /><category term="made-with-unity" /><category term="trijam" /><category term="blazorame" /><summary type="html"><![CDATA[Last weekend I participated in Trijam #239.]]></summary></entry><entry><title type="html">Scientific papers using GeneticSharp (october 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (october 2022)" /><published>2022-11-17T00:00:00-03:00</published><updated>2022-11-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/"><![CDATA[<p>In October 2022 I discovered (TBH, Google Scholar notified me) that three new scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a> have been developed.</p>
+<p>If you liked the game, <strong>you can cast a vote</strong> for the game jam here: <a href="https://itch.io/jam/trijam-239/rate/2291731">https://itch.io/jam/trijam-239/rate/2291731</a>.</p>]]></content><author><name></name></author><category term="Article" /><category term="game-jam" /><category term="games" /><category term="trijam" /><category term="blazorame" /><summary type="html"><![CDATA[Last weekend I participated in Trijam #239.]]></summary></entry><entry><title type="html">Scientific papers using GeneticSharp (october 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (october 2022)" /><published>2022-11-17T00:00:00-03:00</published><updated>2022-11-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-october-2022/"><![CDATA[<p>In October 2022 I discovered (TBH, Google Scholar notified me) that three new scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a> have been developed.</p>
 
 <p>Below you can appreciate them:</p>
 
