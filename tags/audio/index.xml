@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - audio</title>
  <link href="//tags/audio/index.xml" rel="self"/>
  <link href="/tag/audio.html"/>
- <updated>2023-11-02T12:52:55-03:00</updated>
+ <updated>2023-11-03T14:56:34-03:00</updated>
  <id>/tag/audio.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -16,7 +16,7 @@
    <id>//geneticsharp-in-the-wild-procedural-music-generation</id>
    <content type="html">&lt;p&gt;I started a &lt;a href=&quot;/tags/geneticsharp-in-the-wild/&quot;&gt;series of posts&lt;/a&gt; about some outstanding scientific papers and projects using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;For this fifth post the choose one is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;State of the Art in Procedural Music Generation using Genetic Algorithms and Rule Based GA Implementation with Attractor Waves&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For this fifth post the chosen one is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;State of the Art in Procedural Music Generation using Genetic Algorithms and Rule Based GA Implementation with Attractor Waves&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;The act of composing a piece of music in regarded as a creative process which encompasses objective and subjective rules. Objective rules can be pointed as the minimum necessary ones so that a given composition is considered structurally valid –
