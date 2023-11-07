@@ -3,11 +3,144 @@
  <title>Diego Giacomelli - t4-template</title>
  <link href="//tags/t4-template/index.xml" rel="self"/>
  <link href="/tag/t4-template.html"/>
- <updated>2023-11-03T14:56:34-03:00</updated>
+ <updated>2023-11-07T03:37:10-03:00</updated>
  <id>/tag/t4-template.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Using localized exception messages with T4 Templates</title>
+   <link href="//using-localized-exception-messages-with-t4-templates/"/>
+   <updated>2023-11-06T00:00:00-03:00</updated>
+   <id>//using-localized-exception-messages-with-t4-templates</id>
+   <content type="html">&lt;p&gt;A common scenario in many projects is to use a &lt;a href=&quot;https://learn.microsoft.com/en-us/dotnet/core/extensions/create-resource-files#resources-in-resx-files&quot;&gt;Resource File (.resx)&lt;/a&gt; to store exception/validation messages.&lt;/p&gt;
+
+&lt;p&gt;An important and useful feature of the .resx files is that you can have one file for each culture that your application supports. For example, you can have one &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ErrorsMessages.resx&lt;/code&gt; as the default to support &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;en-US&lt;/code&gt; (English - United States) messages and another with the name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ErrorsMessages.pt-BR.resx&lt;/code&gt; to support &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pt-BR&lt;/code&gt; (Portuguese - Brazil) messages.&lt;/p&gt;
+
+&lt;p&gt;In this tutorial I will show you how to use a T4 Template to read the .resx file and generate a helper class to make very easy handle localized exception messages.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;It is not the aim of this tutorial to go into details on how to work with T4 Templates, to do so read the documentation &lt;a href=&quot;https://learn.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates&quot;&gt;Code Generation and T4 Text Templates&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;creating-the-resx-files&quot;&gt;Creating the .resx files&lt;/h2&gt;
+&lt;p&gt;Open your .NET project where you want to have your localized exception messages (probably a class library).&lt;/p&gt;
+
+&lt;h4 id=&quot;creating-the-english-fallback-messages-resource-file&quot;&gt;Creating the English (fallback) messages resource file&lt;/h4&gt;
+&lt;p&gt;Add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Resources file&lt;/code&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ErrorMessages.resx&lt;/code&gt; to the project:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-200-21dfcc93f.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-400-21dfcc93f.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.webp 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-928-21dfcc93f.webp 928w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-200-21dfcc93f.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-400-21dfcc93f.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.png 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-928-21dfcc93f.png 928w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.png&quot; alt=&quot;post image&quot; width=&quot;928&quot; height=&quot;644&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This file will contain the English exception messages for your project. It is also a fallback, if there is no other match for the current UICulture, this one will be used.&lt;/p&gt;
+
+&lt;p&gt;Add these lines to the file:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ProductHasMinWeight: The product ‘{0}’ must weigh at least {1}.&lt;/li&gt;
+  &lt;li&gt;PropertyIsRequired: The property ‘{0}’ is required.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-200-20ded552b.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-400-20ded552b.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.webp 594w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-200-20ded552b.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-400-20ded552b.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.png 594w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.png&quot; alt=&quot;post image&quot; width=&quot;594&quot; height=&quot;151&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;creating-the-brazilian-portuguese-messages-resource-file&quot;&gt;Creating the Brazilian Portuguese messages resource file&lt;/h4&gt;
+&lt;p&gt;Repeat the same process, but name the file as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ErrorMessages-pt-BR.resx&lt;/code&gt;.
+This file will contain your projects Brazilian Portuguese exception messages.&lt;/p&gt;
+
+&lt;p&gt;Add these lines to the file:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ProductHasMinWeight: O produto ‘{0}’ deve pesar pelo menos {1}.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;PropertyIsRequired&lt;/td&gt;
+          &lt;td&gt;A propriedade ‘{0}’ é obrigatória.&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;creating-the-t4-template&quot;&gt;Creating the T4 Template&lt;/h2&gt;
+&lt;p&gt;Create a T4 template file in the same folder where you placed the .resx files, named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors.tt&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-200-732a441d6.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-400-732a441d6.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.webp 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-946-732a441d6.webp 946w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-200-732a441d6.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-400-732a441d6.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.png 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-946-732a441d6.png 946w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.png&quot; alt=&quot;post image&quot; width=&quot;946&quot; height=&quot;662&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, copy the content below to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors.tt&lt;/code&gt;:
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Errors.tt&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;generating-the-code&quot;&gt;Generating the code&lt;/h2&gt;
+&lt;p&gt;If everything looks good, you should see the following code in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors.generated.cs&lt;/code&gt; file (expand &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors.tt&lt;/code&gt; in Solution Explorer to see it):&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Errors.generated.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, two methods were generated within the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors&lt;/code&gt; class: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PropertyIsRequired&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ProductHasMinWeight&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Every time you add, update or remove lines to .resx files and want your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors&lt;/code&gt; class to be updated, just go to the menu “Build / Transform All T4 Templates”.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;validating-the-generated-code&quot;&gt;Validating the generated code&lt;/h3&gt;
+&lt;p&gt;If you want to validate that you have followed the tutorial correctly so far, you can create the NUnit project and add this test fixture:
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=ErrorsTest.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;customizing-the-t4-template&quot;&gt;Customizing the T4 Template​&lt;/h3&gt;
+&lt;p&gt;You’ve probably noticed that inside the .tt file there is a line: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHANGE THE VALUES BELOW TO THE VALUES CORRESPONDING TO YOUR PROJECT&lt;/code&gt;.
+In the 3 variables below this line you can customize the name of the resource file, the exception class that will be used (maybe you want to use a different exception or your project has a custom one) and the namespace that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Error&lt;/code&gt; class will be in.
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=custom.tt&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;using-the-generated-code&quot;&gt;Using the generated code&lt;/h2&gt;
+&lt;p&gt;Finally it’s time to use the generated code.&lt;/p&gt;
+
+&lt;h3 id=&quot;propertyisrequired&quot;&gt;PropertyIsRequired&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=PropertyIsRequired.sample.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;In this case, it will be generate a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;InvalidOperationException&lt;/code&gt; with the message:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;If UICulture is pt-BR: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A propriedade 'First Name' é obrigatória.&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Otherwise: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The property 'First Name' is required.&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;producthasminweight&quot;&gt;ProductHasMinWeight&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=ProductHasMinWeight.sample.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;In this case, it will be generate a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;InvalidOperationException&lt;/code&gt; with the message:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;If UICulture is pt-BR: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;O produto 'Amazing Product' deve pesar pelo menos 1KG.&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Otherwise: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The product 'Amazing Product' must weigh at least 1KG.&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Error.tt&lt;/code&gt; checks for any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{number}&lt;/code&gt; within the message and generates the appropriate method arguments.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;aspnet-tip&quot;&gt;ASP.NET tip&lt;/h2&gt;
+&lt;p&gt;If you want to use this technique in an ASP.NET project remember to enable localization in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Startup.cs&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Program.cs&lt;/code&gt; file:
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Startup.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;T4 is a powerful tool to help create an efficient development flow in the .NET stack. In cases like this tutorial, it drastically reduces the amount of code and improves the overall availability of the codebase.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Deploying a T4 Template with dotnet pack</title>

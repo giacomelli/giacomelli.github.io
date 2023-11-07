@@ -3,11 +3,370 @@
  <title>Diego Giacomelli - csharp</title>
  <link href="//tags/csharp/index.xml" rel="self"/>
  <link href="/tag/csharp.html"/>
- <updated>2023-11-03T14:56:34-03:00</updated>
+ <updated>2023-11-07T03:37:10-03:00</updated>
  <id>/tag/csharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Using localized exception messages with T4 Templates</title>
+   <link href="//using-localized-exception-messages-with-t4-templates/"/>
+   <updated>2023-11-06T00:00:00-03:00</updated>
+   <id>//using-localized-exception-messages-with-t4-templates</id>
+   <content type="html">&lt;p&gt;A common scenario in many projects is to use a &lt;a href=&quot;https://learn.microsoft.com/en-us/dotnet/core/extensions/create-resource-files#resources-in-resx-files&quot;&gt;Resource File (.resx)&lt;/a&gt; to store exception/validation messages.&lt;/p&gt;
+
+&lt;p&gt;An important and useful feature of the .resx files is that you can have one file for each culture that your application supports. For example, you can have one &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ErrorsMessages.resx&lt;/code&gt; as the default to support &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;en-US&lt;/code&gt; (English - United States) messages and another with the name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ErrorsMessages.pt-BR.resx&lt;/code&gt; to support &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pt-BR&lt;/code&gt; (Portuguese - Brazil) messages.&lt;/p&gt;
+
+&lt;p&gt;In this tutorial I will show you how to use a T4 Template to read the .resx file and generate a helper class to make very easy handle localized exception messages.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;It is not the aim of this tutorial to go into details on how to work with T4 Templates, to do so read the documentation &lt;a href=&quot;https://learn.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates&quot;&gt;Code Generation and T4 Text Templates&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;creating-the-resx-files&quot;&gt;Creating the .resx files&lt;/h2&gt;
+&lt;p&gt;Open your .NET project where you want to have your localized exception messages (probably a class library).&lt;/p&gt;
+
+&lt;h4 id=&quot;creating-the-english-fallback-messages-resource-file&quot;&gt;Creating the English (fallback) messages resource file&lt;/h4&gt;
+&lt;p&gt;Add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Resources file&lt;/code&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ErrorMessages.resx&lt;/code&gt; to the project:&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-200-21dfcc93f.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-400-21dfcc93f.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.webp 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-928-21dfcc93f.webp 928w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-200-21dfcc93f.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-400-21dfcc93f.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.png 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-928-21dfcc93f.png 928w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.png&quot; alt=&quot;post image&quot; width=&quot;928&quot; height=&quot;644&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This file will contain the English exception messages for your project. It is also a fallback, if there is no other match for the current UICulture, this one will be used.&lt;/p&gt;
+
+&lt;p&gt;Add these lines to the file:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ProductHasMinWeight: The product ‘{0}’ must weigh at least {1}.&lt;/li&gt;
+  &lt;li&gt;PropertyIsRequired: The property ‘{0}’ is required.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-200-20ded552b.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-400-20ded552b.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.webp 594w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-200-20ded552b.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-400-20ded552b.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.png 594w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.png&quot; alt=&quot;post image&quot; width=&quot;594&quot; height=&quot;151&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;creating-the-brazilian-portuguese-messages-resource-file&quot;&gt;Creating the Brazilian Portuguese messages resource file&lt;/h4&gt;
+&lt;p&gt;Repeat the same process, but name the file as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ErrorMessages-pt-BR.resx&lt;/code&gt;.
+This file will contain your projects Brazilian Portuguese exception messages.&lt;/p&gt;
+
+&lt;p&gt;Add these lines to the file:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ProductHasMinWeight: O produto ‘{0}’ deve pesar pelo menos {1}.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;PropertyIsRequired&lt;/td&gt;
+          &lt;td&gt;A propriedade ‘{0}’ é obrigatória.&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;creating-the-t4-template&quot;&gt;Creating the T4 Template&lt;/h2&gt;
+&lt;p&gt;Create a T4 template file in the same folder where you placed the .resx files, named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors.tt&lt;/code&gt;.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-200-732a441d6.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-400-732a441d6.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.webp 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-946-732a441d6.webp 946w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-200-732a441d6.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-400-732a441d6.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.png 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-946-732a441d6.png 946w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.png&quot; alt=&quot;post image&quot; width=&quot;946&quot; height=&quot;662&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, copy the content below to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors.tt&lt;/code&gt;:
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Errors.tt&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;generating-the-code&quot;&gt;Generating the code&lt;/h2&gt;
+&lt;p&gt;If everything looks good, you should see the following code in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors.generated.cs&lt;/code&gt; file (expand &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors.tt&lt;/code&gt; in Solution Explorer to see it):&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Errors.generated.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, two methods were generated within the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors&lt;/code&gt; class: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PropertyIsRequired&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ProductHasMinWeight&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;Every time you add, update or remove lines to .resx files and want your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors&lt;/code&gt; class to be updated, just go to the menu “Build / Transform All T4 Templates”.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;validating-the-generated-code&quot;&gt;Validating the generated code&lt;/h3&gt;
+&lt;p&gt;If you want to validate that you have followed the tutorial correctly so far, you can create the NUnit project and add this test fixture:
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=ErrorsTest.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;customizing-the-t4-template&quot;&gt;Customizing the T4 Template​&lt;/h3&gt;
+&lt;p&gt;You’ve probably noticed that inside the .tt file there is a line: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHANGE THE VALUES BELOW TO THE VALUES CORRESPONDING TO YOUR PROJECT&lt;/code&gt;.
+In the 3 variables below this line you can customize the name of the resource file, the exception class that will be used (maybe you want to use a different exception or your project has a custom one) and the namespace that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Error&lt;/code&gt; class will be in.
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=custom.tt&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;using-the-generated-code&quot;&gt;Using the generated code&lt;/h2&gt;
+&lt;p&gt;Finally it’s time to use the generated code.&lt;/p&gt;
+
+&lt;h3 id=&quot;propertyisrequired&quot;&gt;PropertyIsRequired&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=PropertyIsRequired.sample.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;In this case, it will be generate a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;InvalidOperationException&lt;/code&gt; with the message:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;If UICulture is pt-BR: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A propriedade 'First Name' é obrigatória.&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Otherwise: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The property 'First Name' is required.&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;producthasminweight&quot;&gt;ProductHasMinWeight&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=ProductHasMinWeight.sample.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;In this case, it will be generate a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;InvalidOperationException&lt;/code&gt; with the message:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;If UICulture is pt-BR: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;O produto 'Amazing Product' deve pesar pelo menos 1KG.&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Otherwise: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The product 'Amazing Product' must weigh at least 1KG.&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Error.tt&lt;/code&gt; checks for any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{number}&lt;/code&gt; within the message and generates the appropriate method arguments.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;aspnet-tip&quot;&gt;ASP.NET tip&lt;/h2&gt;
+&lt;p&gt;If you want to use this technique in an ASP.NET project remember to enable localization in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Startup.cs&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Program.cs&lt;/code&gt; file:
+&lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Startup.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;T4 is a powerful tool to help create an efficient development flow in the .NET stack. In cases like this tutorial, it drastically reduces the amount of code and improves the overall availability of the codebase.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>6 modern C# features for cleaner Unity code</title>
+   <link href="//6-modern-csharp-features-for-cleaner-unity-code/"/>
+   <updated>2022-11-15T00:00:00-03:00</updated>
+   <id>//6-modern-csharp-features-for-cleaner-unity-code</id>
+   <content type="html">&lt;p&gt;Since C# 7.0, many code improvements that help us write less code have been added to the language.&lt;/p&gt;
+
+&lt;p&gt;This tutorial will focus on six new features that can help us write more concise and readable code and how we can use these features on our C# for Unity.&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;&lt;p&gt;I originally wrote this post as a guest writer for &lt;a href=&quot;https://blog.logrocket.com/6-modern-c-sharp-features-cleaner-unity-code/&quot;&gt;LogRocket’s blog&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;tutorial-sections&quot;&gt;Tutorial sections&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prerequisites&lt;/li&gt;
+  &lt;li&gt;Setting up our Unity project&lt;/li&gt;
+  &lt;li&gt;Tutorial structure&lt;/li&gt;
+  &lt;li&gt;C# features support in Unity&lt;/li&gt;
+  &lt;li&gt;Switch expression&lt;/li&gt;
+  &lt;li&gt;Property pattern&lt;/li&gt;
+  &lt;li&gt;Type pattern&lt;/li&gt;
+  &lt;li&gt;Constant pattern&lt;/li&gt;
+  &lt;li&gt;Relational pattern&lt;/li&gt;
+  &lt;li&gt;Logical pattern&lt;/li&gt;
+  &lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;The following prerequisites are required to follow along with this tutorial:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Basic knowledge of Unity&lt;/li&gt;
+  &lt;li&gt;Previous experience writing C# scripts in Unity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setting-up-our-unity-project&quot;&gt;Setting up our Unity project&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;First, we need to create our Unity project. For this tutorial, we’ll use the version 2021.3.4f1, which, at the moment I’m writing, is the newest LTS Unity version.&lt;/p&gt;
+
+&lt;p&gt;On the project templates list, choose 2D(core), give it a name, and click the Create project button.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-1cab31008.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-1cab31008.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.webp 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-1cab31008.webp 1224w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-1cab31008.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-1cab31008.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.png 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-1cab31008.png 1224w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.png&quot; alt=&quot;post image&quot; width=&quot;1224&quot; height=&quot;712&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+With the project started, create two folders called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scripts&lt;/code&gt; inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets&lt;/code&gt; folder. We’ll use them to keep our project organized during the tutorial.&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-d4f7ca06e.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-d4f7ca06e.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.webp 528w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-d4f7ca06e.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-d4f7ca06e.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.png 528w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.png&quot; alt=&quot;post image&quot; width=&quot;528&quot; height=&quot;192&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tutorial-structure&quot;&gt;Tutorial structure&lt;/h2&gt;
+&lt;p&gt;For each sample of how to use the new C# feature, we will first look at how it was done before and then how we could write less and more readable code with the new feature.&lt;/p&gt;
+
+&lt;p&gt;The classes below are just stubs that are used on all samples throughout the tutorial. You can add them to a script inside the `Scripts folder:
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=base.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;c-features-support-in-unity&quot;&gt;C# features support in Unity&lt;/h2&gt;
+&lt;p&gt;In C# versions 8 and 9, a lot of new features were added to the language. You can read the full features list for each version in the links below:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8&quot;&gt;What’s new in C# 8.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9&quot;&gt;What’s new in C# 9.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;c-8-and-9-features-in-unity-whats-missing&quot;&gt;C# 8 and 9 features in Unity: What’s missing?&lt;/h3&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;Unity support for C# 8 has started on version &lt;a href=&quot;https://docs.unity3d.com/2020.2/Documentation/Manual/CSharpCompiler.html&quot;&gt;2020.2&lt;/a&gt; and C# 9 has started on version &lt;a href=&quot;https://docs.unity3d.com/2021.2/Documentation/Manual/CSharpCompiler.html&quot;&gt;2021.2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Be aware that not every C# 8 and 9 feature is supported by Unity, like:&lt;/li&gt;
+  &lt;li&gt;default interface methods&lt;/li&gt;
+  &lt;li&gt;indices and ranges&lt;/li&gt;
+  &lt;li&gt;asynchronous streams&lt;/li&gt;
+  &lt;li&gt;asynchronous disposable&lt;/li&gt;
+  &lt;li&gt;suppress emitting locals init flag&lt;/li&gt;
+  &lt;li&gt;covariant return types&lt;/li&gt;
+  &lt;li&gt;module initializers&lt;/li&gt;
+  &lt;li&gt;extensible calling conventions for unmanaged function pointers&lt;/li&gt;
+  &lt;li&gt;init only setters&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of these unsupported features are used in very specific scenarios, like &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/function-pointers&quot;&gt;extensible calling conventions for unmanaged function pointers&lt;/a&gt;, and some aren’t, like &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#indices-and-ranges&quot;&gt;indices and ranges&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Because of this, features like indices and ranges and init only setters will likely be supported in future versions of Unity. However, the chance of an unsupported feature for a very specific scenario gaining Unity support in the future is smaller than a feature like &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#indices-and-ranges&quot;&gt;indices and ranges&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Maybe you can find some workarounds to use these unsupported features in Unity, but I discourage you from doing this because Unity is a cross-platform game engine. A workaround in a new feature could lead you to problems quite hard to understand, debug, and resolve.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, Unity supports some of the more common patterns and expressions from C# 8 and 9. Let’s review some of the most helpful ones below and see how they can enable us to write cleaner code.&lt;/p&gt;
+
+&lt;h2 id=&quot;switch-expression&quot;&gt;Switch expression&lt;/h2&gt;
+&lt;p&gt;The switch expression can dramatically simplify and reduce the LOC (Lines Of Code) to make a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;, because we can avoid a bunch of boilerplate code, like the case and return statements.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#switch-expressions&quot;&gt;Doc tip&lt;/a&gt;: the switch expression provides for switch-like semantics in an expression context. It provides a concise syntax when the switch arms produce a value.&lt;/p&gt;
+
+  &lt;p&gt;Often, a switch statement produces a value in each of its case blocks. Switch expressions enable you to use more concise expression syntax. There are fewer repetitive case and break keywords and fewer curly braces.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;before&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=switch-expression-before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=switch-expression-after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;property-pattern&quot;&gt;Property pattern&lt;/h2&gt;
+&lt;p&gt;The property pattern enables you to match on properties of the object examined in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt; expression.&lt;/p&gt;
+
+&lt;p&gt;As you can see in the sample below, using a property pattern, we can transform a series of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if&lt;/code&gt; statements into a simple list of properties that the object on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt; statement should match.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_ =&amp;gt;&lt;/code&gt; has the same meaning as the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default&lt;/code&gt; on a classic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#property-patterns&quot;&gt;Doc tip&lt;/a&gt;: a property pattern matches an expression when an expression result is non-null and every nested pattern matches the corresponding property or field of the expression result.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;before-1&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=property-pattern-before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-1&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=property-pattern-after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;type-pattern&quot;&gt;Type pattern&lt;/h2&gt;
+&lt;p&gt;We can use type patterns to check if the runtime type of an expression is compatible with a given type.&lt;/p&gt;
+
+&lt;p&gt;The type pattern is almost the same logic as a property pattern but is now used in a context of an object type. We can transform a series of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if&lt;/code&gt; statements that check an object type into a list of types that the object on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt; statement should match.&lt;/p&gt;
+
+&lt;h3 id=&quot;before-2&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=type-pattern-before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-2&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=type-pattern-after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Using the type pattern, we go from 16 lines of code to only 8 that have the same result and are quite clear to read and understand.&lt;/p&gt;
+
+&lt;h2 id=&quot;constant-pattern&quot;&gt;Constant pattern&lt;/h2&gt;
+&lt;p&gt;A constant pattern can be used to test if an expression result equals a specified constant.&lt;/p&gt;
+
+&lt;p&gt;Probably the simplest pattern match, it just matches a constant value (for instance, a string) and then returns the result.&lt;/p&gt;
+
+&lt;h3 id=&quot;before-3&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=constant-pattern-before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-3&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=constant-pattern-after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;A constant pattern can be used with any constant expression, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int, float, char, string, bool, and enum&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;relational-pattern&quot;&gt;Relational pattern&lt;/h2&gt;
+&lt;p&gt;A relational pattern will compare an expression result with a constant.&lt;/p&gt;
+
+&lt;p&gt;This one could seem the most complex pattern match, but at its core it’s not that complicated. What we can do with a Relational Pattern is directly use logical operators as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;, &amp;gt;, &amp;lt;=, or &amp;gt;=&lt;/code&gt; to evaluate the object and then provide a result for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#relational-patterns&quot;&gt;Doc tip&lt;/a&gt;: the right-hand part of a relational pattern must be a constant expression.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;before-4&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=relational-pattern-before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-4&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=relational-pattern-after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Any of the relational operators &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;, &amp;gt;, &amp;lt;=, or &amp;gt;=&lt;/code&gt; can be used on a relational pattern.&lt;/p&gt;
+
+&lt;h2 id=&quot;logical-pattern&quot;&gt;Logical pattern&lt;/h2&gt;
+&lt;p&gt;We can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;not&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;and&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;or&lt;/code&gt; pattern combinators to create logical expressions.&lt;/p&gt;
+
+&lt;p&gt;This is like an extension of the relational pattern where you can combine the logical operators not, and, and or to create a more complex and elaborate pattern match.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#logical-patterns&quot;&gt;Doc tip&lt;/a&gt;: you use the not, and, and or pattern combinators to create the following logical patterns:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Negation not pattern that matches an expression when the negated pattern doesn’t match the expression&lt;/li&gt;
+    &lt;li&gt;Conjunctive and pattern that matches an expression when both patterns match the expression&lt;/li&gt;
+    &lt;li&gt;Disjunctive or pattern that matches an expression when either pattern matches the expression&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;before-5&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=logical-pattern-before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-5&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=logical-pattern-after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;In this tutorial, we’ve learned how to use the switch expression, property pattern, type pattern, constant pattern, relational pattern, and logical pattern to write less and more modern C# code on Unity.&lt;/p&gt;
+
+&lt;p&gt;Hopefully, you can use some of these in your next project to spare yourself time while writing cleaner code.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>HTML5 audio tag, large files and ASP .NET</title>

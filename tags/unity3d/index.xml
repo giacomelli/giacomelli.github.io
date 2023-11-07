@@ -3,237 +3,11 @@
  <title>Diego Giacomelli - unity3d</title>
  <link href="//tags/unity3d/index.xml" rel="self"/>
  <link href="/tag/unity3d.html"/>
- <updated>2023-11-03T14:56:34-03:00</updated>
+ <updated>2023-11-07T03:37:10-03:00</updated>
  <id>/tag/unity3d.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
- 
- <entry>
-   <title>6 modern C# features for cleaner Unity code</title>
-   <link href="//6-modern-csharp-features-for-cleaner-unity-code/"/>
-   <updated>2022-11-15T00:00:00-03:00</updated>
-   <id>//6-modern-csharp-features-for-cleaner-unity-code</id>
-   <content type="html">&lt;p&gt;Since C# 7.0, many code improvements that help us write less code have been added to the language.&lt;/p&gt;
-
-&lt;p&gt;This tutorial will focus on six new features that can help us write more concise and readable code and how we can use these features on our C# for Unity.&lt;/p&gt;
-
-&lt;div class=&quot;note&quot;&gt;&lt;p&gt;I originally wrote this post as a guest writer for &lt;a href=&quot;https://blog.logrocket.com/6-modern-c-sharp-features-cleaner-unity-code/&quot;&gt;LogRocket’s blog&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;tutorial-sections&quot;&gt;Tutorial sections&lt;/h2&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Prerequisites&lt;/li&gt;
-  &lt;li&gt;Setting up our Unity project&lt;/li&gt;
-  &lt;li&gt;Tutorial structure&lt;/li&gt;
-  &lt;li&gt;C# features support in Unity&lt;/li&gt;
-  &lt;li&gt;Switch expression&lt;/li&gt;
-  &lt;li&gt;Property pattern&lt;/li&gt;
-  &lt;li&gt;Type pattern&lt;/li&gt;
-  &lt;li&gt;Constant pattern&lt;/li&gt;
-  &lt;li&gt;Relational pattern&lt;/li&gt;
-  &lt;li&gt;Logical pattern&lt;/li&gt;
-  &lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
-&lt;p&gt;The following prerequisites are required to follow along with this tutorial:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Basic knowledge of Unity&lt;/li&gt;
-  &lt;li&gt;Previous experience writing C# scripts in Unity&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;setting-up-our-unity-project&quot;&gt;Setting up our Unity project&lt;/h2&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;First, we need to create our Unity project. For this tutorial, we’ll use the version 2021.3.4f1, which, at the moment I’m writing, is the newest LTS Unity version.&lt;/p&gt;
-
-&lt;p&gt;On the project templates list, choose 2D(core), give it a name, and click the Create project button.&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-1cab31008.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-1cab31008.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.webp 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-1cab31008.webp 1224w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-1cab31008.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-1cab31008.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.png 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-1cab31008.png 1224w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.png&quot; alt=&quot;post image&quot; width=&quot;1224&quot; height=&quot;712&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-With the project started, create two folders called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scripts&lt;/code&gt; inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets&lt;/code&gt; folder. We’ll use them to keep our project organized during the tutorial.&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-d4f7ca06e.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-d4f7ca06e.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.webp 528w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-d4f7ca06e.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-d4f7ca06e.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.png 528w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.png&quot; alt=&quot;post image&quot; width=&quot;528&quot; height=&quot;192&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;tutorial-structure&quot;&gt;Tutorial structure&lt;/h2&gt;
-&lt;p&gt;For each sample of how to use the new C# feature, we will first look at how it was done before and then how we could write less and more readable code with the new feature.&lt;/p&gt;
-
-&lt;p&gt;The classes below are just stubs that are used on all samples throughout the tutorial. You can add them to a script inside the `Scripts folder:
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=base.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;c-features-support-in-unity&quot;&gt;C# features support in Unity&lt;/h2&gt;
-&lt;p&gt;In C# versions 8 and 9, a lot of new features were added to the language. You can read the full features list for each version in the links below:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8&quot;&gt;What’s new in C# 8.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9&quot;&gt;What’s new in C# 9.0&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;c-8-and-9-features-in-unity-whats-missing&quot;&gt;C# 8 and 9 features in Unity: What’s missing?&lt;/h3&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;Unity support for C# 8 has started on version &lt;a href=&quot;https://docs.unity3d.com/2020.2/Documentation/Manual/CSharpCompiler.html&quot;&gt;2020.2&lt;/a&gt; and C# 9 has started on version &lt;a href=&quot;https://docs.unity3d.com/2021.2/Documentation/Manual/CSharpCompiler.html&quot;&gt;2021.2&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Be aware that not every C# 8 and 9 feature is supported by Unity, like:&lt;/li&gt;
-  &lt;li&gt;default interface methods&lt;/li&gt;
-  &lt;li&gt;indices and ranges&lt;/li&gt;
-  &lt;li&gt;asynchronous streams&lt;/li&gt;
-  &lt;li&gt;asynchronous disposable&lt;/li&gt;
-  &lt;li&gt;suppress emitting locals init flag&lt;/li&gt;
-  &lt;li&gt;covariant return types&lt;/li&gt;
-  &lt;li&gt;module initializers&lt;/li&gt;
-  &lt;li&gt;extensible calling conventions for unmanaged function pointers&lt;/li&gt;
-  &lt;li&gt;init only setters&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Most of these unsupported features are used in very specific scenarios, like &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/function-pointers&quot;&gt;extensible calling conventions for unmanaged function pointers&lt;/a&gt;, and some aren’t, like &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#indices-and-ranges&quot;&gt;indices and ranges&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Because of this, features like indices and ranges and init only setters will likely be supported in future versions of Unity. However, the chance of an unsupported feature for a very specific scenario gaining Unity support in the future is smaller than a feature like &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#indices-and-ranges&quot;&gt;indices and ranges&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Maybe you can find some workarounds to use these unsupported features in Unity, but I discourage you from doing this because Unity is a cross-platform game engine. A workaround in a new feature could lead you to problems quite hard to understand, debug, and resolve.&lt;/p&gt;
-
-&lt;p&gt;Fortunately, Unity supports some of the more common patterns and expressions from C# 8 and 9. Let’s review some of the most helpful ones below and see how they can enable us to write cleaner code.&lt;/p&gt;
-
-&lt;h2 id=&quot;switch-expression&quot;&gt;Switch expression&lt;/h2&gt;
-&lt;p&gt;The switch expression can dramatically simplify and reduce the LOC (Lines Of Code) to make a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;, because we can avoid a bunch of boilerplate code, like the case and return statements.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#switch-expressions&quot;&gt;Doc tip&lt;/a&gt;: the switch expression provides for switch-like semantics in an expression context. It provides a concise syntax when the switch arms produce a value.&lt;/p&gt;
-
-  &lt;p&gt;Often, a switch statement produces a value in each of its case blocks. Switch expressions enable you to use more concise expression syntax. There are fewer repetitive case and break keywords and fewer curly braces.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;before&quot;&gt;Before&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=switch-expression-before.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h3 id=&quot;after&quot;&gt;After&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=switch-expression-after.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;property-pattern&quot;&gt;Property pattern&lt;/h2&gt;
-&lt;p&gt;The property pattern enables you to match on properties of the object examined in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt; expression.&lt;/p&gt;
-
-&lt;p&gt;As you can see in the sample below, using a property pattern, we can transform a series of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if&lt;/code&gt; statements into a simple list of properties that the object on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt; statement should match.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_ =&amp;gt;&lt;/code&gt; has the same meaning as the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default&lt;/code&gt; on a classic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#property-patterns&quot;&gt;Doc tip&lt;/a&gt;: a property pattern matches an expression when an expression result is non-null and every nested pattern matches the corresponding property or field of the expression result.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;before-1&quot;&gt;Before&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=property-pattern-before.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h3 id=&quot;after-1&quot;&gt;After&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=property-pattern-after.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;type-pattern&quot;&gt;Type pattern&lt;/h2&gt;
-&lt;p&gt;We can use type patterns to check if the runtime type of an expression is compatible with a given type.&lt;/p&gt;
-
-&lt;p&gt;The type pattern is almost the same logic as a property pattern but is now used in a context of an object type. We can transform a series of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if&lt;/code&gt; statements that check an object type into a list of types that the object on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt; statement should match.&lt;/p&gt;
-
-&lt;h3 id=&quot;before-2&quot;&gt;Before&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=type-pattern-before.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h3 id=&quot;after-2&quot;&gt;After&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=type-pattern-after.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Using the type pattern, we go from 16 lines of code to only 8 that have the same result and are quite clear to read and understand.&lt;/p&gt;
-
-&lt;h2 id=&quot;constant-pattern&quot;&gt;Constant pattern&lt;/h2&gt;
-&lt;p&gt;A constant pattern can be used to test if an expression result equals a specified constant.&lt;/p&gt;
-
-&lt;p&gt;Probably the simplest pattern match, it just matches a constant value (for instance, a string) and then returns the result.&lt;/p&gt;
-
-&lt;h3 id=&quot;before-3&quot;&gt;Before&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=constant-pattern-before.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h3 id=&quot;after-3&quot;&gt;After&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=constant-pattern-after.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;A constant pattern can be used with any constant expression, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int, float, char, string, bool, and enum&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;relational-pattern&quot;&gt;Relational pattern&lt;/h2&gt;
-&lt;p&gt;A relational pattern will compare an expression result with a constant.&lt;/p&gt;
-
-&lt;p&gt;This one could seem the most complex pattern match, but at its core it’s not that complicated. What we can do with a Relational Pattern is directly use logical operators as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;, &amp;gt;, &amp;lt;=, or &amp;gt;=&lt;/code&gt; to evaluate the object and then provide a result for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;switch&lt;/code&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#relational-patterns&quot;&gt;Doc tip&lt;/a&gt;: the right-hand part of a relational pattern must be a constant expression.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;before-4&quot;&gt;Before&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=relational-pattern-before.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h3 id=&quot;after-4&quot;&gt;After&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=relational-pattern-after.cs&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Any of the relational operators &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;, &amp;gt;, &amp;lt;=, or &amp;gt;=&lt;/code&gt; can be used on a relational pattern.&lt;/p&gt;
-
-&lt;h2 id=&quot;logical-pattern&quot;&gt;Logical pattern&lt;/h2&gt;
-&lt;p&gt;We can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;not&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;and&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;or&lt;/code&gt; pattern combinators to create logical expressions.&lt;/p&gt;
-
-&lt;p&gt;This is like an extension of the relational pattern where you can combine the logical operators not, and, and or to create a more complex and elaborate pattern match.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#logical-patterns&quot;&gt;Doc tip&lt;/a&gt;: you use the not, and, and or pattern combinators to create the following logical patterns:&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Negation not pattern that matches an expression when the negated pattern doesn’t match the expression&lt;/li&gt;
-    &lt;li&gt;Conjunctive and pattern that matches an expression when both patterns match the expression&lt;/li&gt;
-    &lt;li&gt;Disjunctive or pattern that matches an expression when either pattern matches the expression&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;before-5&quot;&gt;Before&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=logical-pattern-before.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h3 id=&quot;after-5&quot;&gt;After&lt;/h3&gt;
-&lt;script src=&quot;https://gist.github.com/7c30665bc635b4950a9b949e4de7516d.js?file=logical-pattern-after.cs&quot;&gt; &lt;/script&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
-&lt;/picture&gt;
-
-&lt;p&gt;In this tutorial, we’ve learned how to use the switch expression, property pattern, type pattern, constant pattern, relational pattern, and logical pattern to write less and more modern C# code on Unity.&lt;/p&gt;
-
-&lt;p&gt;Hopefully, you can use some of these in your next project to spare yourself time while writing cleaner code.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Icons made by &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vignesh-oviyan&quot;&gt;Vignesh Oviyan&lt;/a&gt; and &lt;a href=&quot;https://www.flaticon.com/authors/eucalyp&quot; title=&quot;Eucalyp&quot;&gt;Eucalyp&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;www.flaticon.com&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;Creative Commons BY 3.0&lt;/a&gt;&lt;/p&gt;
-</content>
- </entry>
  
  <entry>
    <title>Free eBooks by Unity</title>
@@ -245,8 +19,8 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Thereupon, I created this post to list those eBooks. If you know any other of them created by Unity’s team let me know in the comments and I’ll update the post.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Last updated on 08/06/2023&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Currently listing 57 eBooks&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Last updated on 03/11/2023&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Currently listing 59 eBooks&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;2d&quot;&gt;2D&lt;/h3&gt;
@@ -263,8 +37,8 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h3 id=&quot;arvr&quot;&gt;AR/VR&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDIxMDAwJnY9MSZpc3N1ZU5hbWU9Zm91ci1iaWctY29uc3RydWN0aW9uLXByb2JsZW1zLXNvbHZlZC1ieS1hci1hbmQtdnImY21kPWQmc2lnPWUwNWViMmY1MmNjNTQ3NGQ3YjM1YjQwZTc1OWJiMTIx&quot;&gt;Four big construction problems solved by AR and VR&lt;/a&gt; 🆕&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDc3NjMwJnY9MSZpc3N1ZU5hbWU9MjAyMi10aGUtZW5lcmd5LXRyYW5zaXRpb24tZWJvb2smY21kPWQmc2lnPTNlNGIwMTc1YzNjYmZkMzgwZjk0Mjc1M2QwNGU0YTNk&quot;&gt;The energy transition: How real-time 3D technology can support a low-carbon economy&lt;/a&gt; 🆕&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDIxMDAwJnY9MSZpc3N1ZU5hbWU9Zm91ci1iaWctY29uc3RydWN0aW9uLXByb2JsZW1zLXNvbHZlZC1ieS1hci1hbmQtdnImY21kPWQmc2lnPWUwNWViMmY1MmNjNTQ3NGQ3YjM1YjQwZTc1OWJiMTIx&quot;&gt;Four big construction problems solved by AR and VR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDc3NjMwJnY9MSZpc3N1ZU5hbWU9MjAyMi10aGUtZW5lcmd5LXRyYW5zaXRpb24tZWJvb2smY21kPWQmc2lnPTNlNGIwMTc1YzNjYmZkMzgwZjk0Mjc1M2QwNGU0YTNk&quot;&gt;The energy transition: How real-time 3D technology can support a low-carbon economy&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;case-study&quot;&gt;Case study&lt;/h3&gt;
@@ -273,7 +47,7 @@ With the project started, create two folders called &lt;code class=&quot;languag
   &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B16c8de91-64fe-46c7-899a-5a45ace2ba60%7D_Gameloft_-_Bringing_new_ideas_to_reality_faster.pdf&quot;&gt;Gameloft - Bringing new ideas to reality faster&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xMzg1NTc2JnY9NCZpc3N1ZU5hbWU9dWdzLW5pZnR5LWdhbWVzLWNhc2Utc3R1ZHktMSZjbWQ9ZCZzaWc9YmIyN2Q5OTUwZDAxNTFiNmZiZDhkMWI0OWNhMzZlMzM%253D&quot;&gt;How Nifty Games keeps live operations lean and flexible&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDQ5MzQ1JnY9MSZpc3N1ZU5hbWU9dW5pY28tc3R1ZGlvLWNhc2Utc3R1ZHkmY21kPWQmc2lnPTA4NmVmNDFkNTE2YzY3ZWE5NzZjN2FjNDNlZTU1MDgy&quot;&gt;Find out how Unico boosted their KPIs and improved player engagement&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDk1MTkyJnY9MSZpc3N1ZU5hbWU9MjAyMy11bml0eS1pbW1vcnRhbGl0eS1jYXNlLXN0dWR5JmNtZD1kJnNpZz1jNTlhMTBmYzRhYTZjZTc0N2M0MGQ5NjBiYTU1YmYyYQ%253D%253D&quot;&gt;How Unity’s flexibility helps power IMMORTALITY’s unique gameplay and storytelling&lt;/a&gt; 🆕&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDk1MTkyJnY9MSZpc3N1ZU5hbWU9MjAyMy11bml0eS1pbW1vcnRhbGl0eS1jYXNlLXN0dWR5JmNtZD1kJnNpZz1jNTlhMTBmYzRhYTZjZTc0N2M0MGQ5NjBiYTU1YmYyYQ%253D%253D&quot;&gt;How Unity’s flexibility helps power IMMORTALITY’s unique gameplay and storytelling&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDQ5MDU0JnY9MSZpc3N1ZU5hbWU9SG93IFVuaXR5IGhlbHBlZCBNaW1pbWnigJlzIERlc3BlcmFkb3MgSUlJIHJpdmFsIG1lZ2Etc3R1ZGlvIHJlbGVhc2VzJmNtZD1kJnNpZz1iYjBlMDEyYmIyYjVhMjQ1MjVkMGYzMDFhNmE2YjNmZg%253D%253D&quot;&gt;How Mimimi made Desperados III a huge success with a small team&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDY3ODE0JnY9MSZpc3N1ZU5hbWU9bG9zdC1pbi1yYW5kb20tY2FzZS1zdHVkeSZjbWQ9ZCZzaWc9MjEwM2Q3N2Y5NTVhYTFiOTIyN2IxMTBlNGQ1ZTYyYjE%253D&quot;&gt;How Thunderful Games rolled a AAA hit with “dice opera” fantasy Lost in Random&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDM2ODE0JnY9MSZpc3N1ZU5hbWU9dGVhbS0xNy1jYXNlLXN0dWR5JmNtZD1kJnNpZz1iYjY1NTlmMzQ5MjFiMzFiY2UzNDM0NjVlYmUzN2JjZg%253D%253D&quot;&gt;How Team17 uses Unity Integrated Success to ship their games on time&lt;/a&gt;&lt;/li&gt;
@@ -327,8 +101,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h3 id=&quot;mobile&quot;&gt;Mobile&lt;/h3&gt;
 &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B24ec70e4-1024-46a4-a7c3-24834e26afcb%7D_Unity_Games_ABM_E-book.pdf&quot;&gt;6 solutions to future proof your mobile game optimization and operation&lt;/a&gt;🆕&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://cdn.unity3d.com/media/2022-bestpracticesmobile-ebook.pdf&quot;&gt;Best practices from successful mobile indies&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDgyMTMxJnY9MSZpc3N1ZU5hbWU9MjAyMi1maXZlc3RyYXRlZ2llc21vYmlsZWdhbWV3aW5uZXItZWJvb2stdjQtMSZjbWQ9ZCZzaWc9OGJiOTM0ZjM5ZmQ0ZTYwOTJlYzQ5Y2I4OTU2M2YwZWM%253D&quot;&gt;Five strategies to ensure your next mobile game is a success&lt;/a&gt; 🆕&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDgyMTMxJnY9MSZpc3N1ZU5hbWU9MjAyMi1maXZlc3RyYXRlZ2llc21vYmlsZWdhbWV3aW5uZXItZWJvb2stdjQtMSZjbWQ9ZCZzaWc9OGJiOTM0ZjM5ZmQ0ZTYwOTJlYzQ5Y2I4OTU2M2YwZWM%253D&quot;&gt;Five strategies to ensure your next mobile game is a success&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDcxOTMzJnY9MSZpc3N1ZU5hbWU9Y3J5aW5nLXN1bnMtY2FzZS1zdHVkeSZjbWQ9ZCZzaWc9NTI2NTFjYzQxNDAwMDk5NTA3MmI4YmY5MDZmYWFhY2E%253D&quot;&gt;How Alt Shift brought their story-rich spacefaring experience to mobile&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://images.response.unity3d.com/Web/Unity/%7B53677c96-8761-4852-9699-67fb3702e97c%7D_Unity-MobileTrends2022-Ebook.pdf&quot;&gt;Mobile Game Trends - What you need to know for 2022&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -357,7 +132,7 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;h3 id=&quot;programming&quot;&gt;Programming&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDc4MTU1JnY9MSZpc3N1ZU5hbWU9Y3JlYXRlLWEtYy1zdHlsZS1ndWlkZS13cml0ZS1jbGVhbmVyLWNvZGUtdGhhdC1zY2FsZXMmY21kPWQmc2lnPTU5NjljY2NjZmUwYWM3YjUzNTlmNjAyMGVmOGY5MmQ3&quot;&gt;Create C# Style Guide: Write cleaner code that scales&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDk3MDQ2JnY9MiZpc3N1ZU5hbWU9Y3JlYXRlLW1vZHVsYXItZ2FtZS1hcmNoaXRlY3R1cmUtaW4tdW5pdHktd2l0aC1zY3JpcHRhYmxlb2JqZWN0cyZjbWQ9ZCZzaWc9MmUwMTAzMjA1ZjczZWRiYmQzNmUxODViOTZkYTQ0MTk%253D&quot;&gt;Create modular game architecture in Unity with ScriptableObjects&lt;/a&gt; 🆕&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDk3MDQ2JnY9MiZpc3N1ZU5hbWU9Y3JlYXRlLW1vZHVsYXItZ2FtZS1hcmNoaXRlY3R1cmUtaW4tdW5pdHktd2l0aC1zY3JpcHRhYmxlb2JqZWN0cyZjbWQ9ZCZzaWc9MmUwMTAzMjA1ZjczZWRiYmQzNmUxODViOTZkYTQ0MTk%253D&quot;&gt;Create modular game architecture in Unity with ScriptableObjects&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDgxMzIzJnY9MSZpc3N1ZU5hbWU9bGV2ZWwtdXAteW91ci1jb2RlLXdpdGgtZ2FtZS1wcm9ncmFtbWluZy1wYXR0ZXJucyZjbWQ9ZCZzaWc9YjU2NzExOGI3MWZiMWZjN2ZkMzdhMDE2NDkwMDE4Nzk%253D&quot;&gt;Level up your code with game programming patterns&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -378,6 +153,7 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h3 id=&quot;vfx&quot;&gt;VFX&lt;/h3&gt;
 &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNTAyMDQ2JnY9MSZpc3N1ZU5hbWU9dGhlLXVuaXZlcnNhbC1yZW5kZXItcGlwZWxpbmUtY29va2Jvb2stcmVjaXBlcy1mb3Itc2hhZGVycy1hbmQtdmlzdWFsLWVmZmVjdHMtdW5pdHktMjAyMi1sdHMtZWRpdGlvbiZjbWQ9ZCZzaWc9MzZjZTkwMDVkNWI3ODU5M2JhNDEyMmVmNjMxMWE5Mzc%253D&quot;&gt;Recipes for shaders and visual effects&lt;/a&gt; 🆕&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://content.cdntwrk.com/files/aT0xNDg1OTkyJnY9MiZpc3N1ZU5hbWU9dGhlLWRlZmluaXRpdmUtZ3VpZGUtdG8tY3JlYXRpbmctYWR2YW5jZWQtdmlzdWFsLWVmZmVjdHMtaW4tdW5pdHkmY21kPWQmc2lnPTcxYTU3NGI5ZDZhZmI5MmU0MzIxOThjNDRjZWM2MmMy&quot;&gt;The definitive guide to creating advanced visual effects in Unity&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 

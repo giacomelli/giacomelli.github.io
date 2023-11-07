@@ -1,4 +1,128 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-11-03T14:56:34-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Web API | Framework | Azure | Unity 3D</subtitle><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Simulation-based layout optimization for multi-station assembly lines</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-simulation-based-layout-optimization/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;amp;colon; Simulation-based layout optimization for multi-station assembly lines" /><published>2023-11-02T00:00:00-03:00</published><updated>2023-11-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-simulation-based-layout-optimization</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-simulation-based-layout-optimization/"><![CDATA[<p>I started a <a href="/tags/geneticsharp-in-the-wild/">series of posts</a> about some outstanding scientific papers and projects using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-11-07T03:37:10-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Web API | Framework | Azure | Unity 3D</subtitle><entry><title type="html">Using localized exception messages with T4 Templates</title><link href="http://diegogiacomelli.com.br/using-localized-exception-messages-with-t4-templates/" rel="alternate" type="text/html" title="Using localized exception messages with T4 Templates" /><published>2023-11-06T00:00:00-03:00</published><updated>2023-11-06T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/using-localized-exception-messages-with-t4-templates</id><content type="html" xml:base="http://diegogiacomelli.com.br/using-localized-exception-messages-with-t4-templates/"><![CDATA[<p>A common scenario in many projects is to use a <a href="https://learn.microsoft.com/en-us/dotnet/core/extensions/create-resource-files#resources-in-resx-files">Resource File (.resx)</a> to store exception/validation messages.</p>
+
+<p>An important and useful feature of the .resx files is that you can have one file for each culture that your application supports. For example, you can have one <code class="language-plaintext highlighter-rouge">ErrorsMessages.resx</code> as the default to support <code class="language-plaintext highlighter-rouge">en-US</code> (English - United States) messages and another with the name <code class="language-plaintext highlighter-rouge">ErrorsMessages.pt-BR.resx</code> to support <code class="language-plaintext highlighter-rouge">pt-BR</code> (Portuguese - Brazil) messages.</p>
+
+<p>In this tutorial I will show you how to use a T4 Template to read the .resx file and generate a helper class to make very easy handle localized exception messages.</p>
+
+<div class="note"><p>It is not the aim of this tutorial to go into details on how to work with T4 Templates, to do so read the documentation <a href="https://learn.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates">Code Generation and T4 Text Templates</a></p>
+</div>
+
+<h2 id="creating-the-resx-files">Creating the .resx files</h2>
+<p>Open your .NET project where you want to have your localized exception messages (probably a class library).</p>
+
+<h4 id="creating-the-english-fallback-messages-resource-file">Creating the English (fallback) messages resource file</h4>
+<p>Add a <code class="language-plaintext highlighter-rouge">Resources file</code> called <code class="language-plaintext highlighter-rouge">ErrorMessages.resx</code> to the project:</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-200-21dfcc93f.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-400-21dfcc93f.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.webp 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-928-21dfcc93f.webp 928w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-200-21dfcc93f.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-400-21dfcc93f.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.png 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-928-21dfcc93f.png 928w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.png" alt="post image" width="928" height="644" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>This file will contain the English exception messages for your project. It is also a fallback, if there is no other match for the current UICulture, this one will be used.</p>
+
+<p>Add these lines to the file:</p>
+<ul>
+  <li>ProductHasMinWeight: The product ‘{0}’ must weigh at least {1}.</li>
+  <li>PropertyIsRequired: The property ‘{0}’ is required.</li>
+</ul>
+
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-200-20ded552b.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-400-20ded552b.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.webp 594w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-200-20ded552b.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-400-20ded552b.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.png 594w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.png" alt="post image" width="594" height="151" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<h4 id="creating-the-brazilian-portuguese-messages-resource-file">Creating the Brazilian Portuguese messages resource file</h4>
+<p>Repeat the same process, but name the file as <code class="language-plaintext highlighter-rouge">ErrorMessages-pt-BR.resx</code>.
+This file will contain your projects Brazilian Portuguese exception messages.</p>
+
+<p>Add these lines to the file:</p>
+<ul>
+  <li>ProductHasMinWeight: O produto ‘{0}’ deve pesar pelo menos {1}.</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>PropertyIsRequired</td>
+          <td>A propriedade ‘{0}’ é obrigatória.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h2 id="creating-the-t4-template">Creating the T4 Template</h2>
+<p>Create a T4 template file in the same folder where you placed the .resx files, named <code class="language-plaintext highlighter-rouge">Errors.tt</code>.</p>
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-200-732a441d6.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-400-732a441d6.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.webp 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-946-732a441d6.webp 946w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-200-732a441d6.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-400-732a441d6.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.png 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-946-732a441d6.png 946w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.png" alt="post image" width="946" height="662" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>Now, copy the content below to your <code class="language-plaintext highlighter-rouge">Errors.tt</code>:
+<script src="https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Errors.tt"> </script></p>
+
+<h2 id="generating-the-code">Generating the code</h2>
+<p>If everything looks good, you should see the following code in the <code class="language-plaintext highlighter-rouge">Errors.generated.cs</code> file (expand <code class="language-plaintext highlighter-rouge">Errors.tt</code> in Solution Explorer to see it):<script src="https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Errors.generated.cs"> </script></p>
+
+<p>As you can see, two methods were generated within the <code class="language-plaintext highlighter-rouge">Errors</code> class: <code class="language-plaintext highlighter-rouge">PropertyIsRequired</code> and <code class="language-plaintext highlighter-rouge">ProductHasMinWeight</code>.</p>
+
+<div class="note"><p>Every time you add, update or remove lines to .resx files and want your <code class="language-plaintext highlighter-rouge">Errors</code> class to be updated, just go to the menu “Build / Transform All T4 Templates”.</p>
+</div>
+
+<h3 id="validating-the-generated-code">Validating the generated code</h3>
+<p>If you want to validate that you have followed the tutorial correctly so far, you can create the NUnit project and add this test fixture:
+<script src="https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=ErrorsTest.cs"> </script></p>
+
+<h3 id="customizing-the-t4-template">Customizing the T4 Template​</h3>
+<p>You’ve probably noticed that inside the .tt file there is a line: <code class="language-plaintext highlighter-rouge">CHANGE THE VALUES BELOW TO THE VALUES CORRESPONDING TO YOUR PROJECT</code>.
+In the 3 variables below this line you can customize the name of the resource file, the exception class that will be used (maybe you want to use a different exception or your project has a custom one) and the namespace that the <code class="language-plaintext highlighter-rouge">Error</code> class will be in.
+<script src="https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=custom.tt"> </script></p>
+
+<h2 id="using-the-generated-code">Using the generated code</h2>
+<p>Finally it’s time to use the generated code.</p>
+
+<h3 id="propertyisrequired">PropertyIsRequired</h3>
+<script src="https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=PropertyIsRequired.sample.cs"> </script>
+
+<p>In this case, it will be generate a <code class="language-plaintext highlighter-rouge">InvalidOperationException</code> with the message:</p>
+<ul>
+  <li>If UICulture is pt-BR: <code class="language-plaintext highlighter-rouge">A propriedade 'First Name' é obrigatória.</code></li>
+  <li>Otherwise: <code class="language-plaintext highlighter-rouge">The property 'First Name' is required.</code></li>
+</ul>
+
+<h3 id="producthasminweight">ProductHasMinWeight</h3>
+<script src="https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=ProductHasMinWeight.sample.cs"> </script>
+
+<p>In this case, it will be generate a <code class="language-plaintext highlighter-rouge">InvalidOperationException</code> with the message:</p>
+<ul>
+  <li>If UICulture is pt-BR: <code class="language-plaintext highlighter-rouge">O produto 'Amazing Product' deve pesar pelo menos 1KG.</code></li>
+  <li>Otherwise: <code class="language-plaintext highlighter-rouge">The product 'Amazing Product' must weigh at least 1KG.</code></li>
+</ul>
+
+<div class="note"><p><code class="language-plaintext highlighter-rouge">Error.tt</code> checks for any <code class="language-plaintext highlighter-rouge">{number}</code> within the message and generates the appropriate method arguments.</p>
+</div>
+
+<h2 id="aspnet-tip">ASP.NET tip</h2>
+<p>If you want to use this technique in an ASP.NET project remember to enable localization in the <code class="language-plaintext highlighter-rouge">Startup.cs</code> or <code class="language-plaintext highlighter-rouge">Program.cs</code> file:
+<script src="https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Startup.cs"> </script></p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>T4 is a powerful tool to help create an efficient development flow in the .NET stack. In cases like this tutorial, it drastically reduces the amount of code and improves the overall availability of the codebase.</p>
+
+<p><br /><br /><br />Icons made by <a href="http://www.freepik.com">Freepik</a>, <a href="http://www.flaticon.com/authors/vignesh-oviyan">Vignesh Oviyan</a> and <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="http://www.flaticon.com">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons BY 3.0</a></p>]]></content><author><name></name></author><category term="Tutorial" /><category term="dotnet" /><category term="csharp" /><category term="t4-template" /><summary type="html"><![CDATA[A common scenario in many projects is to use a Resource File (.resx) to store exception/validation messages.]]></summary></entry><entry><title type="html">GeneticSharp in the Wild&amp;amp;colon; Simulation-based layout optimization for multi-station assembly lines</title><link href="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-simulation-based-layout-optimization/" rel="alternate" type="text/html" title="GeneticSharp in the Wild&amp;amp;colon; Simulation-based layout optimization for multi-station assembly lines" /><published>2023-11-02T00:00:00-03:00</published><updated>2023-11-02T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/geneticsharp-in-the-wild-simulation-based-layout-optimization</id><content type="html" xml:base="http://diegogiacomelli.com.br/geneticsharp-in-the-wild-simulation-based-layout-optimization/"><![CDATA[<p>I started a <a href="/tags/geneticsharp-in-the-wild/">series of posts</a> about some outstanding scientific papers and projects using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
 
 <p>For this sixth post the chosen one is the <code class="language-plaintext highlighter-rouge">Simulation-based layout optimization for multi-station assembly lines</code>.</p>
 
@@ -475,7 +599,7 @@ With the project started, create two folders called <code class="language-plaint
 
 <p>Hopefully, you can use some of these in your next project to spare yourself time while writing cleaner code.</p>
 
-<p><br /><br /><br />Icons made by <a href="http://www.freepik.com">Freepik</a>, <a href="http://www.flaticon.com/authors/vignesh-oviyan">Vignesh Oviyan</a> and <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="http://www.flaticon.com">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons BY 3.0</a></p>]]></content><author><name></name></author><category term="Tutorial" /><category term="unity3d" /><category term="gamedev" /><category term="logrocket" /><summary type="html"><![CDATA[Since C# 7.0, many code improvements that help us write less code have been added to the language.]]></summary></entry><entry><title type="html">Scientific papers using GeneticSharp (september 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (september 2022)" /><published>2022-10-17T00:00:00-03:00</published><updated>2022-10-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/"><![CDATA[<p>In September 2022 I discovered (TBH, Google Scholar notified me) that five new scientific papers using  <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a> have been developed.</p>
+<p><br /><br /><br />Icons made by <a href="http://www.freepik.com">Freepik</a>, <a href="http://www.flaticon.com/authors/vignesh-oviyan">Vignesh Oviyan</a> and <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="http://www.flaticon.com">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons BY 3.0</a></p>]]></content><author><name></name></author><category term="Tutorial" /><category term="dotnet" /><category term="csharp" /><category term="logrocket" /><summary type="html"><![CDATA[Since C# 7.0, many code improvements that help us write less code have been added to the language.]]></summary></entry><entry><title type="html">Scientific papers using GeneticSharp (september 2022)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (september 2022)" /><published>2022-10-17T00:00:00-03:00</published><updated>2022-10-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-september-2022/"><![CDATA[<p>In September 2022 I discovered (TBH, Google Scholar notified me) that five new scientific papers using  <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a> have been developed.</p>
 
 <p>Below you can appreciate them:</p>
 
@@ -659,8 +783,8 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 <p>Thereupon, I created this post to list those eBooks. If you know any other of them created by Unity’s team let me know in the comments and I’ll update the post.</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">Last updated on 08/06/2023</code></li>
-  <li><code class="language-plaintext highlighter-rouge">Currently listing 57 eBooks</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Last updated on 03/11/2023</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Currently listing 59 eBooks</code></li>
 </ul>
 
 <h3 id="2d">2D</h3>
@@ -677,8 +801,8 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 
 <h3 id="arvr">AR/VR</h3>
 <ul>
-  <li><a href="https://content.cdntwrk.com/files/aT0xNDIxMDAwJnY9MSZpc3N1ZU5hbWU9Zm91ci1iaWctY29uc3RydWN0aW9uLXByb2JsZW1zLXNvbHZlZC1ieS1hci1hbmQtdnImY21kPWQmc2lnPWUwNWViMmY1MmNjNTQ3NGQ3YjM1YjQwZTc1OWJiMTIx">Four big construction problems solved by AR and VR</a> 🆕</li>
-  <li><a href="https://content.cdntwrk.com/files/aT0xNDc3NjMwJnY9MSZpc3N1ZU5hbWU9MjAyMi10aGUtZW5lcmd5LXRyYW5zaXRpb24tZWJvb2smY21kPWQmc2lnPTNlNGIwMTc1YzNjYmZkMzgwZjk0Mjc1M2QwNGU0YTNk">The energy transition: How real-time 3D technology can support a low-carbon economy</a> 🆕</li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDIxMDAwJnY9MSZpc3N1ZU5hbWU9Zm91ci1iaWctY29uc3RydWN0aW9uLXByb2JsZW1zLXNvbHZlZC1ieS1hci1hbmQtdnImY21kPWQmc2lnPWUwNWViMmY1MmNjNTQ3NGQ3YjM1YjQwZTc1OWJiMTIx">Four big construction problems solved by AR and VR</a></li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDc3NjMwJnY9MSZpc3N1ZU5hbWU9MjAyMi10aGUtZW5lcmd5LXRyYW5zaXRpb24tZWJvb2smY21kPWQmc2lnPTNlNGIwMTc1YzNjYmZkMzgwZjk0Mjc1M2QwNGU0YTNk">The energy transition: How real-time 3D technology can support a low-carbon economy</a></li>
 </ul>
 
 <h3 id="case-study">Case study</h3>
@@ -687,7 +811,7 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
   <li><a href="https://images.response.unity3d.com/Web/Unity/%7B16c8de91-64fe-46c7-899a-5a45ace2ba60%7D_Gameloft_-_Bringing_new_ideas_to_reality_faster.pdf">Gameloft - Bringing new ideas to reality faster</a></li>
   <li><a href="https://content.cdntwrk.com/files/aT0xMzg1NTc2JnY9NCZpc3N1ZU5hbWU9dWdzLW5pZnR5LWdhbWVzLWNhc2Utc3R1ZHktMSZjbWQ9ZCZzaWc9YmIyN2Q5OTUwZDAxNTFiNmZiZDhkMWI0OWNhMzZlMzM%253D">How Nifty Games keeps live operations lean and flexible</a></li>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDQ5MzQ1JnY9MSZpc3N1ZU5hbWU9dW5pY28tc3R1ZGlvLWNhc2Utc3R1ZHkmY21kPWQmc2lnPTA4NmVmNDFkNTE2YzY3ZWE5NzZjN2FjNDNlZTU1MDgy">Find out how Unico boosted their KPIs and improved player engagement</a></li>
-  <li><a href="https://content.cdntwrk.com/files/aT0xNDk1MTkyJnY9MSZpc3N1ZU5hbWU9MjAyMy11bml0eS1pbW1vcnRhbGl0eS1jYXNlLXN0dWR5JmNtZD1kJnNpZz1jNTlhMTBmYzRhYTZjZTc0N2M0MGQ5NjBiYTU1YmYyYQ%253D%253D">How Unity’s flexibility helps power IMMORTALITY’s unique gameplay and storytelling</a> 🆕</li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDk1MTkyJnY9MSZpc3N1ZU5hbWU9MjAyMy11bml0eS1pbW1vcnRhbGl0eS1jYXNlLXN0dWR5JmNtZD1kJnNpZz1jNTlhMTBmYzRhYTZjZTc0N2M0MGQ5NjBiYTU1YmYyYQ%253D%253D">How Unity’s flexibility helps power IMMORTALITY’s unique gameplay and storytelling</a></li>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDQ5MDU0JnY9MSZpc3N1ZU5hbWU9SG93IFVuaXR5IGhlbHBlZCBNaW1pbWnigJlzIERlc3BlcmFkb3MgSUlJIHJpdmFsIG1lZ2Etc3R1ZGlvIHJlbGVhc2VzJmNtZD1kJnNpZz1iYjBlMDEyYmIyYjVhMjQ1MjVkMGYzMDFhNmE2YjNmZg%253D%253D">How Mimimi made Desperados III a huge success with a small team</a></li>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDY3ODE0JnY9MSZpc3N1ZU5hbWU9bG9zdC1pbi1yYW5kb20tY2FzZS1zdHVkeSZjbWQ9ZCZzaWc9MjEwM2Q3N2Y5NTVhYTFiOTIyN2IxMTBlNGQ1ZTYyYjE%253D">How Thunderful Games rolled a AAA hit with “dice opera” fantasy Lost in Random</a></li>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDM2ODE0JnY9MSZpc3N1ZU5hbWU9dGVhbS0xNy1jYXNlLXN0dWR5JmNtZD1kJnNpZz1iYjY1NTlmMzQ5MjFiMzFiY2UzNDM0NjVlYmUzN2JjZg%253D%253D">How Team17 uses Unity Integrated Success to ship their games on time</a></li>
@@ -741,8 +865,9 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 
 <h3 id="mobile">Mobile</h3>
 <ul>
+  <li><a href="https://images.response.unity3d.com/Web/Unity/%7B24ec70e4-1024-46a4-a7c3-24834e26afcb%7D_Unity_Games_ABM_E-book.pdf">6 solutions to future proof your mobile game optimization and operation</a>🆕</li>
   <li><a href="https://cdn.unity3d.com/media/2022-bestpracticesmobile-ebook.pdf">Best practices from successful mobile indies</a></li>
-  <li><a href="https://content.cdntwrk.com/files/aT0xNDgyMTMxJnY9MSZpc3N1ZU5hbWU9MjAyMi1maXZlc3RyYXRlZ2llc21vYmlsZWdhbWV3aW5uZXItZWJvb2stdjQtMSZjbWQ9ZCZzaWc9OGJiOTM0ZjM5ZmQ0ZTYwOTJlYzQ5Y2I4OTU2M2YwZWM%253D">Five strategies to ensure your next mobile game is a success</a> 🆕</li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDgyMTMxJnY9MSZpc3N1ZU5hbWU9MjAyMi1maXZlc3RyYXRlZ2llc21vYmlsZWdhbWV3aW5uZXItZWJvb2stdjQtMSZjbWQ9ZCZzaWc9OGJiOTM0ZjM5ZmQ0ZTYwOTJlYzQ5Y2I4OTU2M2YwZWM%253D">Five strategies to ensure your next mobile game is a success</a></li>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDcxOTMzJnY9MSZpc3N1ZU5hbWU9Y3J5aW5nLXN1bnMtY2FzZS1zdHVkeSZjbWQ9ZCZzaWc9NTI2NTFjYzQxNDAwMDk5NTA3MmI4YmY5MDZmYWFhY2E%253D">How Alt Shift brought their story-rich spacefaring experience to mobile</a></li>
   <li><a href="https://images.response.unity3d.com/Web/Unity/%7B53677c96-8761-4852-9699-67fb3702e97c%7D_Unity-MobileTrends2022-Ebook.pdf">Mobile Game Trends - What you need to know for 2022</a></li>
 </ul>
@@ -771,7 +896,7 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 <h3 id="programming">Programming</h3>
 <ul>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDc4MTU1JnY9MSZpc3N1ZU5hbWU9Y3JlYXRlLWEtYy1zdHlsZS1ndWlkZS13cml0ZS1jbGVhbmVyLWNvZGUtdGhhdC1zY2FsZXMmY21kPWQmc2lnPTU5NjljY2NjZmUwYWM3YjUzNTlmNjAyMGVmOGY5MmQ3">Create C# Style Guide: Write cleaner code that scales</a></li>
-  <li><a href="https://content.cdntwrk.com/files/aT0xNDk3MDQ2JnY9MiZpc3N1ZU5hbWU9Y3JlYXRlLW1vZHVsYXItZ2FtZS1hcmNoaXRlY3R1cmUtaW4tdW5pdHktd2l0aC1zY3JpcHRhYmxlb2JqZWN0cyZjbWQ9ZCZzaWc9MmUwMTAzMjA1ZjczZWRiYmQzNmUxODViOTZkYTQ0MTk%253D">Create modular game architecture in Unity with ScriptableObjects</a> 🆕</li>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNDk3MDQ2JnY9MiZpc3N1ZU5hbWU9Y3JlYXRlLW1vZHVsYXItZ2FtZS1hcmNoaXRlY3R1cmUtaW4tdW5pdHktd2l0aC1zY3JpcHRhYmxlb2JqZWN0cyZjbWQ9ZCZzaWc9MmUwMTAzMjA1ZjczZWRiYmQzNmUxODViOTZkYTQ0MTk%253D">Create modular game architecture in Unity with ScriptableObjects</a></li>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDgxMzIzJnY9MSZpc3N1ZU5hbWU9bGV2ZWwtdXAteW91ci1jb2RlLXdpdGgtZ2FtZS1wcm9ncmFtbWluZy1wYXR0ZXJucyZjbWQ9ZCZzaWc9YjU2NzExOGI3MWZiMWZjN2ZkMzdhMDE2NDkwMDE4Nzk%253D">Level up your code with game programming patterns</a></li>
 </ul>
 
@@ -792,6 +917,7 @@ Overall, many of the generated compositions have a subjective pleasant tone to  
 
 <h3 id="vfx">VFX</h3>
 <ul>
+  <li><a href="https://content.cdntwrk.com/files/aT0xNTAyMDQ2JnY9MSZpc3N1ZU5hbWU9dGhlLXVuaXZlcnNhbC1yZW5kZXItcGlwZWxpbmUtY29va2Jvb2stcmVjaXBlcy1mb3Itc2hhZGVycy1hbmQtdmlzdWFsLWVmZmVjdHMtdW5pdHktMjAyMi1sdHMtZWRpdGlvbiZjbWQ9ZCZzaWc9MzZjZTkwMDVkNWI3ODU5M2JhNDEyMmVmNjMxMWE5Mzc%253D">Recipes for shaders and visual effects</a> 🆕</li>
   <li><a href="https://content.cdntwrk.com/files/aT0xNDg1OTkyJnY9MiZpc3N1ZU5hbWU9dGhlLWRlZmluaXRpdmUtZ3VpZGUtdG8tY3JlYXRpbmctYWR2YW5jZWQtdmlzdWFsLWVmZmVjdHMtaW4tdW5pdHkmY21kPWQmc2lnPTcxYTU3NGI5ZDZhZmI5MmU0MzIxOThjNDRjZWM2MmMy">The definitive guide to creating advanced visual effects in Unity</a></li>
 </ul>
 
