@@ -116,7 +116,7 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
       <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>06/11/2023</span></div>   
       
 
-<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>5 minutes to read</span></div>
+<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>6 minutes to read</span></div>
    
     </div>  
     <p>A common scenario in many projects is to use a <a href="https://learn.microsoft.com/en-us/dotnet/core/extensions/create-resource-files#resources-in-resx-files">Resource File (.resx)</a> to store exception/validation messages.</p>
@@ -239,6 +239,9 @@ In the 3 variables below this line you can customize the name of the resource fi
 <h2 id="aspnet-tip">ASP.NET tip</h2>
 <p>If you want to use this technique in an ASP.NET project remember to enable localization in the <code class="language-plaintext highlighter-rouge">Startup.cs</code> or <code class="language-plaintext highlighter-rouge">Program.cs</code> file:
 <script src="https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Startup.cs"> </script></p>
+
+<h2 id="without-throwing-exceptions">Without throwing exceptions</h2>
+<p>In many projects, throwing exceptions is not possible or desired due to performance and design issues, in these cases you can use the same technique shown in this tutorial, but instead of throwing exceptions, you can adapt T4 to generate an error object business that can go through all layers of your architecture until reaching the UI or the serialization.</p>
 
 <h2 id="conclusion">Conclusion</h2>
 <p>T4 is a powerful tool to help create an efficient development flow in the .NET stack. In cases like this tutorial, it drastically reduces the amount of code and improves the overall availability of the codebase.</p>

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - t4-template</title>
  <link href="//tags/t4-template/index.xml" rel="self"/>
  <link href="/tag/t4-template.html"/>
- <updated>2023-11-07T03:37:10-03:00</updated>
+ <updated>2023-11-07T08:39:28-03:00</updated>
  <id>/tag/t4-template.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -134,6 +134,9 @@ In the 3 variables below this line you can customize the name of the resource fi
 &lt;h2 id=&quot;aspnet-tip&quot;&gt;ASP.NET tip&lt;/h2&gt;
 &lt;p&gt;If you want to use this technique in an ASP.NET project remember to enable localization in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Startup.cs&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Program.cs&lt;/code&gt; file:
 &lt;script src=&quot;https://gist.github.com/6297f4ca7b0be353d92203e5b6364e40.js?file=Startup.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;without-throwing-exceptions&quot;&gt;Without throwing exceptions&lt;/h2&gt;
+&lt;p&gt;In many projects, throwing exceptions is not possible or desired due to performance and design issues, in these cases you can use the same technique shown in this tutorial, but instead of throwing exceptions, you can adapt T4 to generate an error object business that can go through all layers of your architecture until reaching the UI or the serialization.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;T4 is a powerful tool to help create an efficient development flow in the .NET stack. In cases like this tutorial, it drastically reduces the amount of code and improves the overall availability of the codebase.&lt;/p&gt;
