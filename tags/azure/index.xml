@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - azure</title>
  <link href="//tags/azure/index.xml" rel="self"/>
  <link href="/tag/azure.html"/>
- <updated>2023-11-09T06:50:11-03:00</updated>
+ <updated>2023-11-09T07:06:42-03:00</updated>
  <id>/tag/azure.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -14,9 +14,9 @@
    <link href="//azure-utility-belt-azure-diagrams/"/>
    <updated>2023-11-09T00:00:00-03:00</updated>
    <id>//azure-utility-belt-azure-diagrams</id>
-   <content type="html">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/azure-utility-belt/&quot;&gt;series of posts&lt;/a&gt; about some Azure resources that are part of my Azure utility belt and that helps me on my projects.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/azure-utility-belt/&quot;&gt;series of posts&lt;/a&gt; about some Azure resources and tools that are very useful to have in our Azure Utility Belt.&lt;/p&gt;
 
-&lt;p&gt;For this first post, the chosen one is the &lt;strong&gt;&lt;a href=&quot;https://azurediagrams.com/&quot;&gt;Azure Diagrams&lt;/a&gt;&lt;/strong&gt; by &lt;a href=&quot;https://www.linkedin.com/in/shaneochotny/&quot;&gt;Shane Ochotny&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/harshasks/&quot;&gt;Harsha Konduri&lt;/a&gt;, and &lt;a href=&quot;Bret Myers&quot;&gt;Bret Myers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For this first post, the chosen one is the &lt;strong&gt;&lt;a href=&quot;https://azurediagrams.com/&quot;&gt;Azure Diagrams&lt;/a&gt;&lt;/strong&gt; by &lt;a href=&quot;https://www.linkedin.com/in/shaneochotny/&quot;&gt;Shane Ochotny&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/harshasks/&quot;&gt;Harsha Konduri&lt;/a&gt;, and &lt;a href=&quot;https://www.linkedin.com/in/bretamyers/&quot;&gt;Bret Myers&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Azure Diagram is:&lt;/p&gt;
