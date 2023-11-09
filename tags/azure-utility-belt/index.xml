@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Diego Giacomelli - azure-utility-belt</title>
+ <link href="//tags/azure-utility-belt/index.xml" rel="self"/>
+ <link href="/tag/azure-utility-belt.html"/>
+ <updated>2023-11-09T06:50:11-03:00</updated>
+ <id>/tag/azure-utility-belt.html</id>
+ <author>
+   <name>Diego Giacomelli</name>
+ </author>
+ 
+ <entry>
+   <title>Azure Utility Belt&colon; Azure Diagrams</title>
+   <link href="//azure-utility-belt-azure-diagrams/"/>
+   <updated>2023-11-09T00:00:00-03:00</updated>
+   <id>//azure-utility-belt-azure-diagrams</id>
+   <content type="html">&lt;p&gt;I decided to start a &lt;a href=&quot;/tags/azure-utility-belt/&quot;&gt;series of posts&lt;/a&gt; about some Azure resources that are part of my Azure utility belt and that helps me on my projects.&lt;/p&gt;
+
+&lt;p&gt;For this first post, the chosen one is the &lt;strong&gt;&lt;a href=&quot;https://azurediagrams.com/&quot;&gt;Azure Diagrams&lt;/a&gt;&lt;/strong&gt; by &lt;a href=&quot;https://www.linkedin.com/in/shaneochotny/&quot;&gt;Shane Ochotny&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/harshasks/&quot;&gt;Harsha Konduri&lt;/a&gt;, and &lt;a href=&quot;Bret Myers&quot;&gt;Bret Myers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Azure Diagram is:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;an architecture advisor tool that enables you to design diagrams in a collaborative manner and provides guidance on which Azure services can be integrated and when they should be utilized in your architecture.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s amazing how easy it is to create Azure related diagrams in this tool, it’s all there and you can even see which services integrate with each other. Each item in the diagram already has a link to the documentation page, also a link to the price estimate page.&lt;/p&gt;
+
+&lt;p&gt;Using it you have a much better flow for creating diagrams than using a generic tool that knows nothing about Azure services.&lt;/p&gt;
+
+&lt;center&gt;                
+        &lt;img class=&quot;screenshot&quot; src=&quot;/assets/2023/11/09/azure-utility-belt-azure-diagrams/azure-diagrams.gif &quot; alt=&quot;post image&quot; /&gt;
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;For now it is completely free to use, so just create you account at https://azurediagrams.com and enjoy it.&lt;/p&gt;
+</content>
+ </entry>
+ 
+</feed>
