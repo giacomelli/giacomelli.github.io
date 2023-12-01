@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-11-21T13:06:19-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Web API | Framework | Azure | Unity 3D</subtitle><entry><title type="html">Azure Utility Belt&amp;amp;colon; Azure Diagrams</title><link href="http://diegogiacomelli.com.br/azure-utility-belt-azure-diagrams/" rel="alternate" type="text/html" title="Azure Utility Belt&amp;amp;colon; Azure Diagrams" /><published>2023-11-09T00:00:00-03:00</published><updated>2023-11-09T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/azure-utility-belt-azure-diagrams</id><content type="html" xml:base="http://diegogiacomelli.com.br/azure-utility-belt-azure-diagrams/"><![CDATA[<p>I decided to start a <a href="/tags/azure-utility-belt/">series of posts</a> about some Azure resources and tools that are very useful to have in our Azure Utility Belt.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2023-12-01T16:09:45-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Web API | Framework | Azure | Unity 3D</subtitle><entry><title type="html">Microsoft Certified&amp;amp;colon; Azure Fundamentals</title><link href="http://diegogiacomelli.com.br/microsoft-certified-azure-fundamentals/" rel="alternate" type="text/html" title="Microsoft Certified&amp;amp;colon; Azure Fundamentals" /><published>2023-12-01T00:00:00-03:00</published><updated>2023-12-01T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/microsoft-certified-azure-fundamentals</id><content type="html" xml:base="http://diegogiacomelli.com.br/microsoft-certified-azure-fundamentals/"><![CDATA[<p>I’ve been working with Azure for years, but I had never stopped trying an official Microsoft certification until last month and after a month of studies, yesterday (30/11/2023) <strong>I successfully passed the exam for the <a href="https://learn.microsoft.com/en-us/users/giacomelli/credentials/e58521b3d1420cef">Microsoft Certified: Azure Fundamentals (AZ-900)</a></strong>.</p>
+
+<center>                
+        <picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-200-b6f170f33.webp 200w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-400-b6f170f33.webp 400w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-800-b6f170f33.webp 800w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-1267-b6f170f33.webp 1267w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-200-b6f170f33.png 200w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-400-b6f170f33.png 400w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-800-b6f170f33.png 800w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-1267-b6f170f33.png 1267w" type="image/png" />
+  <img class="screenshot" src="/assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-800-b6f170f33.png" alt="post image" width="1267" height="564" />
+</picture>
+
+      </center>
+<p><br /></p>
+
+<p>In the post below I talk a little about the certification and the resources I used to study. If you are also trying to take the exam, it might be helpful.</p>
+
+<h2 id="what-is-az-900">What is AZ-900?</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/problem-128-a3f91d933.png" alt="post image" width="128" height="128" />
+</picture>
+
+<p>I did some research into what the introductory Azure certification should be for a developer and found that <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/">Azure Fundamentals (AZ-900)</a> was the common ground for any professional trying to start obtaining Azure Certifications. Once you have it, you can decide which path you want to take based on your role: administration, data science, development, devops, or networking.</p>
+
+<blockquote>
+  <p>Candidates for this exam are technology professionals who want to demonstrate foundational knowledge of cloud concepts in general and Azure in particular. This certification is a common starting point in a journey towards a career in Azure.</p>
+</blockquote>
+
+<h2 id="what-skills-does-the-certification-measure">What skills does the certification measure?</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png" alt="post image" width="128" height="128" />
+</picture>
+
+<ul>
+  <li>Describe cloud concepts</li>
+  <li>Describe Azure architecture and services</li>
+  <li>Describe Azure management and governance</li>
+</ul>
+
+<p>You can see more details about each topic on <a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900#skills-measured-prior-to-july-31-2023">AZ-900 study guide</a></p>
+
+<h2 id="learning-path">Learning path</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/route-128-704e92446.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/route-128-704e92446.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/route-128-704e92446.png" alt="post image" width="128" height="128" />
+</picture>
+
+<ul>
+  <li>It will be easier if you already have some experience with Azure.</li>
+  <li>Read the <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals">certification page</a></li>
+  <li>Microsoft created a series of learning paths for the AZ-900, each one covering the three main skills measured by the exam:
+    <ul>
+      <li><a href="https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts">Microsoft Azure Fundamentals: Describe cloud concepts</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services">Microsoft Azure Fundamentals: Describe Azure architecture and services</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/">Microsoft Azure Fundamentals: Describe Azure management and governance</a></li>
+    </ul>
+  </li>
+  <li>Another good source of knowledge for the AZ-900 is the online course <a href="https://www.udemy.com/course/az900-azure/">AZ-900: Microsoft Azure Fundamentals Exam Prep</a> by Scott Duffy. I took the course myself and it is very useful to make information more clear. The more than 1 million students the course has are also a good sign of its quality.</li>
+  <li>If you are a Portuguese speaker, you can watch this series of videos from the <a href="https://www.youtube.com/playlist?list=PLz3hnOImntANgM1EyWSGkY4v-7dhWURWt">Canal da Cloud</a></li>
+</ul>
+
+<h2 id="cheking-your-knowledge">Cheking your knowledge</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/test-128-7afecab50.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/test-128-7afecab50.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/test-128-7afecab50.png" alt="post image" width="128" height="128" />
+</picture>
+
+<p>The Scott Duffy course has a 50 questions test to validate your knowledge.</p>
+
+<p>Microsoft also has the <a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/practice/assessment?assessment-type=practice&amp;assessmentId=23">Practice Assessment for Exam AZ-900: Microsoft Azure Fundamentals</a>: a test with 50 questions simulating the questions that can be in the exam. The nice thing about it is that you can check your answer and it will explaining the correct answer and point to the official documentation where you can learn more. My advice is to take some rounds of this practice assessment, because each time a small percentage of the questions are different from the previous one.</p>
+
+<h2 id="taking-the-exam">Taking the exam</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/challenge-128-2cdd65c40.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png" alt="post image" width="128" height="128" />
+</picture>
+
+<p>If you feel prepare to take the exam, you can schedule it with <a href="https://go.microsoft.com/fwlink/?linkid=2188912">Pearson VUE</a>.</p>
+
+<p>Good luck!</p>]]></content><author><name></name></author><category term="Article" /><category term="azure" /><category term="microsoft" /><category term="certification" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Azure Utility Belt&amp;amp;colon; Azure Diagrams</title><link href="http://diegogiacomelli.com.br/azure-utility-belt-azure-diagrams/" rel="alternate" type="text/html" title="Azure Utility Belt&amp;amp;colon; Azure Diagrams" /><published>2023-11-09T00:00:00-03:00</published><updated>2023-11-09T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/azure-utility-belt-azure-diagrams</id><content type="html" xml:base="http://diegogiacomelli.com.br/azure-utility-belt-azure-diagrams/"><![CDATA[<p>I decided to start a <a href="/tags/azure-utility-belt/">series of posts</a> about some Azure resources and tools that are very useful to have in our Azure Utility Belt.</p>
 
 <p>For this first post, the chosen one is the <strong><a href="https://azurediagrams.com/">Azure Diagrams</a></strong> by <a href="https://www.linkedin.com/in/shaneochotny/">Shane Ochotny</a>, <a href="https://www.linkedin.com/in/harshasks/">Harsha Konduri</a>, and <a href="https://www.linkedin.com/in/bretamyers/">Bret Myers</a>.</p>
 

@@ -4,6 +4,14 @@
     
     
     {
+      "title"    : "Microsoft Certified&amp;colon; Azure Fundamentals",
+      "category" : "Article",
+      "tags"     : "azure, microsoft, certification",
+      "url"      : "/microsoft-certified-azure-fundamentals/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "Azure Utility Belt&amp;colon; Azure Diagrams",
       "category" : "Article",
       "tags"     : "azure, diagrams, architecture, azure utility belt",
