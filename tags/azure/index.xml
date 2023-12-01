@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - azure</title>
  <link href="//tags/azure/index.xml" rel="self"/>
  <link href="/tag/azure.html"/>
- <updated>2023-12-01T16:09:45-03:00</updated>
+ <updated>2023-12-01T16:19:13-03:00</updated>
  <id>/tag/azure.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -67,6 +67,7 @@
 &lt;ul&gt;
   &lt;li&gt;It will be easier if you already have some experience with Azure.&lt;/li&gt;
   &lt;li&gt;Read the &lt;a href=&quot;https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals&quot;&gt;certification page&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Watch the &lt;a href=&quot;https://learn.microsoft.com/en-us/shows/exam-readiness-zone/what-to-expect-on-your-microsoft-fundamentals-exam&quot;&gt;What to expect on your Microsoft Fundamentals exam&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Microsoft created a series of learning paths for the AZ-900, each one covering the three main skills measured by the exam:
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts&quot;&gt;Microsoft Azure Fundamentals: Describe cloud concepts&lt;/a&gt;&lt;/li&gt;
