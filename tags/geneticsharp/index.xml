@@ -3,11 +3,69 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2024-02-19T08:03:53-03:00</updated>
+ <updated>2024-04-25T11:57:16-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Scientific papers using GeneticSharp (april 2024)</title>
+   <link href="//scientific-papers-using-geneticharp-april-2024/"/>
+   <updated>2024-04-24T00:00:00-03:00</updated>
+   <id>//scientific-papers-using-geneticharp-april-2024</id>
+   <content type="html">&lt;p&gt;Another round with the newest scientific papers using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;design-and-optimization-of-a-gfrp-and-steel-hybrid-prestressed-sfrc-beam-based-on-numerical-and-analytical-approaches&quot;&gt;Design and optimization of a GFRP and steel hybrid prestressed SFRC beam based on numerical and analytical approaches&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-1-200-0d0953f99.webp 200w, /assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-1-256-0d0953f99.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-1-200-0d0953f99.png 200w, /assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-1-256-0d0953f99.png 256w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-1-256-0d0953f99.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;256&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: 	Due to corrosion immunity, GFRP bars can be used in combination with steel bars and disposed in arrangements that take advantage of their specific properties. Since steel stirrups are the most susceptible to corrosion, significant advantages can be obtained with their replacement by fiber reinforcement, using Steel Fiber Reinforced Concrete (SFRC), which also allows to decrease the thickness of the beam’s web. In addition, prestressing the flexural reinforcement increases the service load-carrying capacity of the beams and their shear strength. This study highlights the flexural performance of hybrid prestressed GFRP-Steel SFRC beams considering the optimum design provided with the use of a genetic algorithm (GA) on simply supported I-shaped beams. The results show that the proposed GA-based optimization procedure provides an effective approach to obtain the balanced reinforcement ratio for these types of beams.&lt;/em&gt; (&lt;a href=&quot;https://repositorium.sdum.uminho.pt/handle/1822/88537&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;software-system-for-intellectual-formation-of-starting-populations&quot;&gt;Software system for intellectual formation of starting populations&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-2-200-f098b293a.webp 200w, /assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-2-256-f098b293a.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-2-200-f098b293a.png 200w, /assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-2-256-f098b293a.png 256w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-2-256-f098b293a.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;256&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: The aim of the study. The main goal of the work is to improve existing methods genetic algorithm software development by providing opportunities for the intellectual formation of initial populations at the expense of  using a component approach&lt;/em&gt; (&lt;a href=&quot;https://ela.kpi.ua/server/api/core/bitstreams/a607c6ea-5dad-411e-96e9-c9f090a123b5/content&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;research-of-lift-and-transport-machine-systems-plot-of-processing-and-food-enterprises&quot;&gt;Research of lift and transport machine systems plot of processing and food enterprises&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-3-200-b955fb2a5.webp 200w, /assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-3-256-b955fb2a5.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-3-200-b955fb2a5.png 200w, /assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-3-256-b955fb2a5.png 256w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-3-256-b955fb2a5.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;256&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: The work solves the actual problem of increasing efficiency production process of obtaining food products based on formation optimal structures of systems of lifting and transport machines of workshops and sites of processing and food enterprises.&lt;/em&gt; (&lt;a href=&quot;http://socrates.vsau.org/b04213/html/cards/getfile.php/29620.pdf&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;automatic-refactoring-for-parallelization&quot;&gt;Automatic refactoring for parallelization&lt;/h1&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-4-200-930625eb9.webp 200w, /assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-4-256-930625eb9.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-4-200-930625eb9.png 200w, /assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-4-256-930625eb9.png 256w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2024/04/24/scientific-papers-using-geneticharp-april-2024/paper-4-256-930625eb9.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;256&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt; 
+&lt;em&gt;Abstract: In modern software, adaptions like the parallelization are necessary to fully leverage the CPU’s capabilities. However, the parallelization introduces a new range of possible software faults. Thus, assisting utilities like static code analyzers are desirable. For instance, ones that inform engineers about the code fragments that can be safely adapted.
+This thesis focuses on loops and introduces a conservative approach to verify that these can be parallelized. More specifically, it allows proofing that array accesses do not conflict between iterations. The procedure is a data flow analysis, which proofs the absence of conflicts by employing rules for a selection of binary expressions. Furthermore, its design allows it to profit from various code optimizations automatically. Experimental evaluations show that both, the prototype and the data flow analysis itself, do not incorrectly identify loops as parallelizable. Moreover, it pinpoints that the analysis can correctly identify most of the parallelizable loops, and only a negligible amount requires a more mature approach.&lt;/em&gt; (&lt;a href=&quot;https://eprints.ost.ch/id/eprint/760&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>GeneticSharp in the Wild&colon; Simulation-based layout optimization for multi-station assembly lines</title>
