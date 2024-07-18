@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2024-07-18T07:44:41-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Azure | Web API | Framework | Unity 3D</subtitle><entry><title type="html">Scientific papers using GeneticSharp (april 2024)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-april-2024/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (april 2024)" /><published>2024-04-24T00:00:00-03:00</published><updated>2024-04-24T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-april-2024</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-april-2024/"><![CDATA[<p>Another round with the newest scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2024-07-18T08:08:08-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Azure | Web API | Framework | Unity 3D</subtitle><entry><title type="html">Scientific papers using GeneticSharp (april 2024)</title><link href="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-april-2024/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (april 2024)" /><published>2024-04-24T00:00:00-03:00</published><updated>2024-04-24T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-april-2024</id><content type="html" xml:base="http://diegogiacomelli.com.br/scientific-papers-using-geneticharp-april-2024/"><![CDATA[<p>Another round with the newest scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
 
 <h1 id="design-and-optimization-of-a-gfrp-and-steel-hybrid-prestressed-sfrc-beam-based-on-numerical-and-analytical-approaches">Design and optimization of a GFRP and steel hybrid prestressed SFRC beam based on numerical and analytical approaches</h1>
 <center>                
@@ -6067,13 +6067,8 @@ improving existing systems as well as in future research.</em></p>
 </div>
 
 <h2 id="tesseractservice">TesseractService</h2>
-<p>I ended up developing the class below to call the <code class="language-plaintext highlighter-rouge">Tesseract 4</code> command-line <code class="language-plaintext highlighter-rouge">(tesseract.exe)</code> directly from the C# code. 
-<!-- /21030289/VerticalBanner --></p>
-<div id="div-gpt-ad-1720643281438-0" style="min-width: 160px; min-height: 600px;">
-    <script>
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1720643281438-0'); });
-    </script>
-</div>
+<p>I ended up developing the class below to call the <code class="language-plaintext highlighter-rouge">Tesseract 4</code> command-line <code class="language-plaintext highlighter-rouge">(tesseract.exe)</code> directly from the C# code.</p>
+
 <script src="https://gist.github.com/ae80c1ed9b374894b21890f1d2dee42a.js?file=TesseractService.cs"> </script>
 
 <h2 id="setup">Setup</h2>
