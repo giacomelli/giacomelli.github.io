@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - sql</title>
  <link href="//tags/sql/index.xml" rel="self"/>
  <link href="/tag/sql.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/sql.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -122,9 +122,9 @@ Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@p__lin
 
 &lt;h2 id=&quot;what-is-the-problem&quot;&gt;What is the problem?&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Imagine that we’re using the second query inside some sync algorithm in our C# code, this algorithm is very sensitive about time, now imagine that the server where our C# code is running has a difference about seconds or minutes with the database server?&lt;/p&gt;
@@ -133,9 +133,9 @@ Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@p__lin
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Linq to Entities is very smart and it is able to translate our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DateTime.Now&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DateTime.UtcNow&lt;/code&gt; to a matching command on database side.&lt;/p&gt;

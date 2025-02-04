@@ -4,42 +4,6 @@
     
     
     {
-      "title"    : "Scientific papers using GeneticSharp (april 2024)",
-      "category" : "news",
-      "tags"     : "geneticsharp, papers",
-      "url"      : "/scientific-papers-using-geneticharp-april-2024/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "Scientific papers using GeneticSharp (october 2023)",
-      "category" : "news",
-      "tags"     : "geneticsharp, papers",
-      "url"      : "/scientific-papers-using-geneticharp-october-2023/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "Scientific papers using GeneticSharp (october 2022)",
-      "category" : "news",
-      "tags"     : "geneticsharp, papers",
-      "url"      : "/scientific-papers-using-geneticharp-october-2022/",
-      "author"   : ""
-    } ,
-    
-    {
-      "title"    : "Scientific papers using GeneticSharp (september 2022)",
-      "category" : "news",
-      "tags"     : "geneticsharp, papers",
-      "url"      : "/scientific-papers-using-geneticharp-september-2022/",
-      "author"   : ""
-    } 
-     
-    ,
-  
-    
-    
-    {
       "title"    : "Microsoft Certified&amp;colon; Azure Fundamentals",
       "category" : "Article",
       "tags"     : "azure, microsoft, certification",
@@ -1100,6 +1064,42 @@
       "category" : "Labs",
       "tags"     : "devlog, dotnet, blazor, unity, chip8, emulator, arc8, arc8 devlog",
       "url"      : "/arc-8-devlog-1/",
+      "author"   : ""
+    } 
+     
+    ,
+  
+    
+    
+    {
+      "title"    : "Scientific papers using GeneticSharp (april 2024)",
+      "category" : "news",
+      "tags"     : "geneticsharp, papers",
+      "url"      : "/scientific-papers-using-geneticharp-april-2024/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Scientific papers using GeneticSharp (october 2023)",
+      "category" : "news",
+      "tags"     : "geneticsharp, papers",
+      "url"      : "/scientific-papers-using-geneticharp-october-2023/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Scientific papers using GeneticSharp (october 2022)",
+      "category" : "news",
+      "tags"     : "geneticsharp, papers",
+      "url"      : "/scientific-papers-using-geneticharp-october-2022/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "Scientific papers using GeneticSharp (september 2022)",
+      "category" : "news",
+      "tags"     : "geneticsharp, papers",
+      "url"      : "/scientific-papers-using-geneticharp-september-2022/",
       "author"   : ""
     } 
      

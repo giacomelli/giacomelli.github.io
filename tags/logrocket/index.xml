@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - logrocket</title>
  <link href="//tags/logrocket/index.xml" rel="self"/>
  <link href="/tag/logrocket.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/logrocket.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -23,9 +23,9 @@
 
 &lt;h2 id=&quot;tutorial-sections&quot;&gt;Tutorial sections&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/requirements-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -52,9 +52,9 @@
 
 &lt;h2 id=&quot;setting-up-our-unity-project&quot;&gt;Setting up our Unity project&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;First, we need to create our Unity project. For this tutorial, we’ll use the version 2021.3.4f1, which, at the moment I’m writing, is the newest LTS Unity version.&lt;/p&gt;
@@ -62,9 +62,9 @@
 &lt;p&gt;On the project templates list, choose 2D(core), give it a name, and click the Create project button.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-1cab31008.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-1cab31008.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.webp 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-1cab31008.webp 1224w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-1cab31008.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-1cab31008.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.png 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-1cab31008.png 1224w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.png&quot; alt=&quot;post image&quot; width=&quot;1224&quot; height=&quot;712&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-32225c491.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-32225c491.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-32225c491.webp 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-32225c491.webp 1224w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-32225c491.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-32225c491.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-32225c491.png 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-32225c491.png 1224w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1224&quot; height=&quot;712&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -74,9 +74,9 @@
 With the project started, create two folders called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scripts&lt;/code&gt; inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets&lt;/code&gt; folder. We’ll use them to keep our project organized during the tutorial.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-d4f7ca06e.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-d4f7ca06e.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.webp 528w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-d4f7ca06e.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-d4f7ca06e.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.png 528w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.png&quot; alt=&quot;post image&quot; width=&quot;528&quot; height=&quot;192&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-32225c491.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-32225c491.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-32225c491.webp 528w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-32225c491.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-32225c491.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-32225c491.png 528w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;528&quot; height=&quot;192&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -97,9 +97,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h3 id=&quot;c-8-and-9-features-in-unity-whats-missing&quot;&gt;C# 8 and 9 features in Unity: What’s missing?&lt;/h3&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Unity support for C# 8 has started on version &lt;a href=&quot;https://docs.unity3d.com/2020.2/Documentation/Manual/CSharpCompiler.html&quot;&gt;2020.2&lt;/a&gt; and C# 9 has started on version &lt;a href=&quot;https://docs.unity3d.com/2021.2/Documentation/Manual/CSharpCompiler.html&quot;&gt;2021.2&lt;/a&gt;.&lt;/p&gt;
@@ -222,9 +222,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/challenge-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;In this tutorial, we’ve learned how to use the switch expression, property pattern, type pattern, constant pattern, relational pattern, and logical pattern to write less and more modern C# code on Unity.&lt;/p&gt;
@@ -251,9 +251,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h2 id=&quot;tutorial-sections&quot;&gt;Tutorial sections&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/manifest-128-579a71043.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/manifest-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/manifest-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -289,9 +289,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h2 id=&quot;setting-up-our-unity-project&quot;&gt;Setting up our Unity project&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;First, we need to create our Unity project. For this tutorial, we’ll use the version 2021.3.4f1, which, at the moment I’m writing, is the newest LTS Unity version.&lt;/p&gt;
@@ -299,9 +299,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;On the project templates list, choose 2D(core), give it a name, and click the Create project button. We’ll call ours &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SampleScene&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-200-1cab31008.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-400-1cab31008.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-1cab31008.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-1224-1cab31008.webp 1224w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-200-1cab31008.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-400-1cab31008.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-1cab31008.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-1224-1cab31008.png 1224w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-1cab31008.png&quot; alt=&quot;post image&quot; width=&quot;1224&quot; height=&quot;712&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-32225c491.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-1224-32225c491.webp 1224w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-32225c491.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-1224-32225c491.png 1224w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/project-template-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1224&quot; height=&quot;712&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -311,9 +311,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 With the project started, create two folders called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scripts&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Physic Materials&lt;/code&gt; inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets&lt;/code&gt; folder. We’ll use them to keep our project organized during the tutorial.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-200-d4f7ca06e.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-400-d4f7ca06e.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-d4f7ca06e.webp 528w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-200-d4f7ca06e.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-400-d4f7ca06e.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-d4f7ca06e.png 528w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-d4f7ca06e.png&quot; alt=&quot;post image&quot; width=&quot;528&quot; height=&quot;192&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-32225c491.webp 528w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-32225c491.png 528w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/folders-528-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;528&quot; height=&quot;192&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -321,9 +321,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h2 id=&quot;what-are-colliders&quot;&gt;What are colliders?&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Before we start using our Unity project, we need to take a little dive into the basic concepts of colliders.&lt;/p&gt;
@@ -350,9 +350,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;/ul&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-200-c2a46322b.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-c2a46322b.webp 250w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-200-c2a46322b.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-c2a46322b.png 250w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-c2a46322b.png&quot; alt=&quot;post image&quot; width=&quot;250&quot; height=&quot;355&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-32225c491.webp 250w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-32225c491.png 250w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/colliders-types-250-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;250&quot; height=&quot;355&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -362,9 +362,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Every 2D collider in Unity inherits from a common class called Collider2D. As a result, they share common properties. Below is a list of the most notable and widely-used ones:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-200-5deeeeb3e.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-400-5deeeeb3e.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-5deeeeb3e.webp 448w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-200-5deeeeb3e.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-400-5deeeeb3e.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-5deeeeb3e.png 448w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-5deeeeb3e.png&quot; alt=&quot;post image&quot; width=&quot;448&quot; height=&quot;120&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-32225c491.webp 448w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-32225c491.png 448w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/common-properties-448-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;448&quot; height=&quot;120&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -389,9 +389,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;In our Unity project, add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sprite (Square)&lt;/code&gt; to the opened scene (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SampleScene&lt;/code&gt;):&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-200-d7e90927c.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-400-d7e90927c.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-d7e90927c.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-819-d7e90927c.webp 819w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-200-d7e90927c.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-400-d7e90927c.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-d7e90927c.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-819-d7e90927c.png 819w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-d7e90927c.png&quot; alt=&quot;post image&quot; width=&quot;819&quot; height=&quot;713&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-32225c491.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-819-32225c491.webp 819w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-32225c491.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-819-32225c491.png 819w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-square-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;819&quot; height=&quot;713&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -400,9 +400,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Select the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sprite (Square)&lt;/code&gt; GameObject and add a component called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BoxCollider2D&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-200-5afeb90e2.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-400-5afeb90e2.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-5afeb90e2.webp 455w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-200-5afeb90e2.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-400-5afeb90e2.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-5afeb90e2.png 455w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-5afeb90e2.png&quot; alt=&quot;post image&quot; width=&quot;455&quot; height=&quot;708&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-32225c491.webp 455w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-32225c491.png 455w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/square-455-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;455&quot; height=&quot;708&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -411,9 +411,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Now repeat the process, but add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sprite (Circle)&lt;/code&gt; to the scene and add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CircleCollider2D&lt;/code&gt; component to it.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-200-f11e563fd.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-400-f11e563fd.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-f11e563fd.webp 461w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-200-f11e563fd.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-400-f11e563fd.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-f11e563fd.png 461w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-f11e563fd.png&quot; alt=&quot;post image&quot; width=&quot;461&quot; height=&quot;643&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-32225c491.webp 461w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-32225c491.png 461w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/circle-461-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;461&quot; height=&quot;643&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -422,9 +422,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Move the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject&lt;/code&gt; a little on top of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-200-2e37f4265.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-400-2e37f4265.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-2e37f4265.webp 708w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-200-2e37f4265.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-400-2e37f4265.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-2e37f4265.png 708w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-2e37f4265.png&quot; alt=&quot;post image&quot; width=&quot;708&quot; height=&quot;556&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-32225c491.webp 708w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-32225c491.png 708w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/move-circle-708-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;708&quot; height=&quot;556&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -444,9 +444,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;If we just add a 2D collider to our GameObject, nothing will happen because the physics engine is not aware of it. If we want the physics engine to control our GameObject, we need to add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; component to it.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-200-0007b5a10.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-400-0007b5a10.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-0007b5a10.webp 454w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-200-0007b5a10.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-400-0007b5a10.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-0007b5a10.png 454w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-0007b5a10.png&quot; alt=&quot;post image&quot; width=&quot;454&quot; height=&quot;312&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-32225c491.webp 454w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-32225c491.png 454w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-454-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;454&quot; height=&quot;312&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -470,9 +470,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Let’s add that ball effect to our sample scene. First, on the Square GameObject, change the property &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Body Type&lt;/code&gt; of its &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Static&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-200-afa8cf714.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-afa8cf714.webp 381w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-200-afa8cf714.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-afa8cf714.png 381w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-afa8cf714.png&quot; alt=&quot;post image&quot; width=&quot;381&quot; height=&quot;93&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-32225c491.webp 381w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-32225c491.png 381w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/rigidbody2d-static-381-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;381&quot; height=&quot;93&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -481,9 +481,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Create a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PhysicsMaterial2D&lt;/code&gt;, name it &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ball physics material&lt;/code&gt;, and place it inside our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Physics Materials&lt;/code&gt; folder:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-200-2fdd777ce.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-400-2fdd777ce.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-2fdd777ce.webp 746w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-200-2fdd777ce.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-400-2fdd777ce.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-2fdd777ce.png 746w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-2fdd777ce.png&quot; alt=&quot;post image&quot; width=&quot;746&quot; height=&quot;450&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-32225c491.webp 746w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-32225c491.png 746w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/create-physics-material-746-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;746&quot; height=&quot;450&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -492,9 +492,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Change its &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bounciness&lt;/code&gt; property to 1:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-200-1d09b8bdc.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-1d09b8bdc.webp 381w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-200-1d09b8bdc.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-1d09b8bdc.png 381w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-1d09b8bdc.png&quot; alt=&quot;post image&quot; width=&quot;381&quot; height=&quot;121&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-32225c491.webp 381w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-32225c491.png 381w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/ball-physics-381-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;381&quot; height=&quot;121&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -503,9 +503,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;On the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject's Rigidbody2D&lt;/code&gt;, change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Material&lt;/code&gt; property to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ball physics material&lt;/code&gt; that we’ve just created:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-200-5d0ca6424.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-5d0ca6424.webp 382w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-200-5d0ca6424.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-5d0ca6424.png 382w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-5d0ca6424.png&quot; alt=&quot;post image&quot; width=&quot;382&quot; height=&quot;69&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-32225c491.webp 382w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-32225c491.png 382w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/set-physics-material-382-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;382&quot; height=&quot;69&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -519,9 +519,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h2 id=&quot;collision-callbacks&quot;&gt;Collision callbacks&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;When one collider interacts with another collider, Unity sends some messages (e.g., call a method on any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MonoBehavior&lt;/code&gt; attached to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GameObject&lt;/code&gt;). In the case of a 2D collider, there are six available messages:&lt;/p&gt;
@@ -544,9 +544,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-200-10aa7dae6.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-10aa7dae6.webp 355w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-200-10aa7dae6.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-10aa7dae6.png 355w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-10aa7dae6.png&quot; alt=&quot;post image&quot; width=&quot;355&quot; height=&quot;111&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-32225c491.webp 355w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-32225c491.png 355w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/time-to-sleep-355-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;355&quot; height=&quot;111&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -562,9 +562,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Inside our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scripts&lt;/code&gt; folder, create a script called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CollisionLogger&lt;/code&gt; and add it to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-200-b2b349465.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-400-b2b349465.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-b2b349465.webp 442w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-200-b2b349465.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-400-b2b349465.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-b2b349465.png 442w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-b2b349465.png&quot; alt=&quot;post image&quot; width=&quot;442&quot; height=&quot;348&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-32225c491.webp 442w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-32225c491.png 442w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collision-logger-442-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;442&quot; height=&quot;348&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -576,9 +576,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; button, and we should see something like this in the Console window:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-200-bf27113d6.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-400-bf27113d6.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-bf27113d6.webp 488w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-200-bf27113d6.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-400-bf27113d6.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-bf27113d6.png 488w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-bf27113d6.png&quot; alt=&quot;post image&quot; width=&quot;488&quot; height=&quot;197&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-32225c491.webp 488w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-32225c491.png 488w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-1-488-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;488&quot; height=&quot;197&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -587,9 +587,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;As we can see, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionEnter2D&lt;/code&gt; is called when the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject&lt;/code&gt; hits the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollsionExit2D&lt;/code&gt; is called when they aren’t hitting each other anymore, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionStay2D&lt;/code&gt; has not been called because the two GameObjects are not keeping contact. To see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollisionStay2D&lt;/code&gt; being sent, just remove the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ball physics material&lt;/code&gt; from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Circle GameObject's Rigidbody2D&lt;/code&gt;:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-200-d43e21e16.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-400-d43e21e16.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-d43e21e16.webp 451w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-200-d43e21e16.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-400-d43e21e16.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-d43e21e16.png 451w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-d43e21e16.png&quot; alt=&quot;post image&quot; width=&quot;451&quot; height=&quot;80&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-32225c491.webp 451w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-32225c491.png 451w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/remove-physical-material-451-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;451&quot; height=&quot;80&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -598,9 +598,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Hit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; button again and the output in our Console window should be:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-200-45253a06e.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-400-45253a06e.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-45253a06e.webp 483w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-200-45253a06e.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-400-45253a06e.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-45253a06e.png 483w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-45253a06e.png&quot; alt=&quot;post image&quot; width=&quot;483&quot; height=&quot;198&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-32225c491.webp 483w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-32225c491.png 483w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-2-483-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;483&quot; height=&quot;198&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -613,9 +613,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Hit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt;, and the Console window should look like this:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-200-4d533a29a.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-400-4d533a29a.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-4d533a29a.webp 478w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-200-4d533a29a.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-400-4d533a29a.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-4d533a29a.png 478w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-4d533a29a.png&quot; alt=&quot;post image&quot; width=&quot;478&quot; height=&quot;196&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-32225c491.webp 478w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-32225c491.png 478w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-3-478-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;478&quot; height=&quot;196&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -631,9 +631,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;To see a trigger in action, mark the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Square GameObject's collider&lt;/code&gt; as a trigger:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-200-8ff18a7fc.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-400-8ff18a7fc.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-8ff18a7fc.webp 451w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-200-8ff18a7fc.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-400-8ff18a7fc.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-8ff18a7fc.png 451w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-8ff18a7fc.png&quot; alt=&quot;post image&quot; width=&quot;451&quot; height=&quot;98&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-32225c491.webp 451w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-32225c491.png 451w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/istrigger-451-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;451&quot; height=&quot;98&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -653,18 +653,18 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Run the scene and we can see this log in the Console window:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-200-a7970a28a.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-400-a7970a28a.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-a7970a28a.webp 475w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-200-a7970a28a.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-400-a7970a28a.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-a7970a28a.png 475w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-a7970a28a.png&quot; alt=&quot;post image&quot; width=&quot;475&quot; height=&quot;196&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-32225c491.webp 475w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-32225c491.png 475w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-4-475-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;475&quot; height=&quot;196&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-200-764f811c6.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-400-764f811c6.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-764f811c6.webp 474w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-200-764f811c6.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-400-764f811c6.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-764f811c6.png 474w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-764f811c6.png&quot; alt=&quot;post image&quot; width=&quot;474&quot; height=&quot;77&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-32225c491.webp 474w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-32225c491.png 474w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/console-window-5-474-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;474&quot; height=&quot;77&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -684,9 +684,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h2 id=&quot;collider-interactions&quot;&gt;Collider interactions&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/component-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;You probably noticed in the last section that there is parity between the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollision&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTrigger&lt;/code&gt; methods the physics engine calls on the GameObjects involved in the collision. Knowing when each kind of interaction raises each kind of message/method in the involved GameObjects can be a little tricky; despite this apparent similarity, there are some rules for interaction possibilities between different collider setups.&lt;/p&gt;
@@ -736,9 +736,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;The answer to this question is in the table below, which I took from the &lt;a href=&quot;https://docs.unity3d.com/Manual/CollidersOverview.html&quot;&gt;Unity documentation site&lt;/a&gt;. It shows us where the collisions happen and when the collision callbacks (the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnCollision&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnTrigger&lt;/code&gt; methods) are called.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-200-0aaec8d8b.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-400-0aaec8d8b.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-0aaec8d8b.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-1517-0aaec8d8b.webp 1517w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-200-0aaec8d8b.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-400-0aaec8d8b.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-0aaec8d8b.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-1517-0aaec8d8b.png 1517w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-0aaec8d8b.png&quot; alt=&quot;post image&quot; width=&quot;1517&quot; height=&quot;558&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-32225c491.webp 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-1517-32225c491.webp 1517w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-32225c491.png 800w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-1517-32225c491.png 1517w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/collider-interactions-table-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1517&quot; height=&quot;558&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -774,9 +774,9 @@ These tables can be very useful during game development, when we get stuck with 
 &lt;p&gt;You can access these settings via Project Settings &amp;gt; Physics 2D.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-200-d4eb4d789.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-400-d4eb4d789.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-d4eb4d789.webp 756w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-200-d4eb4d789.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-400-d4eb4d789.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-d4eb4d789.png 756w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-d4eb4d789.png&quot; alt=&quot;post image&quot; width=&quot;756&quot; height=&quot;938&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-200-32225c491.webp 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-400-32225c491.webp 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-32225c491.webp 756w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-200-32225c491.png 200w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-400-32225c491.png 400w, /assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-32225c491.png 756w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/07/22/the-fundamentals-of-unity-2d-colliders/physics2d-settings-756-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;756&quot; height=&quot;938&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -796,9 +796,9 @@ These tables can be very useful during game development, when we get stuck with 
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;In this tutorial, we’ve explained the fundamentals of Unity 2D Colliders: what they are, what their common properties and behaviors are, how to add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BoxCollider2D&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CircleCollider2D&lt;/code&gt; to a GameObject, what a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rigidbody2D&lt;/code&gt; is and how to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PhysicsMaterial2D&lt;/code&gt;, what the collision callbacks are and how to use them on our scripts, and, finally, the kinds of collider setups and how they interact.&lt;/p&gt;

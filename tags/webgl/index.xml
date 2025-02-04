@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - webgl</title>
  <link href="//tags/webgl/index.xml" rel="self"/>
  <link href="/tag/webgl.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/webgl.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -46,9 +46,9 @@
 
 &lt;h2 id=&quot;types-of-triangle&quot;&gt;Types of triangle&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Triangles can be classified &lt;a href=&quot;https://en.wikipedia.org/wiki/Triangle#Types_of_triangle&quot;&gt;by lengths of sides and by internal angles&lt;/a&gt;.&lt;/p&gt;
@@ -70,9 +70,9 @@
 
 &lt;h2 id=&quot;triangle-classifier&quot;&gt;Triangle Classifier&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/podium-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Below you can use the Triangle Classifier that I made with Unity.&lt;/p&gt;
@@ -118,9 +118,9 @@
 
 &lt;h2 id=&quot;definition&quot;&gt;Definition&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-4f597ed4f.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/project-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/project-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;A Maurer Rose is always defined by two input parameters: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d&lt;/code&gt;.&lt;/p&gt;
@@ -142,9 +142,9 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 
 &lt;h2 id=&quot;the-formula&quot;&gt;The formula&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/math-128-7fe17d269.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/math-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/math-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/math-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;The basic formula is: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r = sin(nθ)&lt;/code&gt; and we need to apply it to 361 points, where:&lt;/p&gt;
@@ -179,9 +179,9 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 &lt;p&gt;If you just hit play button, you will see something like this:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-200-d24407ade.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-200-d24407ade.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.png 256w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-d24407ade.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;242&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-200-32225c491.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-32225c491.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-200-32225c491.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-32225c491.png 256w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-first-try-256-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;242&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -191,9 +191,9 @@ where d is a positive integer and the angles are in degrees, not radians.&lt;/p&
 Go to the LineRenderer component and change the line width to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.03&lt;/code&gt;, then hit play button again.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-200-71a3f234d.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-200-71a3f234d.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.png 256w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-71a3f234d.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;224&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-200-32225c491.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-32225c491.webp 256w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-200-32225c491.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-32225c491.png 256w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-rose-second-try-256-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;256&quot; height=&quot;224&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -201,9 +201,9 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 
 &lt;h2 id=&quot;testing-new-inputs&quot;&gt;Testing new inputs&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;If you change the values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;N&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D&lt;/code&gt; of the component in the inspector, you will see a new Maurer Rose been drawing.&lt;/p&gt;
@@ -211,9 +211,9 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 &lt;p&gt;The image below shows the result of 6 different inputs (the same inputs used on &lt;a href=&quot;https://en.wikipedia.org/wiki/Maurer_rose&quot;&gt;Wikipedia&lt;/a&gt;):&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-200-5a8621fe1.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-400-5a8621fe1.webp 400w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.webp 800w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-1600-5a8621fe1.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-200-5a8621fe1.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-400-5a8621fe1.png 400w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.png 800w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-1600-5a8621fe1.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-5a8621fe1.png&quot; alt=&quot;post image&quot; width=&quot;2400&quot; height=&quot;400&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-200-32225c491.webp 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-400-32225c491.webp 400w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-32225c491.webp 800w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-1600-32225c491.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-200-32225c491.png 200w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-400-32225c491.png 400w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-32225c491.png 800w, /assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-1600-32225c491.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/21/drawing-a-maurer-rose-with-unity/maurer-roses-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;2400&quot; height=&quot;400&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -221,9 +221,9 @@ Go to the LineRenderer component and change the line width to &lt;code class=&qu
 
 &lt;h2 id=&quot;going-beyond&quot;&gt;Going beyond&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/beyond-128-1d53f18c1.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/beyond-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/beyond-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/beyond-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Now that you understand what is a Maurer Rose and how to code it inside Unity you can try to do some crazy things with it, like animate the input values or the number of points, or still using it to build a particle system.&lt;/p&gt;

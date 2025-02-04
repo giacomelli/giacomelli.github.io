@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - game-jam</title>
  <link href="//tags/game-jam/index.xml" rel="self"/>
  <link href="/tag/game-jam.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/game-jam.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -174,9 +174,9 @@ Besides, the theme “There is a twist…!” was a challenge one, at least to m
 &lt;p&gt;The final result is &lt;strong&gt;an Atari 2600 kind of game&lt;/strong&gt;: &lt;strong&gt;Who Kills Who?&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-200-c5a45b8a1.webp 200w, /assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.webp 320w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-200-c5a45b8a1.png 200w, /assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.png 320w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-c5a45b8a1.png&quot; alt=&quot;post image&quot; width=&quot;320&quot; height=&quot;254&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-200-32225c491.webp 200w, /assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-32225c491.webp 320w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-200-32225c491.png 200w, /assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-32225c491.png 320w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/02/01/trijam-154-entry-who-kills-who/who-kills-who-320-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;320&quot; height=&quot;254&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -242,9 +242,9 @@ I took some time thinking about what game I would like to play and develop with 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.webp 192w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.png 192w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-6b3e9fff4.png&quot; alt=&quot;post image&quot; width=&quot;192&quot; height=&quot;256&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-32225c491.webp 192w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-32225c491.png 192w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/08/26/keeney-jam-2020-entry-curseings/cast-a-vote-192-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;192&quot; height=&quot;256&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;

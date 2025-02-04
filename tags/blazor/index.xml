@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - blazor</title>
  <link href="//tags/blazor/index.xml" rel="self"/>
  <link href="/tag/blazor.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/blazor.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -68,9 +68,9 @@ We use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ed
 
 &lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;In the next &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog&lt;/a&gt; post I will probably talk about the release of the ARC-8 as an open-source project.&lt;/p&gt;
@@ -79,9 +79,9 @@ We use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ed
 
 &lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -132,17 +132,17 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 
 &lt;h2 id=&quot;systems-interfaces-implementations&quot;&gt;Systems interfaces implementations&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/component-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;The system interfaces &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; will be implemented as &lt;a href=&quot;https://docs.unity3d.com/Manual/class-MonoBehaviour.html&quot;&gt;MonoBehaviour&lt;/a&gt;.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/arc-8-unity-components-186-6eee669de.webp 186w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/arc-8-unity-components-186-6eee669de.jpg 186w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/arc-8-unity-components-186-6eee669de.jpg&quot; alt=&quot;post image&quot; width=&quot;186&quot; height=&quot;320&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/arc-8-unity-components-186-9c90d1b5f.webp 186w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/arc-8-unity-components-186-9c90d1b5f.jpg 186w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/arc-8-unity-components-186-9c90d1b5f.jpg&quot; alt=&quot;post image&quot; width=&quot;186&quot; height=&quot;320&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -154,17 +154,17 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 
 &lt;h2 id=&quot;chip8graphiccs-monobehaviour-igraphic&quot;&gt;Chip8Graphic.cs MonoBehaviour (IGraphic)&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/graphic-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; implementation.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-200-12d224ad6.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-400-12d224ad6.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-518-12d224ad6.webp 518w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-200-12d224ad6.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-400-12d224ad6.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-518-12d224ad6.png 518w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-518-12d224ad6.png&quot; alt=&quot;post image&quot; width=&quot;518&quot; height=&quot;130&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-200-32225c491.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-400-32225c491.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-518-32225c491.webp 518w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-200-32225c491.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-400-32225c491.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-518-32225c491.png 518w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-graphic-518-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;518&quot; height=&quot;130&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -211,17 +211,17 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 
 &lt;h2 id=&quot;chip8soundcs-monobehaviour-isound&quot;&gt;Chip8Sound.cs MonoBehaviour (ISound)&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/sound-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt; implementation.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-200-7b130dbfe.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-400-7b130dbfe.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-529-7b130dbfe.webp 529w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-200-7b130dbfe.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-400-7b130dbfe.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-529-7b130dbfe.png 529w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-529-7b130dbfe.png&quot; alt=&quot;post image&quot; width=&quot;529&quot; height=&quot;70&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-200-32225c491.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-400-32225c491.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-529-32225c491.webp 529w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-200-32225c491.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-400-32225c491.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-529-32225c491.png 529w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-sound-529-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;529&quot; height=&quot;70&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -236,17 +236,17 @@ This is why we can use our &lt;code class=&quot;language-plaintext highlighter-r
 
 &lt;h2 id=&quot;keyboardchip8inputcs-monobehaviour-iinput&quot;&gt;KeyboardChip8Input.cs MonoBehaviour (IInput)&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/joystick-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt; implementation for the keyboard.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-200-5789d9288.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-400-5789d9288.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-527-5789d9288.webp 527w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-200-5789d9288.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-400-5789d9288.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-527-5789d9288.png 527w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-527-5789d9288.png&quot; alt=&quot;post image&quot; width=&quot;527&quot; height=&quot;53&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-200-32225c491.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-400-32225c491.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-527-32225c491.webp 527w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-200-32225c491.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-400-32225c491.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-527-32225c491.png 527w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/keyboard-chip-8-input-527-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;527&quot; height=&quot;53&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -262,17 +262,17 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 
 &lt;h2 id=&quot;chip8logcs-monobehaviour-ilog&quot;&gt;Chip8Log.cs MonoBehaviour (ILog)&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/logging-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; implementation.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-200-9c411a016.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-400-9c411a016.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-521-9c411a016.webp 521w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-200-9c411a016.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-400-9c411a016.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-521-9c411a016.png 521w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-521-9c411a016.png&quot; alt=&quot;post image&quot; width=&quot;521&quot; height=&quot;62&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-200-32225c491.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-400-32225c491.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-521-32225c491.webp 521w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-200-32225c491.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-400-32225c491.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-521-32225c491.png 521w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-log-521-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;521&quot; height=&quot;62&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -284,17 +284,17 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 
 &lt;h2 id=&quot;chip8loadercs&quot;&gt;Chip8Loader.cs&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;This is a simplified version of the component responsible to load all systems (IGraphic, ISound, IInput, and ILog), initialize the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8&lt;/code&gt; class emulator, and load the ROM.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-200-a9c0f3f99.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-400-a9c0f3f99.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-529-a9c0f3f99.webp 529w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-200-a9c0f3f99.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-400-a9c0f3f99.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-529-a9c0f3f99.png 529w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-529-a9c0f3f99.png&quot; alt=&quot;post image&quot; width=&quot;529&quot; height=&quot;191&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-200-32225c491.webp 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-400-32225c491.webp 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-529-32225c491.webp 529w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-200-32225c491.png 200w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-400-32225c491.png 400w, /assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-529-32225c491.png 529w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/04/arc-8-devlog-3/chip-8-loader-529-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;529&quot; height=&quot;191&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -316,9 +316,9 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 
 &lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;In the next &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog&lt;/a&gt; I will talk about how I put a &lt;a href=&quot;https://www.reddit.com/r/Unity3D/comments/ip507l/space_invaders_inside_the_unity_inspector_window/&quot;&gt;CHIP-8 emulator to run inside the Unity editor inspector window&lt;/a&gt;.&lt;/p&gt;
@@ -331,9 +331,9 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 
 &lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -389,9 +389,9 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 
 &lt;h2 id=&quot;systems-interfaces-implementations&quot;&gt;Systems interfaces implementations&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/component-128-1eb69a9dc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/component-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/component-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;The system interfaces &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; will be implemented as &lt;a href=&quot;https://docs.microsoft.com/en-us/aspnet/core/blazor/components/?view=aspnetcore-3.1#:~:text=Blazor%20apps%20are%20built%20using,Components%20are%20flexible%20and%20lightweight.&quot;&gt;Blazor components&lt;/a&gt;.&lt;/p&gt;
@@ -402,9 +402,9 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-200-4b7f14cbd.webp 200w, /assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-4b7f14cbd.webp 320w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-200-4b7f14cbd.jpg 200w, /assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-4b7f14cbd.jpg 320w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-4b7f14cbd.jpg&quot; alt=&quot;post image&quot; width=&quot;320&quot; height=&quot;246&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-200-c3c84277d.webp 200w, /assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-c3c84277d.webp 320w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-200-c3c84277d.jpg 200w, /assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-c3c84277d.jpg 320w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/29/arc-8-devlog-2/arc-8-blazor-components-320-c3c84277d.jpg&quot; alt=&quot;post image&quot; width=&quot;320&quot; height=&quot;246&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -412,9 +412,9 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 
 &lt;h2 id=&quot;chip8graphicrazor-component-igraphic&quot;&gt;Chip8Graphic.razor component (IGraphic)&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/graphic-128-fe24f0e1d.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/graphic-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/graphic-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;This a simplified version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IGraphic&lt;/code&gt; implementation (without of color selector that you can see in the demo).&lt;/p&gt;
@@ -454,9 +454,9 @@ We use a second array called &lt;code class=&quot;language-plaintext highlighter
 
 &lt;h2 id=&quot;chip8soundrazor-component-isound&quot;&gt;Chip8Sound.razor component (ISound)&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/sound-128-972082c3e.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/sound-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/sound-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;This a simplified version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ISound&lt;/code&gt; implementation.&lt;/p&gt;
@@ -475,9 +475,9 @@ We use a second array called &lt;code class=&quot;language-plaintext highlighter
 
 &lt;h2 id=&quot;chip8inputrazor-component-iinput&quot;&gt;Chip8Input.razor component (IInput)&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/joystick-128-82c7ade06.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/joystick-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/joystick-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;This is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IInput&lt;/code&gt; implementation.&lt;/p&gt;
@@ -504,9 +504,9 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 
 &lt;h2 id=&quot;chip8lograzor-component-ilog&quot;&gt;Chip8Log.razor component (ILog)&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/logging-128-de6e1a017.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/logging-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/logging-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;This is a simplified version of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ILog&lt;/code&gt; implementation.&lt;/p&gt;
@@ -519,9 +519,9 @@ In this method, we set to &lt;code class=&quot;language-plaintext highlighter-ro
 
 &lt;h2 id=&quot;chip8loaderrazor&quot;&gt;Chip8Loader.razor&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-f3193c47c.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/package-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/package-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;This is a simplified version of the component responsible to load all systems (IGraphic, ISound, IInput, and ILog), initialize the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Chip8&lt;/code&gt; class emulator,  load the ROM and perform the game loop.&lt;/p&gt;
@@ -545,9 +545,9 @@ We implement a &lt;a href=&quot;https://gameprogrammingpatterns.com/game-loop.ht
 
 &lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;In the next &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog&lt;/a&gt; I will talk about the ARC-8’s implementation on Unity3D.&lt;/p&gt;
@@ -556,9 +556,9 @@ We implement a &lt;a href=&quot;https://gameprogrammingpatterns.com/game-loop.ht
 
 &lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -609,9 +609,9 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;h2 id=&quot;arc-8&quot;&gt;ARC-8&lt;/h2&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-200-42589059c.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-400-42589059c.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-42589059c.webp 600w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-200-42589059c.png 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-400-42589059c.png 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-42589059c.png 600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-42589059c.png&quot; alt=&quot;post image&quot; width=&quot;600&quot; height=&quot;200&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-200-32225c491.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-400-32225c491.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-32225c491.webp 600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-200-32225c491.png 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-400-32225c491.png 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-32225c491.png 600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;600&quot; height=&quot;200&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -634,18 +634,18 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;premise-1---cross-platform&quot;&gt;Premise 1 - Cross-platform&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/cross-platform-128-90fb5f56b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/cross-platform-128-90fb5f56b.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/cross-platform-128-90fb5f56b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/cross-platform-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/cross-platform-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/cross-platform-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;To make the ARC-8 core solution cross-platform, the first decision is to implement it as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.NET Standard class library&lt;/code&gt;. The second one is to define the graphic, sound, input, and logging systems of the emulator as interfaces that will only be implemented on specific platforms, like Blazor and Unity3d.&lt;/p&gt;
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-200-39c2d19ce.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-39c2d19ce.webp 280w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-200-39c2d19ce.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-39c2d19ce.jpg 280w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-39c2d19ce.jpg&quot; alt=&quot;post image&quot; width=&quot;280&quot; height=&quot;562&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-200-de9802b60.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-de9802b60.webp 280w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-200-de9802b60.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-de9802b60.jpg 280w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-de9802b60.jpg&quot; alt=&quot;post image&quot; width=&quot;280&quot; height=&quot;562&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -656,9 +656,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;premise-2---testable&quot;&gt;Premise 2 - Testable&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/test-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;The main part of a CHIP-8 emulation development is on the opcodes.&lt;/p&gt;
@@ -677,9 +677,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-200-17d4a8cba.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-17d4a8cba.webp 296w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-200-17d4a8cba.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-17d4a8cba.jpg 296w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-17d4a8cba.jpg&quot; alt=&quot;post image&quot; width=&quot;296&quot; height=&quot;552&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-200-8cc2ea2bb.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-8cc2ea2bb.webp 296w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-200-8cc2ea2bb.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-8cc2ea2bb.jpg 296w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-8cc2ea2bb.jpg&quot; alt=&quot;post image&quot; width=&quot;296&quot; height=&quot;552&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -687,9 +687,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;premise-3---100-code-coverage&quot;&gt;Premise 3 - 100% code coverage&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/score-128-702a2b758.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/score-128-702a2b758.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/score-128-702a2b758.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/score-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/score-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/score-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;With the decision of implement each opcode in a separate classes and the decision of use interfaces for each system, we can easly unit test them and achieve the 100% code coverage:
@@ -699,9 +699,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 &lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=unit-test.cake&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-200-43462216e.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-400-43462216e.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-43462216e.webp 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-1600-43462216e.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-200-43462216e.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-400-43462216e.jpg 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-43462216e.jpg 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-1600-43462216e.jpg 1600w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-43462216e.jpg&quot; alt=&quot;post image&quot; width=&quot;1600&quot; height=&quot;527&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-200-82e8ea3b1.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-400-82e8ea3b1.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-82e8ea3b1.webp 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-1600-82e8ea3b1.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-200-82e8ea3b1.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-400-82e8ea3b1.jpg 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-82e8ea3b1.jpg 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-1600-82e8ea3b1.jpg 1600w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-82e8ea3b1.jpg&quot; alt=&quot;post image&quot; width=&quot;1600&quot; height=&quot;527&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -709,9 +709,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;premise-4---benchmark&quot;&gt;Premise 4 - Benchmark&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/podium-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;I like to benchmark the code to compare some solutions in a fast and precise way. To create a benchmark in the .NET system the &lt;a href=&quot;https://benchmarkdotnet.org/&quot;&gt;BenchmarkDotNet&lt;/a&gt; is the right choice. BenchmarkDotNet is quite easy to use and you can set up a project with it in less than 5 minutes.&lt;/p&gt;
@@ -719,9 +719,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 &lt;p&gt;When I used it on ARC-8 implementation I discover that I could improve the performance in 18x just removing a Linq code and using a cached solution to locate the opcodes.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-200-c0dab76d0.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-400-c0dab76d0.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-c0dab76d0.webp 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-1331-c0dab76d0.webp 1331w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-200-c0dab76d0.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-400-c0dab76d0.jpg 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-c0dab76d0.jpg 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-1331-c0dab76d0.jpg 1331w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-c0dab76d0.jpg&quot; alt=&quot;post image&quot; width=&quot;1331&quot; height=&quot;239&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-200-9e35fd921.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-400-9e35fd921.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-9e35fd921.webp 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-1331-9e35fd921.webp 1331w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-200-9e35fd921.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-400-9e35fd921.jpg 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-9e35fd921.jpg 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-1331-9e35fd921.jpg 1331w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-9e35fd921.jpg&quot; alt=&quot;post image&quot; width=&quot;1331&quot; height=&quot;239&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -729,9 +729,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;In the next &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog&lt;/a&gt; I will talk about the ARC-8’s implementation on Blazor.&lt;/p&gt;
@@ -740,9 +740,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -870,9 +870,9 @@ dotnet watch run
 &lt;p&gt;Wait for the message &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Application started. Press Ctrl+C to shut down&lt;/code&gt; show up in terminal, then open the url &lt;a href=&quot;http://localhost:5000&quot;&gt;http://localhost:5000&lt;/a&gt; on your browser, you should see something like this:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-200-f31194f79.webp 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-400-f31194f79.webp 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.webp 800w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-1019-f31194f79.webp 1019w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-200-f31194f79.png 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-400-f31194f79.png 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.png 800w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-1019-f31194f79.png 1019w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-f31194f79.png&quot; alt=&quot;post image&quot; width=&quot;1019&quot; height=&quot;310&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-200-32225c491.webp 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-400-32225c491.webp 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-32225c491.webp 800w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-1019-32225c491.webp 1019w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-200-32225c491.png 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-400-32225c491.png 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-32225c491.png 800w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-1019-32225c491.png 1019w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/blazor-scaffold-app-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1019&quot; height=&quot;310&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -902,9 +902,9 @@ dotnet watch run
 
 &lt;h2 id=&quot;defining-the-tsp-chromosome&quot;&gt;Defining the TSP chromosome&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;The chromosome represents a solution of the problem we are trying to solve. In our case the TSP chromosome should represent &lt;em&gt;&lt;strong&gt;“the shortest possible route that visits each city and returns to the origin city”&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
@@ -964,9 +964,9 @@ dotnet watch run
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-200-938b3a100.webp 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-400-938b3a100.webp 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.webp 565w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-200-938b3a100.png 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-400-938b3a100.png 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.png 565w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-938b3a100.png&quot; alt=&quot;post image&quot; width=&quot;565&quot; height=&quot;354&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-200-32225c491.webp 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-400-32225c491.webp 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-32225c491.webp 565w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-200-32225c491.png 200w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-400-32225c491.png 400w, /assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-32225c491.png 565w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2019/07/10/tsp-with-geneticsharp-and-blazor/console-window-565-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;565&quot; height=&quot;354&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;

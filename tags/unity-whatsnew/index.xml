@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity-whatsnew</title>
  <link href="//tags/unity-whatsnew/index.xml" rel="self"/>
  <link href="/tag/unity-whatsnew.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/unity-whatsnew.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -164,9 +164,9 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-200-29e77de54.webp 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.webp 388w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-200-29e77de54.png 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.png 388w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-29e77de54.png&quot; alt=&quot;post image&quot; width=&quot;388&quot; height=&quot;149&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-200-32225c491.webp 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-32225c491.webp 388w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-200-32225c491.png 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-32225c491.png 388w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/switch-compilation-mode-388-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;388&quot; height=&quot;149&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -180,9 +180,9 @@ From the component’s &lt;code class=&quot;language-plaintext highlighter-rouge
 &lt;p&gt;This can be quite useful when we need different lighting setups for different target platforms.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-200-198be746b.webp 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-400-198be746b.webp 400w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.webp 554w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-200-198be746b.png 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-400-198be746b.png 400w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.png 554w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-198be746b.png&quot; alt=&quot;post image&quot; width=&quot;554&quot; height=&quot;638&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-200-32225c491.webp 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-400-32225c491.webp 400w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-32225c491.webp 554w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-200-32225c491.png 200w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-400-32225c491.png 400w, /assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-32225c491.png 554w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/09/04/unity-2020-1-whats-new/lighting-seetings-asset-554-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;554&quot; height=&quot;638&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;

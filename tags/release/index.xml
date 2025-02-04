@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - release</title>
  <link href="//tags/release/index.xml" rel="self"/>
  <link href="/tag/release.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/release.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -182,7 +182,7 @@ dotnet run
  <entry>
    <title>GeneticSharp v2.4.0 - New crossovers and TPL implementations</title>
    <link href="//GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations/"/>
-   <updated>2019-01-19T00:00:00-02:00</updated>
+   <updated>2019-01-19T00:00:00-03:00</updated>
    <id>//GeneticSharp-v2.4.0-New-Crossovers-and-TPL-implementations</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v2.4.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 
@@ -354,9 +354,9 @@ I have a case where I need to stop optimization at some time, save results to DB
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;blockquote&gt;
@@ -456,9 +456,9 @@ to &lt;img class=&quot;icon&quot; src=&quot;/assets/logos/netcore.svg &quot; alt
 &lt;h2 id=&quot;porting&quot;&gt;Porting&lt;/h2&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-43430b71d.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/porting-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -550,9 +550,9 @@ Test Run Aborted
 
 &lt;h2 id=&quot;breaking-changes&quot;&gt;Breaking changes&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-473f11369.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/breaking-changes-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/breaking-changes-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -573,9 +573,9 @@ Test Run Aborted
 
 &lt;h2 id=&quot;reads-during-the-porting&quot;&gt;Reads during the porting&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Some readings I did during the whole process, maybe can be useful to someone porting a library to .NET Core too.&lt;/p&gt;
@@ -602,9 +602,9 @@ Test Run Aborted
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-200-e18b9b55c.webp 200w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-400-e18b9b55c.webp 400w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-e18b9b55c.webp 800w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-1600-e18b9b55c.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-200-e18b9b55c.png 200w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-400-e18b9b55c.png 400w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-e18b9b55c.png 800w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-1600-e18b9b55c.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-e18b9b55c.png&quot; alt=&quot;post image&quot; width=&quot;1992&quot; height=&quot;632&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-200-32225c491.webp 200w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-400-32225c491.webp 400w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-32225c491.webp 800w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-1600-32225c491.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-200-32225c491.png 200w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-400-32225c491.png 400w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-32225c491.png 800w, /assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-1600-32225c491.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2018/03/28/porting-GeneticSharp-to-dotnet-core/GeneticSharp-dotnet-build-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1992&quot; height=&quot;632&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -621,7 +621,7 @@ Test Run Aborted
  <entry>
    <title>GeneticSharp v1.2.0 - Sequence mutations</title>
    <link href="//GeneticSharp-v1.2.0-sequence-mutations/"/>
-   <updated>2018-01-26T00:00:00-02:00</updated>
+   <updated>2018-01-26T00:00:00-03:00</updated>
    <id>//GeneticSharp-v1.2.0-sequence-mutations</id>
    <content type="html">&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp v1.2.0&lt;/a&gt;&lt;/strong&gt; is out.&lt;/p&gt;
 

@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - owasp</title>
  <link href="//tags/owasp/index.xml" rel="self"/>
  <link href="/tag/owasp.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/owasp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -20,9 +20,9 @@
 &lt;p&gt;OWASP ZAP (short for Zed Attack Proxy) is an open-source web application security scanner. It is intended to be used by both those new to application security as well as professional penetration testers.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-200-bda195394.webp 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-400-bda195394.webp 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-800-bda195394.webp 800w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-1032-bda195394.webp 1032w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-200-bda195394.png 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-400-bda195394.png 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-800-bda195394.png 800w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-1032-bda195394.png 1032w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-800-bda195394.png&quot; alt=&quot;post image&quot; width=&quot;1032&quot; height=&quot;641&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-200-32225c491.webp 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-400-32225c491.webp 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-800-32225c491.webp 800w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-1032-32225c491.webp 1032w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-200-32225c491.png 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-400-32225c491.png 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-800-32225c491.png 800w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-1032-32225c491.png 1032w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-main-screen-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1032&quot; height=&quot;641&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -34,9 +34,9 @@
 &lt;h2 id=&quot;path-traversal&quot;&gt;Path Traversal&lt;/h2&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-200-f835e0ab6.webp 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-400-f835e0ab6.webp 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-495-f835e0ab6.webp 495w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-200-f835e0ab6.png 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-400-f835e0ab6.png 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-495-f835e0ab6.png 495w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-495-f835e0ab6.png&quot; alt=&quot;post image&quot; width=&quot;495&quot; height=&quot;167&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-200-32225c491.webp 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-400-32225c491.webp 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-495-32225c491.webp 495w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-200-32225c491.png 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-400-32225c491.png 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-495-32225c491.png 495w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-path-traversal-alert-495-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;495&quot; height=&quot;167&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -51,9 +51,9 @@
 
 &lt;h2 id=&quot;validating-user-input&quot;&gt;Validating user input&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;It is good practice (mandatory in fact) to validate user input, especially on routes/actions where there is some kind of access to the file system.&lt;/p&gt;
@@ -84,9 +84,9 @@
 
 &lt;h2 id=&quot;check-all-file-system-handling-actions&quot;&gt;Check all file system handling actions&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/telescope-128-e0357d1e6.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/telescope-128-e0357d1e6.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/telescope-128-e0357d1e6.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/telescope-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/telescope-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/telescope-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;If you have any action on your API that lets the user define a file system path, be sure to validate if it not passing strings like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;../&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;..\&lt;/code&gt;. If you not validate inputs like this, you can allow an attacker to navigate on your app file system, even the host machine file system.&lt;/p&gt;
@@ -98,9 +98,9 @@
 
 &lt;h2 id=&quot;false-positives&quot;&gt;False Positives&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;OWASP ZAP can report some false positives, especially for routes that have an argument with the same name of the action: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://localhost:8080/api/tests/test1?kind=test1&lt;/code&gt;&lt;/p&gt;
@@ -112,9 +112,9 @@
 &lt;p&gt;You can change the risk alert to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;False Positive&lt;/code&gt; for each URL in the context alert filters:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-200-d561dca0a.webp 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-400-d561dca0a.webp 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-800-d561dca0a.webp 800w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-1029-d561dca0a.webp 1029w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-200-d561dca0a.png 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-400-d561dca0a.png 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-800-d561dca0a.png 800w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-1029-d561dca0a.png 1029w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-800-d561dca0a.png&quot; alt=&quot;post image&quot; width=&quot;1029&quot; height=&quot;640&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-200-32225c491.webp 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-400-32225c491.webp 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-800-32225c491.webp 800w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-1029-32225c491.webp 1029w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-200-32225c491.png 200w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-400-32225c491.png 400w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-800-32225c491.png 800w, /assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-1029-32225c491.png 1029w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/15/owasp-zap-path-traversal-and-asp-dotnet-notes/owasp-zap-alert-false-positive-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1029&quot; height=&quot;640&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -125,9 +125,9 @@
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;In most cases ASP .NET Web APIs/Apps are not exposed to a Path Traversal attack, but a poor user input validation in file system handling action can easily expose the whole API/APP.&lt;/p&gt;

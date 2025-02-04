@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - microsoft</title>
  <link href="//tags/microsoft/index.xml" rel="self"/>
  <link href="/tag/microsoft.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/microsoft.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -19,9 +19,9 @@
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-200-b6f170f33.webp 200w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-400-b6f170f33.webp 400w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-800-b6f170f33.webp 800w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-1267-b6f170f33.webp 1267w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-200-b6f170f33.png 200w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-400-b6f170f33.png 400w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-800-b6f170f33.png 800w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-1267-b6f170f33.png 1267w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-800-b6f170f33.png&quot; alt=&quot;post image&quot; width=&quot;1267&quot; height=&quot;564&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-200-32225c491.webp 200w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-400-32225c491.webp 400w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-800-32225c491.webp 800w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-1267-32225c491.webp 1267w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-200-32225c491.png 200w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-400-32225c491.png 400w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-800-32225c491.png 800w, /assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-1267-32225c491.png 1267w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/12/01/microsoft-certified-azure-fundamentals/certification-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1267&quot; height=&quot;564&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -31,9 +31,9 @@
 
 &lt;h2 id=&quot;what-is-az-900&quot;&gt;What is AZ-900?&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;I did some research into what the introductory Azure certification should be for a developer and found that &lt;a href=&quot;https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/&quot;&gt;Azure Fundamentals (AZ-900)&lt;/a&gt; was the common ground for any professional trying to start obtaining Azure Certifications. Once you have it, you can decide which path you want to take based on your role: administration, data science, development, devops, or networking.&lt;/p&gt;
@@ -44,9 +44,9 @@
 
 &lt;h2 id=&quot;what-skills-does-the-certification-measure&quot;&gt;What skills does the certification measure?&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/requirements-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -59,9 +59,9 @@
 
 &lt;h2 id=&quot;learning-path&quot;&gt;Learning path&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-704e92446.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/route-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/route-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -80,9 +80,9 @@
 
 &lt;h2 id=&quot;cheking-your-knowledge&quot;&gt;Cheking your knowledge&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/test-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;The Scott Duffy course has a 50 questions test to validate your knowledge.&lt;/p&gt;
@@ -91,9 +91,9 @@
 
 &lt;h2 id=&quot;taking-the-exam&quot;&gt;Taking the exam&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/challenge-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;If you feel prepare to take the exam, you can schedule it with &lt;a href=&quot;https://go.microsoft.com/fwlink/?linkid=2188912&quot;&gt;Pearson VUE&lt;/a&gt;.&lt;/p&gt;

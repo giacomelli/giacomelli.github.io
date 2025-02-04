@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - csharp</title>
  <link href="//tags/csharp/index.xml" rel="self"/>
  <link href="/tag/csharp.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/csharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -30,9 +30,9 @@
 &lt;p&gt;Add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Resources file&lt;/code&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ErrorMessages.resx&lt;/code&gt; to the project:&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-200-21dfcc93f.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-400-21dfcc93f.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.webp 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-928-21dfcc93f.webp 928w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-200-21dfcc93f.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-400-21dfcc93f.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.png 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-928-21dfcc93f.png 928w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-21dfcc93f.png&quot; alt=&quot;post image&quot; width=&quot;928&quot; height=&quot;644&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-200-32225c491.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-400-32225c491.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-32225c491.webp 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-928-32225c491.webp 928w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-200-32225c491.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-400-32225c491.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-32225c491.png 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-928-32225c491.png 928w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-error-messages-resx-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;928&quot; height=&quot;644&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -48,9 +48,9 @@
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-200-20ded552b.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-400-20ded552b.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.webp 594w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-200-20ded552b.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-400-20ded552b.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.png 594w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-20ded552b.png&quot; alt=&quot;post image&quot; width=&quot;594&quot; height=&quot;151&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-200-32225c491.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-400-32225c491.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-32225c491.webp 594w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-200-32225c491.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-400-32225c491.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-32225c491.png 594w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/error-messages-content-594-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;594&quot; height=&quot;151&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -79,9 +79,9 @@ This file will contain your projects Brazilian Portuguese exception messages.&lt
 &lt;p&gt;Create a T4 template file in the same folder where you placed the .resx files, named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Errors.tt&lt;/code&gt;.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-200-732a441d6.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-400-732a441d6.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.webp 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-946-732a441d6.webp 946w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-200-732a441d6.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-400-732a441d6.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.png 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-946-732a441d6.png 946w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-732a441d6.png&quot; alt=&quot;post image&quot; width=&quot;946&quot; height=&quot;662&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-200-32225c491.webp 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-400-32225c491.webp 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-32225c491.webp 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-946-32225c491.webp 946w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-200-32225c491.png 200w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-400-32225c491.png 400w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-32225c491.png 800w, /assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-946-32225c491.png 946w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2023/11/06/using-localized-exception-messages-with-t4-templates/add-errors-tt-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;946&quot; height=&quot;662&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -159,9 +159,9 @@ In the 3 variables below this line you can customize the name of the resource fi
 
 &lt;h2 id=&quot;tutorial-sections&quot;&gt;Tutorial sections&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/requirements-128-8b68e8c6b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/requirements-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/requirements-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;
@@ -188,9 +188,9 @@ In the 3 variables below this line you can customize the name of the resource fi
 
 &lt;h2 id=&quot;setting-up-our-unity-project&quot;&gt;Setting up our Unity project&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-c46695ddc.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/config-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/config-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;First, we need to create our Unity project. For this tutorial, we’ll use the version 2021.3.4f1, which, at the moment I’m writing, is the newest LTS Unity version.&lt;/p&gt;
@@ -198,9 +198,9 @@ In the 3 variables below this line you can customize the name of the resource fi
 &lt;p&gt;On the project templates list, choose 2D(core), give it a name, and click the Create project button.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-1cab31008.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-1cab31008.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.webp 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-1cab31008.webp 1224w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-1cab31008.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-1cab31008.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.png 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-1cab31008.png 1224w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-1cab31008.png&quot; alt=&quot;post image&quot; width=&quot;1224&quot; height=&quot;712&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-32225c491.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-32225c491.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-32225c491.webp 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-32225c491.webp 1224w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-200-32225c491.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-400-32225c491.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-32225c491.png 800w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-1224-32225c491.png 1224w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/project-template-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1224&quot; height=&quot;712&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -210,9 +210,9 @@ In the 3 variables below this line you can customize the name of the resource fi
 With the project started, create two folders called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scripts&lt;/code&gt; inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Assets&lt;/code&gt; folder. We’ll use them to keep our project organized during the tutorial.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-d4f7ca06e.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-d4f7ca06e.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.webp 528w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-d4f7ca06e.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-d4f7ca06e.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.png 528w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-d4f7ca06e.png&quot; alt=&quot;post image&quot; width=&quot;528&quot; height=&quot;192&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-32225c491.webp 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-32225c491.webp 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-32225c491.webp 528w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-200-32225c491.png 200w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-400-32225c491.png 400w, /assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-32225c491.png 528w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/11/15/6-modern-csharp-features-for-cleaner-unity-code/folders-528-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;528&quot; height=&quot;192&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -233,9 +233,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h3 id=&quot;c-8-and-9-features-in-unity-whats-missing&quot;&gt;C# 8 and 9 features in Unity: What’s missing?&lt;/h3&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Unity support for C# 8 has started on version &lt;a href=&quot;https://docs.unity3d.com/2020.2/Documentation/Manual/CSharpCompiler.html&quot;&gt;2020.2&lt;/a&gt; and C# 9 has started on version &lt;a href=&quot;https://docs.unity3d.com/2021.2/Documentation/Manual/CSharpCompiler.html&quot;&gt;2021.2&lt;/a&gt;.&lt;/p&gt;
@@ -358,9 +358,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/challenge-128-2cdd65c40.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/challenge-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/challenge-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;In this tutorial, we’ve learned how to use the switch expression, property pattern, type pattern, constant pattern, relational pattern, and logical pattern to write less and more modern C# code on Unity.&lt;/p&gt;
@@ -389,9 +389,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;Then, the result response will have the needed headers that make browsers happy and allow you to change the audio’s playback position.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-200-c5c52e492.webp 200w, /assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-299-c5c52e492.webp 299w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-200-c5c52e492.png 200w, /assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-299-c5c52e492.png 299w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-299-c5c52e492.png&quot; alt=&quot;post image&quot; width=&quot;299&quot; height=&quot;111&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-200-32225c491.webp 200w, /assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-299-32225c491.webp 299w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-200-32225c491.png 200w, /assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-299-32225c491.png 299w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2022/04/19/html5-audio-tag-large-files-and-asp-dotnet/response-headers-299-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;299&quot; height=&quot;111&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -481,9 +481,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-200-2b7005bc2.webp 200w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-400-2b7005bc2.webp 400w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-800-2b7005bc2.webp 800w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-1205-2b7005bc2.webp 1205w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-200-2b7005bc2.png 200w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-400-2b7005bc2.png 400w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-800-2b7005bc2.png 800w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-1205-2b7005bc2.png 1205w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-800-2b7005bc2.png&quot; alt=&quot;post image&quot; width=&quot;1205&quot; height=&quot;302&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-200-32225c491.webp 200w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-400-32225c491.webp 400w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-800-32225c491.webp 800w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-1205-32225c491.webp 1205w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-200-32225c491.png 200w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-400-32225c491.png 400w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-800-32225c491.png 800w, /assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-1205-32225c491.png 1205w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/11/17/unitytips-switch-expressions/unitytips-switch-expressions-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1205&quot; height=&quot;302&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -634,9 +634,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.webp 139w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png 139w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-3a9bad96a.png&quot; alt=&quot;post image&quot; width=&quot;139&quot; height=&quot;163&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-32225c491.webp 139w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-32225c491.png 139w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/NoDebuggerDisplay-139-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;139&quot; height=&quot;163&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -659,9 +659,9 @@ With the project started, create two folders called &lt;code class=&quot;languag
 &lt;p&gt;&lt;strong&gt;Now, that “secret” tweet list looks like:&lt;/strong&gt;&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-02058a557.webp 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-02058a557.webp 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.webp 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.webp 840w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-02058a557.png 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-02058a557.png 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-02058a557.png 840w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-02058a557.png&quot; alt=&quot;post image&quot; width=&quot;840&quot; height=&quot;52&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-32225c491.webp 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-32225c491.webp 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-32225c491.webp 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-32225c491.webp 840w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-200-32225c491.png 200w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-400-32225c491.png 400w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-32225c491.png 800w, /assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-840-32225c491.png 840w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2014/07/14/improving-your-debug-with-debuggerdisplay/DebuggerDisplayInAction-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;840&quot; height=&quot;52&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -709,9 +709,9 @@ Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@p__lin
 
 &lt;h2 id=&quot;what-is-the-problem&quot;&gt;What is the problem?&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-a3f91d933.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/problem-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Imagine that we’re using the second query inside some sync algorithm in our C# code, this algorithm is very sensitive about time, now imagine that the server where our C# code is running has a difference about seconds or minutes with the database server?&lt;/p&gt;
@@ -720,9 +720,9 @@ Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@p__lin
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;Linq to Entities is very smart and it is able to translate our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DateTime.Now&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DateTime.UtcNow&lt;/code&gt; to a matching command on database side.&lt;/p&gt;

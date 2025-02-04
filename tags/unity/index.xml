@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - unity</title>
  <link href="//tags/unity/index.xml" rel="self"/>
  <link href="/tag/unity.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/unity.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -41,9 +41,9 @@ If you search a little further you will see developers talking about CHIP-8 as t
 &lt;h2 id=&quot;arc-8&quot;&gt;ARC-8&lt;/h2&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-200-42589059c.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-400-42589059c.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-42589059c.webp 600w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-200-42589059c.png 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-400-42589059c.png 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-42589059c.png 600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-42589059c.png&quot; alt=&quot;post image&quot; width=&quot;600&quot; height=&quot;200&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-200-32225c491.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-400-32225c491.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-32225c491.webp 600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-200-32225c491.png 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-400-32225c491.png 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-32225c491.png 600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-600-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;600&quot; height=&quot;200&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -66,18 +66,18 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;premise-1---cross-platform&quot;&gt;Premise 1 - Cross-platform&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/cross-platform-128-90fb5f56b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/cross-platform-128-90fb5f56b.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/cross-platform-128-90fb5f56b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/cross-platform-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/cross-platform-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/cross-platform-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;To make the ARC-8 core solution cross-platform, the first decision is to implement it as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.NET Standard class library&lt;/code&gt;. The second one is to define the graphic, sound, input, and logging systems of the emulator as interfaces that will only be implemented on specific platforms, like Blazor and Unity3d.&lt;/p&gt;
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-200-39c2d19ce.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-39c2d19ce.webp 280w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-200-39c2d19ce.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-39c2d19ce.jpg 280w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-39c2d19ce.jpg&quot; alt=&quot;post image&quot; width=&quot;280&quot; height=&quot;562&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-200-de9802b60.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-de9802b60.webp 280w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-200-de9802b60.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-de9802b60.jpg 280w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-systems-interfaces-280-de9802b60.jpg&quot; alt=&quot;post image&quot; width=&quot;280&quot; height=&quot;562&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -88,9 +88,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;premise-2---testable&quot;&gt;Premise 2 - Testable&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/test-128-7afecab50.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/test-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/test-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;The main part of a CHIP-8 emulation development is on the opcodes.&lt;/p&gt;
@@ -109,9 +109,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-200-17d4a8cba.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-17d4a8cba.webp 296w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-200-17d4a8cba.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-17d4a8cba.jpg 296w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-17d4a8cba.jpg&quot; alt=&quot;post image&quot; width=&quot;296&quot; height=&quot;552&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-200-8cc2ea2bb.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-8cc2ea2bb.webp 296w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-200-8cc2ea2bb.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-8cc2ea2bb.jpg 296w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-opcodes-296-8cc2ea2bb.jpg&quot; alt=&quot;post image&quot; width=&quot;296&quot; height=&quot;552&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -119,9 +119,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;premise-3---100-code-coverage&quot;&gt;Premise 3 - 100% code coverage&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/score-128-702a2b758.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/score-128-702a2b758.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/score-128-702a2b758.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/score-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/score-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/score-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;With the decision of implement each opcode in a separate classes and the decision of use interfaces for each system, we can easly unit test them and achieve the 100% code coverage:
@@ -131,9 +131,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 &lt;script src=&quot;https://gist.github.com/0edd94eed39b8f03c9b46f0562983d10.js?file=unit-test.cake&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-200-43462216e.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-400-43462216e.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-43462216e.webp 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-1600-43462216e.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-200-43462216e.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-400-43462216e.jpg 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-43462216e.jpg 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-1600-43462216e.jpg 1600w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-43462216e.jpg&quot; alt=&quot;post image&quot; width=&quot;1600&quot; height=&quot;527&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-200-82e8ea3b1.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-400-82e8ea3b1.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-82e8ea3b1.webp 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-1600-82e8ea3b1.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-200-82e8ea3b1.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-400-82e8ea3b1.jpg 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-82e8ea3b1.jpg 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-1600-82e8ea3b1.jpg 1600w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-code-coverage-800-82e8ea3b1.jpg&quot; alt=&quot;post image&quot; width=&quot;1600&quot; height=&quot;527&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -141,9 +141,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;premise-4---benchmark&quot;&gt;Premise 4 - Benchmark&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/podium-128-f9f44969b.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/podium-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/podium-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;I like to benchmark the code to compare some solutions in a fast and precise way. To create a benchmark in the .NET system the &lt;a href=&quot;https://benchmarkdotnet.org/&quot;&gt;BenchmarkDotNet&lt;/a&gt; is the right choice. BenchmarkDotNet is quite easy to use and you can set up a project with it in less than 5 minutes.&lt;/p&gt;
@@ -151,9 +151,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 &lt;p&gt;When I used it on ARC-8 implementation I discover that I could improve the performance in 18x just removing a Linq code and using a cached solution to locate the opcodes.&lt;/p&gt;
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-200-c0dab76d0.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-400-c0dab76d0.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-c0dab76d0.webp 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-1331-c0dab76d0.webp 1331w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-200-c0dab76d0.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-400-c0dab76d0.jpg 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-c0dab76d0.jpg 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-1331-c0dab76d0.jpg 1331w&quot; type=&quot;image/jpeg&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-c0dab76d0.jpg&quot; alt=&quot;post image&quot; width=&quot;1331&quot; height=&quot;239&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-200-9e35fd921.webp 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-400-9e35fd921.webp 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-9e35fd921.webp 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-1331-9e35fd921.webp 1331w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-200-9e35fd921.jpg 200w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-400-9e35fd921.jpg 400w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-9e35fd921.jpg 800w, /assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-1331-9e35fd921.jpg 1331w&quot; type=&quot;image/jpeg&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2020/10/28/arc-8-devlog-1/arc-8-core-benchmark-800-9e35fd921.jpg&quot; alt=&quot;post image&quot; width=&quot;1331&quot; height=&quot;239&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -161,9 +161,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-875fc7bbb.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;p&gt;In the next &lt;a href=&quot;/tags/arc8-devlog&quot;&gt;ARC-8 devlog&lt;/a&gt; I will talk about the ARC-8’s implementation on Blazor.&lt;/p&gt;
@@ -172,9 +172,9 @@ I won’t get into details about how to implement each of CHIP-8’s 35 opcodes,
 
 &lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
 &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png 128w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-6cef95d36.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/programmer-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
 &lt;/picture&gt;
 
 &lt;ul&gt;

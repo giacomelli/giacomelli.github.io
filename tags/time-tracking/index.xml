@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - time-tracking</title>
  <link href="//tags/time-tracking/index.xml" rel="self"/>
  <link href="/tag/time-tracking.html"/>
- <updated>2024-10-22T02:50:38-03:00</updated>
+ <updated>2025-02-04T10:16:47-03:00</updated>
  <id>/tag/time-tracking.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -66,9 +66,9 @@ curl -v -u &amp;lt;api-token&amp;gt;:api_token \
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-200-22325241e.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-22325241e.webp 207w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-200-22325241e.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-22325241e.png 207w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-22325241e.png&quot; alt=&quot;post image&quot; width=&quot;207&quot; height=&quot;312&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-200-32225c491.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-32225c491.webp 207w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-200-32225c491.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-32225c491.png 207w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Preferences-207-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;207&quot; height=&quot;312&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -78,9 +78,9 @@ curl -v -u &amp;lt;api-token&amp;gt;:api_token \
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-200-dac56bbc1.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-dac56bbc1.webp 393w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-200-dac56bbc1.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-dac56bbc1.png 393w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-dac56bbc1.png&quot; alt=&quot;post image&quot; width=&quot;393&quot; height=&quot;182&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-200-32225c491.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-32225c491.webp 393w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-200-32225c491.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-32225c491.png 393w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_CreateContext-393-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;393&quot; height=&quot;182&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -91,9 +91,9 @@ curl -v -u &amp;lt;api-token&amp;gt;:api_token \
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-200-df877fb0a.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-df877fb0a.webp 371w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-200-df877fb0a.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-df877fb0a.png 371w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-df877fb0a.png&quot; alt=&quot;post image&quot; width=&quot;371&quot; height=&quot;51&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-200-32225c491.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-32225c491.webp 371w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-200-32225c491.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-32225c491.png 371w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_EvidenceSources-371-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;371&quot; height=&quot;51&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -104,9 +104,9 @@ curl -v -u &amp;lt;api-token&amp;gt;:api_token \
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-200-f6b304637.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-400-f6b304637.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-f6b304637.webp 608w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-200-f6b304637.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-400-f6b304637.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-f6b304637.png 608w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-f6b304637.png&quot; alt=&quot;post image&quot; width=&quot;608&quot; height=&quot;161&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-200-32225c491.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-400-32225c491.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-32225c491.webp 608w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-200-32225c491.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-400-32225c491.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-32225c491.png 608w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Rules-608-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;608&quot; height=&quot;161&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -117,9 +117,9 @@ curl -v -u &amp;lt;api-token&amp;gt;:api_token \
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-200-3a6809412.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-400-3a6809412.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-3a6809412.webp 716w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-200-3a6809412.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-400-3a6809412.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-3a6809412.png 716w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-3a6809412.png&quot; alt=&quot;post image&quot; width=&quot;716&quot; height=&quot;68&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-200-32225c491.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-400-32225c491.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-32225c491.webp 716w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-200-32225c491.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-400-32225c491.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-32225c491.png 716w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_Actions-716-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;716&quot; height=&quot;68&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -129,9 +129,9 @@ curl -v -u &amp;lt;api-token&amp;gt;:api_token \
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-200-0f137d185.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-400-0f137d185.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-0f137d185.webp 476w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-200-0f137d185.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-400-0f137d185.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-0f137d185.png 476w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-0f137d185.png&quot; alt=&quot;post image&quot; width=&quot;476&quot; height=&quot;188&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-200-32225c491.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-400-32225c491.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-32225c491.webp 476w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-200-32225c491.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-400-32225c491.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-32225c491.png 476w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StartTogglTask-476-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;476&quot; height=&quot;188&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
@@ -141,9 +141,9 @@ curl -v -u &amp;lt;api-token&amp;gt;:api_token \
 
 &lt;center&gt;                
         &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-200-a0ce52c23.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-400-a0ce52c23.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-a0ce52c23.webp 467w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-200-a0ce52c23.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-400-a0ce52c23.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-a0ce52c23.png 467w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-a0ce52c23.png&quot; alt=&quot;post image&quot; width=&quot;467&quot; height=&quot;182&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-200-32225c491.webp 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-400-32225c491.webp 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-32225c491.webp 467w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-200-32225c491.png 200w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-400-32225c491.png 400w, /assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-32225c491.png 467w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2015/09/20/auto-tracking-your-time-with-controlplane-toggl/ControlPlane_StopTogglTask-467-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;467&quot; height=&quot;182&quot; /&gt;
 &lt;/picture&gt;
 
       &lt;/center&gt;
