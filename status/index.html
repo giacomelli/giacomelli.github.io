@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Unity and Game Development links (May 24th 2019) | Diego Giacomelli | Senior .NET Developer | Azure | Web API | Framework | Unity 3D</title>
+    <title>Status | Diego Giacomelli | Senior .NET Developer | Azure | Web API | Framework | Unity 3D</title>
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,26 +11,17 @@
 	<meta name="twitter:site" content="@ogiacomelli" />
 
     
-    <meta name="description" content="
-  Kristin Stock posted a video about how she is procedurally generating cities using Subdivsion in Unity.
-
-" />
-    <meta property="og:description" content="
-  Kristin Stock posted a video about how she is procedurally generating cities using Subdivsion in Unity.
-
-" />
-    <meta name="twitter:description" content="
-  Kristin Stock posted a video about how she is procedurally generating cities using Subdivsion in Unity.
-
-" />
+    <meta name="description" content="Senior .NET Developer | Azure | Web API | Framework | Unity 3D">
+    <meta property="og:description" content="Senior .NET Developer | Azure | Web API | Framework | Unity 3D" />
+    <meta name="twitter:description" content="Senior .NET Developer | Azure | Web API | Framework | Unity 3D" />
     
 
     <meta http-equiv='content-language' content='en-us'>
     <meta name="author" content="Diego Giacomelli" />
 
     
-    <meta property="og:title" content="Unity and Game Development links (May 24th 2019)" />
-    <meta property="twitter:title" content="Unity and Game Development links (May 24th 2019)" />
+    <meta property="og:title" content="Status" />
+    <meta property="twitter:title" content="Status" />
     
 
     
@@ -109,93 +100,43 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
     <div id="main" role="main" class="container">
       <div class="content-container">
-        <article class="post">
-  <h1 >Unity and Game Development links (May 24th 2019)</h1>
-  <div class="entry">
-    
+        <h1>Last update</h1>
 
+<h3>Date</h3>
+<span id="update-date"></span>
 
- 
-    <div class="post-info-box">
-      <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>24/05/2019</span></div>   
+<h3>Branch</h3>
+<span id="update-branch"></span>
+
+<h3>Build</h3>
+<img id="update-build" />
+
+<script>
+Notification.requestPermission().then(function(result) {
+  console.log(result);
+});
+
+function refreshVersion() {
+  $.getJSON("/version.json", function(version) {
       
+      var updateDate = $('#update-date').text();
+      if(Notification.permission === "granted" && updateDate.length > 0 && updateDate != version.date)
+        new Notification("Site atualizado", { icon: "/assets/avatar-transparent.png", requireInteraction: true });
+      
+      $('#update-date').text(version.date);
+      $('#update-branch').text(version.branch);
+      $('#update-build').attr('src', 'https://ci.appveyor.com/api/projects/status/ttr23qn6jqftsiaq/branch/' + version.branch + '?svg=true');
+    });
+}
 
-<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>1 minutes to read</span></div>
-   
-    </div>  
-    <ul>
-  <li>
-    <p><strong>Kristin Stock</strong> posted a video about how she is <a href="https://www.youtube.com/watch?v=zBDrH3lg4YY">procedurally generating cities using Subdivsion in Unity</a>.</p>
-  </li>
-  <li><strong>Dave Hunt and Yang-Hai Eakes</strong> made an <a href="https://blogs.unity3d.com/2019/05/14/introducing-the-animation-rigging-preview-package-for-unity-2019-1/">introduction for the Animation Rigging preview package for Unity 2019.1</a>.
-    <blockquote>
-      <p>Set up procedural motion on animated skeletons at runtime. You can use a set of predefined animation constraints to manually build a control rig hierarchy for a character or develop your own custom constraints in C#.</p>
-    </blockquote>
-  </li>
-  <li>
-    <p><strong>Alexander Ameye</strong> launched a <a href="https://alexanderameye.github.io/">site with many Unity tutorials</a>, like <code class="language-plaintext highlighter-rouge">Water 1: Tessellated Plane</code> and <code class="language-plaintext highlighter-rouge">Toon Shading</code>.</p>
-  </li>
-  <li><strong>Shahriar Shahrabi</strong> made a post showing how use <a href="https://medium.com/realities-io/making-the-inception-effect-in-unity-3d-with-few-lines-of-code-fb9667d4786f">deformation matrices to achieve the <code class="language-plaintext highlighter-rouge">Inception effect</code></a>.
-    <blockquote>
-      <p>Have you ever wondered how your brain would react if you bend the space around you in VR? Or change the field of view and do a vertigo? Well I did, so I started writing a series of shaders which deformed the space around me, using matrices and ended up with an Inception looking effect.</p>
-    </blockquote>
-  </li>
-  <li><strong>Steve Cavanagh and Lyndon Homewood</strong> wrote a post about the <a href="https://blogs.unity3d.com/2019/05/13/introducing-the-profile-analyzer/">Unity Profile Analyzer (preview)</a>.
-    <blockquote>
-      <p>Have you ever needed to compare the difference in performance between two versions of your project? See the impact of an asset or code change, optimization work, settings change or Unity version upgrade?</p>
-    </blockquote>
-  </li>
-  <li>
-    <p><strong>Unity 2019.2 beta</strong> released an <a href="https://forum.unity.com/threads/experimental-2d-renderer-in-lwrp.683623">experimental 2D Renderer in LWRP</a> with 2D lights, Lit and Unlit Sprite Masternode in Shader Graph, and Pixel Perfect Camera.</p>
-  </li>
-  <li><strong>Julien Blais</strong> wrote a post about <a href="https://blogs.unity3d.com/2019/05/21/how-to-use-timeline-signals">new feature Signals</a> added to Timeline in Unity 2019.1.
-    <blockquote>
-      <p>We’ve built Signals to establish a communication channel between Timeline and outside systems. But what does that mean? Why did we decide on this approach?</p>
-    </blockquote>
-  </li>
-</ul>
-    
-  </div>
-  <span>
-    
-        <a href="/tags/unity3d" class="post-tag"><i class="fas fa-tag"></i>&nbsp;unity3d</a>
-    
-        <a href="/tags/gamedev" class="post-tag"><i class="fas fa-tag"></i>&nbsp;gamedev</a>
-    
-</span>
-   
-  
-<div class="comments">
-	<div id="disqus_thread">
-		<div id="disqus_thread_loader"><i class="fas fa-spinner"></i> Loading comments...</div>
-	</div>
-
-	<script type="text/javascript">
-
-	    var disqus_shortname = 'diegogiacomelli';
-
-		var disqus_observer = new IntersectionObserver(function(entries) {		
-		// comments section reached
-		// start loading Disqus now
-		if(entries[0].isIntersecting) {
-			(function() {
-				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-			})();
-
-			// once executed, stop observing
-			disqus_observer.disconnect();
-		}
-	}, { threshold: [0] });
-	disqus_observer.observe(document.querySelector("#disqus_thread"));
-
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-</article>
-
+$(document).ready(function() {
+  $.ajaxSetup({ cache: false });
+  refreshVersion();
+  setInterval(function() {
+    refreshVersion();
+  }, 5000);
+});
+</script>
       </div>
       <div class="right-bar-container">
           <!-- <style>     
@@ -448,8 +389,8 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
 			ga('create', 'UA-50922592-1', 'auto');
 			ga('send', 'pageview', {
-			'page': '/unity-and-gamedev-links-may-24th-2019/',
-			'title': 'Unity and Game Development links (May 24th 2019)'
+			'page': '/status/',
+			'title': 'Status'
 			});
 		}, 1000);
 		
