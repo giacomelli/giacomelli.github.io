@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt">
+    <head>        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{{my-browser}}</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50922592-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-50922592-1');
+        </script>
+        <script data-ad-client="ca-pub-4531139417583317" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="scripts/html2canvas.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/ua-parser-js@0/dist/ua-parser.min.js"></script>
+        <style>            
+            .card {
+                padding: 50px;
+                margin: 1px;
+                min-width: 300px;                
+            }
+
+            h1, .card-title, .card-text {
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            header {
+                margin: 100px;
+            }            
+
+            .footer {                
+                font-size: 8pt;
+                font-style: italic;
+            }
+
+            .copyright {                
+                font-size: 8pt;
+                font-style: italic;                             
+            }
+            #download-screenshot-button {
+                display: none;
+            }
+            .btn {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <script>
+        $(function(){
+            var parser = new UAParser();    
+            var result = parser.getResult();            
+    
+            console.log(result);
+            addOSCard(result);
+            addDeviceCard(result);
+            addBrowserCard(result);      
+            addConnectionCard(result);                  
+            addCard('{{datetime}}', 'datetime', new Date());
+            addLanguageCard(result);
+
+            addScreenshotButton();
+        });
+
+        function addCard(title, img, text) {
+            if(img != undefined)
+                img = img.toLowerCase();
+
+            var card = $('#template').clone();
+            card.attr('id', title);            
+            card.find('img').attr('src',  `assets/images/${img}.png`);
+            card.find('#title').text(title);
+            card.find('#text').text(text);
+            card.css('display', 'inline');
+
+            $('.cards').append(card);
+        }
+
+        function addOSCard(result) {            
+            if(result.os == undefined)
+                return;
+
+            var text = result.os.name;
+            if(result.os.version != undefined)
+                text += ` ${result.os.version}`;
+                
+            addCard('{{os}}', result.os.name,  text);            
+        }
+
+        
+        function addDeviceCard(result) {       
+            if(result.device == undefined || result.device.type == null)                
+                result.device.type = 'Desktop'
+                
+            var text = result.device.type;
+            
+            if(result.device.model != undefined)
+            {
+                if(text == 'Desktop')
+                    text += ` ${result.device.model}`;                    
+                else            
+                    text = result.device.model;                    
+            }
+
+            if(result.device.vendor != undefined)
+                text = `${result.device.vendor} ${text}`; 
+
+            if(result.cpu.architecture != undefined)
+                text += ` (${result.cpu.architecture})`;
+
+            addCard('{{device}}', result.device.type, text);            
+        }
+
+        function addBrowserCard(result) {            
+            if(result.browser == undefined)
+                return;
+                
+            addCard('{{browser}}', result.browser.name, `${result.browser.name} ${result.browser.version}`);
+        }
+        
+        function addConnectionCard(result) {            
+            if(navigator.connection == undefined)
+                return;
+                
+            addCard('{{connection}}', 'connection', `${navigator.connection.effectiveType} / ${navigator.connection.downlink} Mbps`);
+        }
+
+        function addLanguageCard(result) {            
+            if(navigator.language == undefined)
+                return;
+
+            var language = navigator.language;
+
+            switch(language)
+            {
+                case 'pt-BR':
+                case 'pt':
+                    language = '{{portuguese}}';
+                    break;
+
+                case 'en-US':
+                case 'en':
+                    language = '{{english}}';
+                    break;
+            }
+
+            addCard('{{language}}', 'language', language);
+        }       
+
+        function addScreenshotButton() {
+            var screenshotButton = $('#screenshot-button'); 
+                       
+            screenshotButton.click(function() {
+                screenshotButton.text("{{wait-msg}}");
+                screenshotButton.attr('disabled', 'disabled');
+                var mainContainer = document.getElementById("main-container");
+                var useHeight = $('#main-container').prop('scrollHeight');
+
+                var previousWidth = $('#main-container').css('width');
+                $('#main-container').css('width', '1200px');          
+
+                html2canvas(mainContainer, {scale: 1 }).then(canvas => {
+                    var download = $("#download-screenshot-button");
+                    download.attr('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+                    download.attr('download', '{{image-name}}.png');
+                    screenshotButton.css('display', 'none');
+                    download.css('display', 'inline');
+                    
+                    $('#main-container').css('width', previousWidth);
+                });            
+            });
+        }
+    </script>
+    </head>
+    <body>        
+        <div id="template" class="card col" style="display: none;">
+            <img class="card-img-top" crossOrigin="anonymous" onerror="if (this.src != 'error.jpg') this.src = 'assets/images/unknow.png';">
+            <div class="card-body">
+            <h5 class="card-title" id='title'></h5>            
+            <p class="card-text" id='text'></p> 
+            </div>          
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-md-center">     
+                <div class="col">
+                    <h1>{{my-browser}}</h1>
+                    <button type="button" class="btn btn-primary" id="screenshot-button">{{generate-image}}</button>
+                    <a type="button" class="btn btn-success" id="download-screenshot-button">{{download-image}}</a>
+                </div>                                
+            </div>                              
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-md-center">     
+                <div class="col">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-4531139417583317"
+                        data-ad-slot="4101415088"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+                </div>                                
+            </div>                              
+        </div>
+        
+
+        <div id="main-container" class="container">
+            <div class="cards row justify-content-md-center">                               
+                
+            </div>
+
+            <div class="row justify-content-md-center footer">          
+                {{my-browser}} - {{my-browser-url}} 
+            </div>
+        </div>
+        
+        <br>
+        <div class="container copyright">
+            <div class="row justify-content-md-center">     
+                <p>Developed by <a href="https://twitter.com/ogiacomelli">Diego Giacomelli</a></p>
+                &nbsp;|&nbsp;
+                <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+            </div>            
+        </div>      
+    </body>
+    </html>
