@@ -3,11 +3,59 @@
  <title>Diego Giacomelli - trijam</title>
  <link href="//tags/trijam/index.xml" rel="self"/>
  <link href="/tag/trijam.html"/>
- <updated>2025-02-12T14:29:27-03:00</updated>
+ <updated>2025-02-17T07:08:34-03:00</updated>
  <id>/tag/trijam.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Trijam 309 entry&colon; Bombing</title>
+   <link href="//trijam-309-entry-bombing/"/>
+   <updated>2025-02-17T00:00:00-03:00</updated>
+   <id>//trijam-309-entry-bombing</id>
+   <content type="html">&lt;p&gt;Last weekend I participated in &lt;strong&gt;&lt;a href=&quot;https://itch.io/jam/trijam-309&quot;&gt;Trijam #307&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;iframe class=&quot;itchio-iframe&quot; frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/3330464 &quot;&gt;         
+        &lt;/iframe&gt;
+       &lt;/center&gt;
+
+&lt;h2 id=&quot;the-theme&quot;&gt;The theme&lt;/h2&gt;
+&lt;p&gt;The theme for this game jam was &lt;strong&gt;“Dangerous Choices”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This was the fifth Trijam that I participated with purpose to test my small game engine: &lt;a href=&quot;/tags/blazorame&quot;&gt;Blazorame&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In Bombing, you take control of a military plane pilot tasked with bombing enemy military lines while carefully avoiding civilian buildings. Inspired by classic Atari 2600 arcade gameplay, every drop of your bomb is a dangerous choice—will you strike the enemy or cause collateral damage?&lt;/p&gt;
+
+&lt;p&gt;Gameplay&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Bomb military buildings (pink) to earn points.&lt;/li&gt;
+  &lt;li&gt;Avoid hitting civilian buildings—each mistake costs you points.&lt;/li&gt;
+  &lt;li&gt;Destroy all military buildings to advance to the next level.&lt;/li&gt;
+  &lt;li&gt;With every level, your plane gets faster, making precision even more critical.&lt;/li&gt;
+  &lt;li&gt;Game Over if you destroy all civilian buildings or crash into any building.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The final result is: &lt;strong&gt;Bombing&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-play&quot;&gt;How to play&lt;/h2&gt;
+&lt;p&gt;The game can be played directly on the browser here: &lt;a href=&quot;https://giacomelli.itch.io/bombing&quot;&gt;https://giacomelli.itch.io/bombing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/6gMHWcg1EiE &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;how-to-vote&quot;&gt;How to vote&lt;/h2&gt;
+&lt;p&gt;If you liked the game, &lt;strong&gt;you can cast a vote&lt;/strong&gt; for the game jam here: &lt;a href=&quot;https://itch.io/jam/trijam-309/rate/3330464&quot;&gt;https://itch.io/jam/trijam-309/rate/3330464&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Trijam 307 entry&colon; Web Of Bugs</title>
