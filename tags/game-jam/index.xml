@@ -3,17 +3,68 @@
  <title>Diego Giacomelli - game-jam</title>
  <link href="//tags/game-jam/index.xml" rel="self"/>
  <link href="/tag/game-jam.html"/>
- <updated>2025-02-26T17:42:34-03:00</updated>
+ <updated>2025-03-21T08:11:42-03:00</updated>
  <id>/tag/game-jam.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
  
  <entry>
+   <title>Trijam 313 entry&colon; Strange Cravings Restaurant</title>
+   <link href="//trijam-313-entry-strange-cravings-restaurant/"/>
+   <updated>2025-03-17T00:00:00-03:00</updated>
+   <id>//trijam-313-entry-strange-cravings-restaurant</id>
+   <content type="html">&lt;p&gt;Last weekend I participated in &lt;strong&gt;&lt;a href=&quot;https://itch.io/jam/trijam-313&quot;&gt;Trijam #313&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;
+        &lt;iframe class=&quot;itchio-iframe&quot; frameborder=&quot;0&quot; src=&quot;https://itch.io/embed/3401145 &quot;&gt;         
+        &lt;/iframe&gt;
+       &lt;/center&gt;
+
+&lt;h2 id=&quot;the-theme&quot;&gt;The theme&lt;/h2&gt;
+&lt;p&gt;The theme for this game jam was &lt;strong&gt;“Strange Cravings”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This was the seventh Trijam that I participated with purpose to test my small game engine: &lt;a href=&quot;/tags/blazorame&quot;&gt;Blazorame&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;the-game&quot;&gt;The game&lt;/h2&gt;
+&lt;p&gt;Welcome to Strange Cravings Restaurant, where you play as a krab running an undersea diner that caters to the bizarre cravings of deep-sea creatures! Your goal? Fulfill as many strange orders as possible before time runs out—while managing a chaotic kitchen conveyor system.&lt;/p&gt;
+
+&lt;p&gt;Food arrives from the kitchen on four food mats, but not everything is part of the current order. If it’s the wrong dish, quickly recycle it to save money. Drop food on the floor, and you’ll lose cash! Inspired by classic Atari 2600 arcade gameplay, this fast-paced challenge will test your reflexes and decision-making. Can you out-earn the other krab restaurant owners and become the ultimate deep-sea chef?&lt;/p&gt;
+
+&lt;h2 id=&quot;gameplay&quot;&gt;Gameplay&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;🦀 Move – Use the arrow keys to navigate.&lt;/li&gt;
+  &lt;li&gt;🍽 Serve Orders – Deliver the correct food to earn $10.&lt;/li&gt;
+  &lt;li&gt;♻ Recycle – Dispose of incorrect food for $1.&lt;/li&gt;
+  &lt;li&gt;❌Dropped Food – Lose $5 per fallen dish.&lt;/li&gt;
+  &lt;li&gt;⏳ Time Limit – You have 120 seconds to make as much money as possible!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The final result is: &lt;strong&gt;Strange Cravings Restaurant&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-play&quot;&gt;How to play&lt;/h2&gt;
+&lt;p&gt;The game can be played directly on the browser here: &lt;a href=&quot;https://giacomelli.itch.io/strange-cravings-restaurant&quot;&gt;https://giacomelli.itch.io/strange-cravings-restaurant&lt;/a&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+        &lt;iframe src=&quot;https://www.youtube.com/embed/B4MDAYZhIkI &quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/center&gt;
+
+&lt;h2 id=&quot;how-to-vote&quot;&gt;How to vote&lt;/h2&gt;
+&lt;p&gt;If you liked the game, &lt;strong&gt;you can cast a vote&lt;/strong&gt; for the game jam here: &lt;a href=&quot;https://itch.io/jam/trijam-313/rate/3401145&quot;&gt;https://itch.io/jam/trijam-313/rate/3401145&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Trijam 310 entry&colon; Bloodsuckers Invaders</title>
-   <link href="//trijam-309-entry-bloodsuckers-invaders/"/>
+   <link href="//trijam-310-entry-bloodsuckers-invaders/"/>
    <updated>2025-02-24T00:00:00-03:00</updated>
-   <id>//trijam-309-entry-bloodsuckers-invaders</id>
+   <id>//trijam-310-entry-bloodsuckers-invaders</id>
    <content type="html">&lt;p&gt;Last weekend I participated in &lt;strong&gt;&lt;a href=&quot;https://itch.io/jam/trijam-310&quot;&gt;Trijam #310&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
