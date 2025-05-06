@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anúncios retrogaming Brazil</title>
+
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- DataTables JS -->
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+  <!-- PapaParse CSV Parser -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+  <style>
+    tfoot input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531139417583317" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <h2>Anúncios retrogaming Brazil</h2>
+  <table id="sheetTable" class="display" style="width:100%">
+    <thead></thead>
+    <tfoot></tfoot>
+  </table>
+
+  <script>
+    const sheetId = '1_7eJY67nFVuYMcm3S_vEocrFIxrvLvQr5WBc2knmzHY'; // Replace with your real Sheet ID
+    const sheetUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=csv`;
+
+    fetch(sheetUrl)
+      .then(response => response.text())
+      .then(csv => {
+        const results = Papa.parse(csv, { header: true });
+        const data = results.data.filter(row => Object.values(row).some(cell => cell)); // Remove empty rows
+        
+        const columns = Object.keys(data[0]).map(key => {
+        if (key === 'Url') {
+          return {
+            title: key,
+            data: key,
+            render: function (data, type, row) {
+              if (!data) return '';
+              return `<a href="${data}" target="_blank" rel="noopener noreferrer">${data}</a>`;
+            }
+          };
+        }
+        else if (key === 'Preço') {
+          return {
+            title: key,
+            data: key,
+            render: function (data, type, row) {
+              if (!data) return '';
+              var value = parseFloat(data);
+              return 'R$ ' + value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });           
+            }
+          };
+        }
+        else if (key === 'Data') {
+          return {
+            title: key,
+            data: key,
+            render: function (data, type, row) {
+              if (!data) return '';
+              var date = new Date(data);
+                return date.getDate().toString().padStart(2, '0') + '/' + 
+                        (date.getMonth() + 1).toString().padStart(2, '0') + '/' + 
+                        date.getFullYear();
+            }
+          };
+        }
+        return { title: key, data: key };
+      });
+
+        // Create <thead> and <tfoot> rows with filter inputs
+        const thead = $('#sheetTable thead');
+        const tfoot = $('#sheetTable tfoot');
+        const headerRow = $('<tr>');
+        const filterRow = $('<tr>');
+        columns.forEach(col => {
+          headerRow.append(`<th>${col.title}</th>`);
+          filterRow.append(`<th><input type="text" placeholder="Filtrar por ${col.title}" /></th>`);
+        });
+        thead.append(headerRow);
+        tfoot.append(filterRow);
+
+        // Initialize DataTable
+        const table = $('#sheetTable').DataTable({
+          data: data,
+          columns: columns,
+          pageLength: 100,
+          order: [[columns.findIndex(c => c.data === 'Data'), 'desc']],
+          language: {
+              sEmptyTable: "Nenhum dado disponível na tabela",
+              sInfo: "Mostrando _START_ a _END_ de _TOTAL_ entradas",
+              sInfoEmpty: "Mostrando 0 a 0 de 0 entradas",
+              sInfoFiltered: "(filtrado de _MAX_ entradas totais)",
+              sInfoPostFix: "",
+              sLengthMenu: "Mostrar _MENU_ entradas",
+              sLoadingRecords: "Carregando...",
+              sProcessing: "Processando...",
+              sSearch: "Buscar:",
+              sZeroRecords: "Nenhum registro encontrado",
+              oPaginate: {
+                  sFirst: "Primeiro",
+                  sPrevious: "Anterior",
+                  sNext: "Próximo",
+                  sLast: "Último"
+              },
+              oAria: {
+                  sSortAscending: ": Ordenar colunas de forma ascendente",
+                  sSortDescending: ": Ordenar colunas de forma descendente"
+              }
+          },
+          initComplete: function () {
+            this.api().columns().every(function () {
+              const that = this;
+              $('input', this.footer()).on('keyup change clear', function () {
+                if (that.search() !== this.value) {
+                  that.search(this.value).draw();
+                }
+              });
+            });
+          }
+        });
+      })
+      .catch(error => {
+        console.error('Error loading sheet:', error);
+      });
+  </script>
+
+</body>
+</html>
