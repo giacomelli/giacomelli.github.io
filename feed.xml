@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2025-09-03T09:47:10-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Azure | Web API | Framework | Unity 3D</subtitle><entry><title type="html">Trijam 313 entry&amp;amp;colon; Strange Cravings Restaurant</title><link href="http://diegogiacomelli.com.br/trijam-313-entry-strange-cravings-restaurant/" rel="alternate" type="text/html" title="Trijam 313 entry&amp;amp;colon; Strange Cravings Restaurant" /><published>2025-03-17T00:00:00-03:00</published><updated>2025-03-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/trijam-313-entry-strange-cravings-restaurant</id><content type="html" xml:base="http://diegogiacomelli.com.br/trijam-313-entry-strange-cravings-restaurant/"><![CDATA[<p>Last weekend I participated in <strong><a href="https://itch.io/jam/trijam-313">Trijam #313</a></strong>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://diegogiacomelli.com.br/feed.xml" rel="self" type="application/atom+xml" /><link href="http://diegogiacomelli.com.br/" rel="alternate" type="text/html" /><updated>2025-09-08T17:50:45-03:00</updated><id>http://diegogiacomelli.com.br/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Azure | Web API | Framework | Unity 3D</subtitle><entry><title type="html">Google Mobile Ads GetClientFactory exception</title><link href="http://diegogiacomelli.com.br/google-mobile-ads-getcientfactory-exception/" rel="alternate" type="text/html" title="Google Mobile Ads GetClientFactory exception" /><published>2025-09-08T00:00:00-03:00</published><updated>2025-09-08T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/google-mobile-ads-getcientfactory-exception</id><content type="html" xml:base="http://diegogiacomelli.com.br/google-mobile-ads-getcientfactory-exception/"><![CDATA[<h2 id="the-problem">The problem</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-32225c491.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/problem-128-32225c491.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/problem-128-32225c491.png" alt="post image" width="128" height="128" />
+</picture>
+
+<p>If you’re experiencing this error when trying to initialize Google Mobile Ads Unity Plugin on an Android device:
+<script src="https://gist.github.com/5a0d001b36432bf7807f08d8f525f1d7.js?file=problem.sh"> </script></p>
+
+<p>It is quite possible that you are facing problems with the linker.</p>
+
+<h2 id="solution">Solution</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/solution-128-32225c491.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/solution-128-32225c491.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/solution-128-32225c491.png" alt="post image" width="128" height="128" />
+</picture>
+
+<p>Open your <code class="language-plaintext highlighter-rouge">Assets/link.xml</code> file and add the lines below:
+<script src="https://gist.github.com/5a0d001b36432bf7807f08d8f525f1d7.js?file=solution.xml"> </script></p>
+
+<h2 id="conclusion">Conclusion</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/conclusion-128-32225c491.png" alt="post image" width="128" height="128" />
+</picture>
+
+<p>There are probably other causes for this error, but in my case, when using Unity 6000.0.23f1 with <a href="https://developers.google.com/admob/unity/quick-start">Google Mobile Ads Unity Plugin</a> 10.4.2, this was the solution.</p>
+<p><br /><br /><br />Icons made by <a href="http://www.freepik.com">Freepik</a>, <a href="http://www.flaticon.com/authors/vignesh-oviyan">Vignesh Oviyan</a> and <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="http://www.flaticon.com">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons BY 3.0</a></p>]]></content><author><name></name></author><category term="Article" /><category term="unity3d" /><category term="gamedev" /><category term="android" /><category term="google-mobile-ads" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Trijam 313 entry&amp;amp;colon; Strange Cravings Restaurant</title><link href="http://diegogiacomelli.com.br/trijam-313-entry-strange-cravings-restaurant/" rel="alternate" type="text/html" title="Trijam 313 entry&amp;amp;colon; Strange Cravings Restaurant" /><published>2025-03-17T00:00:00-03:00</published><updated>2025-03-17T00:00:00-03:00</updated><id>http://diegogiacomelli.com.br/trijam-313-entry-strange-cravings-restaurant</id><content type="html" xml:base="http://diegogiacomelli.com.br/trijam-313-entry-strange-cravings-restaurant/"><![CDATA[<p>Last weekend I participated in <strong><a href="https://itch.io/jam/trijam-313">Trijam #313</a></strong>.</p>
 
 <blockquote>
   <p>Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours.</p>

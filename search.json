@@ -856,6 +856,14 @@
     
     
     {
+      "title"    : "Google Mobile Ads GetClientFactory exception",
+      "category" : "Article",
+      "tags"     : "unity3d, gamedev, android, google mobile ads",
+      "url"      : "/google-mobile-ads-getcientfactory-exception/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "Trijam 313 entry&amp;colon; Strange Cravings Restaurant",
       "category" : "Article",
       "tags"     : "game jam, games, trijam, blazorame, blazor",
@@ -960,18 +968,18 @@
     } ,
     
     {
-      "title"    : "unitytips&amp;colon; Indices",
-      "category" : "Article",
-      "tags"     : "unity3d, unitytips, csharp, csharp 8 new features",
-      "url"      : "/unitytips-indices/",
-      "author"   : ""
-    } ,
-    
-    {
       "title"    : "unitytips&amp;colon; Editor internal menus",
       "category" : "Article",
       "tags"     : "unity3d, unitytips",
       "url"      : "/unitytips-editor-internal-menus/",
+      "author"   : ""
+    } ,
+    
+    {
+      "title"    : "unitytips&amp;colon; Indices",
+      "category" : "Article",
+      "tags"     : "unity3d, unitytips, csharp, csharp 8 new features",
+      "url"      : "/unitytips-indices/",
       "author"   : ""
     } ,
     
