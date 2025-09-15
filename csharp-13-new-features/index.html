@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Articles | Diego Giacomelli | Senior .NET Developer | Azure | Web API | Framework | Unity 3D</title>
+    <title>C# 13 new features | Diego Giacomelli | Senior .NET Developer | Azure | Web API | Framework | Unity 3D</title>
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,22 +11,25 @@
 	<meta name="twitter:site" content="@ogiacomelli" />
 
     
-    <meta name="description" content="Senior .NET Developer | Azure | Web API | Framework | Unity 3D">
-    <meta property="og:description" content="Senior .NET Developer | Azure | Web API | Framework | Unity 3D" />
-    <meta name="twitter:description" content="Senior .NET Developer | Azure | Web API | Framework | Unity 3D" />
+    <meta name="description" content="
+" />
+    <meta property="og:description" content="
+" />
+    <meta name="twitter:description" content="
+" />
     
 
     <meta http-equiv='content-language' content='en-us'>
     <meta name="author" content="Diego Giacomelli" />
 
     
-    <meta property="og:title" content="Articles" />
-    <meta property="twitter:title" content="Articles" />
+    <meta property="og:title" content="C# 13 new features" />
+    <meta property="twitter:title" content="C# 13 new features" />
     
 
     
-        <meta property="og:image" content="https://avatars2.githubusercontent.com/u/177389?v=3&s=128">
-		<meta property="twitter:image" content="https://avatars2.githubusercontent.com/u/177389?v=3&s=128" />
+        <meta property="og:image" content="http://localhost:4000/assets/logos/csharp.svg">
+        <meta property="twitter:image" content="http://localhost:4000/assets/logos/csharp.svg" />        
     
     <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -90,171 +93,163 @@ nav.greedy,nav.greedy h1{display:flex;align-items:center}nav.greedy button,nav.g
 
     <div id="main" role="main" class="container">
       <div class="content-container">
-        <article class="page">
+        <article class="post">
+  <h1 >C# 13 new features</h1>
   <div class="entry">
     
 
-<div class="posts">
+
+
+  
+    <center>
+   
+     <img class='logo' src='/assets/logos/csharp.svg' alt='post image'>
+  
+    </center>
+   
  
+    <div class="post-info-box">
+      <div class="post-info"><i class="fas fa-calendar-alt"></i> <span class="post-date"></span>15/09/2025</span></div>   
+      
 
+<div class="post-info"><i class="fas fa-clock"></i> <span class="post-date"></span>2 minutes to read</span></div>
+   
+    </div>  
     
-    
-    <article class="post">
+<p>In <strong>November 2024</strong>, Microsoft released <strong><a href="https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-13">C# 13</a></strong>.<br />
+It’s not a huge overhaul, but it removes some long-standing restrictions and introduces features that make code cleaner, safer, and easier to write.</p>
 
-    <h2><a href="/csharp-13-new-features/">C# 13 new features</a></h2>
+<p>Here are the highlights — with <strong>before vs after</strong> examples.</p>
 
-    <div class="entry">
-    In November 2024, Microsoft released C# 13. It’s not a huge overhaul, but it removes some long-standing restrictions and introduces features that make code cleaner, safer, and easier to write. Here are the highlights — with before vs after examples. params collections Before, params was limited to arrays. Before After...
-    </div>
+<hr />
 
-    <a href="/csharp-13-new-features/" class="button" aria-label="C# 13 new features">Read "C# 13 new features"</a>
-    </article>
+<h2 id="params-collections">params collections</h2>
+<p>Before, <code class="language-plaintext highlighter-rouge">params</code> was limited to arrays.</p>
 
-    
-    
-    <article class="post">
+<h3 id="before">Before</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=params.before.cs"> </script>
 
-    <h2><a href="/google-mobile-ads-getcientfactory-exception/">Google Mobile Ads GetClientFactory exception</a></h2>
+<h3 id="after">After</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=params.after.cs"> </script>
 
-    <div class="entry">
-    The problem If you’re experiencing this error when trying to initialize Google Mobile Ads Unity Plugin on an Android device: It is quite possible that you are facing problems with the linker. Solution Open your Assets/link.xml file and add the lines below: Conclusion There are probably other causes for this...
-    </div>
+<hr />
 
-    <a href="/google-mobile-ads-getcientfactory-exception/" class="button" aria-label="Google Mobile Ads GetClientFactory exception">Read "Google Mobile Ads GetClientFacto..."</a>
-    </article>
+<h2 id="new-lock-semantics">New lock semantics</h2>
+<p>When locking on <code class="language-plaintext highlighter-rouge">System.Threading.Lock</code>, the compiler now uses <code class="language-plaintext highlighter-rouge">EnterScope()</code> under the hood.</p>
 
-    
-    
-    <article class="post">
+<h3 id="before-1">Before</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=lock.before.cs"> </script>
 
-    <h2><a href="/trijam-313-entry-strange-cravings-restaurant/">Trijam 313 entry&colon; Strange Cravings Restaurant</a></h2>
+<p>This used the <code class="language-plaintext highlighter-rouge">Monitor</code> API.</p>
 
-    <div class="entry">
-    Last weekend I participated in Trijam #313. Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours. The theme The theme for this game jam was “Strange Cravings”. This was the seventh Trijam that I participated with purpose to test...
-    </div>
+<h3 id="after-1">After</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=lock.after.cs"> </script>
 
-    <a href="/trijam-313-entry-strange-cravings-restaurant/" class="button" aria-label="Trijam 313 entry&colon; Strange Cravings Restaurant">Read "Trijam 313 entry&colon; Strange ..."</a>
-    </article>
+<p>Which is equivalent to:
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=lock.after.underhood.cs"> </script></p>
 
-    
-    
-    <article class="post">
+<hr />
 
-    <h2><a href="/trijam-310-entry-bloodsuckers-invaders/">Trijam 310 entry&colon; Bloodsuckers Invaders</a></h2>
+<h2 id="escape-sequence-e">Escape sequence \e</h2>
+<p>Now you can use <code class="language-plaintext highlighter-rouge">\e</code> for the <strong>ESC</strong> character.</p>
 
-    <div class="entry">
-    Last weekend I participated in Trijam #310. Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours. The theme The theme for this game jam was “Vampires”. This was the sixth Trijam that I participated with purpose to test my...
-    </div>
+<h3 id="before-2">Before</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=escape.before.cs"> </script>
 
-    <a href="/trijam-310-entry-bloodsuckers-invaders/" class="button" aria-label="Trijam 310 entry&colon; Bloodsuckers Invaders">Read "Trijam 310 entry&colon; Bloodsuc..."</a>
-    </article>
+<h3 id="after-2">After</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=escape.after.cs"> </script>
 
-    
-    
-         
-    
-    <article class="post">
+<hr />
 
-    <h2><a href="/trijam-309-entry-bombing/">Trijam 309 entry&colon; Bombing</a></h2>
+<h2 id="overload-resolution-improvements">Overload resolution improvements</h2>
+<p>Ambiguous overloads are resolved better.</p>
 
-    <div class="entry">
-    Last weekend I participated in Trijam #309. Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours. The theme The theme for this game jam was “Dangerous Choices”. This was the fifth Trijam that I participated with purpose to test...
-    </div>
+<h3 id="before-3">Before</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=overload.before.cs"> </script>
 
-    <a href="/trijam-309-entry-bombing/" class="button" aria-label="Trijam 309 entry&colon; Bombing">Read "Trijam 309 entry&colon; Bombing"</a>
-    </article>
+<h3 id="after-3">After</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=overload.after.cs"> </script>
 
-    
-    
-    <article class="post">
+<hr />
 
-    <h2><a href="/trijam-307-entry-web-of-bugs/">Trijam 307 entry&colon; Web Of Bugs</a></h2>
+<h2 id="indexers-in-initializers">Indexers in initializers</h2>
+<p>The <code class="language-plaintext highlighter-rouge">^</code> (from end) operator can now be used in initializers.</p>
 
-    <div class="entry">
-    Last weekend I participated in Trijam #307. Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours. The theme The theme for this game jam was “Web Of Issues”. This was the fourth Trijam that I participated with purpose to...
-    </div>
+<h3 id="before-4">Before</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=indexer.before.cs"> </script>
 
-    <a href="/trijam-307-entry-web-of-bugs/" class="button" aria-label="Trijam 307 entry&colon; Web Of Bugs">Read "Trijam 307 entry&colon; Web Of Bugs"</a>
-    </article>
+<h3 id="after-4">After</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=indexer.after.cs"> </script>
 
-    
-    
-    <article class="post">
+<hr />
 
-    <h2><a href="/microsoft-certified-azure-fundamentals/">Microsoft Certified&colon; Azure Fundamentals</a></h2>
+<h2 id="ref-in-iterators-and-async-methods">ref in iterators and async methods</h2>
 
-    <div class="entry">
-    I’ve been working with Azure for years, but I had never stopped trying an official Microsoft certification until last month and after a month of studies, yesterday (30/11/2023) I successfully passed the exam for the Microsoft Certified: Azure Fundamentals (AZ-900). In the post below I talk a little about the...
-    </div>
+<h3 id="before-5">Before</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-async.before.cs"> </script>
 
-    <a href="/microsoft-certified-azure-fundamentals/" class="button" aria-label="Microsoft Certified&colon; Azure Fundamentals">Read "Microsoft Certified&colon; Azure..."</a>
-    </article>
+<h3 id="after-5">After</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-async.after.cs"> </script>
 
-    
-    
-    <article class="post">
+<hr />
 
-    <h2><a href="/azure-utility-belt-azure-diagrams/">Azure Utility Belt&colon; Azure Diagrams</a></h2>
+<h2 id="ref-struct-and-interfaces">ref struct and interfaces</h2>
 
-    <div class="entry">
-    I decided to start a series of posts about some Azure resources and tools that are very useful to have in our Azure Utility Belt. For this first post, the chosen one is the Azure Diagrams by Shane Ochotny, Harsha Konduri, and Bret Myers. Introduction Azure Diagram is: an architecture...
-    </div>
+<h3 id="before-6">Before</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-struct-interface.before.cs"> </script>
 
-    <a href="/azure-utility-belt-azure-diagrams/" class="button" aria-label="Azure Utility Belt&colon; Azure Diagrams">Read "Azure Utility Belt&colon; Azure ..."</a>
-    </article>
+<h3 id="after-6">After</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-struct-interface.after.cs"> </script>
 
-    
-    
-    <article class="post">
+<hr />
 
-    <h2><a href="/geneticsharp-in-the-wild-simulation-based-layout-optimization/">GeneticSharp in the Wild&colon; Simulation-based layout optimization for multi-station assembly lines</a></h2>
+<h2 id="ref-struct-in-generics">ref struct in generics</h2>
 
-    <div class="entry">
-    I started a series of posts about some outstanding scientific papers and projects using GeneticSharp. For this sixth post the chosen one is the Simulation-based layout optimization for multi-station assembly lines. Introduction Presents a novel approach for the automated 3D-layout planning of multi-station assembly lines. The planning method is based...
-    </div>
+<h3 id="before-7">Before</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-struct-generic.before.cs"> </script>
 
-    <a href="/geneticsharp-in-the-wild-simulation-based-layout-optimization/" class="button" aria-label="GeneticSharp in the Wild&colon; Simulation-based layout optimization for multi-station assembly lines">Read "GeneticSharp in the Wild&colon; ..."</a>
-    </article>
+<h3 id="after-7">After</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-struct-generic.after.cs"> </script>
 
-    
-    
-    <article class="post">
+<hr />
 
-    <h2><a href="/trijam-243-entry-the-cursed-idol/">Trijam 243 entry&colon; The Cursed Idol</a></h2>
+<h2 id="partial-properties-and-indexers">Partial properties and indexers</h2>
 
-    <div class="entry">
-    Last weekend I participated in Trijam #243. Trijam is a weekly game jam where your goal is to make something playable (and fun!) in just 3 hours. The theme The theme for this game jam was “Cursed Relics”. This was the third Trijam that I participated with purpose to test...
-    </div>
+<h3 id="before-8">Before</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=partial-properties.before.cs"> </script>
 
-    <a href="/trijam-243-entry-the-cursed-idol/" class="button" aria-label="Trijam 243 entry&colon; The Cursed Idol">Read "Trijam 243 entry&colon; The Curs..."</a>
-    </article>
+<h3 id="after-8">After</h3>
+<script src="https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=partial-properties.after.cs"> </script>
 
-</div>
+<hr />
 
-<!-- Pagination links -->
+<h2 id="conclusion">Conclusion</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/conclusion-128-32225c491.png" alt="post image" width="128" height="128" />
+</picture>
 
-<ul class="pager">
-    
-           
-
-        
-            <li  class="selected"><a href="/articles/" title="Articles">1</a></li>
-        
-            <li ><a href="/articles/2/" title="Articles">2</a></li>
-        
-            <li ><a href="/articles/3/" title="Articles">3</a></li>
-        
-            <li ><a href="/articles/4/" title="Articles">4</a></li>
-        
-        
-        
-            <li><a href="/articles/2/" class="next">&gt;</a>&nbsp;&nbsp;</li>
-            <li><a href="/articles/4/" class="next">&gt;&gt;</a></li>
-         
-    
+<p>C# 13 is a <strong>quality-of-life release</strong>.<br />
+The changes are small, but together they:</p>
+<ul>
+  <li>Remove old limitations (ref struct with interfaces/generics).</li>
+  <li>Improve expressiveness (\e, params collections).</li>
+  <li>Make code more consistent (lock, partial properties).</li>
 </ul>
 
+<p>It’s a great step forward, especially if you write libraries, low-level code, or high-performance apps.</p>
+    
   </div>
+  <span>
+    
+        <a href="/tags/csharp" class="post-tag"><i class="fas fa-tag"></i>&nbsp;csharp</a>
+    
+        <a href="/tags/dotnet" class="post-tag"><i class="fas fa-tag"></i>&nbsp;dotnet</a>
+    
+</span>
+   
+  
 </article>
 
       </div>

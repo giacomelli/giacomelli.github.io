@@ -3,11 +3,143 @@
  <title>Diego Giacomelli - dotnet</title>
  <link href="//tags/dotnet/index.xml" rel="self"/>
  <link href="/tag/dotnet.html"/>
- <updated>2025-09-11T09:41:09-03:00</updated>
+ <updated>2025-09-15T17:06:51-03:00</updated>
  <id>/tag/dotnet.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>C# 13 new features</title>
+   <link href="//csharp-13-new-features/"/>
+   <updated>2025-09-15T00:00:00-03:00</updated>
+   <id>//csharp-13-new-features</id>
+   <content type="html">
+&lt;p&gt;In &lt;strong&gt;November 2024&lt;/strong&gt;, Microsoft released &lt;strong&gt;&lt;a href=&quot;https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-13&quot;&gt;C# 13&lt;/a&gt;&lt;/strong&gt;.&lt;br /&gt;
+It’s not a huge overhaul, but it removes some long-standing restrictions and introduces features that make code cleaner, safer, and easier to write.&lt;/p&gt;
+
+&lt;p&gt;Here are the highlights — with &lt;strong&gt;before vs after&lt;/strong&gt; examples.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;params-collections&quot;&gt;params collections&lt;/h2&gt;
+&lt;p&gt;Before, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;params&lt;/code&gt; was limited to arrays.&lt;/p&gt;
+
+&lt;h3 id=&quot;before&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=params.before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=params.after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;new-lock-semantics&quot;&gt;New lock semantics&lt;/h2&gt;
+&lt;p&gt;When locking on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System.Threading.Lock&lt;/code&gt;, the compiler now uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EnterScope()&lt;/code&gt; under the hood.&lt;/p&gt;
+
+&lt;h3 id=&quot;before-1&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=lock.before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;This used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Monitor&lt;/code&gt; API.&lt;/p&gt;
+
+&lt;h3 id=&quot;after-1&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=lock.after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Which is equivalent to:
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=lock.after.underhood.cs&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;escape-sequence-e&quot;&gt;Escape sequence \e&lt;/h2&gt;
+&lt;p&gt;Now you can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\e&lt;/code&gt; for the &lt;strong&gt;ESC&lt;/strong&gt; character.&lt;/p&gt;
+
+&lt;h3 id=&quot;before-2&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=escape.before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-2&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=escape.after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;overload-resolution-improvements&quot;&gt;Overload resolution improvements&lt;/h2&gt;
+&lt;p&gt;Ambiguous overloads are resolved better.&lt;/p&gt;
+
+&lt;h3 id=&quot;before-3&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=overload.before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-3&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=overload.after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;indexers-in-initializers&quot;&gt;Indexers in initializers&lt;/h2&gt;
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt; (from end) operator can now be used in initializers.&lt;/p&gt;
+
+&lt;h3 id=&quot;before-4&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=indexer.before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-4&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=indexer.after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;ref-in-iterators-and-async-methods&quot;&gt;ref in iterators and async methods&lt;/h2&gt;
+
+&lt;h3 id=&quot;before-5&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-async.before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-5&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-async.after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;ref-struct-and-interfaces&quot;&gt;ref struct and interfaces&lt;/h2&gt;
+
+&lt;h3 id=&quot;before-6&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-struct-interface.before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-6&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-struct-interface.after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;ref-struct-in-generics&quot;&gt;ref struct in generics&lt;/h2&gt;
+
+&lt;h3 id=&quot;before-7&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-struct-generic.before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-7&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=ref-struct-generic.after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;partial-properties-and-indexers&quot;&gt;Partial properties and indexers&lt;/h2&gt;
+
+&lt;h3 id=&quot;before-8&quot;&gt;Before&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=partial-properties.before.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;after-8&quot;&gt;After&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/77de9ea857053c44a5c3e36164dcdfe5.js?file=partial-properties.after.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;C# 13 is a &lt;strong&gt;quality-of-life release&lt;/strong&gt;.&lt;br /&gt;
+The changes are small, but together they:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Remove old limitations (ref struct with interfaces/generics).&lt;/li&gt;
+  &lt;li&gt;Improve expressiveness (\e, params collections).&lt;/li&gt;
+  &lt;li&gt;Make code more consistent (lock, partial properties).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It’s a great step forward, especially if you write libraries, low-level code, or high-performance apps.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Using localized exception messages with T4 Templates</title>

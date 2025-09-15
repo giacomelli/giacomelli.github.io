@@ -856,6 +856,14 @@
     
     
     {
+      "title"    : "C# 13 new features",
+      "category" : "Article",
+      "tags"     : "csharp, dotnet",
+      "url"      : "/csharp-13-new-features/",
+      "author"   : ""
+    } ,
+    
+    {
       "title"    : "Google Mobile Ads GetClientFactory exception",
       "category" : "Article",
       "tags"     : "unity3d, gamedev, android, google mobile ads",
