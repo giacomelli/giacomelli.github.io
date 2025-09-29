@@ -3,11 +3,66 @@
  <title>Diego Giacomelli - papers</title>
  <link href="//tags/papers/index.xml" rel="self"/>
  <link href="/tag/papers.html"/>
- <updated>2025-09-15T20:03:22-03:00</updated>
+ <updated>2025-09-29T08:50:53-03:00</updated>
  <id>/tag/papers.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>Scientific papers using GeneticSharp (september 2025)</title>
+   <link href="//scientific-papers-using-geneticharp-september-2025/"/>
+   <updated>2025-09-29T00:00:00-03:00</updated>
+   <id>//scientific-papers-using-geneticharp-september-2025</id>
+   <content type="html">&lt;p&gt;Another round with the newest scientific papers using &lt;a href=&quot;https://github.com/giacomelli/GeneticSharp&quot;&gt;GeneticSharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;1-keen-kotlin-genetic-algorithms-framework&quot;&gt;1) Keen: Kotlin Genetic Algorithms Framework&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Abstract: 	This thesis explores Evolutionary Computation (EC) within Artificial Intelligence, particularly focusing on its application in software engineering and scientific computing. It introduces an EC framework, highlighting its modularity and ability to integrate various EC algorithms. The framework’s efficacy is demonstrated through case studies on Genetic Algorithms and Linear Genetic Programming, emphasizing its ability to solve complex computational problems.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mention: GeneticSharp offers a dynamic, parallelized platform for crafting genetic algorithms in C#. Its customizability and developer-centric approach make it a compelling choice for those aiming to harness genetic algorithms within their software projects. Yet, users must be cognizant of its more intricate API, the nuances introduced by parallelization, and potential challenges arising from a smaller community and limited documentation. Ultimately, while GeneticSharp solidifies its position as a valuable tool within the .NET arena, its optimal utilization depends on aligning its capabilities with the user’s specific requirements and familiarity with genetic algorithms.&lt;/em&gt; (&lt;a href=&quot;https://repositorio.uchile.cl/bitstream/handle/2250/205483/Keen-Kotlin-genetic-algorithms-framework.pdf&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-200-32225c491.webp 200w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-400-32225c491.webp 400w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-800-32225c491.webp 800w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-1600-32225c491.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-200-32225c491.png 200w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-400-32225c491.png 400w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-800-32225c491.png 800w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-1600-32225c491.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;8334&quot; height=&quot;3697&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2-hybrid-procedural-level-generation-using-wave-function-collapse-and-genetic-algorithms&quot;&gt;2) Hybrid Procedural Level Generation Using Wave Function Collapse and Genetic Algorithms&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Abstract: This paper presents a hybrid procedural content generation (PCG) framework that integrates Wave Function Collapse (WFC) for constraint-based structure synthesis with Genetic Algorithms (GA) for adaptive gameplay optimization. Experimental results in Unity show that the hybrid model improves level playability, structural consistency, and generation efficiency, achieving 56% faster convergence and 73% fewer unplayable levels compared to standalone methods. The approach demonstrates the potential of hybrid PCG techniques to enhance scalability, diversity, and player experience in game content generation.&lt;/em&gt; (&lt;a href=&quot;https://link.springer.com/chapter/10.1007/978-3-031-97564-6_9&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h1 id=&quot;3-new-hybrid-method-for-buffer-positioning-and-production-control-using-ddmrp-logic-in-smart-manufacturing&quot;&gt;3) New Hybrid Method for Buffer Positioning and Production Control Using DDMRP Logic in Smart Manufacturing&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Abstract: Despite its proven effectiveness in inventory management across various industries, Demand-Driven Material Requirements Planning (DDMRP) remains largely a manual process, with few studies investigating its numerical integration. This research proposes a novel multi-stage production control framework grounded in DDMRP principles, enabling effective scheduling of production orders based on either demand forecasts or actual demand, when available. A mixed-integer programming (MIP) model is developed to capture the dynamic interactions between demand, buffer positioning, and replenishment policies, supporting reactive production planning in smart, reconfigurable manufacturing environments. To identify the optimal buffer locations, a Genetic Algorithm (GA) is employed. The MIP model provides the GA with production planning outputs used to evaluate the fitness of decisions regarding buffer placement. To demonstrate the effectiveness of this hybrid GA–MIP approach, simulations are conducted on three representative production configurations. The results show that the proposed method significantly improves the theoretical performance of each configuration by determining optimal buffer locations and planning replenishments, achieving a better balance between inventory levels and demand fulfillment.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mention: the iterative optimization process is managed by the DDMRP_Solver class, which contains a Genetic Algorithm provided by GeneticSharp library.&lt;/em&gt; (&lt;a href=&quot;https://www.mdpi.com/2504-4494/9/7/219&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/new-hybrid-method-for-buffer-200-32225c491.webp 200w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/new-hybrid-method-for-buffer-400-32225c491.webp 400w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/new-hybrid-method-for-buffer-800-32225c491.webp 800w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/new-hybrid-method-for-buffer-1600-32225c491.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/new-hybrid-method-for-buffer-200-32225c491.png 200w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/new-hybrid-method-for-buffer-400-32225c491.png 400w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/new-hybrid-method-for-buffer-800-32225c491.png 800w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/new-hybrid-method-for-buffer-1600-32225c491.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/new-hybrid-method-for-buffer-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;1802&quot; height=&quot;526&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4-mechanic-miner-2023-reflection-driven-game-mechanic-discovery-powered-by-go-explore&quot;&gt;4) Mechanic Miner 2023: Reflection-Driven Game Mechanic Discovery Powered by Go-Explore&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Abstract: We introduce Mechanic Miner 2023, a co-creative game design tool that suggests game design ideas by exploring the source code of the game itself instead of relying on predefined domain knowledge. Exploration is driven by an genetic algorithm which generates, evaluates and evolves simple two-state game mechanics that use code reflection to manipulate a property of the game’s source code during gameplay. Evaluation is performed by an automated game-playing agent driven by Go-Explore, a state-of-the-art algorithm for automated game-playing. We demonstrate how Mechanic Miner 2023 can generate a diverse set of novel solutions for a simple 2D puzzle platformer within a time frame that suits iterative creative work. Index Terms—automated game design, computation creativity, mixed-initiative co-creative tools, procedural content generation, game design, game development, genetic algorithm, code reflection, artificial intelligence, game AI&lt;/em&gt; (&lt;a href=&quot;https://theses.liacs.nl/pdf/2023-2024-PoldervaartNNiels.pdf&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+&lt;center&gt;                
+        &lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/mechanic-miner-2023-200-32225c491.webp 200w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/mechanic-miner-2023-400-32225c491.webp 400w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/mechanic-miner-2023-800-32225c491.webp 800w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/mechanic-miner-2023-1600-32225c491.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/mechanic-miner-2023-200-32225c491.png 200w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/mechanic-miner-2023-400-32225c491.png 400w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/mechanic-miner-2023-800-32225c491.png 800w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/mechanic-miner-2023-1600-32225c491.png 1600w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/mechanic-miner-2023-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;2562&quot; height=&quot;1442&quot; /&gt;
+&lt;/picture&gt;
+
+      &lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;5-efficient-drone-path-planning-through-strategic-launch-pad-positioning&quot;&gt;5) Efficient Drone Path Planning through Strategic Launch Pad Positioning&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Abstract: Efficient drone path planning is critical for optimizing the performance of unmanned aerial systems, particularly in applications requiring extensive coverage and precision. This study explores the impact of strategic launch pad positioning on drone path planning, emphasizing its role in minimizing energy consumption and improving operational efficiency. Utilizing the multiple Traveling Salesman Problem (mTSP) algorithm, the research investigates how repositioning the launch pad can influence the assignment and configuration of drone routes. Results demonstrate that optimizing the launch pad location significantly reduces redundant travel distances, and enhances overall mission performance. This approach underscores the importance of adaptive deployment strategies in the design of efficient, energy-aware drone systems.&lt;/em&gt; (&lt;a href=&quot;https://www.researchgate.net/profile/Sergey-Yurish/publication/389563971_DAUS_2025_Conference_Proceedings/links/67c82fca7c5b5569dcb71581/DAUS-2025-Conference-Proceedings.pdf#page=255&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Scientific papers using GeneticSharp (february 2025)</title>
