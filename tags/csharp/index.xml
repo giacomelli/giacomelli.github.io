@@ -3,11 +3,111 @@
  <title>Diego Giacomelli - csharp</title>
  <link href="//tags/csharp/index.xml" rel="self"/>
  <link href="/tag/csharp.html"/>
- <updated>2025-09-29T08:50:53-03:00</updated>
+ <updated>2026-02-15T11:43:58-03:00</updated>
  <id>/tag/csharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
  </author>
+ 
+ <entry>
+   <title>C# 14 new features</title>
+   <link href="//csharp-14-new-features/"/>
+   <updated>2026-02-15T00:00:00-03:00</updated>
+   <id>//csharp-14-new-features</id>
+   <content type="html">
+&lt;p&gt;In &lt;strong&gt;November 2025&lt;/strong&gt;, Microsoft released &lt;strong&gt;&lt;a href=&quot;https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-14&quot;&gt;C# 14&lt;/a&gt;&lt;/strong&gt;.&lt;br /&gt;
+It continues the trend of incremental but powerful language improvements. This version focuses on expressiveness, library authoring, and reducing boilerplate, while also adding a few long-requested features.&lt;/p&gt;
+
+&lt;p&gt;In this post, we’ll explore the main C# 14 features with clear explanations and practical code samples.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-extension-members&quot;&gt;1. Extension Members&lt;/h2&gt;
+
+&lt;p&gt;C# 14 introduces &lt;strong&gt;extension members&lt;/strong&gt;, allowing extension methods, &lt;strong&gt;properties&lt;/strong&gt;, and other members to be grouped more naturally and behave more like real members.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=extension.members.cs&quot;&gt; &lt;/script&gt;
+
+&lt;h2 id=&quot;2-null-conditional-assignment&quot;&gt;2. Null-Conditional Assignment&lt;/h2&gt;
+
+&lt;p&gt;You can now assign values using the null-conditional operator (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;?.&lt;/code&gt;).&lt;br /&gt;
+The assignment only occurs if the receiver is not &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;null&lt;/code&gt;.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=null.conditional.assignment.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;3-nameof-supports-unbound-generic-types&quot;&gt;3. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nameof&lt;/code&gt; Supports Unbound Generic Types&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nameof&lt;/code&gt; can now be used with &lt;strong&gt;unbound generic types&lt;/strong&gt;, which is especially useful for logging, diagnostics, and analyzers.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=nameof.supports.unbound.generic.types.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;4-more-implicit-conversions-for-spant-and-readonlyspant&quot;&gt;4. More Implicit Conversions for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Span&amp;lt;T&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ReadOnlySpan&amp;lt;T&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;C# 14 expands implicit conversions, making &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Span&amp;lt;T&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ReadOnlySpan&amp;lt;T&amp;gt;&lt;/code&gt; even easier to work with.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=more.implicit.conversions.for.span.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;5-modifiers-on-simple-lambda-parameters&quot;&gt;5. Modifiers on Simple Lambda Parameters&lt;/h2&gt;
+
+&lt;p&gt;You can now apply modifiers such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ref&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;out&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;in&lt;/code&gt;, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scoped&lt;/code&gt; directly to &lt;strong&gt;simple lambda parameters&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=modifiers.on.lambda.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;6-field-backed-properties&quot;&gt;6. Field-Backed Properties&lt;/h2&gt;
+
+&lt;p&gt;C# 14 introduces &lt;strong&gt;field-backed properties&lt;/strong&gt;, eliminating the need for explicit backing fields in many scenarios.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=field.backed.properties.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;7-partial-events-and-constructors&quot;&gt;7. Partial Events and Constructors&lt;/h2&gt;
+
+&lt;p&gt;Just like methods and properties, &lt;strong&gt;events and constructors&lt;/strong&gt; can now be declared as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;partial&lt;/code&gt;.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=partial.events.constructors.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;8-user-defined-compound-assignment-operators&quot;&gt;8. User-Defined Compound Assignment Operators&lt;/h2&gt;
+
+&lt;p&gt;Types can now define compound assignment operators such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+=&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-=&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*=&lt;/code&gt;, and more.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=user.defined.compound.assignment.operators.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;9-new-preprocessor-directives-for-file-based-apps&quot;&gt;9. New Preprocessor Directives for File-Based Apps&lt;/h2&gt;
+&lt;p&gt;File-based apps are programs that you compile and run by using dotnet run Program.cs (or any *.cs file). The C# compiler ignores these preprocessor directives, but the build system parses them to produce the output. These directives generate warnings when encountered in a project-based compilation.&lt;/p&gt;
+
+&lt;p&gt;The C# compiler ignores any preprocessor directive that starts with #: or #!.&lt;/p&gt;
+
+&lt;p&gt;The #! preprocessor directive enables Unix shells to directly execute a C# file by using dotnet run&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=preprocessor.file.based.app.cs&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;picture&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w&quot; type=&quot;image/webp&quot; /&gt;
+  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w&quot; type=&quot;image/png&quot; /&gt;
+  &lt;img class=&quot;icon&quot; src=&quot;/assets/images/generated/assets/logos/conclusion-128-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;
+&lt;/picture&gt;
+
+&lt;p&gt;C# 14 may look subtle at first glance, but it delivers meaningful improvements for everyday development and advanced library scenarios. From extension members and field-backed properties to better Span support and partial events, these features reduce boilerplate and unlock cleaner designs.&lt;/p&gt;
+
+&lt;p&gt;If you’re building libraries, analyzers, or performance-sensitive code, C# 14 is well worth exploring.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>C# 13 new features</title>

@@ -1,18 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-29T08:50:53-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Azure | Web API | Framework | Unity 3D</subtitle><entry><title type="html">Scientific papers using GeneticSharp (september 2025)</title><link href="http://localhost:4000/scientific-papers-using-geneticharp-september-2025/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (september 2025)" /><published>2025-09-29T00:00:00-03:00</published><updated>2025-09-29T00:00:00-03:00</updated><id>http://localhost:4000/scientific-papers-using-geneticharp-september-2025</id><content type="html" xml:base="http://localhost:4000/scientific-papers-using-geneticharp-september-2025/"><![CDATA[<p>Another round with the newest scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-15T11:43:58-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Diego Giacomelli</title><subtitle>Senior .NET Developer | Azure | Web API | Framework | Unity 3D</subtitle><entry><title type="html">C# 14 new features</title><link href="http://localhost:4000/csharp-14-new-features/" rel="alternate" type="text/html" title="C# 14 new features" /><published>2026-02-15T00:00:00-03:00</published><updated>2026-02-15T00:00:00-03:00</updated><id>http://localhost:4000/csharp-14-new-features</id><content type="html" xml:base="http://localhost:4000/csharp-14-new-features/"><![CDATA[<p>In <strong>November 2025</strong>, Microsoft released <strong><a href="https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-14">C# 14</a></strong>.<br />
+It continues the trend of incremental but powerful language improvements. This version focuses on expressiveness, library authoring, and reducing boilerplate, while also adding a few long-requested features.</p>
+
+<p>In this post, we’ll explore the main C# 14 features with clear explanations and practical code samples.</p>
+
+<hr />
+
+<h2 id="1-extension-members">1. Extension Members</h2>
+
+<p>C# 14 introduces <strong>extension members</strong>, allowing extension methods, <strong>properties</strong>, and other members to be grouped more naturally and behave more like real members.</p>
+
+<script src="https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=extension.members.cs"> </script>
+
+<h2 id="2-null-conditional-assignment">2. Null-Conditional Assignment</h2>
+
+<p>You can now assign values using the null-conditional operator (<code class="language-plaintext highlighter-rouge">?.</code>).<br />
+The assignment only occurs if the receiver is not <code class="language-plaintext highlighter-rouge">null</code>.</p>
+
+<script src="https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=null.conditional.assignment.cs"> </script>
+
+<hr />
+
+<h2 id="3-nameof-supports-unbound-generic-types">3. <code class="language-plaintext highlighter-rouge">nameof</code> Supports Unbound Generic Types</h2>
+
+<p><code class="language-plaintext highlighter-rouge">nameof</code> can now be used with <strong>unbound generic types</strong>, which is especially useful for logging, diagnostics, and analyzers.</p>
+
+<script src="https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=nameof.supports.unbound.generic.types.cs"> </script>
+
+<hr />
+
+<h2 id="4-more-implicit-conversions-for-spant-and-readonlyspant">4. More Implicit Conversions for <code class="language-plaintext highlighter-rouge">Span&lt;T&gt;</code> and <code class="language-plaintext highlighter-rouge">ReadOnlySpan&lt;T&gt;</code></h2>
+
+<p>C# 14 expands implicit conversions, making <code class="language-plaintext highlighter-rouge">Span&lt;T&gt;</code> and <code class="language-plaintext highlighter-rouge">ReadOnlySpan&lt;T&gt;</code> even easier to work with.</p>
+
+<script src="https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=more.implicit.conversions.for.span.cs"> </script>
+
+<hr />
+
+<h2 id="5-modifiers-on-simple-lambda-parameters">5. Modifiers on Simple Lambda Parameters</h2>
+
+<p>You can now apply modifiers such as <code class="language-plaintext highlighter-rouge">ref</code>, <code class="language-plaintext highlighter-rouge">out</code>, <code class="language-plaintext highlighter-rouge">in</code>, or <code class="language-plaintext highlighter-rouge">scoped</code> directly to <strong>simple lambda parameters</strong>.</p>
+
+<script src="https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=modifiers.on.lambda.cs"> </script>
+
+<hr />
+
+<h2 id="6-field-backed-properties">6. Field-Backed Properties</h2>
+
+<p>C# 14 introduces <strong>field-backed properties</strong>, eliminating the need for explicit backing fields in many scenarios.</p>
+
+<script src="https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=field.backed.properties.cs"> </script>
+
+<hr />
+
+<h2 id="7-partial-events-and-constructors">7. Partial Events and Constructors</h2>
+
+<p>Just like methods and properties, <strong>events and constructors</strong> can now be declared as <code class="language-plaintext highlighter-rouge">partial</code>.</p>
+
+<script src="https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=partial.events.constructors.cs"> </script>
+
+<hr />
+
+<h2 id="8-user-defined-compound-assignment-operators">8. User-Defined Compound Assignment Operators</h2>
+
+<p>Types can now define compound assignment operators such as <code class="language-plaintext highlighter-rouge">+=</code>, <code class="language-plaintext highlighter-rouge">-=</code>, <code class="language-plaintext highlighter-rouge">*=</code>, and more.</p>
+
+<script src="https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=user.defined.compound.assignment.operators.cs"> </script>
+
+<hr />
+
+<h2 id="9-new-preprocessor-directives-for-file-based-apps">9. New Preprocessor Directives for File-Based Apps</h2>
+<p>File-based apps are programs that you compile and run by using dotnet run Program.cs (or any *.cs file). The C# compiler ignores these preprocessor directives, but the build system parses them to produce the output. These directives generate warnings when encountered in a project-based compilation.</p>
+
+<p>The C# compiler ignores any preprocessor directive that starts with #: or #!.</p>
+
+<p>The #! preprocessor directive enables Unix shells to directly execute a C# file by using dotnet run</p>
+
+<script src="https://gist.github.com/c62bdf48ff20cc16607b69eb175dc574.js?file=preprocessor.file.based.app.cs"> </script>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+<picture>
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-32225c491.webp 128w" type="image/webp" />
+  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/logos/conclusion-128-32225c491.png 128w" type="image/png" />
+  <img class="icon" src="/assets/images/generated/assets/logos/conclusion-128-32225c491.png" alt="post image" width="128" height="128" />
+</picture>
+
+<p>C# 14 may look subtle at first glance, but it delivers meaningful improvements for everyday development and advanced library scenarios. From extension members and field-backed properties to better Span support and partial events, these features reduce boilerplate and unlock cleaner designs.</p>
+
+<p>If you’re building libraries, analyzers, or performance-sensitive code, C# 14 is well worth exploring.</p>]]></content><author><name></name></author><category term="Article" /><category term="csharp" /><category term="dotnet" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Scientific papers using GeneticSharp (september 2025)</title><link href="http://localhost:4000/scientific-papers-using-geneticharp-september-2025/" rel="alternate" type="text/html" title="Scientific papers using GeneticSharp (september 2025)" /><published>2025-09-29T00:00:00-03:00</published><updated>2025-09-29T00:00:00-03:00</updated><id>http://localhost:4000/scientific-papers-using-geneticharp-september-2025</id><content type="html" xml:base="http://localhost:4000/scientific-papers-using-geneticharp-september-2025/"><![CDATA[<p>Another round with the newest scientific papers using <a href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a>.</p>
 
 <h1 id="1-keen-kotlin-genetic-algorithms-framework">1) Keen: Kotlin Genetic Algorithms Framework</h1>
 <p><em>Abstract: 	This thesis explores Evolutionary Computation (EC) within Artificial Intelligence, particularly focusing on its application in software engineering and scientific computing. It introduces an EC framework, highlighting its modularity and ability to integrate various EC algorithms. The framework’s efficacy is demonstrated through case studies on Genetic Algorithms and Linear Genetic Programming, emphasizing its ability to solve complex computational problems.</em></p>
 
 <p><em>Mention: GeneticSharp offers a dynamic, parallelized platform for crafting genetic algorithms in C#. Its customizability and developer-centric approach make it a compelling choice for those aiming to harness genetic algorithms within their software projects. Yet, users must be cognizant of its more intricate API, the nuances introduced by parallelization, and potential challenges arising from a smaller community and limited documentation. Ultimately, while GeneticSharp solidifies its position as a valuable tool within the .NET arena, its optimal utilization depends on aligning its capabilities with the user’s specific requirements and familiarity with genetic algorithms.</em> (<a href="https://repositorio.uchile.cl/bitstream/handle/2250/205483/Keen-Kotlin-genetic-algorithms-framework.pdf">paper</a>)</p>
-<center>                
-        <picture>
-  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-200-32225c491.webp 200w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-400-32225c491.webp 400w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-800-32225c491.webp 800w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-1600-32225c491.webp 1600w" type="image/webp" />
-  <source sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px" srcset="/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-200-32225c491.png 200w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-400-32225c491.png 400w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-800-32225c491.png 800w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-1600-32225c491.png 1600w" type="image/png" />
-  <img class="screenshot" src="/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-800-32225c491.png" alt="post image" width="8334" height="3697" />
-</picture>
-
-      </center>
-<p><br /></p>
 
 <h1 id="2-hybrid-procedural-level-generation-using-wave-function-collapse-and-genetic-algorithms">2) Hybrid Procedural Level Generation Using Wave Function Collapse and Genetic Algorithms</h1>
 <p><em>Abstract: This paper presents a hybrid procedural content generation (PCG) framework that integrates Wave Function Collapse (WFC) for constraint-based structure synthesis with Genetic Algorithms (GA) for adaptive gameplay optimization. Experimental results in Unity show that the hybrid model improves level playability, structural consistency, and generation efficiency, achieving 56% faster convergence and 73% fewer unplayable levels compared to standalone methods. The approach demonstrates the potential of hybrid PCG techniques to enhance scalability, diversity, and player experience in game content generation.</em> (<a href="https://link.springer.com/chapter/10.1007/978-3-031-97564-6_9">paper</a>)</p>

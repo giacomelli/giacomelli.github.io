@@ -3,7 +3,7 @@
  <title>Diego Giacomelli - geneticsharp</title>
  <link href="//tags/geneticsharp/index.xml" rel="self"/>
  <link href="/tag/geneticsharp.html"/>
- <updated>2025-09-29T08:50:53-03:00</updated>
+ <updated>2026-02-15T11:43:58-03:00</updated>
  <id>/tag/geneticsharp.html</id>
  <author>
    <name>Diego Giacomelli</name>
@@ -20,15 +20,6 @@
 &lt;p&gt;&lt;em&gt;Abstract: 	This thesis explores Evolutionary Computation (EC) within Artificial Intelligence, particularly focusing on its application in software engineering and scientific computing. It introduces an EC framework, highlighting its modularity and ability to integrate various EC algorithms. The framework’s efficacy is demonstrated through case studies on Genetic Algorithms and Linear Genetic Programming, emphasizing its ability to solve complex computational problems.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Mention: GeneticSharp offers a dynamic, parallelized platform for crafting genetic algorithms in C#. Its customizability and developer-centric approach make it a compelling choice for those aiming to harness genetic algorithms within their software projects. Yet, users must be cognizant of its more intricate API, the nuances introduced by parallelization, and potential challenges arising from a smaller community and limited documentation. Ultimately, while GeneticSharp solidifies its position as a valuable tool within the .NET arena, its optimal utilization depends on aligning its capabilities with the user’s specific requirements and familiarity with genetic algorithms.&lt;/em&gt; (&lt;a href=&quot;https://repositorio.uchile.cl/bitstream/handle/2250/205483/Keen-Kotlin-genetic-algorithms-framework.pdf&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
-&lt;center&gt;                
-        &lt;picture&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-200-32225c491.webp 200w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-400-32225c491.webp 400w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-800-32225c491.webp 800w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-1600-32225c491.webp 1600w&quot; type=&quot;image/webp&quot; /&gt;
-  &lt;source sizes=&quot;(max-width: 600px) 100vw, (max-width: 900px) 80vw, 800px&quot; srcset=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-200-32225c491.png 200w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-400-32225c491.png 400w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-800-32225c491.png 800w, /assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-1600-32225c491.png 1600w&quot; type=&quot;image/png&quot; /&gt;
-  &lt;img class=&quot;screenshot&quot; src=&quot;/assets/images/generated/assets/2025/09/29/scientific-papers-using-geneticharp-september-2025/keen-logo-800-32225c491.png&quot; alt=&quot;post image&quot; width=&quot;8334&quot; height=&quot;3697&quot; /&gt;
-&lt;/picture&gt;
-
-      &lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;2-hybrid-procedural-level-generation-using-wave-function-collapse-and-genetic-algorithms&quot;&gt;2) Hybrid Procedural Level Generation Using Wave Function Collapse and Genetic Algorithms&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;Abstract: This paper presents a hybrid procedural content generation (PCG) framework that integrates Wave Function Collapse (WFC) for constraint-based structure synthesis with Genetic Algorithms (GA) for adaptive gameplay optimization. Experimental results in Unity show that the hybrid model improves level playability, structural consistency, and generation efficiency, achieving 56% faster convergence and 73% fewer unplayable levels compared to standalone methods. The approach demonstrates the potential of hybrid PCG techniques to enhance scalability, diversity, and player experience in game content generation.&lt;/em&gt; (&lt;a href=&quot;https://link.springer.com/chapter/10.1007/978-3-031-97564-6_9&quot;&gt;paper&lt;/a&gt;)&lt;/p&gt;
